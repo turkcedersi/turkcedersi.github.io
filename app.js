@@ -134,7 +134,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (card.classList.contains("tools-card")) return;
         const grade = card.dataset.grade;
         if (card.classList.contains("locked")) {
-          showToast(`Müfredat hazırlığı sürüyor! ${grade}. Sınıf etkileşimli kitabı yakında eklenecektir.`);
+          showToast("Yakında eklenecektir.");
           return;
         }
         state.currentGrade = parseInt(grade);
@@ -212,7 +212,7 @@ document.addEventListener("DOMContentLoaded", () => {
       card.addEventListener("click", () => {
         const book = card.dataset.book;
         if (card.classList.contains("locked")) {
-          showToast(`Bu kitap yakında eklenecektir.`);
+          showToast("Yakında eklenecektir.");
           return;
         }
         state.currentBook = parseInt(book);
@@ -271,6 +271,8 @@ document.addEventListener("DOMContentLoaded", () => {
       state.currentBook = null;
       state.currentView = "books";
       if (sidebarDateBadge) sidebarDateBadge.classList.add("hidden");
+      const outcomesGroup = document.querySelector(".outcomes-group");
+      if (outcomesGroup) outcomesGroup.classList.add("hidden");
       updateView();
     });
 
@@ -530,9 +532,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function renderInPageAnswers(pageNumber) {
     if (!inpageAnswersLayer) return;
     inpageAnswersLayer.innerHTML = "";
-
-    // 7. sınıf 2. kitap (Book 6) için etkinlik cevapları ve cevap gösterme tuşu komple kaldırıldı
-    if (state.currentBook === 6) return;
+    // Render in-page answers for active book
 
     const answersKey = `book${state.currentBook}_inpage_answers`;
     const pageAnswers = state.bookData[answersKey] ? state.bookData[answersKey][pageNumber.toString()] : null;
@@ -620,25 +620,26 @@ document.addEventListener("DOMContentLoaded", () => {
   function renderPageOutcomes(pageNumber) {
     if (!outcomesList) return;
     outcomesList.innerHTML = "";
-
     const outcomesGroup = document.querySelector(".outcomes-group");
+    const outcomesKey = `book${state.currentBook}_outcomes`;
     
-    // 7. sınıf kitapları (Book 5 ve Book 6) için öğrenme çıktıları silindi
-    if (state.currentBook === 5 || state.currentBook === 6) {
+    // Kitap için öğrenme çıktıları veri havuzu tanımlı değilse bölümü tamamen gizle
+    if (!state.bookData || !state.bookData[outcomesKey]) {
       if (outcomesGroup) outcomesGroup.classList.add("hidden");
       return;
-    } else {
-      if (outcomesGroup) outcomesGroup.classList.remove("hidden");
     }
     
     const pageKey = pageNumber.toString();
-    const outcomesKey = `book${state.currentBook}_outcomes`;
     const pageOutcomes = state.bookData[outcomesKey] ? state.bookData[outcomesKey][pageKey] : null;
     
+    // Sayfada tanımlı öğrenme çıktısı yoksa bölümü tamamen gizle
     if (!pageOutcomes || pageOutcomes.length === 0) {
-      outcomesList.innerHTML = "<div class='outcome-item'><span class='outcome-desc'>Bu sayfada tanımlı öğrenme çıktısı bulunmamaktadır.</span></div>";
+      if (outcomesGroup) outcomesGroup.classList.add("hidden");
       return;
     }
+    
+    // Sayfada öğrenme çıktıları varsa bölümü görünür yap
+    if (outcomesGroup) outcomesGroup.classList.remove("hidden");
     
     pageOutcomes.forEach(outcome => {
       const match = outcome.match(/^([A-Z\.\d\-]+)\s+(.+)$/i);

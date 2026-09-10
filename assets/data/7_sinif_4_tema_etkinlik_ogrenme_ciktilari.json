@@ -1,0 +1,252 @@
+{
+  "sinif": "7. Sınıf",
+  "kitap": "2. Kitap (Book 6)",
+  "tema": "4. Tema: Türk Sanatı",
+  "metin_1": {
+    "baslik": "Anadolu'da Kilim Demek",
+    "yazar": "Mehmet ÖNDER",
+    "sayfa_araligi": "11 - 22 (Kitapta 12 - 23)",
+    "etkinlikler": [
+      {
+        "sayfa_dosya": 11,
+        "sayfa_kitap": 12,
+        "etkinlik_adi": "Hazırlık Vakti",
+        "tur": "Sözlü / Ön Bilgileri Harekete Geçirme",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.K.7.2",
+            "aciklama": "Konuşmada yöntem ve teknik seçimlerini yönetebilme"
+          },
+          {
+            "kod": "T.K.7.13",
+            "aciklama": "Yorumunu sözlü olarak ifade edebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 14,
+        "sayfa_kitap": 15,
+        "etkinlik_adi": "1. Etkinlik (Söz Varlığı / Çağrışımlar ve Sözlük Anlamları)",
+        "tur": "Eşleştirme ve Serbest Çağrışım Yazma",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.7.4",
+            "aciklama": "Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme"
+          },
+          {
+            "kod": "T.O.7.20",
+            "aciklama": "Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 15,
+        "sayfa_kitap": 16,
+        "etkinlik_adi": "2. Etkinlik (Metni Anlama ve Çözümleme: A, B, C soruları ve Ç Ana Fikir)",
+        "tur": "Açık Uçlu Anlama ve Ana Düşünce Belirleme",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.7.5",
+            "aciklama": "Metnin yüzey anlamını belirleyebilme"
+          },
+          {
+            "kod": "T.O.7.7",
+            "aciklama": "Basit çıkarımlar yoluyla metnin derin anlamını belirleyebilme"
+          },
+          {
+            "kod": "T.O.7.8",
+            "aciklama": "Üst düzey çıkarımlar yoluyla metnin derin anlamını belirleyebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 15,
+        "sayfa_kitap": 16,
+        "etkinlik_adi": "3. Etkinlik (Sözlü Değerlendirme Soruları)",
+        "tur": "Sözlü İfade ve Yorumlama",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.K.7.13",
+            "aciklama": "Yorumunu sözlü olarak ifade edebilme"
+          },
+          {
+            "kod": "T.O.7.5",
+            "aciklama": "Metnin yüzey anlamını belirleyebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 16,
+        "sayfa_kitap": 17,
+        "etkinlik_adi": "4. Etkinlik (Problem Tespiti ve Üç Olası Çözüm Yolu Üretme)",
+        "tur": "Eleştirel Düşünme / Problem Çözme ve Çözüm Önerisi Yazma",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.7.8",
+            "aciklama": "Üst düzey çıkarımlar yoluyla metnin derin anlamını belirleyebilme"
+          },
+          {
+            "kod": "T.Y.7.3",
+            "aciklama": "Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme"
+          },
+          {
+            "kod": "T.O.7.24",
+            "aciklama": "Metni eleştirebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 17,
+        "sayfa_kitap": 18,
+        "etkinlik_adi": "5. Etkinlik (Cümleleri Öznel/Nesnel Bakımından Tasnif Etme)",
+        "tur": "Cümle Düzeyinde Anlam / Gruplandırma ve Tasnif",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.7.7",
+            "aciklama": "Basit çıkarımlar yoluyla metnin derin anlamını belirleyebilme"
+          },
+          {
+            "kod": "T.Y.7.10",
+            "aciklama": "Yazısında sınıflandırma yapabilme"
+          },
+          {
+            "kod": "T.O.7.24",
+            "aciklama": "Metni eleştirebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 17,
+        "sayfa_kitap": 18,
+        "etkinlik_adi": "6. Etkinlik (İkna Etme Tekniklerini Kullanma)",
+        "tur": "İkna Teknikleri Çözümleme ve Uygulama",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.7.20",
+            "aciklama": "Metinde kullanılan ikna etme tekniklerini belirlemeye yönelik çözümleme yapabilme"
+          },
+          {
+            "kod": "T.Y.7.16",
+            "aciklama": "Yazısını zenginleştirecek biçimde söz varlığını kullanabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 18,
+        "sayfa_kitap": 19,
+        "etkinlik_adi": "7. Etkinlik (İki Metni Karşılaştırma: Benzerlikler ve Farklılıklar)",
+        "tur": "Metinler Arası Karşılaştırma Tablosu",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.7.9",
+            "aciklama": "Okuduklarını karşılaştırabilme"
+          },
+          {
+            "kod": "T.Y.7.7",
+            "aciklama": "Yazısında karşılaştırma yapabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 19,
+        "sayfa_kitap": 20,
+        "etkinlik_adi": "8. Etkinlik (Türk El Sanatları-Çini Sanatı İçeriği İzleme ve Not Alma)",
+        "tur": "Dinleme/İzleme Not Tutma ve Bilgi Şeması Doldurma",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.D.7.2",
+            "aciklama": "Dinlemede/izlemede strateji, yöntem ve teknik seçimlerini yönetebilme"
+          },
+          {
+            "kod": "T.D.7.5",
+            "aciklama": "Dinlediğinin/izlediğinin yüzey anlamını belirleyebilme"
+          },
+          {
+            "kod": "T.D.7.9",
+            "aciklama": "Dinlediğindeki/izlediğindeki unsurları sınıflandırabilme"
+          },
+          {
+            "kod": "T.Y.7.10",
+            "aciklama": "Yazılı olarak özetleyebilme / sınıflandırma yapabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 20,
+        "sayfa_kitap": 21,
+        "etkinlik_adi": "9. Etkinlik (Çini Tabaklarını İnceleme) ve 10. Etkinlik (Konuşma Vakti)",
+        "tur": "Görsel Yorumlama ve Geleneksel Sanatlar Konuşması",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.7.6",
+            "aciklama": "Görselle iletilen anlamı belirleyebilme"
+          },
+          {
+            "kod": "T.K.7.13",
+            "aciklama": "Yorumunu sözlü olarak ifade edebilme"
+          },
+          {
+            "kod": "T.K.7.2",
+            "aciklama": "Konuşmada yöntem ve teknik seçimlerini yönetebilme"
+          },
+          {
+            "kod": "T.K.7.12",
+            "aciklama": "Konuşmasında sınıflandırma yapabilme"
+          },
+          {
+            "kod": "T.K.7.21",
+            "aciklama": "Konuşmasını zenginleştirecek biçimde söz varlığını kullanabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 21,
+        "sayfa_kitap": 22,
+        "etkinlik_adi": "11. Etkinlik (Yazma Vakti: Gelecekte Dramatik Sanatlar ve Teknoloji)",
+        "tur": "Tahmin ve Neden-Sonuç Temelli Serbest Yazma",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.Y.7.3",
+            "aciklama": "Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme"
+          },
+          {
+            "kod": "T.Y.7.15",
+            "aciklama": "Düşünceyi geliştirme yollarını kullanarak metni yapılandırabilme"
+          },
+          {
+            "kod": "T.Y.7.16",
+            "aciklama": "Yazısını zenginleştirecek biçimde söz varlığını kullanabilme"
+          },
+          {
+            "kod": "T.Y.7.18",
+            "aciklama": "Uygun bağlantı ifadelerini kullanabilme"
+          },
+          {
+            "kod": "T.Y.7.19",
+            "aciklama": "Yazım ve noktalama işaretleriyle ilgili kuralları uygulayabilme"
+          },
+          {
+            "kod": "T.Y.7.20",
+            "aciklama": "Yazma sürecini değerlendirebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 22,
+        "sayfa_kitap": 23,
+        "etkinlik_adi": "Kitap Vakti - Film Vakti",
+        "tur": "Okuma ve İzleme Önerileri / Gelecek Derse Hazırlık",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.7.1",
+            "aciklama": "Okumada materyal seçimini yönetebilme"
+          },
+          {
+            "kod": "T.D.7.1",
+            "aciklama": "Dinlemede/izlemede materyal seçimini yönetebilme"
+          }
+        ]
+      }
+    ]
+  }
+}
