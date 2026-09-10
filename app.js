@@ -134,7 +134,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (card.classList.contains("tools-card")) return;
         const grade = card.dataset.grade;
         if (card.classList.contains("locked")) {
-          showToast(`Müfredat hazırlığı sürüyor! ${grade}. Sınıf interaktif kitabı yakında eklenecektir.`);
+          showToast(`Müfredat hazırlığı sürüyor! ${grade}. Sınıf etkileşimli kitabı yakında eklenecektir.`);
           return;
         }
         state.currentGrade = parseInt(grade);
