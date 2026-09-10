@@ -223,13 +223,13 @@ document.addEventListener("DOMContentLoaded", () => {
           state.maxPages = 176;
           state.currentPage = 12;
         } else if (state.currentBook === 2) {
-          state.maxPages = 161;
+          state.maxPages = 159;
           state.currentPage = 12;
         } else if (state.currentBook === 3) {
-          state.maxPages = 182;
+          state.maxPages = 177;
           state.currentPage = 12;
         } else if (state.currentBook === 4) {
-          state.maxPages = 160;
+          state.maxPages = 159;
           state.currentPage = 12;
         } else if (state.currentBook === 5) {
           state.maxPages = 176;
