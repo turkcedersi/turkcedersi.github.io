@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gerçek mi? Mecaz mı?</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0f1117;
+    --surface: #1a1d27;
+    --surface2: #22263a;
+    --text: #e8eaf6;
+    --text-dim: #8892b0;
+    --accent: #7c83fd;
+    --highlight: #ffd166;
+    --correct: #06d6a0;
+    --wrong: #ef4565;
+    --btn-gercek: #3a86ff;
+    --btn-mecaz: #ff6b6b;
+    --radius: 18px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Nunito', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* Stars background */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      radial-gradient(1px 1px at 15% 20%, rgba(255,255,255,0.4) 0%, transparent 100%),
+      radial-gradient(1px 1px at 75% 10%, rgba(255,255,255,0.3) 0%, transparent 100%),
+      radial-gradient(1px 1px at 40% 80%, rgba(255,255,255,0.35) 0%, transparent 100%),
+      radial-gradient(1px 1px at 90% 55%, rgba(255,255,255,0.2) 0%, transparent 100%),
+      radial-gradient(1px 1px at 5% 60%, rgba(255,255,255,0.25) 0%, transparent 100%),
+      radial-gradient(1.5px 1.5px at 55% 35%, rgba(255,255,255,0.3) 0%, transparent 100%),
+      radial-gradient(1px 1px at 30% 50%, rgba(255,255,255,0.2) 0%, transparent 100%),
+      radial-gradient(2px 2px at 80% 85%, rgba(255,255,255,0.15) 0%, transparent 100%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .container {
+    width: 92%;
+    max-width: 860px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Header */
+  .header {
+    text-align: center;
+    margin-bottom: 28px;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+    background: linear-gradient(135deg, #7c83fd, #ffd166);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 6px;
+  }
+
+  .progress-bar-wrap {
+    background: var(--surface2);
+    border-radius: 99px;
+    height: 8px;
+    overflow: hidden;
+    margin-top: 10px;
+  }
+
+  .progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent), var(--highlight));
+    border-radius: 99px;
+    transition: width 0.5s ease;
+  }
+
+  .counter {
+    font-size: 0.9rem;
+    color: var(--text-dim);
+    margin-top: 6px;
+    font-weight: 600;
+  }
+
+  /* Card */
+  .card {
+    background: var(--surface);
+    border-radius: var(--radius);
+    padding: 44px 48px;
+    border: 1px solid rgba(255,255,255,0.07);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    margin-bottom: 28px;
+    min-height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent), var(--highlight));
+    border-radius: var(--radius) var(--radius) 0 0;
+  }
+
+  .sentence {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.5;
+    color: var(--text);
+  }
+
+  .highlight-word {
+    color: var(--highlight);
+    font-weight: 900;
+    font-size: 2.1rem;
+    position: relative;
+    display: inline-block;
+    padding: 0 2px;
+  }
+
+  .highlight-word::after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 0; right: 0;
+    height: 3px;
+    background: var(--highlight);
+    border-radius: 2px;
+    opacity: 0.6;
+  }
+
+  /* Feedback bar */
+  .feedback {
+    min-height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.05rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+    opacity: 0;
+    transform: translateY(6px);
+    transition: opacity 0.3s, transform 0.3s;
+  }
+
+  .feedback.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .feedback.correct-fb {
+    background: rgba(6, 214, 160, 0.12);
+    border: 1px solid rgba(6, 214, 160, 0.35);
+    color: var(--correct);
+  }
+
+  .feedback.wrong-fb {
+    background: rgba(239, 69, 101, 0.12);
+    border: 1px solid rgba(239, 69, 101, 0.35);
+    color: #ff8fa3;
+  }
+
+  /* Buttons */
+  .btn-row {
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    margin-bottom: 22px;
+  }
+
+  .btn-answer {
+    flex: 1;
+    max-width: 220px;
+    padding: 20px 10px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 900;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: transform 0.15s, box-shadow 0.15s, filter 0.2s;
+    letter-spacing: 0.5px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .btn-answer::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(255,255,255,0.08);
+    opacity: 0;
+    transition: opacity 0.15s;
+  }
+
+  .btn-answer:hover:not(:disabled)::before { opacity: 1; }
+  .btn-answer:hover:not(:disabled) { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
+  .btn-answer:active:not(:disabled) { transform: translateY(0px); }
+
+  .btn-answer:disabled {
+    cursor: not-allowed;
+    filter: brightness(0.6) saturate(0.5);
+  }
+
+  .btn-answer.btn-gercek {
+    background: linear-gradient(135deg, #3a86ff, #2667cc);
+    color: white;
+    box-shadow: 0 4px 20px rgba(58,134,255,0.35);
+  }
+
+  .btn-answer.btn-mecaz {
+    background: linear-gradient(135deg, #ff6b6b, #cc4444);
+    color: white;
+    box-shadow: 0 4px 20px rgba(255,107,107,0.35);
+  }
+
+  .btn-answer.correct-choice {
+    filter: brightness(1.2) !important;
+    box-shadow: 0 0 0 3px var(--correct), 0 8px 28px rgba(6,214,160,0.4) !important;
+    background: linear-gradient(135deg, #06d6a0, #04a87d) !important;
+    color: white !important;
+  }
+
+  .btn-next {
+    display: block;
+    margin: 0 auto;
+    padding: 16px 52px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--accent), #5a62e8);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 18px rgba(124,131,253,0.4);
+    transition: transform 0.15s, box-shadow 0.15s, opacity 0.3s;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .btn-next.show {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .btn-next:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(124,131,253,0.5); }
+
+  /* Score chip */
+  .score-chip {
+    position: fixed;
+    top: 22px;
+    right: 28px;
+    background: var(--surface);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 99px;
+    padding: 8px 18px;
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--text);
+    z-index: 10;
+    display: flex;
+    gap: 14px;
+  }
+
+  .score-chip .sc { color: var(--correct); }
+  .score-chip .sw { color: var(--wrong); }
+
+  /* Aferin */
+  .aferin {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    font-size: 5rem;
+    font-weight: 900;
+    color: var(--highlight);
+    z-index: 100;
+    pointer-events: none;
+    text-shadow: 0 4px 30px rgba(255,209,102,0.7);
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s;
+    opacity: 0;
+    letter-spacing: -1px;
+  }
+
+  .aferin.show {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+
+  /* Confetti */
+  .confetti-piece {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    top: -10px;
+    border-radius: 2px;
+    animation: confetti-fall linear forwards;
+    z-index: 99;
+    pointer-events: none;
+  }
+
+  @keyframes confetti-fall {
+    0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+    80% { opacity: 1; }
+    100% { transform: translateY(110vh) rotate(720deg); opacity: 0; }
+  }
+
+  /* Shake */
+  @keyframes shake {
+    0%,100% { transform: translateX(0); }
+    20% { transform: translateX(-8px); }
+    40% { transform: translateX(8px); }
+    60% { transform: translateX(-5px); }
+    80% { transform: translateX(5px); }
+  }
+
+  .shake { animation: shake 0.4s ease; }
+
+  /* Pulse correct */
+  @keyframes pulse-correct {
+    0% { box-shadow: 0 0 0 0 rgba(6,214,160,0.6); }
+    70% { box-shadow: 0 0 0 18px rgba(6,214,160,0); }
+    100% { box-shadow: 0 0 0 0 rgba(6,214,160,0); }
+  }
+</style>
+</head>
+<body>
+<div class="score-chip">
+  <span>✅ <span class="sc" id="scoreCorrect">0</span></span>
+  <span>❌ <span class="sw" id="scoreWrong">0</span></span>
+</div>
+
+<div class="aferin" id="aferin">🌟 Aferin!</div>
+
+<div class="container">
+  <div class="header">
+    <h1>Gerçek mi? Mecaz mı?</h1>
+    <div class="progress-bar-wrap">
+      <div class="progress-bar" id="progressBar" style="width:0%"></div>
+    </div>
+    <div class="counter" id="counter">1 / 500</div>
+  </div>
+
+  <div class="card" id="card">
+    <div class="sentence" id="sentence"></div>
+  </div>
+
+  <div class="feedback" id="feedback"></div>
+
+  <div class="btn-row">
+    <button class="btn-answer btn-gercek" id="btnGercek" onclick="answer('gercek')">Gerçek</button>
+    <button class="btn-answer btn-mecaz" id="btnMecaz" onclick="answer('mecaz')">Mecaz</button>
+  </div>
+
+  <button class="btn-next" id="btnNext" onclick="nextQuestion()">Sonraki Soru →</button>
+</div>
+
+<script>
+// ─── SORU HAVUZU ──────────────────────────────────────────────────────────────
+// Format: { s: "cümle", w: "vurgulanan kelime", a: "gercek"|"mecaz", e: "kısa açıklama" }
+// w: cümlede renklendirilen sözcük (tam eşleşme)
+
+const questions = [
+  // ── GERCEK ANLAM ──────────────────────────────────────────────────────────
+  {s:"Bahçedeki elma ağacı bu yıl çok meyve verdi.", w:"elma", a:"gercek", e:"Elma burada gerçek bir meyveyi ifade ediyor."},
+  {s:"Masanın üzerindeki su bardağı devrildi.", w:"su", a:"gercek", e:"Su burada gerçek anlamıyla sıvıyı ifade ediyor."},
+  {s:"Soğuk havada eli çok üşüdü.", w:"el", a:"gercek", e:"El burada vücudun gerçek organını ifade ediyor."},
+  {s:"Köpek, bahçede koşarak oynuyordu.", w:"köpek", a:"gercek", e:"Köpek burada gerçek bir hayvanı ifade ediyor."},
+  {s:"Sabah uyandığında güneş yükseliyordu.", w:"güneş", a:"gercek", e:"Güneş burada gökteki gerçek güneş cismi."},
+  {s:"Çantasından kalemi çıkarıp yazmaya başladı.", w:"kalem", a:"gercek", e:"Kalem burada gerçek bir yazma aracını ifade ediyor."},
+  {s:"Masanın ayağı kırılmış.", w:"ayak", a:"gercek", e:"Masa ayağı mecaz değil, masanın gerçek desteğini ifade eder. (Bu aslında mecaz değil, yan anlam – burada gerçek işlevsel kullanım olduğundan gerçek anlam kategorisinde.)"},
+  {s:"Camdan dışarı baktım, kar yağıyordu.", w:"kar", a:"gercek", e:"Kar burada gerçek anlamıyla yağış türünü ifade ediyor."},
+  {s:"Ormanda bir ayı gördüler.", w:"ayı", a:"gercek", e:"Ayı burada gerçek bir hayvanı ifade ediyor."},
+  {s:"Çocuk, kırmızı topu uzaklara fırlattı.", w:"top", a:"gercek", e:"Top burada gerçek anlamıyla oyun aracını ifade ediyor."},
+  {s:"Yemekten sonra ellerini yıkadı.", w:"eller", a:"gercek", e:"Eller burada vücudun gerçek organını ifade ediyor."},
+  {s:"Bahçeye bir çukur kazıldı.", w:"çukur", a:"gercek", e:"Çukur burada gerçek anlamıyla yerdeki boşluğu ifade ediyor."},
+  {s:"Denizde büyük bir balık gördük.", w:"balık", a:"gercek", e:"Balık burada gerçek bir deniz canlısını ifade ediyor."},
+  {s:"Ağacın yaprağı sarardı.", w:"yaprak", a:"gercek", e:"Yaprak burada gerçek anlamıyla ağaç organını ifade ediyor."},
+  {s:"Kitabın kapağı yırtılmış.", w:"kapak", a:"gercek", e:"Kapak burada kitabın gerçek dış yüzeyini ifade ediyor."},
+  {s:"Soğuk su içip serinledi.", w:"soğuk", a:"gercek", e:"Soğuk burada gerçek anlamıyla düşük sıcaklığı ifade ediyor."},
+  {s:"Annesi ona sıcak çorba pişirdi.", w:"sıcak", a:"gercek", e:"Sıcak burada gerçek anlamıyla yüksek sıcaklığı ifade ediyor."},
+  {s:"Çiçekler bahar gelince açtı.", w:"çiçekler", a:"gercek", e:"Çiçekler burada gerçek anlamıyla bitkileri ifade ediyor."},
+  {s:"Kardeşi ona büyük bir kutu getirdi.", w:"kutu", a:"gercek", e:"Kutu burada gerçek anlamıyla bir kap nesneyi ifade ediyor."},
+  {s:"Pencereden içeriye ışık giriyordu.", w:"ışık", a:"gercek", e:"Işık burada gerçek anlamıyla güneş ışınlarını ifade ediyor."},
+  {s:"Köyde bir çeşme vardı.", w:"çeşme", a:"gercek", e:"Çeşme burada gerçek anlamıyla su yapısını ifade ediyor."},
+  {s:"Yolun kenarına ağaç dikildi.", w:"yol", a:"gercek", e:"Yol burada gerçek anlamıyla güzergahı ifade ediyor."},
+  {s:"Tahta masa çok ağırdı.", w:"ağır", a:"gercek", e:"Ağır burada gerçek anlamıyla kütleyi ifade ediyor."},
+  {s:"Kovaya su doldurup çiçekleri suladı.", w:"kova", a:"gercek", e:"Kova burada gerçek anlamıyla kabı ifade ediyor."},
+  {s:"Pencerenin camı kırıldı.", w:"cam", a:"gercek", e:"Cam burada gerçek anlamıyla şeffaf malzemeyi ifade ediyor."},
+  {s:"Kedi, balıkları yemekten çok hoşlanır.", w:"kedi", a:"gercek", e:"Kedi burada gerçek bir hayvanı ifade ediyor."},
+  {s:"Köyde yaşlı bir çınar ağacı vardı.", w:"çınar", a:"gercek", e:"Çınar burada gerçek anlamıyla bir ağaç türünü ifade ediyor."},
+  {s:"Buz gibi soğuk suda yüzdü.", w:"buz", a:"gercek", e:"Buz burada gerçek anlamıyla donmuş suyu ifade ediyor."},
+  {s:"Kuş sabah erken ötmeye başladı.", w:"kuş", a:"gercek", e:"Kuş burada gerçek bir hayvanı ifade ediyor."},
+  {s:"Gözleri mavi ve parlaktı.", w:"mavi", a:"gercek", e:"Mavi burada gerçek anlamıyla bir rengi ifade ediyor."},
+  {s:"Dağda kar birikmiş.", w:"dağ", a:"gercek", e:"Dağ burada gerçek coğrafi oluşumu ifade ediyor."},
+  {s:"Çocuk, taşı suya attı.", w:"taş", a:"gercek", e:"Taş burada gerçek anlamıyla katı maddeyi ifade ediyor."},
+  {s:"Akşam çok güzel bir gün batımı izlediler.", w:"gün batımı", a:"gercek", e:"Gün batımı burada gerçek anlamıyla günün bitişini ifade ediyor."},
+  {s:"Evde büyük bir akvaryum var.", w:"akvaryum", a:"gercek", e:"Akvaryum burada gerçek anlamıyla balık kabını ifade ediyor."},
+  {s:"Sabahları soğuk hava onu uyandırırdı.", w:"hava", a:"gercek", e:"Hava burada gerçek anlamıyla atmosfer koşullarını ifade ediyor."},
+  {s:"Deniz mavisi bir gömlek giydi.", w:"deniz mavisi", a:"gercek", e:"Burada deniz mavisi gerçek anlamıyla bir renk tonunu ifade ediyor."},
+  {s:"Koşarken dizini yere vurdu.", w:"diz", a:"gercek", e:"Diz burada vücudun gerçek eklemini ifade ediyor."},
+  {s:"Odunları baltayla kesti.", w:"balta", a:"gercek", e:"Balta burada gerçek anlamıyla kesici aleti ifade ediyor."},
+  {s:"Tarlada buğday ekildi.", w:"buğday", a:"gercek", e:"Buğday burada gerçek anlamıyla tarım bitkisini ifade ediyor."},
+  {s:"Boynu uzun bir zürafa gördüler.", w:"boyun", a:"gercek", e:"Boyun burada vücudun gerçek bölümünü ifade ediyor."},
+  {s:"Derin bir kuyudan su çıkarıldı.", w:"kuyu", a:"gercek", e:"Kuyu burada gerçek anlamıyla su kuyusunu ifade ediyor."},
+  {s:"Rüzgarda ağaçların dalları sallandı.", w:"dal", a:"gercek", e:"Dal burada gerçek anlamıyla ağaç organını ifade ediyor."},
+  {s:"Sert bir taşa ayağı takıldı.", w:"sert", a:"gercek", e:"Sert burada gerçek anlamıyla katılığı ifade ediyor."},
+  {s:"Uçakta küçük bir pencere vardı.", w:"pencere", a:"gercek", e:"Pencere burada gerçek anlamıyla cam açıklığını ifade ediyor."},
+  {s:"Annesi ona elma suyu hazırladı.", w:"elma suyu", a:"gercek", e:"Elma suyu burada gerçek içeceği ifade ediyor."},
+  {s:"Ayın on beşinde doğmuş.", w:"ay", a:"gercek", e:"Ay burada gerçek anlamıyla zaman ölçü birimini ifade ediyor."},
+  {s:"Merdivenin son basamağında durdu.", w:"basamak", a:"gercek", e:"Basamak burada gerçek anlamıyla merdiven kademesini ifade ediyor."},
+  {s:"Fare, peyniri kemiriyordu.", w:"fare", a:"gercek", e:"Fare burada gerçek bir hayvanı ifade ediyor."},
+  {s:"Karanlık bir gecede yıldızlar parlıyordu.", w:"yıldız", a:"gercek", e:"Yıldız burada gökteki gerçek gök cisimlerini ifade ediyor."},
+  {s:"Küçük kardeşi için oyuncak aldı.", w:"oyuncak", a:"gercek", e:"Oyuncak burada gerçek anlamıyla oyun nesnesini ifade ediyor."},
+
+  // ── MECAZ ANLAM ───────────────────────────────────────────────────────────
+  {s:"Onun gözleri yıldız gibi parlıyordu.", w:"yıldız", a:"mecaz", e:"Yıldız burada mecaz olarak parlaklığı ifade ediyor; gözler gerçekten yıldız değil."},
+  {s:"Bu haberi duyunca içim yandı.", w:"içim yandı", a:"mecaz", e:"İçi gerçekten yanmadı; bu ifade büyük üzüntüyü anlatıyor."},
+  {s:"Arkadaşı ona soğuk davrandı.", w:"soğuk", a:"mecaz", e:"Soğuk burada gerçek sıcaklıkla değil, ilgisiz tavırla ilgili."},
+  {s:"Öğretmen sınıfta çiçek açtırdı.", w:"çiçek açtırdı", a:"mecaz", e:"Çiçek açtırmak mecaz; öğrencilerin gelişimini anlatıyor."},
+  {s:"Sınavda donup kaldı.", w:"donup kaldı", a:"mecaz", e:"Gerçekten donmadı; korkuyla hareketsiz kalmayı anlatıyor."},
+  {s:"O bir sınıfın güneşiydi.", w:"güneşiydi", a:"mecaz", e:"Güneş burada mecaz; sınıfı aydınlatan, neşelendiren biri anlamında."},
+  {s:"Kalbim sıkışıyor bu haberi duyunca.", w:"kalbim sıkışıyor", a:"mecaz", e:"Kalbin fiziksel sıkışması değil; sıkıntı ve üzüntü hissini ifade ediyor."},
+  {s:"Yüzü kül gibi oldu.", w:"kül gibi", a:"mecaz", e:"Yüzü gerçekten kül rengi olmadı; solukluk ve şaşkınlık ifade ediliyor."},
+  {s:"Çalışarak başarının kapısını araladı.", w:"kapısını araladı", a:"mecaz", e:"Başarının gerçek bir kapısı yok; fırsatı yakalamak anlamında mecaz."},
+  {s:"Söyledikleri benim kalbime ok gibi saplandı.", w:"ok gibi saplandı", a:"mecaz", e:"Gerçek bir ok yok; sözlerin çok acıtmasını anlatıyor."},
+  {s:"Gençlik, insanın en güzel baharıdır.", w:"baharıdır", a:"mecaz", e:"Gençlik mevsim değil; canlılık ve güzellik dönemi anlamında mecaz."},
+  {s:"Korkudan dili tutuldu.", w:"dili tutuldu", a:"mecaz", e:"Dili gerçekten tutulmadı; konuşamaz hâle gelmesini anlatıyor."},
+  {s:"Bu iş benim elimden gelmez.", w:"elimden gelmez", a:"mecaz", e:"El gerçekten bir şey tutmuyor; yapamayacağını ifade ediyor."},
+  {s:"O gün bize güneş doğmadı.", w:"güneş doğmadı", a:"mecaz", e:"Güneş gerçekten doğmadı değil; mutluluk ve umut gelmedi anlamında."},
+  {s:"Yüreğim ağzıma geldi korkunçtu.", w:"yüreğim ağzıma geldi", a:"mecaz", e:"Yürek fizikte yerini korur; çok korktum anlamında mecaz."},
+  {s:"Hafıza, geçmişin aynasıdır.", w:"aynasıdır", a:"mecaz", e:"Hafıza gerçek bir ayna değil; geçmişi yansıtma özelliğini anlatıyor."},
+  {s:"Bu sözler benim içimde taş gibi kaldı.", w:"taş gibi kaldı", a:"mecaz", e:"Gerçek taş yok; sözlerin ağırlığını ve baskısını ifade ediyor."},
+  {s:"Annesi onu görmeyince dağlara düştü.", w:"dağlara düştü", a:"mecaz", e:"Dağlara gerçekten düşmedi; derin üzüntü ve kaybolmuşluk ifade ediliyor."},
+  {s:"Çocukların sesi odayı doldurdu.", w:"doldurdu", a:"mecaz", e:"Ses gerçekten bir madde değil; ortamı kapladığını mecazla anlatıyor."},
+  {s:"O benim için göz bebeğimdir.", w:"göz bebeğimdir", a:"mecaz", e:"Göz bebeği değil; çok değerli ve sevgili anlamında mecaz."},
+  {s:"Kötü haber kulaktan kulağa yayıldı.", w:"kulaktan kulağa", a:"mecaz", e:"Gerçek bir kulak zincirlenmesi yok; söylentinin yayılmasını anlatıyor."},
+  {s:"Sevinçten uçacak gibiydi.", w:"uçacak gibiydi", a:"mecaz", e:"Gerçekten uçamaz; büyük sevinç ve hafiflik hissini ifade ediyor."},
+  {s:"Kaderin cilvesine bak.", w:"cilve", a:"mecaz", e:"Kader gerçekten hareket etmez; şaşırtıcı rastlantıyı anlatıyor."},
+  {s:"Sözleri bana çok dokundu.", w:"dokundu", a:"mecaz", e:"Söz fiziksel olarak dokunmaz; duygusal etkilenmeyi ifade ediyor."},
+  {s:"Bu memleket hepimizin anasıdır.", w:"anasıdır", a:"mecaz", e:"Memleket gerçek anne değil; bağlılık ve şefkati anlatıyor."},
+  {s:"Kalbi taş gibi bir adamdı.", w:"taş gibi", a:"mecaz", e:"Kalbi gerçekten taş değil; duygusuz olduğunu anlatıyor."},
+  {s:"Arkadaşının sözleri beni yaktı.", w:"yaktı", a:"mecaz", e:"Gerçek bir yanma yok; sözlerin acı verdiğini anlatıyor."},
+  {s:"Derslerini dinlemeyince kafası karıştı.", w:"kafası karıştı", a:"mecaz", e:"Kafanın içi gerçekten karışmadı; zihin karışıklığını anlatıyor."},
+  {s:"Gözü yükseklerde olan bir çocuktu.", w:"gözü yükseklerde", a:"mecaz", e:"Gözü gerçekten yüksekte değil; büyük hedefleri olduğunu anlatıyor."},
+  {s:"Onun bakışları beni dondurdu.", w:"dondurdu", a:"mecaz", e:"Gerçek bir donma yok; bakışların etkisini mecazla anlatıyor."},
+  {s:"Söylediği her şey yüreğime işledi.", w:"yüreğime işledi", a:"mecaz", e:"Yüreğe gerçek bir şey işlemez; derin etki anlamında mecaz."},
+  {s:"Bu şehir bizi bağrına bastı.", w:"bağrına bastı", a:"mecaz", e:"Şehrin gerçek bağrı yok; sıcak karşılanmayı anlatıyor."},
+  {s:"Aklı başından gitti.", w:"aklı başından gitti", a:"mecaz", e:"Akıl gerçekten bir yere gitmez; çok şaşırıp sersemlemesini anlatıyor."},
+  {s:"İçindeki ateş hiç söndü.", w:"ateş", a:"mecaz", e:"Gerçek ateş değil; tutku ve istek anlamında mecaz."},
+  {s:"Gözlerim yollarda kaldı.", w:"gözlerim yollarda kaldı", a:"mecaz", e:"Gözler yolda kalmadı; birini beklemeyi ve özlemi anlatıyor."},
+  {s:"O kadar çok ağladı ki taşı eritirdi.", w:"taşı eritirdi", a:"mecaz", e:"Taşı gerçekten eritmedi; büyük acıyı ve üzüntüyü ifade ediyor."},
+  {s:"Konuşmasının ağırlığı herkesi ezdi.", w:"ağırlığı", a:"mecaz", e:"Konuşmanın gerçek bir ağırlığı yoktur; etkisini mecazla anlatıyor."},
+  {s:"Yıllar onu çökertmişti.", w:"çökertmişti", a:"mecaz", e:"Gerçekten çökmedi; yorgun ve yaşlanmış olduğunu anlatıyor."},
+  {s:"Sabırla pişmiş aşı süt döküldü.", w:"süt döküldü", a:"mecaz", e:"Gerçek süt değil; emekle yapılanın mahvolmasını anlatıyor."},
+  {s:"Bu meseleyi çözümleyecek bir anahtar buldu.", w:"anahtar", a:"mecaz", e:"Gerçek anahtar yok; sorunu çözecek yöntemi mecazla anlatıyor."},
+  {s:"Kaderin ağına düştü.", w:"ağına düştü", a:"mecaz", e:"Gerçek bir ağ yok; kaderinin elinde kaldığını anlatıyor."},
+  {s:"Gözü açık olacaksın bu işte.", w:"gözü açık", a:"mecaz", e:"Gözü gerçekten açılmadı; dikkatli ve uyanık olmasını söylüyor."},
+  {s:"Memleket hasreti yüreğimi kemirdi.", w:"kemirdi", a:"mecaz", e:"Gerçekten kemirmedi; özlemin içten içe acıtmasını anlatıyor."},
+  {s:"Yüzü asıldı, sormayın.", w:"yüzü asıldı", a:"mecaz", e:"Yüz gerçekten asılmadı; üzgün ve somurtkan ifadeyi anlatıyor."},
+  {s:"Bütün kapılar onun yüzüne kapandı.", w:"kapılar kapandı", a:"mecaz", e:"Gerçek kapılar değil; fırsatların ve yardımların kesilmesini anlatıyor."},
+  {s:"Bu sabah içine bir kurt düştü.", w:"kurt düştü", a:"mecaz", e:"Gerçek kurt değil; içine sıkıntı veya şüphe girdiğini anlatıyor."},
+  {s:"Düşünceleri onu boğuyordu.", w:"boğuyordu", a:"mecaz", e:"Gerçek boğulma değil; düşüncelerin bunaltmasını ifade ediyor."},
+  {s:"O konuşunca herkes kulak kesildi.", w:"kulak kesildi", a:"mecaz", e:"İnsanlar gerçekten kulağa dönmedi; dikkatle dinlediklerini anlatıyor."},
+  {s:"Sözleri bana bir ok gibi saplandı.", w:"ok gibi", a:"mecaz", e:"Gerçek ok değil; sözlerin çok acıtmasını anlatıyor."},
+  {s:"Haber şimşek hızıyla yayıldı.", w:"şimşek hızıyla", a:"mecaz", e:"Şimşek gerçek değil; haberin çok hızlı yayıldığını anlatıyor."},
+  {s:"Onun yüreği deniz kadar geniş.", w:"deniz kadar geniş", a:"mecaz", e:"Yürek gerçekten deniz boyutunda değil; cömertliği ve büyüklüğü anlatıyor."},
+  {s:"Bu şarkı kalbimi sızlattı.", w:"sızlattı", a:"mecaz", e:"Kalp gerçekten sızlamadı; duygu yoğunluğunu anlatıyor."},
+  {s:"Sırtında dağ gibi yük taşıyor.", w:"dağ gibi yük", a:"mecaz", e:"Dağ değil; çok ağır sorumlulukları olduğunu anlatıyor."},
+  {s:"Yıllar geçince acıyı yutuverdi.", w:"yutuverdi", a:"mecaz", e:"Acıyı gerçekten yutmadı; acıyı içine atıp geçirmesini anlatıyor."},
+  {s:"Sevinci gözlerinden okunuyordu.", w:"gözlerinden okunuyordu", a:"mecaz", e:"Gözler kitap değil; sevinç halini bakıştan anlamayı anlatıyor."},
+  {s:"Masanın ayağı çok eğri kesilmiş.", w:"ayağı", a:"gercek", e:"Masa ayağı gerçek anlamıyla mobilyanın desteğini ifade ediyor."},
+  {s:"Şişenin boynunu kapak sıkıca kapatıyordu.", w:"boynunu", a:"gercek", e:"Şişe boynu gerçek anlamıyla şişenin dar üst bölümünü ifade ediyor."},
+  {s:"Dağın eteğinde küçük bir köy vardı.", w:"eteğinde", a:"gercek", e:"Burada dağın eteği gerçek coğrafi anlamda dağın alt kısmıdır. (Yan anlam ama okul müfredatında gerçek anlam olarak verilir.)"},
+  {s:"Geminin burnu rüzgara döndü.", w:"burnu", a:"gercek", e:"Geminin burnu gerçek anlamıyla geminin ön ucu."},
+  {s:"Fabrikanın bacası dumanla dolmuş.", w:"bacası", a:"gercek", e:"Baca burada gerçek anlamıyla duman çıkış yapısını ifade ediyor."},
+  {s:"Çekicin sapı kırılmış.", w:"sapı", a:"gercek", e:"Sap burada gerçek anlamıyla tutma kısmını ifade ediyor."},
+  {s:"Bıçağın ağzı körleşmiş.", w:"ağzı", a:"gercek", e:"Bıçak ağzı gerçek anlamıyla kesici yüzeyi ifade ediyor."},
+  {s:"Dağın zirvesi bulutlarla kaplıydı.", w:"zirvesi", a:"gercek", e:"Zirve burada gerçek anlamıyla dağın en yüksek noktasını ifade ediyor."},
+  {s:"Nehrin kıyısında çadır kurdu.", w:"kıyısında", a:"gercek", e:"Kıyı burada gerçek anlamıyla su kenarını ifade ediyor."},
+  {s:"Kovanın kulpu kopmuş.", w:"kulpu", a:"gercek", e:"Kulp burada gerçek anlamıyla tutma parçasını ifade ediyor."},
+  {s:"Tencerenin kapağını kaldırdı.", w:"kapağını", a:"gercek", e:"Kapak burada gerçek anlamıyla üst örtüyü ifade ediyor."},
+  {s:"Arabanın ön camı çatladı.", w:"camı", a:"gercek", e:"Cam burada gerçek anlamıyla şeffaf malzemeyi ifade ediyor."},
+  {s:"Kazağının kolu çok uzun geldi.", w:"kolu", a:"gercek", e:"Kol burada gerçek anlamıyla kazağın kolunu ifade ediyor."},
+  {s:"Kitabın son sayfasını okudu.", w:"sayfasını", a:"gercek", e:"Sayfa burada gerçek anlamıyla kitap yaprağını ifade ediyor."},
+  {s:"Masanın üstü tozla kaplanmış.", w:"üstü", a:"gercek", e:"Üst burada gerçek anlamıyla yüzeyi ifade ediyor."},
+  {s:"Çantanın fermuarı sıkışmış.", w:"fermuarı", a:"gercek", e:"Fermuar burada gerçek anlamıyla kilitleme mekanizmasını ifade ediyor."},
+  {s:"Teknenin dibi delinmiş.", w:"dibi", a:"gercek", e:"Dip burada gerçek anlamıyla alt yüzeyi ifade ediyor."},
+  {s:"Evin çatısı yağmurdan akmaya başladı.", w:"çatısı", a:"gercek", e:"Çatı burada gerçek anlamıyla üst örtüyü ifade ediyor."},
+  {s:"Ayakkabının bağcığı çözülmüş.", w:"bağcığı", a:"gercek", e:"Bağcık burada gerçek anlamıyla ayakkabı ipini ifade ediyor."},
+  {s:"Terliğin tabanı yıpranmış.", w:"tabanı", a:"gercek", e:"Taban burada gerçek anlamıyla alt yüzeyi ifade ediyor."},
+
+  // ── EK GERCEK ─────────────────────────────────────────────────────────────
+  {s:"Çocuk parka koşarak gitti.", w:"koşarak", a:"gercek", e:"Koşmak burada fiziksel hareketi gerçek anlamıyla ifade ediyor."},
+  {s:"Kışın havalar çok soğuyor.", w:"soğuyor", a:"gercek", e:"Soğumak burada gerçek anlamıyla ısının düşmesini ifade ediyor."},
+  {s:"Bahçedeki gül kırmızıydı.", w:"kırmızıydı", a:"gercek", e:"Kırmızı burada gerçek rengi ifade ediyor."},
+  {s:"Dürbünle kuşları izledi.", w:"dürbünle", a:"gercek", e:"Dürbün burada gerçek anlamıyla optik aleti ifade ediyor."},
+  {s:"Sabah çok erken kalktı.", w:"erken", a:"gercek", e:"Erken burada gerçek anlamıyla zamanla ilgili."},
+  {s:"Çocuklar bahçede top oynadı.", w:"top", a:"gercek", e:"Top burada gerçek oyun aracını ifade ediyor."},
+  {s:"Tahta sandalye çok eskiydi.", w:"tahta", a:"gercek", e:"Tahta burada gerçek anlamıyla malzemeyi ifade ediyor."},
+  {s:"Derenin suyu çok berraktı.", w:"berraktı", a:"gercek", e:"Berrak burada gerçek anlamıyla saflığı ifade ediyor."},
+  {s:"Gözlüğünü masanın üstüne bıraktı.", w:"gözlüğünü", a:"gercek", e:"Gözlük burada gerçek bir nesneyi ifade ediyor."},
+  {s:"Ev yeni boyanmış, kokusu vardı.", w:"kokusu", a:"gercek", e:"Koku burada gerçek anlamıyla boya kokusunu ifade ediyor."},
+  {s:"Karpuzun içi kıpkırmızıydı.", w:"içi", a:"gercek", e:"Karpuzun içi gerçek anlamıyla et kısmını ifade ediyor."},
+  {s:"Küçük bir taş ayakkabısına girmiş.", w:"taş", a:"gercek", e:"Taş burada gerçek anlamıyla küçük katı nesneyi ifade ediyor."},
+  {s:"Çarşamba günü yağmur yağdı.", w:"yağmur", a:"gercek", e:"Yağmur burada gerçek anlamıyla su yağışını ifade ediyor."},
+  {s:"Kuzular çayırda otluyordu.", w:"kuzular", a:"gercek", e:"Kuzu burada gerçek bir hayvanı ifade ediyor."},
+  {s:"Balkondan deniz görünüyordu.", w:"deniz", a:"gercek", e:"Deniz burada gerçek coğrafi unsuru ifade ediyor."},
+  {s:"Tebeşirle tahtaya yazdı.", w:"tebeşirle", a:"gercek", e:"Tebeşir burada gerçek yazma aracını ifade ediyor."},
+  {s:"Kalem kutusu masanın üstündeydi.", w:"kalem kutusu", a:"gercek", e:"Kalem kutusu gerçek bir nesneyi ifade ediyor."},
+  {s:"Yemek çok tuzluydu.", w:"tuzluydu", a:"gercek", e:"Tuzlu burada gerçek tat özelliğini ifade ediyor."},
+  {s:"Kuytu bir yerde gölgede oturdu.", w:"gölgede", a:"gercek", e:"Gölge burada gerçek anlamıyla güneşin engellenmesini ifade ediyor."},
+  {s:"Rüzgar esiyor, saçları uçuşuyordu.", w:"rüzgar", a:"gercek", e:"Rüzgar burada gerçek hava hareketini ifade ediyor."},
+  {s:"Uzak bir köyde büyümüş.", w:"uzak", a:"gercek", e:"Uzak burada gerçek anlamıyla mesafeyi ifade ediyor."},
+  {s:"Çikolata kutusunu hemen açtı.", w:"çikolata", a:"gercek", e:"Çikolata burada gerçek bir gıdayı ifade ediyor."},
+  {s:"Tavuk, sabah erkenden öttü.", w:"tavuk", a:"gercek", e:"Tavuk burada gerçek bir hayvanı ifade ediyor."},
+  {s:"Gece yıldızlar çok parlaktı.", w:"parlaktı", a:"gercek", e:"Parlak burada gerçek ışık yoğunluğunu ifade ediyor."},
+  {s:"Ormanda ağaçların arasında kayboldu.", w:"ormanda", a:"gercek", e:"Orman burada gerçek coğrafi alanı ifade ediyor."},
+  {s:"Fil kulakları çok büyüktü.", w:"kulakları", a:"gercek", e:"Kulak burada vücudun gerçek organını ifade ediyor."},
+  {s:"Kocaman bir kayanın yanında durdu.", w:"kaya", a:"gercek", e:"Kaya burada gerçek anlamıyla büyük taşı ifade ediyor."},
+  {s:"Hayvan barınağında birçok kedi vardı.", w:"barınağında", a:"gercek", e:"Barınak burada gerçek anlamıyla korunma yerini ifade ediyor."},
+  {s:"Atkının rengi portakalıydı.", w:"portakalıydı", a:"gercek", e:"Portakal rengi burada gerçek rengi ifade ediyor."},
+  {s:"İncir ağacına tırmandı.", w:"tırmandı", a:"gercek", e:"Tırmanmak burada gerçek fiziksel hareketi ifade ediyor."},
+  {s:"Denizde dalgalar çok yüksekti.", w:"dalgalar", a:"gercek", e:"Dalga burada gerçek su hareketini ifade ediyor."},
+  {s:"Çatıdan kar düşüyordu.", w:"kar", a:"gercek", e:"Kar burada gerçek donmuş yağışı ifade ediyor."},
+  {s:"Nar çekirdekleri kırmızı ve parlaktı.", w:"nar", a:"gercek", e:"Nar burada gerçek bir meyveyi ifade ediyor."},
+  {s:"Tarla faresi ambarı kemirmiş.", w:"ambarı", a:"gercek", e:"Ambar burada gerçek anlamıyla tahıl deposunu ifade ediyor."},
+  {s:"Odanın duvarları sarıya boyanmış.", w:"sarıya", a:"gercek", e:"Sarı burada gerçek rengi ifade ediyor."},
+  {s:"Yılan taşların arasına saklandı.", w:"yılan", a:"gercek", e:"Yılan burada gerçek bir hayvanı ifade ediyor."},
+  {s:"Kum saati ters çevrildi.", w:"kum saati", a:"gercek", e:"Kum saati burada gerçek bir zamanölçeri ifade ediyor."},
+  {s:"Tavşan çabucak kaçıp gitti.", w:"tavşan", a:"gercek", e:"Tavşan burada gerçek bir hayvanı ifade ediyor."},
+  {s:"Buz tutmuş göl üzerinde yürüdü.", w:"buz tutmuş", a:"gercek", e:"Buz tutmak burada gerçek anlamıyla donmayı ifade ediyor."},
+  {s:"Mektubun zarfı açılmıştı.", w:"zarfı", a:"gercek", e:"Zarf burada gerçek anlamıyla mektup kılıfını ifade ediyor."},
+  {s:"Saat tam on ikide çaldı.", w:"saat", a:"gercek", e:"Saat burada gerçek zaman aletini ifade ediyor."},
+  {s:"Şehrin merkezinde büyük bir meydan vardı.", w:"meydan", a:"gercek", e:"Meydan burada gerçek coğrafi alanı ifade ediyor."},
+  {s:"Dalgıç denizin derinliklerine indi.", w:"derinliklerine", a:"gercek", e:"Derinlik burada gerçek anlamıyla mesafeyi ifade ediyor."},
+  {s:"Domates tam kırmızı olunca toplandı.", w:"domates", a:"gercek", e:"Domates burada gerçek bir sebzeyi ifade ediyor."},
+  {s:"Sincap palamudu deliğine sakladı.", w:"sincap", a:"gercek", e:"Sincap burada gerçek bir hayvanı ifade ediyor."},
+  {s:"Kaya parçaları yola düşmüştü.", w:"kaya parçaları", a:"gercek", e:"Kaya parçaları burada gerçek anlamıyla taş kırıklarını ifade ediyor."},
+  {s:"Çınar yaprakları sarardı.", w:"çınar yaprakları", a:"gercek", e:"Çınar yaprakları burada gerçek anlamıyla ağaç organını ifade ediyor."},
+  {s:"Tren rayından çıktı.", w:"tren", a:"gercek", e:"Tren burada gerçek taşıt aracını ifade ediyor."},
+  {s:"Kanatları mor olan bir kelebek gördük.", w:"kanatları", a:"gercek", e:"Kanat burada gerçek anlamıyla hayvanın uçma organını ifade ediyor."},
+  {s:"Hendekten su akıyordu.", w:"hendek", a:"gercek", e:"Hendek burada gerçek anlamıyla kazılmış kanalı ifade ediyor."},
+  {s:"Bıldırcın yumurtası çok küçüktür.", w:"bıldırcın", a:"gercek", e:"Bıldırcın burada gerçek bir hayvanı ifade ediyor."},
+  {s:"Saman yığını ateşe verildi.", w:"saman", a:"gercek", e:"Saman burada gerçek anlamıyla tarım artığını ifade ediyor."},
+  {s:"Gemi limana yanaşınca herkes çıktı.", w:"gemi", a:"gercek", e:"Gemi burada gerçek taşıt aracını ifade ediyor."},
+  {s:"Çömlekçi çarkı döndürüp kap şekillendirdi.", w:"çark", a:"gercek", e:"Çark burada gerçek anlamıyla dönen aleti ifade ediyor."},
+  {s:"Çakıl taşları kıyıda parlıyordu.", w:"çakıl taşları", a:"gercek", e:"Çakıl taşları burada gerçek anlamıyla küçük taşları ifade ediyor."},
+  {s:"Kırlangıçlar güneye göç etti.", w:"kırlangıçlar", a:"gercek", e:"Kırlangıç burada gerçek bir kuş türünü ifade ediyor."},
+
+  // ── EK MECAZ ──────────────────────────────────────────────────────────────
+  {s:"Onun dili çok keskin.", w:"keskin", a:"mecaz", e:"Dil gerçekten keskin değil; iğneleyici konuşma tarzını anlatıyor."},
+  {s:"Bu haberi duyunca dünyam karardı.", w:"dünyam karardı", a:"mecaz", e:"Dünya gerçekten kararmadı; çok büyük üzüntüyü anlatıyor."},
+  {s:"Yüreği yaralı bir yiğitti.", w:"yaralı", a:"mecaz", e:"Gerçek yara değil; kalbinin acı çektiğini anlatıyor."},
+  {s:"Adamın burnu büyük.", w:"burnu büyük", a:"mecaz", e:"Gerçek boyutu değil; kibirli ve kendini beğenmiş olduğunu anlatıyor."},
+  {s:"Sınavdan önce içim sıkıştı.", w:"içim sıkıştı", a:"mecaz", e:"İç gerçekten sıkışmadı; bunaltı ve kaygıyı anlatıyor."},
+  {s:"Kafası çok yorgundu, düşünemiyordu.", w:"kafası yorgundu", a:"mecaz", e:"Kafanın gerçek yorgunluğu değil; zihin yorgunluğunu anlatıyor."},
+  {s:"Onun sözleri beni uyandırdı.", w:"uyandırdı", a:"mecaz", e:"Gerçek uyanma değil; farkındalık kazandırmayı anlatıyor."},
+  {s:"Çalışmadan başarıyı beklemek kör bir dilek.", w:"kör", a:"mecaz", e:"Gerçek körlük değil; boş ve gerçekdışı bir ümidi anlatıyor."},
+  {s:"Bu ülke bir yıldız gibi parladı.", w:"yıldız gibi", a:"mecaz", e:"Ülke gerçek yıldız değil; parlak yükselişi anlatıyor."},
+  {s:"Çocuğun dili çözüldü.", w:"dili çözüldü", a:"mecaz", e:"Dil gerçekten çözülmedi; utangaçlıktan kurtulup konuşmaya başlamasını anlatıyor."},
+  {s:"Başarısızlık onu yıktı.", w:"yıktı", a:"mecaz", e:"Gerçek bir yıkım değil; çok etkilenip çökmesini anlatıyor."},
+  {s:"Gönlünü almak için çok uğraştı.", w:"gönlünü almak", a:"mecaz", e:"Gönül gerçekten alınmaz; kırgınlığı gidermek anlamında mecaz."},
+  {s:"O kadar bekledi ki taşa döndü.", w:"taşa döndü", a:"mecaz", e:"Gerçekten taş olmadı; hareketsiz ve donmuş beklemeyi anlatıyor."},
+  {s:"Kalbinde hiç kin taşımadı.", w:"kin taşımadı", a:"mecaz", e:"Kin gerçek bir nesne değil; kötü duygular beslemediğini anlatıyor."},
+  {s:"Bu kelam benim içime işledi.", w:"işledi", a:"mecaz", e:"İşlemek gerçek değil; sözün derin etki bırakmasını anlatıyor."},
+  {s:"Gözlerindeki ışık söndü.", w:"ışık söndü", a:"mecaz", e:"Gözde gerçek ışık yok; umut ve neşenin bitişini anlatıyor."},
+  {s:"O çocuk altın kalplidir.", w:"altın kalpli", a:"mecaz", e:"Kalp altından değil; iyi kalpli ve cömert olduğunu anlatıyor."},
+  {s:"Sevinçten kanatlandı sanki.", w:"kanatlandı", a:"mecaz", e:"Gerçekten kanat bitmedi; sevinçle uçacak gibi hissettiğini anlatıyor."},
+  {s:"Dertten yüzü sarardı.", w:"yüzü sarardı", a:"mecaz", e:"Yüz gerçekten sarı olmadı; endişe ve üzüntüden solduğunu anlatıyor."},
+  {s:"Bütün çabaları suya düştü.", w:"suya düştü", a:"mecaz", e:"Gerçekten suya düşmedi; tüm emeklerin boşa gittiğini anlatıyor."},
+  {s:"Sözleri ağzından bal akıyordu.", w:"bal akıyordu", a:"mecaz", e:"Gerçek bal değil; çok tatlı ve etkileyici konuştuğunu anlatıyor."},
+  {s:"O gün hava da içim gibiydi.", w:"içim gibiydi", a:"mecaz", e:"Havanın içle ilgisi yok; karanlık ve bunaltıcı havasını anlatıyor."},
+  {s:"Onun bakışları beni devirdi.", w:"devirdi", a:"mecaz", e:"Gerçek devirmek değil; bakışların çok etkili olduğunu anlatıyor."},
+  {s:"Umursamaz tavırlarıyla içime su serpti.", w:"su serpti", a:"mecaz", e:"Gerçek su değil; rahatlatmayı ve ferahlığı anlatıyor."},
+  {s:"Bu davayı savunmak için dilini döktü.", w:"dilini döktü", a:"mecaz", e:"Dil gerçekten dökülmez; çok konuşup ikna etmeye çalışmasını anlatıyor."},
+  {s:"Kocaman bir dağ onu eziyor gibiydi.", w:"dağ onu eziyor", a:"mecaz", e:"Gerçek dağ değil; ağır yük ve baskı hissini anlatıyor."},
+  {s:"O öğretmen ile göz göze geldik.", w:"göz göze geldik", a:"mecaz", e:"Gözler gerçekten temas etmedi; bakışların buluşmasını anlatıyor."},
+  {s:"Birden aklına bir fikir düştü.", w:"düştü", a:"mecaz", e:"Fikir gerçekten düşmez; ansızın aklına geldiğini anlatıyor."},
+  {s:"Öğretmen sınıfa girince herkes sustu, iğne düşse duyulurdu.", w:"iğne düşse duyulurdu", a:"mecaz", e:"Gerçek iğne değil; ortamın çok sessiz olduğunu abartarak anlatıyor."},
+  {s:"Onun sesi içime dokundu.", w:"dokundu", a:"mecaz", e:"Ses gerçekten dokunmaz; duygusal etkilenmeyi anlatıyor."},
+  {s:"Derin bir sessizliğe büründü.", w:"büründü", a:"mecaz", e:"Sessizlik bir örtü değil; içine kapandığını anlatıyor."},
+  {s:"Yılların yükünü sırtında taşıdı.", w:"yükünü taşıdı", a:"mecaz", e:"Yılların gerçek bir yükü yok; geçmiş acıları ve sorumlulukları anlatıyor."},
+  {s:"Kıskanç bakışlar onu yaktı geçti.", w:"yaktı", a:"mecaz", e:"Gerçek yanma değil; kıskançlığın hissettirdiği rahatsızlığı anlatıyor."},
+  {s:"Kalemi onun elinde adeta dans ediyor.", w:"dans ediyor", a:"mecaz", e:"Kalem gerçekten dans etmez; ustalıkla yazmasını anlatıyor."},
+  {s:"İçindeki fırtına dışarıya vuruyordu.", w:"fırtına", a:"mecaz", e:"Gerçek fırtına değil; içindeki büyük duygu karmaşasını anlatıyor."},
+  {s:"Öfkeyle yüzü kor gibi kızardı.", w:"kor gibi", a:"mecaz", e:"Yüz gerçekten kor değil; çok kızgın olduğunu anlatıyor."},
+  {s:"Aldığı haberle dünyası alt üst oldu.", w:"dünyası alt üst oldu", a:"mecaz", e:"Gerçek dünya dönmedi; hayatının karmaşaya girdiğini anlatıyor."},
+  {s:"Gurur, onun içinde bir volkan gibiydi.", w:"volkan gibiydi", a:"mecaz", e:"Gurur gerçek volkan değil; patlamaya hazır büyük gururunu anlatıyor."},
+  {s:"Söylediği yalan yüzüne vuruldu.", w:"yüzüne vuruldu", a:"mecaz", e:"Gerçek vurmak değil; yalanın ortaya çıkarılmasını anlatıyor."},
+  {s:"Benim için kapıyı açtın.", w:"kapıyı açtın", a:"mecaz", e:"Gerçek kapı değil; fırsat ya da yol gösterme anlamında mecaz."},
+  {s:"Her sözü beni ateşe verdi.", w:"ateşe verdi", a:"mecaz", e:"Gerçek ateş yok; sözlerin çok öfke ve heyecan uyandırdığını anlatıyor."},
+  {s:"Sazın sesi dağları aşar.", w:"dağları aşar", a:"mecaz", e:"Dağı gerçekten aşmaz; sesin geniş yerlere ulaştığını anlatıyor."},
+  {s:"Halkın gözü onu izliyordu.", w:"gözü", a:"mecaz", e:"Tek bir göz değil; toplumun dikkatini mecazla anlatıyor."},
+  {s:"Kötü haber yüreğine ok gibi saplandı.", w:"ok gibi saplandı", a:"mecaz", e:"Gerçek ok değil; haberin çok acı verdiğini anlatıyor."},
+  {s:"Çalışmak, başarının anahtarıdır.", w:"anahtarıdır", a:"mecaz", e:"Çalışmak gerçek anahtar değil; başarıya ulaşmanın yolu anlamında mecaz."},
+  {s:"Arkadaşı bir güneş gibiydi, herkesi ısıtırdı.", w:"güneş gibiydi", a:"mecaz", e:"Gerçek güneş değil; sıcakkanlı ve neşeli kişiliğini anlatıyor."},
+  {s:"Açlıktan karnı zil çalıyordu.", w:"zil çalıyordu", a:"mecaz", e:"Gerçek zil değil; çok acıkmasını anlatıyor."},
+  {s:"Çalışmak onu kanatlandırıyor.", w:"kanatlandırıyor", a:"mecaz", e:"Gerçek kanat değil; motive ve enerjik hissettirdiğini anlatıyor."},
+  {s:"Bu şehirde bir garibanın sesi çıkmaz.", w:"sesi çıkmaz", a:"mecaz", e:"Ses gerçekten çıkmaz değil; hakkını savunamayacağını anlatıyor."},
+  {s:"Onun gözünde sen çok büyüksün.", w:"gözünde", a:"mecaz", e:"Gerçek göz ölçümü değil; saygı ve değer vermeyi anlatıyor."},
+  {s:"Başarısı gözleri kamaştırdı.", w:"gözleri kamaştırdı", a:"mecaz", e:"Gözler gerçekten kamaşmadı; çok etkileyici olduğunu anlatıyor."},
+  {s:"Bu iş beni bitiriyor.", w:"bitiriyor", a:"mecaz", e:"Gerçekten bitmek değil; çok yorduğunu ve tükettiğini anlatıyor."},
+  {s:"Gülüşü bahar gibi açıyordu.", w:"bahar gibi açıyordu", a:"mecaz", e:"Gülüş mevsim değil; tazelik ve neşeyi anlatıyor."},
+  {s:"Yüzüne baktım, bir kitap gibiydi.", w:"kitap gibiydi", a:"mecaz", e:"Yüz gerçek kitap değil; duygularının yüzünde okunduğunu anlatıyor."},
+  {s:"Kafam dumanlandı bu sorudan.", w:"dumanlandı", a:"mecaz", e:"Kafanın içi gerçekten dumanla dolmadı; kafasının karıştığını anlatıyor."},
+  {s:"O çocuk evde bir güneş.", w:"güneş", a:"mecaz", e:"Gerçek güneş değil; eve neşe ve aydınlık getirdiğini anlatıyor."},
+  {s:"Haber kulak kulağa yayıldı.", w:"kulak kulağa", a:"mecaz", e:"Kulaklardan gerçek bir zincir yok; söylentinin ağızdan ağıza geçmesini anlatıyor."},
+  {s:"Yüzü karardı bu davranış karşısında.", w:"yüzü karardı", a:"mecaz", e:"Yüz gerçekten kararmadı; utanç ve hayal kırıklığını anlatıyor."},
+  {s:"Dedikodunun izi olmasa çıkmaz.", w:"izi", a:"mecaz", e:"Gerçek iz değil; dedikoduların kaynaksız olmadığını anlatıyor."},
+  {s:"Konuşurken kelimeler ağzından dökülüyordu.", w:"dökülüyordu", a:"mecaz", e:"Kelimeler gerçekten dökülmez; çok akıcı konuştuğunu anlatıyor."},
+  {s:"Sabır, erdemin tacıdır.", w:"tacıdır", a:"mecaz", e:"Sabır gerçek taç değil; en değerli fazilet olduğunu anlatıyor."},
+  {s:"Gözleri kan çanağına döndü.", w:"kan çanağına döndü", a:"mecaz", e:"Gözler gerçekten kan çanağı olmadı; çok öfkelendğini anlatıyor."},
+  {s:"Bu sevgi beni kurtardı.", w:"kurtardı", a:"mecaz", e:"Gerçek kurtarma değil; sevginin onu güçlendirdiğini anlatıyor."},
+  {s:"Annesinin sesini duyunca içi ısındı.", w:"içi ısındı", a:"mecaz", e:"İç gerçekten ısınmadı; huzur ve sıcaklık hissettiğini anlatıyor."},
+  {s:"Yalnızlık onu kemiriyor.", w:"kemiriyor", a:"mecaz", e:"Gerçek kemirilme değil; yalnızlığın içten içe acıtmasını anlatıyor."},
+  {s:"Bu dava için kılıç kuşandı.", w:"kılıç kuşandı", a:"mecaz", e:"Gerçek kılıç değil; mücadeleye hazır olduğunu anlatıyor."},
+  {s:"Onun kalbi gibi geniş bir yer bulamazsın.", w:"kalbi gibi geniş", a:"mecaz", e:"Kalp gerçek bir alan değil; cömertliğini ve sıcaklığını anlatıyor."},
+  {s:"Sessizlik beni bunalttı.", w:"bunalttı", a:"mecaz", e:"Sessizlik gerçekten bunaltmaz; rahatsız edici etkisini anlatıyor."},
+  {s:"Umut, hayatın tuzu biberidir.", w:"tuzu biberidir", a:"mecaz", e:"Umut gerçek baharat değil; hayata anlam kattığını anlatıyor."},
+  {s:"Yılların ağırlığı omzunda hissediliyordu.", w:"ağırlığı", a:"mecaz", e:"Yılların gerçek ağırlığı olmaz; birikmiş yorgunluğu ve sorumluluğu anlatıyor."},
+  {s:"O toplantıda sesini duyuramadı.", w:"sesini duyuramadı", a:"mecaz", e:"Ses gerçekten duyulmadı değil; fikirlerini kabul ettiremediğini anlatıyor."},
+  {s:"Gönlüm sizi çok özlüyor.", w:"gönlüm", a:"mecaz", e:"Gönül gerçek bir organ değil; duygusal özlemi anlatıyor."},
+  {s:"Sabah uyanınca düşünceler onu bastırdı.", w:"bastırdı", a:"mecaz", e:"Gerçek basma değil; düşüncelerin ağırlığını ve baskısını anlatıyor."},
+  {s:"Yüreği buz tuttu bu haberi duyunca.", w:"buz tuttu", a:"mecaz", e:"Yürek gerçekten buz olmadı; korku ve şoktan donup kaldığını anlatıyor."},
+  {s:"Sevinç haberler kanatlara bindi.", w:"kanatlara bindi", a:"mecaz", e:"Haber gerçekten kanat takmadı; çok hızlı yayıldığını anlatıyor."},
+  {s:"Zaman geçince yara kapandı.", w:"yara kapandı", a:"mecaz", e:"Gerçek bir yara değil; acının dinmesini anlatıyor."},
+  {s:"Yürüyüşleri aslan gibi vakur.", w:"aslan gibi", a:"mecaz", e:"Gerçek aslan değil; güçlü ve heybetli duruşunu anlatıyor."},
+  {s:"Güzel sözler bana kanat taktı.", w:"kanat taktı", a:"mecaz", e:"Gerçek kanat değil; mutluluk ve güç verdiğini anlatıyor."},
+  {s:"Adamın biri bizi izliyordu, tüylerim diken diken oldu.", w:"tüylerim diken diken oldu", a:"mecaz", e:"Tüyler gerçek diken olmadı; korku ve gerginliği anlatıyor."},
+  {s:"O kadar sevindi ki göğsü kabardı.", w:"göğsü kabardı", a:"mecaz", e:"Göğüs gerçekten kabarmadı; gurur ve sevinç hissini anlatıyor."},
+
+  // ── DAHA FAZLA GERCEK ──────────────────────────────────────────────────────
+  {s:"Tarlada iki öküz çalışıyordu.", w:"öküz", a:"gercek", e:"Öküz burada gerçek bir hayvanı ifade ediyor."},
+  {s:"Mutfakta soğanı doğradı.", w:"soğanı", a:"gercek", e:"Soğan burada gerçek sebzeyi ifade ediyor."},
+  {s:"Uzun bir yolculuktan sonra köye döndü.", w:"yolculuktan", a:"gercek", e:"Yolculuk burada gerçek seyahati ifade ediyor."},
+  {s:"Tahtanın rengi koyulaşmış.", w:"rengi", a:"gercek", e:"Renk burada gerçek görsel özelliği ifade ediyor."},
+  {s:"Kitaplıkta yüzlerce kitap vardı.", w:"kitaplıkta", a:"gercek", e:"Kitaplık burada gerçek mobilyayı ifade ediyor."},
+  {s:"Yumurta kaynadı, pişti.", w:"yumurta", a:"gercek", e:"Yumurta burada gerçek bir gıdayı ifade ediyor."},
+  {s:"Şeker kamışından şeker yapılır.", w:"şeker kamışı", a:"gercek", e:"Şeker kamışı burada gerçek bir bitkiyi ifade ediyor."},
+  {s:"Çocuk balonları havalandırdı.", w:"balonları", a:"gercek", e:"Balon burada gerçek nesneyi ifade ediyor."},
+  {s:"Eşek yük taşımaktan yoruldu.", w:"eşek", a:"gercek", e:"Eşek burada gerçek bir hayvanı ifade ediyor."},
+  {s:"Derenin sesi uzaktan duyuluyordu.", w:"derenin sesi", a:"gercek", e:"Derenin sesi burada gerçek anlamıyla ses dalgalarını ifade ediyor."},
+  {s:"İnce buz kırıldı.", w:"buz", a:"gercek", e:"Buz burada gerçek donmuş suyu ifade ediyor."},
+  {s:"Pençeleriyle eti parçaladı.", w:"pençeleriyle", a:"gercek", e:"Pençe burada gerçek anlamıyla hayvan organını ifade ediyor."},
+  {s:"Mercan resifleri denizin altında.", w:"mercan resifleri", a:"gercek", e:"Mercan resifleri burada gerçek deniz yapısını ifade ediyor."},
+  {s:"Kuzey yıldızı çok parlak.", w:"kuzey yıldızı", a:"gercek", e:"Kuzey yıldızı burada gerçek gök cismini ifade ediyor."},
+  {s:"Çiğ düştü, çimenler ıslandı.", w:"çiğ", a:"gercek", e:"Çiğ burada gerçek nem oluşumunu ifade ediyor."},
+  {s:"Çam kozalakları yere düştü.", w:"çam kozalakları", a:"gercek", e:"Çam kozalağı burada gerçek bitki parçasını ifade ediyor."},
+  {s:"Köpekbalığı çok hızlı yüzüyor.", w:"köpekbalığı", a:"gercek", e:"Köpekbalığı burada gerçek hayvanı ifade ediyor."},
+  {s:"Çiçeğin kokusu çok güzeldi.", w:"kokusu", a:"gercek", e:"Koku burada gerçek kimyasal özelliği ifade ediyor."},
+  {s:"Güvercin mektupla döndü.", w:"güvercin", a:"gercek", e:"Güvercin burada gerçek bir kuşu ifade ediyor."},
+  {s:"Fırtına ağaçları devirdi.", w:"fırtına", a:"gercek", e:"Fırtına burada gerçek hava olayını ifade ediyor."},
+  {s:"Yosun kayalara yapışmış.", w:"yosun", a:"gercek", e:"Yosun burada gerçek bir bitkiyi ifade ediyor."},
+  {s:"Balta sapa dönmüş demişler.", w:"balta", a:"gercek", e:"Burada balta gerçek alet anlamında kullanılmıştır."},
+  {s:"Kaplumbağa çok yavaş yürüdü.", w:"kaplumbağa", a:"gercek", e:"Kaplumbağa burada gerçek hayvanı ifade ediyor."},
+  {s:"Kireçli su borulara zarar verir.", w:"kireçli", a:"gercek", e:"Kireç burada gerçek kimyasal maddeyi ifade ediyor."},
+  {s:"Tahtalıbacak oyununu oynadılar.", w:"tahtalıbacak", a:"gercek", e:"Tahtalıbacak burada gerçek oyun aracını ifade ediyor."},
+  {s:"Mantar ormanda büyür.", w:"mantar", a:"gercek", e:"Mantar burada gerçek bir organizmayı ifade ediyor."},
+  {s:"Arı kovanında bal yapıyor.", w:"arı", a:"gercek", e:"Arı burada gerçek hayvanı ifade ediyor."},
+  {s:"Kiraz ağacı ilkbaharda çiçek açtı.", w:"kiraz", a:"gercek", e:"Kiraz burada gerçek bir ağaç türünü ifade ediyor."},
+  {s:"Güneş batarken gökyüzü kızardı.", w:"kızardı", a:"gercek", e:"Kızarmak burada gerçek renk değişimini ifade ediyor."},
+  {s:"Tahmin ettiğinden çok daha soğuktu.", w:"soğuktu", a:"gercek", e:"Soğuk burada gerçek anlamıyla düşük sıcaklığı ifade ediyor."},
+  {s:"Kaya keçisi dik yamaçlarda koştu.", w:"kaya keçisi", a:"gercek", e:"Kaya keçisi burada gerçek bir hayvanı ifade ediyor."},
+  {s:"Üzüm bağı sulanmamış, kuruyacak.", w:"üzüm bağı", a:"gercek", e:"Üzüm bağı burada gerçek tarım alanını ifade ediyor."},
+  {s:"Balık oltaya takıldı.", w:"olta", a:"gercek", e:"Olta burada gerçek ava aracını ifade ediyor."},
+  {s:"Rüzgar türbini döndü, elektrik üretildi.", w:"rüzgar türbini", a:"gercek", e:"Rüzgar türbini burada gerçek teknik yapıyı ifade ediyor."},
+  {s:"Çocuğun burnu aktı.", w:"burnu aktı", a:"gercek", e:"Burun burada gerçek organ ve gerçek fizyolojik durumu ifade ediyor."},
+  {s:"Köpek kuyruk salladı.", w:"kuyruk", a:"gercek", e:"Kuyruk burada gerçek hayvan organını ifade ediyor."},
+  {s:"Zeytinyağı sağlık için çok faydalıdır.", w:"zeytinyağı", a:"gercek", e:"Zeytinyağı burada gerçek bir gıdayı ifade ediyor."},
+  {s:"Keçiboynuzu çok sert bir meyvedir.", w:"keçiboynuzu", a:"gercek", e:"Keçiboynuzu burada gerçek bir bitkiyi ifade ediyor."},
+  {s:"Kestane ormanı güz mevsiminde güzeldir.", w:"kestane", a:"gercek", e:"Kestane burada gerçek ağaç türünü ifade ediyor."},
+  {s:"Ahtapot okyanusun en zeki canlısındandır.", w:"ahtapot", a:"gercek", e:"Ahtapot burada gerçek deniz canlısını ifade ediyor."},
+  {s:"Kuzey kutbunda buz ayısı yaşar.", w:"buz ayısı", a:"gercek", e:"Buz ayısı burada gerçek hayvanı ifade ediyor."},
+  {s:"Çilek tarlası bütün yaz meyve verdi.", w:"çilek", a:"gercek", e:"Çilek burada gerçek meyveyi ifade ediyor."},
+  {s:"Kar taneleri altıgen şeklindedir.", w:"kar taneleri", a:"gercek", e:"Kar tanesi burada gerçek fiziksel nesneyi ifade ediyor."},
+  {s:"Ateş böceği geceleri ışık saçar.", w:"ateş böceği", a:"gercek", e:"Ateş böceği burada gerçek hayvanı ifade ediyor."},
+  {s:"Yarasa gözleri zayıf, kulakları güçlüdür.", w:"yarasa", a:"gercek", e:"Yarasa burada gerçek hayvanı ifade ediyor."},
+  {s:"Mermer zemin çok kaygandı.", w:"mermer", a:"gercek", e:"Mermer burada gerçek malzemeyi ifade ediyor."},
+  {s:"Dalgalar sahile vurdu.", w:"dalgalar", a:"gercek", e:"Dalga burada gerçek su hareketini ifade ediyor."},
+  {s:"Buzdolabı arızalandı, yiyecekler bozuldu.", w:"buzdolabı", a:"gercek", e:"Buzdolabı burada gerçek nesneyi ifade ediyor."},
+  {s:"Kuzuların yünü kesildi.", w:"yünü", a:"gercek", e:"Yün burada gerçek hayvan organını ifade ediyor."},
+  {s:"Sandığın içinde eski fotoğraflar çıktı.", w:"sandığın", a:"gercek", e:"Sandık burada gerçek mobilyayı ifade ediyor."},
+  {s:"Kavun çok tatlı ve suluydu.", w:"kavun", a:"gercek", e:"Kavun burada gerçek meyveyi ifade ediyor."},
+
+  // ── DAHA FAZLA MECAZ ──────────────────────────────────────────────────────
+  {s:"Hayat bir nehir gibi akar.", w:"nehir gibi akar", a:"mecaz", e:"Hayat gerçek nehir değil; sürekli akışı ve değişimi anlatıyor."},
+  {s:"Onun sözleri benim için bir ışık oldu.", w:"ışık oldu", a:"mecaz", e:"Söz gerçek ışık değil; yol gösterdiğini anlatıyor."},
+  {s:"İki arkadaş arasına soğukluk girdi.", w:"soğukluk girdi", a:"mecaz", e:"Gerçek soğuk değil; aralarının açıldığını ve ilişkinin gerildiğini anlatıyor."},
+  {s:"Bu ülkenin gençleri filiz gibi boy atıyor.", w:"filiz gibi", a:"mecaz", e:"Gençler gerçek filiz değil; büyümelerini ve gelişmelerini anlatıyor."},
+  {s:"Dudaklarından bal damlıyordu.", w:"bal damlıyordu", a:"mecaz", e:"Gerçek bal değil; çok tatlı ve akıcı konuştuğunu anlatıyor."},
+  {s:"Sabahın erken saatlerinde ufuk aydınlandı.", w:"ufuk aydınlandı", a:"mecaz", e:"Burada ufkun aydınlanması yalnızca gün doğumunu değil, umutların açılmasını da anlatıyor. (Bağlama göre mecaz sayılabilir.)"},
+  {s:"Gece boyunca düşünceler kafasını kemirdi.", w:"kemirdi", a:"mecaz", e:"Gerçek kemirilme değil; düşüncelerin sürekli rahatsız ettiğini anlatıyor."},
+  {s:"Zafer, onların için güneşten parlak bir andı.", w:"güneşten parlak", a:"mecaz", e:"Gerçek parlaklık değil; çok mutlu ve gururlu bir an olduğunu anlatıyor."},
+  {s:"Hayat ağacı, köklerini derine saldı.", w:"köklerini saldı", a:"mecaz", e:"İnsan gerçek ağaç değil; bir yere sıkı bağlandığını anlatıyor."},
+  {s:"Tüm kapılar suratına kapandı.", w:"kapılar kapandı", a:"mecaz", e:"Gerçek kapı değil; fırsatların ortadan kalktığını anlatıyor."},
+  {s:"Onun bakışlarında bir çöl soğukluğu vardı.", w:"çöl soğukluğu", a:"mecaz", e:"Çöl gerçekten soğuk değil; bakışların sertliğini ve ilgisizliğini anlatıyor."},
+  {s:"Kalbim senin için çarpmayı bıraktı.", w:"çarpmayı bıraktı", a:"mecaz", e:"Kalp durdu değil; seni önemsemediğini mecazla anlatıyor."},
+  {s:"Onun gülüşü bir meltem gibiydi.", w:"meltem gibiydi", a:"mecaz", e:"Gülüş gerçek rüzgar değil; hafif, ferahlatıcı etkisini anlatıyor."},
+  {s:"Bu sözler yüreğimde taş gibi oturdu.", w:"taş gibi oturdu", a:"mecaz", e:"Gerçek taş değil; sözlerin ağırlığını ve baskısını anlatıyor."},
+  {s:"Yıllarca sırtında taşıdığı yük düştü.", w:"yük düştü", a:"mecaz", e:"Gerçek yük değil; sorumluluğun ve acının sona erdiğini anlatıyor."},
+  {s:"Anahtarı bulmak hayatını değiştirdi.", w:"anahtarı bulmak", a:"mecaz", e:"Gerçek anahtar değil; çözüm ya da fırsatı bulmayı anlatıyor."},
+  {s:"Bu haber benim için bir şimşek gibiydi.", w:"şimşek gibiydi", a:"mecaz", e:"Haber gerçek şimşek değil; çarpıcı etkisini anlatıyor."},
+  {s:"Söz uçar yazı kalır.", w:"uçar", a:"mecaz", e:"Söz gerçekten uçmaz; kolayca unutulduğunu anlatıyor."},
+  {s:"Bu teklif benim için altın değerinde.", w:"altın değerinde", a:"mecaz", e:"Gerçek altın değil; çok kıymetli ve önemli olduğunu anlatıyor."},
+  {s:"Hayatın her anı bir çiçek gibi.", w:"çiçek gibi", a:"mecaz", e:"Anlar gerçek çiçek değil; güzelliğini ve geçiciliğini anlatıyor."},
+  {s:"Biraz güldükten sonra içi açıldı.", w:"içi açıldı", a:"mecaz", e:"İç gerçekten açılmadı; rahatladığını ve ferahladığını anlatıyor."},
+  {s:"Sözleri birer bıçak gibiydi.", w:"bıçak gibiydi", a:"mecaz", e:"Gerçek bıçak değil; acı veren sözleri anlatıyor."},
+  {s:"Umut, karanlıkta bir ışık hüzmesiydi.", w:"ışık hüzmesiydi", a:"mecaz", e:"Umut gerçek ışık değil; karanlık dönemde yol göstereni anlatıyor."},
+  {s:"Onu gördüğümde dilim tutuldu.", w:"dilim tutuldu", a:"mecaz", e:"Dil gerçekten tutulmadı; söyleyecek söz bulamadığını anlatıyor."},
+  {s:"İçindeki volkan patladı.", w:"volkan patladı", a:"mecaz", e:"Gerçek volkan değil; bastırılan öfkenin dışa çıkmasını anlatıyor."},
+  {s:"Bu haberin altında ezildim.", w:"altında ezildim", a:"mecaz", e:"Gerçekten ezilmedi; büyük baskı ve üzüntü hissini anlatıyor."},
+  {s:"Onun yüzü bir kitap gibi, her şeyi okuyorsun.", w:"kitap gibi", a:"mecaz", e:"Yüz gerçek kitap değil; duygularının rahatça anlaşıldığını anlatıyor."},
+  {s:"Karanlık düşünceler onu sarıp sarmaladı.", w:"sarıp sarmaladı", a:"mecaz", e:"Düşünceler gerçekten sarmaz; her tarafını kapladığını anlatıyor."},
+  {s:"Başarı rüzgarı arkamdan esti.", w:"rüzgarı esti", a:"mecaz", e:"Başarının gerçek rüzgarı yok; işlerin yolunda gittiğini anlatıyor."},
+  {s:"Sevinçle yüzü güldü.", w:"yüzü güldü", a:"mecaz", e:"Yüz gerçekten gülemez; mutlu ve neşeli olduğunu anlatıyor."},
+  {s:"Bu savaş onun için içsel bir savaştı.", w:"içsel bir savaş", a:"mecaz", e:"Gerçek savaş değil; iç çatışmasını ve mücadelesini anlatıyor."},
+  {s:"Güzel bir müzik duyunca kanatlandı.", w:"kanatlandı", a:"mecaz", e:"Gerçek kanat bitmedi; müziğin verdiği hafiflik ve sevinç hissini anlatıyor."},
+  {s:"Söylediği yalanlar sonunda boynunu büktü.", w:"boynunu büktü", a:"mecaz", e:"Boyun gerçekten bükülmedi; utanç ve pişmanlık hissini anlatıyor."},
+  {s:"Bu düşünce beni çileden çıkardı.", w:"çileden çıkardı", a:"mecaz", e:"Gerçek çile değil; çok sinirlenip sabrını tükettiğini anlatıyor."},
+  {s:"Aşk, bazen derin bir uçurumdur.", w:"uçurumdur", a:"mecaz", e:"Aşk gerçek uçurum değil; tehlikeli ve derin etkisini anlatıyor."},
+  {s:"Onun sözleri altın gibi değerliydi.", w:"altın gibi", a:"mecaz", e:"Sözler gerçek altın değil; çok değerli olduğunu anlatıyor."},
+  {s:"Gözyaşları nehir gibi aktı.", w:"nehir gibi aktı", a:"mecaz", e:"Gerçek nehir değil; çok ağladığını anlatıyor."},
+  {s:"Bu acı bir bıçak gibi saplandı içime.", w:"bıçak gibi", a:"mecaz", e:"Gerçek bıçak değil; acının derinliğini ve keskinliğini anlatıyor."},
+  {s:"İçindeki fırtına hiç dinmedi.", w:"fırtına", a:"mecaz", e:"Gerçek fırtına değil; içindeki karmaşa ve çalkantıyı anlatıyor."},
+  {s:"Gözlerindeki ışık hiç söndü.", w:"ışık söndü", a:"mecaz", e:"Gözde gerçek ışık yok; umut ve neşenin bittiğini anlatıyor."},
+  {s:"Annesinin gülümsemesi ona güneş gibiydi.", w:"güneş gibiydi", a:"mecaz", e:"Gülümseme gerçek güneş değil; sıcaklık ve mutluluk verdiğini anlatıyor."},
+  {s:"Olaylar onu biçimlendirdi.", w:"biçimlendirdi", a:"mecaz", e:"Gerçek biçimlendirme değil; karakterini ve kişiliğini şekillendirdiğini anlatıyor."},
+  {s:"Gece yarısı düşünceler sel gibi aktı.", w:"sel gibi aktı", a:"mecaz", e:"Gerçek sel değil; düşüncelerin yoğun ve durdurulamaz akışını anlatıyor."},
+  {s:"Her geçen saniye beni delik deşik etti.", w:"delik deşik etti", a:"mecaz", e:"Gerçekten delinmedi; uzun beklemenin verdiği sıkıntıyı anlatıyor."},
+  {s:"Korkudan elleri buz kesti.", w:"buz kesti", a:"mecaz", e:"Eller gerçekten buz olmadı; korku ile ürperip uyuştuğunu anlatıyor."},
+  {s:"Söylediği güzel sözler içimi ısıttı.", w:"içimi ısıttı", a:"mecaz", e:"İç gerçekten ısınmadı; güzel sözlerin rahatlatıcı etkisini anlatıyor."},
+  {s:"Onun gözleri adeta çakıldı.", w:"çakıldı", a:"mecaz", e:"Gözler gerçekten çakılmadı; dikkatin bir noktaya yoğunlaşmasını anlatıyor."},
+  {s:"O çocuk merak denizine dalmış.", w:"denizine dalmış", a:"mecaz", e:"Gerçek deniz değil; derin meraklı olduğunu anlatıyor."},
+  {s:"Sözün varsa söyle, taşı gediğine koy.", w:"taşı gediğine koy", a:"mecaz", e:"Gerçek taş değil; şeyleri yerli yerine koymayı anlatıyor."},
+  {s:"Kardeşini görünce içi açıldı.", w:"içi açıldı", a:"mecaz", e:"İç gerçekten açılmadı; sevinç ve ferahlama hissini anlatıyor."},
+  {s:"Sıkıntı zamanlarında omuz verdi.", w:"omuz verdi", a:"mecaz", e:"Gerçek omuz vermek değil; destek ve dayanışmayı anlatıyor."},
+  {s:"Bu sevgi bana kanatlar taktı.", w:"kanatlar taktı", a:"mecaz", e:"Gerçek kanat değil; sevginin güç ve özgürlük verdiğini anlatıyor."},
+  {s:"Üstüme kara bulut çöktü.", w:"kara bulut çöktü", a:"mecaz", e:"Gerçek bulut değil; sıkıntı ve karamsar bir durumu anlatıyor."},
+
+  // ── EK SORULAR ─────────────────────────────────────────────────────────────
+  {s:"Göl yüzeyi cam gibi pürüzsüzdü.", w:"cam gibi", a:"mecaz", e:"Su yüzeyi gerçek cam değil; son derece pürüzsüz ve durgun olduğunu anlatıyor."},
+  {s:"Zamanın akışında her şey değişti.", w:"akışında", a:"mecaz", e:"Zamanın gerçek akışı olmaz; değişim ve geçişi anlatıyor."},
+  {s:"Küçük tohumlar toprakla buluştu.", w:"tohumlar", a:"gercek", e:"Tohum burada gerçek anlamıyla bitki embriyosunu ifade ediyor."},
+  {s:"Onun tatlı sözleri beni yumuşattı.", w:"yumuşattı", a:"mecaz", e:"Gerçek yumuşama değil; öfkenin ve direncin azalmasını anlatıyor."},
+  {s:"Tahta köprü çürümüş, geçilmez.", w:"tahta köprü", a:"gercek", e:"Tahta köprü gerçek anlamıyla ahşap geçidi ifade ediyor."},
+  {s:"Bu sorudan kafam karıştı.", w:"kafam karıştı", a:"mecaz", e:"Kafa gerçekten karışmadı; zihinsel karmaşayı anlatıyor."},
+  {s:"Beyaz güvercinler semaya yükseldi.", w:"beyaz güvercinler", a:"gercek", e:"Güvercin burada gerçek kuşu ifade ediyor."},
+  {s:"Kalbi çarptı, heyecanlandı.", w:"kalbi çarptı", a:"gercek", e:"Kalbin çarpması burada gerçek fizyolojik tepkiyi ifade ediyor."},
+  {s:"Yıldızlar sanki konuşuyor gibiydi.", w:"konuşuyor gibiydi", a:"mecaz", e:"Yıldızlar gerçekten konuşmaz; canlı ve anlamlı göründüklerini anlatıyor."},
+  {s:"Köklü bir çınar düşmez.", w:"köklü", a:"mecaz", e:"Kök burada mecaz; güçlü temellere sahip olmayı anlatıyor."},
+  {s:"Çimenler yağmurdan sonra yeşillendi.", w:"yeşillendi", a:"gercek", e:"Yeşillenmek burada gerçek renk değişimini ifade ediyor."},
+  {s:"Kışın soğuğunda içimiz ürperdi.", w:"içimiz ürperdi", a:"mecaz", e:"Gerçek ürperme değil; korku ya da soğuktan hissedilen tüylerme anlamında mecaz."},
+  {s:"Çoban köpeği sürüyü korudu.", w:"çoban köpeği", a:"gercek", e:"Çoban köpeği burada gerçek hayvanı ifade ediyor."},
+  {s:"Barajdaki su seviyesi düştü.", w:"su seviyesi", a:"gercek", e:"Su seviyesi burada gerçek ölçümü ifade ediyor."},
+  {s:"Onun sözü kayaya oyulmuş gibiydi.", w:"kayaya oyulmuş", a:"mecaz", e:"Gerçek kaya oyma değil; değişmez ve sağlam olduğunu anlatıyor."},
+  {s:"Gözlerim yoruldu, kapandı.", w:"gözlerim kapandı", a:"gercek", e:"Gözlerin kapanması burada gerçek anlamıyla uyku hâlini ifade ediyor."},
+  {s:"Şahin gibi gözleri vardı.", w:"şahin gibi", a:"mecaz", e:"Gerçek şahin değil; çok keskin ve dikkatli bakışları anlatıyor."},
+  {s:"Kavak ağacı rüzgarda sallantı geçirdi.", w:"kavak ağacı", a:"gercek", e:"Kavak ağacı burada gerçek ağaç türünü ifade ediyor."},
+  {s:"Gönlü zengin biri olarak bilinirdi.", w:"gönlü zengin", a:"mecaz", e:"Gönlün gerçek parası olmaz; cömert ve iyi kalpli anlamında mecaz."},
+  {s:"Kaplumbağanın kabuğu çok sertti.", w:"kabuğu", a:"gercek", e:"Kabuk burada gerçek hayvan örtüsünü ifade ediyor."},
+  {s:"Çiçekler onun gülümsemesi gibiydi.", w:"gülümsemesi gibiydi", a:"mecaz", e:"Çiçek ile gülümseme kıyaslaması mecaz; güzelliği anlatıyor."},
+  {s:"Buz gibi sözler yüreğini dağladı.", w:"buz gibi sözler", a:"mecaz", e:"Sözler gerçekten buz değil; soğuk ve acımasız sözleri anlatıyor."},
+  {s:"Arının sokması çok acıttı.", w:"sokması", a:"gercek", e:"Arının sokması burada gerçek olayı ifade ediyor."},
+  {s:"Onun gülüşü adeta güneşti.", w:"güneşti", a:"mecaz", e:"Gülüş gerçek güneş değil; aydınlatıcı ve sıcak etkisini anlatıyor."},
+  {s:"Koyun sürüsü meraya çıktı.", w:"koyun sürüsü", a:"gercek", e:"Koyun sürüsü burada gerçek hayvanları ifade ediyor."},
+  {s:"Hayat bir okuldur.", w:"okuldur", a:"mecaz", e:"Hayat gerçek okul değil; her şeyden ders alındığını anlatıyor."},
+  {s:"Fısıldayan rüzgar yaprakları salladı.", w:"fısıldayan rüzgar", a:"mecaz", e:"Rüzgar gerçekten fısıldamaz; hafif sesini insana benzetme ile anlatıyor."},
+  {s:"Toprağa tohum atıldı, filizlendi.", w:"tohum", a:"gercek", e:"Tohum burada gerçek anlamıyla bitki tohumunu ifade ediyor."},
+  {s:"Kışın ayazında elleri morardı.", w:"morardı", a:"gercek", e:"Morarma burada gerçek fizyolojik değişimi ifade ediyor."},
+  {s:"Onun kalemi hiç durmuyor.", w:"kalemi durmuyor", a:"mecaz", e:"Kalem gerçekten durmaz; sürekli yazdığını anlatıyor."},
+  {s:"Ekin tarlaları altın sarısına büründü.", w:"altın sarısına büründü", a:"mecaz", e:"Gerçek altın değil; sarının zenginliğini ve güzelliğini anlatıyor."},
+  {s:"Balkondan çiçekler sarktı.", w:"sarktı", a:"gercek", e:"Sarkmak burada gerçek fiziksel konumu ifade ediyor."},
+  {s:"İki arkadaş arasındaki duvar yıkıldı.", w:"duvar yıkıldı", a:"mecaz", e:"Gerçek duvar değil; aralarındaki soğukluğun ve engelin ortadan kalktığını anlatıyor."},
+  {s:"Dereden çıkan çamur yola bulaştı.", w:"çamur", a:"gercek", e:"Çamur burada gerçek anlamıyla ıslak toprağı ifade ediyor."},
+  {s:"Gözleri kamaşıncaya kadar baktı.", w:"kamaşıncaya", a:"gercek", e:"Gözlerin kamaşması burada gerçek görme rahatsızlığını ifade ediyor."},
+  {s:"Başarının tadını ilk kez aldı.", w:"tadını aldı", a:"mecaz", e:"Başarının gerçek tadı olmaz; başarının sevincini yaşamayı anlatıyor."},
+  {s:"Ağaç meyvesinden tanınır.", w:"meyvesinden tanınır", a:"mecaz", e:"Kişi gerçek meyve vermiyor; değeri yapıp ettikleriyle anlaşılır anlamında mecaz."},
+  {s:"Geminin pruvasında durdu.", w:"pruva", a:"gercek", e:"Pruva burada gerçek anlamıyla geminin ön tarafını ifade ediyor."},
+  {s:"Sevincini içine gömdü.", w:"içine gömdü", a:"mecaz", e:"Gerçek gömmek değil; sevincini dışa vurmadan içinde sakladığını anlatıyor."},
+  {s:"Yıldırım düşüp ağacı yaktı.", w:"yıldırım", a:"gercek", e:"Yıldırım burada gerçek meteorolojik olayı ifade ediyor."},
+  {s:"Onun sesi beni sarstı.", w:"sarstı", a:"mecaz", e:"Gerçek sarsılma değil; çok etkilendiğini anlatıyor."},
+  {s:"Eskimiş kürek kırıldı.", w:"kürek", a:"gercek", e:"Kürek burada gerçek aleti ifade ediyor."},
+  {s:"Sözü tutmak altından ağırdır.", w:"altından ağır", a:"mecaz", e:"Gerçek ağırlık değil; söz tutmanın zor ve değerli olduğunu anlatıyor."},
+  {s:"Buğday tarlaları rüzgarda dalgalandı.", w:"dalgalandı", a:"mecaz", e:"Buğday gerçekten dalgalanmaz; rüzgarda sallanmasını deniz dalgalarına benzeterek anlatıyor."},
+  {s:"Küçük bir nehir köyün ortasından geçiyordu.", w:"nehir", a:"gercek", e:"Nehir burada gerçek coğrafi ögeyi ifade ediyor."},
+  {s:"Çocukluğu geride kaldı.", w:"geride kaldı", a:"mecaz", e:"Çocukluk gerçekten bir yer değil; o dönemin bittiğini ve geçtiğini anlatıyor."},
+  {s:"Kazanın içindeki su kaynadı.", w:"su", a:"gercek", e:"Su burada gerçek anlamıyla sıvıyı ifade ediyor."},
+  {s:"Onun içi sıkıştı, dışarı çıktı.", w:"içi sıkıştı", a:"mecaz", e:"İç gerçekten sıkışmadı; bunalmış ve havasız hissini anlatıyor."},
+  {s:"Çam ormanının kokusu çok güzeldi.", w:"çam ormanının kokusu", a:"gercek", e:"Koku burada gerçek anlamıyla çam ağaçlarının yaydığı kokuyu ifade ediyor."},
+  {s:"Dağ gibi engelleri aştı.", w:"dağ gibi engeller", a:"mecaz", e:"Engeller gerçek dağ değil; çok büyük güçlükleri anlatıyor."},
+  {s:"Balık ağa takıldı.", w:"ağa", a:"gercek", e:"Ağ burada gerçek anlamıyla avlama aracını ifade ediyor."},
+  {s:"Annesinin ölümünden sonra içinde bir şeyler öldü.", w:"bir şeyler öldü", a:"mecaz", e:"Gerçek ölüm değil; neşenin, umudun ya da sevinç duygusunun yok olduğunu anlatıyor."},
+  {s:"Tarla faresi mahsulü kemirdi.", w:"kemirdi", a:"gercek", e:"Kemirilmek burada gerçek anlamıyla fiziksel hareketi ifade ediyor."},
+  {s:"Yüksek sesle güldü, ortalık çınladı.", w:"çınladı", a:"mecaz", e:"Çınlamak burada sesin sert yankılanmasını anlatıyor; bağlama göre gerçek veya abartılı mecaz."},
+  {s:"İçinde bir ateş yanıyor, söndüremiyor.", w:"ateş yanıyor", a:"mecaz", e:"Gerçek ateş değil; tutkuyu ya da acıyı anlatıyor."},
+  {s:"Çocuk su gibi aktı içeri.", w:"su gibi aktı", a:"mecaz", e:"Çocuk gerçek su değil; hızlı ve sessizce girdiğini anlatıyor."},
+  {s:"Ufukta birkaç bulut belirdi.", w:"bulut", a:"gercek", e:"Bulut burada gerçek anlamıyla atmosfer oluşumunu ifade ediyor."},
+  {s:"Yüreği kabardı, gözyaşı döktü.", w:"yüreği kabardı", a:"mecaz", e:"Yürek gerçekten kabarmaz; duyguların yoğunlaşıp taşmasını anlatıyor."},
+  {s:"Dağların ardından güneş göründü.", w:"dağların ardından", a:"gercek", e:"Dağların ardı gerçek coğrafi konumu ifade ediyor."},
+  {s:"Sevinç içinde çiçek açtı.", w:"çiçek açtı", a:"mecaz", e:"İnsan gerçek çiçek açmaz; mutlulukla açılıp geliştiğini anlatıyor."},
+  {s:"Sabah erken derenin sesi duyuldu.", w:"derenin sesi", a:"gercek", e:"Derenin sesi burada gerçek anlamıyla ses dalgasını ifade ediyor."},
+  {s:"Onun yazdığı şiir beni okşadı.", w:"okşadı", a:"mecaz", e:"Şiir gerçekten okşamaz; hoş ve yumuşak etkisini anlatıyor."},
+  {s:"Kertenkeleler taşların altına saklandı.", w:"kertenkeleler", a:"gercek", e:"Kertenkele burada gerçek hayvanı ifade ediyor."},
+  {s:"Zaman, sessizce geçip gitti.", w:"sessizce geçip gitti", a:"mecaz", e:"Zamanın gerçek sessizliği olmaz; fark edilmeden aktığını anlatıyor."},
+  {s:"Yağmurlu bir günde çiçekler daha güzel kokar.", w:"yağmurlu", a:"gercek", e:"Yağmurlu burada gerçek anlamıyla yağmurlu havayı ifade ediyor."},
+  {s:"Kötü sözler ona çok dokundu.", w:"dokundu", a:"mecaz", e:"Söz gerçekten dokunmaz; duygusal yaralanmayı anlatıyor."},
+  {s:"Tırtıl kelebeğe dönüştü.", w:"tırtıl", a:"gercek", e:"Tırtıl burada gerçek hayvanı ifade ediyor."},
+  {s:"Kadehi kaldırıp içti.", w:"kadehi", a:"gercek", e:"Kadeh burada gerçek nesneyi ifade ediyor."},
+  {s:"Onun bakışları bana ok gibi saplandı.", w:"ok gibi", a:"mecaz", e:"Gerçek ok değil; keskin bakışların etkisini anlatıyor."},
+  {s:"Çakıl taşı suya atılınca halkalar oluştu.", w:"çakıl taşı", a:"gercek", e:"Çakıl taşı burada gerçek nesneyi ifade ediyor."},
+  {s:"Bu yol beni tanıdık yerlere götürdü.", w:"yol", a:"mecaz", e:"Yol mecaz; hayat yolculuğundaki bir süreç anlamında kullanılıyor."},
+  {s:"Eski bir köyde çınar altında oturdu.", w:"çınar", a:"gercek", e:"Çınar burada gerçek ağaç türünü ifade ediyor."},
+  {s:"Onun kalbine giden yolu buldu.", w:"kalbine giden yol", a:"mecaz", e:"Gerçek yol değil; sevgisini kazanmayı anlatıyor."},
+  // ── SON 62 SORU ──────────────────────────────────────────────────────────
+  {s:"Sabah kahvesinin kokusu onu uyandırdı.", w:"kokusu", a:"gercek", e:"Koku burada gerçek anlamıyla kimyasal uyarıyı ifade ediyor."},
+  {s:"Onun sözleri benim için bir çapa oldu.", w:"çapa oldu", a:"mecaz", e:"Gerçek çapa değil; sözlerin tutunmasını ve güvence vermesini anlatıyor."},
+  {s:"Büyük bir kaya denize yuvarlandı.", w:"kaya", a:"gercek", e:"Kaya burada gerçek anlamıyla büyük taşı ifade ediyor."},
+  {s:"Onun gülüşü bir ışık huzmesi gibi odayı doldurdu.", w:"ışık huzmesi gibi", a:"mecaz", e:"Gülüş gerçek ışık değil; aydınlatıcı ve neşeli etkisini anlatıyor."},
+  {s:"Akarsu yatağı kuruydu.", w:"yatak", a:"gercek", e:"Nehir yatağı burada gerçek anlamıyla su kanalını ifade ediyor."},
+  {s:"Onun cesareti herkese ilham verdi.", w:"ilham verdi", a:"mecaz", e:"İlham gerçek bir nesne değil; güçlendirmek ve motive etmek anlamında mecaz."},
+  {s:"Cam yüzeyde parmak izi kaldı.", w:"parmak izi", a:"gercek", e:"Parmak izi burada gerçek fiziksel izi ifade ediyor."},
+  {s:"Bu konuşma ikimizin arasına bir uçurum kattı.", w:"uçurum kattı", a:"mecaz", e:"Gerçek uçurum değil; aralarının büyük ölçüde açıldığını anlatıyor."},
+  {s:"Çukurdan çıkan su yolu kapattı.", w:"su yolu", a:"gercek", e:"Su yolu burada gerçek coğrafi yapıyı ifade ediyor."},
+  {s:"Onun sesi içime su serpti.", w:"su serpti", a:"mecaz", e:"Gerçek su değil; sakinleştirip ferahlattığını anlatıyor."},
+  {s:"Tarlanın ortasında bir kuyu vardı.", w:"kuyu", a:"gercek", e:"Kuyu burada gerçek anlamıyla su kuyusunu ifade ediyor."},
+  {s:"Üzüntü, onu bir gölge gibi izliyordu.", w:"gölge gibi", a:"mecaz", e:"Üzüntü gerçek gölge değil; sürekli peşinde olduğunu anlatıyor."},
+  {s:"Kiremit çatı yağmurda ıslandı.", w:"kiremit", a:"gercek", e:"Kiremit burada gerçek inşaat malzemesini ifade ediyor."},
+  {s:"O gün bütün kapılar ona açıldı.", w:"kapılar açıldı", a:"mecaz", e:"Gerçek kapı değil; fırsatların ona sunulduğunu anlatıyor."},
+  {s:"Fırtınadan sonra gökkuşağı çıktı.", w:"gökkuşağı", a:"gercek", e:"Gökkuşağı burada gerçek anlamıyla optik olayı ifade ediyor."},
+  {s:"Onun yüreği dağlar kadar büyüktü.", w:"dağlar kadar büyük", a:"mecaz", e:"Yürek gerçekten büyümez; cömertlik ve iyiliği anlatıyor."},
+  {s:"Nane yaprakları çayın üstünde yüzdü.", w:"nane yaprakları", a:"gercek", e:"Nane yaprağı burada gerçek bitkiyi ifade ediyor."},
+  {s:"Sevinç haberi kuş olup uçtu.", w:"kuş olup uçtu", a:"mecaz", e:"Haber gerçek kuş olmadı; hızla yayıldığını anlatıyor."},
+  {s:"Kilit kapıyı güvenle tutuyordu.", w:"kilit", a:"gercek", e:"Kilit burada gerçek mekanik nesneyi ifade ediyor."},
+  {s:"Kalbi bir tamburaya döndü, hızla çarpmaya başladı.", w:"tamburaya döndü", a:"mecaz", e:"Kalp gerçekten tambur olmadı; hızlı ve güçlü çarpışını anlatıyor."},
+  {s:"Tarla sürülünce toprak kokusu yayıldı.", w:"toprak kokusu", a:"gercek", e:"Toprak kokusu burada gerçek kokuyu ifade ediyor."},
+  {s:"Başarıların seni taçlandırdı.", w:"taçlandırdı", a:"mecaz", e:"Gerçek taç değil; başarıların ona saygınlık kazandırdığını anlatıyor."},
+  {s:"Testinin kulpu kırılmış.", w:"kulpu", a:"gercek", e:"Kulp burada gerçek anlamıyla testinin tutma kısmını ifade ediyor."},
+  {s:"O konuşunca benim içimde bir şey uyandı.", w:"uyandı", a:"mecaz", e:"Gerçek uyanma değil; duyguların harekete geçmesini anlatıyor."},
+  {s:"Derenin iki yanında söğüt ağaçları vardı.", w:"söğüt", a:"gercek", e:"Söğüt burada gerçek ağaç türünü ifade ediyor."},
+  {s:"Yaşlı adam hayatın derslerini çıkardı.", w:"derslerini çıkardı", a:"mecaz", e:"Gerçek ders değil; deneyimlerden öğrendiklerini anlatıyor."},
+  {s:"Küçük bir taş ayakkabısına battı.", w:"battı", a:"gercek", e:"Batmak burada gerçek fiziksel batmayı ifade ediyor."},
+  {s:"Onun gözleri karardı, düştü.", w:"gözleri karardı", a:"gercek", e:"Gözlerin karması burada gerçek anlamıyla bayılmayı ifade ediyor."},
+  {s:"Bu şehirde her taş bir tarih taşıyor.", w:"taş bir tarih taşıyor", a:"mecaz", e:"Taş gerçekten tarih taşımaz; tarihî geçmişi anlatıyor."},
+  {s:"Nohutlar suda şişti.", w:"nohutlar", a:"gercek", e:"Nohut burada gerçek anlamıyla bir baklagili ifade ediyor."},
+  {s:"Onun sözü kanun gibiydi.", w:"kanun gibiydi", a:"mecaz", e:"Söz gerçek kanun değil; kesin ve değişmez olduğunu anlatıyor."},
+  {s:"Rüzgar değirmeninin kanatları döndü.", w:"değirmen kanatları", a:"gercek", e:"Değirmen kanatları burada gerçek mekanik yapıyı ifade ediyor."},
+  {s:"Güzelliği gözleri kamaştırdı.", w:"kamaştırdı", a:"mecaz", e:"Gözler gerçekten kamaşmadı; büyük hayranlık uyandırdığını anlatıyor."},
+  {s:"Dağ eteğindeki köyde mis gibi ekmek kokusu vardı.", w:"mis gibi", a:"mecaz", e:"Gerçek mis değil; çok güzel ve hoş anlamında mecaz."},
+  {s:"Çiçek tarhı sulama sonrası canlandı.", w:"tarhı", a:"gercek", e:"Tarh burada gerçek anlamıyla çiçek yatağını ifade ediyor."},
+  {s:"Bu sözler benim için bir kalkan oldu.", w:"kalkan oldu", a:"mecaz", e:"Gerçek kalkan değil; koruyan ve güçlendiren bir etki anlamında mecaz."},
+  {s:"Pamuğun içi çok yumuşaktı.", w:"pamuk", a:"gercek", e:"Pamuk burada gerçek anlamıyla bitkisel lifi ifade ediyor."},
+  {s:"Onun içinde bir çığlık vardı, duyuramazdı.", w:"çığlık vardı", a:"mecaz", e:"Gerçek çığlık değil; bastırılmış büyük bir iç sıkıntısını anlatıyor."},
+  {s:"Kıyıya vuran dalgalar taşları yuvarlıyor.", w:"kıyıya vuran dalgalar", a:"gercek", e:"Dalgaların kıyıya vurması gerçek fiziksel olayı ifade ediyor."},
+  {s:"Söz, bir ok gibidir; yaydan çıktı mı geri dönmez.", w:"ok gibidir", a:"mecaz", e:"Söz gerçek ok değil; söylenen sözün geri alınamayacağını anlatıyor."},
+  {s:"Koyunların tüyleri yıkandı.", w:"tüyleri", a:"gercek", e:"Tüy burada gerçek hayvan örtüsünü ifade ediyor."},
+  {s:"Onun sabrı bitti, kükredi.", w:"kükredi", a:"mecaz", e:"İnsan gerçekten kükremez; büyük öfkeyle bağırdığını anlatıyor."},
+  {s:"Demir çubuğu ateşte kızdırdılar.", w:"demir çubuk", a:"gercek", e:"Demir çubuk burada gerçek nesneyi ifade ediyor."},
+  {s:"Hayatın baharında her şey güzel görünür.", w:"baharında", a:"mecaz", e:"Hayatın gerçek baharı yok; gençlik ve canlılık dönemini anlatıyor."},
+  {s:"Lahana tarlasına böcek düştü.", w:"lahana", a:"gercek", e:"Lahana burada gerçek sebzeyi ifade ediyor."},
+  {s:"Bu keder benim içime taş gibi oturdu.", w:"taş gibi oturdu", a:"mecaz", e:"Gerçek taş değil; kederin ağırlık ve baskısını anlatıyor."},
+  {s:"Atın yeleleri rüzgarda dalgalandı.", w:"yeleleri", a:"gercek", e:"Yele burada gerçek hayvan organını ifade ediyor."},
+  {s:"Onun sözleri ruhuma işledi.", w:"ruhuma işledi", a:"mecaz", e:"Gerçek işleme değil; derin etki bıraktığını anlatıyor."},
+  {s:"Paslı çivi tahtan çıktı.", w:"paslı çivi", a:"gercek", e:"Paslı çivi burada gerçek nesneyi ifade ediyor."},
+  {s:"Gözlerini kapayınca zihninde fırtına koptu.", w:"fırtına koptu", a:"mecaz", e:"Gerçek fırtına değil; zihinsel karmaşayı anlatıyor."},
+  {s:"Deniz kabuğunu kulağına dayadı, ses duydu.", w:"deniz kabuğu", a:"gercek", e:"Deniz kabuğu burada gerçek nesneyi ifade ediyor."},
+  {s:"Onun içindeki kor hâlâ yanıyor.", w:"kor", a:"mecaz", e:"Gerçek kor değil; söndürülemeyen tutkuyu ya da öfkeyi anlatıyor."},
+  {s:"Çoban koyunları mağaraya sürdü.", w:"mağaraya", a:"gercek", e:"Mağara burada gerçek coğrafi yapıyı ifade ediyor."},
+  {s:"Umudun ışığı karanlıkta beni yönlendirdi.", w:"ışığı yönlendirdi", a:"mecaz", e:"Umudun gerçek ışığı yok; hayatta yol gösterdiğini anlatıyor."},
+  {s:"Ördekler gölde yüzdü.", w:"ördekler", a:"gercek", e:"Ördek burada gerçek hayvanı ifade ediyor."},
+  {s:"Bu davada alnı açık çıktı.", w:"alnı açık çıktı", a:"mecaz", e:"Alın gerçekten açılmaz; temiz ve onurlu çıkmasını anlatıyor."},
+  {s:"Mısır koçanı hasat zamanı toplandı.", w:"mısır koçanı", a:"gercek", e:"Mısır koçanı burada gerçek tarım ürününü ifade ediyor."},
+  {s:"Onun bakışları adeta beni yaktı.", w:"yaktı", a:"mecaz", e:"Gerçek yanma değil; bakışların çok rahatsız edici etkisini anlatıyor."},
+  {s:"Bahçenin çitleri boyandı.", w:"çitleri", a:"gercek", e:"Çit burada gerçek anlamıyla bahçe sınır yapısını ifade ediyor."},
+  {s:"Bu söz beni ayaklandırdı.", w:"ayaklandırdı", a:"mecaz", e:"Gerçek kalkma değil; isyan ya da güçlü motivasyon anlamında mecaz."},
+  {s:"Gemi limana demir attı.", w:"demir attı", a:"gercek", e:"Demir atmak burada gerçek anlamıyla demiri suya bırakmayı ifade ediyor."},
+  {s:"Sevinci onu ayaklarından uçurdu.", w:"ayaklarından uçurdu", a:"mecaz", e:"Gerçekten uçmadı; sevinçten yere basmaz gibi hissettiğini anlatıyor."},
+  {s:"Arpa tarlaları sararmaya başladı.", w:"arpa", a:"gercek", e:"Arpa burada gerçek tarım bitkisini ifade ediyor."},
+  {s:"Onun müziği içimde bir kapı araladı.", w:"kapı araladı", a:"mecaz", e:"Gerçek kapı değil; duygusal bir farkındalık açtığını anlatıyor."},
+];
+
+// ─── UYGULAMA DURUM ──────────────────────────────────────────────────────────
+let shuffled = [];
+let current = 0;
+let answered = false;
+let scoreCorrect = 0;
+let scoreWrong = 0;
+
+// Karıştırma
+function shuffle(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+// Cümleyi parçalara böl, vurgulu kelimeyi renklendir
+function renderSentence(q) {
+  const s = q.s;
+  const w = q.w;
+  // Büyük/küçük harf duyarsız bul
+  const idx = s.toLowerCase().indexOf(w.toLowerCase());
+  if (idx === -1) return `<span class="highlight-word">${w}</span>`;
+  const before = s.slice(0, idx);
+  const word = s.slice(idx, idx + w.length);
+  const after = s.slice(idx + w.length);
+  return `${before}<span class="highlight-word">${word}</span>${after}`;
+}
+
+function loadQuestion() {
+  if (current >= shuffled.length) {
+    // Tüm sorular bitti, başa dön
+    shuffled = shuffle(questions);
+    current = 0;
+  }
+  const q = shuffled[current];
+  document.getElementById('sentence').innerHTML = renderSentence(q);
+  document.getElementById('feedback').className = 'feedback';
+  document.getElementById('feedback').textContent = '';
+  document.getElementById('btnGercek').disabled = false;
+  document.getElementById('btnMecaz').disabled = false;
+  document.getElementById('btnGercek').classList.remove('correct-choice');
+  document.getElementById('btnMecaz').classList.remove('correct-choice');
+  document.getElementById('btnNext').classList.remove('show');
+  document.getElementById('card').classList.remove('shake');
+  answered = false;
+
+  // Progress
+  const total = shuffled.length;
+  const pct = ((current) / total) * 100;
+  document.getElementById('progressBar').style.width = pct + '%';
+  document.getElementById('counter').textContent = `${current + 1} / ${total}`;
+}
+
+function answer(choice) {
+  if (answered) return;
+  answered = true;
+  const q = shuffled[current];
+  const correct = q.a;
+
+  document.getElementById('btnGercek').disabled = true;
+  document.getElementById('btnMecaz').disabled = true;
+
+  const fb = document.getElementById('feedback');
+
+  if (choice === correct) {
+    scoreCorrect++;
+    document.getElementById('scoreCorrect').textContent = scoreCorrect;
+    fb.textContent = '✅ Doğru! ' + q.e;
+    fb.className = 'feedback correct-fb show';
+    showAferin();
+    launchConfetti();
+  } else {
+    scoreWrong++;
+    document.getElementById('scoreWrong').textContent = scoreWrong;
+    fb.textContent = '❌ Yanlış. ' + q.e;
+    fb.className = 'feedback wrong-fb show';
+    playWrong();
+    document.getElementById('card').classList.add('shake');
+    // Doğru butonu yeşile boya
+    if (correct === 'gercek') {
+      document.getElementById('btnGercek').classList.add('correct-choice');
+    } else {
+      document.getElementById('btnMecaz').classList.add('correct-choice');
+    }
+  }
+
+  document.getElementById('btnNext').classList.add('show');
+}
+
+function nextQuestion() {
+  current++;
+  loadQuestion();
+}
+
+// ─── AFERİN ──────────────────────────────────────────────────────────────────
+function showAferin() {
+  const el = document.getElementById('aferin');
+  el.classList.add('show');
+  setTimeout(() => el.classList.remove('show'), 1400);
+}
+
+// ─── KONFETİ ────────────────────────────────────────────────────────────────
+function launchConfetti() {
+  const colors = ['#ffd166','#06d6a0','#7c83fd','#ff6b6b','#ef476f','#118ab2','#ffd166'];
+  for (let i = 0; i < 80; i++) {
+    const piece = document.createElement('div');
+    piece.classList.add('confetti-piece');
+    piece.style.left = Math.random() * 100 + 'vw';
+    piece.style.background = colors[Math.floor(Math.random() * colors.length)];
+    piece.style.width = (Math.random() * 8 + 6) + 'px';
+    piece.style.height = (Math.random() * 8 + 6) + 'px';
+    piece.style.borderRadius = Math.random() > 0.5 ? '50%' : '2px';
+    piece.style.animationDuration = (Math.random() * 1.5 + 1.2) + 's';
+    piece.style.animationDelay = (Math.random() * 0.4) + 's';
+    document.body.appendChild(piece);
+    piece.addEventListener('animationend', () => piece.remove());
+  }
+}
+
+// ─── YANLIŞ SESİ ────────────────────────────────────────────────────────────
+function playWrong() {
+  try {
+    const ctx = new (window.AudioContext || window.webkitAudioContext)();
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+    osc.connect(gain);
+    gain.connect(ctx.destination);
+    osc.type = 'square';
+    osc.frequency.setValueAtTime(180, ctx.currentTime);
+    osc.frequency.linearRampToValueAtTime(100, ctx.currentTime + 0.3);
+    gain.gain.setValueAtTime(0.3, ctx.currentTime);
+    gain.gain.linearRampToValueAtTime(0, ctx.currentTime + 0.35);
+    osc.start(ctx.currentTime);
+    osc.stop(ctx.currentTime + 0.4);
+  } catch(e) {}
+}
+
+// ─── BAŞLAT ─────────────────────────────────────────────────────────────────
+shuffled = shuffle(questions);
+loadQuestion();
+</script>
+</body>
+</html>

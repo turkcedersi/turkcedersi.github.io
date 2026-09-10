@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yazma Çarkı</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0d1b2a;
+  --ink: #f0f4f8;
+  --muted: #6b8caa;
+  --card: #132233;
+  --border: #1e3a52;
+  --giris-c: #34d399;
+  --gelisme-c: #818cf8;
+  --sonuc-c: #fb923c;
+  --dusunce: #f472b6;
+  --hikaye: #38bdf8;
+  --gold: #fbbf24;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* ═══ WHEEL SCREEN ═══ */
+#wheel-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 0;
+  padding: 24px;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 0%, #1a3a5c44 0%, transparent 70%),
+    radial-gradient(ellipse 60% 40% at 80% 90%, #2d1b6944 0%, transparent 60%),
+    var(--bg);
+}
+
+.app-title {
+  font-family: 'Fredoka One', cursive;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  letter-spacing: 0.04em;
+  background: linear-gradient(135deg, var(--gold) 0%, #f97316 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.app-sub {
+  color: var(--muted);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+/* Wheel wrapper */
+.wheel-wrapper {
+  position: relative;
+  width: min(420px, 80vw);
+  height: min(420px, 80vw);
+  margin-bottom: 28px;
+}
+
+/* Pointer */
+.pointer {
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  width: 0;
+  height: 0;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-top: 32px solid var(--gold);
+  filter: drop-shadow(0 4px 8px rgba(251,191,36,0.6));
+}
+
+#wheel-canvas {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 6px #1e3a52,
+    0 0 0 10px #0d2236,
+    0 20px 60px rgba(0,0,0,0.6);
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+#wheel-canvas:hover { transform: scale(1.01); }
+
+/* Center hub */
+.wheel-hub {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 54px; height: 54px;
+  background: var(--bg);
+  border: 4px solid var(--gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  z-index: 5;
+  box-shadow: 0 0 20px rgba(251,191,36,0.4);
+}
+
+/* Spin button */
+.btn-spin {
+  padding: 18px 56px;
+  background: linear-gradient(135deg, var(--gold), #f97316);
+  border: none;
+  border-radius: 50px;
+  font-family: 'Fredoka One', cursive;
+  font-size: 1.5rem;
+  color: #0d1b2a;
+  cursor: pointer;
+  letter-spacing: 0.06em;
+  box-shadow: 0 8px 32px rgba(251,191,36,0.35);
+  transition: all 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+.btn-spin::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.2), transparent);
+  border-radius: inherit;
+}
+.btn-spin:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(251,191,36,0.5); }
+.btn-spin:active { transform: translateY(0); }
+.btn-spin:disabled { opacity: 0.4; cursor: not-allowed; transform: none; }
+
+/* ═══ MAP SCREEN ═══ */
+#map-screen {
+  display: none;
+  min-height: 100vh;
+  padding: 24px 32px 20px;
+  flex-direction: column;
+  background:
+    radial-gradient(ellipse 100% 50% at 50% 0%, #1a3a5c33 0%, transparent 60%),
+    var(--bg);
+}
+
+.map-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.map-topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.back-btn {
+  padding: 9px 18px;
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  background: transparent;
+  color: var(--muted);
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.18s;
+}
+.back-btn:hover { border-color: var(--gold); color: var(--gold); }
+
+.map-label {
+  font-family: 'Fredoka One', cursive;
+  font-size: 1.4rem;
+  color: var(--gold);
+  letter-spacing: 0.04em;
+}
+
+.fs-btn {
+  padding: 9px 18px;
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  background: transparent;
+  color: var(--muted);
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.18s;
+}
+.fs-btn:hover { border-color: var(--hikaye); color: var(--hikaye); }
+
+/* Topic hero */
+.topic-hero {
+  background: var(--card);
+  border: 1.5px solid var(--border);
+  border-radius: 18px;
+  padding: 18px 26px;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.topic-badge {
+  font-size: 0.72rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  padding: 5px 12px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+.badge-dusunce { background: rgba(244,114,182,0.15); color: var(--dusunce); border: 1px solid rgba(244,114,182,0.3); }
+.badge-hikaye { background: rgba(56,189,248,0.15); color: var(--hikaye); border: 1px solid rgba(56,189,248,0.3); }
+
+.topic-name {
+  font-family: 'Fredoka One', cursive;
+  font-size: clamp(1.3rem, 3vw, 2rem);
+  letter-spacing: 0.02em;
+  color: var(--ink);
+  flex: 1;
+}
+
+.kw-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-left: auto;
+}
+
+.kw-chip {
+  padding: 5px 13px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  background: rgba(129,140,248,0.12);
+  border: 1px solid rgba(129,140,248,0.3);
+  color: #a5b4fc;
+}
+
+/* Map grid — 3 columns */
+.map-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr 1fr;
+  gap: 14px;
+  flex: 1;
+}
+
+.sec-card {
+  background: var(--card);
+  border-radius: 16px;
+  padding: 18px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-top: 4px solid;
+  position: relative;
+  overflow: hidden;
+  animation: riseUp 0.5s ease both;
+}
+
+.sec-card.s-giris { border-color: var(--giris-c); }
+.sec-card.s-gelisme { border-color: var(--gelisme-c); }
+.sec-card.s-sonuc { border-color: var(--sonuc-c); }
+
+.sec-card::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 70px;
+  opacity: 0.06;
+  pointer-events: none;
+}
+.s-giris::after { background: var(--giris-c); }
+.s-gelisme::after { background: var(--gelisme-c); }
+.s-sonuc::after { background: var(--sonuc-c); }
+
+@keyframes riseUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.sec-icon { font-size: 1.6rem; margin-bottom: 6px; }
+
+.sec-title {
+  font-family: 'Fredoka One', cursive;
+  font-size: 1.1rem;
+  letter-spacing: 0.04em;
+  margin-bottom: 2px;
+}
+.s-giris .sec-title { color: var(--giris-c); }
+.s-gelisme .sec-title { color: var(--gelisme-c); }
+.s-sonuc .sec-title { color: var(--sonuc-c); }
+
+.sec-hint {
+  font-size: 0.78rem;
+  color: var(--muted);
+  font-weight: 700;
+  margin-bottom: 14px;
+  line-height: 1.3;
+}
+
+.sec-points {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  flex: 1;
+}
+
+.sec-points li {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  background: rgba(255,255,255,0.04);
+  border-radius: 9px;
+  padding: 9px 11px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  line-height: 1.4;
+  border-left: 3px solid;
+}
+.s-giris .sec-points li { border-left-color: var(--giris-c); }
+.s-gelisme .sec-points li { border-left-color: var(--gelisme-c); }
+.s-sonuc .sec-points li { border-left-color: var(--sonuc-c); }
+
+.pt-num {
+  font-size: 0.72rem;
+  font-weight: 900;
+  opacity: 0.45;
+  margin-top: 2px;
+  min-width: 14px;
+}
+
+/* Confetti burst */
+.confetti-burst {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 999;
+}
+
+.confetti-piece {
+  position: absolute;
+  width: 10px; height: 10px;
+  border-radius: 2px;
+  animation: confettiFall linear forwards;
+}
+
+@keyframes confettiFall {
+  0% { transform: translateY(-20px) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+}
+
+/* Announcement overlay */
+#announce {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(13,27,42,0.88);
+  z-index: 200;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+  backdrop-filter: blur(6px);
+}
+#announce.show { display: flex; }
+
+.announce-icon { font-size: 4rem; animation: pop 0.5s cubic-bezier(0.34,1.56,0.64,1); }
+@keyframes pop { from { transform: scale(0); } to { transform: scale(1); } }
+
+.announce-topic {
+  font-family: 'Fredoka One', cursive;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  text-align: center;
+  color: var(--gold);
+  line-height: 1.2;
+  padding: 0 20px;
+  animation: pop 0.5s 0.1s cubic-bezier(0.34,1.56,0.64,1) both;
+}
+
+.announce-type {
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  animation: pop 0.5s 0.2s cubic-bezier(0.34,1.56,0.64,1) both;
+}
+
+.announce-btn {
+  margin-top: 12px;
+  padding: 16px 48px;
+  background: linear-gradient(135deg, var(--gold), #f97316);
+  border: none;
+  border-radius: 50px;
+  font-family: 'Fredoka One', cursive;
+  font-size: 1.3rem;
+  color: #0d1b2a;
+  cursor: pointer;
+  box-shadow: 0 8px 32px rgba(251,191,36,0.4);
+  animation: pop 0.5s 0.3s cubic-bezier(0.34,1.56,0.64,1) both;
+  transition: all 0.2s;
+}
+.announce-btn:hover { transform: translateY(-2px); }
+
+/* Fullscreen override */
+body:fullscreen #map-screen { padding: 28px 40px; }
+
+</style>
+</head>
+<body>
+<!-- ══ WHEEL SCREEN ══ -->
+<div id="wheel-screen">
+  <div class="app-title">✍️ Yazma Çarkı</div>
+  <div class="app-sub">6. ve 7. Sınıf Türkçe · Akıllı Tahta</div>
+
+  <div class="wheel-wrapper">
+    <div class="pointer"></div>
+    <canvas id="wheel-canvas" width="600" height="600"></canvas>
+    <div class="wheel-hub">🎯</div>
+  </div>
+
+  <button class="btn-spin" id="spin-btn" onclick="spinWheel()">ÇEVİR!</button>
+</div>
+
+<!-- ══ ANNOUNCE OVERLAY ══ -->
+<div id="announce">
+  <div class="announce-icon" id="ann-icon">🎉</div>
+  <div class="announce-topic" id="ann-topic"></div>
+  <div class="announce-type" id="ann-type"></div>
+  <button class="announce-btn" onclick="showMap()">Haritayı Göster →</button>
+</div>
+
+<!-- ══ MAP SCREEN ══ -->
+<div id="map-screen">
+  <div class="map-topbar">
+    <div class="map-topbar-left">
+      <button class="back-btn" onclick="backToWheel()">← Tekrar Çevir</button>
+      <span class="map-label">✍️ Yazma Haritası</span>
+    </div>
+    <button class="fs-btn" onclick="toggleFS()">⛶ Tam Ekran</button>
+  </div>
+
+  <div class="topic-hero">
+    <span class="topic-badge" id="hero-badge"></span>
+    <span class="topic-name" id="hero-topic"></span>
+    <div class="kw-row" id="hero-kw"></div>
+  </div>
+
+  <div class="map-grid" id="map-grid"></div>
+</div>
+
+<!-- ══ CONFETTI ══ -->
+<canvas class="confetti-burst" id="confetti-canvas"></canvas>
+
+<script>
+// ─── DATA ───────────────────────────────────────────────────────────────────
+const topics = [
+  {
+    konu: "Çevre Kirliliği",
+    tur: "düşünce",
+    anahtar: ["doğa", "sorumluluk", "gelecek"],
+    giris: {
+      hint: "Konuyu tanıt, okuyucuyu meraklandır",
+      maddeler: [
+        "Çevre kirliliğinin ne olduğunu kısaca açıkla",
+        "Günlük hayattan bir gözlem paylaş",
+        "Ana düşünceni bir cümleyle belirt"
+      ]
+    },
+    gelisme: {
+      hint: "Nedenlerini ve sonuçlarını ayrıntılandır",
+      maddeler: [
+        "Fabrikaların ve araçların havayı nasıl kirlettiğini yaz",
+        "Plastik atıkların sulara ve toprağa zararını anlat",
+        "Canlılar üzerindeki olumsuz etkileri açıkla",
+        "İnsanların sorumlu davranışlarından örnek ver"
+      ]
+    },
+    sonuc: {
+      hint: "Çözüm öner ve okuyucuya çağrı yap",
+      maddeler: [
+        "Bireysel çözüm önerileri sun",
+        "Geleceğe umutla bakan bir kapanış cümlesi yaz"
+      ]
+    }
+  },
+  {
+    konu: "Kitap Okumanın Önemi",
+    tur: "düşünce",
+    anahtar: ["hayal gücü", "bilgi", "alışkanlık"],
+    giris: {
+      hint: "Kitapla ilgili çarpıcı bir başlangıç yap",
+      maddeler: [
+        "Sevdiğin bir kitabı hatırlatan bir giriş cümlesi kur",
+        "Okuma alışkanlığının ne kadar yaygın olduğunu belirt",
+        "Tezini ortaya koy: 'Kitap okumak önemlidir çünkü…'"
+      ]
+    },
+    gelisme: {
+      hint: "Faydaları somut örneklerle anlat",
+      maddeler: [
+        "Kelime dağarcığına katkısını yaz",
+        "Empati ve hayal gücü üzerindeki etkisini açıkla",
+        "Başarılı insanların okuma alışkanlığından söz et",
+        "Ekran başında geçirilen zamanla karşılaştır"
+      ]
+    },
+    sonuc: {
+      hint: "Okuyucuyu okumaya teşvik et",
+      maddeler: [
+        "Kitap okumanın hayata kattıklarını özetle",
+        "Güçlü bir çağrıyla bitir: 'Haydi bir kitap aç!'"
+      ]
+    }
+  },
+  {
+    konu: "Teknoloji ve Gençlik",
+    tur: "düşünce",
+    anahtar: ["sosyal medya", "bağımlılık", "denge"],
+    giris: {
+      hint: "Teknolojiyle ilgili çarpıcı bir istatistik ya da soru ile başla",
+      maddeler: [
+        "Gençlerin günde kaç saat ekrana baktığını belirt",
+        "Teknolojinin hayatımızdaki yerini kısaca tanımla",
+        "Ana iddiayı ortaya koy"
+      ]
+    },
+    gelisme: {
+      hint: "Hem olumlu hem olumsuz yönleri irdele",
+      maddeler: [
+        "Eğitimde teknolojinin faydalarını yaz",
+        "Sosyal medya bağımlılığının zararlarını açıkla",
+        "Uyku ve dikkat sorunlarına değin",
+        "Sağlıklı teknoloji kullanımına örnek ver"
+      ]
+    },
+    sonuc: {
+      hint: "Denge vurgusunu öne çıkar",
+      maddeler: [
+        "Teknolojiyi bilinçli kullanmanın önemini özetle",
+        "Gençlere yönelik öneriyle bitir"
+      ]
+    }
+  },
+  {
+    konu: "Arkadaşlık",
+    tur: "düşünce",
+    anahtar: ["güven", "paylaşım", "sadakat"],
+    giris: {
+      hint: "Arkadaşlığı tanımla ve kişisel bir dokunuş ekle",
+      maddeler: [
+        "Gerçek arkadaşlığın ne anlama geldiğini sor/söyle",
+        "Bir arkadaşlık anısını ima eden cümle kur",
+        "Tezini belirt: 'Gerçek arkadaşlık…'"
+      ]
+    },
+    gelisme: {
+      hint: "Arkadaşlığın niteliklerini ve değerini göster",
+      maddeler: [
+        "Güven ve sadakat özelliklerini açıkla",
+        "Zor günlerde arkadaşın ne işe yaradığını yaz",
+        "Sahte arkadaşlıkla gerçek arkadaşlığı karşılaştır",
+        "Günlük hayattan somut bir örnek ver"
+      ]
+    },
+    sonuc: {
+      hint: "Değeri hatırlat, okuyucuya mesaj bırak",
+      maddeler: [
+        "İyi arkadaşlığın hayata kattıklarını özetle",
+        "Okuyucuya ilham veren bir kapanış cümlesi yaz"
+      ]
+    }
+  },
+  {
+    konu: "Vatanseverlik",
+    tur: "düşünce",
+    anahtar: ["vatan", "sorumluluk", "milli değerler"],
+    giris: {
+      hint: "Vatana duyulan sevgiyi güçlü imgelerle aç",
+      maddeler: [
+        "Vatanın ne ifade ettiğini sorgula ya da tanımla",
+        "Bayrak, dil gibi sembollere değin",
+        "Tezini belirt: 'Vatanseverlik sadece sözde değil…'"
+      ]
+    },
+    gelisme: {
+      hint: "Vatanseverliği somutlaştır",
+      maddeler: [
+        "Tarihi kahramanlardan örnek ver",
+        "Günlük hayatta vatanseverliğin nasıl göründüğünü yaz",
+        "Çevreye, kültüre sahip çıkmayı vatanseverlikle ilişkilendir",
+        "Gençlerin sorumluluklarına değin"
+      ]
+    },
+    sonuc: {
+      hint: "Duygu yüklü ama samimi bir kapanış yaz",
+      maddeler: [
+        "Vatanseverliğin özünü bir cümleyle özetle",
+        "Gençlere çağrı niteliğinde bitir"
+      ]
+    }
+  },
+  {
+    konu: "Hayallerim",
+    tur: "düşünce",
+    anahtar: ["hedef", "umut", "çalışmak"],
+    giris: {
+      hint: "Kişisel ve samimi bir giriş yap",
+      maddeler: [
+        "En büyük hayalinin ne olduğunu belirt",
+        "Bu hayalin nereden geldiğini anlat",
+        "Hayalin önemini bir cümleyle ifade et"
+      ]
+    },
+    gelisme: {
+      hint: "Hayali nasıl gerçekleştireceğini anlat",
+      maddeler: [
+        "Bu hayale ulaşmak için neler yapman gerektiğini yaz",
+        "Karşılaşabileceğin engelleri ve çözüm yollarını belirt",
+        "Hayal ettiğin gelecekteki bir günü betimle",
+        "Bu hayalin başkalarına nasıl fayda sağlayacağını düşün"
+      ]
+    },
+    sonuc: {
+      hint: "Umut ve kararlılıkla bitir",
+      maddeler: [
+        "Hayalinin sana verdiği gücü ifade et",
+        "Okuyucuya ilham verecek bir kapanış cümlesi yaz"
+      ]
+    }
+  },
+  {
+    konu: "Yağmurlu Bir Gün",
+    tur: "hikaye",
+    anahtar: ["yağmur", "şemsiye", "sürpriz"],
+    giris: {
+      hint: "Zamanı, mekânı ve karakteri tanıt",
+      maddeler: [
+        "Yağmurlu günün havasını betimleyerek başla",
+        "Kahramanını ve bulunduğu yeri tanıt",
+        "Olayı başlatacak merak uyandırıcı bir cümle kur"
+      ]
+    },
+    gelisme: {
+      hint: "Olayı geliştir, gerilimi artır",
+      maddeler: [
+        "Kahraman yağmurda beklenmedik biriyle ya da şeyle karşılaşır",
+        "Bu karşılaşmanın nasıl geliştiğini adım adım anlat",
+        "Kahramanın duygularını ve düşüncelerini göster",
+        "Olayın en heyecanlı noktasını yaz"
+      ]
+    },
+    sonuc: {
+      hint: "Olayı tamamla, bir ders ya da duygu bırak",
+      maddeler: [
+        "Olayın nasıl çözüldüğünü anlat",
+        "Kahramanın bu günden ne öğrendiğini göster"
+      ]
+    }
+  },
+  {
+    konu: "Kayıp Köpek",
+    tur: "hikaye",
+    anahtar: ["bağ", "arama", "umut"],
+    giris: {
+      hint: "Okuyucuyu hemen içine çek",
+      maddeler: [
+        "Köpeğin kaybolduğunu öğrenilen anı yaz",
+        "Kahramanın köpeğe olan sevgisini göster",
+        "Aramaya çıkma kararını belirt"
+      ]
+    },
+    gelisme: {
+      hint: "Arama serüvenini ve zorlukları anlat",
+      maddeler: [
+        "Kahramanın nereye gittiğini, kimlere sorduğunu anlat",
+        "Umutsuzluk ve kararlılık arasındaki çatışmayı göster",
+        "Beklenmedik bir ipucu ya da engel ortaya çıksın",
+        "Gerilimin en yüksek olduğu anı betimle"
+      ]
+    },
+    sonuc: {
+      hint: "Duygu dolu bir final yaz",
+      maddeler: [
+        "Köpeğin bulunup bulunmadığını anlat",
+        "Kahramanın bu deneyimden ne hissettiğini göster"
+      ]
+    }
+  },
+  {
+    konu: "Mahalledeki Yaşlı Çınar",
+    tur: "hikaye",
+    anahtar: ["geçmiş", "anı", "dayanıklılık"],
+    giris: {
+      hint: "Çınarı güçlü bir betimlemeyle hayata geçir",
+      maddeler: [
+        "Çınarın görünümünü ve büyüklüğünü betimle",
+        "Kahraman ile çınar arasındaki bağı tanıt",
+        "Hikâyeyi başlatacak bir olay ya da soru ortaya koy"
+      ]
+    },
+    gelisme: {
+      hint: "Çınarın ve kahramanın hikâyesini iç içe ver",
+      maddeler: [
+        "Kahramanın çınarla geçirdiği anıları anlat",
+        "Çınarın tehlike altına girdiği anı yaz",
+        "Çevredekilerin bu duruma tepkisini göster",
+        "Kahramanın mücadelesini ve duygularını anlat"
+      ]
+    },
+    sonuc: {
+      hint: "Bir şeyin geçip gitmesi ya da kalması üzerine bitir",
+      maddeler: [
+        "Çınarın akıbetini ve kahramanın kararını yaz",
+        "Doğayla kurulan bağ üzerine düşündürücü bir son cümle"
+      ]
+    }
+  },
+  {
+    konu: "İlk Okul Günüm",
+    tur: "hikaye",
+    anahtar: ["heyecan", "korku", "arkadaşlık"],
+    giris: {
+      hint: "O sabahı canlı biçimde gözler önüne ser",
+      maddeler: [
+        "Kahramanın sabah uyanışını ve heyecanını betimle",
+        "Okula giderken neler hissettiğini yaz",
+        "Okul kapısındaki ilk anı göster"
+      ]
+    },
+    gelisme: {
+      hint: "O günün olaylarını adım adım anlat",
+      maddeler: [
+        "Sınıfa girişi ve sıraları betimle",
+        "Öğretmen ve sınıf arkadaşlarıyla ilk tanışmayı yaz",
+        "Gün içinde yaşanan komik ya da şaşırtıcı bir anı anlat",
+        "Kahramanın duygularının nasıl değiştiğini göster"
+      ]
+    },
+    sonuc: {
+      hint: "Günün sonunda bir his ya da karar bırak",
+      maddeler: [
+        "Eve dönerken neler hissettiğini yaz",
+        "Bu günün kahramana ne öğrettiğini anlat"
+      ]
+    }
+  },
+  {
+    konu: "Spor Yapmanın Faydaları",
+    tur: "düşünce",
+    anahtar: ["sağlık", "disiplin", "takım ruhu"],
+    giris: {
+      hint: "Sporla hayatın ilişkisini güçlü kur",
+      maddeler: [
+        "Sporun tanımını ya da önemini kısaca belirt",
+        "Türkiye'deki ya da dünyadaki spor sevgisine değin",
+        "Tezini ortaya koy: 'Spor sağlıklı bir yaşam için…'"
+      ]
+    },
+    gelisme: {
+      hint: "Bedensel, zihinsel ve sosyal faydaları ele al",
+      maddeler: [
+        "Fiziksel sağlığa katkısını yaz",
+        "Stres azaltma ve odaklanmaya etkisini açıkla",
+        "Takım sporlarında dayanışmayı anlat",
+        "Düzenli spor yapan birinden örnek ver"
+      ]
+    },
+    sonuc: {
+      hint: "Sporu teşvik eden güçlü bir kapanış yap",
+      maddeler: [
+        "Sporun hayata kattıklarını özetle",
+        "Okuyucuyu harekete geçirecek bir cümleyle bitir"
+      ]
+    }
+  },
+  {
+    konu: "Sihirli Anahtar",
+    tur: "hikaye",
+    anahtar: ["gizem", "merak", "cesaret"],
+    giris: {
+      hint: "Gizemli bir başlangıçla okuyucuyu kap",
+      maddeler: [
+        "Kahramanın anahtarı nerede/nasıl bulduğunu anlat",
+        "Anahtarın tuhaf görünümünü betimle",
+        "Kahramanın merak ve heyecanını göster"
+      ]
+    },
+    gelisme: {
+      hint: "Anahtarın açtığı dünyayı keşfet",
+      maddeler: [
+        "Anahtar hangi kapıyı açtı? O mekânı betimle",
+        "Kahramanın karşılaştığı sürpriz ya da tehlikeyi yaz",
+        "Yardımcı bir karakter ya da ipucu ortaya çıksın",
+        "En heyecanlı anı canlandır"
+      ]
+    },
+    sonuc: {
+      hint: "Macerayı tamamla, bir iz bırak",
+      maddeler: [
+        "Kahramanın bu maceradan nasıl çıktığını anlat",
+        "Anahtarın gerçek anlamını ya da dersini göster"
+      ]
+    }
+  },
+  {
+    konu: "Sağlıklı Beslenme",
+    tur: "düşünce",
+    anahtar: ["vitamin", "fast food", "denge"],
+    giris: {
+      hint: "Beslenmenin hayatımızdaki yerine dikkat çek",
+      maddeler: [
+        "Günümüz gençlerinin beslenme alışkanlıklarına değin",
+        "Sağlıklı beslenmenin ne anlama geldiğini açıkla",
+        "Tezini belirt"
+      ]
+    },
+    gelisme: {
+      hint: "Sağlıklı ve sağlıksız beslenmeyi karşılaştır",
+      maddeler: [
+        "Fast food tüketiminin zararlarını yaz",
+        "Meyve, sebze ve su tüketiminin faydalarını açıkla",
+        "Okul çağı çocuklarına özel beslenme ipuçları ver",
+        "Ailenin bu konudaki rolünü belirt"
+      ]
+    },
+    sonuc: {
+      hint: "Sağlıklı seçimler için teşvik et",
+      maddeler: [
+        "Dengeli beslenmenin uzun vadeli faydalarını özetle",
+        "Küçük bir değişiklikle başlamayı öneren kapanış yaz"
+      ]
+    }
+  },
+  {
+    konu: "Karanlık Orman",
+    tur: "hikaye",
+    anahtar: ["kaybolmak", "ses", "yol"],
+    giris: {
+      hint: "Gerilim dolu bir atmosfer kur",
+      maddeler: [
+        "Kahramanın ormana nasıl girdiğini anlat",
+        "Ormanın görünümünü, seslerini betimle",
+        "Yolun kaybolduğu anı göster"
+      ]
+    },
+    gelisme: {
+      hint: "Korku ve cesaret arasındaki mücadeleyi yaz",
+      maddeler: [
+        "Kahramanın yol bulmak için ne yaptığını anlat",
+        "Karanlıkta duyulan tuhaf bir sesi betimle",
+        "Kahramanın içindeki korkuyu ve cesaret etme çabasını göster",
+        "Beklenmedik bir yardım ya da tehlike ortaya çıksın"
+      ]
+    },
+    sonuc: {
+      hint: "Çıkışı ve deneyimin etkisini yaz",
+      maddeler: [
+        "Kahramanın ormandan nasıl çıktığını anlat",
+        "Bu deneyimin ona ne kazandırdığını göster"
+      ]
+    }
+  },
+  {
+    konu: "Empati Kurmak",
+    tur: "düşünce",
+    anahtar: ["anlayış", "başkası", "duygu"],
+    giris: {
+      hint: "Empatiyi çarpıcı biçimde tanımla",
+      maddeler: [
+        "Empati nedir? Sorgulayarak ya da tanımlayarak başla",
+        "Günlük hayattan empatisizlik örneği ver",
+        "Tezini ortaya koy"
+      ]
+    },
+    gelisme: {
+      hint: "Empatinin bireysel ve toplumsal etkilerini göster",
+      maddeler: [
+        "Bir arkadaşını anlayarak yaptığın olumlu etkiyi yaz",
+        "Empati eksikliğinin sonuçlarını açıkla",
+        "Empatiyi nasıl geliştirebiliriz? Somut yollar öner",
+        "Toplumda empatinin getireceği değişimi anlat"
+      ]
+    },
+    sonuc: {
+      hint: "Empatiyi yaşam biçimine dönüştürmeye çağır",
+      maddeler: [
+        "Empatinin dünyayı nasıl iyileştireceğini özetle",
+        "Güçlü ve umut dolu bir son cümle yaz"
+      ]
+    }
+  },
+  {
+    konu: "Zaman Makinesinde Bir Gün",
+    tur: "hikaye",
+    anahtar: ["geçmiş", "gelecek", "seçim"],
+    giris: {
+      hint: "Fantastik bir başlangıçla büyüle",
+      maddeler: [
+        "Kahramanın zaman makinesini nasıl bulduğunu anlat",
+        "Nereye gitmek istediğini ve neden seçtiğini göster",
+        "Makinenin çalıştığı anı heyecanla betimle"
+      ]
+    },
+    gelisme: {
+      hint: "O zamanda yaşanan deneyimi ayrıntılandır",
+      maddeler: [
+        "Ulaşılan dönemi gözlemlerle betimle",
+        "Kahramanın karşılaştığı kişi ya da olayı yaz",
+        "Geçmişe ya da geleceğe müdahale etme isteğini ve sonucunu anlat",
+        "Geri dönme zorunluluğunu yaratan bir gerilim kur"
+      ]
+    },
+    sonuc: {
+      hint: "Geri dönüş ve kazanılan ders",
+      maddeler: [
+        "Kahramanın kendi zamanına nasıl döndüğünü anlat",
+        "Bu yolculuktan çıkardığı en önemli dersi yaz"
+      ]
+    }
+  },
+  {
+    konu: "Sanatın Gücü",
+    tur: "düşünce",
+    anahtar: ["müzik", "resim", "ifade"],
+    giris: {
+      hint: "Sanatı duygu yüklü biçimde tanıt",
+      maddeler: [
+        "Sanatın insan hayatındaki yerine değin",
+        "Kişisel bir sanat deneyimine göndermeli giriş yap",
+        "Tezini belirt: 'Sanat, insanın en derin dili…'"
+      ]
+    },
+    gelisme: {
+      hint: "Sanatın farklı boyutlarını irdele",
+      maddeler: [
+        "Müzik, resim ya da edebiyatın duyguları nasıl ifade ettiğini yaz",
+        "Sanatın iyileştirici gücüne değin",
+        "Sanat eğitiminin önemi üzerine yaz",
+        "Türk ve dünya kültüründen örnek ver"
+      ]
+    },
+    sonuc: {
+      hint: "Sanata sahip çıkmaya davet et",
+      maddeler: [
+        "Sanatın topluma katkısını özetle",
+        "Okuyucuyu bir sanat dalıyla buluşmaya teşvik et"
+      ]
+    }
+  },
+  {
+    konu: "Çöldeki Su",
+    tur: "hikaye",
+    anahtar: ["dayanışma", "susuzluk", "umut"],
+    giris: {
+      hint: "Sıcak ve susuz ortamı hissettir",
+      maddeler: [
+        "Kahramanın çölde nasıl kaldığını kısaca anlat",
+        "Yakıcı sıcak ve susuzluğu betimle",
+        "Hayatta kalma isteğini öne çıkar"
+      ]
+    },
+    gelisme: {
+      hint: "Su arayışını ve zorluklarını anlat",
+      maddeler: [
+        "Kahramanın su bulmak için ne yaptığını anlat",
+        "Umutsuzluk anlarını betimle",
+        "Beklenmedik bir karşılaşmayı ya da keşfi yaz",
+        "Dayanışma ya da fedakârlık anını göster"
+      ]
+    },
+    sonuc: {
+      hint: "Çözümü ve derin mesajı sun",
+      maddeler: [
+        "Kahramanın nasıl kurtulduğunu anlat",
+        "Suyun ve yaşamın değeri üzerine güçlü bir son yaz"
+      ]
+    }
+  },
+  {
+    konu: "Dijital Oyunlar: Fayda mı, Zarar mı?",
+    tur: "düşünce",
+    anahtar: ["bağımlılık", "strateji", "sınır"],
+    giris: {
+      hint: "Tartışmalı bir soruyla başla",
+      maddeler: [
+        "Dijital oyunların ne kadar yaygın olduğunu belirt",
+        "Tartışmanın iki yönüne işaret et",
+        "Kendi tezini ortaya koy"
+      ]
+    },
+    gelisme: {
+      hint: "Hem olumlu hem olumsuz tarafları dengeli ele al",
+      maddeler: [
+        "Strateji oyunlarının beyin gelişimine katkısını yaz",
+        "Bağımlılık ve uyku sorunlarını açıkla",
+        "Şiddet içerikli oyunların etkilerini belirt",
+        "Kontrollü oyun oynamanın nasıl mümkün olduğunu yaz"
+      ]
+    },
+    sonuc: {
+      hint: "Bilinçli kullanıma çağır",
+      maddeler: [
+        "Dijital oyunları sorumlu kullanmanın yolunu özetle",
+        "Gençlere yönelik öneri cümlesiyle bitir"
+      ]
+    }
+  },
+  {
+    konu: "Nineme Mektup",
+    tur: "hikaye",
+    anahtar: ["özlem", "sevgi", "geçmiş"],
+    giris: {
+      hint: "Sıcak ve samimi bir sesle başla",
+      maddeler: [
+        "Mektubu ninenle paylaşmak istediğin bir an ya da haberle aç",
+        "Onun nasıl biri olduğunu birkaç cümleyle çiz",
+        "Mektubu neden yazdığını belirt"
+      ]
+    },
+    gelisme: {
+      hint: "Paylaşmak istediğin olayları ve duyguları yaz",
+      maddeler: [
+        "Son zamanlarda yaşadığın güzel ya da zor bir şeyi anlat",
+        "Ondan öğrendiğin değerli bir şeyi hatırlat",
+        "Onu özlediğini gösteren somut bir detay ekle",
+        "Onunla geçirilen anılardan birini canlandır"
+      ]
+    },
+    sonuc: {
+      hint: "Sevgi dolu ve içten bir kapanış yap",
+      maddeler: [
+        "Ona olan sevgini ve özlemini ifade et",
+        "Yakın zamanda görüşme ya da buluşma isteğiyle bitir"
+      ]
+    }
+  }
+];
+
+// ─── WHEEL ──────────────────────────────────────────────────────────────────
+const canvas = document.getElementById('wheel-canvas');
+const ctx = canvas.getContext('2d');
+const W = canvas.width, H = canvas.height, R = W / 2;
+
+const COLORS = [
+  '#1e4d6b','#2d6a4f','#6b2d5e','#4a3728','#1b4d3e',
+  '#5e2d2d','#2d4a6b','#4a2d6b','#1e5e4a','#6b4a1e',
+  '#2d3d6b','#6b5e2d','#1e4a5e','#5e4a2d','#2d5e3d',
+  '#4a1e5e','#3d5e2d','#5e3d1e','#1e3d5e','#3d1e5e'
+];
+
+// Labels for wheel — just konu names
+const labels = topics.map(t => t.konu);
+const N = labels.length;
+const slice = (2 * Math.PI) / N;
+
+let currentAngle = 0;
+let spinning = false;
+let selectedIdx = -1;
+
+function drawWheel(angle) {
+  ctx.clearRect(0, 0, W, H);
+  for (let i = 0; i < N; i++) {
+    const start = angle + i * slice;
+    const end = start + slice;
+    const mid = start + slice / 2;
+    // Slice
+    ctx.beginPath();
+    ctx.moveTo(R, R);
+    ctx.arc(R, R, R - 4, start, end);
+    ctx.closePath();
+    ctx.fillStyle = COLORS[i % COLORS.length];
+    ctx.fill();
+    ctx.strokeStyle = 'rgba(255,255,255,0.08)';
+    ctx.lineWidth = 1.5;
+    ctx.stroke();
+    // Label
+    ctx.save();
+    ctx.translate(R, R);
+    ctx.rotate(mid);
+    ctx.textAlign = 'right';
+    ctx.fillStyle = 'rgba(255,255,255,0.92)';
+    const fontSize = Math.max(10, Math.min(14, 260 / N));
+    ctx.font = `700 ${fontSize}px Nunito, sans-serif`;
+    const text = labels[i].length > 16 ? labels[i].slice(0, 15) + '…' : labels[i];
+    ctx.fillText(text, R - 14, 5);
+    ctx.restore();
+  }
+  // Center shadow
+  ctx.beginPath();
+  ctx.arc(R, R, 30, 0, 2 * Math.PI);
+  ctx.fillStyle = 'rgba(13,27,42,0.7)';
+  ctx.fill();
+}
+
+drawWheel(0);
+
+function spinWheel() {
+  if (spinning) return;
+  spinning = true;
+  document.getElementById('spin-btn').disabled = true;
+
+  const extraSpins = (5 + Math.floor(Math.random() * 5)) * 2 * Math.PI;
+  const targetAngle = currentAngle + extraSpins + Math.random() * 2 * Math.PI;
+  const duration = 4000 + Math.random() * 1500;
+  const startTime = performance.now();
+  const startAngle = currentAngle;
+
+  function easeOut(t) {
+    return 1 - Math.pow(1 - t, 4);
+  }
+
+  function animate(now) {
+    const elapsed = now - startTime;
+    const t = Math.min(elapsed / duration, 1);
+    const easedT = easeOut(t);
+    currentAngle = startAngle + (targetAngle - startAngle) * easedT;
+    drawWheel(currentAngle);
+
+    if (t < 1) {
+      requestAnimationFrame(animate);
+    } else {
+      currentAngle = targetAngle % (2 * Math.PI);
+      spinning = false;
+      // Which slice is at pointer (top = -PI/2 from center)
+      // Pointer at top → angle = -PI/2
+      const pointerAngle = ((-Math.PI / 2) - currentAngle + 4 * Math.PI) % (2 * Math.PI);
+      selectedIdx = Math.floor(pointerAngle / slice) % N;
+      showAnnounce(selectedIdx);
+    }
+  }
+
+  requestAnimationFrame(animate);
+}
+
+// ─── ANNOUNCE ───────────────────────────────────────────────────────────────
+function showAnnounce(idx) {
+  const t = topics[idx];
+  document.getElementById('ann-icon').textContent = t.tur === 'hikaye' ? '📖' : '💭';
+  document.getElementById('ann-topic').textContent = t.konu;
+  document.getElementById('ann-type').textContent =
+    t.tur === 'hikaye' ? '✨ HİKÂYE' : '💡 DÜŞÜNCE YAZISI';
+  document.getElementById('ann-type').style.color = t.tur === 'hikaye' ? 'var(--hikaye)' : 'var(--dusunce)';
+  document.getElementById('announce').classList.add('show');
+  launchConfetti();
+}
+
+function showMap() {
+  document.getElementById('announce').classList.remove('show');
+  const t = topics[selectedIdx];
+  renderMap(t);
+  document.getElementById('wheel-screen').style.display = 'none';
+  const ms = document.getElementById('map-screen');
+  ms.style.display = 'flex';
+}
+
+// ─── MAP RENDER ──────────────────────────────────────────────────────────────
+function renderMap(t) {
+  // Badge
+  const badge = document.getElementById('hero-badge');
+  badge.textContent = t.tur === 'hikaye' ? '📖 HİKÂYE' : '💡 DÜŞÜNCE YAZISI';
+  badge.className = 'topic-badge ' + (t.tur === 'hikaye' ? 'badge-hikaye' : 'badge-dusunce');
+
+  document.getElementById('hero-topic').textContent = t.konu;
+
+  // Keywords
+  const kwRow = document.getElementById('hero-kw');
+  kwRow.innerHTML = t.anahtar.map(k => `<span class="kw-chip">${k}</span>`).join('');
+
+  // Sections
+  const grid = document.getElementById('map-grid');
+  grid.innerHTML = '';
+
+  const sections = [
+    { key: 'giris', cls: 's-giris', icon: '🌅', name: 'GİRİŞ', data: t.giris, delay: '0s' },
+    { key: 'gelisme', cls: 's-gelisme', icon: '🌿', name: 'GELİŞME', data: t.gelisme, delay: '0.12s' },
+    { key: 'sonuc', cls: 's-sonuc', icon: '🌟', name: 'SONUÇ', data: t.sonuc, delay: '0.24s' },
+  ];
+
+  sections.forEach(sec => {
+    const card = document.createElement('div');
+    card.className = `sec-card ${sec.cls}`;
+    card.style.animationDelay = sec.delay;
+
+    const pts = sec.data.maddeler.map((m, i) => `
+      <li>
+        <span class="pt-num">${i + 1}.</span>
+        <span>${m}</span>
+      </li>`).join('');
+
+    card.innerHTML = `
+      <div class="sec-icon">${sec.icon}</div>
+      <div class="sec-title">${sec.name}</div>
+      <div class="sec-hint">${sec.data.hint}</div>
+      <ul class="sec-points">${pts}</ul>
+    `;
+    grid.appendChild(card);
+  });
+}
+
+function backToWheel() {
+  document.getElementById('map-screen').style.display = 'none';
+  document.getElementById('wheel-screen').style.display = 'flex';
+  document.getElementById('spin-btn').disabled = false;
+}
+
+function toggleFS() {
+  if (!document.fullscreenElement) {
+    document.documentElement.requestFullscreen();
+  } else {
+    document.exitFullscreen();
+  }
+}
+
+// ─── CONFETTI ─────────────────────────────────────────────────────────────
+function launchConfetti() {
+  const cc = document.getElementById('confetti-canvas');
+  cc.width = window.innerWidth;
+  cc.height = window.innerHeight;
+  const cctx = cc.getContext('2d');
+  const pieces = [];
+  const colors = ['#fbbf24','#f97316','#34d399','#818cf8','#f472b6','#38bdf8','#fb923c'];
+
+  for (let i = 0; i < 80; i++) {
+    pieces.push({
+      x: Math.random() * cc.width,
+      y: -10 - Math.random() * 100,
+      w: 8 + Math.random() * 8,
+      h: 8 + Math.random() * 8,
+      color: colors[Math.floor(Math.random() * colors.length)],
+      vx: (Math.random() - 0.5) * 4,
+      vy: 3 + Math.random() * 4,
+      rot: Math.random() * 360,
+      vrot: (Math.random() - 0.5) * 8
+    });
+  }
+
+  let frame = 0;
+  function drawConfetti() {
+    cctx.clearRect(0, 0, cc.width, cc.height);
+    pieces.forEach(p => {
+      p.x += p.vx;
+      p.y += p.vy;
+      p.rot += p.vrot;
+      cctx.save();
+      cctx.translate(p.x + p.w / 2, p.y + p.h / 2);
+      cctx.rotate(p.rot * Math.PI / 180);
+      cctx.fillStyle = p.color;
+      cctx.globalAlpha = Math.max(0, 1 - frame / 90);
+      cctx.fillRect(-p.w / 2, -p.h / 2, p.w, p.h);
+      cctx.restore();
+    });
+    frame++;
+    if (frame < 100) requestAnimationFrame(drawConfetti);
+    else cctx.clearRect(0, 0, cc.width, cc.height);
+  }
+  drawConfetti();
+}
+</script>
+</body>
+</html>

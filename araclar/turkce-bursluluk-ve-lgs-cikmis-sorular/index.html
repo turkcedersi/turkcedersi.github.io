@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bursluluk Sınavı Türkçe Soru Pratiği</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Glow Effects in Background -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+
+    <div class="app-container">
+        <!-- LANDING SCREEN (Grade & Year Selection) -->
+        <main id="landing-screen" class="screen active">
+            <header class="landing-header">
+                <div class="logo-area">
+                    <div class="logo-icon"><i data-lucide="graduation-cap"></i></div>
+                    <h1>BURSLULUK</h1>
+                </div>
+                <p class="subtitle">Türkçe Sınav Soruları Çözüm Portalı</p>
+                <div class="badge-tag">2020 - 2026 Yılları Çıkmış Sorular</div>
+            </header>
+
+            <!-- Grade Selection -->
+            <section id="grade-selection-area" class="selection-section">
+                <h2 class="section-title">Sınıfınızı Seçin</h2>
+                <div class="grades-grid">
+                    <button class="grade-card" data-grade="5">
+                        <div class="card-glow"></div>
+                        <div class="grade-num">5</div>
+                        <div class="grade-label">Sınıf</div>
+                        <span class="card-action">Seç <i data-lucide="arrow-right"></i></span>
+                    </button>
+                    <button class="grade-card" data-grade="6">
+                        <div class="card-glow"></div>
+                        <div class="grade-num">6</div>
+                        <div class="grade-label">Sınıf</div>
+                        <span class="card-action">Seç <i data-lucide="arrow-right"></i></span>
+                    </button>
+                    <button class="grade-card" data-grade="7">
+                        <div class="card-glow"></div>
+                        <div class="grade-num">7</div>
+                        <div class="grade-label">Sınıf</div>
+                        <span class="card-action">Seç <i data-lucide="arrow-right"></i></span>
+                    </button>
+                    <button class="grade-card" data-grade="8">
+                        <div class="card-glow"></div>
+                        <div class="grade-num">8</div>
+                        <div class="grade-label">Sınıf</div>
+                        <span class="card-action">Seç <i data-lucide="arrow-right"></i></span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Year Selection (Hidden initially) -->
+            <section id="year-selection-area" class="selection-section hidden">
+                <div class="section-header">
+                    <button id="btn-back-to-grades" class="btn-text"><i data-lucide="chevron-left"></i> Sınıf Seçimine Dön</button>
+                    <h2 class="section-title"><span id="selected-grade-label">5</span>. Sınıf Sınav Yılını Seçin</h2>
+                </div>
+                <div class="years-grid" id="years-container">
+                    <!-- Dynamic years will be loaded here -->
+                </div>
+            </section>
+        </main>
+
+        <!-- QUIZ SCREEN -->
+        <main id="quiz-screen" class="screen">
+            <!-- Sidebar Panel (Always visible on left / top-stacked on small screens) -->
+            <aside class="sidebar">
+                <div class="sidebar-header">
+                    <button id="btn-back-to-menu" class="btn-back"><i data-lucide="home"></i> Menü</button>
+                    <div class="quiz-info">
+                        <span id="badge-grade" class="badge">5. Sınıf</span>
+                        <span id="badge-year" class="badge badge-accent">2021</span>
+                    </div>
+                </div>
+
+                <div class="question-tracker">
+                    <div class="tracker-label">
+                        <span>İlerleme</span>
+                        <span id="tracker-progress">0/25</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div id="progress-fill" class="progress-bar-fill"></div>
+                    </div>
+                </div>
+
+                <div class="question-selector-container">
+                    <label for="question-dropdown" class="input-label">Soru Seç:</label>
+                    <div class="custom-select-wrapper">
+                        <select id="question-dropdown">
+                            <!-- Dynamic options -->
+                        </select>
+                        <i data-lucide="chevrons-up-down" class="select-icon"></i>
+                    </div>
+                </div>
+
+                <!-- Answer Keys Section (Options A, B, C, D) -->
+                <div class="options-container">
+                    <div class="options-title">Soru <span id="current-question-num">1</span> - Cevabınızı İşaretleyin</div>
+                    <div class="options-grid">
+                        <button class="option-btn" data-option="A">
+                            <span class="option-letter">A</span>
+                            <span class="option-hover-glow"></span>
+                        </button>
+                        <button class="option-btn" data-option="B">
+                            <span class="option-letter">B</span>
+                            <span class="option-hover-glow"></span>
+                        </button>
+                        <button class="option-btn" data-option="C">
+                            <span class="option-letter">C</span>
+                            <span class="option-hover-glow"></span>
+                        </button>
+                        <button class="option-btn" data-option="D">
+                            <span class="option-letter">D</span>
+                            <span class="option-hover-glow"></span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="navigation-controls">
+                    <button id="btn-prev" class="btn-control"><i data-lucide="arrow-left"></i> Önceki</button>
+                    <button id="btn-next" class="btn-control btn-primary">Sonraki <i data-lucide="arrow-right"></i></button>
+                </div>
+
+                <!-- Sidebar Zoom Actions -->
+                <div class="toolbar-actions sidebar-toolbar">
+                    <button id="btn-zoom-in" title="Yakınlaştır"><i data-lucide="zoom-in"></i></button>
+                    <button id="btn-zoom-out" title="Uzaklaştır"><i data-lucide="zoom-out"></i></button>
+                    <button id="btn-zoom-reset" title="Ortala & Sıfırla"><i data-lucide="maximize-2"></i></button>
+                    <button id="btn-fullscreen" title="Tam Ekran"><i data-lucide="expand"></i></button>
+                </div>
+            </aside>
+
+            <!-- Viewer Panel (For displaying the question screenshot with Zoom & Pan) -->
+            <section class="viewer-section">
+                <!-- Bounding Container for Zoom/Pan -->
+                <div class="viewport-container" id="viewport-container">
+                    <div class="zoomable-wrapper" id="zoomable-wrapper">
+                        <img id="question-image" src="" alt="Soru Yükleniyor..." draggable="false">
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- TOAST NOTIFICATIONS (Success / Incorrect feedbacks) -->
+    <div id="toast-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

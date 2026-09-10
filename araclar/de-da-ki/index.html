@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>De/Da · Ki — Yazım Alıştırması</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0f1117;
+    --surface: #1a1d27;
+    --surface2: #222638;
+    --border: #2e3248;
+    --text: #e8eaf6;
+    --text-dim: #7b82b0;
+    --accent: #7c6af7;
+    --accent-glow: rgba(124,106,247,0.25);
+    --correct: #34d399;
+    --correct-glow: rgba(52,211,153,0.2);
+    --wrong: #f87171;
+    --wrong-glow: rgba(248,113,113,0.2);
+    --highlight: #fbbf24;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Nunito', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-image:
+      radial-gradient(ellipse 80% 50% at 20% 10%, rgba(124,106,247,0.08) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 40% at 80% 90%, rgba(52,211,153,0.05) 0%, transparent 60%);
+  }
+
+  #app {
+    width: 100%;
+    max-width: 780px;
+  }
+
+  /* HEADER */
+  .header {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .header h1 {
+    font-size: 1.6rem;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+    color: var(--text);
+  }
+  .header h1 span {
+    color: var(--accent);
+  }
+  .header p {
+    color: var(--text-dim);
+    font-size: 0.95rem;
+    margin-top: 6px;
+  }
+
+  /* STATS BAR */
+  .stats-bar {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+  .stat-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+  .stat-dot {
+    width: 10px; height: 10px;
+    border-radius: 50%;
+  }
+  .stat-dot.correct { background: var(--correct); }
+  .stat-dot.wrong { background: var(--wrong); }
+  .stat-num { font-size: 1rem; }
+  .stat-num.correct { color: var(--correct); }
+  .stat-num.wrong { color: var(--wrong); }
+
+  .progress-wrap {
+    flex: 1;
+    height: 8px;
+    background: var(--surface2);
+    border-radius: 99px;
+    overflow: hidden;
+  }
+  .progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent), #a78bfa);
+    border-radius: 99px;
+    transition: width 0.4s ease;
+  }
+  .soru-no {
+    font-size: 0.85rem;
+    color: var(--text-dim);
+    white-space: nowrap;
+    font-weight: 700;
+  }
+
+  /* CARD */
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 40px 44px;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.3s;
+  }
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent), #a78bfa, var(--correct));
+    opacity: 0.6;
+  }
+
+  .konu-badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 99px;
+    margin-bottom: 24px;
+  }
+  .konu-badge.deda {
+    background: rgba(124,106,247,0.15);
+    color: #a78bfa;
+    border: 1px solid rgba(124,106,247,0.3);
+  }
+  .konu-badge.ki {
+    background: rgba(251,191,36,0.12);
+    color: #fbbf24;
+    border: 1px solid rgba(251,191,36,0.25);
+  }
+
+  .cumle {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.7;
+    color: var(--text);
+    margin-bottom: 36px;
+  }
+  .cumle .vurgu {
+    color: var(--highlight);
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-underline-offset: 4px;
+    text-decoration-color: rgba(251,191,36,0.5);
+  }
+
+  /* BUTTONS */
+  .butonlar {
+    display: flex;
+    gap: 14px;
+  }
+  .btn {
+    flex: 1;
+    padding: 16px 20px;
+    border-radius: 14px;
+    border: 2px solid transparent;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  .btn-dogru {
+    background: rgba(52,211,153,0.1);
+    border-color: rgba(52,211,153,0.3);
+    color: var(--correct);
+  }
+  .btn-dogru:hover {
+    background: rgba(52,211,153,0.2);
+    border-color: var(--correct);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px var(--correct-glow);
+  }
+  .btn-yanlis {
+    background: rgba(248,113,113,0.1);
+    border-color: rgba(248,113,113,0.3);
+    color: var(--wrong);
+  }
+  .btn-yanlis:hover {
+    background: rgba(248,113,113,0.2);
+    border-color: var(--wrong);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px var(--wrong-glow);
+  }
+  .btn:disabled {
+    cursor: default;
+    transform: none !important;
+    box-shadow: none !important;
+    opacity: 0.5;
+  }
+  .btn.secildi-dogru {
+    background: rgba(52,211,153,0.25) !important;
+    border-color: var(--correct) !important;
+    opacity: 1 !important;
+  }
+  .btn.secildi-yanlis {
+    background: rgba(248,113,113,0.25) !important;
+    border-color: var(--wrong) !important;
+    opacity: 1 !important;
+  }
+
+  /* FEEDBACK */
+  .feedback {
+    margin-top: 20px;
+    padding: 14px 18px;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    display: none;
+    align-items: center;
+    gap: 10px;
+    animation: fadeIn 0.25s ease;
+  }
+  .feedback.show { display: flex; }
+  .feedback.dogru-fb {
+    background: var(--correct-glow);
+    border: 1px solid rgba(52,211,153,0.3);
+    color: var(--correct);
+  }
+  .feedback.yanlis-fb {
+    background: var(--wrong-glow);
+    border: 1px solid rgba(248,113,113,0.3);
+    color: var(--wrong);
+  }
+  .feedback .dogru-yazim {
+    color: var(--text);
+    font-weight: 800;
+  }
+
+  /* NEXT BUTTON */
+  .btn-next {
+    margin-top: 16px;
+    width: 100%;
+    padding: 14px;
+    border-radius: 14px;
+    background: var(--accent);
+    border: none;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    font-weight: 800;
+    cursor: pointer;
+    display: none;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 20px var(--accent-glow);
+  }
+  .btn-next:hover {
+    background: #6c5ce7;
+    transform: translateY(-1px);
+    box-shadow: 0 8px 28px var(--accent-glow);
+  }
+  .btn-next.show { display: block; animation: fadeIn 0.25s ease; }
+
+  /* SCORE SCREEN */
+  #score-screen {
+    display: none;
+    text-align: center;
+    padding: 60px 40px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+  }
+  #score-screen.show { display: block; animation: fadeIn 0.3s ease; }
+  .score-emoji { font-size: 4rem; margin-bottom: 16px; }
+  .score-title { font-size: 1.8rem; font-weight: 900; margin-bottom: 8px; }
+  .score-puan {
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: var(--accent);
+    margin: 20px 0;
+  }
+  .score-detay {
+    color: var(--text-dim);
+    font-size: 1rem;
+    margin-bottom: 32px;
+  }
+  .score-detay span { color: var(--text); font-weight: 700; }
+  .btn-tekrar {
+    padding: 16px 40px;
+    background: var(--accent);
+    border: none;
+    border-radius: 14px;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 4px 20px var(--accent-glow);
+  }
+  .btn-tekrar:hover { background: #6c5ce7; transform: translateY(-2px); }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .card-anim { animation: fadeIn 0.3s ease; }
+</style>
+</head>
+<body>
+<div id="app">
+  <div class="header">
+    <h1>De/Da · <span>Ki</span> Yazım Alıştırması</h1>
+    <p>Altı çizili kelime doğru yazılmış mı?</p>
+  </div>
+
+  <div id="quiz-area">
+    <div class="stats-bar">
+      <div class="stat-item">
+        <div class="stat-dot correct"></div>
+        <span class="stat-num correct" id="dogru-sayac">0</span>
+      </div>
+      <div class="stat-item">
+        <div class="stat-dot wrong"></div>
+        <span class="stat-num wrong" id="yanlis-sayac">0</span>
+      </div>
+      <div class="progress-wrap">
+        <div class="progress-bar" id="progress-bar" style="width:0%"></div>
+      </div>
+      <div class="soru-no" id="soru-no">1 / 200</div>
+    </div>
+
+    <div class="card card-anim" id="soru-card">
+      <div class="konu-badge" id="konu-badge">DE / DA</div>
+      <div class="cumle" id="cumle-text"></div>
+      <div class="butonlar">
+        <button class="btn btn-dogru" id="btn-dogru" onclick="cevapla(true)">✓ Doğru yazılmış</button>
+        <button class="btn btn-yanlis" id="btn-yanlis" onclick="cevapla(false)">✗ Yanlış yazılmış</button>
+      </div>
+      <div class="feedback" id="feedback"></div>
+      <button class="btn-next" id="btn-next" onclick="sonrakiSoru()">Sonraki Soru →</button>
+    </div>
+  </div>
+
+  <div id="score-screen">
+    <div class="score-emoji" id="score-emoji">🎉</div>
+    <div class="score-title" id="score-title">Tebrikler!</div>
+    <div class="score-puan" id="score-puan">0 / 200</div>
+    <div class="score-detay" id="score-detay"></div>
+    <button class="btn-tekrar" onclick="baslat()">↺ Tekrar Oyna</button>
+  </div>
+</div>
+
+<script>
+// ============================================================
+// SORU BANKASI — 200 SORU
+// Her soru: { cumle, vurgu, dogru: true/false, konu: 'deda'|'ki' }
+// vurgu: altı çizili gösterilecek kelime (yazıldığı haliyle)
+// dogru: o yazım doğru mu?
+// dogru_yazim: yanlışsa doğrusu nedir
+// ============================================================
+const sorular = [
+  // ── DE / DA (doğru ayrı) ──
+  {cumle:"O gün ben de sınıfa geldim.", vurgu:"de", dogru:true, dogru_yazim:"de", konu:"deda"},
+  {cumle:"Kardeşim de bu filmi çok sevdi.", vurgu:"de", dogru:true, dogru_yazim:"de", konu:"deda"},
+  {cumle:"Sen de bu kitabı okudun mu?", vurgu:"de", dogru:true, dogru_yazim:"de", konu:"deda"},
+  {cumle:"Ahmet de bizimle gelecek.", vurgu:"de", dogru:true, dogru_yazim:"de", konu:"deda"},
+  {cumle:"Onlar da pikniğe katıldı.", vurgu:"da", dogru:true, dogru_yazim:"da", konu:"deda"},
+  {cumle:"Annem de çok yorulmuş.", vurgu:"de", dogru:true, dogru_yazim:"de", konu:"deda"},
+  {cumle:"Bu şehirde de kar yağıyor.", vurgu:"de", dogru:true, dogru_yazim:"de", konu:"deda"},
+  {cumle:"Babam da işten erken çıktı.", vurgu:"da", dogru:true, dogru_yazim:"da", konu:"deda"},
+  {cumle:"Ben de seni özledim.", vurgu:"de", dogru:true, dogru_yazim:"de", konu:"deda"},
+  {cumle:"Arkadaşım da sınıfta kaldı.", vurgu:"da", dogru:true, dogru_yazim:"da", konu:"deda"},
+  {cumle:"O da bizimle yemek yedi.", vurgu:"da", dogru:true, dogru_yazim:"da", konu:"deda"},
+  {cumle:"Öğretmen de bizi övdü.", vurgu:"de", dogru:true, dogru_yazim:"de", konu:"deda"},
+  {cumle:"Çocuklar da parkta oynuyor.", vurgu:"da", dogru:true, dogru_yazim:"da", konu:"deda"},
+  {cumle:"Komşumuz da düğüne geldi.", vurgu:"da", dogru:true, dogru_yazim:"da", konu:"deda"},
+  {cumle:"Köpek de bize saldırdı.", vurgu:"de", dogru:true, dogru_yazim:"de", konu:"deda"},
+  // ── DE / DA (yanlış, bitişik yazılmış) ──
+  {cumle:"Seninle bende geleceğim.", vurgu:"bende", dogru:false, dogru_yazim:"ben de", konu:"deda"},
+  {cumle:"Annende bu konuyu biliyor.", vurgu:"Annende", dogru:false, dogru_yazim:"Annen de", konu:"deda"},
+  {cumle:"Arkadaşımda seninle konuşmak istiyor.", vurgu:"Arkadaşımda", dogru:false, dogru_yazim:"Arkadaşım da", konu:"deda"},
+  {cumle:"O kitabı bende okudum.", vurgu:"bende", dogru:false, dogru_yazim:"ben de", konu:"deda"},
+  {cumle:"Kardeşimde bu filmi izledi.", vurgu:"Kardeşimde", dogru:false, dogru_yazim:"Kardeşim de", konu:"deda"},
+  {cumle:"Öğretmenimizde çok yorulmuş.", vurgu:"Öğretmenimizde", dogru:false, dogru_yazim:"Öğretmenimiz de", konu:"deda"},
+  {cumle:"Onlarda bizimle gelecek.", vurgu:"Onlarda", dogru:false, dogru_yazim:"Onlar da", konu:"deda"},
+  {cumle:"Seninle birlikte babamda geldi.", vurgu:"babamda", dogru:false, dogru_yazim:"babam da", konu:"deda"},
+  // ── DE / DA (doğru, hal eki) ──
+  {cumle:"Çantam masada duruyor.", vurgu:"masada", dogru:true, konu:"deda"},
+  {cumle:"Çocuk bahçede oynuyor.", vurgu:"bahçede", dogru:true, konu:"deda"},
+  {cumle:"Kitap rafta değil, masada.", vurgu:"masada", dogru:true, konu:"deda"},
+  {cumle:"O gün okulda sıkıldım.", vurgu:"okulda", dogru:true, konu:"deda"},
+  {cumle:"Evde kimse yoktu.", vurgu:"Evde", dogru:true, konu:"deda"},
+  {cumle:"Arkadaşım şehirde yaşıyor.", vurgu:"şehirde", dogru:true, konu:"deda"},
+  {cumle:"Kışın dağda kar çok olur.", vurgu:"dağda", dogru:true, konu:"deda"},
+  {cumle:"Sınıfta herkes sessiz oturdu.", vurgu:"Sınıfta", dogru:true, konu:"deda"},
+  // ── DE / DA (yanlış: hal eki ayrı yazılmış) ──
+  {cumle:"Kitap masa da duruyor.", vurgu:"masa da", dogru:false, dogru_yazim:"masada", konu:"deda"},
+  {cumle:"Çocuk bahçe de oynuyor.", vurgu:"bahçe de", dogru:false, dogru_yazim:"bahçede", konu:"deda"},
+  {cumle:"O gün okul da sıkıldım.", vurgu:"okul da", dogru:false, dogru_yazim:"okulda", konu:"deda"},
+  {cumle:"Ev de kimse yoktu.", vurgu:"Ev de", dogru:false, dogru_yazim:"Evde", konu:"deda"},
+  {cumle:"Arkadaşım şehir de yaşıyor.", vurgu:"şehir de", dogru:false, dogru_yazim:"şehirde", konu:"deda"},
+  {cumle:"Kışın dağ da kar çok olur.", vurgu:"dağ da", dogru:false, dogru_yazim:"dağda", konu:"deda"},
+
+  // ── Kİ (doğru, bağlaç — ayrı) ──
+  {cumle:"Biliyorum ki sen beni anlarsın.", vurgu:"ki", dogru:true, konu:"ki"},
+  {cumle:"Umuyorum ki hava güzel olur.", vurgu:"ki", dogru:true, konu:"ki"},
+  {cumle:"Söylüyorum ki bu iş zor.", vurgu:"ki", dogru:true, konu:"ki"},
+  {cumle:"Sanıyorum ki o henüz gelmedi.", vurgu:"ki", dogru:true, konu:"ki"},
+  {cumle:"İnanıyorum ki başarılı olacaksın.", vurgu:"ki", dogru:true, konu:"ki"},
+  {cumle:"Düşünüyorum ki bu yanlış bir karar.", vurgu:"ki", dogru:true, konu:"ki"},
+  {cumle:"Fark ettim ki kimse kalmamış.", vurgu:"ki", dogru:true, konu:"ki"},
+  {cumle:"Görüyorum ki çok çalışmışsın.", vurgu:"ki", dogru:true, konu:"ki"},
+  {cumle:"Meğerse ki o da bizi seviyormuş.", vurgu:"ki", dogru:true, konu:"ki"},
+  {cumle:"O kadar yoruldum ki yürüyemedim.", vurgu:"ki", dogru:true, konu:"ki"},
+  {cumle:"Öyle bir rüzgar esti ki şapkam uçtu.", vurgu:"ki", dogru:true, konu:"ki"},
+  {cumle:"Bu kadar güzel ki sözcük bulamıyorum.", vurgu:"ki", dogru:true, konu:"ki"},
+  // ── Kİ (yanlış, bağlaç bitişik yazılmış) ──
+  {cumle:"Biliyorumki sen beni anlarsın.", vurgu:"Biliyorumki", dogru:false, dogru_yazim:"Biliyorum ki", konu:"ki"},
+  {cumle:"Umuyorumki hava güzel olur.", vurgu:"Umuyorumki", dogru:false, dogru_yazim:"Umuyorum ki", konu:"ki"},
+  {cumle:"O kadar yorulumki yürüyemedim.", vurgu:"yorulumki", dogru:false, dogru_yazim:"yoruldum ki", konu:"ki"},
+  {cumle:"Söylüyorumki bu iş zor.", vurgu:"Söylüyorumki", dogru:false, dogru_yazim:"Söylüyorum ki", konu:"ki"},
+  {cumle:"Sanıyorumki o henüz gelmedi.", vurgu:"Sanıyorumki", dogru:false, dogru_yazim:"Sanıyorum ki", konu:"ki"},
+  {cumle:"Görüyorumki çok çalışmışsın.", vurgu:"Görüyorumki", dogru:false, dogru_yazim:"Görüyorum ki", konu:"ki"},
+
+  // ── Kİ (doğru, sıfat yapım eki — bitişik) ──
+  {cumle:"Akşamki toplantıya katılamadım.", vurgu:"Akşamki", dogru:true, konu:"ki"},
+  {cumle:"Sabahki haberler endişe verici.", vurgu:"Sabahki", dogru:true, konu:"ki"},
+  {cumle:"Dünkü sınav çok zordu.", vurgu:"Dünkü", dogru:true, konu:"ki"},
+  {cumle:"Masadaki kitap benim değil.", vurgu:"Masadaki", dogru:true, konu:"ki"},
+  {cumle:"Bahçedeki çocuklar bağırıyor.", vurgu:"Bahçedeki", dogru:true, konu:"ki"},
+  {cumle:"Okulumuzunkiler de gelecek.", vurgu:"Okulumuzunkiler", dogru:true, konu:"ki"},
+  {cumle:"Benimki daha güzel.", vurgu:"Benimki", dogru:true, konu:"ki"},
+  {cumle:"Seninki bu mu?", vurgu:"Seninki", dogru:true, konu:"ki"},
+  {cumle:"Komşununkini buldun mu?", vurgu:"Komşununkini", dogru:true, konu:"ki"},
+  {cumle:"Yarınki maça gidecek misin?", vurgu:"Yarınki", dogru:true, konu:"ki"},
+  {cumle:"Önceki gün çok karardı.", vurgu:"Önceki", dogru:true, konu:"ki"},
+  {cumle:"Sonraki durağa kaç dakika var?", vurgu:"Sonraki", dogru:true, konu:"ki"},
+  // ── Kİ (yanlış, sıfat eki ayrı yazılmış) ──
+  {cumle:"Akşam ki toplantıya katılamadım.", vurgu:"Akşam ki", dogru:false, dogru_yazim:"Akşamki", konu:"ki"},
+  {cumle:"Sabah ki haberler endişe verici.", vurgu:"Sabah ki", dogru:false, dogru_yazim:"Sabahki", konu:"ki"},
+  {cumle:"Masa da ki kitap benim değil.", vurgu:"Masa da ki", dogru:false, dogru_yazim:"Masadaki", konu:"ki"},
+  {cumle:"Bahçe de ki çocuklar bağırıyor.", vurgu:"Bahçe de ki", dogru:false, dogru_yazim:"Bahçedeki", konu:"ki"},
+  {cumle:"Benim ki daha güzel.", vurgu:"Benim ki", dogru:false, dogru_yazim:"Benimki", konu:"ki"},
+  {cumle:"Senin ki bu mu?", vurgu:"Senin ki", dogru:false, dogru_yazim:"Seninki", konu:"ki"},
+  {cumle:"Yarın ki maça gidecek misin?", vurgu:"Yarın ki", dogru:false, dogru_yazim:"Yarınki", konu:"ki"},
+  {cumle:"Önce ki gün çok karardı.", vurgu:"Önce ki", dogru:false, dogru_yazim:"Önceki", konu:"ki"},
+  {cumle:"Sonra ki durağa kaç dakika var?", vurgu:"Sonra ki", dogru:false, dogru_yazim:"Sonraki", konu:"ki"},
+
+  // ── Kİ (doğru, -deki/-daki bitişik) ──
+  {cumle:"Çantadaki defteri getir.", vurgu:"Çantadaki", dogru:true, konu:"ki"},
+  {cumle:"Raftaki kitabı okudun mu?", vurgu:"Raftaki", dogru:true, konu:"ki"},
+  {cumle:"Evdeki eşyalar eski.", vurgu:"Evdeki", dogru:true, konu:"ki"},
+  {cumle:"Arabadaki çocuk ağlıyor.", vurgu:"Arabadaki", dogru:true, konu:"ki"},
+  {cumle:"Sınıftaki öğrenciler çalışıyor.", vurgu:"Sınıftaki", dogru:true, konu:"ki"},
+  {cumle:"Duvardaki tablo çok güzel.", vurgu:"Duvardaki", dogru:true, konu:"ki"},
+  {cumle:"Gökyüzündeki bulutlar dağılmış.", vurgu:"Gökyüzündeki", dogru:true, konu:"ki"},
+  {cumle:"Sıradaki soruya geç.", vurgu:"Sıradaki", dogru:true, konu:"ki"},
+
+  // ── KARIŞIK DE/DA zor sorular ──
+  {cumle:"Masada da bir şeyler vardı.", vurgu:"da", dogru:true, konu:"deda"},
+  {cumle:"Evde de sorun çıkmış.", vurgu:"de", dogru:true, konu:"deda"},
+  {cumle:"Bahçede de güller açmış.", vurgu:"de", dogru:true, konu:"deda"},
+  {cumle:"Okulda da sıkıntı çıkmış.", vurgu:"da", dogru:true, konu:"deda"},
+  {cumle:"Sınıfta da herkes şaşırdı.", vurgu:"da", dogru:true, konu:"deda"},
+  {cumle:"Dağda da kar yağıyormuş.", vurgu:"da", dogru:true, konu:"deda"},
+  {cumle:"Şehirde de su kesintisi varmış.", vurgu:"de", dogru:true, konu:"deda"},
+  {cumle:"Piyasada da bu ürün yokmuş.", vurgu:"da", dogru:true, konu:"deda"},
+  {cumle:"Konuşmada da yanlışlar yaptı.", vurgu:"da", dogru:true, konu:"deda"},
+  {cumle:"Yazıda da hata varmış.", vurgu:"da", dogru:true, konu:"deda"},
+
+  // ── Ekstra DE/DA ──
+  {cumle:"Toplantıda kimse konuşmadı.", vurgu:"Toplantıda", dogru:true, konu:"deda"},
+  {cumle:"Tatilde çok eğlendik.", vurgu:"Tatilde", dogru:true, konu:"deda"},
+  {cumle:"Sokakta bir kedi gördük.", vurgu:"Sokakta", dogru:true, konu:"deda"},
+  {cumle:"Köyde hayat daha sakinmiş.", vurgu:"Köyde", dogru:true, konu:"deda"},
+  {cumle:"Pazarda taze meyve aldık.", vurgu:"Pazarda", dogru:true, konu:"deda"},
+  {cumle:"Kütüphanede çalışmak daha kolay.", vurgu:"Kütüphanede", dogru:true, konu:"deda"},
+  {cumle:"Toplantı da kimse konuşmadı.", vurgu:"Toplantı da", dogru:false, dogru_yazim:"Toplantıda", konu:"deda"},
+  {cumle:"Tatil de çok eğlendik.", vurgu:"Tatil de", dogru:false, dogru_yazim:"Tatilde", konu:"deda"},
+  {cumle:"Sokak ta bir kedi gördük.", vurgu:"Sokak ta", dogru:false, dogru_yazim:"Sokakta", konu:"deda"},
+  {cumle:"Köy de hayat daha sakinmiş.", vurgu:"Köy de", dogru:false, dogru_yazim:"Köyde", konu:"deda"},
+  {cumle:"Pazar da taze meyve aldık.", vurgu:"Pazar da", dogru:false, dogru_yazim:"Pazarda", konu:"deda"},
+
+  // ── Kİ zor / karışık ──
+  {cumle:"Ders ki bitiyor, hepsi gidecek.", vurgu:"ki", dogru:true, konu:"ki"},
+  {cumle:"Anlıyorum ki sorun büyük.", vurgu:"ki", dogru:true, konu:"ki"},
+  {cumle:"Hissediyorum ki bir şeyler eksik.", vurgu:"ki", dogru:true, konu:"ki"},
+  {cumle:"Biliyorum ki doğruyu söylüyorsun.", vurgu:"ki", dogru:true, konu:"ki"},
+  {cumle:"Kaçtım ki yakalanmayayım.", vurgu:"ki", dogru:true, konu:"ki"},
+  {cumle:"Koştu ki treni kaçırmasın.", vurgu:"ki", dogru:true, konu:"ki"},
+  {cumle:"Anlıyorumki sorun büyük.", vurgu:"Anlıyorumki", dogru:false, dogru_yazim:"Anlıyorum ki", konu:"ki"},
+  {cumle:"Hissediyorumki bir şeyler eksik.", vurgu:"Hissediyorumki", dogru:false, dogru_yazim:"Hissediyorum ki", konu:"ki"},
+  {cumle:"Kaçtımki yakalanmayayım.", vurgu:"Kaçtımki", dogru:false, dogru_yazim:"Kaçtım ki", konu:"ki"},
+
+  // ── Daha fazla doğru DE/DA ──
+  {cumle:"Yolda birini tanıdım.", vurgu:"Yolda", dogru:true, konu:"deda"},
+  {cumle:"Denizde yüzmek çok güzel.", vurgu:"Denizde", dogru:true, konu:"deda"},
+  {cumle:"Havada bir tuhaf hava var.", vurgu:"Havada", dogru:true, konu:"deda"},
+  {cumle:"Ormanda yaban hayvanları var.", vurgu:"Ormanda", dogru:true, konu:"deda"},
+  {cumle:"Köprüde trafik sıkışmış.", vurgu:"Köprüde", dogru:true, konu:"deda"},
+  {cumle:"Mutfakta annem yemek yapıyor.", vurgu:"Mutfakta", dogru:true, konu:"deda"},
+  {cumle:"Odada ışık yanıyor.", vurgu:"Odada", dogru:true, konu:"deda"},
+  {cumle:"Hastanede uzun süre bekledik.", vurgu:"Hastanede", dogru:true, konu:"deda"},
+  {cumle:"Camide herkes sessizdi.", vurgu:"Camide", dogru:true, konu:"deda"},
+  {cumle:"Parkta piknik yaptık.", vurgu:"Parkta", dogru:true, konu:"deda"},
+  {cumle:"Dükkan da çok kalabalıktı.", vurgu:"Dükkan da", dogru:false, dogru_yazim:"Dükkanda", konu:"deda"},
+  {cumle:"Orman da yaban hayvanları var.", vurgu:"Orman da", dogru:false, dogru_yazim:"Ormanda", konu:"deda"},
+  {cumle:"Köprü de trafik sıkışmış.", vurgu:"Köprü de", dogru:false, dogru_yazim:"Köprüde", konu:"deda"},
+  {cumle:"Mutfak ta annem yemek yapıyor.", vurgu:"Mutfak ta", dogru:false, dogru_yazim:"Mutfakta", konu:"deda"},
+  {cumle:"Oda da ışık yanıyor.", vurgu:"Oda da", dogru:false, dogru_yazim:"Odada", konu:"deda"},
+  {cumle:"Hastane de uzun süre bekledik.", vurgu:"Hastane de", dogru:false, dogru_yazim:"Hastanede", konu:"deda"},
+
+  // ── Bağlaç DE/DA zor: öncesinde isim var ama bağlaç ──
+  {cumle:"Hava soğuktu, ben de üşüdüm.", vurgu:"de", dogru:true, konu:"deda"},
+  {cumle:"Kitabı okudu, beğendi de.", vurgu:"de", dogru:true, konu:"deda"},
+  {cumle:"Gül de bakalım biraz.", vurgu:"de", dogru:true, konu:"deda"},
+  {cumle:"Git de bir bak.", vurgu:"de", dogru:true, konu:"deda"},
+  {cumle:"Çalış da kazan.", vurgu:"da", dogru:true, konu:"deda"},
+  {cumle:"Sus da dinleyelim.", vurgu:"da", dogru:true, konu:"deda"},
+  {cumle:"Gülde bakalım biraz.", vurgu:"Gülde", dogru:false, dogru_yazim:"Gül de", konu:"deda"},
+  {cumle:"Gitte bir bak.", vurgu:"Gitte", dogru:false, dogru_yazim:"Git de", konu:"deda"},
+  {cumle:"Susta dinleyelim.", vurgu:"Susta", dogru:false, dogru_yazim:"Sus da", konu:"deda"},
+
+  // ── Kİ ekstra doğrular ──
+  {cumle:"Öyle güzel söyledi ki herkes etkilendi.", vurgu:"ki", dogru:true, konu:"ki"},
+  {cumle:"Öylesine bağırdı ki sesi kısıldı.", vurgu:"ki", dogru:true, konu:"ki"},
+  {cumle:"Bu kadar ağladı ki gözleri şişti.", vurgu:"ki", dogru:true, konu:"ki"},
+  {cumle:"Öyle bir fırtına çıktı ki deniz duruldu.", vurgu:"ki", dogru:true, konu:"ki"},
+  {cumle:"O kadar mutluyum ki anlatamam.", vurgu:"ki", dogru:true, konu:"ki"},
+  {cumle:"Öyle bir baktı ki donup kaldım.", vurgu:"ki", dogru:true, konu:"ki"},
+  {cumle:"Anladım ki bu iş kolay değil.", vurgu:"ki", dogru:true, konu:"ki"},
+  {cumle:"Gördüm ki herkes gitmişti.", vurgu:"ki", dogru:true, konu:"ki"},
+
+  // ── Kİ sıfat eki ekstra ──
+  {cumle:"Sokaktaki çocuklar futbol oynuyor.", vurgu:"Sokaktaki", dogru:true, konu:"ki"},
+  {cumle:"Penceredeki kedi uyuyor.", vurgu:"Penceredeki", dogru:true, konu:"ki"},
+  {cumle:"Bugünkü hava çok sıcak.", vurgu:"Bugünkü", dogru:true, konu:"ki"},
+  {cumle:"Geçenki sınavdan yüksek aldım.", vurgu:"Geçenki", dogru:true, konu:"ki"},
+  {cumle:"Onunki daha iyi görünüyor.", vurgu:"Onunki", dogru:true, konu:"ki"},
+  {cumle:"Sizinki nerede?", vurgu:"Sizinki", dogru:true, konu:"ki"},
+  {cumle:"Sokak ta ki çocuklar futbol oynuyor.", vurgu:"Sokak ta ki", dogru:false, dogru_yazim:"Sokaktaki", konu:"ki"},
+  {cumle:"Pencere de ki kedi uyuyor.", vurgu:"Pencere de ki", dogru:false, dogru_yazim:"Penceredeki", konu:"ki"},
+  {cumle:"Bugün kü hava çok sıcak.", vurgu:"Bugün kü", dogru:false, dogru_yazim:"Bugünkü", konu:"ki"},
+  {cumle:"Onun ki daha iyi görünüyor.", vurgu:"Onun ki", dogru:false, dogru_yazim:"Onunki", konu:"ki"},
+  {cumle:"Sizin ki nerede?", vurgu:"Sizin ki", dogru:false, dogru_yazim:"Sizinki", konu:"ki"},
+
+  // ── Ekstra zor / yanıltıcı sorular ──
+  {cumle:"Masada da üç kitap var.", vurgu:"da", dogru:true, konu:"deda"},
+  {cumle:"Sınıfta da iki öğrenci kaldı.", vurgu:"da", dogru:true, konu:"deda"},
+  {cumle:"Parkta da çocuklar oynuyor.", vurgu:"da", dogru:true, konu:"deda"},
+  {cumle:"Evde de çok gürültü vardı.", vurgu:"de", dogru:true, konu:"deda"},
+  {cumle:"Bahçede de güller var.", vurgu:"de", dogru:true, konu:"deda"},
+  {cumle:"Okulda da tatil yapıldı.", vurgu:"da", dogru:true, konu:"deda"},
+  {cumle:"Şehirde de sel felaketi yaşandı.", vurgu:"de", dogru:true, konu:"deda"},
+  {cumle:"Köyde de elektrik kesildi.", vurgu:"de", dogru:true, konu:"deda"},
+  {cumle:"Dağda da kayak yapılıyor.", vurgu:"da", dogru:true, konu:"deda"},
+  {cumle:"Camide de namaz kılındı.", vurgu:"de", dogru:true, konu:"deda"},
+
+  // ── Zor yanıltıcı bağlaç de/da ──
+  {cumle:"Yağmurda ıslandı, titredi de.", vurgu:"de", dogru:true, konu:"deda"},
+  {cumle:"Koştu da yetişemedi.", vurgu:"da", dogru:true, konu:"deda"},
+  {cumle:"Bağırdı da kimse duymadı.", vurgu:"da", dogru:true, konu:"deda"},
+  {cumle:"Anlattı da inanmadılar.", vurgu:"da", dogru:true, konu:"deda"},
+  {cumle:"Uyumadı da sabahladı.", vurgu:"da", dogru:true, konu:"deda"},
+  {cumle:"İstedi de verilmedi.", vurgu:"de", dogru:true, konu:"deda"},
+  {cumle:"Koştuda yetişemedi.", vurgu:"Koştuda", dogru:false, dogru_yazim:"Koştu da", konu:"deda"},
+  {cumle:"Bağırdada kimse duymadı.", vurgu:"Bağırdada", dogru:false, dogru_yazim:"Bağırdı da", konu:"deda"},
+  {cumle:"Anlattıda inanmadılar.", vurgu:"Anlattıda", dogru:false, dogru_yazim:"Anlattı da", konu:"deda"},
+
+  // ── Son batch ki ──
+  {cumle:"Düşündüm ki haklıymışsın.", vurgu:"ki", dogru:true, konu:"ki"},
+  {cumle:"Tahmin ediyorum ki yarın gelecek.", vurgu:"ki", dogru:true, konu:"ki"},
+  {cumle:"Farkındayım ki çok yoruldun.", vurgu:"ki", dogru:true, konu:"ki"},
+  {cumle:"Kabul ediyorum ki hata yaptım.", vurgu:"ki", dogru:true, konu:"ki"},
+  {cumle:"Bilmiyordum ki bu kadar zor olacak.", vurgu:"ki", dogru:true, konu:"ki"},
+  {cumle:"Hayal bile edemezdim ki bu olur.", vurgu:"ki", dogru:true, konu:"ki"},
+  {cumle:"Düşündümki haklıymışsın.", vurgu:"Düşündümki", dogru:false, dogru_yazim:"Düşündüm ki", konu:"ki"},
+  {cumle:"Tahmin ediyorumki yarın gelecek.", vurgu:"ediyorumki", dogru:false, dogru_yazim:"ediyorum ki", konu:"ki"},
+  {cumle:"Kabul ediyorumki hata yaptım.", vurgu:"ediyorumki", dogru:false, dogru_yazim:"ediyorum ki", konu:"ki"},
+  {cumle:"Bilmiyordumki bu kadar zor olacak.", vurgu:"Bilmiyordumki", dogru:false, dogru_yazim:"Bilmiyordum ki", konu:"ki"},
+
+  // ── Son batch de/da ──
+  {cumle:"Kümeste tavuklar gürültü yapıyor.", vurgu:"Kümeste", dogru:true, konu:"deda"},
+  {cumle:"Ahırda inekler bağırıyor.", vurgu:"Ahırda", dogru:true, konu:"deda"},
+  {cumle:"Tarlada çiftçiler çalışıyor.", vurgu:"Tarlada", dogru:true, konu:"deda"},
+  {cumle:"Fabrikada makine sesi var.", vurgu:"Fabrikada", dogru:true, konu:"deda"},
+  {cumle:"Limanda gemiler bekliyor.", vurgu:"Limanda", dogru:true, konu:"deda"},
+  {cumle:"Stadyumda maç var.", vurgu:"Stadyumda", dogru:true, konu:"deda"},
+  {cumle:"Kümes te tavuklar gürültü yapıyor.", vurgu:"Kümes te", dogru:false, dogru_yazim:"Kümeste", konu:"deda"},
+  {cumle:"Ahır da inekler bağırıyor.", vurgu:"Ahır da", dogru:false, dogru_yazim:"Ahırda", konu:"deda"},
+  {cumle:"Tarla da çiftçiler çalışıyor.", vurgu:"Tarla da", dogru:false, dogru_yazim:"Tarlada", konu:"deda"},
+  {cumle:"Fabrika da makine sesi var.", vurgu:"Fabrika da", dogru:false, dogru_yazim:"Fabrikada", konu:"deda"},
+  {cumle:"Liman da gemiler bekliyor.", vurgu:"Liman da", dogru:false, dogru_yazim:"Limanda", konu:"deda"},
+  {cumle:"Stadyum da maç var.", vurgu:"Stadyum da", dogru:false, dogru_yazim:"Stadyumda", konu:"deda"},
+
+  // ── YENİ: DE/DA bağlaç — doğru (ayrı) ──
+  {cumle:"Hava da çok soğuktu.", vurgu:"da", dogru:true, dogru_yazim:"da", konu:"deda"},
+  {cumle:"Müzik de güzel çalıyordu.", vurgu:"de", dogru:true, dogru_yazim:"de", konu:"deda"},
+  {cumle:"Siz de katılacak mısınız?", vurgu:"de", dogru:true, dogru_yazim:"de", konu:"deda"},
+  {cumle:"Öğrenciler de çok yorulmuştu.", vurgu:"de", dogru:true, dogru_yazim:"de", konu:"deda"},
+  {cumle:"Köpek de havlamaya başladı.", vurgu:"de", dogru:true, dogru_yazim:"de", konu:"deda"},
+  {cumle:"Kedi de süt içti.", vurgu:"de", dogru:true, dogru_yazim:"de", konu:"deda"},
+  {cumle:"Misafirler de geldi.", vurgu:"de", dogru:true, dogru_yazim:"de", konu:"deda"},
+  {cumle:"Müdür de toplantıdaydı.", vurgu:"de", dogru:true, dogru_yazim:"de", konu:"deda"},
+  {cumle:"Sevinçten ağladı da ağladı.", vurgu:"da", dogru:true, dogru_yazim:"da", konu:"deda"},
+  {cumle:"Gel de bir konuşalım.", vurgu:"de", dogru:true, dogru_yazim:"de", konu:"deda"},
+  {cumle:"Yaz da sana bildireyim.", vurgu:"da", dogru:true, dogru_yazim:"da", konu:"deda"},
+  {cumle:"Sor da öğren.", vurgu:"da", dogru:true, dogru_yazim:"da", konu:"deda"},
+
+  // ── YENİ: DE/DA bağlaç — yanlış (bitişik yazılmış) ──
+  {cumle:"Müzikde güzel çalıyordu.", vurgu:"Müzikde", dogru:false, dogru_yazim:"Müzik de", konu:"deda"},
+  {cumle:"Sizde katılacak mısınız?", vurgu:"Sizde", dogru:false, dogru_yazim:"Siz de", konu:"deda"},
+  {cumle:"Öğrencilerde çok yorulmuştu.", vurgu:"Öğrencilerde", dogru:false, dogru_yazim:"Öğrenciler de", konu:"deda"},
+  {cumle:"Köpekte havlamaya başladı.", vurgu:"Köpekte", dogru:false, dogru_yazim:"Köpek de", konu:"deda"},
+  {cumle:"Kedide süt içti.", vurgu:"Kedide", dogru:false, dogru_yazim:"Kedi de", konu:"deda"},
+  {cumle:"Misafirlerde geldi.", vurgu:"Misafirlerde", dogru:false, dogru_yazim:"Misafirler de", konu:"deda"},
+  {cumle:"Müdürde toplantıdaydı.", vurgu:"Müdürde", dogru:false, dogru_yazim:"Müdür de", konu:"deda"},
+  {cumle:"Gelde bir konuşalım.", vurgu:"Gelde", dogru:false, dogru_yazim:"Gel de", konu:"deda"},
+  {cumle:"Yazda sana bildireyim.", vurgu:"Yazda", dogru:false, dogru_yazim:"Yaz da", konu:"deda"},
+  {cumle:"Sorda öğren.", vurgu:"Sorda", dogru:false, dogru_yazim:"Sor da", konu:"deda"},
+
+  // ── YENİ: DE/DA hal eki — doğru (bitişik) ──
+  {cumle:"Uçakta yerimi bulamadım.", vurgu:"Uçakta", dogru:true, dogru_yazim:"Uçakta", konu:"deda"},
+  {cumle:"Nehirde balık tutuyorlar.", vurgu:"Nehirde", dogru:true, dogru_yazim:"Nehirde", konu:"deda"},
+  {cumle:"Bahçede gül dikiyoruz.", vurgu:"Bahçede", dogru:true, dogru_yazim:"Bahçede", konu:"deda"},
+  {cumle:"Çarşıda çok insan vardı.", vurgu:"Çarşıda", dogru:true, dogru_yazim:"Çarşıda", konu:"deda"},
+  {cumle:"Spor salonunda antrenman yaptım.", vurgu:"salonunda", dogru:true, dogru_yazim:"salonunda", konu:"deda"},
+  {cumle:"Trende kitap okumak zevkli.", vurgu:"Trende", dogru:true, dogru_yazim:"Trende", konu:"deda"},
+  {cumle:"Otelde iki gece kaldık.", vurgu:"Otelde", dogru:true, dogru_yazim:"Otelde", konu:"deda"},
+  {cumle:"Sahilde yürüyüş yaptım.", vurgu:"Sahilde", dogru:true, dogru_yazim:"Sahilde", konu:"deda"},
+  {cumle:"Arabada müzik dinliyoruz.", vurgu:"Arabada", dogru:true, dogru_yazim:"Arabada", konu:"deda"},
+  {cumle:"Konservatuvarda piyano dersi alıyorum.", vurgu:"Konservatuvarda", dogru:true, dogru_yazim:"Konservatuvarda", konu:"deda"},
+
+  // ── YENİ: DE/DA hal eki — yanlış (ayrı yazılmış) ──
+  {cumle:"Uçak ta yerimi bulamadım.", vurgu:"Uçak ta", dogru:false, dogru_yazim:"Uçakta", konu:"deda"},
+  {cumle:"Nehir de balık tutuyorlar.", vurgu:"Nehir de", dogru:false, dogru_yazim:"Nehirde", konu:"deda"},
+  {cumle:"Çarşı da çok insan vardı.", vurgu:"Çarşı da", dogru:false, dogru_yazim:"Çarşıda", konu:"deda"},
+  {cumle:"Tren de kitap okumak zevkli.", vurgu:"Tren de", dogru:false, dogru_yazim:"Trende", konu:"deda"},
+  {cumle:"Otel de iki gece kaldık.", vurgu:"Otel de", dogru:false, dogru_yazim:"Otelde", konu:"deda"},
+  {cumle:"Sahil de yürüyüş yaptım.", vurgu:"Sahil de", dogru:false, dogru_yazim:"Sahilde", konu:"deda"},
+  {cumle:"Araba da müzik dinliyoruz.", vurgu:"Araba da", dogru:false, dogru_yazim:"Arabada", konu:"deda"},
+
+  // ── YENİ: Kİ bağlaç — doğru (ayrı) ──
+  {cumle:"Zannediyorum ki yanılıyorsun.", vurgu:"ki", dogru:true, dogru_yazim:"ki", konu:"ki"},
+  {cumle:"Haberdar oldum ki yollar kapanmış.", vurgu:"ki", dogru:true, dogru_yazim:"ki", konu:"ki"},
+  {cumle:"Öğrendim ki bu çok eskiden beri böyleymiş.", vurgu:"ki", dogru:true, dogru_yazim:"ki", konu:"ki"},
+  {cumle:"Merak ediyorum ki acaba neden gelmiyor.", vurgu:"ki", dogru:true, dogru_yazim:"ki", konu:"ki"},
+  {cumle:"İtiraf etmeliyim ki bu konuda bilgim az.", vurgu:"ki", dogru:true, dogru_yazim:"ki", konu:"ki"},
+  {cumle:"Fark ettim ki sen de üzülmüşsün.", vurgu:"ki", dogru:true, dogru_yazim:"ki", konu:"ki"},
+  {cumle:"Kabul etmek gerekir ki bu zor bir süreç.", vurgu:"ki", dogru:true, dogru_yazim:"ki", konu:"ki"},
+  {cumle:"Söylemeliyim ki çok etkilendim.", vurgu:"ki", dogru:true, dogru_yazim:"ki", konu:"ki"},
+  {cumle:"Öyle bir karanlık ki hiçbir şey göremiyorum.", vurgu:"ki", dogru:true, dogru_yazim:"ki", konu:"ki"},
+  {cumle:"Bu kadar karmaşık ki kafam karıştı.", vurgu:"ki", dogru:true, dogru_yazim:"ki", konu:"ki"},
+  {cumle:"Öyle sıkıldım ki uyuyakaldım.", vurgu:"ki", dogru:true, dogru_yazim:"ki", konu:"ki"},
+  {cumle:"O kadar hızlı koştu ki kimse yetişemedi.", vurgu:"ki", dogru:true, dogru_yazim:"ki", konu:"ki"},
+
+  // ── YENİ: Kİ bağlaç — yanlış (bitişik yazılmış) ──
+  {cumle:"Zannediyorumki yanılıyorsun.", vurgu:"Zannediyorumki", dogru:false, dogru_yazim:"Zannediyorum ki", konu:"ki"},
+  {cumle:"Haberdar oldum ki yollar kapanmış.", vurgu:"ki", dogru:true, dogru_yazim:"ki", konu:"ki"},
+  {cumle:"Öğrendimki bu çok eskiden beri böyleymiş.", vurgu:"Öğrendimki", dogru:false, dogru_yazim:"Öğrendim ki", konu:"ki"},
+  {cumle:"İtiraf etmeliyimki bu konuda bilgim az.", vurgu:"etmeliyimki", dogru:false, dogru_yazim:"etmeliyim ki", konu:"ki"},
+  {cumle:"Söylemeliyimki çok etkilendim.", vurgu:"Söylemeliyimki", dogru:false, dogru_yazim:"Söylemeliyim ki", konu:"ki"},
+  {cumle:"Fark ettimki sen de üzülmüşsün.", vurgu:"ettimki", dogru:false, dogru_yazim:"ettim ki", konu:"ki"},
+  {cumle:"Kabul etmek gerekirki bu zor bir süreç.", vurgu:"gerekirki", dogru:false, dogru_yazim:"gerekir ki", konu:"ki"},
+
+  // ── YENİ: Kİ sıfat eki — doğru (bitişik) ──
+  {cumle:"Sabahki sis henüz dağılmamış.", vurgu:"Sabahki", dogru:true, dogru_yazim:"Sabahki", konu:"ki"},
+  {cumle:"Geçenki fırtınada çatı uçtu.", vurgu:"Geçenki", dogru:true, dogru_yazim:"Geçenki", konu:"ki"},
+  {cumle:"İçerideki koltuk çok rahat.", vurgu:"İçerideki", dogru:true, dogru_yazim:"İçerideki", konu:"ki"},
+  {cumle:"Şimdiki çocuklar teknolojiyi iyi kullanıyor.", vurgu:"Şimdiki", dogru:true, dogru_yazim:"Şimdiki", konu:"ki"},
+  {cumle:"Yukarıdaki daire boş.", vurgu:"Yukarıdaki", dogru:true, dogru_yazim:"Yukarıdaki", konu:"ki"},
+  {cumle:"Aşağıdaki sorular zor.", vurgu:"Aşağıdaki", dogru:true, dogru_yazim:"Aşağıdaki", konu:"ki"},
+  {cumle:"Karşıdaki bina yeni yapılmış.", vurgu:"Karşıdaki", dogru:true, dogru_yazim:"Karşıdaki", konu:"ki"},
+  {cumle:"Duvardaki resim kimden?", vurgu:"Duvardaki", dogru:true, dogru_yazim:"Duvardaki", konu:"ki"},
+  {cumle:"Gerideki araba bizimkiyle aynı.", vurgu:"Gerideki", dogru:true, dogru_yazim:"Gerideki", konu:"ki"},
+  {cumle:"Öndeki öğrenci cevabı bildi.", vurgu:"Öndeki", dogru:true, dogru_yazim:"Öndeki", konu:"ki"},
+  {cumle:"Hangisi senin ki?", vurgu:"ki", dogru:false, dogru_yazim:"Hangisi seninki?", konu:"ki"},
+  {cumle:"Bu fikirlerin onun ki.", vurgu:"ki", dogru:false, dogru_yazim:"onunki", konu:"ki"},
+
+  // ── YENİ: Kİ sıfat eki — yanlış (ayrı yazılmış) ──
+  {cumle:"Sabah ki sis henüz dağılmamış.", vurgu:"Sabah ki", dogru:false, dogru_yazim:"Sabahki", konu:"ki"},
+  {cumle:"Geçen ki fırtınada çatı uçtu.", vurgu:"Geçen ki", dogru:false, dogru_yazim:"Geçenki", konu:"ki"},
+  {cumle:"İçeri de ki koltuk çok rahat.", vurgu:"İçeri de ki", dogru:false, dogru_yazim:"İçerideki", konu:"ki"},
+  {cumle:"Şimdi ki çocuklar teknolojiyi iyi kullanıyor.", vurgu:"Şimdi ki", dogru:false, dogru_yazim:"Şimdiki", konu:"ki"},
+  {cumle:"Yukarı da ki daire boş.", vurgu:"Yukarı da ki", dogru:false, dogru_yazim:"Yukarıdaki", konu:"ki"},
+  {cumle:"Aşağı da ki sorular zor.", vurgu:"Aşağı da ki", dogru:false, dogru_yazim:"Aşağıdaki", konu:"ki"},
+  {cumle:"Karşı da ki bina yeni yapılmış.", vurgu:"Karşı da ki", dogru:false, dogru_yazim:"Karşıdaki", konu:"ki"},
+  {cumle:"Duvar da ki resim kimden?", vurgu:"Duvar da ki", dogru:false, dogru_yazim:"Duvardaki", konu:"ki"},
+  {cumle:"Geri de ki araba bizimkiyle aynı.", vurgu:"Geri de ki", dogru:false, dogru_yazim:"Gerideki", konu:"ki"},
+  {cumle:"Ön de ki öğrenci cevabı bildi.", vurgu:"Ön de ki", dogru:false, dogru_yazim:"Öndeki", konu:"ki"},
+
+  // ── YENİ: Zor / yanıltıcı karışık ──
+  {cumle:"Evde de yalnız değildi.", vurgu:"de", dogru:true, dogru_yazim:"de", konu:"deda"},
+  {cumle:"Okulda da arkadaşı yoktu.", vurgu:"da", dogru:true, dogru_yazim:"da", konu:"deda"},
+  {cumle:"Sınıfta da sorun çıktı.", vurgu:"da", dogru:true, dogru_yazim:"da", konu:"deda"},
+  {cumle:"Masada da kalem yoktu.", vurgu:"da", dogru:true, dogru_yazim:"da", konu:"deda"},
+  {cumle:"Bahçede de çiçek açmış.", vurgu:"de", dogru:true, dogru_yazim:"de", konu:"deda"},
+  {cumle:"Odada da ışık yoktu.", vurgu:"da", dogru:true, dogru_yazim:"da", konu:"deda"},
+  {cumle:"Kitapta da bu konu var.", vurgu:"da", dogru:true, dogru_yazim:"da", konu:"deda"},
+  {cumle:"Yolda da polis duruyordu.", vurgu:"da", dogru:true, dogru_yazim:"da", konu:"deda"},
+  {cumle:"Dükkan da da indirim vardı.", vurgu:"da da", dogru:false, dogru_yazim:"Dükkanda da", konu:"deda"},
+  {cumle:"Ev de de gürültü çıktı.", vurgu:"de de", dogru:false, dogru_yazim:"Evde de", konu:"deda"},
+  {cumle:"Okul da da öğrenci kaldı.", vurgu:"da da", dogru:false, dogru_yazim:"Okulda da", konu:"deda"},
+  {cumle:"Masa da da kitap vardı.", vurgu:"da da", dogru:false, dogru_yazim:"Masada da", konu:"deda"},
+
+  // ── YENİ: Anlam bağlamı güçlü cümleler ──
+  {cumle:"Ne sen gel, ne de ben.", vurgu:"de", dogru:true, dogru_yazim:"de", konu:"deda"},
+  {cumle:"Hem çalıştı hem de uyudu.", vurgu:"de", dogru:true, dogru_yazim:"de", konu:"deda"},
+  {cumle:"Ne o biliyor ne de sen.", vurgu:"de", dogru:true, dogru_yazim:"de", konu:"deda"},
+  {cumle:"Hem güldü hemde ağladı.", vurgu:"hemde", dogru:false, dogru_yazim:"hem de", konu:"deda"},
+  {cumle:"Ne sen bildinde ne o.", vurgu:"bildinde", dogru:false, dogru_yazim:"bildin de", konu:"deda"},
+  {cumle:"Dün de bugün de yorgunum.", vurgu:"de", dogru:true, dogru_yazim:"de", konu:"deda"},
+  {cumle:"Sabah da akşam da çalışıyor.", vurgu:"da", dogru:true, dogru_yazim:"da", konu:"deda"},
+  {cumle:"Dünde bugünde yorgunum.", vurgu:"Dünde", dogru:false, dogru_yazim:"Dün de", konu:"deda"},
+  {cumle:"Sabahda akşamda çalışıyor.", vurgu:"Sabahda", dogru:false, dogru_yazim:"Sabah da", konu:"deda"},
+
+  // ── DENGE EK YANLIŞ SORULAR ──
+  // DE/DA yanlış — bağlaç bitişik
+  {cumle:"Sende bu maçı izledin mi?", vurgu:"Sende", dogru:false, dogru_yazim:"Sen de", konu:"deda"},
+  {cumle:"Bizde geleceğiz toplantıya.", vurgu:"Bizde", dogru:false, dogru_yazim:"Biz de", konu:"deda"},
+  {cumle:"Oda çok beğendi hediyeyi.", vurgu:"Oda", dogru:false, dogru_yazim:"O da", konu:"deda"},
+  {cumle:"Hepimizde üzüldük bu haberden.", vurgu:"Hepimizde", dogru:false, dogru_yazim:"Hepimiz de", konu:"deda"},
+  {cumle:"Öğretmenimizde tatile gitti.", vurgu:"Öğretmenimizde", dogru:false, dogru_yazim:"Öğretmenimiz de", konu:"deda"},
+  {cumle:"Çocuklarında bu durumdan haberi yoktu.", vurgu:"Çocuklarında", dogru:false, dogru_yazim:"Çocukları da", konu:"deda"},
+  {cumle:"Kuzenim de gelecekte üniversitede okuyacak.", vurgu:"gelecekte", dogru:false, dogru_yazim:"gelecek te", konu:"deda"},
+  {cumle:"Arkadaşlarımda bu konuyu bilmiyor.", vurgu:"Arkadaşlarımda", dogru:false, dogru_yazim:"Arkadaşlarım da", konu:"deda"},
+  {cumle:"Annende seni arıyordu az önce.", vurgu:"Annende", dogru:false, dogru_yazim:"Annen de", konu:"deda"},
+  {cumle:"Hayvanlarda bu durumdan etkilendi.", vurgu:"Hayvanlarda", dogru:false, dogru_yazim:"Hayvanlar da", konu:"deda"},
+
+  // DE/DA yanlış — hal eki ayrı
+  {cumle:"Müze de çok eser gördük.", vurgu:"Müze de", dogru:false, dogru_yazim:"Müzede", konu:"deda"},
+  {cumle:"Kütüphane de yer bulamadık.", vurgu:"Kütüphane de", dogru:false, dogru_yazim:"Kütüphanede", konu:"deda"},
+  {cumle:"Spor salon da antrenman yaptım.", vurgu:"salon da", dogru:false, dogru_yazim:"salonunda", konu:"deda"},
+  {cumle:"Tiyatro da güzel bir oyun izledik.", vurgu:"Tiyatro da", dogru:false, dogru_yazim:"Tiyatroda", konu:"deda"},
+  {cumle:"Sinema da popcorn yedik.", vurgu:"Sinema da", dogru:false, dogru_yazim:"Sinemada", konu:"deda"},
+  {cumle:"Restoran da uzun süre bekledik.", vurgu:"Restoran da", dogru:false, dogru_yazim:"Restoranda", konu:"deda"},
+  {cumle:"Kutu da ne var?", vurgu:"Kutu da", dogru:false, dogru_yazim:"Kutuda", konu:"deda"},
+  {cumle:"Çanta da anahtarım var.", vurgu:"Çanta da", dogru:false, dogru_yazim:"Çantada", konu:"deda"},
+  {cumle:"Dolap da elbiseler asılı.", vurgu:"Dolap da", dogru:false, dogru_yazim:"Dolapta", konu:"deda"},
+  {cumle:"Cep telefon da pil bitti.", vurgu:"telefon da", dogru:false, dogru_yazim:"telefonda", konu:"deda"},
+
+  // Kİ yanlış — bağlaç bitişik
+  {cumle:"Anladımki çok geç kalmışım.", vurgu:"Anladımki", dogru:false, dogru_yazim:"Anladım ki", konu:"ki"},
+  {cumle:"Gördümki kimse gelmemişti.", vurgu:"Gördümki", dogru:false, dogru_yazim:"Gördüm ki", konu:"ki"},
+  {cumle:"Hissettimki bir şeyler yanlış.", vurgu:"Hissettimki", dogru:false, dogru_yazim:"Hissettim ki", konu:"ki"},
+  {cumle:"Sandımki bu iş kolay olacak.", vurgu:"Sandımki", dogru:false, dogru_yazim:"Sandım ki", konu:"ki"},
+  {cumle:"Umuyorumki erken gelirsin.", vurgu:"Umuyorumki", dogru:false, dogru_yazim:"Umuyorum ki", konu:"ki"},
+  {cumle:"Öyle soğuktu ki üşüdüm, diyorumki bir daha gitmem.", vurgu:"diyorumki", dogru:false, dogru_yazim:"diyorum ki", konu:"ki"},
+  {cumle:"Fark ediyorumki sen de yoruldun.", vurgu:"ediyorumki", dogru:false, dogru_yazim:"ediyorum ki", konu:"ki"},
+  {cumle:"İstiyorumki bunu bir daha yapma.", vurgu:"İstiyorumki", dogru:false, dogru_yazim:"İstiyorum ki", konu:"ki"},
+  {cumle:"Merak ediyorumki o ne düşünüyor.", vurgu:"ediyorumki", dogru:false, dogru_yazim:"ediyorum ki", konu:"ki"},
+  {cumle:"Sevindimki geldin.", vurgu:"Sevindimki", dogru:false, dogru_yazim:"Sevindim ki", konu:"ki"},
+
+  // Kİ yanlış — sıfat eki ayrı
+  {cumle:"Öğle den ki ders notlarını getir.", vurgu:"Öğle den ki", dogru:false, dogru_yazim:"Öğlendeki", konu:"ki"},
+  {cumle:"Akşam dan ki haberler kötüydü.", vurgu:"Akşam dan ki", dogru:false, dogru_yazim:"Akşamdaki", konu:"ki"},
+  {cumle:"Yaz dan ki hatıralar tatlı.", vurgu:"Yaz dan ki", dogru:false, dogru_yazim:"Yazdaki", konu:"ki"},
+  {cumle:"Çocuk luk tan ki arkadaşımdır.", vurgu:"luk tan ki", dogru:false, dogru_yazim:"luktan ki", konu:"ki"},
+  {cumle:"Uzak tan ki sesler duyuluyordu.", vurgu:"Uzak tan ki", dogru:false, dogru_yazim:"Uzaktaki", konu:"ki"},
+  {cumle:"Yanım da ki kişiyi tanımıyorum.", vurgu:"Yanım da ki", dogru:false, dogru_yazim:"Yanımdaki", konu:"ki"},
+  {cumle:"Karşım da ki ev eski.", vurgu:"Karşım da ki", dogru:false, dogru_yazim:"Karşımdaki", konu:"ki"},
+  {cumle:"Altım da ki halı çok güzel.", vurgu:"Altım da ki", dogru:false, dogru_yazim:"Altımdaki", konu:"ki"},
+  {cumle:"Üstüm de ki kazak yünlü.", vurgu:"Üstüm de ki", dogru:false, dogru_yazim:"Üstümdeki", konu:"ki"},
+  {cumle:"İçim de ki his garip.", vurgu:"İçim de ki", dogru:false, dogru_yazim:"İçimdeki", konu:"ki"},
+
+  // ── SON DENGE EKİ ──
+  {cumle:"Seninle bende tatile gideceğim.", vurgu:"bende", dogru:false, dogru_yazim:"ben de", konu:"deda"},
+  {cumle:"Bütün arkadaşlarımda geldi.", vurgu:"arkadaşlarımda", dogru:false, dogru_yazim:"arkadaşlarım da", konu:"deda"},
+  {cumle:"Senin kardeşinde çok başarılı.", vurgu:"kardeşinde", dogru:false, dogru_yazim:"kardeşin de", konu:"deda"},
+  {cumle:"Komşularımızda bize katıldı.", vurgu:"Komşularımızda", dogru:false, dogru_yazim:"Komşularımız da", konu:"deda"},
+  {cumle:"Öğrencilerimizde bu konuyu anladı.", vurgu:"Öğrencilerimizde", dogru:false, dogru_yazim:"Öğrencilerimiz de", konu:"deda"},
+  {cumle:"Müdürümüzde toplantıya katıldı.", vurgu:"Müdürümüzde", dogru:false, dogru_yazim:"Müdürümüz de", konu:"deda"},
+  {cumle:"Bahçe kapısında çiçekler açmış.", vurgu:"kapısında", dogru:true, dogru_yazim:"kapısında", konu:"deda"},
+  {cumle:"Kütüphane kapı da bekliyoruz.", vurgu:"kapı da", dogru:false, dogru_yazim:"kapıda", konu:"deda"},
+  {cumle:"Hastane koridorda oturuyoruz.", vurgu:"koridorda", dogru:true, dogru_yazim:"koridorda", konu:"deda"},
+  {cumle:"Okul bahçe de top oynuyorlar.", vurgu:"bahçe de", dogru:false, dogru_yazim:"bahçede", konu:"deda"},
+  {cumle:"Bildimki sen haklısın.", vurgu:"Bildimki", dogru:false, dogru_yazim:"Bildim ki", konu:"ki"},
+  {cumle:"Şaşırdımki bu kadar erken geldin.", vurgu:"Şaşırdımki", dogru:false, dogru_yazim:"Şaşırdım ki", konu:"ki"},
+  {cumle:"Korkuyorumki geç kalacağız.", vurgu:"Korkuyorumki", dogru:false, dogru_yazim:"Korkuyorum ki", konu:"ki"},
+  {cumle:"Seviniyorumki başardın.", vurgu:"Seviniyorumki", dogru:false, dogru_yazim:"Seviniyorum ki", konu:"ki"},
+  {cumle:"Üzülüyorumki böyle oldu.", vurgu:"Üzülüyorumki", dogru:false, dogru_yazim:"Üzülüyorum ki", konu:"ki"},
+  {cumle:"Şikâyet etmek istiyorumki bu doğru değil.", vurgu:"istiyorumki", dogru:false, dogru_yazim:"istiyorum ki", konu:"ki"},
+  {cumle:"Pencere den ki manzara harika.", vurgu:"Pencere den ki", dogru:false, dogru_yazim:"Pencerendeki", konu:"ki"},
+  {cumle:"Ağaç tan ki yapraklar düştü.", vurgu:"Ağaç tan ki", dogru:false, dogru_yazim:"Ağaçtaki", konu:"ki"},
+  {cumle:"Masa üstün de ki kalem benim.", vurgu:"üstün de ki", dogru:false, dogru_yazim:"üstündeki", konu:"ki"},
+  {cumle:"Köşe de ki dükkan kapandı.", vurgu:"Köşe de ki", dogru:false, dogru_yazim:"Köşedeki", konu:"ki"},
+];
+
+// ============================================================
+// UYGULAMA MANTIĞI
+// ============================================================
+let karisik = [];
+let mevcut = 0;
+let dogru = 0;
+let yanlis = 0;
+let cevapVerildi = false;
+
+function karistir(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function baslat() {
+  karisik = karistir(sorular);
+  mevcut = 0; dogru = 0; yanlis = 0; cevapVerildi = false;
+  document.getElementById('score-screen').classList.remove('show');
+  document.getElementById('quiz-area').style.display = '';
+  gosterSoru();
+}
+
+function gosterSoru() {
+  cevapVerildi = false;
+  const s = karisik[mevcut];
+  const toplam = karisik.length;
+
+  // Badge
+  const badge = document.getElementById('konu-badge');
+  badge.textContent = s.konu === 'deda' ? 'DE / DA' : 'Kİ';
+  badge.className = 'konu-badge ' + s.konu;
+
+  // Cümle — vurguyu bul ve renklendir
+  const cumleEl = document.getElementById('cumle-text');
+  // vurguyu cümlede bul (case-sensitive)
+  const idx = s.cumle.indexOf(s.vurgu);
+  if (idx === -1) {
+    cumleEl.innerHTML = s.cumle;
+  } else {
+    const once = s.cumle.substring(0, idx);
+    const sonra = s.cumle.substring(idx + s.vurgu.length);
+    cumleEl.innerHTML = once + '<span class="vurgu">' + s.vurgu + '</span>' + sonra;
+  }
+
+  // Feedback temizle
+  const fb = document.getElementById('feedback');
+  fb.className = 'feedback';
+  fb.innerHTML = '';
+
+  // Butonlar
+  const btnD = document.getElementById('btn-dogru');
+  const btnY = document.getElementById('btn-yanlis');
+  btnD.disabled = false; btnY.disabled = false;
+  btnD.className = 'btn btn-dogru';
+  btnY.className = 'btn btn-yanlis';
+
+  // Next gizle
+  document.getElementById('btn-next').className = 'btn-next';
+
+  // İlerleme
+  const yuzde = (mevcut / toplam) * 100;
+  document.getElementById('progress-bar').style.width = yuzde + '%';
+  document.getElementById('soru-no').textContent = (mevcut + 1) + ' / ' + toplam;
+  document.getElementById('dogru-sayac').textContent = dogru;
+  document.getElementById('yanlis-sayac').textContent = yanlis;
+
+  // Kart animasyonu
+  const card = document.getElementById('soru-card');
+  card.classList.remove('card-anim');
+  void card.offsetWidth;
+  card.classList.add('card-anim');
+}
+
+function cevapla(kullaniciBuDogru) {
+  if (cevapVerildi) return;
+  cevapVerildi = true;
+  const s = karisik[mevcut];
+  const dogruCevap = s.dogru;
+  const tamam = (kullaniciBuDogru === dogruCevap);
+
+  const btnD = document.getElementById('btn-dogru');
+  const btnY = document.getElementById('btn-yanlis');
+  btnD.disabled = true;
+  btnY.disabled = true;
+
+  const fb = document.getElementById('feedback');
+
+  if (tamam) {
+    dogru++;
+    if (kullaniciBuDogru) {
+      btnD.classList.add('secildi-dogru');
+    } else {
+      btnY.classList.add('secildi-dogru');
+    }
+    fb.className = 'feedback dogru-fb show';
+    const dw = s.dogru_yazim || s.vurgu;
+    fb.innerHTML = '✓ Doğru! Yazım: <span class="dogru-yazim">' + dw + '</span>';
+  } else {
+    yanlis++;
+    if (kullaniciBuDogru) {
+      btnD.classList.add('secildi-yanlis');
+    } else {
+      btnY.classList.add('secildi-yanlis');
+    }
+    fb.className = 'feedback yanlis-fb show';
+    const dw = s.dogru_yazim || s.vurgu;
+    fb.innerHTML = '✗ Yanlış. Doğru yazım: <span class="dogru-yazim">' + dw + '</span>';
+  }
+
+  document.getElementById('dogru-sayac').textContent = dogru;
+  document.getElementById('yanlis-sayac').textContent = yanlis;
+  document.getElementById('btn-next').className = 'btn-next show';
+}
+
+function sonrakiSoru() {
+  mevcut++;
+  if (mevcut >= karisik.length) {
+    gosterSonuc();
+  } else {
+    gosterSoru();
+  }
+}
+
+function gosterSonuc() {
+  document.getElementById('quiz-area').style.display = 'none';
+  const sc = document.getElementById('score-screen');
+  sc.classList.add('show');
+  const toplam = karisik.length;
+  const yuzde = Math.round((dogru / toplam) * 100);
+
+  let emoji = '😔';
+  let title = 'Daha fazla pratik gerekiyor.';
+  if (yuzde >= 90) { emoji = '🏆'; title = 'Mükemmel! Gerçek bir dil ustası!'; }
+  else if (yuzde >= 75) { emoji = '🎉'; title = 'Harika! Çok iyi gidiyorsun!'; }
+  else if (yuzde >= 55) { emoji = '👍'; title = 'İyi! Biraz daha pratik yap.'; }
+
+  document.getElementById('score-emoji').textContent = emoji;
+  document.getElementById('score-title').textContent = title;
+  document.getElementById('score-puan').textContent = dogru + ' / ' + toplam;
+  document.getElementById('score-detay').innerHTML =
+    '<span>' + yuzde + '%</span> başarı oranı — <span>' + dogru + '</span> doğru, <span>' + yanlis + '</span> yanlış';
+}
+
+// Başlat
+baslat();
+</script>
+</body>
+</html>

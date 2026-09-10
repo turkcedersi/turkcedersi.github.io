@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deyim & Atasözü Flashcard</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#0f0e17;--accent:#f7b731;--accent2:#e84393;--text:#fffffe;--muted:#a7a9be;--deyim:#7b61ff;--atasoz:#00c9a7;--r:20px}
+body{font-family:'Nunito',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px;overflow-x:hidden}
+body::before{content:'';position:fixed;top:-200px;left:-200px;width:600px;height:600px;background:radial-gradient(circle,rgba(123,97,255,.12) 0%,transparent 70%);pointer-events:none}
+body::after{content:'';position:fixed;bottom:-200px;right:-200px;width:600px;height:600px;background:radial-gradient(circle,rgba(0,201,167,.10) 0%,transparent 70%);pointer-events:none}
+header{text-align:center;margin-bottom:32px}
+header h1{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,4vw,2.4rem);font-weight:700;letter-spacing:-.5px}
+header h1 .d{color:var(--deyim)} header h1 .a{color:var(--atasoz)}
+.sub{color:var(--muted);font-size:.9rem;margin-top:6px}
+#counter{font-size:.95rem;color:var(--muted);margin-bottom:16px;font-weight:600;letter-spacing:1px}
+.scene{width:min(480px,100%);height:300px;perspective:1000px;cursor:pointer;margin-bottom:20px}
+.card{width:100%;height:100%;position:relative;transform-style:preserve-3d;transition:transform .55s cubic-bezier(.4,0,.2,1);border-radius:var(--r)}
+.card.flipped{transform:rotateY(180deg)}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:var(--r);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:30px 28px;border:1.5px solid rgba(255,255,255,.06)}
+.front{background:linear-gradient(145deg,#1e1c2e 0%,#13111f 100%);box-shadow:0 20px 60px rgba(0,0,0,.5),inset 0 1px 0 rgba(255,255,255,.05)}
+.back{background:linear-gradient(145deg,#0d1b3e 0%,#0a1628 100%);transform:rotateY(180deg);box-shadow:0 20px 60px rgba(0,0,0,.5),inset 0 1px 0 rgba(255,255,255,.05)}
+.badge{position:absolute;top:16px;left:20px;font-size:.7rem;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;padding:4px 10px;border-radius:50px}
+.bd{background:rgba(123,97,255,.18);color:var(--deyim);border:1px solid rgba(123,97,255,.3)}
+.ba{background:rgba(0,201,167,.15);color:var(--atasoz);border:1px solid rgba(0,201,167,.3)}
+.hint{position:absolute;bottom:14px;right:18px;font-size:.68rem;color:rgba(255,255,255,.2);font-weight:600;letter-spacing:.5px}
+.ctitle{font-family:'Playfair Display',serif;font-size:clamp(1.2rem,3.5vw,1.75rem);font-weight:700;text-align:center;line-height:1.35}
+.cex{margin-top:18px;font-size:.88rem;color:var(--muted);text-align:center;font-style:italic;line-height:1.6;border-top:1px solid rgba(255,255,255,.06);padding-top:14px;max-width:380px}
+.cex em.h{color:var(--accent);font-style:normal;font-weight:700}
+.albl{font-size:.7rem;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+.cmean{font-size:clamp(.92rem,2.5vw,1.1rem);text-align:center;line-height:1.65;color:#d4d7f5;font-weight:600}
+#nextBtn{display:none;margin-top:4px;background:linear-gradient(135deg,var(--deyim),var(--accent2));color:#fff;border:none;padding:14px 40px;border-radius:50px;font-family:'Nunito',sans-serif;font-size:1rem;font-weight:800;cursor:pointer;letter-spacing:.5px;box-shadow:0 8px 24px rgba(123,97,255,.35);transition:transform .15s,box-shadow .15s;animation:fup .3s ease}
+#nextBtn:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(123,97,255,.5)}
+@keyframes fup{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+#done{display:none;flex-direction:column;align-items:center;gap:16px;text-align:center}
+#done h2{font-family:'Playfair Display',serif;font-size:2rem;color:var(--accent)}
+#done p{color:var(--muted);font-size:1rem}
+#restartBtn{background:linear-gradient(135deg,var(--atasoz),#009f85);color:#0f0e17;border:none;padding:13px 36px;border-radius:50px;font-family:'Nunito',sans-serif;font-size:1rem;font-weight:800;cursor:pointer;box-shadow:0 8px 24px rgba(0,201,167,.3);transition:transform .15s}
+#restartBtn:hover{transform:translateY(-2px)}
+</style>
+</head>
+<body>
+<header>
+  <h1><span class="d">Deyim</span> & <span class="a">Atasözü</span></h1>
+  <p class="sub">Kartı tıkla → anlamını gör</p>
+</header>
+<div id="counter"></div>
+<div class="scene" onclick="flipCard()">
+  <div class="card" id="card">
+    <div class="face front">
+      <span class="badge" id="tb1"></span>
+      <div class="ctitle" id="ctitle"></div>
+      <div class="cex" id="cex"></div>
+      <span class="hint">tıkla ↩</span>
+    </div>
+    <div class="face back">
+      <span class="badge" id="tb2"></span>
+      <div class="albl">ANLAMI</div>
+      <div class="cmean" id="cmean"></div>
+    </div>
+  </div>
+</div>
+<button id="nextBtn" onclick="nextCard()">Sonraki Kart →</button>
+<div id="done">
+  <h2>🎉 Tebrikler!</h2>
+  <p id="doneMsg"></p>
+  <button id="restartBtn" onclick="restart()">Baştan Başla</button>
+</div>
+
+<script>
+// t:"deyim"|"atasoz"  s:söz  m:anlam  e:örnek(deyim)
+const D=[
+// ─── DEYİMLER A ───
+{t:"deyim",s:"Aba altından sopa göstermek",m:"Üstü kapalı, imâlı sözlerle tehdit etmek.",e:"Patron bize <em class='h'>aba altından sopa göstererek</em> mesaiye kalmamızı istedi."},
+{t:"deyim",s:"Abayı yakmak",m:"Birine gönlünü kaptırmak, âşık olmak.",e:"Bizim oğlan komşu kızına <em class='h'>abayı yakmış</em>."},
+{t:"deyim",s:"Abuk sabuk konuşmak",m:"Düşünmeden, tutarsız, saçma sapan söz söylemek.",e:"Sabahtan beri <em class='h'>abuk sabuk konuşuyor</em>, dinleyen kalmadı."},
+{t:"deyim",s:"Açığa vurmak",m:"Gizli bir şeyi herkese duyurmak, ortaya çıkarmak.",e:"Yıllardır sakladığı sırrı mahkemede <em class='h'>açığa vurdu</em>."},
+{t:"deyim",s:"Açık kalpli olmak",m:"Samimi, içi dışı bir, dürüst olmak.",e:"<em class='h'>Açık kalpli</em> biri olduğu için herkesle çabuk anlaşıyor."},
+{t:"deyim",s:"Açmaza düşmek",m:"İçinden çıkılması güç bir durumda kalmak.",e:"İki taraf arasında kalınca tam bir <em class='h'>açmaza düştü</em>."},
+{t:"deyim",s:"Adam etmek",m:"Eğitip yetiştirmek; düzeltip kullanılır hale getirmek.",e:"Yıllarca uğraşarak o genci <em class='h'>adam etti</em>."},
+{t:"deyim",s:"Adını ağzına almamak",m:"Kırgınlık vb. sebeple birinden hiç söz etmemek.",e:"Tartışmadan beri onun <em class='h'>adını ağzına almıyor</em>."},
+{t:"deyim",s:"Ağır basmak",m:"Bir işte daha etkili olmak, üstün gelmek.",e:"Duygular bu kararı vermemde <em class='h'>ağır bastı</em>."},
+{t:"deyim",s:"Ağır başlı olmak",m:"Ciddi, olgun, ölçülü davranmak.",e:"<em class='h'>Ağır başlı</em> tavırlarıyla herkese örnek oluyor."},
+{t:"deyim",s:"Ağırdan almak",m:"Bir işi yapmakta acele etmemek, isteksiz görünmek.",e:"İşi hiç <em class='h'>ağırdan almadan</em> tamamladı."},
+{t:"deyim",s:"Ağız aramak",m:"Birinin düşüncesini öğrenmek için yoklayıcı sorular sormak.",e:"Kararım hakkında ne düşündüğünü öğrenmek için <em class='h'>ağzını aradı</em>."},
+{t:"deyim",s:"Ağız birliği etmek",m:"Önceden anlaşarak aynı şeyi söylemek ya da yapmak.",e:"İkisi <em class='h'>ağız birliği etmiş</em> gibi aynı şeyi savunuyor."},
+{t:"deyim",s:"Ağız dalaşı etmek",m:"Birbirine ağır söz söyleyerek tartışmak.",e:"İki komşu kapıda <em class='h'>ağız dalaşına</em> girdi."},
+{t:"deyim",s:"Ağzı açık kalmak",m:"Şaşkınlık ya da hayranlıkla donup kalmak.",e:"Sahneyi görünce herkes <em class='h'>ağzı açık kaldı</em>."},
+{t:"deyim",s:"Ağzı kulaklarına varmak",m:"Çok sevinmek, büyük bir mutluluk duymak.",e:"Sınav sonucunu görünce <em class='h'>ağzı kulaklarına vardı</em>."},
+{t:"deyim",s:"Ağzı var dili yok",m:"Suskun, konuşmayan, sesini çıkarmayan.",e:"Haksızlığa uğramasına rağmen <em class='h'>ağzı var dili yok</em> oturuyor."},
+{t:"deyim",s:"Ağzına kilit vurmak",m:"Sır tutmak, konuşmamak.",e:"Bu konuda <em class='h'>ağzına kilit vurmuş</em>, hiç konuşmuyor."},
+{t:"deyim",s:"Ağzının payını vermek",m:"Sert söz ve davranışla birine haddini bildirmek.",e:"Bu sefer <em class='h'>ağzının payını verdim</em>, bir daha yapmaz."},
+{t:"deyim",s:"Ağzının suyu akmak",m:"Çok beğenip istemek, imrenmek.",e:"Vitrindeki pastayı görünce <em class='h'>ağzımın suyu aktı</em>."},
+{t:"deyim",s:"Ağzının tadını bilmek",m:"İyisini, güzelini seçmesini bilmek.",e:"O adam gerçekten <em class='h'>ağzının tadını bilir</em>."},
+{t:"deyim",s:"Ağzı süt kokmak",m:"Çok genç, toy ve tecrübesiz olmak.",e:"<em class='h'>Ağzı süt kokuyor</em>, bana akıl mı verecek!"},
+{t:"deyim",s:"Ağzından laf almak",m:"Birinin bir şeyi söylemesini sağlamak.",e:"Sırını öğrenmek için her yola başvurdu ama <em class='h'>ağzından laf alamadı</em>."},
+{t:"deyim",s:"Akıl almak",m:"Birine danışmak, görüş sormak.",e:"Bu işte yanlış yapacağımı anlayınca hocadan <em class='h'>akıl aldım</em>."},
+{t:"deyim",s:"Akıl erdirememek",m:"Bir şeyi anlayamamak, kavrayamamak.",e:"Nasıl bu kadar çabuk bitirdiğine bir türlü <em class='h'>akıl erdiremedim</em>."},
+{t:"deyim",s:"Akla yatmak",m:"Makul, inandırıcı gelmek.",e:"Söylediğin şey hiç <em class='h'>akla yatmıyor</em>."},
+{t:"deyim",s:"Aklı bir karış havada olmak",m:"Dalgın, düşüncesiz, anlayışsız olmak.",e:"<em class='h'>Aklı bir karış havada</em>, söylediklerimi anlamıyor."},
+{t:"deyim",s:"Aklına yatmak",m:"Makul, inandırıcı gelmek.",e:"Bu plan benim <em class='h'>aklıma yatmıyor</em>."},
+{t:"deyim",s:"Aklından çıkmamak",m:"Sürekli hatırlamak, unutamamak.",e:"O anı bir türlü <em class='h'>aklımdan çıkaramıyorum</em>."},
+{t:"deyim",s:"Aklı başında olmak",m:"Olayları gerçekçi biçimde değerlendirmek.",e:"<em class='h'>Aklı başında</em> bir insan böyle karar vermez."},
+{t:"deyim",s:"Alın teri dökmek",m:"Zahmetli iş yapıp çok emek vermek.",e:"<em class='h'>Alın teri dökmeden</em> kazanılan paranın kıymeti olmaz."},
+{t:"deyim",s:"Alıcı gözüyle bakmak",m:"Çok dikkatli ve ince bir gözle incelemek.",e:"Evi <em class='h'>alıcı gözüyle bakarak</em> dolaştı."},
+{t:"deyim",s:"Altının altından kalkmak",m:"Bir işin üstesinden gelmek.",e:"Bu kadar ağır yükün <em class='h'>altından kalkmak</em> kolay değil."},
+{t:"deyim",s:"Altını üstüne getirmek",m:"Bir yeri alt üst etmek, her yeri aramak.",e:"Anahtarı bulmak için evi <em class='h'>altını üstüne getirdi</em>."},
+{t:"deyim",s:"Aynı kefeye koymak",m:"Farklı şeyleri ya da kişileri eşit kabul etmek.",e:"İkisini <em class='h'>aynı kefeye koymamalısın</em>."},
+{t:"deyim",s:"Ayağı kaymak",m:"1. Dengesini yitirmek. 2. Hata yapmak.",e:"Dikkatli ol, ıslak zemin; <em class='h'>ayağın kayabilir</em>."},
+{t:"deyim",s:"Ayağını denk almak",m:"Dikkatli ve tedbirli davranmak.",e:"O adamla konuşurken <em class='h'>ayağını denk al</em>."},
+{t:"deyim",s:"Ayağına kara su inmek",m:"Uzun süre ayakta durmaktan çok yorulmak.",e:"Bütün gün koştururken <em class='h'>ayaklarıma kara su indi</em>."},
+{t:"deyim",s:"Ayak bağı olmak",m:"Birinin serbestçe hareket etmesini engellemek.",e:"Artık sana <em class='h'>ayak bağı olmak</em> istemiyorum."},
+{t:"deyim",s:"Ayak uydurmak",m:"Uymak, adapte olmak.",e:"Yeni ortama hemen <em class='h'>ayak uydurdu</em>."},
+// ─── DEYİMLER B ───
+{t:"deyim",s:"Badireyi atlatmak",m:"Tehlikeli bir durumu atlatmak, geçiştirmek.",e:"Büyük bir krizdi ama nasıl olduysa <em class='h'>badireyi atlattık</em>."},
+{t:"deyim",s:"Bağrına basmak",m:"Sevgi gösterip koruyuculuğuna almak.",e:"Yıllar sonra gelen çocuğunu <em class='h'>bağrına bastı</em>."},
+{t:"deyim",s:"Baklayı ağzından çıkarmak",m:"Uzun süredir gizlediği bir şeyi sonunda söylemek.",e:"Sonunda <em class='h'>baklayı ağzından çıkardı</em>; her şeyi anlattı."},
+{t:"deyim",s:"Baltayı taşa vurmak",m:"Farkında olmadan birini kızdıracak söz söylemek.",e:"Yanlış kişinin yanında o konuyu açarak <em class='h'>baltayı taşa vurdu</em>."},
+{t:"deyim",s:"Bam teline basmak",m:"Birinin en hassas noktasına dokunmak.",e:"Farkında olmadan tam <em class='h'>bam teline bastı</em>."},
+{t:"deyim",s:"Baş başa vermek",m:"Bir iş için birlikte görüşüp güçleri birleştirmek.",e:"İki ortak <em class='h'>baş başa vererek</em> çözüm aradı."},
+{t:"deyim",s:"Başını derde sokmak",m:"Kendini ya da başkasını sıkıntıya düşürmek.",e:"Boşu boşuna <em class='h'>başını derde sokma</em>."},
+{t:"deyim",s:"Başı sıkışmak",m:"Zor durumda kalmak.",e:"<em class='h'>Başı sıkışınca</em> hep beni arar."},
+{t:"deyim",s:"Baş tacı etmek",m:"Çok değer verip saygı göstermek.",e:"Annesini her zaman <em class='h'>baş tacı ederdi</em>."},
+{t:"deyim",s:"Başa çıkmak",m:"Üstesinden gelmek.",e:"Bu sorunla tek başına <em class='h'>başa çıkamazsın</em>."},
+{t:"deyim",s:"Bel bağlamak",m:"Güvenmek, ümit bağlamak.",e:"Çözüm için sana <em class='h'>bel bağladım</em>."},
+{t:"deyim",s:"Bir kaşık suda boğmak",m:"Birine çok kızgın olmak.",e:"Benden o kadar nefret ediyor ki <em class='h'>bir kaşık suda boğardı</em>."},
+{t:"deyim",s:"Bir çırpıda",m:"Çok kısa sürede, hemen.",e:"Alıştırmayı <em class='h'>bir çırpıda</em> bitirdi."},
+{t:"deyim",s:"Boş vermek",m:"Aldırmazlık etmek, önemsememek.",e:"Ne derlerse desinler, <em class='h'>boş ver</em>."},
+{t:"deyim",s:"Boşa çıkmak",m:"Sonuçsuz kalmak, gerçekleşmemek.",e:"Tüm çabaları <em class='h'>boşa çıktı</em>."},
+{t:"deyim",s:"Boş gezmek",m:"İşsiz, amaçsız dolaşmak.",e:"Tatilde biraz <em class='h'>boş gezmek</em> istiyorum."},
+{t:"deyim",s:"Burnunu sokmak",m:"İlgisiz olduğu işe karışmak.",e:"Her işe <em class='h'>burnunu sokuyor</em>."},
+{t:"deyim",s:"Burnu büyümek",m:"Kibirlenmek, büyüklenmek.",e:"Biraz başarı görünce <em class='h'>burnu büyüdü</em>."},
+{t:"deyim",s:"Burnundan fitil fitil gelmek",m:"Çok büyüklenmek, kibir satmak.",e:"Biraz para görünce <em class='h'>burnundan fitil fitil geldi</em>."},
+{t:"deyim",s:"Burnunun dibinde",m:"Çok yakınında, hemen önünde.",e:"Arıyor arıyor, aslında <em class='h'>burnunun dibinde</em>."},
+{t:"deyim",s:"Burnundan kıl aldırmamak",m:"Çok kibirli, geçimsiz olmak.",e:"<em class='h'>Burnundan kıl aldırmıyor</em>, kimseyle geçinemiyor."},
+{t:"deyim",s:"Burun kıvırmak",m:"Beğenmeyip küçümsemek.",e:"Her öneriye <em class='h'>burun kıvırıyor</em>."},
+// ─── DEYİMLER C-Ç ───
+{t:"deyim",s:"Caka satmak",m:"Gösteriş yapmak, hava atmak.",e:"<em class='h'>Caka satmayı</em> bırak da işine bak."},
+{t:"deyim",s:"Can atmak",m:"Çok istemek, arzulamak.",e:"Tatile gitmek için <em class='h'>can atıyor</em>."},
+{t:"deyim",s:"Can kulağıyla dinlemek",m:"Çok dikkatli, kendini vererek dinlemek.",e:"Hoca anlatırken <em class='h'>can kulağıyla dinliyordu</em>."},
+{t:"deyim",s:"Can yakmak",m:"Acı vermek, büyük zarar vermek.",e:"Bu söz gerçekten <em class='h'>canımı yaktı</em>."},
+{t:"deyim",s:"Canı burnuna gelmek",m:"Bir şeyden bunalmak, çok zorluk çekmek.",e:"O işi yaparken <em class='h'>canım burnuma geldi</em>."},
+{t:"deyim",s:"Canını dişine takmak",m:"Büyük tehlikeleri göze alarak bir işi başarmaya çalışmak.",e:"<em class='h'>Canını dişine takarak</em> mücadele etti."},
+{t:"deyim",s:"Canı çekmek",m:"Çok istemek, arzulamak.",e:"Birden dondurma <em class='h'>canımı çekti</em>."},
+{t:"deyim",s:"Canı sıkılmak",m:"Bunalmak, monotonluktan sıkıntı hissetmek.",e:"Yağmurlu günde <em class='h'>canı sıkıldı</em>, dışarı çıkmak istedi."},
+{t:"deyim",s:"Canı pahasına",m:"Hayatını ortaya koyarak.",e:"<em class='h'>Canı pahasına</em> ülkesini korudu."},
+{t:"deyim",s:"Ciğerini yakmak",m:"Birinin kalbini kırmak, çok üzmek.",e:"O söz annesinin <em class='h'>ciğerini yaktı</em>."},
+{t:"deyim",s:"Çam devirmek",m:"Yanlışlıkla büyük hata yapmak.",e:"Toplantıda farkında olmadan <em class='h'>çam devirdi</em>."},
+{t:"deyim",s:"Çenesi düşmek",m:"Çok konuşmak.",e:"<em class='h'>Çenesi düşmüş</em>, susmak bilmiyor."},
+{t:"deyim",s:"Çığrından çıkmak",m:"Normal seyri bozulmak; aşırıya kaçmak.",e:"Durum tamamen <em class='h'>çığrından çıktı</em>."},
+{t:"deyim",s:"Çantada keklik",m:"Ele geçmesi kesin sanılan şey.",e:"Bu maçı kazanmayı <em class='h'>çantada keklik</em> sayıyorlardı."},
+{t:"deyim",s:"Çelme takmak",m:"Birinin önüne engel çıkarmak.",e:"Başarısına <em class='h'>çelme taktılar</em>."},
+{t:"deyim",s:"Çift sürmek",m:"Tarla sürmek; mecazî olarak ağır iş yapmak.",e:"Bütün ömrü boyunca <em class='h'>çift sürdü</em>, hiç şikâyet etmedi."},
+// ─── DEYİMLER D ───
+{t:"deyim",s:"Damarına basmak",m:"Birinin en hassas yerine dokunmak.",e:"O söz tam <em class='h'>damarına bastı</em>."},
+{t:"deyim",s:"Demirden leblebi yemek",m:"Çok güç koşullara dayanacak derecede zorlu biri olmak.",e:"O adam <em class='h'>demirden leblebi yer</em>, zorlanmaz."},
+{t:"deyim",s:"Dert ortağı olmak",m:"Birinin sıkıntısını paylaşmak.",e:"Zor günümde bana <em class='h'>dert ortağı oldu</em>."},
+{t:"deyim",s:"Devede kulak",m:"Bir şeyin yanında çok küçük kalan miktar.",e:"Verdiği para bizim masrafımıza göre <em class='h'>devede kulak</em>."},
+{t:"deyim",s:"Dikiş tutturamamak",m:"Bir işte, yerde tutunamamak.",e:"Bu şirkette de <em class='h'>dikiş tutturamadı</em>, ayrılmak zorunda kaldı."},
+{t:"deyim",s:"Dil dökmek",m:"İnandırmak için güzel sözler söylemek.",e:"Saatlerce <em class='h'>dil döktü</em>, ama kabul ettiremedim."},
+{t:"deyim",s:"Dilini tutmak",m:"Konuşmamak, susup beklemek.",e:"Şimdi <em class='h'>dilini tut</em>, yeri değil."},
+{t:"deyim",s:"Dirsek çevirmek",m:"Eskiden yakın olduğu birini tanımamak, ilişkiyi kesmek.",e:"İyi günlerinde yanından ayrılmadım; ama o bana <em class='h'>dirsek çevirdi</em>."},
+{t:"deyim",s:"Dişini sıkmak",m:"Zorluklara katlanmak, tahammül etmek.",e:"Zor anlarda <em class='h'>dişini sıkarak</em> ilerledi."},
+{t:"deyim",s:"Dişe dokunur",m:"Gerçekten işe yarar, değerli.",e:"<em class='h'>Dişe dokunur</em> bir katkısı olmadı."},
+{t:"deyim",s:"Diş bilemek",m:"Birine karşı kin beslemek, intikam planlamak.",e:"Kaybettiğinden beri rakibine <em class='h'>diş biliyor</em>."},
+{t:"deyim",s:"Dört gözle beklemek",m:"Sabırsızlıkla beklemek.",e:"Yazın gelişini <em class='h'>dört gözle bekliyorum</em>."},
+{t:"deyim",s:"Duman olmak",m:"Ortadan kaybolmak, gitmiş olmak.",e:"Para bitince arkadaşlar <em class='h'>duman oldu</em>."},
+{t:"deyim",s:"Dünya gözüyle görmek",m:"Hayatta son kez görmek.",e:"Bu yolculukta onu <em class='h'>dünya gözüyle gördüm</em>."},
+// ─── DEYİMLER E ───
+{t:"deyim",s:"El atmak",m:"Bir işi üstlenmek, müdahale etmek.",e:"Projeye zamanında <em class='h'>el atmasaydı</em> başarısız olurduk."},
+{t:"deyim",s:"El yordamıyla",m:"Karanlıkta ya da bilgisizlikle deneme yanılma yoluyla.",e:"<em class='h'>El yordamıyla</em> çözüm bulmaya çalıştı."},
+{t:"deyim",s:"Elden ayaktan düşmek",m:"Yaşlılık ya da hastalık yüzünden bir şey yapamamak.",e:"Geçirdiği ameliyattan sonra <em class='h'>elden ayaktan düştü</em>."},
+{t:"deyim",s:"Eli kulağında olmak",m:"Çok yakında olmak, an meselesi.",e:"Bebeğin doğumu <em class='h'>eli kulağında</em>."},
+{t:"deyim",s:"Eline su dökememek",m:"Bir işte birinin yanına bile yaklaşamamak.",e:"Bu konuda onun <em class='h'>eline su dökemezsin</em>."},
+{t:"deyim",s:"Emek vermek",m:"Bir iş için çok çalışmak, çaba harcamak.",e:"Yıllarca bu projeye <em class='h'>emek verdi</em>."},
+{t:"deyim",s:"Etekleri tutuşmak",m:"Çok telaşlanmak, paniğe kapılmak.",e:"Haberi alınca <em class='h'>etekleri tutuştu</em>."},
+// ─── DEYİMLER F ───
+{t:"deyim",s:"Faka basmak",m:"Tuzağa düşmek, aldatılmak.",e:"Dikkatli olmadığı için yine <em class='h'>fakaya bastı</em>."},
+{t:"deyim",s:"Feleğini şaşırmak",m:"Şaşkın, sersem hale gelmek.",e:"Bu kadar iş arasında gerçekten <em class='h'>feleğimi şaşırdım</em>."},
+{t:"deyim",s:"Fırtına koparmak",m:"Büyük gürültü, kargaşa ya da tartışma çıkarmak.",e:"Açıkladığı karar toplantıda <em class='h'>fırtına kopardı</em>."},
+{t:"deyim",s:"Fırsatı kaçırmamak",m:"Uygun zamanı değerlendirmek.",e:"Bu teklifi kabul et, <em class='h'>fırsatı kaçırma</em>."},
+{t:"deyim",s:"Fitil vermek",m:"Bir kavga ya da kötü olayı başlatmak.",e:"O söz her şeye <em class='h'>fitil verdi</em>."},
+{t:"deyim",s:"Fitne sokmak",m:"Araya girerek anlaşmazlık çıkarmak.",e:"Aramıza <em class='h'>fitne sokulmaya</em> çalışıldı."},
+// ─── DEYİMLER G ───
+{t:"deyim",s:"Gam yememek",m:"Kaygılanmamak, üzülmemek.",e:"Sizi güvende görünce artık <em class='h'>gam yemem</em>."},
+{t:"deyim",s:"Geri adım atmak",m:"Bir iddiadan ya da tutumdan vazgeçmek.",e:"Baskı artınca <em class='h'>geri adım attı</em>."},
+{t:"deyim",s:"Gırtlağına kadar borçlanmak",m:"Çok fazla borç altına girmek.",e:"Ev almak için <em class='h'>gırtlağına kadar borçlandı</em>."},
+{t:"deyim",s:"Göbeği çözülmek",m:"Çok gülmek.",e:"Anlattığı fıkrada <em class='h'>göbeğim çözüldü</em>."},
+{t:"deyim",s:"Göğsünü gere gere",m:"Onurla, gururla.",e:"Başarısıyla <em class='h'>göğsünü gere gere</em> yürüdü."},
+{t:"deyim",s:"Göz atmak",m:"Kısa ve hızlıca bakmak.",e:"Raporlara bir <em class='h'>göz attı</em>, sorun olmadığını anladı."},
+{t:"deyim",s:"Göz kulak olmak",m:"Dikkatle bakıp korumak.",e:"Ben yokken çocuklara <em class='h'>göz kulak ol</em>."},
+{t:"deyim",s:"Göze girmek",m:"Birinin beğenisini ve güvenini kazanmak.",e:"Çalışkanlığıyla müdürün <em class='h'>gözüne girdi</em>."},
+{t:"deyim",s:"Gözden çıkarmak",m:"Bir şeyden ya da kişiden vazgeçmek.",e:"Bu uğurda her şeyini <em class='h'>gözden çıkardı</em>."},
+{t:"deyim",s:"Gözden düşmek",m:"Birinin beğenisini, güvenini kaybetmek.",e:"O hareketi yaptıktan sonra tamamen <em class='h'>gözden düştü</em>."},
+{t:"deyim",s:"Gözden geçirmek",m:"İncelemek, kontrol etmek.",e:"Raporu teslim etmeden önce bir kez daha <em class='h'>gözden geçir</em>."},
+{t:"deyim",s:"Göz kamaştırmak",m:"Hayranlık uyandırmak, büyülemek.",e:"Sahne tasarımı herkesin <em class='h'>gözünü kamaştırdı</em>."},
+{t:"deyim",s:"Gözü açık olmak",m:"Tetikte, dikkatli olmak.",e:"Pazarda <em class='h'>gözün açık olsun</em>."},
+{t:"deyim",s:"Gözü dönmek",m:"Çok sinirlenip ne yaptığını bilmemek.",e:"Bu haber karşısında <em class='h'>gözü döndü</em>."},
+{t:"deyim",s:"Gözü pek olmak",m:"Yürekli, cesur olmak.",e:"<em class='h'>Gözü pek</em> biri olmasa o iş bitmezdi."},
+{t:"deyim",s:"Gözüne uyku girmemek",m:"Hiç uyuyamamak.",e:"O gece heyecandan <em class='h'>gözüme uyku girmedi</em>."},
+{t:"deyim",s:"Gönlünü yapmak",m:"Birisini memnun etmek, gönlünü almak.",e:"Ona küçük bir jest yaparak <em class='h'>gönlünü yaptı</em>."},
+{t:"deyim",s:"Güneş gibi doğmak",m:"Çok parlak, dikkat çekici biçimde belirmek.",e:"Sahneye <em class='h'>güneş gibi doğdu</em>."},
+// ─── DEYİMLER H ───
+{t:"deyim",s:"Haddini bilmek",m:"Sınırını tanımak, yerini bilmek.",e:"<em class='h'>Haddini bil</em>, bu işlere burnunu sokma."},
+{t:"deyim",s:"Hal hatır sormak",m:"Birinin durumunu ve sağlığını öğrenmek için görüşmek.",e:"Hastanede yatan arkadaşının <em class='h'>hal hatırını sorduk</em>."},
+{t:"deyim",s:"Hava basmak",m:"Boş övünmek, üstünlük taslamak.",e:"Durumu olmadığı halde <em class='h'>hava basıyor</em>."},
+{t:"deyim",s:"Havaya girmek",m:"Sevinçle neşelenmek, coşmak.",e:"Haberi alınca herkes <em class='h'>havaya girdi</em>."},
+{t:"deyim",s:"Hayıflanmak",m:"Elde edilemeyen bir şey için üzülmek.",e:"Kaçırdığı fırsat için uzun süre <em class='h'>hayıflandı</em>."},
+{t:"deyim",s:"Hem nalına hem mıhına vurmak",m:"İki tarafı da hoşnut etmeye çalışmak.",e:"Diplomat <em class='h'>hem nalına hem mıhına vurarak</em> konuştu."},
+{t:"deyim",s:"Hevesini kursağında bırakmak",m:"Birinin istediğini yerine getirmemek.",e:"Sözünü tutmadı ve <em class='h'>hevesimizi kursağımızda bıraktı</em>."},
+// ─── DEYİMLER İ ───
+{t:"deyim",s:"İçi içine sığmamak",m:"Çok heyecanlı olmak, yerinde duramamak.",e:"Haberi alınca <em class='h'>içi içine sığmadı</em>."},
+{t:"deyim",s:"İçi geçmek",m:"Birini, bir şeyi özlemek.",e:"Köyü için çok <em class='h'>içi geçti</em>."},
+{t:"deyim",s:"İki arada bir derede kalmak",m:"İki seçenek arasında karar verememek.",e:"<em class='h'>İki arada bir derede kaldım</em>, hangisini seçeceğimi bilemedim."},
+{t:"deyim",s:"İki eli kanda olsa",m:"Ne kadar meşgul olursa olsun.",e:"<em class='h'>İki eli kanda olsa</em> yardıma koşar."},
+{t:"deyim",s:"İnce eleyip sık dokumak",m:"Çok dikkatli ve titiz davranmak.",e:"Bu işte <em class='h'>ince eleyip sık dokumalısın</em>."},
+{t:"deyim",s:"İpliği pazara çıkmak",m:"Gerçek yüzü ortaya çıkmak.",e:"Sonunda <em class='h'>ipliği pazara çıktı</em>."},
+{t:"deyim",s:"İşi sıkıya gelmek",m:"Zor duruma düşmek, köşeye sıkışmak.",e:"<em class='h'>İşi sıkıya gelince</em> doğruyu söyledi."},
+{t:"deyim",s:"İşi yokuşa sürmek",m:"Bir işi zorlaştırmak.",e:"Basit bir konuyu <em class='h'>yokuşa sürdü</em>."},
+{t:"deyim",s:"İşine gelmek",m:"Çıkarına uygun gelmek.",e:"Sana yük olacak şeyleri görmezden gelmek <em class='h'>işine geliyor</em>."},
+// ─── DEYİMLER J-K ───
+{t:"deyim",s:"Jetonu geç düşmek",m:"Bir şeyi geç anlamak.",e:"Güldükten bir dakika sonra <em class='h'>jetonu düştü</em>."},
+{t:"deyim",s:"Kabuğuna çekilmek",m:"Dış dünyadan kopup yalnız kalmak.",e:"Kazanın ardından tamamen <em class='h'>kabuğuna çekildi</em>."},
+{t:"deyim",s:"Kafa kafaya vermek",m:"Bir sorun üzerine birlikte düşünmek.",e:"İkisi saatlerce <em class='h'>kafa kafaya verdi</em>."},
+{t:"deyim",s:"Kafa tutmak",m:"Karşı gelmek, direnmek.",e:"Herkes boyun eğerken o <em class='h'>kafa tuttu</em>."},
+{t:"deyim",s:"Kafasına takmak",m:"Bir şeyi aklından çıkaramamak.",e:"O sözü <em class='h'>kafasına taktı</em>, bırakamıyor."},
+{t:"deyim",s:"Kafayı yemek",m:"Çıldırmak, aklını yitirmek.",e:"Bu kadar çalışırsan <em class='h'>kafayı yersin</em>!"},
+{t:"deyim",s:"Kan ter içinde kalmak",m:"Çok ter dökmek, çok yorulmak.",e:"Maçın sonunda <em class='h'>kan ter içinde kaldı</em>."},
+{t:"deyim",s:"Karnı tok olmak",m:"İhtiyacı olmamak, sahip olduğundan memnun olmak.",e:"Maddiyat konusunda <em class='h'>karnı tok</em>, şikâyeti yok."},
+{t:"deyim",s:"Kaşla göz arasında",m:"Çok kısa sürede, anında.",e:"<em class='h'>Kaşla göz arasında</em> her şey bitti."},
+{t:"deyim",s:"Kemeri sıkmak",m:"Tasarruf yapmak, harcamaları kısmak.",e:"Zor günlerde <em class='h'>kemeri sıkmak</em> gerekiyor."},
+{t:"deyim",s:"Kepenklerini kapatmak",m:"İşyerini ya da bir işi tamamen kapatmak.",e:"Kriz yüzünden dükkanın <em class='h'>kepenklerini kapattı</em>."},
+{t:"deyim",s:"Kılı kırk yarmak",m:"Aşırı titiz davranmak, gereksiz ayrıntılarla uğraşmak.",e:"Her şeyi <em class='h'>kılı kırk yararak</em> inceledi."},
+{t:"deyim",s:"Kılına bile dokunmamak",m:"Hiç zarar vermemek.",e:"Seni seviyor, senin <em class='h'>kılına bile dokunmaz</em>."},
+{t:"deyim",s:"Kıl olmak",m:"Çok sinir bozucu olmak.",e:"O tavırları beni gerçekten <em class='h'>kıl ediyor</em>."},
+{t:"deyim",s:"Kıl payı kurtulmak",m:"Çok az farkla tehlikeden kaçmak.",e:"Kazada <em class='h'>kıl payı kurtuldu</em>."},
+{t:"deyim",s:"Kirli çamaşırları ortaya dökmek",m:"Utanç verici sırları açıklamak.",e:"Kavgada <em class='h'>kirli çamaşırlarını ortaya döktü</em>."},
+{t:"deyim",s:"Kolunu sıvamak",m:"Bir işi yapmaya azimle hazırlanmak.",e:"Evi boyamak için <em class='h'>kollarını sıvadı</em>."},
+{t:"deyim",s:"Kulağı delik olmak",m:"Her şeyden haberdar olmak.",e:"O adamın <em class='h'>kulağı deliktir</em>, dikkat et."},
+{t:"deyim",s:"Kulak misafiri olmak",m:"Farkında olmadan başkalarının konuşmasını duymak.",e:"Koridorda giderken onların tartışmasına <em class='h'>kulak misafiri oldum</em>."},
+{t:"deyim",s:"Kulak vermek",m:"Dikkatle dinlemek.",e:"Söylediklerime biraz <em class='h'>kulak ver</em>."},
+{t:"deyim",s:"Kulağına küpe olmak",m:"Acı bir deneyimden ders çıkarmak.",e:"Bu başarısızlık sana <em class='h'>kulağına küpe olsun</em>."},
+{t:"deyim",s:"Köprüyü geçmek",m:"Tehlikeli ya da zor bir aşamayı atlatmak.",e:"Sınavı verince artık <em class='h'>köprüyü geçtik</em> sayılırız."},
+{t:"deyim",s:"Köşe kapmak",m:"İyi bir mevki ya da fırsatı hızla ele geçirmek.",e:"Şirkette erken davranarak <em class='h'>köşeyi kapttı</em>."},
+{t:"deyim",s:"Kulaklarına inanamamak",m:"Duyduğuna çok şaşırmak.",e:"Haberi duyunca <em class='h'>kulaklarıma inanamadım</em>."},
+{t:"deyim",s:"Kuyruğuna basmak",m:"Birini en hassas yerinden rahatsız etmek.",e:"Farkında olmadan <em class='h'>kuyruğuna bastı</em>, kızdı."},
+// ─── DEYİMLER L ───
+{t:"deyim",s:"Lafı gevelemek",m:"Söylemek istediğini açıkça söylememek, dolaştırmak.",e:"<em class='h'>Lafı geveleye geveleye</em> hiçbir şey söylemedi."},
+{t:"deyim",s:"Lafı olmaz",m:"Söylenecek söz yok; çok iyi, kusursuz.",e:"Yaptığı yemeğin <em class='h'>lafı olmaz</em>."},
+{t:"deyim",s:"Lafı uzatmak",m:"Gereksiz yere konuşmayı uzatmak.",e:"<em class='h'>Lafı uzatmadan</em> ne demek istediğini söyle."},
+{t:"deyim",s:"Lafının eri olmak",m:"Verdiği sözü tutan, güvenilir kişi olmak.",e:"O <em class='h'>lafının eridir</em>, ne derse yapar."},
+{t:"deyim",s:"Laf arasında",m:"Konuşma sırasında, söz arasında.",e:"<em class='h'>Laf arasında</em> işini de halletti."},
+// ─── DEYİMLER M ───
+{t:"deyim",s:"Maskeyi düşürmek",m:"Birinin gerçek yüzünü ortaya çıkarmak.",e:"Sonunda <em class='h'>maskesini düşürdü</em>."},
+{t:"deyim",s:"Maydanoz olmak",m:"Her işe karışmak, gereksiz yere ortalıkta olmak.",e:"Her toplantıya <em class='h'>maydanoz olup</em> geliyor."},
+{t:"deyim",s:"Meydan okumak",m:"Açıkça karşı gelmek.",e:"Rakiplerine <em class='h'>meydan okudu</em>."},
+{t:"deyim",s:"Mızrak çuvala sığmamak",m:"Gizlenemeyen bir gerçeğin ortaya çıkması.",e:"Yalanı <em class='h'>mızrak çuvala sığmadı</em>, herkes anladı."},
+// ─── DEYİMLER N-O ───
+{t:"deyim",s:"Nabız yoklamak",m:"Birinin niyetini, tepkisini anlamaya çalışmak.",e:"Teklife karşı <em class='h'>nabzını yokladım</em>."},
+{t:"deyim",s:"Nalları dikmek",m:"Ölmek.",e:"Yaşlı çınar geçen kış <em class='h'>nalları dikti</em>."},
+{t:"deyim",s:"Nefes kesmek",m:"Şaşkınlık ya da merakla soluk almayı unutacak kadar etkilenmek.",e:"O manzara gerçekten <em class='h'>nefes kesti</em>."},
+{t:"deyim",s:"Nefes aldırmamak",m:"Sürekli baskı yapmak, boş zaman vermemek.",e:"Patron bize <em class='h'>nefes aldırmıyor</em>."},
+{t:"deyim",s:"Nutuk atmak",m:"Uzun ve coşkulu konuşma yapmak.",e:"Saatler boyunca <em class='h'>nutuk attı</em>."},
+{t:"deyim",s:"Ocağına incir dikmek",m:"Birinin soyunu yok etmek, evini yıkmak.",e:"O adam herkese eziyet etti; sonunda <em class='h'>ocağına incir diktiler</em>."},
+{t:"deyim",s:"Omuz vermek",m:"Destek olmak, yardım etmek.",e:"Zor günümde bana <em class='h'>omuz verdi</em>."},
+{t:"deyim",s:"Ortada kalmak",m:"Ne bu tarafa ne öte tarafa ait olmak; sahipsiz kalmak.",e:"İkisi de anlaşmayı bozunca <em class='h'>ortada kaldık</em>."},
+{t:"deyim",s:"Oyuna gelmek",m:"Kandırılmak, aldatılmak.",e:"Dikkatli ol, <em class='h'>oyuna gelme</em>."},
+{t:"deyim",s:"Ödü kopmak",m:"Çok korkmak.",e:"O sesi duyunca <em class='h'>ödü koptu</em>."},
+// ─── DEYİMLER P-R ───
+{t:"deyim",s:"Parmak ısırmak",m:"Çok şaşırmak, hayrete düşmek.",e:"O performansı görünce herkes <em class='h'>parmak ısırdı</em>."},
+{t:"deyim",s:"Parmak hesabı yapmak",m:"Çok basit ve ilkel bir hesap yapmak.",e:"Bu işte <em class='h'>parmak hesabı</em> yetmez."},
+{t:"deyim",s:"Pişmiş aşa su katmak",m:"Tamamlanmış bir işi bozmak.",e:"Her şey hazırken sen <em class='h'>pişmiş aşa su katıyorsun</em>."},
+{t:"deyim",s:"Rüzgâra kürek çekmek",m:"Boş ve sonuçsuz bir işle uğraşmak.",e:"Bu tartışmada haklı çıkmaya çalışmak <em class='h'>rüzgâra kürek çekmek</em>."},
+{t:"deyim",s:"Rüzgâr ekmek",m:"Fesat çıkarmak, kargaşa yaratmak.",e:"O gittiği her yere <em class='h'>rüzgâr eker</em>."},
+// ─── DEYİMLER S-Ş ───
+{t:"deyim",s:"Saçını süpürge etmek",m:"Birine hizmet uğruna kendini yıpratmak.",e:"Yıllarca bu aile için <em class='h'>saçını süpürge etti</em>."},
+{t:"deyim",s:"Sap ile samanı ayırmak",m:"İyi ile kötüyü, doğru ile yanlışı net biçimde ayırmak.",e:"Doğru karar verebilmek için <em class='h'>sapı samanı ayırmak</em> gerekir."},
+{t:"deyim",s:"Sırtını yaslamak",m:"Birini sığınak edinmek, dayanmak.",e:"Her zor durumda ailesine <em class='h'>sırtını yasladı</em>."},
+{t:"deyim",s:"Söz vermek",m:"Yapacağına dair garanti vermek.",e:"Zamanında geleceğine <em class='h'>söz verdi</em>."},
+{t:"deyim",s:"Söz geçirmek",m:"Birini dinletebilmek, etki altında tutmak.",e:"Çocuğuna hiç <em class='h'>söz geçiremiyor</em>."},
+{t:"deyim",s:"Sözü geçmek",m:"Sözü dinlenmek, etkisi olmak.",e:"Bu konuda senin <em class='h'>sözün geçer</em>, sen konuş."},
+{t:"deyim",s:"Su götürmez",m:"Tartışmasız, açık seçik.",e:"Bu <em class='h'>su götürmez</em> bir gerçektir."},
+// ─── DEYİMLER T ───
+{t:"deyim",s:"Tabanları yağlamak",m:"Kaçmak, sıvışmak.",e:"İş ağırlaşınca <em class='h'>tabanları yağladı</em>."},
+{t:"deyim",s:"Tadını çıkarmak",m:"Bir şeyden en iyi biçimde yararlanmak, keyfini sürmek.",e:"Tatili sonuna kadar <em class='h'>tadını çıkardılar</em>."},
+{t:"deyim",s:"Taş çıkarmak",m:"Birini geride bırakmak, üstün gelmek.",e:"Bu işte herkesin <em class='h'>taşını çıkarır</em>."},
+{t:"deyim",s:"Taş üstüne taş koymak",m:"Bir şeye katkıda bulunmak, inşa etmek.",e:"Bu şirketi <em class='h'>taş üstüne taş koyarak</em> büyüttük."},
+{t:"deyim",s:"Tef çalmak",m:"Gıybet etmek, başkalarını çekiştirmek.",e:"Oturup arkamızdan <em class='h'>tef çalıyorlar</em>."},
+{t:"deyim",s:"Tepesi atmak",m:"Çok sinirlenip taşmak.",e:"O konuşunca <em class='h'>tepesi attı</em>."},
+{t:"deyim",s:"Tepeden tırnağa",m:"Baştan ayağa, tamamen.",e:"<em class='h'>Tepeden tırnağa</em> ıslak oldu."},
+{t:"deyim",s:"Tereyağından kıl çeker gibi",m:"Çok kolayca, hiç zorlanmadan.",e:"O soruyu <em class='h'>tereyağından kıl çeker gibi</em> çözdü."},
+{t:"deyim",s:"Topu taca atmak",m:"Sorumluluğu başkasına yıkmak.",e:"Soruları cevaplamak yerine <em class='h'>topu taca attı</em>."},
+{t:"deyim",s:"Toz kondurmamak",m:"Birini ya da bir şeyi çok koruyup kusursuz saymak.",e:"Çocuğuna kimse <em class='h'>toz konduramaz</em>."},
+{t:"deyim",s:"Toz pembe görmek",m:"Gerçekçi olmayan biçimde iyimser olmak.",e:"Her şeyi <em class='h'>toz pembe</em> görüyor."},
+{t:"deyim",s:"Tüyleri diken diken olmak",m:"Korku ya da heyecanla ürpermek.",e:"O sesi duyunca <em class='h'>tüylerim diken diken oldu</em>."},
+{t:"deyim",s:"Tuzlu su içirmek",m:"Birini çok zarara uğratmak.",e:"Aldatıcı sözlerine inandım ve bana <em class='h'>tuzlu su içirdiler</em>."},
+// ─── DEYİMLER U-Ü-V-Y-Z ───
+{t:"deyim",s:"Ufku açık olmak",m:"Geniş düşünceli, ileri görüşlü olmak.",e:"<em class='h'>Ufku açık</em> insanlar yeniliklere kolayca uyum sağlar."},
+{t:"deyim",s:"Ummadık taş baş yarar",m:"Beklenmedik bir kimseden zarar gelmek.",e:"En güvendiği kişi onu anlattı; gerçekten <em class='h'>ummadık taş baş yarar</em>."},
+{t:"deyim",s:"Üstüne tuz biber ekmek",m:"Birisinin acısını daha da artırmak.",e:"Bir de böyle söyleyerek <em class='h'>üstüne tuz biber ekti</em>."},
+{t:"deyim",s:"Vakit kazanmak",m:"Oyalayarak zaman kazanmak.",e:"Soruyu cevaplamaktan kaçınarak <em class='h'>vakit kazanmaya</em> çalıştı."},
+{t:"deyim",s:"Yaka paça etmek",m:"Zorla götürmek ya da birine sert davranmak.",e:"Tartışma büyüyünce onu <em class='h'>yaka paça etti</em>."},
+{t:"deyim",s:"Yakasını bırakmamak",m:"Peşini bırakmamak, sürekli rahatsız etmek.",e:"<em class='h'>Yakamı bırakmıyor</em>, her gün arıyor."},
+{t:"deyim",s:"Yedi düvele beddua etmek",m:"Herkese kızıp bağırmak.",e:"Sinirlenince <em class='h'>yedi düvele beddua etti</em>."},
+{t:"deyim",s:"Yel gibi geçmek",m:"Çok hızlı geçip gitmek.",e:"Yaz tatili <em class='h'>yel gibi geçti</em>."},
+{t:"deyim",s:"Yere göğe sığdıramamak",m:"Birini aşırı övmek.",e:"Oğlunu <em class='h'>yere göğe sığdıramıyor</em>."},
+{t:"deyim",s:"Yolunu gözlemek",m:"Birisinin gelmesini sabırsızlıkla beklemek.",e:"Annen saatlerdir senin <em class='h'>yolunu gözlüyor</em>."},
+{t:"deyim",s:"Yürek dağlamak",m:"Çok üzmek, acı vermek.",e:"O haber <em class='h'>yürek dağladı</em>."},
+{t:"deyim",s:"Yüreği oynamak",m:"Heyecan ya da korku hissetmek.",e:"Söylenecekleri beklerken <em class='h'>yüreği oynadı</em>."},
+{t:"deyim",s:"Yüzü gülmek",m:"Mutlu ve neşeli görünmek.",e:"Uzun süreden sonra nihayet <em class='h'>yüzü güldü</em>."},
+{t:"deyim",s:"Yüzü kızarmak",m:"Utanmak.",e:"Sorunun cevabını bilemeyince <em class='h'>yüzü kızardı</em>."},
+{t:"deyim",s:"Yüzüne vurmak",m:"Birine yaptığı hatayı yüzüne söylemek.",e:"Herkesin içinde hatasını <em class='h'>yüzüne vurdu</em>."},
+{t:"deyim",s:"Yüz vermek",m:"Birine gereğinden fazla yakınlık ve izin göstermek.",e:"Çocuğa fazla <em class='h'>yüz verme</em>, sonra başa çıkamazsın."},
+{t:"deyim",s:"Zehir gibi",m:"Çok keskin, akıllı veya acı.",e:"<em class='h'>Zehir gibi</em> bir zekâsı var."},
+{t:"deyim",s:"Zıvanadan çıkmak",m:"Çok sinirlenip kendine hâkim olamamak.",e:"Sabır taşı çatlayınca <em class='h'>zıvanadan çıktı</em>."},
+{t:"deyim",s:"Zamana bırakmak",m:"Bir sorunu çözmek için zaman geçmesini beklemek.",e:"Bu konuyu <em class='h'>zamana bırakmak</em> en doğrusu."},
+// ─── DEYİMLER EK ───
+{t:"deyim",s:"Ağzına parmak tıkamak",m:"Birinin söylemesini önlemek, susturmak.",e:"Söyleyeceğini anlayınca <em class='h'>ağzına parmak tıkadı</em>."},
+{t:"deyim",s:"Dört köşe olmak",m:"Çok mutlu ve memnun olmak.",e:"Haberi alınca <em class='h'>dört köşe oldu</em>."},
+{t:"deyim",s:"Eli açık olmak",m:"Cömert olmak.",e:"O çok <em class='h'>eli açık</em> biridir, kimseyi eli boş göndermez."},
+{t:"deyim",s:"Eli sıkı olmak",m:"Cimri olmak.",e:"<em class='h'>Eli sıkı</em> olduğu için kimseyle para işine girmiyor."},
+{t:"deyim",s:"Göz boyamak",m:"Gerçekte olmayan bir iyiliği, çalışmayı göstermek.",e:"Patronun önünde <em class='h'>göz boyayarak</em> masum görünmeye çalıştı."},
+{t:"deyim",s:"Kabak tadı vermek",m:"Çok tekrar edildiği için sıkmak.",e:"Aynı şakayı sürekli yapıyor, artık <em class='h'>kabak tadı verdi</em>."},
+{t:"deyim",s:"Kan kusturmak",m:"Birini çok ezmek, çok fazla sıkıntı vermek.",e:"Verdiği ödevlerle öğrencilere <em class='h'>kan kustururdu</em>."},
+{t:"deyim",s:"Kara kara düşünmek",m:"Karamsar, umutsuz bir şekilde düşünmek.",e:"Günlerce <em class='h'>kara kara düşündü</em>."},
+{t:"deyim",s:"Lokma gibi yutmak",m:"Söyleneni hiç itiraz etmeden kabul etmek.",e:"Her yalanı <em class='h'>lokma gibi yuttu</em>."},
+{t:"deyim",s:"Malını mülkünü yemek",m:"Varını yoğunu tüketmek.",e:"Kumar oynaya oynaya <em class='h'>malını mülkünü yedi</em>."},
+{t:"deyim",s:"Pişmanlık duymak",m:"Yaptığı bir şeyden dolayı içten üzüntü hissetmek.",e:"Verdiği karardan derin <em class='h'>pişmanlık duydu</em>."},
+{t:"deyim",s:"Sinirden çıldırmak",m:"Çok sinirlenip kontrolü yitirmek.",e:"Bu bekleyiş beni <em class='h'>sinirden çıldırtıyor</em>."},
+{t:"deyim",s:"Söz dinlemek",m:"Büyüklerin söylediklerine uymak.",e:"<em class='h'>Söz dinleyen</em> çocuk her zaman ödüllendirilir."},
+{t:"deyim",s:"Zorla güzellik olmaz",m:"Sevgi ve gönüllülük zorla sağlanamaz.",e:"<em class='h'>Zorla güzellik olmaz</em>, kabul etmek zorunda değilim."},
+
+// ══════════════════════════════════════════════════════
+// ATASÖZÜ A
+// ══════════════════════════════════════════════════════
+{t:"atasoz",s:"Abanın kadri yağmurda bilinir.",m:"Bir şeyin gerçek değeri, ona çok ihtiyaç duyulduğunda anlaşılır."},
+{t:"atasoz",s:"Ağaç yaşken eğilir.",m:"İnsan küçükken terbiye ve alışkanlık kazanır; büyüyünce değişmesi zorlaşır."},
+{t:"atasoz",s:"Akıl yaşta değil, baştadır.",m:"Zeki olmak yaşla değil, kişinin anlayışıyla ölçülür."},
+{t:"atasoz",s:"Alışkanlık ikinci bir tabiat olur.",m:"Bir şeye alışan, onu doğal ihtiyacı gibi hisseder."},
+{t:"atasoz",s:"Araba devrilince yol gösteren çok olur.",m:"İş olduktan sonra akıl veren çok çıkar; asıl gereken önceden uyarmaktır."},
+{t:"atasoz",s:"Armut piş ağzıma düş.",m:"Emek harcamadan her şeyin hazır gelmesini beklemek."},
+{t:"atasoz",s:"Aslan yattığı yerden belli olur.",m:"Büyük insanların bulundukları yer de büyük ve değerli olur."},
+{t:"atasoz",s:"Ateş olmayan yerden duman çıkmaz.",m:"Her söylentinin, her belirtinin arkasında bir gerçek vardır."},
+{t:"atasoz",s:"Az tamah çok ziyan.",m:"Açgözlülük sonunda büyük kayba yol açar."},
+{t:"atasoz",s:"Ayağını yorganına göre uzat.",m:"Harcamalarını gelirine, isteğini imkânına göre ayarla."},
+{t:"atasoz",s:"Adam adama lazım.",m:"İnsanlar her zaman birbirine ihtiyaç duyar."},
+{t:"atasoz",s:"Aç it fırın deler.",m:"Açlık ya da şiddetli ihtiyaç insanı her şeye iter."},
+{t:"atasoz",s:"Ak akçe kara gün içindir.",m:"Biriken para, sıkıntılı günler için saklanır."},
+// ══════════════════════════════════════════════════════
+// ATASÖZÜ B
+// ══════════════════════════════════════════════════════
+{t:"atasoz",s:"Baca eğri de olsa dumanı doğru çıkar.",m:"İyi huylu, dürüst biri olumsuz ortamdan etkilense de doğruluğunu korur."},
+{t:"atasoz",s:"Bal bal demekle ağız tatlanmaz.",m:"Söz söylemek yetmez; asıl olan gerçekleştirmektir."},
+{t:"atasoz",s:"Balık baştan kokar.",m:"Bir kuruluşta bozulma, başındakilerden kaynaklanır."},
+{t:"atasoz",s:"Bedava sirke baldan tatlıdır.",m:"Masrafsız elde edilen şey, değeri ne olursa olsun hoş gelir."},
+{t:"atasoz",s:"Bindiğin dalı kesme.",m:"Sana destek olanı ya da bağlı olduğun şeye zarar verme."},
+{t:"atasoz",s:"Bir el bir eli yıkar, iki el yüzü yıkar.",m:"İnsanlar birbirine yardım etmeli; dayanışmayla daha büyük işler yapılır."},
+{t:"atasoz",s:"Bir musibet bin nasihatten yeğdir.",m:"Yaşanmış bir felaket, binlerce öğütten daha iyi ders verir."},
+{t:"atasoz",s:"Borçlu herkesin kölesidir.",m:"Borçlu olan kişi özgür hareket edemez, başkasına muhtaçtır."},
+{t:"atasoz",s:"Bülbülü altın kafese koymuşlar, yine de vatanını istemiş.",m:"İnsan ne kadar rahat olsa da vatan sevgisini unutmaz."},
+{t:"atasoz",s:"Bin ölç bir biç.",m:"Karar vermeden önce çok düşünmek gerekir."},
+// ══════════════════════════════════════════════════════
+// ATASÖZÜ C-Ç
+// ══════════════════════════════════════════════════════
+{t:"atasoz",s:"Can boğazdan gelir.",m:"Sağlıklı kalmak için iyi beslenmek önemlidir; yemeden yaşanmaz."},
+{t:"atasoz",s:"Can çıkmayınca huy çıkmaz.",m:"İnsanı alışkanlıklarından vazgeçirmek çok zordur."},
+{t:"atasoz",s:"Cennet ucuz değil, cehennem de boş değil.",m:"İyilik bedelsiz gelmez, kötülük de cezasız kalmaz."},
+{t:"atasoz",s:"Çalma elin kapısını, çalarlar kapını.",m:"Başkasına kötülük yapma; aynısı sana da yapılır."},
+{t:"atasoz",s:"Çivi çiviyi söker.",m:"Bir kötülüğü bazen ancak onun gibisiyle gidermek mümkündür."},
+{t:"atasoz",s:"Çukur kazan çukura düşer.",m:"Başkasına tuzak kuran, o tuzağa kendi düşer."},
+// ══════════════════════════════════════════════════════
+// ATASÖZÜ D
+// ══════════════════════════════════════════════════════
+{t:"atasoz",s:"Dağ dağa kavuşmaz, insan insana kavuşur.",m:"İnsanlar arasındaki buluşma kaçınılmazdır."},
+{t:"atasoz",s:"Damlaya damlaya göl olur.",m:"Küçük birikimlerin zamanla büyük sonuçlar doğurduğu anlatılır."},
+{t:"atasoz",s:"Denize düşen yılana sarılır.",m:"Çok zor durumda kalan biri her çareye baş vurur."},
+{t:"atasoz",s:"Dereyi görmeden paçaları sıvama.",m:"İşin zorluğunu bilmeden hazırlıksız davranma."},
+{t:"atasoz",s:"Doğru söyleyeni dokuz köyden kovarlar.",m:"Gerçeği söylemek çoğu zaman tepki görür."},
+{t:"atasoz",s:"Dost acı söyler.",m:"Gerçek dost, sana iyi gelmesi için gerçeği söyler; tatlı yalan söylemez."},
+{t:"atasoz",s:"Dost başa, düşman ayağa bakar.",m:"Dost seni güçlü kılmak ister; düşman zayıf düşürmek."},
+{t:"atasoz",s:"Dost dostu sıkışmış yerde ister.",m:"Gerçek dost, zor günde yanında olan kişidir."},
+{t:"atasoz",s:"Düşme komşunun haline, düşersin sen de o hale.",m:"Başkasının kötü durumuna gülme; aynısı sana da olabilir."},
+{t:"atasoz",s:"Dost ile ye iç, alışveriş etme.",m:"Dost ile ticaret yapmak ilişkiyi bozabilir."},
+// ══════════════════════════════════════════════════════
+// ATASÖZÜ E
+// ══════════════════════════════════════════════════════
+{t:"atasoz",s:"El elden üstündür.",m:"Her güçlünün üstünde daha güçlüsü vardır."},
+{t:"atasoz",s:"Emeksiz yemek olmaz.",m:"Karşılıksız, çabasız bir kazanç elde edilemez."},
+{t:"atasoz",s:"Erken kalkan yol alır.",m:"Zamanlı ve erken başlayan, başarıya daha çabuk ulaşır."},
+{t:"atasoz",s:"Eşek hoşaftan ne anlar.",m:"Kaba ve anlayışsız biri ince şeylerin değerini bilemez."},
+{t:"atasoz",s:"Etle tırnak arasına girilmez.",m:"Çok yakın bağ olan kişilerin arasına girmek yanlıştır."},
+{t:"atasoz",s:"Etme bulma dünyası.",m:"Yaptığın kötülük eninde sonunda sana döner."},
+{t:"atasoz",s:"Ev alma komşu al.",m:"İyi komşu, iyi ev kadar önemlidir."},
+{t:"atasoz",s:"Eti senin kemiği benim.",m:"Çocuğun eğitimi için her türlü cezaya razı olma ifadesi."},
+{t:"atasoz",s:"Eski dost düşman olmaz.",m:"Gerçek dost bozuşsalar bile düşmanlık yapmaz."},
+// ══════════════════════════════════════════════════════
+// ATASÖZÜ G-H
+// ══════════════════════════════════════════════════════
+{t:"atasoz",s:"Geç olsun güç olmasın.",m:"Bir şeyin gecikmesi, yarım ya da kötü yapılmasından iyidir."},
+{t:"atasoz",s:"Gelen geçer, konan göçer.",m:"Hiçbir şey kalıcı değildir; her şey gelip geçer."},
+{t:"atasoz",s:"Gönül ne kahve ister ne kahvehane, gönül sohbet ister.",m:"İnsanın ihtiyacı maddi şeyler değil, samimi ilgi ve sohbettir."},
+{t:"atasoz",s:"Güneş balçıkla sıvanmaz.",m:"Apaçık gerçekler gizlenemez."},
+{t:"atasoz",s:"Gülü seven dikenine katlanır.",m:"Sevdiğin şeyin güçlüklerine de razı olmak gerekir."},
+{t:"atasoz",s:"Her şeyin fazlası zarar.",m:"Aşırıya kaçmak daima zararlıdır."},
+{t:"atasoz",s:"Her yiğidin bir yoğurt yiyişi vardır.",m:"Herkesin kendine özgü bir yöntemi ve tarzı vardır."},
+{t:"atasoz",s:"Her laf her yerde söylenmez.",m:"Ortama ve koşula uygun konuşmak gerekir."},
+{t:"atasoz",s:"Her kapıdan çıkan mülkünden çıkar.",m:"Herkesle iş tutanın işleri zamanla bozulur."},
+{t:"atasoz",s:"Horozu çok olan köyün sabahı geç olur.",m:"Herkesin söz sahibi olduğu yerde iş geç ilerler."},
+// ══════════════════════════════════════════════════════
+// ATASÖZÜ İ-K
+// ══════════════════════════════════════════════════════
+{t:"atasoz",s:"İki cambaz bir ipte oynamaz.",m:"Aynı alanda iki güçlü rakip birlikte barınamaz."},
+{t:"atasoz",s:"İki gönül bir olunca samanlık seyran olur.",m:"Sevgi ve uyum olduğunda en sıradan yer bile güzel görünür."},
+{t:"atasoz",s:"İnsan insanın kurdudur.",m:"İnsanlar zaman zaman birbirlerine en büyük kötülüğü yaparlar."},
+{t:"atasoz",s:"İşi ehline ver.",m:"Her iş, o konuda uzman olan birine yaptırılmalıdır."},
+{t:"atasoz",s:"İşleyen demir pas tutmaz.",m:"Sürekli çalışan, kendini geliştiren eskimez ve güçlü kalır."},
+{t:"atasoz",s:"İt ürür, kervan yürür.",m:"Karşı çıkmaların önemi yoktur; asıl olan işi sürdürmektir."},
+{t:"atasoz",s:"İyilik et denize at, balık bilmezse Hâlik bilir.",m:"İyilik yap, karşılığını beklemeden; Allah görür."},
+{t:"atasoz",s:"İnsanı seven insanı bulur.",m:"Sevgi gösterenin yanında onu seven insanlar belirir."},
+{t:"atasoz",s:"İyi at yem ister.",m:"İyi insanlar da iyi koşullarda tutulmalıdır."},
+{t:"atasoz",s:"Kanaatkâr olan zengindir.",m:"Az ile yetinip şükredebilen insan gerçek zenginliğe kavuşur."},
+{t:"atasoz",s:"Karga kargaya kara demez.",m:"Birbirine benzeyen insanlar birbirini kusurlu bulmaz."},
+{t:"atasoz",s:"Kaz gelen yerden tavuk esirgemez.",m:"Büyük çıkar elde etmek için küçük fedakarlık yapılır."},
+{t:"atasoz",s:"Kedi uzanamadığı ciğere pis der.",m:"İnsan ulaşamadığı şeyi küçümser."},
+{t:"atasoz",s:"Kendi düşen ağlamaz.",m:"Kendi hatasıyla başına bela getirenin şikâyet hakkı yoktur."},
+{t:"atasoz",s:"Komşu komşunun külüne muhtaçtır.",m:"İnsanlar küçük şeyler için bile birbirine muhtaçtır."},
+{t:"atasoz",s:"Körle yatan şaşı kalkar.",m:"Kötü arkadaşlık insanı olumsuz etkiler."},
+{t:"atasoz",s:"Kötü haber tez duyulur.",m:"Kötü haberler çok hızlı yayılır."},
+{t:"atasoz",s:"Kurtla dost olana koyun sürüsü emanet edilmez.",m:"Güvenilmez biriyle ortaklık ya da iş yapılmaz."},
+{t:"atasoz",s:"Kötülük eden kötülük bulur.",m:"Yaptığın kötülüğün karşılığını görürsün."},
+{t:"atasoz",s:"Körün istediği bir gözdür.",m:"Gerçekten muhtaç olan, az ile yetinir."},
+{t:"atasoz",s:"Kaç gün olur kış yaz olmaz.",m:"Her sıkıntının bir sonu vardır."},
+// ══════════════════════════════════════════════════════
+// ATASÖZÜ L-M-N
+// ══════════════════════════════════════════════════════
+{t:"atasoz",s:"Lafla peynir gemisi yürümez.",m:"Söz söylemek yetmez; iş yapmak gerekir."},
+{t:"atasoz",s:"Laf dinleyen az iş çeker.",m:"Uyarıları dinleyen, gereksiz sıkıntılardan kaçınır."},
+{t:"atasoz",s:"Mal canın yongasıdır.",m:"İnsan sevdiği şeylerden kolay kolay vazgeçmez."},
+{t:"atasoz",s:"Mazlumun âhı yerde kalmaz.",m:"Haksızlığa uğrayanın bedduası mutlaka karşılık bulur."},
+{t:"atasoz",s:"Meyve veren ağacı taşlarlar.",m:"Değerli ve verimli olan her zaman eleştiriye maruz kalır."},
+{t:"atasoz",s:"Minareyi çalan kılıfını hazırlar.",m:"Büyük bir yanlış yapan kişi, sonuçlardan kurtulmanın yolunu önceden düşünür."},
+{t:"atasoz",s:"Misafir umduğunu değil, bulduğunu yer.",m:"Misafir olan, ev sahibinin sunduğuyla yetinmeli."},
+{t:"atasoz",s:"Mühür kimde ise Süleyman odur.",m:"En yetkili olan kişi, söz ve karar sahibidir."},
+{t:"atasoz",s:"Mum dibine ışık vermez.",m:"Kişi çevresindeki sorunu görmez; dışarıya yardım ederken yakınına etmez."},
+{t:"atasoz",s:"Ne ekersen onu biçersin.",m:"Yaptıklarının karşılığını görürsün."},
+{t:"atasoz",s:"Ne kadar tatlı olursan ol, seni yutmasınlar.",m:"İyi ve nazik olurken saf olmamak gerekir."},
+{t:"atasoz",s:"Nerede birlik, orada dirlik.",m:"Bir arada uyum içinde yaşamak huzur ve güç getirir."},
+{t:"atasoz",s:"Niyet hayır, akıbet hayır.",m:"İyi niyetle başlayan, iyi sonuçla biter."},
+// ══════════════════════════════════════════════════════
+// ATASÖZÜ O-Ö-P
+// ══════════════════════════════════════════════════════
+{t:"atasoz",s:"Ot kökü üstünde biter.",m:"Çocuk, ailesinin etkisini taşır; çevresi ona şekil verir."},
+{t:"atasoz",s:"Öfke ile kalkan zarar ile oturur.",m:"Öfkeyle atılan adımlar pişmanlıkla sonuçlanır."},
+{t:"atasoz",s:"Öğrenmek için hiçbir zaman geç değil.",m:"Her yaşta yeni şeyler öğrenilebilir."},
+{t:"atasoz",s:"Örümcek kendi ağını sever.",m:"Herkes kendi yaptığına değer verir."},
+{t:"atasoz",s:"Para parayı çeker.",m:"Zenginlik zenginliği artırır; sermayesi olan daha çok kazanır."},
+{t:"atasoz",s:"Parayı veren düdüğü çalar.",m:"Para ve güç sahibi olan, dilediğini yaptırabilir."},
+{t:"atasoz",s:"Perşembenin gelişi çarşambadan belli olur.",m:"Bir işin sonucu, daha başından bellidir."},
+{t:"atasoz",s:"Pişmanlık gideni geri getirmez.",m:"Yapılan bir hatanın ardından pişman olmak geri dönüşü sağlamaz."},
+// ══════════════════════════════════════════════════════
+// ATASÖZÜ S-Ş
+// ══════════════════════════════════════════════════════
+{t:"atasoz",s:"Sabır acıdır ama meyvesi tatlıdır.",m:"Sabırlı olmak zordur; ancak sonunda mutlu bir sonuç verir."},
+{t:"atasoz",s:"Sabreden derviş muradına ermiş.",m:"Sabırla bekleyen sonunda amacına ulaşır."},
+{t:"atasoz",s:"Sabahın seyrini akşam yap.",m:"İşleri vaktinde yap; ertelemek sorun yaratır."},
+{t:"atasoz",s:"Sakla samanı gelir zamanı.",m:"Her şeyi ileride işe yarayacak diye saklayan akıllı davranmış olur."},
+{t:"atasoz",s:"Saman altından su yürütmek.",m:"Görünürde sakin kalırken gizlice iş çevirmek."},
+{t:"atasoz",s:"Söz gümüşse sükût altındır.",m:"Konuşmak iyi olsa da susmasını bilmek daha değerlidir."},
+{t:"atasoz",s:"Su testisi su yolunda kırılır.",m:"Bir işi amaç edinen kişi, o yolda tehlikeye bile girebilir."},
+// ══════════════════════════════════════════════════════
+// ATASÖZÜ T-U-V
+// ══════════════════════════════════════════════════════
+{t:"atasoz",s:"Taş yerinde ağırdır.",m:"Her şey kendi yerinde değerlidir."},
+{t:"atasoz",s:"Tanrı versin deyip geçme.",m:"Başkasının sıkıntısına seyirci kalmak yetmez; elinden geleni yap."},
+{t:"atasoz",s:"Tatmayan bilmez.",m:"Bir şeyin gerçek değerini bizzat yaşayanlar anlar."},
+{t:"atasoz",s:"Tatlı dil yılanı deliğinden çıkarır.",m:"Güzel ve tatlı sözler, en inatçı insanı bile yumuşatabilir."},
+{t:"atasoz",s:"Temiz el daima temiz kalır.",m:"Dürüst davranan, lekeli olmaz."},
+{t:"atasoz",s:"Testi kırılınca değeri bilinir.",m:"Kaybedilen şeyin kıymeti anlaşılır."},
+{t:"atasoz",s:"Ucuz etin yahnisi yavan olur.",m:"Kaliteli olmayan şeyden iyi sonuç beklenmez."},
+{t:"atasoz",s:"Umut fakirin ekmeğidir.",m:"Umutsuz insan yaşayamaz; umut, en yoksulun besini gibidir."},
+{t:"atasoz",s:"Uyanık olana kimse tuzak kuramaz.",m:"Dikkatli ve temkinli davranan kandırılamaz."},
+{t:"atasoz",s:"Uyumayan düşman uyuyan dostu geçer.",m:"Tembel ve dikkatsiz biri, uyanık düşmanına yenik düşer."},
+{t:"atasoz",s:"Üzüm üzüme baka baka kararır.",m:"İnsan içinde bulunduğu çevreden etkilenir."},
+{t:"atasoz",s:"Vaktinde bir iğne, sonradan bir çuval çuvaldız.",m:"Zamanında yapılan küçük bir iş, sonradan büyük zahmetten kurtarır."},
+{t:"atasoz",s:"Vakitsiz öten horozun başı kesilir.",m:"Zamanı ve yeri gelmeden yapılan iş zarar getirir."},
+{t:"atasoz",s:"Veren el alan elden üstündür.",m:"Bağış yapan, alan kişiden daha onurlu bir konumdadır."},
+// ══════════════════════════════════════════════════════
+// ATASÖZÜ Y-Z
+// ══════════════════════════════════════════════════════
+{t:"atasoz",s:"Yalancının mumu yatsıya kadar yanar.",m:"Yalan söyleyenin durumu geçici iyi görünse de sonunda ortaya çıkar."},
+{t:"atasoz",s:"Yazın kışı düşünen, kışın rahat eder.",m:"İlerisini düşünerek hazırlık yapan, sonrasında sıkıntı çekmez."},
+{t:"atasoz",s:"Yiğit düştüğü yerden kalkar.",m:"Güçlü kişi başarısızlık karşısında yılmaz, yeniden ayağa kalkar."},
+{t:"atasoz",s:"Yiğidin alnına yazılan silinmez.",m:"Kader kaçınılmazdır."},
+{t:"atasoz",s:"Yiğit odur ki düşmanını dosta döndüre.",m:"Gerçek güç, düşmanı kazanmak ve onu dosta çevirmektir."},
+{t:"atasoz",s:"Yolda yürüyen yol bilir.",m:"Deneyim kazanan, o işin inceliklerini öğrenir."},
+{t:"atasoz",s:"Yorgun öküze tosbağa da yük olur.",m:"Zaten yorgun ve bitkin olan birine en küçük yük bile ağır gelir."},
+{t:"atasoz",s:"Zaman her yarayı sarar.",m:"Acılar ve üzüntüler zamanla azalır, geçer."},
+{t:"atasoz",s:"Zeytinin yağı zeytinden çıkar.",m:"Her şeyin özü kendinden gelir; kaynak önemlidir."},
+{t:"atasoz",s:"Zenginin şakası da ağır basar.",m:"Güçlü insanların esprileri bile baskı olarak hissedilir."},
+{t:"atasoz",s:"Zulüm ile âbâd olanın âkıbeti berbat olur.",m:"Başkasına zulümle yükselen, sonunda yıkılır."},
+{t:"atasoz",s:"Zulüm uzun sürmez.",m:"Haksızlık kalıcı olamaz; er geç sona erer."},
+// ═══ EK DEYİMLER A ═══
+{t:"deyim",s:"Abesle iştigal etmek",m:"Yersiz, yararsız, boş ve anlamsız şeylerle vakit geçirmek.",e:"Sabahtan beri <em class='h'>abesle iştigal ediyor</em>, hiçbir işe yaramıyor."},
+{t:"deyim",s:"Acısını çıkarmak",m:"Önceden uğradığı zararı sonradan gidermek; öç almak.",e:"Bana yaptıklarının <em class='h'>acısını çıkaracağım</em>."},
+{t:"deyim",s:"Açık bono vermek",m:"Bir kimseye sınırsız, istediği gibi davranma yetkisi tanımak.",e:"Ona <em class='h'>açık bono verdim</em>, gerisini kendisi halleder."},
+{t:"deyim",s:"Adama dönmek",m:"Hoşa giden bir duruma gelmek, düzelmek.",e:"Boyandıktan sonra ev tam <em class='h'>adama döndü</em>."},
+{t:"deyim",s:"Adamdan saymak",m:"Değeri olmadığı hâlde bir kimseye kıymet vermek.",e:"Seni <em class='h'>adamdan saydım</em> da öyle davrandım."},
+{t:"deyim",s:"Akıl vermek",m:"Birinin yerine geçerek ne yapması gerektiğini söylemek.",e:"Duraksayınca yanına gelip <em class='h'>akıl vermeye</em> başladı."},
+{t:"deyim",s:"Aklını başına almak",m:"Düşüncesizliği bırakıp akıllıca davranmaya başlamak.",e:"Artık <em class='h'>aklını başına al</em>, büyüdün."},
+{t:"deyim",s:"Anasını ağlatmak",m:"Çok sıkıntı vermek, bezdirmek.",e:"Bu çocuk herkesi <em class='h'>anasını ağlatıyor</em>."},
+{t:"deyim",s:"At başı gitmek",m:"Aynı düzeyde, birlikte ilerlemek.",e:"İki aday seçimde <em class='h'>at başı gidiyor</em>."},
+{t:"deyim",s:"Ateşe atmak",m:"Tehlikeli bir duruma sokmak.",e:"Onu bilmeden bu işe sokarak <em class='h'>ateşe attın</em>."},
+{t:"deyim",s:"Ayakta kalmak",m:"Zor şartlara rağmen varlığını sürdürmek.",e:"Kriz döneminde birçok firma battı ama onlar <em class='h'>ayakta kaldı</em>."},
+{t:"deyim",s:"Ayakları yere basmak",m:"Gerçekçi, dengeli düşünmek.",e:"<em class='h'>Ayakları yere basan</em> biri olarak bu projeyi değerlendiriyor."},
+// ═══ EK DEYİMLER B ═══
+{t:"deyim",s:"Babasının hayrına",m:"Hiçbir çıkar elde etmeden, sadece iyilik olsun diye.",e:"<em class='h'>Babasının hayrına</em> mı yapacak bu işi?"},
+{t:"deyim",s:"Baht açmak",m:"Birine iyi talih getirmek; evlenmek.",e:"Kızının <em class='h'>bahtını açacak</em> iyi bir eş arıyordu."},
+{t:"deyim",s:"Bağrı yanık olmak",m:"Çok dertli, acılı kimse olmak.",e:"Yıllar önce çocuğunu kaybetmişti; hep <em class='h'>bağrı yanık</em> yaşadı."},
+{t:"deyim",s:"Bardağı taşıran son damla",m:"Sabır ve dayanma gücünü tüketen son olay.",e:"Bu söz tam <em class='h'>bardağı taşıran son damla</em> oldu."},
+{t:"deyim",s:"Baş eğmek",m:"Boyun eğmek, teslim olmak.",e:"Haksızlık karşısında <em class='h'>baş eğmeyeceğim</em>."},
+{t:"deyim",s:"Baş kaldırmak",m:"İsyan etmek, karşı çıkmak.",e:"Haksızlığa karşı <em class='h'>baş kaldırdı</em>."},
+{t:"deyim",s:"Belini bükmek",m:"Birini yıldırmak, güçsüz bırakmak.",e:"O kadar yük altına girdiler ki <em class='h'>belleri büküldü</em>."},
+{t:"deyim",s:"Bıçak kemiğe dayanmak",m:"Dayanılacak son noktaya gelmek.",e:"Artık <em class='h'>bıçak kemiğe dayandı</em>, tepki vermek zorundayız."},
+{t:"deyim",s:"Bir gözü kapıda olmak",m:"Gitmeye hazır, sabırsız beklemek.",e:"Toplantı bitmeden <em class='h'>bir gözü kapıdaydı</em>."},
+{t:"deyim",s:"Bir kulaktan girip öbüründen çıkmak",m:"Duyulanı dikkate almamak.",e:"Söylediklerim <em class='h'>bir kulaktan girip öbüründen çıkıyor</em>."},
+{t:"deyim",s:"Boğazına kadar batmak",m:"Büyük bir belaya ya da borca saplanmak.",e:"Yanlış yatırım yapınca işlere <em class='h'>boğazına kadar battı</em>."},
+{t:"deyim",s:"Boyun bükmek",m:"Teslim olmak, itaat etmek.",e:"Haksız taleplere <em class='h'>boyun bükmeyeceğim</em>."},
+{t:"deyim",s:"Bulutların üzerinde yürümek",m:"Çok mutlu olmak.",e:"Haberi alınca sanki <em class='h'>bulutların üzerinde yürüyordu</em>."},
+// ═══ EK DEYİMLER C-Ç ═══
+{t:"deyim",s:"Canını sıkmak",m:"Birini bunaltmak, sıkıntı vermek.",e:"Bu sorular <em class='h'>canımı sıkıyor</em>."},
+{t:"deyim",s:"Çark etmek",m:"Tutumunu değiştirmek, geri adım atmak.",e:"Baskı karşısında aniden <em class='h'>çark etti</em>."},
+{t:"deyim",s:"Çekip gitmek",m:"Bırakıp ayrılmak, uzaklaşmak.",e:"Tartışma büyüyünce sessizce <em class='h'>çekip gitti</em>."},
+{t:"deyim",s:"Çene çalmak",m:"Sohbet etmek; boş boş gevezelik yapmak.",e:"Kahvede saatlerce <em class='h'>çene çaldılar</em>."},
+{t:"deyim",s:"Çıkmazda kalmak",m:"Çözümsüz, çıkışsız bir durumda olmak.",e:"Müzakereler <em class='h'>çıkmazda kaldı</em>."},
+// ═══ EK DEYİMLER D ═══
+{t:"deyim",s:"Dar boğaza girmek",m:"Ciddi bir sıkışıklık ya da maddi bunalıma girmek.",e:"Şirket son aylarda gerçekten <em class='h'>dar boğaza girdi</em>."},
+{t:"deyim",s:"Denge kaçmak",m:"Tutarsız, kararsız bir hale gelmek.",e:"Son günlerde <em class='h'>dengesi kaçmış</em> gibi davranıyor."},
+{t:"deyim",s:"Dişini göstermek",m:"Kızgınlığını ortaya koymak; tehdit etmek.",e:"Bu saldırıya karşılık vermek için <em class='h'>dişini gösterdi</em>."},
+{t:"deyim",s:"Diz çökmek",m:"Teslim olmak, yenik düşmek.",e:"Yıllarca direndi ama sonunda <em class='h'>diz çöktü</em>."},
+{t:"deyim",s:"Duman tütmek",m:"Bir yerde sıkıntı, kavga ya da olumsuzluk yaşanmak.",e:"O evden hep <em class='h'>duman tütüyor</em>."},
+// ═══ EK DEYİMLER E-F ═══
+{t:"deyim",s:"Ecel teri dökmek",m:"Çok korkmak ya da zor bir durumda bunalmak.",e:"Sınav salonunda <em class='h'>ecel teri döktü</em>."},
+{t:"deyim",s:"Ekmeğini taştan çıkarmak",m:"Çok becerikli olmak, her koşulda geçimini sağlamak.",e:"O adam <em class='h'>ekmeğini taştan çıkarır</em>."},
+{t:"deyim",s:"Elini çabuk tutmak",m:"Çabuk davranmak, acele etmek.",e:"<em class='h'>Elini çabuk tut</em>, geç kalıyoruz."},
+{t:"deyim",s:"Elini taşın altına koymak",m:"Sorumluluk üstlenmek, işe bizzat katılmak.",e:"Bu sefer <em class='h'>elini taşın altına koy</em>, başkaları değil."},
+{t:"deyim",s:"Elini vicdanına koymak",m:"İçten dürüstçe düşünmek.",e:"<em class='h'>Elini vicdanına koy</em>, haksız davrandın."},
+{t:"deyim",s:"Fare deliğine girmek",m:"Utanç ya da korku ile kaybolmak istemek.",e:"Rezil olunca <em class='h'>fare deliğine girecek</em> yer aradı."},
+{t:"deyim",s:"Faturayı kesmek",m:"Birine hata ya da zararın bedelini ödetmek.",e:"Bu yanlışın <em class='h'>faturasını</em> zamanla ödeyecek."},
+{t:"deyim",s:"Fıstık gibi olmak",m:"Çok güzel, çekici görünmek.",e:"Yeni kıyafetiyle gerçekten <em class='h'>fıstık gibi</em> olmuş."},
+// ═══ EK DEYİMLER G-H ═══
+{t:"deyim",s:"Göğe çıkarmak",m:"Birini ya da bir şeyi aşırı biçimde övmek.",e:"Yaptığı işi <em class='h'>göklere çıkardılar</em>."},
+{t:"deyim",s:"Göz dikmek",m:"Bir şeye sahip olmayı arzulamak.",e:"O makama çoktan <em class='h'>göz dikmiş</em>."},
+{t:"deyim",s:"Gözleri fal taşı gibi açılmak",m:"Şaşkınlıkla gözlerini büyütmek.",e:"Haberi duyunca <em class='h'>gözleri fal taşı gibi açıldı</em>."},
+{t:"deyim",s:"Gözü yükseklerde olmak",m:"Büyük hedefler peşinde koşmak.",e:"<em class='h'>Gözü hep yükseklerde</em> oldu, o yüzden başardı."},
+{t:"deyim",s:"Günah keçisi olmak",m:"Başkasının hatasından sorumlu tutulmak.",e:"Her seferinde <em class='h'>günah keçisi</em> yapıyorlar onu."},
+{t:"deyim",s:"Hap yutmak",m:"İstemediği bir şeyi kabullenmek zorunda kalmak.",e:"Sonucu beğenmese de <em class='h'>hapı yuttu</em>."},
+{t:"deyim",s:"Havada kalmak",m:"Sonuçlanmamak, askıda olmak.",e:"Proje bir türlü sonuçlanmadı, <em class='h'>havada kaldı</em>."},
+{t:"deyim",s:"Hesabını vermek",m:"Yaptığı işin sorumluluğunu üstlenmek.",e:"Eninde sonunda bunun <em class='h'>hesabını verecek</em>."},
+{t:"deyim",s:"Hızını alamamak",m:"Bir şeyin coşkusuna kapılıp duramaz olmak.",e:"Bir kez başlayınca <em class='h'>hızını alamadı</em>."},
+// ═══ EK DEYİMLER İ-K ═══
+{t:"deyim",s:"İçinden çıkamamak",m:"Karmaşık bir durumu çözememek.",e:"Bu problemden bir türlü <em class='h'>içinden çıkamıyor</em>."},
+{t:"deyim",s:"İkiye bölmek",m:"Bir grubu iki karşıt tarafa ayırmak.",e:"O tartışma grubu tam <em class='h'>ikiye böldü</em>."},
+{t:"deyim",s:"İpe sapa gelmemek",m:"Mantıksız, tutarsız, anlamsız olmak.",e:"Söyledikleri hiç <em class='h'>ipe sapa gelmiyor</em>."},
+{t:"deyim",s:"İşin içinden çıkmak",m:"Karmaşık bir işi başarıyla halletmek.",e:"Nasıl olduysa <em class='h'>işin içinden çıktı</em>."},
+{t:"deyim",s:"İyi gözle bakmamak",m:"Birini kuşkuyla, olumsuz bakışla değerlendirmek.",e:"Patronu ona <em class='h'>iyi gözle bakmıyor</em>."},
+{t:"deyim",s:"Kabına sığamamak",m:"Çok heyecanlanmak, coşmak.",e:"Müjdeyi alınca <em class='h'>kabına sığamadı</em>."},
+{t:"deyim",s:"Kalpten gelmek",m:"Samimi ve içten olmak.",e:"Yaptığı yardım gerçekten <em class='h'>kalpten geliyordu</em>."},
+{t:"deyim",s:"Karanlıkta kalmak",m:"Bilgisiz kalmak, gerçeği öğrenememek.",e:"Olayın ayrıntıları hakkında hâlâ <em class='h'>karanlıkta kalıyorum</em>."},
+{t:"deyim",s:"Karıncayı ezmemek",m:"Çok iyi huylu, kimseye zarar vermez olmak.",e:"<em class='h'>Karıncayı bile ezmez</em>, o kadar iyidir."},
+{t:"deyim",s:"Kar topu gibi büyümek",m:"Giderek hızlanan bir artışla büyümek.",e:"Borçlar <em class='h'>kar topu gibi büyüdü</em>."},
+{t:"deyim",s:"Kasıp kavurmak",m:"Bir yeri ya da kişiyi tamamen etkisi altına almak.",e:"O hastalık bölgeyi <em class='h'>kasıp kavurdu</em>."},
+{t:"deyim",s:"Katı kalpli olmak",m:"Duygusuz, merhametsiz olmak.",e:"<em class='h'>Katı kalpli</em> olduğundan kimsenin acısına aldırmıyor."},
+{t:"deyim",s:"Kötü gün dostu",m:"Sadece zorlu günlerde yanında olan dost.",e:"Gerçek dost, <em class='h'>kötü gün dostu</em>dur."},
+{t:"deyim",s:"Kulağını çekmek",m:"Birini uyarmak, ikaz etmek.",e:"Bu hata için şefin <em class='h'>kulağını çekti</em>."},
+{t:"deyim",s:"Kulağını tıkamak",m:"Bilinçli olarak duymamak, dikkate almamak.",e:"Yapılan uyarılara <em class='h'>kulağını tıkadı</em>."},
+{t:"deyim",s:"Kuru gürültü",m:"Sonucu olmayan, boş gürültü ya da kalabalık.",e:"O tartışma bir <em class='h'>kuru gürültüden</em> ibaretti."},
+// ═══ EK DEYİMLER L-M-N ═══
+{t:"deyim",s:"Laf olsun diye",m:"Gerçekten istemeden, sırf konuşmak için.",e:"<em class='h'>Laf olsun diye</em> sormuş, ciddiye alma."},
+{t:"deyim",s:"Mala konmak",m:"Başkasına ait bir şeyi ele geçirmek.",e:"Mirasçılar bitmeden <em class='h'>mala konmaya</em> çalıştılar."},
+{t:"deyim",s:"Meteliğe kurşun atmak",m:"Çok yoksul, beş parasız olmak.",e:"İş bulamayınca <em class='h'>meteliğe kurşun atar</em> hâle geldi."},
+{t:"deyim",s:"Minnet altında kalmak",m:"Birine çok borçlu olmak, ezilmek.",e:"Bu kadar yardımdan sonra <em class='h'>minnet altında kaldım</em>."},
+{t:"deyim",s:"Mum gibi erimek",m:"Yavaş yavaş zayıflayıp tükenmek.",e:"Hastalık sırasında <em class='h'>mum gibi eridi</em>."},
+{t:"deyim",s:"Nefesi kesilmek",m:"Çok yorulmak; şaşkınlıkla soluksuz kalmak.",e:"Uzun koşu sonunda <em class='h'>nefesi kesildi</em>."},
+// ═══ EK DEYİMLER O-P ═══
+{t:"deyim",s:"Ocak söndürmek",m:"Bir aileyi yok etmek, soyunu kurutmak.",e:"O adam uğradığı her evi <em class='h'>ocak söndürdü</em>."},
+{t:"deyim",s:"Ot gibi büyümek",m:"Bakımsız, başıboş büyümek.",e:"Kimse ilgilenmeyince çocuk <em class='h'>ot gibi büyüdü</em>."},
+{t:"deyim",s:"Pabucunu dama atmak",m:"Birini ezip geçmek; rakiplerini geride bırakmak.",e:"O konuda hepsinin <em class='h'>pabucunu dama attı</em>."},
+{t:"deyim",s:"Paçayı kurtarmak",m:"Bir beladan ya da zor durumdan çıkmak.",e:"Zor da olsa nasıl olduysa <em class='h'>paçayı kurtardı</em>."},
+{t:"deyim",s:"Para etmemek",m:"Hiç değeri olmamak.",e:"Söyledikleri artık <em class='h'>para etmiyor</em>."},
+{t:"deyim",s:"Patavatsızlık etmek",m:"Yersiz, uygunsuz davranmak ya da söylemek.",e:"Her ortamda <em class='h'>patavatsızlık ediyor</em>."},
+// ═══ EK DEYİMLER S-T ═══
+{t:"deyim",s:"Sabrını taşırmak",m:"Birinin sabrını tamamen tüketmek.",e:"Bu davranış gerçekten <em class='h'>sabrımı taşırdı</em>."},
+{t:"deyim",s:"Sapına kadar",m:"Tamamen, tümüyle.",e:"<em class='h'>Sapına kadar</em> dürüst biri."},
+{t:"deyim",s:"Sarpa sarmak",m:"İçinden çıkılması zor bir hal almak.",e:"İş giderek <em class='h'>sarpa sardı</em>."},
+{t:"deyim",s:"Sesi çıkmamak",m:"Sessiz kalmak, itiraz etmemek.",e:"Yapılan haksızlığa rağmen <em class='h'>sesi çıkmadı</em>."},
+{t:"deyim",s:"Sıkı durmak",m:"Kararlı ve güçlü biçimde direnmek.",e:"Zor anlarda <em class='h'>sıkı dur</em>, yılma."},
+{t:"deyim",s:"Sinirini bozmak",m:"Birinin sinirini altüst etmek.",e:"Sabahtan beri <em class='h'>sinirimi bozuyor</em>."},
+{t:"deyim",s:"Sonunu getirememek",m:"Başladığı işi tamamlayamamak.",e:"Her girişimin <em class='h'>sonunu getiremeden</em> bırakıyor."},
+{t:"deyim",s:"Suya sabuna dokunmamak",m:"Kimseyle çatışmamak, tartışmalı konulardan kaçınmak.",e:"Her zaman <em class='h'>suya sabuna dokunmadan</em> geçiriyor."},
+{t:"deyim",s:"Tam isabet vurmak",m:"Tam doğru noktaya ulaşmak.",e:"Eleştirisi <em class='h'>tam isabet vurdu</em>."},
+{t:"deyim",s:"Tatlıya bağlamak",m:"Bir sorunu hoş bir sonuçla çözmek.",e:"Uzun tartışmayı <em class='h'>tatlıya bağladı</em>."},
+{t:"deyim",s:"Tersten gitmek",m:"Tam istemediği yönde gitmek.",e:"Her söylediğimi <em class='h'>tersten gidiyor</em>."},
+{t:"deyim",s:"Toparlanmak",m:"Dağınık ya da kötü bir halden düzene girmek.",e:"Bir haftalık tatil sonrası tamamen <em class='h'>toparlandı</em>."},
+// ═══ EK DEYİMLER U-Y-Z ═══
+{t:"deyim",s:"Ucu bucağı olmamak",m:"Çok geniş, sınırsız olmak.",e:"Sorunların <em class='h'>ucu bucağı yok</em>."},
+{t:"deyim",s:"Üstünkörü geçmek",m:"Bir şeyin üzerinde yüzeysel durmak.",e:"Önemli konuyu <em class='h'>üstünkörü geçti</em>."},
+{t:"deyim",s:"Yabana atmamak",m:"Küçümsememek, ciddiye almak.",e:"Bu uyarıyı <em class='h'>yabana atma</em>."},
+{t:"deyim",s:"Yağ çekmek",m:"Birini aşırı biçimde pohpohlamak.",e:"Patronuna sürekli <em class='h'>yağ çekiyor</em>."},
+{t:"deyim",s:"Yarım kalmak",m:"Tamamlanmamak, bitmemek.",e:"O güzel proje <em class='h'>yarım kaldı</em>."},
+{t:"deyim",s:"Yeni kan katmak",m:"Bir gruba taze enerji ve yetenek eklemek.",e:"Takıma <em class='h'>yeni kan katan</em> oyuncu performansı yükseltti."},
+{t:"deyim",s:"Yere bakmak",m:"Utanmak ya da mahcup olmak.",e:"Yaptığı hatadan ötürü <em class='h'>yere baktı</em>."},
+{t:"deyim",s:"Yüreğini soğutmak",m:"Birinden intikam alarak rahatlamak.",e:"Sonunda adaleti görünce <em class='h'>yüreği soğudu</em>."},
+{t:"deyim",s:"Zaman öldürmek",m:"Zamanı boş geçirmek.",e:"Telefona bakarak <em class='h'>zaman öldürüyor</em>."},
+{t:"deyim",s:"Ziyan etmek",m:"İsraf etmek, boşa harcamak.",e:"Bu imkânı <em class='h'>ziyan etme</em>."},
+{t:"deyim",s:"Dört köşe olmak",m:"Çok mutlu ve memnun olmak.",e:"Haberi alınca <em class='h'>dört köşe oldu</em>."},
+{t:"deyim",s:"Eli açık olmak",m:"Cömert olmak.",e:"O çok <em class='h'>eli açık</em> biridir, kimseyi eli boş göndermez."},
+{t:"deyim",s:"Eli sıkı olmak",m:"Cimri olmak.",e:"<em class='h'>Eli sıkı</em> olduğu için kimseyle para işine girmiyor."},
+{t:"deyim",s:"Göz boyamak",m:"Gerçekte olmayan bir iyiliği, çalışmayı göstermek.",e:"Patronun önünde <em class='h'>göz boyayarak</em> masum görünmeye çalıştı."},
+{t:"deyim",s:"Kan kusturmak",m:"Birini çok ezmek, çok fazla sıkıntı vermek.",e:"Verdiği ödevlerle öğrencilere <em class='h'>kan kustururdu</em>."},
+{t:"deyim",s:"Kara kara düşünmek",m:"Karamsar, umutsuz bir şekilde düşünmek.",e:"Günlerce <em class='h'>kara kara düşündü</em>."},
+{t:"deyim",s:"Nereye vursan oradan ses çıkmak",m:"Zaten perişan, her yerden problem çıkan biri olmak.",e:"Şu sıralar <em class='h'>nereye vursan oradan ses çıkıyor</em>."},
+{t:"deyim",s:"Ağzından çıkanı kulağı duymamak",m:"Düşünmeden, kontrolsüz konuşmak.",e:"<em class='h'>Ağzından çıkanı kulağı duymadan</em> konuşuyor."},
+{t:"deyim",s:"Aklı karışmak",m:"Ne yapacağını şaşırmak, kararsız kalmak.",e:"İki seçenek arasında <em class='h'>aklı karıştı</em>."},
+{t:"deyim",s:"Alın açık olmak",m:"Yapılan işten utanmadan, yüzü kızarmadan gidip gelmek.",e:"<em class='h'>Alın açık</em> geldiğimi herkes görsün."},
+{t:"deyim",s:"Ar etmek",m:"Utanmak, sıkılmak.",e:"<em class='h'>Ar etmeden</em> böyle davranabiliyor."},
+{t:"deyim",s:"Ağır elli olmak",m:"Vurduğu zaman çok acıtıp can yakan kişi olmak.",e:"Dikkat et, adamın eli amma da <em class='h'>ağır</em>."},
+{t:"deyim",s:"Açığı bulmak",m:"Herhangi bir işteki eksik, hile veya zararı ortaya çıkarmak.",e:"Hemen her işinde bir <em class='h'>açığını buluyor</em>."},
+{t:"deyim",s:"Zayıf noktasından vurmak",m:"Birinin en savunmasız yerini hedef almak.",e:"Rakibi daima <em class='h'>zayıf noktasından vuruyor</em>."},
+{t:"deyim",s:"Geri kalmamak",m:"Aşağı kalmamak, eşit düzeyde olmak.",e:"Rakiplerinden <em class='h'>geri kalmıyor</em>."},
+{t:"deyim",s:"Haksız çıkmak",m:"Tartışmada ya da durumda haklı olmadığı anlaşılmak.",e:"Deliller ortaya çıkınca tamamen <em class='h'>haksız çıktı</em>."},
+{t:"deyim",s:"Hayra yormak",m:"Bir olayı olumlu biçimde yorumlamak.",e:"Bu tesadüfü <em class='h'>hayra yoralım</em>."},
+{t:"deyim",s:"İşaret parmağı olmak",m:"Suçlanan, eleştirilen kişi olmak.",e:"Olayın ardından <em class='h'>işaret parmağı</em> hep ona dönüyor."},
+{t:"deyim",s:"Kılıç artığı olmak",m:"Büyük bir felaketten sağ kurtulmak.",e:"Savaştan dönenler gerçek birer <em class='h'>kılıç artığıydı</em>."},
+{t:"deyim",s:"Kalemini oynatmak",m:"Yazmak, yazılı bir iş yapmak.",e:"Bu konuda biraz <em class='h'>kalemini oynatması</em> gerekiyor."},
+{t:"deyim",s:"Sere serpe oturmak",m:"Rahat ve özgürce, geniş biçimde oturmak.",e:"Koltukta <em class='h'>sere serpe</em> oturuyordu."},
+{t:"deyim",s:"Bahis açmak",m:"Bir konu hakkında konuşmaya başlamak.",e:"Hiç istenmediği hâlde o konuya <em class='h'>bahis açtı</em>."},
+{t:"deyim",s:"El bebek gül bebek büyütmek",m:"Çok itina ve özenle yetiştirmek.",e:"<em class='h'>El bebek gül bebek</em> büyütülen çocuk hayata hazırlanamamış."},
+// ═══ EK ATASÖZÜ ═══
+{t:"atasoz",s:"Yuvayı dişi kuş yapar.",m:"Evi düzene koyup güzel yuvaya dönüştüren kadındır."},
+{t:"atasoz",s:"İnce elek kalın un çıkarmaz.",m:"Çok katı ölçütler uygulanınca yeterli sonuç alınamaz."},
+{t:"atasoz",s:"Tavşan dağa küsmüş, dağın haberi olmamış.",m:"Zayıf ya da önemsiz biri güçlüye küsse, onun umrunda olmaz."},
+{t:"atasoz",s:"Yalnız taş duvar olmaz.",m:"Büyük işler tek başına yapılamaz; dayanışma şarttır."},
+{t:"atasoz",s:"Çoğu giderse azı kalır.",m:"Büyük kayıplar olsa da bir şeyler mutlaka geriye kalır."},
+{t:"atasoz",s:"Deli ile oturan kalkar el ele oynar.",m:"Kötü kişilerle düşüp kalkman seni de bozar."},
+{t:"atasoz",s:"Ölü arslan ceylanın tekmesinе tahammül eder.",m:"Güçten düşen büyük, küçüklerden hakaret görür."},
+{t:"atasoz",s:"Namaza meyli olmayanın kulağı ezanda olmaz.",m:"Bir konuya ilgisi olmayan, onun işaretlerine de dikkat etmez."},
+{t:"atasoz",s:"Pek tutan kopar.",m:"Fazla sıkmak kopar; aşırı katılık kırılmaya neden olur."},
+{t:"atasoz",s:"Sofrasız ev kulübedir.",m:"Yiyip içilen, misafir ağırlanan ev gerçek bir evdir."},
+{t:"atasoz",s:"Tez söyleyen yalan söyler.",m:"Acele konuşanın sözleri genellikle doğru çıkmaz."},
+{t:"atasoz",s:"Uzun lafın kısası.",m:"Sözün kısa özeti şudur."},
+{t:"atasoz",s:"Yaban eline güvenme.",m:"Yabancılara körü körüne güvenme; aldatılabilirsin."},
+{t:"atasoz",s:"Zengin züğürt olunca, züğürt zengin olunca belli olur.",m:"Servet değişiminde insanın gerçek karakteri ortaya çıkar."},
+{t:"atasoz",s:"Sağlık her şeyden önemlidir.",m:"Sağlık, en temel ve en değerli hazinedir."},
+{t:"atasoz",s:"Her gece sabah olmaz.",m:"Her sıkıntının ya da olumsuzluğun sonu olmayabilir."},
+{t:"atasoz",s:"Sıkı dost düşman olunca yer yakar.",m:"Yakın dost, bozuştuğunda en büyük düşmana dönüşebilir."},
+{t:"atasoz",s:"Kısmetinde ne varsa onu yersin.",m:"İnsan kaderinden kaçamaz, nasibinden fazlasını alamaz."},
+{t:"atasoz",s:"Usta çırak yetiştirmekte belli olur.",m:"Bir ustanın gerçek değeri, yetiştirdiği çıraklarla ölçülür."},
+{t:"atasoz",s:"Paslı bıçak et kesmez.",m:"Yetersiz araç ya da kişiyle iş yapılmaz."},
+{t:"atasoz",s:"Oğul büyüyünce baba borcunu öder.",m:"Çocuklar büyüyünce ebeveynlerinin emeklerini karşılar."},
+{t:"atasoz",s:"Namusla yaşayan namusla ölür.",m:"Dürüst yaşayan, hayatının sonuna kadar onurunu korur."},
+{t:"atasoz",s:"Merkebin ardına geçme, yabancının önüne.",m:"Tanımadığın kişilere güvenmemek, tehlikeli hayvanlardan kaçınmak kadar önemlidir."},
+{t:"atasoz",s:"Kolsuz kişi kendine yazık eder.",m:"Yardımsız ve çevresiz kişi zarar görür."},
+{t:"atasoz",s:"Garip kuşun yuvasını Allah yapar.",m:"Kimsesiz ve güçsüz olana Allah yardımcı olur."},
+{t:"atasoz",s:"Her işin bir piri vardır.",m:"Her konunun bir ustası, deneyimlisi vardır."},
+{t:"atasoz",s:"Devlet malı deniz, yemeyen domuz.",m:"Kamu malını kişisel çıkar için kullanmayı meşrulaştıran hicvedilen bir anlayış."},
+{t:"atasoz",s:"Nerde çokluk, orada bokluk.",m:"Kalabalık yerlerde düzensizlik artar."},
+{t:"atasoz",s:"Para ile iman olmaz.",m:"Bazı değerler ve bağlılıklar satın alınamaz."},
+{t:"atasoz",s:"Sözünün eri ol.",m:"Verdiğin sözü tut; güvenilir ol."},
+{t:"atasoz",s:"Terazi doğru tartmasa da Allah doğru yazar.",m:"İnsanlar haksızlık yapabilir ama Allah her şeyi adilce kayıt altına alır."},
+{t:"atasoz",s:"Varlıkta tükenip yoklukta bunalmak.",m:"İyi günlerde savurgan olan, kötü günde perişan olur."},
+{t:"atasoz",s:"Yavaş git de uzağa git.",m:"Aceleden değil, istikrarlı giderek uzun vadede başarıya ulaşılır."},
+{t:"atasoz",s:"Herkesin çektiği kendi çilesi.",m:"Her insanın kendine özgü sıkıntısı vardır."},
+{t:"atasoz",s:"Koyun bulunmaz olsa keçi de kadr bulur.",m:"Daha iyisi olmayınca kötüsü de makbul görülür."},
+{t:"atasoz",s:"Nasıl yaşarsam öyle ölürüm.",m:"İnsanın sonu, yaşam biçimiyle doğrudan bağlantılıdır."},
+{t:"atasoz",s:"Okumakla molla olmaz.",m:"Yalnızca kitap okumak yetmez, deneyim de şarttır."},
+{t:"atasoz",s:"Paralı yatmak parasız kalkmak.",m:"Gece zengin olan biri, sabah yoksul kalabilir; servet geçicidir."},
+{t:"atasoz",s:"İki gönül bir olunca dağ duman olmaz.",m:"Birlik ve uyum içinde olan insanlar her engeli aşar."},
+{t:"atasoz",s:"Ağlamayan çocuğa meme vermezler.",m:"Hakkını aramayan, ihtiyacını bildirmeyen kimse istediğini elde edemez."},
+{t:"atasoz",s:"Verme düşmanına kılıç, vurur dostuna.",m:"Kötü birine güç verme; sonunda yakınlarına zarar verir."},
+{t:"atasoz",s:"Yiğidin işi bitmez.",m:"Güçlü ve çalışkan insanın hep yapacak bir işi olur."},
+{t:"atasoz",s:"Üzümünü ye de bağını sorma.",m:"İyi şeylerden yararlan ama kaynağını fazla kurcalama."},
+];
+
+let deck=[],current=0,flipped=false;
+function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+function loadCard(){
+  const item=deck[current];flipped=false;
+  document.getElementById('card').classList.remove('flipped');
+  const isDeyim=item.t==='deyim';
+  const cls=isDeyim?'bd':'ba';const lbl=isDeyim?'Deyim':'Atasözü';
+  document.getElementById('tb1').textContent=lbl;document.getElementById('tb1').className='badge '+cls;
+  document.getElementById('ctitle').textContent=item.s;
+  const ex=document.getElementById('cex');
+  if(isDeyim&&item.e){ex.innerHTML=item.e;ex.style.display=''}else{ex.style.display='none'}
+  document.getElementById('tb2').textContent=lbl;document.getElementById('tb2').className='badge '+cls;
+  document.getElementById('cmean').textContent=item.m;
+  document.getElementById('nextBtn').style.display='none';
+  document.getElementById('counter').textContent=(current+1)+' / '+deck.length;
+}
+function flipCard(){if(flipped)return;flipped=true;document.getElementById('card').classList.add('flipped');document.getElementById('nextBtn').style.display='inline-block'}
+function nextCard(){current++;if(current>=deck.length){showDone();return}loadCard()}
+function showDone(){
+  document.querySelector('.scene').style.display='none';
+  document.getElementById('nextBtn').style.display='none';
+  document.getElementById('counter').style.display='none';
+  const ds=document.getElementById('done');ds.style.display='flex';
+  document.getElementById('doneMsg').textContent=deck.length+' kartın hepsini tamamladın!';
+}
+function restart(){
+  deck=shuffle([...D]);current=0;
+  document.querySelector('.scene').style.display='';
+  document.getElementById('counter').style.display='';
+  document.getElementById('done').style.display='none';
+  loadCard();
+}
+deck=shuffle([...D]);loadCard();
+</script>
+</body>
+</html>

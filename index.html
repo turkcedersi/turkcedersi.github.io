@@ -1,1 +1,487 @@
-merhaba
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ortaokul Türkçe İnteraktif Ders Kitabı Portalı. 5, 6, 7 ve 8. Sınıf Ders Kitapları için Sihirli Cevaplar, Kazanımlar ve Dinleme Metinleri.">
+  <title>Maarif İnteraktif Kitaplık</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css?v=4.4">
+</head>
+<body>
+  <!-- LOADING OVERLAY -->
+  <div id="loading-overlay" class="loading-overlay hidden">
+    <div class="spinner"></div>
+    <p>Veriler Yükleniyor...</p>
+  </div>
+
+  <!-- APPLICATION WRAPPER -->
+  <div id="app">
+
+    <!-- VIEW 1: GRADE SELECTION -->
+    <section id="view-grades" class="view-section active">
+      <div class="container text-center">
+        <header class="main-header">
+          <h1 class="logo-text">MAARİF</h1>
+          <h2 class="sub-logo-text">İnteraktif Kitaplık Portalı</h2>
+          <p class="header-desc">Ders kitaplarını interaktif hale getiren sihirli eğitim asistanınız.</p>
+        </header>
+
+        <div class="grade-grid">
+          <!-- Grade 5 (Active) -->
+          <div class="grade-card active" data-grade="5">
+            <div class="grade-number">5</div>
+            <div class="grade-title">5. Sınıf Türkçe</div>
+            <div class="grade-status">2 Kitap Aktif</div>
+            <div class="grade-year">2025-2026</div>
+          </div>
+
+          <!-- Grade 6 (Active) -->
+          <div class="grade-card active" data-grade="6">
+            <div class="grade-number">6</div>
+            <div class="grade-title">6. Sınıf Türkçe</div>
+            <div class="grade-status">2 Kitap Aktif</div>
+            <div class="grade-year">2025-2026</div>
+          </div>
+
+          <!-- Grade 7 (Active) -->
+          <div class="grade-card active" data-grade="7">
+            <div class="grade-number">7</div>
+            <div class="grade-title">7. Sınıf Türkçe</div>
+            <div class="grade-status">2 Kitap Aktif</div>
+            <div class="grade-year">2026-2027</div>
+          </div>
+
+          <!-- Grade 8 (Locked) -->
+          <div class="grade-card locked" data-grade="8">
+            <div class="lock-badge">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                <path fill-rule="evenodd" d="M12 1.5a5.25 5.25 0 0 0-5.25 5.25v3a3 3 0 0 0-3 3v6.75a3 3 0 0 0 3 3h10.5a3 3 0 0 0 3-3v-6.75a3 3 0 0 0-3-3v-3c0-2.9-2.35-5.25-5.25-5.25Zm3.75 8.25v-3a3.75 3.75 0 1 0-7.5 0v3h7.5Z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div class="grade-number">8</div>
+            <div class="grade-title">8. Sınıf Türkçe</div>
+            <div class="grade-status">Yakında Eklenecek</div>
+          </div>
+
+          <!-- Türkçe Atölyesi Card -->
+          <div class="grade-card tools-card active" id="btn-open-tools-card">
+            <div class="grade-number"><span class="tools-card-emoji">🖋️</span></div>
+            <div class="grade-title">Türkçe Atölyesi</div>
+            <div class="grade-status">8 İnteraktif Araç</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sol Alt Uyarı / Bilgilendirme -->
+      <div class="grades-disclaimer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" width="14" height="14" class="disclaimer-icon">
+          <path fill-rule="evenodd" d="M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0Zm-7-4a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM9 9a.75.75 0 0 0 0 1.5h.253a.25.25 0 0 1 .244.304l-.459 2.066A1.75 1.75 0 0 0 10.747 15H11a.75.75 0 0 0 0-1.5h-.253a.25.25 0 0 1-.244-.304l.459-2.066A1.75 1.75 0 0 0 9.253 9H9Z" clip-rule="evenodd" />
+        </svg>
+        <span>Kitaplardaki cevaplar YZ ile üretilmiş olup doğruluğunu kontrol ediniz.</span>
+      </div>
+    </section>
+
+
+    <!-- VIEW 2: BOOK SELECTION -->
+    <section id="view-books" class="view-section">
+      <div class="container">
+        <header class="view-header">
+          <div class="view-header-title-row">
+            <button class="btn-sidebar-icon" id="btn-back-to-grades" title="Sınıf Seçimine Dön">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" width="20" height="20">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+              </svg>
+            </button>
+            <h2 id="books-view-title">6. Sınıf Türkçe Ders Kitapları</h2>
+          </div>
+          <p class="header-desc">Çalışmak istediğiniz kitabı seçin.</p>
+        </header>
+
+        <div class="book-grid">
+          <!-- Grade 6 Books -->
+          <div class="book-grade-group" data-grade="6">
+            <!-- Book 1 (Active) -->
+            <div class="book-card active" data-book="1">
+              <div class="book-cover-mock">
+                <span class="cover-grade">6</span>
+                <span class="cover-title">TÜRKÇE</span>
+                <span class="cover-subtitle">Ders Kitabı<br>1. Kitap</span>
+                <span class="cover-author">MEB Yayınları</span>
+              </div>
+              <div class="book-info">
+                <h3>6. Sınıf Türkçe (1. Kitap)</h3>
+                <p>Müfredat uyumlu, 1-3. temaları kapsayan interaktif ders kitabı.</p>
+                <div class="book-badge">Aktif (177 Sayfa)</div>
+              </div>
+            </div>
+
+            <!-- Book 2 (Active) -->
+            <div class="book-card active" data-book="2">
+              <div class="book-cover-mock">
+                <span class="cover-grade">6</span>
+                <span class="cover-title">TÜRKÇE</span>
+                <span class="cover-subtitle">Ders Kitabı<br>2. Kitap</span>
+                <span class="cover-author">MEB Yayınları</span>
+              </div>
+              <div class="book-info">
+                <h3>6. Sınıf Türkçe (2. Kitap)</h3>
+                <p>Müfredat uyumlu, 4-6. temaları kapsayan interaktif ders kitabı.</p>
+                <div class="book-badge">Aktif (162 Sayfa)</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Grade 5 Books -->
+          <div class="book-grade-group hidden" data-grade="5">
+            <!-- Book 3 (5. Sınıf 1. Kitap) -->
+            <div class="book-card active" data-book="3">
+              <div class="book-cover-mock">
+                <span class="cover-grade">5</span>
+                <span class="cover-title">TÜRKÇE</span>
+                <span class="cover-subtitle">Ders Kitabı<br>1. Kitap</span>
+                <span class="cover-author">MEB Yayınları</span>
+              </div>
+              <div class="book-info">
+                <h3>5. Sınıf Türkçe (1. Kitap)</h3>
+                <p>Müfredat uyumlu, 1-3. temaları kapsayan interaktif ders kitabı.</p>
+                <div class="book-badge">Aktif (179 Sayfa)</div>
+              </div>
+            </div>
+
+            <!-- Book 4 (5. Sınıf 2. Kitap) -->
+            <div class="book-card active" data-book="4">
+              <div class="book-cover-mock">
+                <span class="cover-grade">5</span>
+                <span class="cover-title">TÜRKÇE</span>
+                <span class="cover-subtitle">Ders Kitabı<br>2. Kitap</span>
+                <span class="cover-author">MEB Yayınları</span>
+              </div>
+              <div class="book-info">
+                <h3>5. Sınıf Türkçe (2. Kitap)</h3>
+                <p>Müfredat uyumlu, 4-6. temaları kapsayan interaktif ders kitabı.</p>
+                <div class="book-badge">Aktif (157 Sayfa)</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Grade 7 Books -->
+          <div class="book-grade-group hidden" data-grade="7">
+            <!-- Book 5 (7. Sınıf 1. Kitap) -->
+            <div class="book-card active" data-book="5">
+              <div class="book-cover-mock">
+                <span class="cover-grade">7</span>
+                <span class="cover-title">TÜRKÇE</span>
+                <span class="cover-subtitle">Ders Kitabı<br>1. Kitap</span>
+                <span class="cover-author">MEB Yayınları</span>
+              </div>
+              <div class="book-info">
+                <h3>7. Sınıf Türkçe (1. Kitap)</h3>
+                <p>Müfredat uyumlu, 1-3. temaları kapsayan interaktif ders kitabı.</p>
+                <div class="book-badge">Aktif (177 Sayfa)</div>
+              </div>
+            </div>
+
+            <!-- Book 6 (7. Sınıf 2. Kitap) -->
+            <div class="book-card active" data-book="6">
+              <div class="book-cover-mock">
+                <span class="cover-grade">7</span>
+                <span class="cover-title">TÜRKÇE</span>
+                <span class="cover-subtitle">Ders Kitabı<br>2. Kitap</span>
+                <span class="cover-author">MEB Yayınları</span>
+              </div>
+              <div class="book-info">
+                <h3>7. Sınıf Türkçe (2. Kitap)</h3>
+                <p>Müfredat uyumlu, 4-6. temaları kapsayan interaktif ders kitabı.</p>
+                <div class="book-badge">Aktif (171 Sayfa)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- VIEW 3: BOOK READER -->
+    <section id="view-reader" class="view-section">
+      <!-- LEFT SIDEBAR -->
+      <aside class="sidebar" id="reader-sidebar">
+        <div class="sidebar-header">
+          <button class="btn-sidebar-icon" id="btn-back-to-books" title="Kitap Seçimine Dön">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" width="20" height="20">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+            </svg>
+          </button>
+          <div class="sidebar-header-info">
+            <span class="sidebar-title" id="sidebar-book-title">6. Sınıf Türkçe (1. Kitap)</span>
+            <div class="sidebar-date-badge hidden" id="sidebar-date-badge" title="Müfredat İşleniş Takvimi">
+              <svg class="date-badge-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+              <span id="sidebar-date-text">08 - 16 Şubat</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="sidebar-content">
+          <!-- PAGE NAVIGATION -->
+          <div class="control-group">
+            <span class="control-group-title">SAYFA GEÇİŞİ</span>
+            <div class="page-controls">
+              <button class="btn btn-control" id="btn-prev-page" title="Önceki Sayfa">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" width="20" height="20">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                </svg>
+              </button>
+              <div class="page-indicator">
+                <input type="number" id="input-page" min="0" max="176" value="12">
+                <span>/ 176</span>
+              </div>
+              <button class="btn btn-control" id="btn-next-page" title="Sonraki Sayfa">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" width="20" height="20">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- ZOOM CONTROLS -->
+          <div class="control-group">
+            <span class="control-group-title">YAKINLAŞTIRMA</span>
+            <div class="zoom-controls">
+              <button class="btn btn-control" id="btn-zoom-out" title="Uzaklaştır">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" width="20" height="20">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" />
+                </svg>
+              </button>
+              <span id="zoom-value">100%</span>
+              <button class="btn btn-control" id="btn-zoom-in" title="Yakınlaştır">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" width="20" height="20">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- TÜRKÇE ATÖLYESİ BUTONU -->
+          <button class="btn btn-secondary w-full mb-3 btn-sidebar-tools" id="btn-sidebar-tools" title="Yardımcı Türkçe Uygulamaları">
+            <span style="font-size: 1.25rem; margin-right: 6px; vertical-align: middle;">🖋️</span>
+            Türkçe Atölyesi
+          </button>
+
+          <!-- KAZANIMLAR / ÖĞRENME ÇIKTILARI (OUTCOMES) -->
+          <div class="control-group outcomes-group">
+            <span class="control-group-title">ÖĞRENME ÇIKTILARI</span>
+            <div id="outcomes-list" class="outcomes-list scroll-custom">
+              <!-- Dynamically populated page-based outcomes -->
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- READER VIEWPORT -->
+      <div class="reader-viewport" id="reader-viewport">
+        <!-- Pannable Container -->
+        <div class="book-container" id="book-container">
+          <div class="page-wrapper" id="page-wrapper">
+            <img src="" alt="Kitap Sayfası" id="page-image" draggable="false">
+            <div class="inpage-answers-layer" id="inpage-answers-layer">
+              <!-- Dynamic in-page handwritten answers rendered here -->
+            </div>
+            <canvas id="drawing-canvas" class="drawing-canvas"></canvas>
+            <div class="hotspots-overlay" id="hotspots-overlay">
+              <!-- Hotspots dynamically loaded here -->
+            </div>
+            <div class="qr-links-layer" id="qr-links-layer">
+              <!-- Dynamic QR code hotspot links rendered here -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- WHITEBOARD CONTROLS (Akıllı Tahta Kalemi) -->
+      <div class="wb-container" id="wb-container">
+        <!-- Upward Flyout Menu -->
+        <div class="wb-menu hidden" id="wb-menu">
+          <div class="wb-menu-header">
+            <span class="wb-menu-title">Akıllı Tahta Kalemi</span>
+            <button class="wb-menu-close" id="wb-menu-close" title="Menüyü Kapat">&times;</button>
+          </div>
+          
+          <!-- Araç Seçimi: Kalem / Silgi -->
+          <div class="wb-section">
+            <span class="wb-section-title">ARAÇ</span>
+            <div class="wb-tool-group">
+              <button class="wb-tool-btn active" id="wb-tool-pen" data-tool="pen" title="Yazı Kalemi">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"></path><path d="m15 5 4 4"></path></svg>
+                <span>Kalem</span>
+              </button>
+              <button class="wb-tool-btn" id="wb-tool-eraser" data-tool="eraser" title="Silgi">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m7 21-4.3-4.3c-1-1-1-2.5 0-3.4l9.6-9.6c1-1 2.5-1 3.4 0l5.6 5.6c1 1 1 2.5 0 3.4L13 21"></path><path d="M22 21H7"></path><path d="m5 11 9 9"></path></svg>
+                <span>Silgi</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- 4 Farklı Kalınlık -->
+          <div class="wb-section">
+            <span class="wb-section-title">KALINLIK</span>
+            <div class="wb-widths-group">
+              <button class="wb-width-btn" data-width="2" title="Çok İnce (2px)">
+                <span class="wb-width-dot" style="width: 4px; height: 4px;"></span>
+              </button>
+              <button class="wb-width-btn active" data-width="5" title="Standart (5px)">
+                <span class="wb-width-dot" style="width: 7px; height: 7px;"></span>
+              </button>
+              <button class="wb-width-btn" data-width="10" title="Orta (10px)">
+                <span class="wb-width-dot" style="width: 11px; height: 11px;"></span>
+              </button>
+              <button class="wb-width-btn" data-width="18" title="Kalın (18px)">
+                <span class="wb-width-dot" style="width: 16px; height: 16px;"></span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Temel Tahta Renkleri -->
+          <div class="wb-section" id="wb-colors-section">
+            <span class="wb-section-title">RENK</span>
+            <div class="wb-colors-group">
+              <button class="wb-color-btn active" data-color="#dc2626" style="--c: #dc2626;" title="Kırmızı"></button>
+              <button class="wb-color-btn" data-color="#2563eb" style="--c: #2563eb;" title="Mavi"></button>
+              <button class="wb-color-btn" data-color="#111827" style="--c: #111827;" title="Siyah"></button>
+              <button class="wb-color-btn" data-color="#16a34a" style="--c: #16a34a;" title="Yeşil"></button>
+              <button class="wb-color-btn" data-color="#eab308" style="--c: #eab308;" title="Fosforlu Sarı"></button>
+            </div>
+          </div>
+
+          <!-- Sayfa Çizimlerini Temizle -->
+          <div class="wb-section wb-clear-section">
+            <button class="wb-clear-btn" id="wb-btn-clear" title="Bu sayfadaki tüm çizimleri sil">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18m-2 0v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+              Sayfayı Temizle
+            </button>
+          </div>
+        </div>
+
+        <!-- Floating Buttons Row -->
+        <div class="wb-fab-row">
+          <!-- Exit/Leave Pen Button (Visible only when pen mode is active) -->
+          <button class="wb-fab-btn wb-fab-exit hidden" id="wb-btn-exit" title="Kalemi Bırak (Gezinme Moduna Dön)">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
+          
+          <!-- Main Pen Toggle FAB -->
+          <button class="wb-fab-btn wb-fab-main" id="wb-btn-main" title="Akıllı Tahta Kalemi">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"></path>
+              <path d="m15 5 4 4"></path>
+            </svg>
+            <span class="wb-active-indicator" id="wb-active-indicator"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- TÜRKÇE ATÖLYESİ MODAL (POP-UP) -->
+  <div id="tools-modal" class="modal-overlay hidden">
+    <div class="modal-content tools-modal-content">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="modal-icon">🖋️</span>
+          <div class="modal-title-text">
+            <h3>Türkçe Atölyesi</h3>
+            <p>Dersi zenginleştiren yardımcı interaktif web uygulamaları</p>
+          </div>
+        </div>
+        <button class="modal-close-btn" id="btn-close-tools-modal" title="Kapat">&times;</button>
+      </div>
+      <div class="tools-grid">
+        <!-- 1. De / Da / Ki -->
+        <a class="tool-card" href="araclar/de-da-ki/" target="_blank">
+          <div class="tool-icon">✍️</div>
+          <div class="tool-details">
+            <h4>De / Da / Ki Ayrımı</h4>
+            <p>Bağlaç ve ek olan de/da/ki kurallarını interaktif alıştırmalarla pekiştirin.</p>
+          </div>
+          <div class="tool-arrow">↗</div>
+        </a>
+        <!-- 2. Deyim / Atasözü -->
+        <a class="tool-card" href="araclar/deyim-atasozu/" target="_blank">
+          <div class="tool-icon">📖</div>
+          <div class="tool-details">
+            <h4>Deyim / Atasözü</h4>
+            <p>Zengin deyim ve atasözü hazinesini eğlenceli etkinliklerle keşfedin.</p>
+          </div>
+          <div class="tool-arrow">↗</div>
+        </a>
+        <!-- 3. Yazımı Karıştırılan Sözcükler -->
+        <a class="tool-card" href="araclar/nasil-yazilir/" target="_blank">
+          <div class="tool-icon">🖋️</div>
+          <div class="tool-details">
+            <h4>Nasıl Yazılır?</h4>
+            <p>Yazımı sıklıkla karıştırılan kelimelerin doğru TDK kullanımlarını öğrenin.</p>
+          </div>
+          <div class="tool-arrow">↗</div>
+        </a>
+        <!-- 4. Gerçek mi Mecaz mı? -->
+        <a class="tool-card" href="araclar/gercek-mi-mecaz-mi/" target="_blank">
+          <div class="tool-icon">🎭</div>
+          <div class="tool-details">
+            <h4>Gerçek mi Mecaz mı?</h4>
+            <p>Cümlelerdeki kelimelerin gerçek, mecaz ve terim anlamlarını test edin.</p>
+          </div>
+          <div class="tool-arrow">↗</div>
+        </a>
+        <!-- 5. Konuşma Çarkı -->
+        <a class="tool-card" href="araclar/konusma-carki/" target="_blank">
+          <div class="tool-icon">🎤</div>
+          <div class="tool-details">
+            <h4>Konuşma Çarkı</h4>
+            <p>Sınıf içi doğaçlama ve sözlü anlatım becerilerini geliştiren interaktif çark.</p>
+          </div>
+          <div class="tool-arrow">↗</div>
+        </a>
+        <!-- 6. Noktalama İşaretleri -->
+        <a class="tool-card" href="araclar/noktalama-isaretleri/" target="_blank">
+          <div class="tool-icon">🔣</div>
+          <div class="tool-details">
+            <h4>Noktalama İşaretleri</h4>
+            <p>Noktalama işaretlerinin görevlerini ve doğru kullanım yerlerini kavrayın.</p>
+          </div>
+          <div class="tool-arrow">↗</div>
+        </a>
+        <!-- 7. Türkçe Bursluluk ve LGS -->
+        <a class="tool-card" href="araclar/turkce-bursluluk-ve-lgs-cikmis-sorular/" target="_blank">
+          <div class="tool-icon">📚</div>
+          <div class="tool-details">
+            <h4>Türkçe Bursluluk ve LGS</h4>
+            <p>Önceki yıllarda çıkmış sınav sorularını analiz edin ve pratik yapın.</p>
+          </div>
+          <div class="tool-arrow">↗</div>
+        </a>
+        <!-- 8. Yazma Çarkı -->
+        <a class="tool-card" href="araclar/yazma-carki/" target="_blank">
+          <div class="tool-icon">📝</div>
+          <div class="tool-details">
+            <h4>Yazma Çarkı</h4>
+            <p>Yaratıcı yazma etkinlikleri için konu, mekan ve karakter üreten çark.</p>
+          </div>
+          <div class="tool-arrow">↗</div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="app.js?v=5.5"></script>
+</body>
+</html>

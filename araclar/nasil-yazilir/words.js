@@ -1,0 +1,4256 @@
+window.wordsData = [
+  {
+    "slide": 2,
+    "choices": [
+      "Herşey",
+      "Her şey"
+    ],
+    "correct_index": 1,
+    "correct": "Her şey"
+  },
+  {
+    "slide": 3,
+    "choices": [
+      "yanlız",
+      "Yalnız"
+    ],
+    "correct_index": 1,
+    "correct": "Yalnız"
+  },
+  {
+    "slide": 4,
+    "choices": [
+      "Birşey",
+      "bir şey",
+      "bişey"
+    ],
+    "correct_index": 1,
+    "correct": "bir şey"
+  },
+  {
+    "slide": 5,
+    "choices": [
+      "Her hangi bir kalem",
+      "herhangi bir kalem"
+    ],
+    "correct_index": 1,
+    "correct": "herhangi bir kalem"
+  },
+  {
+    "slide": 6,
+    "choices": [
+      "Egzoz",
+      "egsos",
+      "egsoz"
+    ],
+    "correct_index": 0,
+    "correct": "Egzoz"
+  },
+  {
+    "slide": 7,
+    "choices": [
+      "ayit",
+      "ait"
+    ],
+    "correct_index": 1,
+    "correct": "ait"
+  },
+  {
+    "slide": 8,
+    "choices": [
+      "bağzen",
+      "Bazen"
+    ],
+    "correct_index": 1,
+    "correct": "Bazen"
+  },
+  {
+    "slide": 9,
+    "choices": [
+      "birçok",
+      "Bir çok"
+    ],
+    "correct_index": 0,
+    "correct": "birçok"
+  },
+  {
+    "slide": 10,
+    "choices": [
+      "böle",
+      "böyle"
+    ],
+    "correct_index": 1,
+    "correct": "böyle"
+  },
+  {
+    "slide": 11,
+    "choices": [
+      "idda",
+      "iddaa",
+      "iddia"
+    ],
+    "correct_index": 2,
+    "correct": "iddia"
+  },
+  {
+    "slide": 12,
+    "choices": [
+      "Herkes",
+      "herkez"
+    ],
+    "correct_index": 0,
+    "correct": "Herkes"
+  },
+  {
+    "slide": 13,
+    "choices": [
+      "Hiçbir",
+      "hiç bir"
+    ],
+    "correct_index": 0,
+    "correct": "Hiçbir"
+  },
+  {
+    "slide": 14,
+    "choices": [
+      "laboratuar",
+      "labaratuvar",
+      "laboratuvar"
+    ],
+    "correct_index": 2,
+    "correct": "laboratuvar"
+  },
+  {
+    "slide": 15,
+    "choices": [
+      "orjinal",
+      "orijinal"
+    ],
+    "correct_index": 1,
+    "correct": "orijinal"
+  },
+  {
+    "slide": 16,
+    "choices": [
+      "tabii ki",
+      "tabiki"
+    ],
+    "correct_index": 0,
+    "correct": "tabii ki"
+  },
+  {
+    "slide": 17,
+    "choices": [
+      "tıraş",
+      "traş"
+    ],
+    "correct_index": 0,
+    "correct": "tıraş"
+  },
+  {
+    "slide": 18,
+    "choices": [
+      "tiren",
+      "tren"
+    ],
+    "correct_index": 1,
+    "correct": "tren"
+  },
+  {
+    "slide": 19,
+    "choices": [
+      "yanlış",
+      "yalnış"
+    ],
+    "correct_index": 0,
+    "correct": "yanlış"
+  },
+  {
+    "slide": 20,
+    "choices": [
+      "kılavuz",
+      "klavuz"
+    ],
+    "correct_index": 0,
+    "correct": "kılavuz"
+  },
+  {
+    "slide": 21,
+    "choices": [
+      "kirpik",
+      "kiprik"
+    ],
+    "correct_index": 0,
+    "correct": "kirpik"
+  },
+  {
+    "slide": 22,
+    "choices": [
+      "birdenbire",
+      "birden bire"
+    ],
+    "correct_index": 0,
+    "correct": "birdenbire"
+  },
+  {
+    "slide": 23,
+    "choices": [
+      "pek çok",
+      "Pekçok"
+    ],
+    "correct_index": 0,
+    "correct": "pek çok"
+  },
+  {
+    "slide": 24,
+    "choices": [
+      "emretmek",
+      "emir etmek"
+    ],
+    "correct_index": 0,
+    "correct": "emretmek"
+  },
+  {
+    "slide": 25,
+    "choices": [
+      "çikolata",
+      "çukulata"
+    ],
+    "correct_index": 0,
+    "correct": "çikolata"
+  },
+  {
+    "slide": 26,
+    "choices": [
+      "entellektüel",
+      "Entelektüel"
+    ],
+    "correct_index": 1,
+    "correct": "Entelektüel"
+  },
+  {
+    "slide": 27,
+    "choices": [
+      "ünvan",
+      "unvan"
+    ],
+    "correct_index": 1,
+    "correct": "unvan"
+  },
+  {
+    "slide": 28,
+    "choices": [
+      "vazgeçmek",
+      "Vaz geçmek"
+    ],
+    "correct_index": 0,
+    "correct": "vazgeçmek"
+  },
+  {
+    "slide": 29,
+    "choices": [
+      "Hristiyan",
+      "Hıristiyan"
+    ],
+    "correct_index": 0,
+    "correct": "Hristiyan"
+  },
+  {
+    "slide": 30,
+    "choices": [
+      "ana okulu",
+      "anaokulu"
+    ],
+    "correct_index": 1,
+    "correct": "anaokulu"
+  },
+  {
+    "slide": 31,
+    "choices": [
+      "gözyaşı",
+      "göz yaşı"
+    ],
+    "correct_index": 0,
+    "correct": "gözyaşı"
+  },
+  {
+    "slide": 32,
+    "choices": [
+      "makine",
+      "makina"
+    ],
+    "correct_index": 0,
+    "correct": "makine"
+  },
+  {
+    "slide": 33,
+    "choices": [
+      "atölye",
+      "atelye",
+      "atölle"
+    ],
+    "correct_index": 0,
+    "correct": "atölye"
+  },
+  {
+    "slide": 34,
+    "choices": [
+      "hafriyat",
+      "harfiyat"
+    ],
+    "correct_index": 0,
+    "correct": "hafriyat"
+  },
+  {
+    "slide": 35,
+    "choices": [
+      "şohben",
+      "şofben"
+    ],
+    "correct_index": 1,
+    "correct": "şofben"
+  },
+  {
+    "slide": 36,
+    "choices": [
+      "köpekbalığı",
+      "köpek balığı"
+    ],
+    "correct_index": 1,
+    "correct": "köpek balığı"
+  },
+  {
+    "slide": 37,
+    "choices": [
+      "cankurtaran",
+      "can kurtaran"
+    ],
+    "correct_index": 0,
+    "correct": "cankurtaran"
+  },
+  {
+    "slide": 38,
+    "choices": [
+      "hafta sonu",
+      "haftasonu"
+    ],
+    "correct_index": 0,
+    "correct": "hafta sonu"
+  },
+  {
+    "slide": 39,
+    "choices": [
+      "kuru yemiş",
+      "Kuruyemiş"
+    ],
+    "correct_index": 0,
+    "correct": "kuru yemiş"
+  },
+  {
+    "slide": 40,
+    "choices": [
+      "ön söz",
+      "Önsöz"
+    ],
+    "correct_index": 0,
+    "correct": "ön söz"
+  },
+  {
+    "slide": 41,
+    "choices": [
+      "eşortman",
+      "eşofman"
+    ],
+    "correct_index": 1,
+    "correct": "eşofman"
+  },
+  {
+    "slide": 42,
+    "choices": [
+      "hindistan cevizi",
+      "Hindistancevizi",
+      "Hindistan cevizi"
+    ],
+    "correct_index": 2,
+    "correct": "Hindistan cevizi"
+  },
+  {
+    "slide": 43,
+    "choices": [
+      "her gün",
+      "hergün"
+    ],
+    "correct_index": 0,
+    "correct": "her gün"
+  },
+  {
+    "slide": 44,
+    "choices": [
+      "dinazor",
+      "dinozor"
+    ],
+    "correct_index": 1,
+    "correct": "dinozor"
+  },
+  {
+    "slide": 45,
+    "choices": [
+      "artarda",
+      "ardarda",
+      "art arda"
+    ],
+    "correct_index": 2,
+    "correct": "art arda"
+  },
+  {
+    "slide": 46,
+    "choices": [
+      "Kibrit",
+      "kirbit"
+    ],
+    "correct_index": 0,
+    "correct": "Kibrit"
+  },
+  {
+    "slide": 47,
+    "choices": [
+      "af edersiniz",
+      "affedersiniz"
+    ],
+    "correct_index": 1,
+    "correct": "affedersiniz"
+  },
+  {
+    "slide": 48,
+    "choices": [
+      "hiçbirşey",
+      "hiç birşey",
+      "hiçbir şey"
+    ],
+    "correct_index": 2,
+    "correct": "hiçbir şey"
+  },
+  {
+    "slide": 49,
+    "choices": [
+      "dersane",
+      "dershane"
+    ],
+    "correct_index": 1,
+    "correct": "dershane"
+  },
+  {
+    "slide": 50,
+    "choices": [
+      "pardösü",
+      "pardesü"
+    ],
+    "correct_index": 0,
+    "correct": "pardösü"
+  },
+  {
+    "slide": 51,
+    "choices": [
+      "fortmanto",
+      "portmanto"
+    ],
+    "correct_index": 1,
+    "correct": "portmanto"
+  },
+  {
+    "slide": 52,
+    "choices": [
+      "gelebildi",
+      "gele bildi"
+    ],
+    "correct_index": 0,
+    "correct": "gelebildi"
+  },
+  {
+    "slide": 53,
+    "choices": [
+      "ateşkes",
+      "ateş kes"
+    ],
+    "correct_index": 0,
+    "correct": "ateşkes"
+  },
+  {
+    "slide": 54,
+    "choices": [
+      "vurdum duymaz",
+      "Vurdumduymaz"
+    ],
+    "correct_index": 1,
+    "correct": "Vurdumduymaz"
+  },
+  {
+    "slide": 55,
+    "choices": [
+      "menü",
+      "Mönü"
+    ],
+    "correct_index": 0,
+    "correct": "menü"
+  },
+  {
+    "slide": 56,
+    "choices": [
+      "laboratuvar",
+      "laboratuar"
+    ],
+    "correct_index": 0,
+    "correct": "laboratuvar"
+  },
+  {
+    "slide": 57,
+    "choices": [
+      "azerbaycan",
+      "azerbeycan",
+      "azerbeyjan"
+    ],
+    "correct_index": 0,
+    "correct": "azerbaycan"
+  },
+  {
+    "slide": 58,
+    "choices": [
+      "tramva",
+      "Travma"
+    ],
+    "correct_index": 1,
+    "correct": "Travma"
+  },
+  {
+    "slide": 59,
+    "choices": [
+      "babanne",
+      "babaanne",
+      "baba anne",
+      "babane"
+    ],
+    "correct_index": 1,
+    "correct": "babaanne"
+  },
+  {
+    "slide": 60,
+    "choices": [
+      "anneanne",
+      "anane",
+      "anne anne"
+    ],
+    "correct_index": 0,
+    "correct": "anneanne"
+  },
+  {
+    "slide": 61,
+    "choices": [
+      "gökkuşağı",
+      "gök kuşağı"
+    ],
+    "correct_index": 0,
+    "correct": "gökkuşağı"
+  },
+  {
+    "slide": 62,
+    "choices": [
+      "Uluslar arası",
+      "uluslararası"
+    ],
+    "correct_index": 1,
+    "correct": "uluslararası"
+  },
+  {
+    "slide": 63,
+    "choices": [
+      "karakter",
+      "karekter"
+    ],
+    "correct_index": 0,
+    "correct": "karakter"
+  },
+  {
+    "slide": 64,
+    "choices": [
+      "sürpriz",
+      "süpriz"
+    ],
+    "correct_index": 0,
+    "correct": "sürpriz"
+  },
+  {
+    "slide": 65,
+    "choices": [
+      "inisiyatif",
+      "İnsiyatif"
+    ],
+    "correct_index": 0,
+    "correct": "inisiyatif"
+  },
+  {
+    "slide": 66,
+    "choices": [
+      "kırhavat",
+      "kravat",
+      "Kıravat"
+    ],
+    "correct_index": 1,
+    "correct": "kravat"
+  },
+  {
+    "slide": 67,
+    "choices": [
+      "başhekim",
+      "baş hekim"
+    ],
+    "correct_index": 0,
+    "correct": "başhekim"
+  },
+  {
+    "slide": 68,
+    "choices": [
+      "anadüşünce",
+      "Ana düşünce"
+    ],
+    "correct_index": 1,
+    "correct": "Ana düşünce"
+  },
+  {
+    "slide": 69,
+    "choices": [
+      "şarj",
+      "şarz"
+    ],
+    "correct_index": 0,
+    "correct": "şarj"
+  },
+  {
+    "slide": 70,
+    "choices": [
+      "yeryüzü",
+      "yer yüzü"
+    ],
+    "correct_index": 0,
+    "correct": "yeryüzü"
+  },
+  {
+    "slide": 71,
+    "choices": [
+      "psikolojik",
+      "pisikolojik"
+    ],
+    "correct_index": 0,
+    "correct": "psikolojik"
+  },
+  {
+    "slide": 72,
+    "choices": [
+      "ara söz",
+      "arasöz"
+    ],
+    "correct_index": 1,
+    "correct": "arasöz"
+  },
+  {
+    "slide": 73,
+    "choices": [
+      "flüt",
+      "filüt"
+    ],
+    "correct_index": 0,
+    "correct": "flüt"
+  },
+  {
+    "slide": 74,
+    "choices": [
+      "ardı sıra",
+      "ardısıra"
+    ],
+    "correct_index": 0,
+    "correct": "ardı sıra"
+  },
+  {
+    "slide": 75,
+    "choices": [
+      "peşi sıra",
+      "peşisıra"
+    ],
+    "correct_index": 0,
+    "correct": "peşi sıra"
+  },
+  {
+    "slide": 76,
+    "choices": [
+      "perhiz",
+      "perhiz"
+    ],
+    "correct_index": 0,
+    "correct": "perhiz"
+  },
+  {
+    "slide": 77,
+    "choices": [
+      "sarımsak",
+      "sarmısak"
+    ],
+    "correct_index": 0,
+    "correct": "sarımsak"
+  },
+  {
+    "slide": 78,
+    "choices": [
+      "poğaça",
+      "poaça",
+      "poça"
+    ],
+    "correct_index": 0,
+    "correct": "poğaça"
+  },
+  {
+    "slide": 79,
+    "choices": [
+      "ak ciğer",
+      "akciğer"
+    ],
+    "correct_index": 1,
+    "correct": "akciğer"
+  },
+  {
+    "slide": 80,
+    "choices": [
+      "baş vurmak",
+      "başvurmak"
+    ],
+    "correct_index": 1,
+    "correct": "başvurmak"
+  },
+  {
+    "slide": 81,
+    "choices": [
+      "şevkat",
+      "şefkat"
+    ],
+    "correct_index": 1,
+    "correct": "şefkat"
+  },
+  {
+    "slide": 82,
+    "choices": [
+      "oratoryo",
+      "orotoryo"
+    ],
+    "correct_index": 0,
+    "correct": "oratoryo"
+  },
+  {
+    "slide": 83,
+    "choices": [
+      "zerafet",
+      "zarafet"
+    ],
+    "correct_index": 1,
+    "correct": "zarafet"
+  },
+  {
+    "slide": 84,
+    "choices": [
+      "peşpeşe",
+      "Peş peşe"
+    ],
+    "correct_index": 1,
+    "correct": "Peş peşe"
+  },
+  {
+    "slide": 85,
+    "choices": [
+      "müteahhit",
+      "Mütahhit"
+    ],
+    "correct_index": 0,
+    "correct": "müteahhit"
+  },
+  {
+    "slide": 86,
+    "choices": [
+      "kaba kulak",
+      "kabakulak"
+    ],
+    "correct_index": 1,
+    "correct": "kabakulak"
+  },
+  {
+    "slide": 87,
+    "choices": [
+      "akşam üstü",
+      "akşamüstü"
+    ],
+    "correct_index": 1,
+    "correct": "akşamüstü"
+  },
+  {
+    "slide": 88,
+    "choices": [
+      "acente",
+      "acante"
+    ],
+    "correct_index": 0,
+    "correct": "acente"
+  },
+  {
+    "slide": 89,
+    "choices": [
+      "aç gözlü",
+      "açgözlü"
+    ],
+    "correct_index": 1,
+    "correct": "açgözlü"
+  },
+  {
+    "slide": 90,
+    "choices": [
+      "açıortay",
+      "açı ortay"
+    ],
+    "correct_index": 0,
+    "correct": "açıortay"
+  },
+  {
+    "slide": 91,
+    "choices": [
+      "aklı selim",
+      "aklıselim"
+    ],
+    "correct_index": 1,
+    "correct": "aklıselim"
+  },
+  {
+    "slide": 92,
+    "choices": [
+      "Alelacele",
+      "alel acele"
+    ],
+    "correct_index": 0,
+    "correct": "Alelacele"
+  },
+  {
+    "slide": 93,
+    "choices": [
+      "alış veriş",
+      "alışveriş"
+    ],
+    "correct_index": 1,
+    "correct": "alışveriş"
+  },
+  {
+    "slide": 94,
+    "choices": [
+      "alt üst olmak",
+      "altüst olmak"
+    ],
+    "correct_index": 1,
+    "correct": "altüst olmak"
+  },
+  {
+    "slide": 95,
+    "choices": [
+      "aliminyum",
+      "alüminyum"
+    ],
+    "correct_index": 1,
+    "correct": "alüminyum"
+  },
+  {
+    "slide": 96,
+    "choices": [
+      "ana yasa",
+      "anayasa"
+    ],
+    "correct_index": 1,
+    "correct": "anayasa"
+  },
+  {
+    "slide": 97,
+    "choices": [
+      "anektod",
+      "anekdot"
+    ],
+    "correct_index": 1,
+    "correct": "anekdot"
+  },
+  {
+    "slide": 98,
+    "choices": [
+      "antrenman",
+      "antirenman"
+    ],
+    "correct_index": 0,
+    "correct": "antrenman"
+  },
+  {
+    "slide": 99,
+    "choices": [
+      "apandisit",
+      "apandist"
+    ],
+    "correct_index": 0,
+    "correct": "apandisit"
+  },
+  {
+    "slide": 100,
+    "choices": [
+      "aradabir",
+      "arada bir"
+    ],
+    "correct_index": 1,
+    "correct": "arada bir"
+  },
+  {
+    "slide": 101,
+    "choices": [
+      "asfalt",
+      "asvalt"
+    ],
+    "correct_index": 0,
+    "correct": "asfalt"
+  },
+  {
+    "slide": 102,
+    "choices": [
+      "ateşkes",
+      "ateş kes"
+    ],
+    "correct_index": 0,
+    "correct": "ateşkes"
+  },
+  {
+    "slide": 103,
+    "choices": [
+      "Bezbol",
+      "beyzbol"
+    ],
+    "correct_index": 1,
+    "correct": "beyzbol"
+  },
+  {
+    "slide": 104,
+    "choices": [
+      "bilinç altı",
+      "bilinçaltı"
+    ],
+    "correct_index": 1,
+    "correct": "bilinçaltı"
+  },
+  {
+    "slide": 105,
+    "choices": [
+      "bilirkişi",
+      "bilir kişi"
+    ],
+    "correct_index": 0,
+    "correct": "bilirkişi"
+  },
+  {
+    "slide": 106,
+    "choices": [
+      "Bir an",
+      "biran"
+    ],
+    "correct_index": 0,
+    "correct": "Bir an"
+  },
+  {
+    "slide": 107,
+    "choices": [
+      "birden bire",
+      "birdenbire"
+    ],
+    "correct_index": 1,
+    "correct": "birdenbire"
+  },
+  {
+    "slide": 108,
+    "choices": [
+      "püsküt",
+      "Bisküvi",
+      "biskevi"
+    ],
+    "correct_index": 1,
+    "correct": "Bisküvi"
+  },
+  {
+    "slide": 109,
+    "choices": [
+      "çiğ köfte",
+      "çiğköfte"
+    ],
+    "correct_index": 0,
+    "correct": "çiğ köfte"
+  },
+  {
+    "slide": 110,
+    "choices": [
+      "bugün",
+      "bu gün"
+    ],
+    "correct_index": 0,
+    "correct": "bugün"
+  },
+  {
+    "slide": 111,
+    "choices": [
+      "birgün",
+      "Bir gün"
+    ],
+    "correct_index": 1,
+    "correct": "Bir gün"
+  },
+  {
+    "slide": 112,
+    "choices": [
+      "büyükbaş hayvan",
+      "büyük baş hayvan"
+    ],
+    "correct_index": 0,
+    "correct": "büyükbaş hayvan"
+  },
+  {
+    "slide": 113,
+    "choices": [
+      "büyük elçi",
+      "büyükelçi"
+    ],
+    "correct_index": 1,
+    "correct": "büyükelçi"
+  },
+  {
+    "slide": 114,
+    "choices": [
+      "çıyan",
+      "çiyan"
+    ],
+    "correct_index": 0,
+    "correct": "çıyan"
+  },
+  {
+    "slide": 115,
+    "choices": [
+      "dil bilgisi",
+      "dilbilgisi"
+    ],
+    "correct_index": 0,
+    "correct": "dil bilgisi"
+  },
+  {
+    "slide": 116,
+    "choices": [
+      "dil bilimi",
+      "dilbilimi"
+    ],
+    "correct_index": 0,
+    "correct": "dil bilimi"
+  },
+  {
+    "slide": 117,
+    "choices": [
+      "doğaüstü",
+      "doğa üstü"
+    ],
+    "correct_index": 0,
+    "correct": "doğaüstü"
+  },
+  {
+    "slide": 118,
+    "choices": [
+      "direkt eve geçtim",
+      "direk eve geçtim"
+    ],
+    "correct_index": 0,
+    "correct": "direkt eve geçtim"
+  },
+  {
+    "slide": 119,
+    "choices": [
+      "eski püskü",
+      "eskipüskü"
+    ],
+    "correct_index": 0,
+    "correct": "eski püskü"
+  },
+  {
+    "slide": 120,
+    "choices": [
+      "laubali",
+      "labali"
+    ],
+    "correct_index": 0,
+    "correct": "laubali"
+  },
+  {
+    "slide": 121,
+    "choices": [
+      "havayolu",
+      "hava yolu"
+    ],
+    "correct_index": 1,
+    "correct": "hava yolu"
+  },
+  {
+    "slide": 122,
+    "choices": [
+      "eni konu",
+      "enikonu"
+    ],
+    "correct_index": 1,
+    "correct": "enikonu"
+  },
+  {
+    "slide": 123,
+    "choices": [
+      "erezyon",
+      "erozyon"
+    ],
+    "correct_index": 1,
+    "correct": "erozyon"
+  },
+  {
+    "slide": 124,
+    "choices": [
+      "ikide bir",
+      "ikidebir"
+    ],
+    "correct_index": 0,
+    "correct": "ikide bir"
+  },
+  {
+    "slide": 125,
+    "choices": [
+      "heycan",
+      "heyecan"
+    ],
+    "correct_index": 1,
+    "correct": "heyecan"
+  },
+  {
+    "slide": 126,
+    "choices": [
+      "rast gele",
+      "rastgele",
+      "rasgele"
+    ],
+    "correct_index": 1,
+    "correct": "rastgele"
+  },
+  {
+    "slide": 127,
+    "choices": [
+      "vaat",
+      "vağat"
+    ],
+    "correct_index": 0,
+    "correct": "vaat"
+  },
+  {
+    "slide": 128,
+    "choices": [
+      "pastahane",
+      "pastane"
+    ],
+    "correct_index": 1,
+    "correct": "pastane"
+  },
+  {
+    "slide": 129,
+    "choices": [
+      "git gide",
+      "gitgide"
+    ],
+    "correct_index": 1,
+    "correct": "gitgide"
+  },
+  {
+    "slide": 130,
+    "choices": [
+      "kartopu",
+      "kar topu"
+    ],
+    "correct_index": 1,
+    "correct": "kar topu"
+  },
+  {
+    "slide": 131,
+    "choices": [
+      "kapkacak",
+      "kap kacak"
+    ],
+    "correct_index": 1,
+    "correct": "kap kacak"
+  },
+  {
+    "slide": 132,
+    "choices": [
+      "önsezi",
+      "ön sezi"
+    ],
+    "correct_index": 0,
+    "correct": "önsezi"
+  },
+  {
+    "slide": 133,
+    "choices": [
+      "tanzik",
+      "tazyik"
+    ],
+    "correct_index": 1,
+    "correct": "tazyik"
+  },
+  {
+    "slide": 134,
+    "choices": [
+      "ortaokul",
+      "orta okul"
+    ],
+    "correct_index": 0,
+    "correct": "ortaokul"
+  },
+  {
+    "slide": 135,
+    "choices": [
+      "İnsiyatif",
+      "inisiyatif"
+    ],
+    "correct_index": 1,
+    "correct": "inisiyatif"
+  },
+  {
+    "slide": 136,
+    "choices": [
+      "aferim",
+      "aferin"
+    ],
+    "correct_index": 1,
+    "correct": "aferin"
+  },
+  {
+    "slide": 137,
+    "choices": [
+      "komser",
+      "komiser"
+    ],
+    "correct_index": 1,
+    "correct": "komiser"
+  },
+  {
+    "slide": 138,
+    "choices": [
+      "antrenman",
+      "antreman"
+    ],
+    "correct_index": 0,
+    "correct": "antrenman"
+  },
+  {
+    "slide": 139,
+    "choices": [
+      "çevrimiçi",
+      "çevrim içi"
+    ],
+    "correct_index": 1,
+    "correct": "çevrim içi"
+  },
+  {
+    "slide": 140,
+    "choices": [
+      "Doküman",
+      "döküman"
+    ],
+    "correct_index": 0,
+    "correct": "Doküman"
+  },
+  {
+    "slide": 141,
+    "choices": [
+      "silahşör",
+      "silahşor"
+    ],
+    "correct_index": 1,
+    "correct": "silahşor"
+  },
+  {
+    "slide": 142,
+    "choices": [
+      "şoför",
+      "şöför"
+    ],
+    "correct_index": 0,
+    "correct": "şoför"
+  },
+  {
+    "slide": 143,
+    "choices": [
+      "el ele",
+      "elele"
+    ],
+    "correct_index": 0,
+    "correct": "el ele"
+  },
+  {
+    "slide": 144,
+    "choices": [
+      "espiri",
+      "espri"
+    ],
+    "correct_index": 1,
+    "correct": "espri"
+  },
+  {
+    "slide": 145,
+    "choices": [
+      "hoş geldiniz",
+      "hoşgeldiniz"
+    ],
+    "correct_index": 0,
+    "correct": "hoş geldiniz"
+  },
+  {
+    "slide": 146,
+    "choices": [
+      "hoş bulduk",
+      "hoşbulduk"
+    ],
+    "correct_index": 0,
+    "correct": "hoş bulduk"
+  },
+  {
+    "slide": 147,
+    "choices": [
+      "hafta içi",
+      "haftaiçi"
+    ],
+    "correct_index": 0,
+    "correct": "hafta içi"
+  },
+  {
+    "slide": 148,
+    "choices": [
+      "herhalde",
+      "heralde"
+    ],
+    "correct_index": 0,
+    "correct": "herhalde"
+  },
+  {
+    "slide": 149,
+    "choices": [
+      "hergün",
+      "her gün"
+    ],
+    "correct_index": 1,
+    "correct": "her gün"
+  },
+  {
+    "slide": 150,
+    "choices": [
+      "hiçkimse",
+      "hiç kimse"
+    ],
+    "correct_index": 1,
+    "correct": "hiç kimse"
+  },
+  {
+    "slide": 151,
+    "choices": [
+      "klüp",
+      "kulüp"
+    ],
+    "correct_index": 1,
+    "correct": "kulüp"
+  },
+  {
+    "slide": 152,
+    "choices": [
+      "mağdur",
+      "madur"
+    ],
+    "correct_index": 0,
+    "correct": "mağdur"
+  },
+  {
+    "slide": 153,
+    "choices": [
+      "maalesef",
+      "malesef"
+    ],
+    "correct_index": 0,
+    "correct": "maalesef"
+  },
+  {
+    "slide": 154,
+    "choices": [
+      "metod",
+      "metot"
+    ],
+    "correct_index": 1,
+    "correct": "metot"
+  },
+  {
+    "slide": 155,
+    "choices": [
+      "müseade",
+      "müsade",
+      "müsaade"
+    ],
+    "correct_index": 2,
+    "correct": "müsaade"
+  },
+  {
+    "slide": 156,
+    "choices": [
+      "müstahak",
+      "müstehak"
+    ],
+    "correct_index": 0,
+    "correct": "müstahak"
+  },
+  {
+    "slide": 157,
+    "choices": [
+      "mütevazı",
+      "mütevazi"
+    ],
+    "correct_index": 0,
+    "correct": "mütevazı"
+  },
+  {
+    "slide": 158,
+    "choices": [
+      "orada / burada",
+      "orda / burda"
+    ],
+    "correct_index": 0,
+    "correct": "orada / burada"
+  },
+  {
+    "slide": 159,
+    "choices": [
+      "sohbet",
+      "sohpet"
+    ],
+    "correct_index": 0,
+    "correct": "sohbet"
+  },
+  {
+    "slide": 160,
+    "choices": [
+      "tespit",
+      "tesbit"
+    ],
+    "correct_index": 0,
+    "correct": "tespit"
+  },
+  {
+    "slide": 161,
+    "choices": [
+      "yanı sıra",
+      "yanısıra"
+    ],
+    "correct_index": 0,
+    "correct": "yanı sıra"
+  },
+  {
+    "slide": 162,
+    "choices": [
+      "Avusturalya",
+      "Avustralya"
+    ],
+    "correct_index": 1,
+    "correct": "Avustralya"
+  },
+  {
+    "slide": 163,
+    "choices": [
+      "mahfolmak",
+      "mahvolmak"
+    ],
+    "correct_index": 1,
+    "correct": "mahvolmak"
+  },
+  {
+    "slide": 164,
+    "choices": [
+      "değil",
+      "deyil"
+    ],
+    "correct_index": 0,
+    "correct": "değil"
+  },
+  {
+    "slide": 165,
+    "choices": [
+      "sağol",
+      "sağ ol"
+    ],
+    "correct_index": 1,
+    "correct": "sağ ol"
+  },
+  {
+    "slide": 166,
+    "choices": [
+      "sevip de sevilmemek",
+      "sevipte sevilmemek"
+    ],
+    "correct_index": 0,
+    "correct": "sevip de sevilmemek"
+  },
+  {
+    "slide": 167,
+    "choices": [
+      "muhatap",
+      "muhattap"
+    ],
+    "correct_index": 0,
+    "correct": "muhatap"
+  },
+  {
+    "slide": 168,
+    "choices": [
+      "takdir etmek",
+      "taktir etmek"
+    ],
+    "correct_index": 0,
+    "correct": "takdir etmek"
+  },
+  {
+    "slide": 169,
+    "choices": [
+      "işten bile değil",
+      "içten bile değil"
+    ],
+    "correct_index": 0,
+    "correct": "işten bile değil"
+  },
+  {
+    "slide": 170,
+    "choices": [
+      "veritabanı",
+      "veri tabanı"
+    ],
+    "correct_index": 1,
+    "correct": "veri tabanı"
+  },
+  {
+    "slide": 171,
+    "choices": [
+      "boylu poslu",
+      "boylu boslu"
+    ],
+    "correct_index": 1,
+    "correct": "boylu boslu"
+  },
+  {
+    "slide": 172,
+    "choices": [
+      "hoşçakal",
+      "hoşça kal"
+    ],
+    "correct_index": 1,
+    "correct": "hoşça kal"
+  },
+  {
+    "slide": 173,
+    "choices": [
+      "siluet",
+      "silüet"
+    ],
+    "correct_index": 1,
+    "correct": "silüet"
+  },
+  {
+    "slide": 174,
+    "choices": [
+      "lakayıt",
+      "lakayit"
+    ],
+    "correct_index": 0,
+    "correct": "lakayıt",
+    "hint": "ilgisiz"
+  },
+  {
+    "slide": 175,
+    "choices": [
+      "gitgide",
+      "git gide"
+    ],
+    "correct_index": 0,
+    "correct": "gitgide"
+  },
+  {
+    "slide": 176,
+    "choices": [
+      "baya",
+      "bayağ",
+      "bayağı"
+    ],
+    "correct_index": 2,
+    "correct": "bayağı"
+  },
+  {
+    "slide": 177,
+    "choices": [
+      "hukuğa uygun",
+      "hukuka uygun"
+    ],
+    "correct_index": 1,
+    "correct": "hukuka uygun"
+  },
+  {
+    "slide": 178,
+    "choices": [
+      "itibariyle",
+      "itibarıyla"
+    ],
+    "correct_index": 1,
+    "correct": "itibarıyla"
+  },
+  {
+    "slide": 179,
+    "choices": [
+      "sezeryan",
+      "sezaryen"
+    ],
+    "correct_index": 1,
+    "correct": "sezaryen"
+  },
+  {
+    "slide": 180,
+    "choices": [
+      "vejetaryen",
+      "vejeteryan"
+    ],
+    "correct_index": 0,
+    "correct": "vejetaryen"
+  },
+  {
+    "slide": 181,
+    "choices": [
+      "inkılap",
+      "inkilap"
+    ],
+    "correct_index": 0,
+    "correct": "inkılap"
+  },
+  {
+    "slide": 182,
+    "choices": [
+      "20.00",
+      "20:00"
+    ],
+    "correct_index": 0,
+    "correct": "20.00"
+  },
+  {
+    "slide": 183,
+    "choices": [
+      "20.00’de",
+      "20.00’da"
+    ],
+    "correct_index": 0,
+    "correct": "20.00’de"
+  },
+  {
+    "slide": 184,
+    "choices": [
+      "13.45’te",
+      "13.45’de"
+    ],
+    "correct_index": 0,
+    "correct": "13.45’te"
+  },
+  {
+    "slide": 185,
+    "choices": [
+      "gardırop",
+      "gardolap"
+    ],
+    "correct_index": 0,
+    "correct": "gardırop"
+  },
+  {
+    "slide": 186,
+    "choices": [
+      "karnabahar",
+      "karnıbahar"
+    ],
+    "correct_index": 0,
+    "correct": "karnabahar"
+  },
+  {
+    "slide": 187,
+    "choices": [
+      "döküman",
+      "doküman"
+    ],
+    "correct_index": 1,
+    "correct": "doküman"
+  },
+  {
+    "slide": 188,
+    "choices": [
+      "demir yolu",
+      "demiryolu"
+    ],
+    "correct_index": 0,
+    "correct": "demir yolu"
+  },
+  {
+    "slide": 189,
+    "choices": [
+      "tırafik",
+      "trafik"
+    ],
+    "correct_index": 1,
+    "correct": "trafik"
+  },
+  {
+    "slide": 190,
+    "choices": [
+      "vatan sever",
+      "vatansever"
+    ],
+    "correct_index": 1,
+    "correct": "vatansever"
+  },
+  {
+    "slide": 191,
+    "choices": [
+      "TDK’ya",
+      "TDK’ye",
+      "TDK’na"
+    ],
+    "correct_index": 1,
+    "correct": "TDK’ye"
+  },
+  {
+    "slide": 192,
+    "choices": [
+      "güney batı",
+      "güneybatı"
+    ],
+    "correct_index": 1,
+    "correct": "güneybatı"
+  },
+  {
+    "slide": 193,
+    "choices": [
+      "öğe",
+      "öge"
+    ],
+    "correct_index": 1,
+    "correct": "öge"
+  },
+  {
+    "slide": 194,
+    "choices": [
+      "dogmatik",
+      "doğmatik"
+    ],
+    "correct_index": 0,
+    "correct": "dogmatik"
+  },
+  {
+    "slide": 195,
+    "choices": [
+      "program",
+      "proğram"
+    ],
+    "correct_index": 0,
+    "correct": "program"
+  },
+  {
+    "slide": 196,
+    "choices": [
+      "canbaz",
+      "cambaz"
+    ],
+    "correct_index": 1,
+    "correct": "cambaz"
+  },
+  {
+    "slide": 197,
+    "choices": [
+      "cereyan",
+      "ceryan"
+    ],
+    "correct_index": 0,
+    "correct": "cereyan"
+  },
+  {
+    "slide": 198,
+    "choices": [
+      "ciyer",
+      "ciğer"
+    ],
+    "correct_index": 1,
+    "correct": "ciğer"
+  },
+  {
+    "slide": 199,
+    "choices": [
+      "ziynet",
+      "ziğnet"
+    ],
+    "correct_index": 0,
+    "correct": "ziynet"
+  },
+  {
+    "slide": 200,
+    "choices": [
+      "kravat",
+      "gravat"
+    ],
+    "correct_index": 0,
+    "correct": "kravat"
+  },
+  {
+    "slide": 201,
+    "choices": [
+      "kaale almamak",
+      "kale almamak"
+    ],
+    "correct_index": 1,
+    "correct": "kale almamak"
+  },
+  {
+    "slide": 202,
+    "choices": [
+      "yayım",
+      "yayın"
+    ],
+    "correct_index": 1,
+    "correct": "yayın",
+    "hint": "her türlü gazete, tv vs. unsuru"
+  },
+  {
+    "slide": 203,
+    "choices": [
+      "yayımlamak",
+      "yayınlamak"
+    ],
+    "correct_index": 0,
+    "correct": "yayımlamak"
+  },
+  {
+    "slide": 204,
+    "choices": [
+      "benimle gel",
+      "benle gel"
+    ],
+    "correct_index": 0,
+    "correct": "benimle gel"
+  },
+  {
+    "slide": 205,
+    "choices": [
+      "beyenmek",
+      "beğenmek"
+    ],
+    "correct_index": 1,
+    "correct": "beğenmek"
+  },
+  {
+    "slide": 206,
+    "choices": [
+      "bilader",
+      "birader"
+    ],
+    "correct_index": 1,
+    "correct": "birader"
+  },
+  {
+    "slide": 207,
+    "choices": [
+      "bisiklet",
+      "pisiklet"
+    ],
+    "correct_index": 0,
+    "correct": "bisiklet"
+  },
+  {
+    "slide": 208,
+    "choices": [
+      "naylon",
+      "laylon"
+    ],
+    "correct_index": 0,
+    "correct": "naylon"
+  },
+  {
+    "slide": 209,
+    "choices": [
+      "naçizane",
+      "nacizane"
+    ],
+    "correct_index": 0,
+    "correct": "naçizane"
+  },
+  {
+    "slide": 210,
+    "choices": [
+      "naturel",
+      "natürel"
+    ],
+    "correct_index": 1,
+    "correct": "natürel"
+  },
+  {
+    "slide": 211,
+    "choices": [
+      "nitekim",
+      "netekim"
+    ],
+    "correct_index": 0,
+    "correct": "nitekim",
+    "hint": "gerçekten"
+  },
+  {
+    "slide": 212,
+    "choices": [
+      "nötr",
+      "nötür"
+    ],
+    "correct_index": 0,
+    "correct": "nötr"
+  },
+  {
+    "slide": 213,
+    "choices": [
+      "ültimatom",
+      "ultümatom"
+    ],
+    "correct_index": 0,
+    "correct": "ültimatom"
+  },
+  {
+    "slide": 214,
+    "choices": [
+      "eşkal",
+      "eşgal"
+    ],
+    "correct_index": 0,
+    "correct": "eşkal"
+  },
+  {
+    "slide": 215,
+    "choices": [
+      "üzre",
+      "üzere"
+    ],
+    "correct_index": 1,
+    "correct": "üzere"
+  },
+  {
+    "slide": 216,
+    "choices": [
+      "aşentiyon",
+      "eşantiyon"
+    ],
+    "correct_index": 1,
+    "correct": "eşantiyon"
+  },
+  {
+    "slide": 217,
+    "choices": [
+      "eksantrik",
+      "egzantrik"
+    ],
+    "correct_index": 0,
+    "correct": "eksantrik"
+  },
+  {
+    "slide": 218,
+    "choices": [
+      "ekstra",
+      "extra"
+    ],
+    "correct_index": 0,
+    "correct": "ekstra"
+  },
+  {
+    "slide": 219,
+    "choices": [
+      "entrasan",
+      "enteresan"
+    ],
+    "correct_index": 1,
+    "correct": "enteresan"
+  },
+  {
+    "slide": 220,
+    "choices": [
+      "pantolon",
+      "pantalon"
+    ],
+    "correct_index": 0,
+    "correct": "pantolon"
+  },
+  {
+    "slide": 221,
+    "choices": [
+      "parağraf",
+      "paragraf"
+    ],
+    "correct_index": 1,
+    "correct": "paragraf"
+  },
+  {
+    "slide": 222,
+    "choices": [
+      "palyanço",
+      "palyaço"
+    ],
+    "correct_index": 1,
+    "correct": "palyaço"
+  },
+  {
+    "slide": 223,
+    "choices": [
+      "panorama",
+      "panaroma"
+    ],
+    "correct_index": 0,
+    "correct": "panorama"
+  },
+  {
+    "slide": 224,
+    "choices": [
+      "fasulye",
+      "fasülye"
+    ],
+    "correct_index": 0,
+    "correct": "fasulye"
+  },
+  {
+    "slide": 225,
+    "choices": [
+      "falan",
+      "felan"
+    ],
+    "correct_index": 0,
+    "correct": "falan"
+  },
+  {
+    "slide": 226,
+    "choices": [
+      "fermar",
+      "fermuar",
+      "fermuvar"
+    ],
+    "correct_index": 1,
+    "correct": "fermuar"
+  },
+  {
+    "slide": 227,
+    "choices": [
+      "fesetmek",
+      "feshetmek"
+    ],
+    "correct_index": 1,
+    "correct": "feshetmek"
+  },
+  {
+    "slide": 228,
+    "choices": [
+      "çiftlik",
+      "çiflik"
+    ],
+    "correct_index": 0,
+    "correct": "çiftlik"
+  },
+  {
+    "slide": 229,
+    "choices": [
+      "çinokop",
+      "çinakop",
+      "çinekop"
+    ],
+    "correct_index": 2,
+    "correct": "çinekop"
+  },
+  {
+    "slide": 230,
+    "choices": [
+      "fiyat",
+      "fiat"
+    ],
+    "correct_index": 0,
+    "correct": "fiyat"
+  },
+  {
+    "slide": 231,
+    "choices": [
+      "filim",
+      "film"
+    ],
+    "correct_index": 1,
+    "correct": "film"
+  },
+  {
+    "slide": 232,
+    "choices": [
+      "fayton",
+      "payton"
+    ],
+    "correct_index": 0,
+    "correct": "fayton"
+  },
+  {
+    "slide": 233,
+    "choices": [
+      "pardesü",
+      "pardösü"
+    ],
+    "correct_index": 1,
+    "correct": "pardösü"
+  },
+  {
+    "slide": 234,
+    "choices": [
+      "parelel",
+      "paralel"
+    ],
+    "correct_index": 1,
+    "correct": "paralel"
+  },
+  {
+    "slide": 235,
+    "choices": [
+      "parlamento",
+      "parlemento"
+    ],
+    "correct_index": 0,
+    "correct": "parlamento"
+  },
+  {
+    "slide": 236,
+    "choices": [
+      "pembe",
+      "penbe"
+    ],
+    "correct_index": 0,
+    "correct": "pembe"
+  },
+  {
+    "slide": 237,
+    "choices": [
+      "İstanbul",
+      "İstambul"
+    ],
+    "correct_index": 0,
+    "correct": "İstanbul"
+  },
+  {
+    "slide": 238,
+    "choices": [
+      "promasyon",
+      "promosyon"
+    ],
+    "correct_index": 1,
+    "correct": "promosyon"
+  },
+  {
+    "slide": 239,
+    "choices": [
+      "psikiyatrist",
+      "psikiyatr"
+    ],
+    "correct_index": 1,
+    "correct": "psikiyatr"
+  },
+  {
+    "slide": 240,
+    "choices": [
+      "erezyon",
+      "erozyon"
+    ],
+    "correct_index": 1,
+    "correct": "erozyon"
+  },
+  {
+    "slide": 241,
+    "choices": [
+      "magma",
+      "mağma"
+    ],
+    "correct_index": 0,
+    "correct": "magma"
+  },
+  {
+    "slide": 242,
+    "choices": [
+      "mahsuz",
+      "mahsus"
+    ],
+    "correct_index": 1,
+    "correct": "mahsus"
+  },
+  {
+    "slide": 243,
+    "choices": [
+      "eskrim",
+      "eskirim"
+    ],
+    "correct_index": 0,
+    "correct": "eskrim"
+  },
+  {
+    "slide": 244,
+    "choices": [
+      "espiri",
+      "espri"
+    ],
+    "correct_index": 1,
+    "correct": "espri"
+  },
+  {
+    "slide": 245,
+    "choices": [
+      "ablem",
+      "amblem"
+    ],
+    "correct_index": 1,
+    "correct": "amblem"
+  },
+  {
+    "slide": 246,
+    "choices": [
+      "acayip",
+      "acaip"
+    ],
+    "correct_index": 0,
+    "correct": "acayip"
+  },
+  {
+    "slide": 247,
+    "choices": [
+      "ajitasyon",
+      "acitasyon"
+    ],
+    "correct_index": 0,
+    "correct": "ajitasyon",
+    "hint": "kışkırtma, duygu sömürüsü yapma"
+  },
+  {
+    "slide": 248,
+    "choices": [
+      "adale",
+      "adele"
+    ],
+    "correct_index": 0,
+    "correct": "adale"
+  },
+  {
+    "slide": 249,
+    "choices": [
+      "aforoz",
+      "afaroz"
+    ],
+    "correct_index": 0,
+    "correct": "aforoz",
+    "hint": "Hristiyanlıkta cemaatten kovma cezası, darılıp biriyle konuşmama, uzaklaştırma"
+  },
+  {
+    "slide": 250,
+    "choices": [
+      "afili",
+      "afilli"
+    ],
+    "correct_index": 0,
+    "correct": "afili",
+    "hint": "gösterişli, çalımlı"
+  },
+  {
+    "slide": 251,
+    "choices": [
+      "ahçı",
+      "aşçı"
+    ],
+    "correct_index": 1,
+    "correct": "aşçı"
+  },
+  {
+    "slide": 252,
+    "choices": [
+      "ahbap",
+      "ahpap"
+    ],
+    "correct_index": 0,
+    "correct": "ahbap"
+  },
+  {
+    "slide": 253,
+    "choices": [
+      "akapunktur",
+      "akupunktur"
+    ],
+    "correct_index": 1,
+    "correct": "akupunktur",
+    "hint": "iğne batırılarak yapılan tedavi"
+  },
+  {
+    "slide": 254,
+    "choices": [
+      "alarım",
+      "alarm"
+    ],
+    "correct_index": 1,
+    "correct": "alarm"
+  },
+  {
+    "slide": 255,
+    "choices": [
+      "alerji",
+      "allerji"
+    ],
+    "correct_index": 0,
+    "correct": "alerji"
+  },
+  {
+    "slide": 256,
+    "choices": [
+      "alobora",
+      "alabora"
+    ],
+    "correct_index": 1,
+    "correct": "alabora",
+    "hint": "geminin yan yatması"
+  },
+  {
+    "slide": 257,
+    "choices": [
+      "amortisör",
+      "amartisör"
+    ],
+    "correct_index": 0,
+    "correct": "amortisör"
+  },
+  {
+    "slide": 258,
+    "choices": [
+      "ambulans",
+      "ambülans"
+    ],
+    "correct_index": 0,
+    "correct": "ambulans"
+  },
+  {
+    "slide": 259,
+    "choices": [
+      "anbar",
+      "ambar"
+    ],
+    "correct_index": 1,
+    "correct": "ambar"
+  },
+  {
+    "slide": 260,
+    "choices": [
+      "anfi",
+      "amfi"
+    ],
+    "correct_index": 1,
+    "correct": "amfi",
+    "hint": "basamaklı olarak yükselen büyük derslik"
+  },
+  {
+    "slide": 261,
+    "choices": [
+      "anatomi",
+      "anotomi"
+    ],
+    "correct_index": 0,
+    "correct": "anatomi"
+  },
+  {
+    "slide": 262,
+    "choices": [
+      "antiparantez",
+      "antrparantez"
+    ],
+    "correct_index": 1,
+    "correct": "antrparantez"
+  },
+  {
+    "slide": 263,
+    "choices": [
+      "aperatif",
+      "aperitif",
+      "aparatif"
+    ],
+    "correct_index": 1,
+    "correct": "aperitif",
+    "hint": "ön içki"
+  },
+  {
+    "slide": 264,
+    "choices": [
+      "aporlor",
+      "opörler",
+      "hoporlör",
+      "hoparlör"
+    ],
+    "correct_index": 3,
+    "correct": "hoparlör"
+  },
+  {
+    "slide": 265,
+    "choices": [
+      "aptes",
+      "abdest"
+    ],
+    "correct_index": 1,
+    "correct": "abdest"
+  },
+  {
+    "slide": 266,
+    "choices": [
+      "arabeks",
+      "arabesk"
+    ],
+    "correct_index": 1,
+    "correct": "arabesk"
+  },
+  {
+    "slide": 267,
+    "choices": [
+      "arefe",
+      "arife"
+    ],
+    "correct_index": 1,
+    "correct": "arife"
+  },
+  {
+    "slide": 268,
+    "choices": [
+      "arozöz",
+      "arazöz"
+    ],
+    "correct_index": 1,
+    "correct": "arazöz",
+    "hint": "yolları ve yol kenarlarındaki yeşillikleri sulamakta kullanılan araç"
+  },
+  {
+    "slide": 269,
+    "choices": [
+      "artist",
+      "artiz",
+      "artis"
+    ],
+    "correct_index": 0,
+    "correct": "artist"
+  },
+  {
+    "slide": 270,
+    "choices": [
+      "asgari",
+      "askari"
+    ],
+    "correct_index": 0,
+    "correct": "asgari",
+    "hint": "en az, en düşük"
+  },
+  {
+    "slide": 271,
+    "choices": [
+      "assubay",
+      "astsubay"
+    ],
+    "correct_index": 1,
+    "correct": "astsubay"
+  },
+  {
+    "slide": 272,
+    "choices": [
+      "asteğmen",
+      "asteymen"
+    ],
+    "correct_index": 0,
+    "correct": "asteğmen"
+  },
+  {
+    "slide": 273,
+    "choices": [
+      "ataş",
+      "ataç"
+    ],
+    "correct_index": 0,
+    "correct": "ataş",
+    "hint": "tutturgaç"
+  },
+  {
+    "slide": 274,
+    "choices": [
+      "ataşe",
+      "ateşe"
+    ],
+    "correct_index": 0,
+    "correct": "ataşe",
+    "hint": "elçilik uzmanı"
+  },
+  {
+    "slide": 275,
+    "choices": [
+      "aut",
+      "avut"
+    ],
+    "correct_index": 0,
+    "correct": "aut",
+    "hint": "dış"
+  },
+  {
+    "slide": 276,
+    "choices": [
+      "barkod",
+      "barkot"
+    ],
+    "correct_index": 0,
+    "correct": "barkod"
+  },
+  {
+    "slide": 277,
+    "choices": [
+      "barsak",
+      "bağırsak"
+    ],
+    "correct_index": 1,
+    "correct": "bağırsak"
+  },
+  {
+    "slide": 278,
+    "choices": [
+      "bilumum",
+      "bilimum"
+    ],
+    "correct_index": 0,
+    "correct": "bilumum"
+  },
+  {
+    "slide": 279,
+    "choices": [
+      "birfiil",
+      "bilfiil"
+    ],
+    "correct_index": 1,
+    "correct": "bilfiil"
+  },
+  {
+    "slide": 280,
+    "choices": [
+      "bihaber",
+      "birhaber"
+    ],
+    "correct_index": 0,
+    "correct": "bihaber"
+  },
+  {
+    "slide": 281,
+    "choices": [
+      "boa yılanı",
+      "boğa yılanı"
+    ],
+    "correct_index": 0,
+    "correct": "boa yılanı"
+  },
+  {
+    "slide": 282,
+    "choices": [
+      "boy bos",
+      "boy pos"
+    ],
+    "correct_index": 0,
+    "correct": "boy bos"
+  },
+  {
+    "slide": 283,
+    "choices": [
+      "candarma",
+      "cenderme",
+      "jandarma"
+    ],
+    "correct_index": 2,
+    "correct": "jandarma"
+  },
+  {
+    "slide": 284,
+    "choices": [
+      "jelatin",
+      "celatin"
+    ],
+    "correct_index": 0,
+    "correct": "jelatin"
+  },
+  {
+    "slide": 285,
+    "choices": [
+      "jeton",
+      "ceton"
+    ],
+    "correct_index": 0,
+    "correct": "jeton"
+  },
+  {
+    "slide": 286,
+    "choices": [
+      "jimnastik",
+      "cimnastik"
+    ],
+    "correct_index": 0,
+    "correct": "jimnastik"
+  },
+  {
+    "slide": 287,
+    "choices": [
+      "çekinser",
+      "çekimser"
+    ],
+    "correct_index": 1,
+    "correct": "çekimser"
+  },
+  {
+    "slide": 288,
+    "choices": [
+      "civa",
+      "cıva"
+    ],
+    "correct_index": 1,
+    "correct": "cıva"
+  },
+  {
+    "slide": 289,
+    "choices": [
+      "dekorasyon",
+      "dekarasyon"
+    ],
+    "correct_index": 0,
+    "correct": "dekorasyon"
+  },
+  {
+    "slide": 290,
+    "choices": [
+      "dekoratör",
+      "dekaratör"
+    ],
+    "correct_index": 0,
+    "correct": "dekoratör"
+  },
+  {
+    "slide": 291,
+    "choices": [
+      "direk",
+      "direkt"
+    ],
+    "correct_index": 1,
+    "correct": "direkt"
+  },
+  {
+    "slide": 292,
+    "choices": [
+      "döğmek",
+      "dövmek"
+    ],
+    "correct_index": 1,
+    "correct": "dövmek"
+  },
+  {
+    "slide": 293,
+    "choices": [
+      "dokümanter",
+      "dökümanter"
+    ],
+    "correct_index": 0,
+    "correct": "dokümanter",
+    "hint": "belgesel"
+  },
+  {
+    "slide": 294,
+    "choices": [
+      "ensitü",
+      "enstitü"
+    ],
+    "correct_index": 1,
+    "correct": "enstitü"
+  },
+  {
+    "slide": 295,
+    "choices": [
+      "evsane",
+      "efsane"
+    ],
+    "correct_index": 1,
+    "correct": "efsane"
+  },
+  {
+    "slide": 296,
+    "choices": [
+      "eczane",
+      "ezzane"
+    ],
+    "correct_index": 0,
+    "correct": "eczane"
+  },
+  {
+    "slide": 297,
+    "choices": [
+      "faaliyet",
+      "faliyet"
+    ],
+    "correct_index": 0,
+    "correct": "faaliyet"
+  },
+  {
+    "slide": 298,
+    "choices": [
+      "fantazi",
+      "fantezi"
+    ],
+    "correct_index": 1,
+    "correct": "fantezi",
+    "hint": "değişik heves, değişik beğeni"
+  },
+  {
+    "slide": 299,
+    "choices": [
+      "vites",
+      "fites"
+    ],
+    "correct_index": 0,
+    "correct": "vites"
+  },
+  {
+    "slide": 300,
+    "choices": [
+      "florasan",
+      "floresan"
+    ],
+    "correct_index": 1,
+    "correct": "floresan"
+  },
+  {
+    "slide": 301,
+    "choices": [
+      "gangaster",
+      "gangster"
+    ],
+    "correct_index": 1,
+    "correct": "gangster"
+  },
+  {
+    "slide": 302,
+    "choices": [
+      "kangren",
+      "gangren"
+    ],
+    "correct_index": 0,
+    "correct": "kangren"
+  },
+  {
+    "slide": 303,
+    "choices": [
+      "gazte",
+      "gazete",
+      "gaste"
+    ],
+    "correct_index": 1,
+    "correct": "gazete"
+  },
+  {
+    "slide": 304,
+    "choices": [
+      "halel",
+      "helâl (dinin kurallarına aykırı olmayan, dinî bakımdan yasaklanmamış olan, haram karşıtı)"
+    ],
+    "correct_index": 1,
+    "correct": "helâl (dinin kurallarına aykırı olmayan, dinî bakımdan yasaklanmamış olan, haram karşıtı)",
+    "hint": "bozma, bozukluk"
+  },
+  {
+    "slide": 305,
+    "choices": [
+      "hakkaten",
+      "hakikaten"
+    ],
+    "correct_index": 1,
+    "correct": "hakikaten"
+  },
+  {
+    "slide": 306,
+    "choices": [
+      "halüsinasyon",
+      "halisinasyon",
+      "halisünasyon"
+    ],
+    "correct_index": 0,
+    "correct": "halüsinasyon",
+    "hint": "sanrı"
+  },
+  {
+    "slide": 307,
+    "choices": [
+      "harem selamlık",
+      "haremlik selamlık"
+    ],
+    "correct_index": 0,
+    "correct": "harem selamlık"
+  },
+  {
+    "slide": 308,
+    "choices": [
+      "ıskonto",
+      "iskonto"
+    ],
+    "correct_index": 1,
+    "correct": "iskonto"
+  },
+  {
+    "slide": 309,
+    "choices": [
+      "ızdırap",
+      "ıstırap"
+    ],
+    "correct_index": 0,
+    "correct": "ızdırap"
+  },
+  {
+    "slide": 310,
+    "choices": [
+      "ıstakoz",
+      "istakoz"
+    ],
+    "correct_index": 0,
+    "correct": "ıstakoz"
+  },
+  {
+    "slide": 311,
+    "choices": [
+      "ilüzyon",
+      "illüzyon",
+      "ilizyon"
+    ],
+    "correct_index": 1,
+    "correct": "illüzyon",
+    "hint": "yanılsama"
+  },
+  {
+    "slide": 312,
+    "choices": [
+      "istepne",
+      "stepne"
+    ],
+    "correct_index": 1,
+    "correct": "stepne",
+    "hint": "yedek lastik"
+  },
+  {
+    "slide": 313,
+    "choices": [
+      "istiap haddi",
+      "istihap hatti"
+    ],
+    "correct_index": 0,
+    "correct": "istiap haddi",
+    "hint": "içine alma sınırı, sığdırma sınırı"
+  },
+  {
+    "slide": 314,
+    "choices": [
+      "izolasyon",
+      "izalasyon"
+    ],
+    "correct_index": 0,
+    "correct": "izolasyon"
+  },
+  {
+    "slide": 315,
+    "choices": [
+      "karsör",
+      "karoser",
+      "karisör"
+    ],
+    "correct_index": 1,
+    "correct": "karoser"
+  },
+  {
+    "slide": 316,
+    "choices": [
+      "kakofoni",
+      "kakafoni"
+    ],
+    "correct_index": 0,
+    "correct": "kakofoni",
+    "hint": "ses uyumsuzluğu"
+  },
+  {
+    "slide": 317,
+    "choices": [
+      "kalemşör",
+      "kalemşor"
+    ],
+    "correct_index": 1,
+    "correct": "kalemşor",
+    "hint": "kalem savaşçısı"
+  },
+  {
+    "slide": 318,
+    "choices": [
+      "kampanya",
+      "kanpanya"
+    ],
+    "correct_index": 0,
+    "correct": "kampanya"
+  },
+  {
+    "slide": 319,
+    "choices": [
+      "kaporo",
+      "kaparo"
+    ],
+    "correct_index": 1,
+    "correct": "kaparo"
+  },
+  {
+    "slide": 320,
+    "choices": [
+      "karegrafi",
+      "kareografi",
+      "koreografi"
+    ],
+    "correct_index": 2,
+    "correct": "koreografi",
+    "hint": "figür ve anlatımların bütünü"
+  },
+  {
+    "slide": 321,
+    "choices": [
+      "kavonoz",
+      "kavanoz"
+    ],
+    "correct_index": 1,
+    "correct": "kavanoz"
+  },
+  {
+    "slide": 322,
+    "choices": [
+      "katalok",
+      "katalog"
+    ],
+    "correct_index": 1,
+    "correct": "katalog"
+  },
+  {
+    "slide": 323,
+    "choices": [
+      "kaysı",
+      "kayısı"
+    ],
+    "correct_index": 1,
+    "correct": "kayısı"
+  },
+  {
+    "slide": 324,
+    "choices": [
+      "kıraathane",
+      "kırahatane"
+    ],
+    "correct_index": 0,
+    "correct": "kıraathane"
+  },
+  {
+    "slide": 325,
+    "choices": [
+      "külot",
+      "kilot"
+    ],
+    "correct_index": 0,
+    "correct": "külot"
+  },
+  {
+    "slide": 326,
+    "choices": [
+      "kipri",
+      "kirpi"
+    ],
+    "correct_index": 1,
+    "correct": "kirpi"
+  },
+  {
+    "slide": 327,
+    "choices": [
+      "kilitlemek",
+      "kitlemek"
+    ],
+    "correct_index": 0,
+    "correct": "kilitlemek"
+  },
+  {
+    "slide": 328,
+    "choices": [
+      "kokareç",
+      "kokreç",
+      "kokoreç"
+    ],
+    "correct_index": 2,
+    "correct": "kokoreç"
+  },
+  {
+    "slide": 329,
+    "choices": [
+      "kolanya",
+      "kolonya"
+    ],
+    "correct_index": 1,
+    "correct": "kolonya"
+  },
+  {
+    "slide": 330,
+    "choices": [
+      "kolej",
+      "kollej"
+    ],
+    "correct_index": 0,
+    "correct": "kolej"
+  },
+  {
+    "slide": 331,
+    "choices": [
+      "kolleksiyon",
+      "koleksiyon"
+    ],
+    "correct_index": 1,
+    "correct": "koleksiyon"
+  },
+  {
+    "slide": 332,
+    "choices": [
+      "kollektif",
+      "kolektif"
+    ],
+    "correct_index": 1,
+    "correct": "kolektif"
+  },
+  {
+    "slide": 333,
+    "choices": [
+      "komidin",
+      "komodin"
+    ],
+    "correct_index": 1,
+    "correct": "komodin",
+    "hint": "küçük dolap"
+  },
+  {
+    "slide": 334,
+    "choices": [
+      "kominist",
+      "komünist"
+    ],
+    "correct_index": 1,
+    "correct": "komünist"
+  },
+  {
+    "slide": 335,
+    "choices": [
+      "komünükasyon",
+      "komünikasyon"
+    ],
+    "correct_index": 1,
+    "correct": "komünikasyon",
+    "hint": "iletişim"
+  },
+  {
+    "slide": 336,
+    "choices": [
+      "konsansüs",
+      "konsensüs"
+    ],
+    "correct_index": 1,
+    "correct": "konsensüs",
+    "hint": "uzlaşma"
+  },
+  {
+    "slide": 337,
+    "choices": [
+      "kontur",
+      "kontör",
+      "kontür"
+    ],
+    "correct_index": 1,
+    "correct": "kontör"
+  },
+  {
+    "slide": 338,
+    "choices": [
+      "kopye",
+      "kopya"
+    ],
+    "correct_index": 1,
+    "correct": "kopya"
+  },
+  {
+    "slide": 339,
+    "choices": [
+      "kordale",
+      "kurdale",
+      "kurdela",
+      "kurdele"
+    ],
+    "correct_index": 3,
+    "correct": "kurdele"
+  },
+  {
+    "slide": 340,
+    "choices": [
+      "kupür",
+      "küpür"
+    ],
+    "correct_index": 0,
+    "correct": "kupür",
+    "hint": "giyside kesim"
+  },
+  {
+    "slide": 341,
+    "choices": [
+      "küvöz",
+      "kuvöz"
+    ],
+    "correct_index": 1,
+    "correct": "kuvöz",
+    "hint": "yaşanak"
+  },
+  {
+    "slide": 342,
+    "choices": [
+      "laik",
+      "layik"
+    ],
+    "correct_index": 0,
+    "correct": "laik"
+  },
+  {
+    "slide": 343,
+    "choices": [
+      "lavobo",
+      "lağbo",
+      "lavabo"
+    ],
+    "correct_index": 2,
+    "correct": "lavabo"
+  },
+  {
+    "slide": 344,
+    "choices": [
+      "mahcup",
+      "mahçup"
+    ],
+    "correct_index": 0,
+    "correct": "mahcup"
+  },
+  {
+    "slide": 345,
+    "choices": [
+      "maktül",
+      "maktul"
+    ],
+    "correct_index": 1,
+    "correct": "maktul",
+    "hint": "öldürülmüş"
+  },
+  {
+    "slide": 346,
+    "choices": [
+      "manipülasyon",
+      "manüpülasyon"
+    ],
+    "correct_index": 0,
+    "correct": "manipülasyon",
+    "hint": "yönlendirme, seçme"
+  },
+  {
+    "slide": 347,
+    "choices": [
+      "matamatik",
+      "matematik"
+    ],
+    "correct_index": 1,
+    "correct": "matematik"
+  },
+  {
+    "slide": 348,
+    "choices": [
+      "mataryal",
+      "materyal"
+    ],
+    "correct_index": 1,
+    "correct": "materyal"
+  },
+  {
+    "slide": 349,
+    "choices": [
+      "maydanoz",
+      "maydonoz"
+    ],
+    "correct_index": 0,
+    "correct": "maydanoz"
+  },
+  {
+    "slide": 350,
+    "choices": [
+      "mefta",
+      "mevta"
+    ],
+    "correct_index": 1,
+    "correct": "mevta",
+    "hint": "ölü, ölmüş kimse"
+  },
+  {
+    "slide": 351,
+    "choices": [
+      "megolaman",
+      "megoloman",
+      "megaloman"
+    ],
+    "correct_index": 2,
+    "correct": "megaloman",
+    "hint": "kendini çok büyük gören kimse"
+  },
+  {
+    "slide": 352,
+    "choices": [
+      "menemen",
+      "melemen"
+    ],
+    "correct_index": 0,
+    "correct": "menemen"
+  },
+  {
+    "slide": 353,
+    "choices": [
+      "merhem",
+      "melhem"
+    ],
+    "correct_index": 0,
+    "correct": "merhem"
+  },
+  {
+    "slide": 354,
+    "choices": [
+      "menapoz",
+      "menopoz"
+    ],
+    "correct_index": 1,
+    "correct": "menopoz"
+  },
+  {
+    "slide": 355,
+    "choices": [
+      "menejer",
+      "menajer",
+      "menecer"
+    ],
+    "correct_index": 1,
+    "correct": "menajer"
+  },
+  {
+    "slide": 356,
+    "choices": [
+      "mantalite",
+      "mentalite"
+    ],
+    "correct_index": 0,
+    "correct": "mantalite",
+    "hint": "anlayış"
+  },
+  {
+    "slide": 357,
+    "choices": [
+      "menüsküs",
+      "menisküs"
+    ],
+    "correct_index": 1,
+    "correct": "menisküs"
+  },
+  {
+    "slide": 358,
+    "choices": [
+      "meyve",
+      "meyva"
+    ],
+    "correct_index": 0,
+    "correct": "meyve"
+  },
+  {
+    "slide": 359,
+    "choices": [
+      "mide",
+      "miğde"
+    ],
+    "correct_index": 0,
+    "correct": "mide"
+  },
+  {
+    "slide": 360,
+    "choices": [
+      "makosen",
+      "mokasen"
+    ],
+    "correct_index": 0,
+    "correct": "makosen",
+    "hint": "kısa ökçeli, bağsız ayakkabı"
+  },
+  {
+    "slide": 361,
+    "choices": [
+      "motosiklet",
+      "motorsiklet"
+    ],
+    "correct_index": 0,
+    "correct": "motosiklet"
+  },
+  {
+    "slide": 362,
+    "choices": [
+      "mozaik",
+      "mozayik"
+    ],
+    "correct_index": 0,
+    "correct": "mozaik"
+  },
+  {
+    "slide": 363,
+    "choices": [
+      "muacir",
+      "muhacir"
+    ],
+    "correct_index": 1,
+    "correct": "muhacir"
+  },
+  {
+    "slide": 364,
+    "choices": [
+      "muvaffak",
+      "muaffak"
+    ],
+    "correct_index": 0,
+    "correct": "muvaffak"
+  },
+  {
+    "slide": 365,
+    "choices": [
+      "mundar",
+      "murdar"
+    ],
+    "correct_index": 1,
+    "correct": "murdar",
+    "hint": "kirli, pis"
+  },
+  {
+    "slide": 366,
+    "choices": [
+      "muzdarip",
+      "mustarip"
+    ],
+    "correct_index": 0,
+    "correct": "muzdarip"
+  },
+  {
+    "slide": 367,
+    "choices": [
+      "muşamba",
+      "muşanba"
+    ],
+    "correct_index": 0,
+    "correct": "muşamba"
+  },
+  {
+    "slide": 368,
+    "choices": [
+      "muzır",
+      "muzur"
+    ],
+    "correct_index": 0,
+    "correct": "muzır",
+    "hint": "zararlı"
+  },
+  {
+    "slide": 369,
+    "choices": [
+      "minibüs",
+      "münübüs"
+    ],
+    "correct_index": 0,
+    "correct": "minibüs"
+  },
+  {
+    "slide": 370,
+    "choices": [
+      "müracat",
+      "müracaat"
+    ],
+    "correct_index": 1,
+    "correct": "müracaat"
+  },
+  {
+    "slide": 371,
+    "choices": [
+      "mürüvet",
+      "mürivet",
+      "mürüvvet"
+    ],
+    "correct_index": 2,
+    "correct": "mürüvvet",
+    "hint": "cömertlik, yiğitlik"
+  },
+  {
+    "slide": 372,
+    "choices": [
+      "müsait",
+      "müsayit"
+    ],
+    "correct_index": 0,
+    "correct": "müsait"
+  },
+  {
+    "slide": 373,
+    "choices": [
+      "müsbet",
+      "müspet"
+    ],
+    "correct_index": 1,
+    "correct": "müspet"
+  },
+  {
+    "slide": 374,
+    "choices": [
+      "müsvedde",
+      "müsvette"
+    ],
+    "correct_index": 0,
+    "correct": "müsvedde"
+  },
+  {
+    "slide": 375,
+    "choices": [
+      "mütaakip",
+      "müteakip"
+    ],
+    "correct_index": 1,
+    "correct": "müteakip"
+  },
+  {
+    "slide": 376,
+    "choices": [
+      "lanet",
+      "nalet"
+    ],
+    "correct_index": 0,
+    "correct": "lanet"
+  },
+  {
+    "slide": 377,
+    "choices": [
+      "nergis",
+      "nergiz"
+    ],
+    "correct_index": 0,
+    "correct": "nergis"
+  },
+  {
+    "slide": 378,
+    "choices": [
+      "nisbet",
+      "nispet"
+    ],
+    "correct_index": 1,
+    "correct": "nispet"
+  },
+  {
+    "slide": 379,
+    "choices": [
+      "oce",
+      "oje"
+    ],
+    "correct_index": 1,
+    "correct": "oje"
+  },
+  {
+    "slide": 380,
+    "choices": [
+      "okşizen",
+      "oksijen"
+    ],
+    "correct_index": 1,
+    "correct": "oksijen"
+  },
+  {
+    "slide": 381,
+    "choices": [
+      "oparasyon",
+      "operasyon"
+    ],
+    "correct_index": 1,
+    "correct": "operasyon"
+  },
+  {
+    "slide": 382,
+    "choices": [
+      "ofsayt",
+      "opsayd"
+    ],
+    "correct_index": 0,
+    "correct": "ofsayt"
+  },
+  {
+    "slide": 383,
+    "choices": [
+      "şoke olmak",
+      "şok olmak"
+    ],
+    "correct_index": 0,
+    "correct": "şoke olmak"
+  },
+  {
+    "slide": 384,
+    "choices": [
+      "ötenazi",
+      "ötanazi"
+    ],
+    "correct_index": 1,
+    "correct": "ötanazi",
+    "hint": "ölme hakkı"
+  },
+  {
+    "slide": 385,
+    "choices": [
+      "parende",
+      "perende"
+    ],
+    "correct_index": 1,
+    "correct": "perende",
+    "hint": "havada dönerek atılan takla"
+  },
+  {
+    "slide": 386,
+    "choices": [
+      "parlementer",
+      "parlamenter"
+    ],
+    "correct_index": 1,
+    "correct": "parlamenter"
+  },
+  {
+    "slide": 387,
+    "choices": [
+      "peştemal",
+      "peştamal"
+    ],
+    "correct_index": 1,
+    "correct": "peştamal"
+  },
+  {
+    "slide": 388,
+    "choices": [
+      "proleterya",
+      "proletarya"
+    ],
+    "correct_index": 1,
+    "correct": "proletarya",
+    "hint": "emekçi sınıfı"
+  },
+  {
+    "slide": 389,
+    "choices": [
+      "provokatör",
+      "provakatör"
+    ],
+    "correct_index": 0,
+    "correct": "provokatör",
+    "hint": "kışkırtmacı"
+  },
+  {
+    "slide": 390,
+    "choices": [
+      "radyosyon",
+      "radyasyon"
+    ],
+    "correct_index": 1,
+    "correct": "radyasyon"
+  },
+  {
+    "slide": 391,
+    "choices": [
+      "rakkam",
+      "rakam"
+    ],
+    "correct_index": 1,
+    "correct": "rakam"
+  },
+  {
+    "slide": 392,
+    "choices": [
+      "raslantı",
+      "rastlantı"
+    ],
+    "correct_index": 1,
+    "correct": "rastlantı"
+  },
+  {
+    "slide": 393,
+    "choices": [
+      "restoran"
+    ],
+    "correct_index": 0,
+    "correct": "restoran"
+  },
+  {
+    "slide": 394,
+    "choices": [
+      "rövanş",
+      "revanş"
+    ],
+    "correct_index": 0,
+    "correct": "rövanş"
+  },
+  {
+    "slide": 395,
+    "choices": [
+      "rezarvasyon",
+      "rezervasyon"
+    ],
+    "correct_index": 1,
+    "correct": "rezervasyon"
+  },
+  {
+    "slide": 396,
+    "choices": [
+      "risk",
+      "riks"
+    ],
+    "correct_index": 0,
+    "correct": "risk"
+  },
+  {
+    "slide": 397,
+    "choices": [
+      "Romen rakamları",
+      "Roma rakamları"
+    ],
+    "correct_index": 0,
+    "correct": "Romen rakamları"
+  },
+  {
+    "slide": 398,
+    "choices": [
+      "röportaj",
+      "ropörtaj"
+    ],
+    "correct_index": 0,
+    "correct": "röportaj"
+  },
+  {
+    "slide": 399,
+    "choices": [
+      "sada",
+      "seda"
+    ],
+    "correct_index": 1,
+    "correct": "seda",
+    "hint": "ses"
+  },
+  {
+    "slide": 400,
+    "choices": [
+      "sefa",
+      "safa"
+    ],
+    "correct_index": 0,
+    "correct": "sefa",
+    "hint": "gönül rahatlığı"
+  },
+  {
+    "slide": 401,
+    "choices": [
+      "sağnak",
+      "sağanak"
+    ],
+    "correct_index": 1,
+    "correct": "sağanak"
+  },
+  {
+    "slide": 402,
+    "choices": [
+      "sandöviç",
+      "sandoviç",
+      "sandviç",
+      "sandüviç"
+    ],
+    "correct_index": 2,
+    "correct": "sandviç"
+  },
+  {
+    "slide": 403,
+    "choices": [
+      "satlık",
+      "satılık"
+    ],
+    "correct_index": 1,
+    "correct": "satılık"
+  },
+  {
+    "slide": 404,
+    "choices": [
+      "sellektör",
+      "selektör"
+    ],
+    "correct_index": 1,
+    "correct": "selektör"
+  },
+  {
+    "slide": 405,
+    "choices": [
+      "seramoni",
+      "seremoni"
+    ],
+    "correct_index": 1,
+    "correct": "seremoni",
+    "hint": "tören"
+  },
+  {
+    "slide": 406,
+    "choices": [
+      "serbes",
+      "serbest"
+    ],
+    "correct_index": 1,
+    "correct": "serbest"
+  },
+  {
+    "slide": 407,
+    "choices": [
+      "seyehat",
+      "seyahat"
+    ],
+    "correct_index": 1,
+    "correct": "seyahat"
+  },
+  {
+    "slide": 408,
+    "choices": [
+      "soy kırımı",
+      "soykırım"
+    ],
+    "correct_index": 1,
+    "correct": "soykırım"
+  },
+  {
+    "slide": 409,
+    "choices": [
+      "stadyum",
+      "statyum"
+    ],
+    "correct_index": 0,
+    "correct": "stadyum"
+  },
+  {
+    "slide": 410,
+    "choices": [
+      "su basmanı",
+      "subasman"
+    ],
+    "correct_index": 1,
+    "correct": "subasman",
+    "hint": "oturmalık"
+  },
+  {
+    "slide": 411,
+    "choices": [
+      "supab",
+      "subap",
+      "sibop",
+      "supap"
+    ],
+    "correct_index": 3,
+    "correct": "supap"
+  },
+  {
+    "slide": 412,
+    "choices": [
+      "süveter",
+      "sueter"
+    ],
+    "correct_index": 0,
+    "correct": "süveter"
+  },
+  {
+    "slide": 413,
+    "choices": [
+      "sudyen",
+      "südyen",
+      "sütyen"
+    ],
+    "correct_index": 2,
+    "correct": "sütyen"
+  },
+  {
+    "slide": 414,
+    "choices": [
+      "sukutuhayal",
+      "sükûtuhayal"
+    ],
+    "correct_index": 0,
+    "correct": "sukutuhayal",
+    "hint": "hayal kırıklığı"
+  },
+  {
+    "slide": 415,
+    "choices": [
+      "stüdyo",
+      "sütüdyo"
+    ],
+    "correct_index": 0,
+    "correct": "stüdyo"
+  },
+  {
+    "slide": 416,
+    "choices": [
+      "şanzıman",
+      "şanzuman"
+    ],
+    "correct_index": 0,
+    "correct": "şanzıman"
+  },
+  {
+    "slide": 417,
+    "choices": [
+      "şarter",
+      "şalter"
+    ],
+    "correct_index": 1,
+    "correct": "şalter"
+  },
+  {
+    "slide": 418,
+    "choices": [
+      "şaibe",
+      "şayibe"
+    ],
+    "correct_index": 0,
+    "correct": "şaibe"
+  },
+  {
+    "slide": 419,
+    "choices": [
+      "şemşiye",
+      "şemsiye"
+    ],
+    "correct_index": 1,
+    "correct": "şemsiye"
+  },
+  {
+    "slide": 420,
+    "choices": [
+      "şifahi",
+      "şifai"
+    ],
+    "correct_index": 0,
+    "correct": "şifahi"
+  },
+  {
+    "slide": 421,
+    "choices": [
+      "tabiyat",
+      "tabiat"
+    ],
+    "correct_index": 1,
+    "correct": "tabiat"
+  },
+  {
+    "slide": 422,
+    "choices": [
+      "taahhüt",
+      "tahüt"
+    ],
+    "correct_index": 0,
+    "correct": "taahhüt"
+  },
+  {
+    "slide": 423,
+    "choices": [
+      "taammüden",
+      "tamüden",
+      "taamüden"
+    ],
+    "correct_index": 0,
+    "correct": "taammüden",
+    "hint": "kasten, tasarlayarak"
+  },
+  {
+    "slide": 424,
+    "choices": [
+      "tafsiye",
+      "tavsiye"
+    ],
+    "correct_index": 1,
+    "correct": "tavsiye"
+  },
+  {
+    "slide": 425,
+    "choices": [
+      "tahtarevalli",
+      "tahterevalli"
+    ],
+    "correct_index": 1,
+    "correct": "tahterevalli"
+  },
+  {
+    "slide": 426,
+    "choices": [
+      "takdim",
+      "taktim"
+    ],
+    "correct_index": 0,
+    "correct": "takdim"
+  },
+  {
+    "slide": 427,
+    "choices": [
+      "takdir",
+      "taktir"
+    ],
+    "correct_index": 0,
+    "correct": "takdir"
+  },
+  {
+    "slide": 428,
+    "choices": [
+      "tastik",
+      "tasdik"
+    ],
+    "correct_index": 1,
+    "correct": "tasdik"
+  },
+  {
+    "slide": 429,
+    "choices": [
+      "tampon",
+      "tanpon"
+    ],
+    "correct_index": 0,
+    "correct": "tampon"
+  },
+  {
+    "slide": 430,
+    "choices": [
+      "tasfir",
+      "tasvir"
+    ],
+    "correct_index": 1,
+    "correct": "tasvir"
+  },
+  {
+    "slide": 431,
+    "choices": [
+      "tasviye",
+      "tasfiye"
+    ],
+    "correct_index": 1,
+    "correct": "tasfiye",
+    "hint": "arıtma"
+  },
+  {
+    "slide": 432,
+    "choices": [
+      "taşaron",
+      "taşeron"
+    ],
+    "correct_index": 1,
+    "correct": "taşeron",
+    "hint": "ikinci derecede müteahhit"
+  },
+  {
+    "slide": 433,
+    "choices": [
+      "teferuat",
+      "teferruat"
+    ],
+    "correct_index": 1,
+    "correct": "teferruat"
+  },
+  {
+    "slide": 434,
+    "choices": [
+      "tekneloji",
+      "teknoloji"
+    ],
+    "correct_index": 1,
+    "correct": "teknoloji"
+  },
+  {
+    "slide": 435,
+    "choices": [
+      "tekrar",
+      "tekrardan"
+    ],
+    "correct_index": 0,
+    "correct": "tekrar"
+  },
+  {
+    "slide": 436,
+    "choices": [
+      "temize gitmek",
+      "temyize gitmek"
+    ],
+    "correct_index": 1,
+    "correct": "temyize gitmek"
+  },
+  {
+    "slide": 437,
+    "choices": [
+      "tembel",
+      "tenbel"
+    ],
+    "correct_index": 0,
+    "correct": "tembel"
+  },
+  {
+    "slide": 438,
+    "choices": [
+      "tenbih",
+      "tembih"
+    ],
+    "correct_index": 1,
+    "correct": "tembih"
+  },
+  {
+    "slide": 439,
+    "choices": [
+      "tenefüs",
+      "teneffüs"
+    ],
+    "correct_index": 1,
+    "correct": "teneffüs"
+  },
+  {
+    "slide": 440,
+    "choices": [
+      "teravih",
+      "terevi",
+      "teravi"
+    ],
+    "correct_index": 0,
+    "correct": "teravih"
+  },
+  {
+    "slide": 441,
+    "choices": [
+      "tespih",
+      "tesbih"
+    ],
+    "correct_index": 0,
+    "correct": "tespih"
+  },
+  {
+    "slide": 442,
+    "choices": [
+      "teşvik",
+      "teşfik"
+    ],
+    "correct_index": 0,
+    "correct": "teşvik"
+  },
+  {
+    "slide": 443,
+    "choices": [
+      "tetanos",
+      "tetanoz"
+    ],
+    "correct_index": 0,
+    "correct": "tetanos"
+  },
+  {
+    "slide": 444,
+    "choices": [
+      "tiksinmek",
+      "tiskinmek"
+    ],
+    "correct_index": 0,
+    "correct": "tiksinmek"
+  },
+  {
+    "slide": 445,
+    "choices": [
+      "tüyo",
+      "tiyo"
+    ],
+    "correct_index": 0,
+    "correct": "tüyo",
+    "hint": "gizli bilgi"
+  },
+  {
+    "slide": 446,
+    "choices": [
+      "tolorans",
+      "tolerans"
+    ],
+    "correct_index": 1,
+    "correct": "tolerans"
+  },
+  {
+    "slide": 447,
+    "choices": [
+      "tos",
+      "tost"
+    ],
+    "correct_index": 1,
+    "correct": "tost"
+  },
+  {
+    "slide": 448,
+    "choices": [
+      "tirbuşon",
+      "tirbüşon",
+      "tribuşon"
+    ],
+    "correct_index": 0,
+    "correct": "tirbuşon",
+    "hint": "burgu"
+  },
+  {
+    "slide": 449,
+    "choices": [
+      "tribün",
+      "türübün"
+    ],
+    "correct_index": 0,
+    "correct": "tribün"
+  },
+  {
+    "slide": 450,
+    "choices": [
+      "ukde",
+      "ukte"
+    ],
+    "correct_index": 0,
+    "correct": "ukde",
+    "hint": "yükümlülük, sorumluluk"
+  },
+  {
+    "slide": 451,
+    "choices": [
+      "ultrasyon",
+      "ultrason"
+    ],
+    "correct_index": 1,
+    "correct": "ultrason",
+    "hint": "yansılanım"
+  },
+  {
+    "slide": 452,
+    "choices": [
+      "usul",
+      "usûl"
+    ],
+    "correct_index": 0,
+    "correct": "usul"
+  },
+  {
+    "slide": 453,
+    "choices": [
+      "ütopya",
+      "utopya"
+    ],
+    "correct_index": 0,
+    "correct": "ütopya"
+  },
+  {
+    "slide": 454,
+    "choices": [
+      "ünüforma",
+      "üniforma"
+    ],
+    "correct_index": 1,
+    "correct": "üniforma"
+  },
+  {
+    "slide": 455,
+    "choices": [
+      "uvertür",
+      "üvertür"
+    ],
+    "correct_index": 0,
+    "correct": "uvertür",
+    "hint": "konser öncesi çalınan parça"
+  },
+  {
+    "slide": 456,
+    "choices": [
+      "voleybol",
+      "veleybol",
+      "valeybol"
+    ],
+    "correct_index": 0,
+    "correct": "voleybol"
+  },
+  {
+    "slide": 457,
+    "choices": [
+      "vehamet",
+      "vahamet"
+    ],
+    "correct_index": 1,
+    "correct": "vahamet",
+    "hint": "güçlük, tehlikeli durum"
+  },
+  {
+    "slide": 458,
+    "choices": [
+      "vürüs",
+      "virüs"
+    ],
+    "correct_index": 1,
+    "correct": "virüs",
+    "hint": "parazit"
+  },
+  {
+    "slide": 459,
+    "choices": [
+      "yumurta",
+      "yımırta"
+    ],
+    "correct_index": 0,
+    "correct": "yumurta"
+  },
+  {
+    "slide": 460,
+    "choices": [
+      "yövmiye",
+      "yevmiye"
+    ],
+    "correct_index": 1,
+    "correct": "yevmiye"
+  },
+  {
+    "slide": 461,
+    "choices": [
+      "zanaat",
+      "zenaat"
+    ],
+    "correct_index": 0,
+    "correct": "zanaat"
+  },
+  {
+    "slide": 462,
+    "choices": [
+      "zınba",
+      "zımba"
+    ],
+    "correct_index": 1,
+    "correct": "zımba"
+  }
+];

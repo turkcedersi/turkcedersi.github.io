@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noktalama Evreni - İnteraktif Noktalama İşaretleri Öğrenim Platformu</title>
+    <meta name="description" content="Türkçe noktalama işaretlerini TDK kuralları, zengin örnekler ve edebi metinlerden oluşan interaktif pratiklerle kolayca öğrenin.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Background Decor Elements -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+
+    <div class="app-container">
+        <!-- HEADER -->
+        <header class="app-header">
+            <div class="logo-area">
+                <span class="logo-icon">✍️</span>
+                <div class="logo-text">
+                    <h1>Noktalama Evreni</h1>
+                    <p>Kurallar, Örnekler ve Edebi Pratikler</p>
+                </div>
+                <!-- Dynamic Navigation Container -->
+                <div class="header-nav-container">
+                    <!-- Detail Screen Header Content -->
+                    <div id="header-nav-detail" class="header-dynamic-nav hidden">
+                        <button class="back-btn" id="btn-back-to-home">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                            Ana Sayfa
+                        </button>
+                        <div class="detail-title-area">
+                            <span class="detail-symbol" id="detail-symbol-icon">.</span>
+                            <h2 id="detail-mark-name">Nokta</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="header-nav-right-area">
+                <!-- Keep global progress text hidden for DOM reference safety -->
+                <span id="global-progress-text" style="display: none;">0%</span>
+
+                <!-- General Activity Header Navigation Content -->
+                <div id="header-nav-ga" class="header-dynamic-nav hidden">
+                    <button class="back-btn" id="btn-ga-back-to-home">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                        Ana Sayfa
+                    </button>
+                    
+                    <div class="ga-header-nav-group">
+                        <button class="nav-control-btn compact-btn" id="btn-prev-question" title="Önceki Soru">←</button>
+                        <select id="ga-question-select" class="nav-select compact-select">
+                            <!-- Options 1 to 1000 dynamically populated -->
+                        </select>
+                        <button class="nav-control-btn compact-btn" id="btn-next-question" title="Sonraki Soru">→</button>
+                        
+                        <input type="number" id="ga-question-input" min="1" max="1000" class="nav-input compact-input" placeholder="No">
+                        <span class="ga-progress-indicator compact-indicator" id="ga-progress-number">Soru 1 / 1000</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- SCREEN 1: HOME SCREEN -->
+        <main id="home-screen" class="screen active">
+            <div class="home-split-layout">
+                <!-- Left Side: General Activity card -->
+                <div class="home-left-col">
+                    <section class="general-activity-hero">
+                        <div class="hero-glass-card" id="btn-general-activity">
+                            <div class="hero-content">
+                                <div class="hero-badge">ÖZEL ETKİNLİK</div>
+                                <h2>Görsel Paragraf Pratiği</h2>
+                                <p>Orijinal kitap sayfalarından kesilmiş görsel paragraflardaki noktalama işaretlerini tamamlayın.</p>
+                                <div class="hero-stats">
+                                    <span id="general-activity-progress">Soru: 0 / 1600</span>
+                                </div>
+                            </div>
+                            <div class="hero-action">
+                                <span class="action-btn">Hemen Başla <span class="arrow">→</span></span>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                
+                <!-- Right Side: Punctuation Cards Grid -->
+                <div class="home-right-col">
+                    <div class="section-title">
+                        <h2>Noktalama İşaretleri Dünyası</h2>
+                        <p>İşaretleri seçerek kurallarını öğrenin ve test edin.</p>
+                    </div>
+                    <section class="punctuation-grid" id="punctuation-cards-container">
+                        <!-- Dynamically populated from JS -->
+                    </section>
+                </div>
+            </div>
+        </main>
+
+        <!-- SCREEN 2: DETAIL/SLIDER SCREEN -->
+        <main id="detail-screen" class="screen">
+            <div class="detail-content-layout">
+                <!-- Left Panel: Rule and Examples -->
+                <div class="rule-panel glass-card">
+                    <div class="step-indicator">
+                        <div class="rule-nav-wrapper">
+                            <button id="btn-prev-rule" class="rule-nav-btn" title="Önceki Kural">←</button>
+                            <span id="current-step-badge">Kural 1 / 2</span>
+                            <button id="btn-next-rule" class="rule-nav-btn" title="Sonraki Kural">→</button>
+                        </div>
+                        <div class="step-dots" id="step-dots-container"></div>
+                    </div>
+                    
+                    <div class="rule-box">
+                        <h3 id="rule-title">Cümlenin Sonu</h3>
+                        <p id="rule-definition">Tamamlanmış cümlelerin sonuna konur.</p>
+                    </div>
+
+                    <div class="examples-section">
+                        <h4>Kuralın Örnekleri</h4>
+                        <ul class="examples-list" id="rule-examples-list">
+                            <!-- Dynamically populated -->
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Right Panel: Practice Question -->
+                <div class="quiz-panel glass-card">
+                    <div class="quiz-header">
+                        <span class="quiz-badge">Kural Pratiği</span>
+                        <h3>Bilgini Test Et</h3>
+                    </div>
+                    
+                    <div class="question-box">
+                        <p id="quiz-question-text">Soru metni buraya gelecek?</p>
+                    </div>
+
+                    <div class="options-container" id="quiz-options-container">
+                        <!-- 4 multiple choice buttons -->
+                    </div>
+
+                    <div class="feedback-area hidden" id="quiz-feedback-area">
+                        <div class="feedback-status-icon"></div>
+                        <div class="feedback-content">
+                            <h5 id="feedback-title">Doğru!</h5>
+                            <p id="feedback-explanation">Açıklama metni.</p>
+                        </div>
+                    </div>
+
+                    <div class="quiz-actions">
+                        <button class="action-btn next-step-btn" id="btn-next-step" disabled>
+                            Devam Et <span class="arrow">→</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- SCREEN 3: GENERAL ACTIVITY SCREEN -->
+        <main id="general-activity-screen" class="screen">
+
+
+
+
+            <!-- Main Paragraph Area -->
+            <div class="ga-content-layout">
+                <div class="paragraph-card glass-card">
+                    <div class="paragraph-image-wrapper">
+                        <div class="paragraph-image-container" id="ga-paragraph-image-container">
+                            <img id="ga-paragraph-image" src="" alt="Edebi Paragraf Görseli">
+                            <!-- Dynamic absolute overlay boxes will be appended here -->
+                        </div>
+                    </div>
+
+                    <div class="paragraph-footer">
+                        <div class="source-info">
+                            <span class="source-icon">📖</span>
+                            <cite id="ga-paragraph-source">Yazar - Kitap</cite>
+                        </div>
+                        <div class="universe-symbols" id="universe-symbols-container">
+                            <!-- 6 options dynamically populated -->
+                        </div>
+                        <div class="footer-actions">
+                            <button class="footer-next-btn" id="btn-next-question-footer" title="Sonraki Soru">Sonraki →</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

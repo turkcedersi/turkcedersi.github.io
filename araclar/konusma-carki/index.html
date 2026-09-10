@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Konuşma Çarkı</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0f1117;
+    --surface: #1a1d2e;
+    --surface2: #252842;
+    --border: #2e3257;
+    --accent1: #f7c948;
+    --accent2: #ff6b6b;
+    --accent3: #6bcbff;
+    --accent4: #a78bfa;
+    --text: #e8eaf6;
+    --text-muted: #7b80a8;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Nunito', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+  }
+
+  /* Animated background */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: 
+      radial-gradient(ellipse at 15% 20%, rgba(167,139,250,0.08) 0%, transparent 50%),
+      radial-gradient(ellipse at 85% 80%, rgba(107,203,255,0.08) 0%, transparent 50%),
+      radial-gradient(ellipse at 50% 50%, rgba(247,201,72,0.04) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .app {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 900px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  /* Header */
+  .header {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+    background: linear-gradient(135deg, var(--accent1), var(--accent3));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Mode selector */
+  #mode-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .mode-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+  }
+
+  .mode-cards {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .mode-card {
+    background: var(--surface);
+    border: 2px solid var(--border);
+    border-radius: 20px;
+    padding: 36px 44px;
+    cursor: pointer;
+    transition: all 0.25s;
+    text-align: center;
+    min-width: 220px;
+  }
+
+  .mode-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--accent1);
+    box-shadow: 0 16px 40px rgba(247,201,72,0.15);
+  }
+
+  .mode-card.sandalye:hover {
+    border-color: var(--accent2);
+    box-shadow: 0 16px 40px rgba(255,107,107,0.15);
+  }
+
+  .mode-icon {
+    font-size: 3.5rem;
+    margin-bottom: 14px;
+    display: block;
+  }
+
+  .mode-card h2 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+  }
+
+  .mode-card p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+  }
+
+  /* Wheel screen */
+  #wheel-screen {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 16px;
+  }
+
+  .mode-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--surface);
+    border: 1.5px solid var(--border);
+    border-radius: 50px;
+    padding: 6px 18px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-bottom: 4px;
+  }
+
+  .mode-badge:hover { border-color: var(--accent3); color: var(--accent3); }
+
+  .wheel-container {
+    position: relative;
+    width: 380px;
+    height: 380px;
+  }
+
+  #wheel-canvas {
+    border-radius: 50%;
+    filter: drop-shadow(0 0 30px rgba(107,203,255,0.2));
+    transition: filter 0.3s;
+  }
+
+  #wheel-canvas.spinning {
+    filter: drop-shadow(0 0 50px rgba(247,201,72,0.4));
+  }
+
+  /* Pointer */
+  .wheel-pointer {
+    position: absolute;
+    top: 50%;
+    right: -18px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 18px solid transparent;
+    border-bottom: 18px solid transparent;
+    border-right: 36px solid var(--accent1);
+    filter: drop-shadow(0 0 8px rgba(247,201,72,0.8));
+    z-index: 10;
+  }
+
+  /* Center button */
+  .wheel-center-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: var(--bg);
+    border: 3px solid var(--accent1);
+    color: var(--accent1);
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 800;
+    cursor: pointer;
+    z-index: 20;
+    transition: all 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+
+  .wheel-center-btn:hover:not(:disabled) {
+    background: var(--accent1);
+    color: var(--bg);
+    transform: translate(-50%, -50%) scale(1.08);
+    box-shadow: 0 0 20px rgba(247,201,72,0.5);
+  }
+
+  .wheel-center-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+  .wheel-center-btn .btn-icon { font-size: 1.3rem; }
+
+  /* Result */
+  .result-box {
+    background: var(--surface);
+    border: 2px solid var(--border);
+    border-radius: 20px;
+    padding: 28px 36px;
+    text-align: center;
+    width: 100%;
+    max-width: 520px;
+    min-height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .result-box.revealed {
+    border-color: var(--accent1);
+    box-shadow: 0 0 40px rgba(247,201,72,0.15);
+  }
+
+  .result-box.sandalye-result.revealed {
+    border-color: var(--accent2);
+    box-shadow: 0 0 40px rgba(255,107,107,0.15);
+  }
+
+  .result-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+  }
+
+  .result-text {
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: var(--text);
+    line-height: 1.3;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.5s 0.2s;
+  }
+
+  .result-text.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .result-hint {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-top: 10px;
+    opacity: 0;
+    transition: opacity 0.4s 0.5s;
+    font-style: italic;
+  }
+
+  .result-hint.show { opacity: 1; }
+
+  /* Instruction */
+  .instruction {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    text-align: center;
+  }
+
+  /* Confetti pieces */
+  .confetti-piece {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    top: -20px;
+    border-radius: 2px;
+    animation: confettiFall linear forwards;
+    pointer-events: none;
+    z-index: 9999;
+  }
+
+  @keyframes confettiFall {
+    0%   { transform: translateY(0) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(110vh) rotate(720deg); opacity: 0; }
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .fade-in { animation: fadeIn 0.5s ease forwards; }
+</style>
+</head>
+<body>
+<div class="app">
+
+  <div class="header">
+    <h1>🎙️ Konuşma Çarkı</h1>
+  </div>
+
+  <!-- MOD SEÇİM EKRANI -->
+  <div id="mode-screen">
+    <div class="mode-title">Etkinlik modunu seç</div>
+    <div class="mode-cards">
+      <div class="mode-card" onclick="startMode('serbest')">
+        <span class="mode-icon">🎰</span>
+        <h2>Serbest Konu</h2>
+        <p>Çarktan çıkan konuyu<br>özgürce konuş</p>
+      </div>
+      <div class="mode-card sandalye" onclick="startMode('sandalye')">
+        <span class="mode-icon">🔥</span>
+        <h2>Sıcak Sandalye</h2>
+        <p>Bir karaktere bürün,<br>sorulara cevap ver</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ÇARK EKRANI -->
+  <div id="wheel-screen">
+    <div class="mode-badge" onclick="goBack()">← Moda Dön</div>
+
+    <div class="wheel-container">
+      <canvas id="wheel-canvas" width="380" height="380"></canvas>
+      <div class="wheel-pointer"></div>
+      <button class="wheel-center-btn" id="spin-btn" onclick="spinWheel()">
+        <span class="btn-icon">🎯</span>
+        ÇEVİR
+      </button>
+    </div>
+
+    <div class="result-box" id="result-box">
+      <div class="result-label" id="result-label">Çarkı çevir!</div>
+      <div class="result-text" id="result-text">—</div>
+      <div class="result-hint" id="result-hint"></div>
+    </div>
+
+    <div class="instruction" id="instruction">Öğrenci tahtaya gelsin ve çevir butonuna bassın 👆</div>
+  </div>
+
+</div>
+
+<script>
+// ─── VERİLER ───────────────────────────────────────────────────
+const serbestKonular = [
+  "Teknoloji hayatı kolaylaştırır mı, zorlaştırır mı?",
+  "En büyük hayalim",
+  "Geçmişe gitseydin hangi dönemi seçerdin?",
+  "Kitap mı, film mi?",
+  "Şehirde mi kırda mı yaşamak isterdin?",
+  "Okulda değiştirilmesini istediğin bir kural",
+  "En çok sevdiğin mevsim ve nedeni",
+  "Bir süper gücün olsaydı ne olurdu?",
+  "Sosyal medya gençlere yararlı mı zararlı mı?",
+  "Bir robot arkadaşın olsaydı nasıl olurdu?",
+  "Yabancı bir dil öğrenmek neden önemli?",
+  "Türkiye'nin en güzel şehri hangisi?",
+  "Spor mu, sanat mı?",
+  "Hayvanlar konuşabilseydi ne söylerdi?",
+  "En sevdiğin Türk yemeği ve hatırası",
+  "Para mı, mutluluk mu?",
+  "Uzayda yaşamak ister miydin?",
+  "Tarihte bir gün yaşayabilseydin hangi anı seçerdin?",
+  "İklim değişikliği ile mücadelede neler yapılabilir?",
+  "Okul tatilleri daha uzun olmalı mı?",
+  "En büyük korkularımızla nasıl yüzleşiriz?",
+  "Hayvanları evcil tutmak doğru mu?",
+  "Müzik insanı nasıl etkiler?",
+  "Bir ülke kur, nasıl yönetirdin?",
+  "Telefon olmadan bir gün geçirebilir misin?",
+  "Dünyanın en büyük sorunu ne?",
+  "Kitaplar neden hâlâ önemli?",
+  "Bir gün öğretmen olsan ne öğretirdin?",
+  "Doğa mı, şehir mi?",
+  "Başarı için en önemli özellik nedir?",
+];
+
+const sandalyeKarakterler = [
+  { ad: "Bir kaşif", ipucu: "Bilinmezlere adım atan, tehlikeyi göze alan biri" },
+  { ad: "Bir şef", ipucu: "Lezzetlerin peşinde koşan, mutfağı evi sayan biri" },
+  { ad: "Bir uzay astronotu", ipucu: "Yıldızların arasında dolaşmış, Dünya'ya bakmış biri" },
+  { ad: "Bir dedektif", ipucu: "Sırları çözen, hiçbir ipucuyu kaçırmayan biri" },
+  { ad: "Bir müzisyen", ipucu: "Notalarla düşünen, sahneyi seven biri" },
+  { ad: "Bir doktor", ipucu: "Hayat kurtaran, umut dağıtan biri" },
+  { ad: "Bir çevre aktivisti", ipucu: "Doğayı koruyan, değişim için savaşan biri" },
+  { ad: "Bir sporcu", ipucu: "Şampiyonluk için ter döken, sınır tanımayan biri" },
+  { ad: "Bir yazılımcı", ipucu: "Kodlarla dünya değiştiren, gece çalışan biri" },
+  { ad: "Bir gazeteci", ipucu: "Gerçeği arayan, mikrofonu hiç bırakmayan biri" },
+  { ad: "Bir çiftçi", ipucu: "Toprağa emek veren, sabahın sesiyle kalkan biri" },
+  { ad: "Bir ressam", ipucu: "Renkleri dil olarak kullanan, tuvale ruh üfleyen biri" },
+  { ad: "Bir pilot", ipucu: "Gökyüzü onun koridoru, bulutlar onun manzarası" },
+  { ad: "Bir arkeolog", ipucu: "Toprağın altındaki tarihi gün yüzüne çıkaran biri" },
+  { ad: "Bir öğretmen", ipucu: "Hayatları şekillendiren, iz bırakan biri" },
+  { ad: "Bir robot", ipucu: "Yapay zekâyla düşünen, insanları gözlemleyen biri" },
+  { ad: "Bir denizci", ipucu: "Okyanusları aşan, fırtınalara meydan okuyan biri" },
+  { ad: "Bir mimar", ipucu: "Boş arsadan hayaller inşa eden biri" },
+  { ad: "Bir orman bekçisi", ipucu: "Doğanın sessiz koruyucusu, hayvanların dostu" },
+  { ad: "Bir yönetmen", ipucu: "Kamerayla hikâye anlatan, sahneyi yöneten biri" },
+  { ad: "Bir şair", ipucu: "Duyguları kelimelere döken, ritmi seven biri" },
+  { ad: "Bir köy muhtarı", ipucu: "Küçük bir kasabanın büyük sorumluluklarını taşıyan biri" },
+  { ad: "Bir biyolog", ipucu: "Canlıların sırlarını araştıran, doğayı seven biri" },
+  { ad: "Bir YouTuber", ipucu: "Kameranın karşısında doğal olan, içerik üreten biri" },
+  { ad: "Bir itfaiyeci", ipucu: "Aleve koşan, kahramanlığı meslek edinen biri" },
+  { ad: "Bir yazar", ipucu: "Hayal gücüyle dünyalar kuran, kelimelerle oynayan biri" },
+  { ad: "Bir terapist", ipucu: "Dinleyen, anlayan, yol gösteren biri" },
+  { ad: "Bir gezgin", ipucu: "Her şehirde bir iz bırakan, yolda kendini bulan biri" },
+  { ad: "Bir politikacı", ipucu: "Karar veren, toplumu yönetmeye çalışan biri" },
+  { ad: "Bir çocuk doktoru", ipucu: "Küçük hastaların en büyük güvencesi" },
+];
+
+// ─── DURUM ─────────────────────────────────────────────────────
+let currentMode = null;
+let isSpinning = false;
+let currentAngle = 0;
+let items = [];
+let colors = [];
+
+// ─── RENK PALETLERİ ────────────────────────────────────────────
+const serbestColors = [
+  '#6bcbff','#a78bfa','#f7c948','#ff6b6b','#6bffb8',
+  '#ff9f68','#c4b5fd','#fbbf24','#34d399','#f472b6',
+];
+const sandalyeColors = [
+  '#ff6b6b','#ff9f68','#fbbf24','#f472b6','#fb7185',
+  '#ff6b6b','#ff9f68','#fbbf24','#f472b6','#fb7185',
+];
+
+// ─── MOD BAŞLAT ────────────────────────────────────────────────
+function startMode(mode) {
+  currentMode = mode;
+  document.getElementById('mode-screen').style.display = 'none';
+  const ws = document.getElementById('wheel-screen');
+  ws.style.display = 'flex';
+  ws.classList.add('fade-in');
+
+  if (mode === 'serbest') {
+    items = serbestKonular.map(k => shortenLabel(k));
+    colors = generateColors(items.length, serbestColors);
+    document.getElementById('result-label').textContent = 'KONU';
+    document.querySelector('.wheel-pointer').style.borderRightColor = '#6bcbff';
+    document.querySelector('.wheel-center-btn').style.borderColor = '#6bcbff';
+    document.querySelector('.wheel-center-btn').style.color = '#6bcbff';
+  } else {
+    items = sandalyeKarakterler.map(k => k.ad);
+    colors = generateColors(items.length, sandalyeColors);
+    document.getElementById('result-label').textContent = 'KARAKTERİN';
+    document.querySelector('.wheel-pointer').style.borderRightColor = '#ff6b6b';
+    document.querySelector('.wheel-center-btn').style.borderColor = '#ff6b6b';
+    document.querySelector('.wheel-center-btn').style.color = '#ff6b6b';
+    document.getElementById('result-box').classList.add('sandalye-result');
+  }
+
+  drawWheel();
+}
+
+function shortenLabel(text) {
+  return text.length > 26 ? text.substring(0, 24) + '…' : text;
+}
+
+function generateColors(count, palette) {
+  const result = [];
+  for (let i = 0; i < count; i++) result.push(palette[i % palette.length]);
+  return result;
+}
+
+function goBack() {
+  currentMode = null;
+  isSpinning = false;
+  document.getElementById('wheel-screen').style.display = 'none';
+  document.getElementById('mode-screen').style.display = 'flex';
+  document.getElementById('result-text').textContent = '—';
+  document.getElementById('result-text').classList.remove('show');
+  document.getElementById('result-hint').classList.remove('show');
+  document.getElementById('result-box').classList.remove('revealed','sandalye-result');
+  document.getElementById('result-label').textContent = 'Çarkı çevir!';
+  document.getElementById('spin-btn').disabled = false;
+}
+
+// ─── ÇARK ÇİZ ─────────────────────────────────────────────────
+function drawWheel(highlightIndex = -1) {
+  const canvas = document.getElementById('wheel-canvas');
+  const ctx = canvas.getContext('2d');
+  const cx = canvas.width / 2;
+  const cy = canvas.height / 2;
+  const r = cx - 6;
+  const total = items.length;
+  const arc = (2 * Math.PI) / total;
+
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  // Outer glow ring
+  ctx.save();
+  ctx.beginPath();
+  ctx.arc(cx, cy, r + 4, 0, 2 * Math.PI);
+  ctx.strokeStyle = 'rgba(107,203,255,0.15)';
+  ctx.lineWidth = 8;
+  ctx.stroke();
+  ctx.restore();
+
+  for (let i = 0; i < total; i++) {
+    const startAngle = currentAngle + i * arc;
+    const endAngle = startAngle + arc;
+
+    // Slice
+    ctx.beginPath();
+    ctx.moveTo(cx, cy);
+    ctx.arc(cx, cy, r, startAngle, endAngle);
+    ctx.closePath();
+    ctx.fillStyle = i === highlightIndex
+      ? lightenColor(colors[i], 40)
+      : colors[i];
+    ctx.fill();
+    ctx.strokeStyle = 'rgba(15,17,23,0.4)';
+    ctx.lineWidth = 1.5;
+    ctx.stroke();
+
+    // Text
+    ctx.save();
+    ctx.translate(cx, cy);
+    ctx.rotate(startAngle + arc / 2);
+    ctx.textAlign = 'right';
+    ctx.fillStyle = 'rgba(15,17,23,0.9)';
+    ctx.font = `bold ${getFontSize(total)}px Nunito`;
+    ctx.shadowColor = 'rgba(255,255,255,0.2)';
+    ctx.shadowBlur = 2;
+
+    const label = items[i];
+    const maxR = r - 12;
+    ctx.fillText(label, maxR, 5);
+    ctx.restore();
+  }
+
+  // Center circle
+  ctx.beginPath();
+  ctx.arc(cx, cy, 36, 0, 2 * Math.PI);
+  ctx.fillStyle = '#0f1117';
+  ctx.fill();
+  ctx.strokeStyle = 'rgba(107,203,255,0.3)';
+  ctx.lineWidth = 2;
+  ctx.stroke();
+}
+
+function getFontSize(count) {
+  if (count <= 12) return 12;
+  if (count <= 20) return 10;
+  return 9;
+}
+
+function lightenColor(hex, amount) {
+  const num = parseInt(hex.slice(1), 16);
+  const r = Math.min(255, (num >> 16) + amount);
+  const g = Math.min(255, ((num >> 8) & 0xff) + amount);
+  const b = Math.min(255, (num & 0xff) + amount);
+  return `rgb(${r},${g},${b})`;
+}
+
+// ─── ÇARK ÇEVİR ────────────────────────────────────────────────
+function spinWheel() {
+  if (isSpinning) return;
+  isSpinning = true;
+
+  const btn = document.getElementById('spin-btn');
+  btn.disabled = true;
+
+  // Reset result
+  const rt = document.getElementById('result-text');
+  const rh = document.getElementById('result-hint');
+  const rb = document.getElementById('result-box');
+  rt.classList.remove('show');
+  rh.classList.remove('show');
+  rb.classList.remove('revealed');
+  document.getElementById('result-label').textContent = 'Çarkı çevir!';
+  rt.textContent = '—';
+
+  const canvas = document.getElementById('wheel-canvas');
+  canvas.classList.add('spinning');
+
+  const totalItems = items.length;
+  const arc = (2 * Math.PI) / totalItems;
+
+  // Random spin
+  const extraRotations = (5 + Math.random() * 5) * 2 * Math.PI;
+  const targetOffset = Math.random() * 2 * Math.PI;
+  const totalRotation = extraRotations + targetOffset;
+
+  const duration = 3500 + Math.random() * 1000;
+  const startTime = performance.now();
+  const startAngle = currentAngle;
+
+  function easeOut(t) {
+    return 1 - Math.pow(1 - t, 4);
+  }
+
+  function animate(now) {
+    const elapsed = now - startTime;
+    const t = Math.min(elapsed / duration, 1);
+    const eased = easeOut(t);
+
+    currentAngle = startAngle + totalRotation * eased;
+    drawWheel();
+
+    if (t < 1) {
+      requestAnimationFrame(animate);
+    } else {
+      canvas.classList.remove('spinning');
+
+      // Normalize angle
+      const normalAngle = ((currentAngle % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI);
+
+      // Pointer is at 3 o'clock (right) → angle = 0 in canvas coords
+      // We need to find which slice the pointer hits
+      // Pointer at angle 0, slices start at currentAngle
+      // Hit slice index: (0 - currentAngle) / arc
+      const pointerAngle = 0; // right side (3 o'clock)
+      const relAngle = ((pointerAngle - normalAngle) % (2 * Math.PI) + 2 * Math.PI) % (2 * Math.PI);
+      const selectedIndex = Math.floor(relAngle / arc) % totalItems;
+
+      drawWheel(selectedIndex);
+      showResult(selectedIndex);
+
+      isSpinning = false;
+      btn.disabled = false;
+    }
+  }
+
+  requestAnimationFrame(animate);
+}
+
+function showResult(index) {
+  const rb = document.getElementById('result-box');
+  const rt = document.getElementById('result-text');
+  const rh = document.getElementById('result-hint');
+  const rl = document.getElementById('result-label');
+
+  rb.classList.add('revealed');
+
+  if (currentMode === 'serbest') {
+    // Show full topic
+    const fullTopic = serbestKonular[index];
+    rl.textContent = 'KONU';
+    rt.textContent = fullTopic;
+    rh.textContent = 'Konuşmaya hazır mısın? 1-2 dakika konuş!';
+  } else {
+    const karakter = sandalyeKarakterler[index];
+    rl.textContent = 'SEN BİR';
+    rt.textContent = karakter.ad.toUpperCase();
+    rh.textContent = '💬 ' + karakter.ipucu + ' — Sınıf sana soru soracak!';
+  }
+
+  setTimeout(() => { rt.classList.add('show'); }, 100);
+  setTimeout(() => { rh.classList.add('show'); }, 300);
+
+  // Confetti
+  launchConfetti();
+}
+
+// ─── KONFETİ ──────────────────────────────────────────────────
+function launchConfetti() {
+  const confettiColors = ['#f7c948','#ff6b6b','#6bcbff','#a78bfa','#6bffb8','#ff9f68'];
+  for (let i = 0; i < 60; i++) {
+    setTimeout(() => {
+      const el = document.createElement('div');
+      el.className = 'confetti-piece';
+      el.style.left = Math.random() * 100 + 'vw';
+      el.style.background = confettiColors[Math.floor(Math.random() * confettiColors.length)];
+      el.style.width = (6 + Math.random() * 8) + 'px';
+      el.style.height = (6 + Math.random() * 8) + 'px';
+      el.style.borderRadius = Math.random() > 0.5 ? '50%' : '2px';
+      el.style.animationDuration = (2 + Math.random() * 2) + 's';
+      el.style.animationDelay = (Math.random() * 0.5) + 's';
+      document.body.appendChild(el);
+      setTimeout(() => el.remove(), 4000);
+    }, i * 20);
+  }
+}
+
+// ─── BAŞLANGIÇ ─────────────────────────────────────────────────
+document.getElementById('wheel-screen').style.display = 'none';
+</script>
+</body>
+</html>
