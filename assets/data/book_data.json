@@ -13297,6 +13297,1254 @@
           }
         ]
       }
+    ],
+    "23": [
+      {
+        "id": "p23_hazirlik",
+        "title": "Hazırlık Vakti: Tiyatro Kavramları",
+        "button": {
+          "left": 5.5,
+          "top": 7.5
+        },
+        "items": [
+          {
+            "type": "lines",
+            "left": 17.5,
+            "top": 13.6,
+            "width": 20.0,
+            "height": 2.2,
+            "text": "Sahne ve Perde"
+          },
+          {
+            "type": "lines",
+            "left": 42.0,
+            "top": 13.6,
+            "width": 20.0,
+            "height": 2.2,
+            "text": "Oyuncu ve Rol"
+          },
+          {
+            "type": "lines",
+            "left": 66.5,
+            "top": 13.6,
+            "width": 20.0,
+            "height": 2.2,
+            "text": "Dekor ve Kostüm"
+          }
+        ]
+      }
+    ],
+    "25": [
+      {
+        "id": "p25_etk1",
+        "title": "1. Etkinlik: Kelime Anlamları ve Anahtar Kelimeler",
+        "button": {
+          "left": 5.5,
+          "top": 8.8
+        },
+        "items": [
+          {
+            "type": "lines",
+            "left": 20.5,
+            "top": 28.5,
+            "width": 17.0,
+            "height": 2.2,
+            "text": "hayalbaz"
+          },
+          {
+            "type": "lines",
+            "left": 20.5,
+            "top": 38.9,
+            "width": 17.0,
+            "height": 2.2,
+            "text": "doğaçlama"
+          },
+          {
+            "type": "lines",
+            "left": 20.5,
+            "top": 49.5,
+            "width": 17.0,
+            "height": 2.2,
+            "text": "taşlama"
+          },
+          {
+            "type": "lines",
+            "left": 20.5,
+            "top": 60.0,
+            "width": 17.0,
+            "height": 2.2,
+            "text": "geleneksel"
+          },
+          {
+            "type": "lines",
+            "left": 20.5,
+            "top": 70.6,
+            "width": 17.0,
+            "height": 2.2,
+            "text": "meddah"
+          },
+          {
+            "type": "badge",
+            "left": 10.5,
+            "top": 87.6,
+            "width": 16.0,
+            "height": 2.5,
+            "text": "geleneksel"
+          },
+          {
+            "type": "badge",
+            "left": 31.2,
+            "top": 87.6,
+            "width": 16.0,
+            "height": 2.5,
+            "text": "meddah"
+          },
+          {
+            "type": "badge",
+            "left": 52.0,
+            "top": 87.6,
+            "width": 16.0,
+            "height": 2.5,
+            "text": "hayalbaz"
+          },
+          {
+            "type": "badge",
+            "left": 72.8,
+            "top": 87.6,
+            "width": 16.0,
+            "height": 2.5,
+            "text": "doğaçlama"
+          }
+        ]
+      }
+    ],
+    "26": [
+      {
+        "id": "p26_etk3",
+        "title": "3. Etkinlik: Tiyatro Türleri Karşılaştırma Tablosu",
+        "button": {
+          "left": 5.5,
+          "top": 41.5
+        },
+        "items": [
+          {
+            "type": "box",
+            "left": 69.9,
+            "top": 50.5,
+            "width": 19.3,
+            "height": 4.0,
+            "text": "Canlı oyuncular (Kavuklu, Pişekâr vb.) oynar."
+          },
+          {
+            "type": "box",
+            "left": 30.2,
+            "top": 55.2,
+            "width": 19.3,
+            "height": 5.8,
+            "text": "Halkı eğlendirmek, güldürürken düşündürmek ve ibretlik kıssalar sunmak."
+          },
+          {
+            "type": "box",
+            "left": 50.1,
+            "top": 55.2,
+            "width": 19.3,
+            "height": 5.8,
+            "text": "Seyirciyi güldürmek, eğlendirmek ve toplumsal aksaklıkları hicvetmek."
+          },
+          {
+            "type": "box",
+            "left": 69.9,
+            "top": 55.2,
+            "width": 19.3,
+            "height": 5.8,
+            "text": "Seyirciyi güldürerek eğlendirmek ve hoşça vakit geçirtmek."
+          },
+          {
+            "type": "box",
+            "left": 30.2,
+            "top": 61.6,
+            "width": 19.3,
+            "height": 5.8,
+            "text": "Günlük olaylar, efsaneler, masallar ve kahramanlık öyküleri."
+          },
+          {
+            "type": "box",
+            "left": 50.1,
+            "top": 61.6,
+            "width": 19.3,
+            "height": 5.8,
+            "text": "Mahalle yaşayışı, esnaf ve evlenme töreleri, toplumsal taşlamalar."
+          },
+          {
+            "type": "box",
+            "left": 69.9,
+            "top": 61.6,
+            "width": 19.3,
+            "height": 5.8,
+            "text": "Mizahi yanlış anlamalar, halk tipleri ve komik çatışmalar."
+          },
+          {
+            "type": "box",
+            "left": 30.2,
+            "top": 68.0,
+            "width": 19.3,
+            "height": 5.8,
+            "text": "Yazılı bir metin yoktur, anlatıcının doğaçlamasına (tuluat) dayanır."
+          },
+          {
+            "type": "box",
+            "left": 50.1,
+            "top": 68.0,
+            "width": 19.3,
+            "height": 5.8,
+            "text": "Yazılı metin bulunmaz, ana hatlar çerçevesinde doğaçlama oynatılır."
+          },
+          {
+            "type": "box",
+            "left": 69.9,
+            "top": 68.0,
+            "width": 19.3,
+            "height": 5.8,
+            "text": "Yazılı oyun metni yoktur, tuluat (doğaçlama) yoluyla canlandırılır."
+          },
+          {
+            "type": "box",
+            "left": 30.2,
+            "top": 74.4,
+            "width": 19.3,
+            "height": 5.8,
+            "text": "Metinde açık bir tarih belirtilmemiştir (yüzyıllar boyunca sürmüştür)."
+          },
+          {
+            "type": "box",
+            "left": 50.1,
+            "top": 74.4,
+            "width": 19.3,
+            "height": 5.8,
+            "text": "Metinde ortaya çıkış tarihine dair bilgi verilmemiştir."
+          },
+          {
+            "type": "box",
+            "left": 69.9,
+            "top": 74.4,
+            "width": 19.3,
+            "height": 5.8,
+            "text": "16-17. yüzyıllardaki kol oyunlarından doğmuş, 19. yüzyılda adını almıştır."
+          }
+        ]
+      }
+    ],
+    "27": [
+      {
+        "id": "p27_etk5",
+        "title": "5. Etkinlik: Afiş Çözümleme (Bölüm A)",
+        "button": {
+          "left": 5.5,
+          "top": 38.5
+        },
+        "items": [
+          {
+            "type": "lines",
+            "left": 47.0,
+            "top": 87.3,
+            "width": 42.0,
+            "height": 2.2,
+            "text": "Etkinliği düzenleyen resmî kurumu (Kültür ve Turizm Bakanlığı)"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 90.5,
+            "width": 78.5,
+            "height": 2.2,
+            "text": "belirterek afişe güvenilirlik ve ciddiyet kazandırmaktadır (tek başına anlam oluşturma)."
+          }
+        ]
+      }
+    ],
+    "28": [
+      {
+        "id": "p28_etk5_cont",
+        "title": "5. Etkinlik: Afiş Çözümleme Devamı",
+        "button": {
+          "left": 5.5,
+          "top": 7.0
+        },
+        "items": [
+          {
+            "type": "lines",
+            "left": 51.5,
+            "top": 6.4,
+            "width": 37.5,
+            "height": 2.2,
+            "text": "Katılımcıların etkinlik hakkında dijital ortamda detaylı bilgiye"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 9.0,
+            "width": 78.5,
+            "height": 2.2,
+            "text": "ve içeriklere ulaşmasını sağlamaktadır (anlamı destekleme ve genişletme)."
+          },
+          {
+            "type": "lines",
+            "left": 39.0,
+            "top": 12.6,
+            "width": 50.0,
+            "height": 2.2,
+            "text": "Yunus Emre'nin doğruluk ve dürüstlük üzerine felsefesini aktararak"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 15.1,
+            "width": 78.5,
+            "height": 2.2,
+            "text": "törenin temasını ve manevi derinliğini yansıtmaktadır (anlamı destekleme)."
+          },
+          {
+            "type": "lines",
+            "left": 63.0,
+            "top": 18.7,
+            "width": 26.0,
+            "height": 2.2,
+            "text": "Anılacak kişinin kim olduğunu"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 21.3,
+            "width": 78.5,
+            "height": 2.2,
+            "text": "doğrudan gösterir; görsel ve isim afişin ana odağıdır (eş anlam oluşturma)."
+          },
+          {
+            "type": "lines",
+            "left": 57.0,
+            "top": 24.7,
+            "width": 32.0,
+            "height": 2.2,
+            "text": "Törenin yapılacağı kesin tarihi ve"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 27.4,
+            "width": 78.5,
+            "height": 2.2,
+            "text": "etkinlik yerini belirterek katılımcıları bilgilendirir (tek başına anlam oluşturma)."
+          },
+          {
+            "type": "lines",
+            "left": 59.0,
+            "top": 31.0,
+            "width": 30.0,
+            "height": 2.2,
+            "text": "Etkinliğin amacının bir anma töreni"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 33.5,
+            "width": 78.5,
+            "height": 2.2,
+            "text": "olduğunu net ve vurucu şekilde açıklar (tek başına anlam oluşturma)."
+          }
+        ]
+      },
+      {
+        "id": "p28_etk6",
+        "title": "6. Etkinlik: Süheyl Ünver Dinleme/İzleme",
+        "button": {
+          "left": 5.5,
+          "top": 56.0
+        },
+        "items": [
+          {
+            "type": "lines",
+            "left": 32.0,
+            "top": 66.8,
+            "width": 15.5,
+            "height": 2.2,
+            "text": "Ord. Prof. Dr. Süheyl Ünver"
+          },
+          {
+            "type": "lines",
+            "left": 13.0,
+            "top": 69.7,
+            "width": 33.5,
+            "height": 2.2,
+            "text": "(Tıp hekimi, tıp tarihçisi, tezhip"
+          },
+          {
+            "type": "lines",
+            "left": 13.0,
+            "top": 72.5,
+            "width": 33.5,
+            "height": 2.2,
+            "text": "ve minyatür ustası, kültür insanı)."
+          },
+          {
+            "type": "lines",
+            "left": 69.5,
+            "top": 66.8,
+            "width": 17.5,
+            "height": 2.2,
+            "text": "Süheyl Ünver'in hayatı,"
+          },
+          {
+            "type": "lines",
+            "left": 54.0,
+            "top": 69.7,
+            "width": 33.0,
+            "height": 2.2,
+            "text": "çalışma disiplini, geleneksel Türk"
+          },
+          {
+            "type": "lines",
+            "left": 54.0,
+            "top": 72.5,
+            "width": 33.0,
+            "height": 2.2,
+            "text": "sanatlarına ve medeniyetimize katkıları."
+          },
+          {
+            "type": "lines",
+            "left": 54.5,
+            "top": 78.9,
+            "width": 32.5,
+            "height": 2.2,
+            "text": "Unutulmaya yüz tutmuş tezhip, minyatür"
+          },
+          {
+            "type": "lines",
+            "left": 13.0,
+            "top": 81.7,
+            "width": 74.0,
+            "height": 2.2,
+            "text": "ve ebru gibi geleneksel tezyini sanatlarımızı yeniden canlandırmıştır."
+          },
+          {
+            "type": "lines",
+            "left": 13.0,
+            "top": 84.6,
+            "width": 74.0,
+            "height": 2.2,
+            "text": "İstanbul'un tarihî ve mimari zenginliklerini defterlerine çizerek arşivlemiştir."
+          },
+          {
+            "type": "lines",
+            "left": 13.0,
+            "top": 87.5,
+            "width": 74.0,
+            "height": 2.2,
+            "text": "Çok sayıda öğrenci yetiştirerek bu sanatların günümüze aktarılmasını sağlamıştır."
+          }
+        ]
+      }
+    ],
+    "29": [
+      {
+        "id": "p29_etk6_b",
+        "title": "6. Etkinlik B: Metnin Bölümleri",
+        "button": {
+          "left": 5.5,
+          "top": 12.5
+        },
+        "items": [
+          {
+            "type": "lines",
+            "left": 17.5,
+            "top": 17.0,
+            "width": 71.5,
+            "height": 2.2,
+            "text": "Süheyl Ünver'in hekimliği ve bilim insanı kimliği tanıtılarak"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 19.5,
+            "width": 78.5,
+            "height": 2.2,
+            "text": "sanatla ve geleneksel kültürle olan bağına dikkat çekilmektedir."
+          },
+          {
+            "type": "lines",
+            "left": 20.0,
+            "top": 23.1,
+            "width": 69.0,
+            "height": 2.2,
+            "text": "Sanatçının tezhip, minyatür ve resim alanındaki titiz çalışmaları,"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 25.7,
+            "width": 78.5,
+            "height": 2.2,
+            "text": "tuttuğu binlerce sayfalık kültür defterleri ve İstanbul sevgisi anlatılarak"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 28.2,
+            "width": 78.5,
+            "height": 2.2,
+            "text": "geleneksel Türk sanatlarını canlandırma azmi örneklerle sunulmaktadır."
+          },
+          {
+            "type": "lines",
+            "left": 18.5,
+            "top": 31.8,
+            "width": 70.5,
+            "height": 2.2,
+            "text": "Süheyl Ünver'in 'Meşgale, elbette medeniyetimizdir.' sözü vurgulanarak"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 34.4,
+            "width": 78.5,
+            "height": 2.2,
+            "text": "onun mirasının Türk kültür ve sanat hayatına kattığı ölümsüz değer"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 37.0,
+            "width": 78.5,
+            "height": 2.2,
+            "text": "ve yetiştirdiği öğrencilerin önemi özetlenmektedir."
+          }
+        ]
+      },
+      {
+        "id": "p29_etk7_a",
+        "title": "7. Etkinlik A: Sanatçı Tanıtım Ölçütleri",
+        "button": {
+          "left": 5.5,
+          "top": 57.0
+        },
+        "items": [
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 86.5,
+            "width": 21.5,
+            "height": 2.2,
+            "text": "Sanatçının İlham Kaynakları ve Felsefesi"
+          },
+          {
+            "type": "lines",
+            "left": 35.5,
+            "top": 86.5,
+            "width": 53.5,
+            "height": 2.2,
+            "text": "Eserlerini üretirken beslendiği medeniyet değerleri, tarihe duyduğu saygı ve çalışma disiplini vb."
+          }
+        ]
+      }
+    ],
+    "30": [
+      {
+        "id": "p30_etk7_b",
+        "title": "7. Etkinlik B: Ölçütler ve İçerikte Verilen Bilgiler",
+        "button": {
+          "left": 5.5,
+          "top": 12.0
+        },
+        "items": [
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 18.4,
+            "width": 21.5,
+            "height": 2.2,
+            "text": "Kişisel Bilgiler"
+          },
+          {
+            "type": "lines",
+            "left": 35.5,
+            "top": 18.4,
+            "width": 53.5,
+            "height": 2.2,
+            "text": "1898 İstanbul doğumlu hekim, tıp tarihçisi ve geleneksel sanat ustasıdır."
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 23.6,
+            "width": 21.5,
+            "height": 2.2,
+            "text": "Sanat Anlayışı"
+          },
+          {
+            "type": "lines",
+            "left": 35.5,
+            "top": 23.6,
+            "width": 53.5,
+            "height": 2.2,
+            "text": "Sanatı medeniyetin meşgalesi saymış, tezhibi ve minyatürü yaşatmıştır."
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 28.8,
+            "width": 21.5,
+            "height": 2.2,
+            "text": "Önemli Eserleri"
+          },
+          {
+            "type": "lines",
+            "left": 35.5,
+            "top": 28.8,
+            "width": 53.5,
+            "height": 2.2,
+            "text": "Kültür defterleri, binlerce tezhip, minyatür ve tıp tarihi eserleri."
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 33.9,
+            "width": 21.5,
+            "height": 2.2,
+            "text": "Alana Katkısı"
+          },
+          {
+            "type": "lines",
+            "left": 35.5,
+            "top": 33.9,
+            "width": 53.5,
+            "height": 2.2,
+            "text": "Geleneksel tezyini sanatları canlandırmış, pek çok usta yetiştirmiştir."
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 39.0,
+            "width": 21.5,
+            "height": 2.2,
+            "text": "Felsefesi ve İlhamı"
+          },
+          {
+            "type": "lines",
+            "left": 35.5,
+            "top": 39.0,
+            "width": 53.5,
+            "height": 2.2,
+            "text": "Türk medeniyetine, kültür mirasına ve üretime olan sonsuz inancı."
+          }
+        ]
+      }
+    ],
+    "32": [
+      {
+        "id": "p32_plan",
+        "title": "Tartışma Paragrafı: Büyük Grup Planı",
+        "button": {
+          "left": 5.5,
+          "top": 64.0
+        },
+        "items": [
+          {
+            "type": "lines",
+            "left": 36.5,
+            "top": 66.0,
+            "width": 52.5,
+            "height": 2.2,
+            "text": "Büyük sanat eserleri ortaya koymak için sadece yetenek yetmez;"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 69.1,
+            "width": 78.5,
+            "height": 2.2,
+            "text": "yıllar süren sabırlı bir emek, tecrübe ve disiplinli çalışma şarttır."
+          },
+          {
+            "type": "lines",
+            "left": 28.0,
+            "top": 72.7,
+            "width": 61.0,
+            "height": 2.2,
+            "text": "Mimar Sinan en büyük şaheseri Selimiye'yi ustalık döneminde (80 yaşında)"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 75.3,
+            "width": 78.5,
+            "height": 2.2,
+            "text": "inşa etmiş, geleneksel ebru ve hat ustaları onlarca yıllık birikimle olgunlaşmıştır."
+          },
+          {
+            "type": "lines",
+            "left": 28.5,
+            "top": 78.8,
+            "width": 60.5,
+            "height": 2.2,
+            "text": "Bazı insanların doğuştan üstün yetenekli olduğu ve hiçbir deneyim olmadan"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 81.4,
+            "width": 78.5,
+            "height": 2.2,
+            "text": "kısa sürede çığır açan başyapıtlar üretebileceği düşüncesi."
+          },
+          {
+            "type": "lines",
+            "left": 32.5,
+            "top": 84.4,
+            "width": 56.5,
+            "height": 2.2,
+            "text": "İşlenmeyen ham yetenek çabuk tükenir; sanatın teknik incelikleri,"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 87.5,
+            "width": 78.5,
+            "height": 2.2,
+            "text": "derinliği ve kalıcılığı ancak uzun yılların emeği ve tecrübesiyle kazanılır."
+          }
+        ]
+      }
+    ],
+    "33": [
+      {
+        "id": "p33_taslak",
+        "title": "Tartışma Paragrafı: Büyük Grup Taslağı",
+        "button": {
+          "left": 5.5,
+          "top": 14.5
+        },
+        "items": [
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 13.0,
+            "width": 77.0,
+            "height": 2.2,
+            "text": "Toplumda bazı insanlar, büyük bir sanatçı olmak için yalnızca doğuştan gelen"
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 15.6,
+            "width": 77.0,
+            "height": 2.2,
+            "text": "bir yeteneğin yeterli olduğunu, yıllarca çalışmaya gerek olmadığını savunurlar."
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 18.1,
+            "width": 77.0,
+            "height": 2.2,
+            "text": "Oysa bu düşünce sanatın doğasını ve tarihsel gerçeğini göz ardı eden eksik"
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 20.7,
+            "width": 77.0,
+            "height": 2.2,
+            "text": "bir yaklaşımdır. Gerçekte büyük eserler vermek, ham yetenekten ziyade uzun yıllar"
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 23.3,
+            "width": 77.0,
+            "height": 2.2,
+            "text": "boyunca bıkmadan usanmadan sergilenen sabır, emek ve birikimin sonucudur."
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 25.9,
+            "width": 77.0,
+            "height": 2.2,
+            "text": "Nitekim tarihteki büyük ustaların hayatlarına baktığımızda bunu açıkça görürüz."
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 28.5,
+            "width": 77.0,
+            "height": 2.2,
+            "text": "Örneğin Mimar Sinan, dünya mimarlık tarihine geçen başyapıtı Selimiye Camisi'ni"
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 31.0,
+            "width": 77.0,
+            "height": 2.2,
+            "text": "mesleğindeki elli yılı aşkın birikim ve tecrübenin ardından, seksen yaşında inşa etmiştir."
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 33.6,
+            "width": 77.0,
+            "height": 2.2,
+            "text": "Aynı şekilde tezhip ve hat gibi geleneksel sanatlarımızda bir ustanın kendi özgün"
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 36.2,
+            "width": 77.0,
+            "height": 2.2,
+            "text": "üslubunu bulması onlarca yıllık çıraklık ve kalfalık emeğiyle mümkün olabilmektedir."
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 38.7,
+            "width": 77.0,
+            "height": 2.2,
+            "text": "Sonuç olarak işlenmeyen ve sabırla yoğrulmayan yetenek sönmeye mahkûmdur;"
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 41.3,
+            "width": 77.0,
+            "height": 2.2,
+            "text": "kalıcı ve evrensel bir sanat eseri ancak yılların tecrübe süzgecinden süzülerek doğar."
+          }
+        ]
+      }
+    ],
+    "34": [
+      {
+        "id": "p34_plan",
+        "title": "Tartışma Paragrafı: Küçük Grup Planı",
+        "button": {
+          "left": 5.5,
+          "top": 12.0
+        },
+        "items": [
+          {
+            "type": "lines",
+            "left": 36.5,
+            "top": 10.2,
+            "width": 52.5,
+            "height": 2.2,
+            "text": "Yapay zekâ hızlı melodiler üretse de insan sanatçının ruhunu,"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 12.8,
+            "width": 78.5,
+            "height": 2.2,
+            "text": "yaşanmış duygularını ve samimi hissiyatını asla taklit edemez."
+          },
+          {
+            "type": "lines",
+            "left": 27.5,
+            "top": 16.3,
+            "width": 61.5,
+            "height": 2.2,
+            "text": "Müzik bir matematik hesabı değil; sevinç, acı ve hasret gibi"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 18.9,
+            "width": 78.5,
+            "height": 2.2,
+            "text": "insani deneyimlerin sesle buluşmasıdır; dinleyici eserdeki yaşanmışlığı hisseder."
+          },
+          {
+            "type": "lines",
+            "left": 28.5,
+            "top": 22.4,
+            "width": 60.5,
+            "height": 2.2,
+            "text": "Yapay zekânın milyonlarca şarkıyı tarayarak kusursuz besteler"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 25.0,
+            "width": 78.5,
+            "height": 2.2,
+            "text": "yapacağı ve bestecilerin yerini bütünüyle alacağı iddiası."
+          },
+          {
+            "type": "lines",
+            "left": 31.5,
+            "top": 28.6,
+            "width": 57.5,
+            "height": 2.2,
+            "text": "Yapay zekâ geçmiş verileri taklit eder; kendi bilinci, vicdanı,"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 31.2,
+            "width": 78.5,
+            "height": 2.2,
+            "text": "kalp atışı ve hüznü olmadığı için sanata özgün bir ruh üfleyemez."
+          }
+        ]
+      },
+      {
+        "id": "p34_taslak",
+        "title": "Tartışma Paragrafı: Küçük Grup Taslağı",
+        "button": {
+          "left": 5.5,
+          "top": 44.0
+        },
+        "items": [
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 48.0,
+            "width": 77.0,
+            "height": 2.2,
+            "text": "Günümüzde teknolojinin hızla gelişmesiyle birlikte yapay zekânın sanatçıların"
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 50.6,
+            "width": 77.0,
+            "height": 2.2,
+            "text": "yerini alacağı ve yakın gelecekte tüm müzikleri üreteceği iddia edilmektedir."
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 53.1,
+            "width": 77.0,
+            "height": 2.2,
+            "text": "İlk bakışta yapay zekâ algoritmaları saniyeler içinde kusursuz ritimler ve melodiler"
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 55.7,
+            "width": 77.0,
+            "height": 2.2,
+            "text": "oluşturabilmektedir. Ancak bu yaklaşım, sanatın en temel cevheri olan insan ruhunu"
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 58.3,
+            "width": 77.0,
+            "height": 2.2,
+            "text": "ve duygusal derinliği bütünüyle göz ardı etmektedir. Sanat, yalnızca notaların kusursuz"
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 60.8,
+            "width": 77.0,
+            "height": 2.2,
+            "text": "dizilimi değil; yaşanan sevinçlerin, dökülen gözyaşlarının ve derin özlemlerin yansımasıdır."
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 63.4,
+            "width": 77.0,
+            "height": 2.2,
+            "text": "Bir bağlama ustasının teline dokunurken hissettiği samimi kederi ya da bir neyzenin"
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 66.0,
+            "width": 77.0,
+            "height": 2.2,
+            "text": "nefesindeki derinliği hiçbir yapay kod kopyalayamaz. Yapay zekâ sadece geçmiş"
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 68.6,
+            "width": 77.0,
+            "height": 2.2,
+            "text": "verileri harmanlayan başarılı bir taklitçidir; oysa sanat özgün bir yaratımdır."
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 71.2,
+            "width": 77.0,
+            "height": 2.2,
+            "text": "Bu sebeple yapay zekâ müzisyenlere bir araç olabilir ama gerçek sanatçıların"
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 73.8,
+            "width": 77.0,
+            "height": 2.2,
+            "text": "yerini asla dolduramaz; çünkü sanatın kalbi ancak bir insanın kalbiyle atabilir."
+          }
+        ]
+      }
+    ],
+    "35": [
+      {
+        "id": "p35_plan",
+        "title": "9. Etkinlik: Bireysel Tartışma Paragrafı Planı",
+        "button": {
+          "left": 5.5,
+          "top": 20.5
+        },
+        "items": [
+          {
+            "type": "lines",
+            "left": 36.5,
+            "top": 39.2,
+            "width": 52.5,
+            "height": 2.2,
+            "text": "Her birey sanatla ilgilenip zevk alabilir ancak gerçek bir sanatçı olmak"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 41.8,
+            "width": 78.5,
+            "height": 2.2,
+            "text": "özel bir estetik duyuş, yaratıcı hayal gücü ve özgün bir yetenek gerektirir."
+          },
+          {
+            "type": "lines",
+            "left": 28.0,
+            "top": 45.4,
+            "width": 61.0,
+            "height": 2.2,
+            "text": "Herkes resim yapabilir, enstrüman çalabilir fakat çok az insan"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 47.9,
+            "width": 78.5,
+            "height": 2.2,
+            "text": "İtrî, Neşet Ertaş veya Yunus Emre gibi ölümsüz ve özgün eserler bırakabilir."
+          },
+          {
+            "type": "lines",
+            "left": 28.5,
+            "top": 51.5,
+            "width": 60.5,
+            "height": 2.2,
+            "text": "Yeterli eğitim verildiğinde ve çok çalışıldığında istisnasız herkesin"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 54.1,
+            "width": 78.5,
+            "height": 2.2,
+            "text": "büyük bir sanatçı ve dahi bir usta olabileceği düşüncesi."
+          },
+          {
+            "type": "lines",
+            "left": 31.5,
+            "top": 57.6,
+            "width": 57.5,
+            "height": 2.2,
+            "text": "Eğitim ve pratik insana teknik beceri kazandırır ancak sanatın ruhu olan"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 60.2,
+            "width": 78.5,
+            "height": 2.2,
+            "text": "özgün yaratıcılık, içsel ilham ve derin estetik kavrayış herkese bahşedilmemiştir."
+          }
+        ]
+      },
+      {
+        "id": "p35_taslak",
+        "title": "9. Etkinlik: Bireysel Taslak Metin",
+        "button": {
+          "left": 5.5,
+          "top": 66.5
+        },
+        "items": [
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 67.7,
+            "width": 77.0,
+            "height": 2.2,
+            "text": "Günümüzde bazı eğitimciler ve yazarlar, doğru teknik eğitim verildiğinde her insanın"
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 70.3,
+            "width": 77.0,
+            "height": 2.2,
+            "text": "büyük bir sanatçı olabileceğini, sanatın tamamen çalışmaya dayandığını iddia ederler."
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 72.8,
+            "width": 77.0,
+            "height": 2.2,
+            "text": "Kuşkusuz herkes sanatla bir hobi olarak ilgilenebilir, fırça tutabilir ya da bir şarkı"
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 75.4,
+            "width": 77.0,
+            "height": 2.2,
+            "text": "mırıldanabilir. Ne var ki 'sanatla ilgilenmek' ile 'sanatçı olmak' arasında aşılması güç"
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 78.0,
+            "width": 77.0,
+            "height": 2.2,
+            "text": "büyük bir fark vardır. Teknik beceri sonradan öğrenilebilir; fakat dünyayı farklı gören,"
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 80.6,
+            "width": 77.0,
+            "height": 2.2,
+            "text": "sıradan olanın ardındaki güzelliği keşfeden o derin estetik sezgi ve özgün yaratıcılık"
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 83.2,
+            "width": 77.0,
+            "height": 2.2,
+            "text": "her insanda bulunmaz. Bir Neşet Ertaş'ın gönül telinden dökülen ezgiyi ya da"
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 85.7,
+            "width": 77.0,
+            "height": 2.2,
+            "text": "Yunus Emre'nin samimiyetini yalnızca ders alarak ortaya koymak imkânsızdır."
+          }
+        ]
+      }
+    ],
+    "36": [
+      {
+        "id": "p36_duzenlenmis",
+        "title": "9. Etkinlik: Düzenlenmiş Metin (Final Hali)",
+        "button": {
+          "left": 5.5,
+          "top": 15.0
+        },
+        "items": [
+          {
+            "type": "lines",
+            "left": 20.0,
+            "top": 31.0,
+            "width": 68.0,
+            "height": 2.2,
+            "text": "Günümüzde sıkça dile getirilen 'Herkes sanatçı olabilir.' iddiası, sanatın doğasını"
+          },
+          {
+            "type": "lines",
+            "left": 13.0,
+            "top": 33.6,
+            "width": 75.0,
+            "height": 2.2,
+            "text": "ve felsefesini tam anlamıyla kavrayamamaktan kaynaklanan yanıltıcı bir görüştür."
+          },
+          {
+            "type": "lines",
+            "left": 13.0,
+            "top": 36.2,
+            "width": 75.0,
+            "height": 2.2,
+            "text": "Elbette eğitim ve yoğun çalışma, bireylere teknik bir ustalık kazandırabilir;"
+          },
+          {
+            "type": "lines",
+            "left": 13.0,
+            "top": 38.7,
+            "width": 75.0,
+            "height": 2.2,
+            "text": "bir insan çok çalışarak kusursuz bir heykel yontabilir veya bir enstrümanı hatasız çalabilir."
+          },
+          {
+            "type": "lines",
+            "left": 13.0,
+            "top": 41.3,
+            "width": 75.0,
+            "height": 2.2,
+            "text": "Ancak zanaat ile sanatı birbirinden ayıran temel unsur, esere üflenen o eşsiz ruhtur."
+          },
+          {
+            "type": "lines",
+            "left": 13.0,
+            "top": 43.9,
+            "width": 75.0,
+            "height": 2.2,
+            "text": "Gerçek sanatçı, sıradan olayların ardındaki derin manayı sezen, dünyayı alışılmışın"
+          },
+          {
+            "type": "lines",
+            "left": 13.0,
+            "top": 46.5,
+            "width": 75.0,
+            "height": 2.2,
+            "text": "dışında bir duyarlıkla algılayan ve bunu özgün bir üslupla somutlaştıran kişidir."
+          },
+          {
+            "type": "lines",
+            "left": 13.0,
+            "top": 49.0,
+            "width": 75.0,
+            "height": 2.2,
+            "text": "Nitekim bir Aşık Veysel'in sazındaki samimiyeti, bir Mimar Sinan'ın taşa kattığı zarafeti"
+          },
+          {
+            "type": "lines",
+            "left": 13.0,
+            "top": 51.6,
+            "width": 75.0,
+            "height": 2.2,
+            "text": "yalnızca kuralları ezberleyerek var etmek olanaksızdır. Çalışma teknik kapıyı açar,"
+          },
+          {
+            "type": "lines",
+            "left": 13.0,
+            "top": 54.2,
+            "width": 75.0,
+            "height": 2.2,
+            "text": "fakat o kapıdan içeri süzülen ilham ve duygu zenginliği tamamen doğuştan gelen bir cevherdir."
+          },
+          {
+            "type": "lines",
+            "left": 13.0,
+            "top": 56.7,
+            "width": 75.0,
+            "height": 2.2,
+            "text": "Kısacası herkes sanat yapabilir ama gerçek sanatçı olmak apayrı bir yaratılış armağanıdır."
+          }
+        ]
+      }
     ]
   },
   "book6_outcomes": {
@@ -13354,6 +14602,82 @@
     "22": [
       "T.O.7.1. Okumada materyal seçimini yönetebilme",
       "T.D.7.1. Dinlemede/izlemede materyal seçimini yönetebilme"
+    ],
+    "23": [
+      "T.K.7.2. Konuşmada yöntem ve teknik seçimlerini yönetebilme",
+      "T.K.7.13. Yorumunu sözlü olarak ifade edebilme",
+      "T.Y.7.16. Yazısını zenginleştirecek biçimde söz varlığını kullanabilme"
+    ],
+    "24": [
+      "T.O.7.2. Okumada strateji, yöntem ve teknik seçimlerini yönetebilme",
+      "T.O.7.5. Metnin yüzey anlamını belirleyebilme"
+    ],
+    "25": [
+      "T.O.7.4. Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme",
+      "T.O.7.20. Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme"
+    ],
+    "26": [
+      "T.O.7.5. Metnin yüzey anlamını belirleyebilme",
+      "T.O.7.9. Okuduklarını karşılaştırabilme",
+      "T.Y.7.7. Yazısında karşılaştırma yapabilme"
+    ],
+    "27": [
+      "T.O.7.5. Metnin yüzey anlamını belirleyebilme",
+      "T.O.7.8. Üst düzey çıkarımlar yoluyla metnin derin anlamını belirleyebilme",
+      "T.O.7.24. Metni eleştirebilme"
+    ],
+    "28": [
+      "T.O.7.8. Üst düzey çıkarımlar yoluyla metnin derin anlamını belirleyebilme",
+      "T.D.7.2. Dinlemede/izlemede strateji, yöntem ve teknik seçimlerini yönetebilme",
+      "T.D.7.5. Dinlediğinin/izlediğinin yüzey anlamını belirleyebilme",
+      "T.D.7.9. Dinlediğindeki/izlediğindeki unsurları sınıflandırabilme"
+    ],
+    "29": [
+      "T.D.7.6. Basit çıkarımlar yoluyla dinlediğinin/izlediğinin derin anlamını belirleyebilme",
+      "T.D.7.15. Bilgilendirici metinde düşünceyi geliştirme yollarını belirlemeye yönelik çözümleme yapabilme",
+      "T.Y.7.10. Yazılı olarak özetleyebilme",
+      "T.K.7.2. Konuşmada yöntem ve teknik seçimlerini yönetebilme"
+    ],
+    "30": [
+      "T.D.7.9. Dinlediğindeki/izlediğindeki unsurları sınıflandırabilme",
+      "T.Y.7.10. Yazılı olarak özetleyebilme",
+      "T.K.7.12. Konuşmasında sınıflandırma yapabilme",
+      "T.K.7.13. Yorumunu sözlü olarak ifade edebilme"
+    ],
+    "31": [
+      "T.Y.7.3. Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme",
+      "T.Y.7.15. Düşünceyi geliştirme yollarını kullanarak metni yapılandırabilme"
+    ],
+    "32": [
+      "T.Y.7.3. Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme",
+      "T.Y.7.15. Düşünceyi geliştirme yollarını kullanarak metni yapılandırabilme",
+      "T.O.7.24. Metni eleştirebilme"
+    ],
+    "33": [
+      "T.Y.7.3. Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme",
+      "T.Y.7.15. Düşünceyi geliştirme yollarını kullanarak metni yapılandırabilme",
+      "T.Y.7.16. Yazısını zenginleştirecek biçimde söz varlığını kullanabilme",
+      "T.Y.7.18. Uygun bağlantı ifadelerini kullanabilme"
+    ],
+    "34": [
+      "T.Y.7.3. Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme",
+      "T.Y.7.15. Düşünceyi geliştirme yollarını kullanarak metni yapılandırabilme",
+      "T.Y.7.16. Yazısını zenginleştirecek biçimde söz varlığını kullanabilme",
+      "T.Y.7.18. Uygun bağlantı ifadelerini kullanabilme"
+    ],
+    "35": [
+      "T.Y.7.3. Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme",
+      "T.Y.7.15. Düşünceyi geliştirme yollarını kullanarak metni yapılandırabilme",
+      "T.Y.7.16. Yazısını zenginleştirecek biçimde söz varlığını kullanabilme",
+      "T.Y.7.19. Yazım ve noktalama işaretleriyle ilgili kuralları uygulayabilme"
+    ],
+    "36": [
+      "T.Y.7.15. Düşünceyi geliştirme yollarını kullanarak metni yapılandırabilme",
+      "T.Y.7.16. Yazısını zenginleştirecek biçimde söz varlığını kullanabilme",
+      "T.Y.7.18. Uygun bağlantı ifadelerini kullanabilme",
+      "T.Y.7.19. Yazım ve noktalama işaretleriyle ilgili kuralları uygulayabilme",
+      "T.Y.7.20. Yazma sürecini değerlendirebilme",
+      "T.O.7.1. Okumada materyal seçimini yönetebilme"
     ]
   }
 }
