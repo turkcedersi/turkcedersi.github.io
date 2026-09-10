@@ -2152,10 +2152,11 @@ body::-webkit-scrollbar-thumb:hover {
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: calc(1.75 * var(--unit-h, 9.2px));
-  line-height: 1;
+  font-size: calc(1.5 * var(--unit-h, 9.2px));
+  line-height: 1.15;
   color: #1e3a8a;
   letter-spacing: 0.01rem;
+  padding: 2px 6px;
 }
 
 /* 2-Line Ruled Lines Style (Satırlar İçin) */
@@ -2167,14 +2168,19 @@ body::-webkit-scrollbar-thumb:hover {
   letter-spacing: 0.01rem;
 }
 
-/* 5-Line Box Style (Beyaz Not Kutusu İçin) */
+/* 5-Line Box Style (Beyaz Not Kutusu & Tablo Hücreleri İçin) */
 .inpage-ans-box {
-  font-size: calc(1.58 * var(--unit-h, 9.2px));
-  line-height: calc(2.54 * var(--unit-h, 9.2px));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: calc(1.35 * var(--unit-h, 9.2px));
+  line-height: calc(1.75 * var(--unit-h, 9.2px));
   color: #1e40af;
   text-align: left;
   letter-spacing: 0.01rem;
   white-space: pre-wrap;
+  padding: 3px 6px;
+  box-sizing: border-box;
 }
 
 /* Handwritten Checkmark / Tick Style (İşaretleme & Kutucuklar İçin) */

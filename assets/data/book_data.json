@@ -13429,107 +13429,107 @@
         "items": [
           {
             "type": "box",
-            "left": 69.9,
-            "top": 50.5,
-            "width": 19.3,
-            "height": 4.0,
-            "text": "Canlı oyuncular (Kavuklu, Pişekâr vb.) oynar."
+            "left": 69.8,
+            "top": 54.8,
+            "width": 19.4,
+            "height": 6.0,
+            "text": "Canlı oyuncular oynar (Kavuklu, Pişekâr vb.)."
           },
           {
             "type": "box",
             "left": 30.2,
-            "top": 55.2,
-            "width": 19.3,
-            "height": 5.8,
-            "text": "Halkı eğlendirmek, güldürürken düşündürmek ve ibretlik kıssalar sunmak."
+            "top": 61.3,
+            "width": 19.4,
+            "height": 6.0,
+            "text": "Halkı eğlendirmek, güldürürken düşündürmek ve ibretlik kıssalar anlatmak."
           },
           {
             "type": "box",
-            "left": 50.1,
-            "top": 55.2,
-            "width": 19.3,
-            "height": 5.8,
-            "text": "Seyirciyi güldürmek, eğlendirmek ve toplumsal aksaklıkları hicvetmek."
+            "left": 50.0,
+            "top": 61.3,
+            "width": 19.4,
+            "height": 6.0,
+            "text": "Halkı güldürürken toplumsal ve siyasal aksaklıkları taşlamak (eleştirmek)."
           },
           {
             "type": "box",
-            "left": 69.9,
-            "top": 55.2,
-            "width": 19.3,
-            "height": 5.8,
-            "text": "Seyirciyi güldürerek eğlendirmek ve hoşça vakit geçirtmek."
-          },
-          {
-            "type": "box",
-            "left": 30.2,
-            "top": 61.6,
-            "width": 19.3,
-            "height": 5.8,
-            "text": "Günlük olaylar, efsaneler, masallar ve kahramanlık öyküleri."
-          },
-          {
-            "type": "box",
-            "left": 50.1,
-            "top": 61.6,
-            "width": 19.3,
-            "height": 5.8,
-            "text": "Mahalle yaşayışı, esnaf ve evlenme töreleri, toplumsal taşlamalar."
-          },
-          {
-            "type": "box",
-            "left": 69.9,
-            "top": 61.6,
-            "width": 19.3,
-            "height": 5.8,
-            "text": "Mizahi yanlış anlamalar, halk tipleri ve komik çatışmalar."
+            "left": 69.8,
+            "top": 61.3,
+            "width": 19.4,
+            "height": 6.0,
+            "text": "Seyirciyi güldürerek eğlendirmek ve mizahi taşlamalar yapmak."
           },
           {
             "type": "box",
             "left": 30.2,
-            "top": 68.0,
-            "width": 19.3,
-            "height": 5.8,
+            "top": 67.7,
+            "width": 19.4,
+            "height": 6.0,
+            "text": "Acıklı, duygusal, dinsel ve kahramanlıkla ilgili olay ve hikâyeler."
+          },
+          {
+            "type": "box",
+            "left": 50.0,
+            "top": 67.7,
+            "width": 19.4,
+            "height": 6.0,
+            "text": "Mahalle yaşayışı, esnaf ve evlenme töreleri, toplumsal ve siyasal olaylar."
+          },
+          {
+            "type": "box",
+            "left": 69.8,
+            "top": 67.7,
+            "width": 19.4,
+            "height": 6.0,
+            "text": "Karagöz'e benzer konular, kalıplaşmış halk tipleri ve yanlış anlamalar."
+          },
+          {
+            "type": "box",
+            "left": 30.2,
+            "top": 74.2,
+            "width": 19.4,
+            "height": 6.0,
             "text": "Yazılı bir metin yoktur, anlatıcının doğaçlamasına (tuluat) dayanır."
           },
           {
             "type": "box",
-            "left": 50.1,
-            "top": 68.0,
-            "width": 19.3,
-            "height": 5.8,
-            "text": "Yazılı metin bulunmaz, ana hatlar çerçevesinde doğaçlama oynatılır."
+            "left": 50.0,
+            "top": 74.2,
+            "width": 19.4,
+            "height": 6.0,
+            "text": "Yazılı metin bulunmaz, tek bir kişinin (hayalbaz) yaratıcılığıyla doğaçlanır."
           },
           {
             "type": "box",
-            "left": 69.9,
-            "top": 68.0,
-            "width": 19.3,
-            "height": 5.8,
+            "left": 69.8,
+            "top": 74.2,
+            "width": 19.4,
+            "height": 6.0,
             "text": "Yazılı oyun metni yoktur, tuluat (doğaçlama) yoluyla canlandırılır."
           },
           {
             "type": "box",
             "left": 30.2,
-            "top": 74.4,
-            "width": 19.3,
-            "height": 5.8,
-            "text": "Metinde açık bir tarih belirtilmemiştir (yüzyıllar boyunca sürmüştür)."
+            "top": 80.6,
+            "width": 19.4,
+            "height": 6.0,
+            "text": "(Metinde bilgi verilmemiştir - Boş bırakılır)"
           },
           {
             "type": "box",
-            "left": 50.1,
-            "top": 74.4,
-            "width": 19.3,
-            "height": 5.8,
-            "text": "Metinde ortaya çıkış tarihine dair bilgi verilmemiştir."
+            "left": 50.0,
+            "top": 80.6,
+            "width": 19.4,
+            "height": 6.0,
+            "text": "(Metinde bilgi verilmemiştir - Boş bırakılır)"
           },
           {
             "type": "box",
-            "left": 69.9,
-            "top": 74.4,
-            "width": 19.3,
-            "height": 5.8,
-            "text": "16-17. yüzyıllardaki kol oyunlarından doğmuş, 19. yüzyılda adını almıştır."
+            "left": 69.8,
+            "top": 80.6,
+            "width": 19.4,
+            "height": 6.0,
+            "text": "16-17. yüzyıldaki kol oyunlarından doğmuş, adını 19. yüzyılda almıştır."
           }
         ]
       }
@@ -13824,23 +13824,23 @@
         "title": "7. Etkinlik A: Sanatçı Tanıtım Ölçütleri",
         "button": {
           "left": 5.5,
-          "top": 57.0
+          "top": 54.0
         },
         "items": [
           {
-            "type": "lines",
-            "left": 11.5,
-            "top": 86.5,
-            "width": 21.5,
-            "height": 2.2,
-            "text": "Sanatçının İlham Kaynakları ve Felsefesi"
+            "type": "badge",
+            "left": 10.3,
+            "top": 87.2,
+            "width": 23.5,
+            "height": 4.6,
+            "text": "İlham Kaynakları ve Felsefesi"
           },
           {
-            "type": "lines",
-            "left": 35.5,
-            "top": 86.5,
-            "width": 53.5,
-            "height": 2.2,
+            "type": "box",
+            "left": 34.6,
+            "top": 87.2,
+            "width": 55.0,
+            "height": 4.6,
             "text": "Eserlerini üretirken beslendiği medeniyet değerleri, tarihe duyduğu saygı ve çalışma disiplini vb."
           }
         ]
