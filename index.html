@@ -206,6 +206,17 @@
 
     <!-- VIEW 3: BOOK READER -->
     <section id="view-reader" class="view-section">
+
+      <!-- MOBILE: Hamburger Menu Button (Sol üst, sadece mobilde görünür) -->
+      <button class="mobile-menu-btn" id="mobile-menu-btn" title="Menüyü Aç/Kapat" aria-label="Menüyü Aç">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.2" stroke="currentColor" width="22" height="22">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5" />
+        </svg>
+      </button>
+
+      <!-- MOBILE: Sidebar Overlay (Arka plan karartma) -->
+      <div class="mobile-sidebar-overlay" id="mobile-sidebar-overlay"></div>
+
       <!-- LEFT SIDEBAR -->
       <aside class="sidebar" id="reader-sidebar">
         <div class="sidebar-header">
@@ -385,6 +396,22 @@
           </button>
         </div>
       </div>
+
+      <!-- MOBILE: Alt Sayfa Gezinme Bar -->
+      <div class="mobile-nav-bar" id="mobile-nav-bar">
+        <button class="mobile-nav-btn" id="mobile-btn-prev" title="Önceki Sayfa">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" width="22" height="22">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+          </svg>
+        </button>
+        <span class="mobile-nav-page-info" id="mobile-nav-page-info">12</span>
+        <button class="mobile-nav-btn" id="mobile-btn-next" title="Sonraki Sayfa">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" width="22" height="22">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+          </svg>
+        </button>
+      </div>
+
     </section>
 
   </div>

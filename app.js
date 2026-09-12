@@ -337,7 +337,71 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("touchcancel", dragEndTouch);
 
     window.addEventListener("resize", updatePageCssVariables);
+
+    // --- MOBİL: Hamburger Menü & Drawer Sidebar ---
+    const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+    const mobileSidebarOverlay = document.getElementById("mobile-sidebar-overlay");
+    const readerSidebar = document.getElementById("reader-sidebar");
+
+    function openMobileSidebar() {
+      if (readerSidebar) readerSidebar.classList.add("mobile-open");
+      if (mobileSidebarOverlay) mobileSidebarOverlay.classList.add("visible");
+    }
+
+    function closeMobileSidebar() {
+      if (readerSidebar) readerSidebar.classList.remove("mobile-open");
+      if (mobileSidebarOverlay) mobileSidebarOverlay.classList.remove("visible");
+    }
+
+    if (mobileMenuBtn) {
+      mobileMenuBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        if (readerSidebar && readerSidebar.classList.contains("mobile-open")) {
+          closeMobileSidebar();
+        } else {
+          openMobileSidebar();
+        }
+      });
+    }
+
+    if (mobileSidebarOverlay) {
+      mobileSidebarOverlay.addEventListener("click", () => {
+        closeMobileSidebar();
+      });
+    }
+
+    // Escape tuşu ile de kapanabilsin
+    window.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        closeMobileSidebar();
+      }
+    });
+
+    // --- MOBİL: Alt Navigasyon Bar Butonları ---
+    const mobileBtnPrev = document.getElementById("mobile-btn-prev");
+    const mobileBtnNext = document.getElementById("mobile-btn-next");
+
+    if (mobileBtnPrev) {
+      mobileBtnPrev.addEventListener("click", () => {
+        if (state.currentPage > 0) {
+          loadPage(state.currentPage - 1);
+        } else {
+          showToast("Zaten ilk sayfadasınız.");
+        }
+      });
+    }
+
+    if (mobileBtnNext) {
+      mobileBtnNext.addEventListener("click", () => {
+        if (state.currentPage < state.maxPages) {
+          loadPage(state.currentPage + 1);
+        } else {
+          showToast("Zaten son sayfadasınız.");
+        }
+      });
+    }
   }
+
 
   // --- VIEW ROUTING CONTROL ---
   function updateView() {
@@ -399,7 +463,15 @@ document.addEventListener("DOMContentLoaded", () => {
     state.currentPage = pageNumber;
     inputPage.value = getPageDisplayNumber(state.currentBook, pageNumber);
     updatePageIndicator();
-    
+
+    // Mobil alt nav bar sayfa bilgisini güncelle
+    const mobileNavPageInfo = document.getElementById("mobile-nav-page-info");
+    if (mobileNavPageInfo) {
+      const displayNum = getPageDisplayNumber(state.currentBook, pageNumber);
+      const maxDisplay = getPageDisplayNumber(state.currentBook, state.maxPages);
+      mobileNavPageInfo.textContent = `${displayNum} / ${maxDisplay}`;
+    }
+
     showLoading(true);
     
     // Set page image source based on current book

@@ -1189,40 +1189,8 @@ body::-webkit-scrollbar-thumb:hover {
   pointer-events: none;
 }
 
-/* MEDIA QUERIES FOR RESPONSIVENESS */
-@media (max-width: 900px) {
-  #view-reader {
-    flex-direction: column;
-  }
-  .sidebar {
-    width: 100%;
-    height: auto;
-    border-right: none;
-    border-bottom: 1px solid var(--border-glass);
-  }
-  .sidebar-content {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 15px;
-    padding: 15px;
-  }
-  .control-group {
-    flex: 1 1 200px;
-  }
-  .sidebar-guide {
-    display: none;
-  }
-  .modal-window {
-    width: 95%;
-    max-height: 90vh;
-  }
-  .modal-header {
-    padding: 20px;
-  }
-  .modal-body {
-    padding: 20px;
-  }
-}
+/* MEDIA QUERIES — Eski 900px kuralları aşağıdaki kapsamlı bloka taşındı */
+
 
 .answer-img {
   display: block;
@@ -1930,20 +1898,8 @@ body::-webkit-scrollbar-thumb:hover {
   cursor: url("assets/images/eraser-cursor.svg") 2 22, url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cpath d='M2 22 L16 8 L24 12 L16 22 Z' fill='none' stroke='%23ffffff' stroke-width='3.5' stroke-linejoin='round' stroke-linecap='round'/%3E%3Cpath d='M7 17 L16 8 L24 12 L17 19 Z' fill='%23f472b6' stroke='%230f172a' stroke-width='1.8' stroke-linejoin='round'/%3E%3Cpath d='M2 22 L7 17 L17 19 L16 22 Z' fill='%23e2e8f0' stroke='%230f172a' stroke-width='1.8' stroke-linejoin='round'/%3E%3Cline x1='2' y1='22' x2='16' y2='22' stroke='%230f172a' stroke-width='2.2' stroke-linecap='round'/%3E%3C/svg%3E") 2 22, default !important;
 }
 
-/* Responsive adjustments for modal */
-@media (max-width: 640px) {
-  .tools-grid {
-    grid-template-columns: 1fr;
-    padding: 16px;
-  }
-  .tools-modal-content {
-    max-height: 92vh;
-  }
-  .wb-container {
-    bottom: 16px;
-    right: 16px;
-  }
-}
+/* Responsive adjustments — Eski 640px kuralları aşağıdaki kapsamlı bloka taşındı */
+
 
 /* ==========================================================================
    IN-PAGE HANDWRITTEN ANSWERS LAYER (SAYFA İÇİ EL YAZISI CEVAP KATMANI)
@@ -2255,3 +2211,422 @@ body::-webkit-scrollbar-thumb:hover {
 .drawing-mode-active .qr-hotspot-link {
   pointer-events: none !important;
 }
+
+/* ==========================================================================
+   MOBİL UYUMLULUK — HAMBURGER MENÜ, DRAWER SIDEBAR, ALT NAVİGASYON
+   ========================================================================== */
+
+/* --- Hamburger Butonu (Sadece mobilde görünür) --- */
+.mobile-menu-btn {
+  display: none; /* Desktop'ta gizli */
+  position: fixed;
+  top: 14px;
+  left: 14px;
+  z-index: 5000;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(18, 20, 26, 0.85);
+  border: 1px solid var(--border-glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: var(--text-primary);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.mobile-menu-btn:hover {
+  border-color: var(--color-teal);
+  box-shadow: var(--shadow-glow);
+}
+
+.mobile-menu-btn svg {
+  stroke: var(--text-primary);
+  display: block;
+}
+
+/* --- Sidebar Overlay (Sadece mobilde, drawer açıkken arka karartma) --- */
+.mobile-sidebar-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(2px);
+  z-index: 3999;
+  opacity: 0;
+  transition: opacity var(--transition-medium);
+  pointer-events: none;
+}
+
+.mobile-sidebar-overlay.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* --- Mobil Alt Navigasyon Bar (Sadece mobilde görünür) --- */
+.mobile-nav-bar {
+  display: none; /* Desktop'ta gizli */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 4500;
+  height: 64px;
+  background: rgba(12, 14, 20, 0.92);
+  border-top: 1px solid var(--border-glass);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  padding: 0 20px;
+}
+
+.mobile-nav-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-glass);
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.mobile-nav-btn:hover,
+.mobile-nav-btn:active {
+  border-color: var(--color-teal);
+  box-shadow: var(--shadow-glow);
+  transform: scale(1.08);
+}
+
+.mobile-nav-btn svg {
+  stroke: var(--text-primary);
+  display: block;
+}
+
+.mobile-nav-page-info {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  min-width: 60px;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+/* ==========================================================================
+   RESPONSIVE BREAKPOINTS
+   ========================================================================== */
+
+/* --- TABLET (≤ 900px) — Mevcut davranış iyileştirildi --- */
+@media (max-width: 900px) {
+  /* Kitap okuma: sidebar tam genişlik + yatay scroll */
+  #view-reader {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid var(--border-glass);
+  }
+  .sidebar-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px;
+  }
+  .control-group {
+    flex: 1 1 200px;
+  }
+  .sidebar-guide {
+    display: none;
+  }
+  /* Modal boyutları */
+  .modal-window {
+    width: 95%;
+    max-height: 90vh;
+  }
+  .modal-header {
+    padding: 20px;
+  }
+  .modal-body {
+    padding: 20px;
+  }
+}
+
+/* --- MOBİL (≤ 768px) — Tam mobil deneyim --- */
+@media (max-width: 768px) {
+
+  /* Hamburger ve mobil overlay görünür */
+  .mobile-menu-btn {
+    display: flex;
+  }
+  .mobile-sidebar-overlay {
+    display: block;
+  }
+  /* Alt nav bar görünür */
+  .mobile-nav-bar {
+    display: flex;
+  }
+
+  /* Reader: Tam ekran, sidebar gizli, overflow düzeltildi */
+  #view-reader {
+    flex-direction: row;
+    overflow: hidden;
+  }
+
+  /* Sidebar: Soldan kayan drawer paneli */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 290px;
+    height: 100%;
+    z-index: 4000;
+    transform: translateX(-100%);
+    transition: transform var(--transition-medium);
+    border-right: 1px solid var(--border-glass);
+    border-bottom: none;
+    overflow-y: auto;
+  }
+
+  /* Sidebar açık durumu */
+  .sidebar.mobile-open {
+    transform: translateX(0);
+  }
+
+  /* Sidebar içerik: dikey düzen (tablet yatay düzeni yerine) */
+  .sidebar-content {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 20px;
+    padding: 20px;
+    overflow-y: auto;
+    flex: 1;
+  }
+
+  .control-group {
+    flex: none;
+  }
+
+  /* Outcomes listesi yüksekliği azaltıldı, scroll aktif */
+  .outcomes-list {
+    max-height: 200px;
+  }
+
+  /* Reader viewport: alt nav bar için alt boşluk bırak */
+  .reader-viewport {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 64px; /* alt nav bar yüksekliği */
+  }
+
+  /* Whiteboard FAB: alt nav bar ile çakışmasın */
+  .wb-container {
+    bottom: 78px;
+    right: 16px;
+  }
+
+  /* Whiteboard menüsü: mobilde daha dar */
+  .wb-menu {
+    width: 260px;
+  }
+
+  /* Modal: tam genişlik, yüksek */
+  .modal-window {
+    width: 100%;
+    max-width: 100%;
+    max-height: 92vh;
+    border-radius: 20px 20px 0 0;
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+  }
+}
+
+/* --- KÜÇÜK MOBİL (≤ 600px) --- */
+@media (max-width: 600px) {
+
+  /* === ANA EKRAN === */
+
+  /* Logo başlık küçültme */
+  .logo-text {
+    font-size: 2.4rem;
+    letter-spacing: 0.25rem;
+  }
+
+  .sub-logo-text {
+    font-size: 1.15rem;
+    margin-top: -5px;
+  }
+
+  .header-desc {
+    font-size: 0.95rem;
+  }
+
+  .main-header {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  /* Sınıf kartları: 2 kolonlu grid */
+  .grade-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 20px;
+  }
+
+  .grade-number {
+    font-size: 2.6rem;
+  }
+
+  .grade-title {
+    font-size: 1rem;
+    white-space: normal;
+  }
+
+  .grade-status {
+    font-size: 0.78rem;
+    white-space: normal;
+  }
+
+  .grade-card {
+    padding: 20px 10px;
+    border-radius: 16px;
+  }
+
+  .tools-card-emoji {
+    font-size: 3rem;
+  }
+
+  /* === KİTAP SEÇİM EKRANI === */
+
+  /* Kitap seçim başlığı küçültme */
+  .view-header h2 {
+    font-size: 1.35rem;
+  }
+
+  /* Kitap kartları: dikey düzen (kapak üstte, bilgi altta) */
+  .book-card {
+    flex-direction: column;
+    gap: 16px;
+    padding: 18px;
+    border-radius: 18px;
+  }
+
+  /* Kitap kapak mockup: yatay, kompakt */
+  .book-cover-mock {
+    width: 100%;
+    height: 120px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 14px;
+    padding: 12px 18px;
+    border-radius: 10px;
+  }
+
+  .cover-grade {
+    font-size: 2rem;
+  }
+
+  .cover-title {
+    font-size: 0.95rem;
+    letter-spacing: 0.08rem;
+    margin-top: 0;
+  }
+
+  .cover-subtitle {
+    font-size: 0.7rem;
+  }
+
+  .cover-author {
+    font-size: 0.6rem;
+  }
+
+  .book-grade-group {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .book-grade-group .book-card {
+    flex: none;
+    max-width: 100%;
+  }
+
+  /* === TÜRKÇE ATÖLYESİ MODAL === */
+  .tools-grid {
+    grid-template-columns: 1fr;
+    padding: 14px;
+    gap: 10px;
+  }
+
+  .tools-modal-content {
+    max-height: 92vh;
+    border-radius: 20px;
+  }
+
+  .tools-modal-content .modal-header {
+    padding: 16px 18px;
+  }
+
+  .tool-icon {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    font-size: 1.7rem;
+  }
+
+  .tool-details h4 {
+    font-size: 0.95rem;
+  }
+
+  .tool-details p {
+    font-size: 0.78rem;
+  }
+}
+
+/* --- ÇOK KÜÇÜK MOBİL (≤ 400px) --- */
+@media (max-width: 400px) {
+  .logo-text {
+    font-size: 2rem;
+    letter-spacing: 0.15rem;
+  }
+
+  .sub-logo-text {
+    font-size: 1rem;
+  }
+
+  .grade-card {
+    padding: 16px 8px;
+  }
+
+  .grade-number {
+    font-size: 2.2rem;
+  }
+
+  .grade-title {
+    font-size: 0.9rem;
+  }
+
+  .mobile-nav-bar {
+    height: 58px;
+    gap: 24px;
+  }
+
+  .wb-container {
+    bottom: 72px;
+  }
+}
+
