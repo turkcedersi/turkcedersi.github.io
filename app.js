@@ -336,7 +336,11 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("touchend", dragEndTouch);
     window.addEventListener("touchcancel", dragEndTouch);
 
-    window.addEventListener("resize", updatePageCssVariables);
+    window.addEventListener("resize", () => {
+      updatePageCssVariables();
+      // Ekran döndürme veya boyutu değişirse mobil elementleri güncelle
+      updateView();
+    });
 
     // --- MOBİL: Hamburger Menü & Drawer Sidebar ---
     const mobileMenuBtn = document.getElementById("mobile-menu-btn");
@@ -427,7 +431,21 @@ document.addEventListener("DOMContentLoaded", () => {
         booksViewTitle.textContent = `${state.currentGrade}. Sınıf Türkçe Ders Kitapları`;
       }
     }
+
+    // --- MOBİL: Hamburger ve Nav Bar sadece reader'da ve mobil ekranda göster ---
+    const isMobile = window.innerWidth <= 768;
+    const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+    const mobileNavBar = document.getElementById("mobile-nav-bar");
+    const isReader = state.currentView === "reader";
+
+    if (mobileMenuBtn) {
+      mobileMenuBtn.style.display = (isMobile && isReader) ? "flex" : "none";
+    }
+    if (mobileNavBar) {
+      mobileNavBar.style.display = (isMobile && isReader) ? "flex" : "none";
+    }
   }
+
 
   // --- PAGE NUMBER MAPPING HELPERS (SAYFA GEÇİŞİ) ---
   // 7. Sınıf (Kitap 5 ve 6) fiziksel kitaplarında İçindekiler 7. sayfadadır (6. sayfa boştur).
@@ -927,8 +945,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // --- ZOOM & PAN LOGIC ---
   function setZoom(val) {
-    state.zoom = Math.round(val * 100) / 100;
-    zoomValueText.textContent = `${Math.round(state.zoom * 100)}%`;
+    // Mobilde zoomMin dinamik (fit-zoom hesabına göre), masaüstünde sabit
+    const dynMin = state._mobileZoomMin !== undefined ? state._mobileZoomMin : state.zoomMin;
+    const clamped = Math.min(state.zoomMax, Math.max(dynMin, val));
+    state.zoom = Math.round(clamped * 100) / 100;
+    if (zoomValueText) zoomValueText.textContent = `${Math.round(state.zoom * 100)}%`;
     applyZoomAndPan();
   }
 
@@ -938,11 +959,38 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function resetZoomAndPan() {
-    state.zoom = 1.0;
+    const isMobile = window.innerWidth <= 768;
+    if (isMobile && pageImage.clientWidth > 0 && readerViewport.clientWidth > 0) {
+      // Sayfa tam ekrana sığacak zoom hesapla:
+      // displayWidth = pageImage.clientWidth * zoom * 2.25 = readerViewport.clientWidth
+      const fitZoom = readerViewport.clientWidth / (pageImage.clientWidth * 2.25);
+      const safeZoom = Math.max(0.05, fitZoom);
+      state.zoom = Math.round(safeZoom * 100) / 100;
+      // Minimum zoom: fit-zoom'un %80'i (biraz daha küçültmeye izin ver)
+      state._mobileZoomMin = Math.max(0.04, safeZoom * 0.8);
+      state.zoomMax = 3.0; // Mobilde daha fazla yakınlaştırma
+    } else {
+      state.zoom = 1.0;
+      state._mobileZoomMin = undefined;
+      state.zoomMax = 2.0;
+    }
     state.pan.x = 0;
     state.pan.y = 0;
-    zoomValueText.textContent = "100%";
+    if (zoomValueText) zoomValueText.textContent = `${Math.round(state.zoom * 100)}%`;
     applyZoomAndPan();
+  }
+
+  // Pan sınırlarını doğru hesapla (viewport-aware, negatif olmaz)
+  function getPanBounds() {
+    const scaleFactor = state.zoom * 2.25;
+    const scaledW = pageImage.clientWidth * scaleFactor;
+    const scaledH = pageImage.clientHeight * scaleFactor;
+    const vpW = readerViewport.clientWidth || window.innerWidth;
+    const vpH = readerViewport.clientHeight || window.innerHeight;
+    // Ne kadar taşıyorsa o kadar pan izni ver + küçük buffer
+    const boundX = Math.max(0, (scaledW - vpW) / 2 + 30);
+    const boundY = Math.max(0, (scaledH - vpH) / 2 + 30);
+    return { boundX, boundY };
   }
 
   // Mouse Dragging Panning
@@ -959,11 +1007,7 @@ document.addEventListener("DOMContentLoaded", () => {
     state.pan.x = e.clientX - state.dragStart.x;
     state.pan.y = e.clientY - state.dragStart.y;
     
-    // Bounds check to avoid panning out of view
-    const scaleFactor = state.zoom * 2.25;
-    const boundX = (scaleFactor - 1) * pageImage.clientWidth * 0.5;
-    const boundY = (scaleFactor - 1) * pageImage.clientHeight * 0.5;
-    
+    const { boundX, boundY } = getPanBounds();
     state.pan.x = Math.max(-boundX, Math.min(boundX, state.pan.x));
     state.pan.y = Math.max(-boundY, Math.min(boundY, state.pan.y));
     
@@ -977,7 +1021,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Touch Support Panning & Two-Finger Pinch Zoom (Akıllı Tahta İki Parmak Yakınlaştırma)
+  // Touch Support Panning & Two-Finger Pinch Zoom
   function dragStartTouch(e) {
     if (whiteboardState.isActive) return;
     if (e.touches.length === 2) {
@@ -1000,31 +1044,29 @@ document.addEventListener("DOMContentLoaded", () => {
   function dragMoveTouch(e) {
     if (whiteboardState.isActive) return;
     
-    // Two-finger pinch to zoom on book page only (sidebar remains fixed)
+    // Two-finger pinch to zoom
     if (e.touches.length === 2 && state.isPinching) {
-      if (e.cancelable) e.preventDefault(); // Stop entire browser page from zooming
+      if (e.cancelable) e.preventDefault();
       const currentDist = Math.hypot(
         e.touches[0].clientX - e.touches[1].clientX,
         e.touches[0].clientY - e.touches[1].clientY
       );
       if (state.pinchStartDist > 0) {
         const factor = currentDist / state.pinchStartDist;
-        const targetZoom = Math.min(state.zoomMax, Math.max(state.zoomMin, state.pinchStartZoom * factor));
+        const dynMin = state._mobileZoomMin !== undefined ? state._mobileZoomMin : state.zoomMin;
+        const targetZoom = Math.min(state.zoomMax, Math.max(dynMin, state.pinchStartZoom * factor));
         setZoom(targetZoom);
       }
       return;
     }
 
     if (!state.isDragging || e.touches.length !== 1) return;
-    if (e.cancelable) e.preventDefault(); // Prevent page scrolling during drag
+    if (e.cancelable) e.preventDefault();
     const touch = e.touches[0];
     state.pan.x = touch.clientX - state.dragStart.x;
     state.pan.y = touch.clientY - state.dragStart.y;
     
-    const scaleFactor = state.zoom * 2.25;
-    const boundX = (scaleFactor - 1) * pageImage.clientWidth * 0.5;
-    const boundY = (scaleFactor - 1) * pageImage.clientHeight * 0.5;
-    
+    const { boundX, boundY } = getPanBounds();
     state.pan.x = Math.max(-boundX, Math.min(boundX, state.pan.x));
     state.pan.y = Math.max(-boundY, Math.min(boundY, state.pan.y));
     

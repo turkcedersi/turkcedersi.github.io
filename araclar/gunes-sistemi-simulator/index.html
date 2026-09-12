@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Güneş Sistemi - Etkileşimli Simülasyon</title>
+  <link rel="stylesheet" href="css/styles.css?v=1.6">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#02050e">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Güneş Sistemi">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+</head>
+
+<body>
+
+
+  <div id="errbox"></div>
+  <canvas id="space"></canvas>
+
+  <div id="scale-banner" class="panel">1:1 BOYUT ÖLÇEĞİ — cisimler birbirine göre gerçek boyutta · mesafeler sıkıştırılmış</div>
+  <div id="eclipse-banner" class="panel"></div>
+
+  <div id="season-panel" class="panel">
+    <button id="season-close" title="Kapat" aria-label="Mevsim panelini kapat">×</button>
+    <div id="season-title-badge">🌍 MEVSİM ŞEMASI</div>
+    <div class="sp-content">
+      <div class="sp-block">
+        <div class="sp-cap">YILLIK YÖRÜNGE</div>
+        <canvas id="season-orbit" width="280" height="300"></canvas>
+      </div>
+      <div class="sp-block">
+        <div class="sp-cap">EKSEN EĞİKLİĞİ · 23,4°</div>
+        <canvas id="season-earth" width="260" height="300"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel" id="controls">
+    <div class="ctl-header">
+      <h1>GÜNEŞ SİSTEMİ <span>// YÖRÜNGE SİMÜLASYONU</span></h1>
+      <div class="hud-row"><span class="k">TARİH</span><span id="hud-date">-</span></div>
+      <div class="hud-row"><span class="k">HIZ</span><span id="hud-speed">-</span></div>
+      <div class="hud-row"><span class="k">TUTULMA</span><span id="hud-eclipse">—</span></div>
+    </div>
+
+    <div class="ctl-title">GÖREV KONTROLLERİ</div>
+    <div class="ctl-row"><span>ZAMAN HIZI</span><span class="val" id="speed-val">10 gün/sn</span></div>
+    <input type="range" id="speed" min="0" max="100" step="1" value="10" aria-label="Zaman hızı">
+    <div class="ctl-row"><span>ZAMAN YOLCULUĞU</span><span class="val" id="dir-val">İLERİ ▶▶</span></div>
+
+    <div class="ctl-row btns">
+      <button class="btn sq" id="tgl-dir" title="Zaman yönü (ileri / geri)">▶▶</button>
+      <input type="date" id="date-input" aria-label="Hedef tarih">
+      <button class="btn" id="jump-date" title="Seçilen tarihe atla">ATLA</button>
+    </div>
+
+    <div class="ctl-row btns">
+      <button class="btn" id="prev-eclipse" title="Önceki Güneş veya Ay tutulmasına atla">◀ ÖNCEKİ TUTULMA</button>
+      <button class="btn" id="jump-eclipse" title="Sonraki Güneş veya Ay tutulmasına atla">SONRAKİ TUTULMA ▶</button>
+    </div>
+
+    <div class="ctl-row btns">
+      <button class="btn sq" id="zoom-out" title="Uzaklaş">-</button>
+      <button class="btn sq" id="zoom-in" title="Yakınlaş">+</button>
+      <button class="btn" id="reset-view" title="Güneş'e dön">⟲ SIFIRLA</button>
+    </div>
+
+    <div class="ctl-row btns">
+      <button class="btn on" id="tgl-labels">ETİKETLER</button>
+      <button class="btn on" id="tgl-orbits">YÖRÜNGELER</button>
+      <button class="btn" id="tgl-view">GÖRÜNÜM: ÜSTTEN</button>
+    </div>
+
+    <div class="ctl-row btns">
+      <button class="btn" id="tgl-scale" title="Gerçek boyut ölçeği">1:1 ÖLÇEK</button>
+      <button class="btn" id="tgl-fs" title="Tam ekran">TAM EKRAN</button>
+    </div>
+
+    <div class="ctl-row btns">
+      <button class="btn" id="tgl-seasons" title="Dünya için mevsim simülatörü">🌍 MEVSİMLER</button>
+      <button class="btn" id="tgl-follow" title="Odaklanan cisimle birlikte kamera döner">🎥 TAKİP: KAPALI</button>
+    </div>
+
+    <div class="ctl-row btns">
+      <button class="btn pwa-install" id="btn-pwa-install" style="display:none;" title="Uygulamayı cihaza indir">📲 UYGULAMAYI İNDİR</button>
+    </div>
+  </div>
+  <button class="panel sq" id="controls-toggle" title="Kontrol Panelini Göster/Gizle" aria-label="Kontrol panelini göster veya gizle">◀</button>
+
+  <aside class="panel" id="info">
+    <button id="info-close" title="Kapat" aria-label="Paneli kapat">×</button>
+    <div class="portrait-box">
+      <img id="i-photo" alt="Gerçek NASA Fotoğrafı" src="">
+      <canvas id="portrait" width="280" height="280"></canvas>
+    </div>
+    <h2 id="i-name">-</h2>
+    <span class="type-badge" id="i-type">-</span>
+    <dl class="stats">
+      <div><dt>ÇAP</dt><dd id="i-diam">-</dd></div>
+      <div><dt>KÜTLE</dt><dd id="i-mass">-</dd></div>
+      <div><dt>GÜNEŞ'E UZAKLIK</dt><dd id="i-dist">-</dd></div>
+      <div id="live-row"><dt>ANLIK UZAKLIK</dt><dd id="i-live">-</dd></div>
+      <div><dt>YÖRÜNGE DÖNEMİ</dt><dd id="i-per">-</dd></div>
+      <div><dt>UYDU SAYISI</dt><dd id="i-moons">-</dd></div>
+    </dl>
+    <div class="fact"><span class="fact-k">// İLGİNÇ BİLGİ</span><p id="i-fact"></p></div>
+  </aside>
+
+  <div id="tooltip" class="panel"></div>
+  <noscript>
+    <p style="position:fixed;top:50%;width:100%;text-align:center;color:#fff">Bu simülasyon için JavaScript gerekli.</p>
+  </noscript>
+
+  <!-- Modular Main Application Script -->
+  <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

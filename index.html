@@ -509,6 +509,32 @@
   <!-- TOAST NOTIFICATION -->
   <div id="toast" class="toast hidden"></div>
 
-  <script src="app.js?v=5.6"></script>
+  <!-- MOBILE UI — #app dışında, view opacity'sinden etkilenmez -->
+
+  <!-- Hamburger Menu Button (sadece mobilde, sadece reader'da JS ile gösterilir) -->
+  <button class="mobile-menu-btn" id="mobile-menu-btn" title="Menüyü Aç/Kapat" aria-label="Menüyü Aç" style="display:none;">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.2" stroke="currentColor" width="22" height="22">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5" />
+    </svg>
+  </button>
+
+  <!-- Sidebar Overlay -->
+  <div class="mobile-sidebar-overlay" id="mobile-sidebar-overlay"></div>
+
+  <!-- Alt Sayfa Gezinme Bar — ikon-only, sadece reader'da JS ile gösterilir -->
+  <div class="mobile-nav-bar" id="mobile-nav-bar" style="display:none;">
+    <button class="mobile-nav-btn" id="mobile-btn-prev" title="Önceki Sayfa">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" width="26" height="26">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+      </svg>
+    </button>
+    <button class="mobile-nav-btn" id="mobile-btn-next" title="Sonraki Sayfa">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" width="26" height="26">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+      </svg>
+    </button>
+  </div>
+
+  <script src="app.js?v=5.7"></script>
 </body>
 </html>

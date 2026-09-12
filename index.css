@@ -1542,6 +1542,27 @@ body::-webkit-scrollbar-thumb:hover {
   transform: translate(3px, -3px);
 }
 
+.tools-section-divider {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 4px 0 0;
+  color: var(--text-muted);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.tools-section-divider::before,
+.tools-section-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
 /* ==========================================================================
    WHITEBOARD & PEN FLOATING SYSTEM (AKILLI TAHTA KALEMİ)
    ========================================================================== */
@@ -2367,19 +2388,7 @@ body::-webkit-scrollbar-thumb:hover {
 /* --- MOBİL (≤ 768px) — Tam mobil deneyim --- */
 @media (max-width: 768px) {
 
-  /* Hamburger ve mobil overlay görünür */
-  .mobile-menu-btn {
-    display: flex;
-  }
-  .mobile-sidebar-overlay {
-    display: block;
-  }
-  /* Alt nav bar görünür */
-  .mobile-nav-bar {
-    display: flex;
-  }
-
-  /* Reader: Tam ekran, sidebar gizli, overflow düzeltildi */
+  /* Reader: Tam ekran layout */
   #view-reader {
     flex-direction: row;
     overflow: hidden;
@@ -2400,12 +2409,12 @@ body::-webkit-scrollbar-thumb:hover {
     overflow-y: auto;
   }
 
-  /* Sidebar açık durumu */
+  /* Sidebar açık durumu (JS tarafından eklenir) */
   .sidebar.mobile-open {
     transform: translateX(0);
   }
 
-  /* Sidebar içerik: dikey düzen (tablet yatay düzeni yerine) */
+  /* Sidebar içerik: dikey düzen */
   .sidebar-content {
     flex-direction: column;
     flex-wrap: nowrap;
@@ -2419,22 +2428,22 @@ body::-webkit-scrollbar-thumb:hover {
     flex: none;
   }
 
-  /* Outcomes listesi yüksekliği azaltıldı, scroll aktif */
+  /* Outcomes listesi scroll */
   .outcomes-list {
     max-height: 200px;
   }
 
-  /* Reader viewport: alt nav bar için alt boşluk bırak */
+  /* Reader viewport: tam ekran, padding YOK (nav bar fixed) */
   .reader-viewport {
     flex: 1;
     width: 100%;
     height: 100%;
-    padding-bottom: 64px; /* alt nav bar yüksekliği */
+    overflow: hidden;
   }
 
-  /* Whiteboard FAB: alt nav bar ile çakışmasın */
+  /* Whiteboard FAB: nav bar butonlarının üstünde */
   .wb-container {
-    bottom: 78px;
+    bottom: 80px;
     right: 16px;
   }
 
@@ -2443,7 +2452,7 @@ body::-webkit-scrollbar-thumb:hover {
     width: 260px;
   }
 
-  /* Modal: tam genişlik, yüksek */
+  /* Modal: tam ekran */
   .modal-window {
     width: 100%;
     max-width: 100%;
