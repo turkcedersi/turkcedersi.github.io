@@ -64033,18 +64033,17 @@
         },
         "items": [
           {
-            "type": "box",
-            "left": 10.5,
-            "top": 17.5,
-            "width": 80.0,
-            "height": 5.0,
-            "text": "<b style=\"color:#b45309\">Metnin Konusu:</b> Eskimo gençlerin gökyüzündeki dolunayı yakalayıp köylerini aydınlatmak istemeleri ve bu uğurda yaşadıkları serüven.",
+            "type": "badge",
+            "left": 58.0,
+            "top": 14.6,
+            "width": 32.0,
+            "height": 3.0,
+            "text": "Konu: Gençlerin Ay'ı Yakalama Macerası",
             "style": {
-              "color": "#1e3a8a",
-              "fontSize": "calc(1.05 * var(--unit-h))",
-              "fontFamily": "Caveat, cursive",
-              "lineHeight": "1.3",
-              "padding": "4px 8px"
+              "fontSize": "calc(0.95 * var(--unit-h))",
+              "display": "flex",
+              "alignItems": "center",
+              "justifyContent": "center"
             }
           },
           {
@@ -64202,7 +64201,7 @@
           {
             "type": "blank",
             "left": 17.4,
-            "top": 23.8,
+            "top": 22.8,
             "width": 22.0,
             "text": "bu yollar",
             "style": {
@@ -64215,7 +64214,7 @@
           {
             "type": "blank",
             "left": 49.7,
-            "top": 23.8,
+            "top": 22.8,
             "width": 37.1,
             "text": "yapıları kavramak zorlaşırdı.",
             "style": {
@@ -64258,8 +64257,8 @@
           },
           {
             "type": "badge",
-            "left": 35.8,
-            "top": 67.2,
+            "left": 38.5,
+            "top": 66.8,
             "width": 3.5,
             "height": 2.2,
             "text": "5",
@@ -64273,8 +64272,8 @@
           },
           {
             "type": "badge",
-            "left": 76.5,
-            "top": 67.2,
+            "left": 80.0,
+            "top": 66.8,
             "width": 3.5,
             "height": 2.2,
             "text": "5",
@@ -64289,10 +64288,10 @@
           {
             "type": "box",
             "left": 10.5,
-            "top": 89.5,
+            "top": 93.0,
             "width": 80.0,
-            "height": 5.5,
-            "text": "<b style=\"color:#b45309\">Neden Dolunay?</b> Dolunay evresinde Ay en büyük ve en parlak göründüğü için Eskimo genç onu köyün karanlık gecelerini aydınlatacak bir kandil gibi hayal etmiştir.",
+            "height": 4.5,
+            "text": "<b style=\"color:#b45309\">Cevap:</b> Dolunayda Ay en parlak ve yusyuvarlak olduğu için köyü aydınlatacak kandil sanılmıştır.",
             "style": {
               "color": "#1e3a8a",
               "fontSize": "calc(1.05 * var(--unit-h))",
@@ -64316,7 +64315,7 @@
           {
             "type": "blank",
             "left": 60.5,
-            "top": 61.2,
+            "top": 60.0,
             "width": 12.0,
             "text": "kaldım",
             "style": {
@@ -64329,7 +64328,7 @@
           {
             "type": "blank",
             "left": 79.5,
-            "top": 61.2,
+            "top": 60.0,
             "width": 10.0,
             "text": "konuyu",
             "style": {
@@ -64342,7 +64341,7 @@
           {
             "type": "lines",
             "left": 10.5,
-            "top": 63.8,
+            "top": 62.6,
             "width": 79.0,
             "text": "kutup yaşamını zengin bilimsel verilerle somutlaştırmamı sağladı.",
             "style": {
@@ -64354,10 +64353,10 @@
           {
             "type": "box",
             "left": 10.5,
-            "top": 88.0,
+            "top": 89.2,
             "width": 38.0,
-            "height": 6.5,
-            "text": "<b style=\"color:#1e3a8a\">Ay'ın Gözünden:</b> \"Işıl ışıl parlarken telaşla koşan gençleri izlemek eğlenceliydi. Onlar tırmandıkça ben göğün derinliklerine gülümsüyordum.\"",
+            "height": 5.2,
+            "text": "<b style=\"color:#1e3a8a\">1. Durum (Ay):</b> Gençlerin gayretini gökten gülümseyerek izledim; onlar tırmandıkça ben uzaklaştım.",
             "style": {
               "color": "#1e3a8a",
               "fontSize": "calc(0.98 * var(--unit-h))",
@@ -64369,10 +64368,10 @@
           {
             "type": "box",
             "left": 51.5,
-            "top": 88.0,
+            "top": 89.2,
             "width": 38.0,
-            "height": 6.5,
-            "text": "<b style=\"color:#1e3a8a\">Gençler Yakalarsa:</b> \"Buzdan kulübenin kubbesine asılan Ay, tüm kutup gecesini gündüze çevirdi; artık kimse karanlıktan korkmadı.\"",
+            "height": 5.2,
+            "text": "<b style=\"color:#1e3a8a\">2. Durum (Gençler):</b> Ay'ı kulübeye asınca tüm köy aydınlandı, gecelerimiz gündüze döndü.",
             "style": {
               "color": "#1e3a8a",
               "fontSize": "calc(0.98 * var(--unit-h))",
@@ -64461,7 +64460,7 @@
           {
             "type": "blank",
             "left": 11.8,
-            "top": 62.9,
+            "top": 61.6,
             "width": 10.0,
             "text": "Alfabe",
             "style": {
@@ -64474,7 +64473,7 @@
           {
             "type": "blank",
             "left": 28.4,
-            "top": 62.9,
+            "top": 61.6,
             "width": 10.0,
             "text": "Egzoz",
             "style": {
@@ -64487,7 +64486,7 @@
           {
             "type": "blank",
             "left": 45.0,
-            "top": 62.9,
+            "top": 61.6,
             "width": 10.0,
             "text": "Eşofman",
             "style": {
@@ -64500,7 +64499,7 @@
           {
             "type": "blank",
             "left": 61.6,
-            "top": 62.9,
+            "top": 61.6,
             "width": 10.0,
             "text": "Hoparlör",
             "style": {
@@ -64513,7 +64512,7 @@
           {
             "type": "blank",
             "left": 78.2,
-            "top": 62.9,
+            "top": 61.6,
             "width": 10.0,
             "text": "Kavanoz",
             "style": {
@@ -64526,7 +64525,7 @@
           {
             "type": "blank",
             "left": 11.8,
-            "top": 77.8,
+            "top": 76.5,
             "width": 10.0,
             "text": "Dinozor",
             "style": {
@@ -64539,7 +64538,7 @@
           {
             "type": "blank",
             "left": 28.4,
-            "top": 77.8,
+            "top": 76.5,
             "width": 10.0,
             "text": "Maydanoz",
             "style": {
@@ -64552,7 +64551,7 @@
           {
             "type": "blank",
             "left": 45.0,
-            "top": 77.8,
+            "top": 76.5,
             "width": 10.0,
             "text": "Kirpi",
             "style": {
@@ -64565,7 +64564,7 @@
           {
             "type": "blank",
             "left": 61.6,
-            "top": 77.8,
+            "top": 76.5,
             "width": 10.0,
             "text": "Palyaço",
             "style": {
@@ -64578,7 +64577,7 @@
           {
             "type": "blank",
             "left": 78.2,
-            "top": 77.8,
+            "top": 76.5,
             "width": 10.0,
             "text": "Bisküvi",
             "style": {
@@ -64591,7 +64590,7 @@
           {
             "type": "blank",
             "left": 11.8,
-            "top": 91.6,
+            "top": 90.3,
             "width": 10.0,
             "text": "Eşek",
             "style": {
@@ -64604,7 +64603,7 @@
           {
             "type": "blank",
             "left": 28.4,
-            "top": 91.6,
+            "top": 90.3,
             "width": 10.0,
             "text": "Sarımsak",
             "style": {
@@ -64617,7 +64616,7 @@
           {
             "type": "blank",
             "left": 42.5,
-            "top": 91.6,
+            "top": 90.3,
             "width": 15.0,
             "text": "Tahterevalli",
             "style": {
@@ -64630,7 +64629,7 @@
           {
             "type": "blank",
             "left": 61.6,
-            "top": 91.6,
+            "top": 90.3,
             "width": 10.0,
             "text": "Kibrit",
             "style": {
@@ -64643,7 +64642,7 @@
           {
             "type": "blank",
             "left": 78.2,
-            "top": 91.6,
+            "top": 90.3,
             "width": 10.0,
             "text": "Soğan",
             "style": {
@@ -64668,7 +64667,7 @@
           {
             "type": "blank",
             "left": 64.2,
-            "top": 24.8,
+            "top": 23.6,
             "width": 15.1,
             "text": "MÜCADELESİ",
             "style": {
@@ -64682,7 +64681,7 @@
           {
             "type": "blank",
             "left": 52.6,
-            "top": 27.3,
+            "top": 26.0,
             "width": 37.4,
             "text": "kadar buzulların hızla",
             "style": {
@@ -64696,7 +64695,7 @@
           {
             "type": "blank",
             "left": 43.1,
-            "top": 29.7,
+            "top": 28.4,
             "width": 46.8,
             "text": "kutup ayıları etkileniyor. Çünkü",
             "style": {
@@ -64710,7 +64709,7 @@
           {
             "type": "blank",
             "left": 39.4,
-            "top": 32.1,
+            "top": 30.8,
             "width": 50.5,
             "text": "bölgesindeki deniz buzullarıdır.",
             "style": {
@@ -64724,7 +64723,7 @@
           {
             "type": "blank",
             "left": 63.6,
-            "top": 34.6,
+            "top": 33.2,
             "width": 26.4,
             "text": "değişimler görüldü.",
             "style": {
@@ -64738,7 +64737,7 @@
           {
             "type": "blank",
             "left": 47.3,
-            "top": 37.0,
+            "top": 35.6,
             "width": 42.6,
             "text": "yeterli besin bulamıyor. Ancak",
             "style": {
@@ -64752,7 +64751,7 @@
           {
             "type": "blank",
             "left": 32.7,
-            "top": 39.4,
+            "top": 38.0,
             "width": 57.2,
             "text": "tüm kutup ekosistemini etkileyeceği öngörülüyor.",
             "style": {
@@ -64766,7 +64765,7 @@
           {
             "type": "blank",
             "left": 10.5,
-            "top": 42.3,
+            "top": 40.9,
             "width": 79.5,
             "text": "Buna rağmen bilim insanları türü korumak için yeni önlemler alıyor.",
             "style": {
@@ -64780,7 +64779,7 @@
           {
             "type": "blank",
             "left": 10.5,
-            "top": 45.2,
+            "top": 43.8,
             "width": 79.5,
             "text": "Fakat küresel ısınma devam ederse bu canlıların sayısı azalabilir.",
             "style": {
@@ -64794,7 +64793,7 @@
           {
             "type": "blank",
             "left": 10.5,
-            "top": 48.1,
+            "top": 46.7,
             "width": 79.5,
             "text": "Sonuç olarak kutupları ve doğayı korumak hepimizin ortak görevidir.",
             "style": {
@@ -64872,7 +64871,7 @@
           {
             "type": "blank",
             "left": 28.6,
-            "top": 80.6,
+            "top": 79.4,
             "width": 59.5,
             "text": "yazımı kurallara uygun biçimde tamamlama",
             "style": {
@@ -64886,7 +64885,7 @@
           {
             "type": "blank",
             "left": 21.5,
-            "top": 86.9,
+            "top": 85.7,
             "width": 66.6,
             "text": "bol bol bilgilendirici metinler yazıp pratik yapacağım.",
             "style": {
@@ -64928,7 +64927,7 @@
           {
             "type": "blank",
             "left": 33.5,
-            "top": 31.5,
+            "top": 30.2,
             "width": 13.8,
             "text": "ülkece",
             "style": {
@@ -64941,7 +64940,7 @@
           {
             "type": "blank",
             "left": 47.3,
-            "top": 31.5,
+            "top": 30.2,
             "width": 42.5,
             "text": "Ülkece el ele verip zorluğu aştık.",
             "style": {
@@ -64955,7 +64954,7 @@
           {
             "type": "blank",
             "left": 33.5,
-            "top": 34.6,
+            "top": 33.3,
             "width": 13.8,
             "text": "<span style=\"border: 2px solid #ef4444; border-radius: 9999px; padding: 1px 8px;\">mutfakta</span>",
             "style": {
@@ -64968,7 +64967,7 @@
           {
             "type": "blank",
             "left": 47.3,
-            "top": 34.6,
+            "top": 33.3,
             "width": 42.5,
             "text": "Annem yemeği mutfakta hazırlıyor.",
             "style": {
@@ -64982,7 +64981,7 @@
           {
             "type": "blank",
             "left": 33.5,
-            "top": 37.7,
+            "top": 36.4,
             "width": 13.8,
             "text": "<span style=\"border: 2px solid #ef4444; border-radius: 9999px; padding: 1px 8px;\">çalışkan</span>",
             "style": {
@@ -64995,7 +64994,7 @@
           {
             "type": "blank",
             "left": 47.3,
-            "top": 37.7,
+            "top": 36.4,
             "width": 42.5,
             "text": "Sınıfın en çalışkan öğrencisi oldu.",
             "style": {
@@ -65009,7 +65008,7 @@
           {
             "type": "blank",
             "left": 33.5,
-            "top": 40.7,
+            "top": 39.4,
             "width": 13.8,
             "text": "dilde",
             "style": {
@@ -65022,7 +65021,7 @@
           {
             "type": "blank",
             "left": 47.3,
-            "top": 40.7,
+            "top": 39.4,
             "width": 42.5,
             "text": "Dilde doğru sözcükleri seçmeliyiz.",
             "style": {
@@ -65036,7 +65035,7 @@
           {
             "type": "blank",
             "left": 33.5,
-            "top": 43.8,
+            "top": 42.5,
             "width": 13.8,
             "text": "kültürden",
             "style": {
@@ -65049,7 +65048,7 @@
           {
             "type": "blank",
             "left": 47.3,
-            "top": 43.8,
+            "top": 42.5,
             "width": 42.5,
             "text": "Her kültürden yeni bilgiler edindik.",
             "style": {
@@ -65063,7 +65062,7 @@
           {
             "type": "blank",
             "left": 33.5,
-            "top": 46.9,
+            "top": 45.6,
             "width": 13.8,
             "text": "araştırmacı",
             "style": {
@@ -65076,7 +65075,7 @@
           {
             "type": "blank",
             "left": 47.3,
-            "top": 46.9,
+            "top": 45.6,
             "width": 42.5,
             "text": "Genç araştırmacı kutuplara gitti.",
             "style": {
@@ -65090,7 +65089,7 @@
           {
             "type": "blank",
             "left": 14.0,
-            "top": 71.8,
+            "top": 70.6,
             "width": 11.8,
             "text": "ünsüz",
             "style": {
@@ -65103,7 +65102,7 @@
           {
             "type": "blank",
             "left": 53.4,
-            "top": 72.1,
+            "top": 70.8,
             "width": 11.8,
             "text": "ünsüz",
             "style": {
@@ -65116,7 +65115,7 @@
           {
             "type": "blank",
             "left": 24.7,
-            "top": 83.1,
+            "top": 81.8,
             "width": 11.8,
             "text": "başındaki",
             "style": {
@@ -65129,7 +65128,7 @@
           {
             "type": "blank",
             "left": 45.5,
-            "top": 82.7,
+            "top": 81.4,
             "width": 11.8,
             "text": "sonundaki",
             "style": {
@@ -65142,7 +65141,7 @@
           {
             "type": "blank",
             "left": 44.2,
-            "top": 90.4,
+            "top": 89.1,
             "width": 17.7,
             "text": "benzeşmesi",
             "style": {
@@ -65167,7 +65166,7 @@
           {
             "type": "blank",
             "left": 10.3,
-            "top": 29.5,
+            "top": 28.2,
             "width": 79.3,
             "text": "Kelimeler seslendirilirken araya \"a, e, ı\" ünlü türemesi olmuştur.",
             "style": {
@@ -65181,7 +65180,7 @@
           {
             "type": "blank",
             "left": 10.3,
-            "top": 32.3,
+            "top": 31.0,
             "width": 79.3,
             "text": "Ortak özellikleri tek heceli olup küçültme ekinde ünlü türemesidir.",
             "style": {
@@ -65195,7 +65194,7 @@
           {
             "type": "blank",
             "left": 10.5,
-            "top": 38.2,
+            "top": 38.6,
             "width": 5.5,
             "text": "Tek",
             "style": {
@@ -65208,7 +65207,7 @@
           {
             "type": "blank",
             "left": 72.8,
-            "top": 38.2,
+            "top": 38.6,
             "width": 5.5,
             "text": "ünlü",
             "style": {
@@ -65359,7 +65358,7 @@
           {
             "type": "blank",
             "left": 21.4,
-            "top": 27.4,
+            "top": 26.1,
             "width": 27.6,
             "text": "Küçük Prens",
             "style": {
@@ -65373,7 +65372,7 @@
           {
             "type": "blank",
             "left": 17.0,
-            "top": 29.8,
+            "top": 28.5,
             "width": 32.0,
             "text": "Antoine de Saint-Exupéry",
             "style": {
@@ -65387,7 +65386,7 @@
           {
             "type": "blank",
             "left": 21.0,
-            "top": 32.1,
+            "top": 30.8,
             "width": 28.0,
             "text": "96",
             "style": {
@@ -65401,7 +65400,7 @@
           {
             "type": "blank",
             "left": 18.1,
-            "top": 34.3,
+            "top": 33.0,
             "width": 30.9,
             "text": "Sevgi, dostluk ve insanlık",
             "style": {
@@ -65415,7 +65414,7 @@
           {
             "type": "blank",
             "left": 35.7,
-            "top": 39.4,
+            "top": 38.1,
             "width": 13.3,
             "text": "Küçük Prens",
             "style": {
@@ -65429,7 +65428,7 @@
           {
             "type": "blank",
             "left": 10.4,
-            "top": 41.9,
+            "top": 40.6,
             "width": 38.6,
             "text": "Pilot, Tilki, Gül, Kral, Yılan",
             "style": {
@@ -65443,7 +65442,7 @@
           {
             "type": "blank",
             "left": 33.0,
-            "top": 44.1,
+            "top": 42.8,
             "width": 16.1,
             "text": "Meraklı çocuk",
             "style": {
@@ -65457,7 +65456,7 @@
           {
             "type": "blank",
             "left": 10.4,
-            "top": 46.7,
+            "top": 45.4,
             "width": 38.6,
             "text": "Pilot duyarlı ve yardımseverdir.",
             "style": {
@@ -65471,7 +65470,7 @@
           {
             "type": "blank",
             "left": 10.3,
-            "top": 49.2,
+            "top": 47.9,
             "width": 38.6,
             "text": "Tilki sadık, gül ise narindir.",
             "style": {
@@ -65485,7 +65484,7 @@
           {
             "type": "blank",
             "left": 14.9,
-            "top": 51.4,
+            "top": 50.1,
             "width": 34.1,
             "text": "Sahra Çölü ve B-612 Gezegeni",
             "style": {
@@ -65499,7 +65498,7 @@
           {
             "type": "blank",
             "left": 17.5,
-            "top": 53.8,
+            "top": 52.5,
             "width": 31.5,
             "text": "Belirsiz geçmiş bir zaman",
             "style": {
@@ -65513,7 +65512,7 @@
           {
             "type": "blank",
             "left": 17.8,
-            "top": 56.3,
+            "top": 55.0,
             "width": 31.2,
             "text": "1. tekil kişi (Pilot)",
             "style": {
@@ -65527,7 +65526,7 @@
           {
             "type": "blank",
             "left": 62.3,
-            "top": 27.3,
+            "top": 26.0,
             "width": 27.6,
             "text": "Buz Devri (Ice Age)",
             "style": {
@@ -65541,7 +65540,7 @@
           {
             "type": "blank",
             "left": 59.5,
-            "top": 29.7,
+            "top": 28.4,
             "width": 30.4,
             "text": "Kutup hayvanlarının göçü",
             "style": {
@@ -65555,7 +65554,7 @@
           {
             "type": "blank",
             "left": 64.3,
-            "top": 34.5,
+            "top": 33.2,
             "width": 25.5,
             "text": "Manny, Sid, Diego",
             "style": {
@@ -65569,7 +65568,7 @@
           {
             "type": "blank",
             "left": 75.2,
-            "top": 39.4,
+            "top": 38.1,
             "width": 14.7,
             "text": "Manny güçlü",
             "style": {
@@ -65583,7 +65582,7 @@
           {
             "type": "blank",
             "left": 51.9,
-            "top": 41.9,
+            "top": 40.6,
             "width": 37.9,
             "text": "Sid sakar ama çok sevecendir.",
             "style": {
@@ -65597,7 +65596,7 @@
           {
             "type": "blank",
             "left": 51.9,
-            "top": 44.3,
+            "top": 43.0,
             "width": 37.9,
             "text": "Diego cesur ve sadık bir dosttur",
             "style": {
@@ -65611,7 +65610,7 @@
           {
             "type": "blank",
             "left": 51.9,
-            "top": 46.7,
+            "top": 45.4,
             "width": 37.9,
             "text": "Birlikte zorlukları aşarlar.",
             "style": {
@@ -65625,7 +65624,7 @@
           {
             "type": "blank",
             "left": 55.7,
-            "top": 49.1,
+            "top": 47.8,
             "width": 34.1,
             "text": "Buzul çağı vadileri, dağlar",
             "style": {
@@ -65639,7 +65638,7 @@
           {
             "type": "blank",
             "left": 59.0,
-            "top": 53.8,
+            "top": 52.5,
             "width": 30.9,
             "text": "Buzul Çağı dönemi",
             "style": {
@@ -65653,10 +65652,10 @@
           {
             "type": "box",
             "left": 10.5,
-            "top": 88.5,
+            "top": 93.5,
             "width": 80.0,
-            "height": 5.5,
-            "text": "<b style=\"color:#b45309\">İletişim Gözlem Notu:</b> Gün içinde ailemle temel ihtiyaçlar ve sevgi bağı, okulda arkadaşlarımla ders ve oyun paylaşımı, öğretmenimle öğrenme amaçlı iletişim kurdum.",
+            "height": 4.5,
+            "text": "<b style=\"color:#b45309\">Gözlem:</b> Ailemle sevgi ve ev işleri, arkadaşlarımla oyun ve ödev, öğretmenimle ders için iletişim kurdum.",
             "style": {
               "color": "#1e3a8a",
               "fontSize": "calc(1.05 * var(--unit-h))",
