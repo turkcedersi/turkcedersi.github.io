@@ -1,0 +1,1085 @@
+{
+  "sinif": "6. Sınıf",
+  "kitap": "1. Kitap (Book 1)",
+  "tema": "2. Tema: Bağımsızlık Yolu",
+  "metin_1": {
+    "baslik": "Cepheye Koşan At",
+    "yazar": "Ömür KURT",
+    "sayfa_araligi": "66 - 77 (Kitapta 66 - 77)",
+    "isleme_tarihi": "26 Ekim - 04 Kasım",
+    "etkinlikler": [
+      {
+        "sayfa_dosya": 66,
+        "sayfa_kitap": 66,
+        "etkinlik_adi": "2. Tema Kapağı: Bağımsızlık Yolu",
+        "tur": "Görsel Okuma & Temaya Giriş",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.D.6.6",
+            "aciklama": "Görselle iletilen anlamı belirleyebilme"
+          },
+          {
+            "kod": "T.O.6.3",
+            "aciklama": "Okumada strateji ve yöntem seçimlerini yönetebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 67,
+        "sayfa_kitap": 67,
+        "etkinlik_adi": "Anahtar Kavramlar & Temanın Metinleri",
+        "tur": "Kavram Bilgisi & EBA Karekod",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.5",
+            "aciklama": "Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme"
+          },
+          {
+            "kod": "T.O.6.12",
+            "aciklama": "Metindeki unsurları sınıflandırabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 68,
+        "sayfa_kitap": 68,
+        "etkinlik_adi": "HAYDİ, BAŞLAYALIM! & Metin Girişi",
+        "tur": "Hazırlık Soruları & Akıcı Okuma",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.K.6.4",
+            "aciklama": "Konuşmasında ön bilgilerinden yararlanabilme"
+          },
+          {
+            "kod": "T.K.6.8",
+            "aciklama": "Hazırlıksız konuşma yapabilme"
+          },
+          {
+            "kod": "T.D.6.6",
+            "aciklama": "Görselle iletilen anlamı belirleyebilme"
+          },
+          {
+            "kod": "T.O.6.3",
+            "aciklama": "Okumada strateji ve yöntem seçimlerini yönetebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 69,
+        "sayfa_kitap": 69,
+        "etkinlik_adi": "Metin Okuma: Cepheye Koşan At (Sayfa 69)",
+        "tur": "Okuma ve Anlama",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.3",
+            "aciklama": "Okumada strateji ve yöntem seçimlerini yönetebilme"
+          },
+          {
+            "kod": "T.O.6.8",
+            "aciklama": "Metnin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 70,
+        "sayfa_kitap": 70,
+        "etkinlik_adi": "Metin Okuma: Cepheye Koşan At (Sayfa 70)",
+        "tur": "Okuma ve Anlama",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.3",
+            "aciklama": "Okumada strateji ve yöntem seçimlerini yönetebilme"
+          },
+          {
+            "kod": "T.O.6.8",
+            "aciklama": "Metnin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 71,
+        "sayfa_kitap": 71,
+        "etkinlik_adi": "Metin Okuma & Doğrusunu Bilelim",
+        "tur": "Okuma & Yazım-Noktalama",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.3",
+            "aciklama": "Okumada strateji ve yöntem seçimlerini yönetebilme"
+          },
+          {
+            "kod": "T.Y.6.21",
+            "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 72,
+        "sayfa_kitap": 72,
+        "etkinlik_adi": "1. ANLAYALIM (a, b)",
+        "tur": "Kavram Ağları & Söz Varlığı",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.5",
+            "aciklama": "Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme"
+          },
+          {
+            "kod": "T.O.6.12",
+            "aciklama": "Metindeki unsurları sınıflandırabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 72,
+        "sayfa_kitap": 72,
+        "etkinlik_adi": "2. ANLAYALIM (a, b, c)",
+        "tur": "Kahramanın Duyguları Tablosu & Karşılaştırma",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.8",
+            "aciklama": "Metnin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme"
+          },
+          {
+            "kod": "T.O.6.10",
+            "aciklama": "Metin içi karşılaştırma yapabilme"
+          },
+          {
+            "kod": "T.K.6.12",
+            "aciklama": "Konuşmasında karşılaştırma yapabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 73,
+        "sayfa_kitap": 73,
+        "etkinlik_adi": "3. ANLAYALIM (a, b, c)",
+        "tur": "Cümle Tamamlama & Ana Fikir",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.8",
+            "aciklama": "Metnin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme"
+          },
+          {
+            "kod": "T.O.6.9",
+            "aciklama": "Metnin derin anlamını belirlemeye yönelik üst düzey çıkarımlar yapabilme"
+          },
+          {
+            "kod": "T.Y.6.11",
+            "aciklama": "Yorumunu yazılı olarak ifade edebilme"
+          },
+          {
+            "kod": "T.K.6.4",
+            "aciklama": "Konuşmasında ön bilgilerinden yararlanabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 73,
+        "sayfa_kitap": 73,
+        "etkinlik_adi": "4. ANLAYALIM (a, b, c, ç)",
+        "tur": "Dinleme/İzleme: Tekâlif-i Milliye Analizi",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.D.6.2",
+            "aciklama": "Dinlemede/izlemede strateji ve yöntem seçimlerini yönetebilme"
+          },
+          {
+            "kod": "T.D.6.3",
+            "aciklama": "Dinleyeceğinin/izleyeceğinin içeriğine yönelik tahminde bulunabilme"
+          },
+          {
+            "kod": "T.D.6.6",
+            "aciklama": "Görselle iletilen anlamı belirleyebilme"
+          },
+          {
+            "kod": "T.D.6.7",
+            "aciklama": "Dinlediğinin/izlediğinin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme"
+          },
+          {
+            "kod": "T.D.6.8",
+            "aciklama": "Dinlediğinin/izlediğinin derin anlamını belirlemeye yönelik üst düzey çıkarımlar yapabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 74,
+        "sayfa_kitap": 74,
+        "etkinlik_adi": "5. ANLAYALIM (a, b, c, ç, d, e)",
+        "tur": "Hikâye Unsurları & Olay Örgüsü Zinciri",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.8",
+            "aciklama": "Metnin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme"
+          },
+          {
+            "kod": "T.O.6.12",
+            "aciklama": "Metindeki unsurları sınıflandırabilme"
+          },
+          {
+            "kod": "T.O.6.23",
+            "aciklama": "Okuduğunu özetleyebilme"
+          },
+          {
+            "kod": "T.Y.6.11",
+            "aciklama": "Yorumunu yazılı olarak ifade edebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 75,
+        "sayfa_kitap": 75,
+        "etkinlik_adi": "6. ANLAYALIM (a, b)",
+        "tur": "Dinleme/İzleme: Kara Fatma Kavram İşaretleme",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.D.6.6",
+            "aciklama": "Görselle iletilen anlamı belirleyebilme"
+          },
+          {
+            "kod": "T.D.6.7",
+            "aciklama": "Dinlediğinin/izlediğinin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme"
+          },
+          {
+            "kod": "T.D.6.11",
+            "aciklama": "Dinlediğindeki/izlediğindeki unsurları sınıflandırabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 75,
+        "sayfa_kitap": 75,
+        "etkinlik_adi": "1. ANLATALIM (a, b)",
+        "tur": "Olay Örgüsü Sınıflandırması & Sözlü Özet",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.12",
+            "aciklama": "Metindeki unsurları sınıflandırabilme"
+          },
+          {
+            "kod": "T.O.6.23",
+            "aciklama": "Okuduğunu özetleyebilme"
+          },
+          {
+            "kod": "T.K.6.15",
+            "aciklama": "Sözlü olarak özetleyebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 75,
+        "sayfa_kitap": 75,
+        "etkinlik_adi": "2. ANLATALIM (a, b, c)",
+        "tur": "Grup Canlandırması (Donuk İmge)",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.K.6.7",
+            "aciklama": "Yaratıcı konuşma yapabilme"
+          },
+          {
+            "kod": "T.K.6.25",
+            "aciklama": "Konuşmasında beden dilini ve mekânı etkili kullanabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 76,
+        "sayfa_kitap": 76,
+        "etkinlik_adi": "3. ANLATALIM (a, b, c)",
+        "tur": "Yapım Ekiyle Türemiş Kelimeler",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.5",
+            "aciklama": "Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme"
+          },
+          {
+            "kod": "T.Y.6.21",
+            "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 76,
+        "sayfa_kitap": 76,
+        "etkinlik_adi": "4. ANLATALIM (a, b, c)",
+        "tur": "Cümle Kurma & Anlatımı Zenginleştirme",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.Y.6.1",
+            "aciklama": "Yazma sürecini yönetebilme"
+          },
+          {
+            "kod": "T.Y.6.3",
+            "aciklama": "Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme"
+          },
+          {
+            "kod": "T.Y.6.11",
+            "aciklama": "Yorumunu yazılı olarak ifade edebilme"
+          },
+          {
+            "kod": "T.Y.6.21",
+            "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+          },
+          {
+            "kod": "T.Y.6.22",
+            "aciklama": "Yazma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 77,
+        "sayfa_kitap": 77,
+        "etkinlik_adi": "5. ANLATALIM: Askere Mektup",
+        "tur": "Empati Yoluyla Mektup Yazma",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.Y.6.1",
+            "aciklama": "Yazma sürecini yönetebilme"
+          },
+          {
+            "kod": "T.Y.6.3",
+            "aciklama": "Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme"
+          },
+          {
+            "kod": "T.Y.6.4",
+            "aciklama": "Yazılı üretim ve yazılı etkileşiminde ön bilgilerinden yararlanabilme"
+          },
+          {
+            "kod": "T.Y.6.5",
+            "aciklama": "Yazılı etkileşiminde uygun tepki verebilme"
+          },
+          {
+            "kod": "T.Y.6.21",
+            "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 77,
+        "sayfa_kitap": 77,
+        "etkinlik_adi": "Değerlendirelim (a, b, c)",
+        "tur": "Yazma Süreci Öz Değerlendirme & Yansıtma",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.Y.6.22",
+            "aciklama": "Yazma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+          }
+        ]
+      }
+    ]
+  },
+  "metin_2": {
+    "baslik": "Vatan",
+    "yazar": "Nurettin ÖZDEMİR",
+    "sayfa_araligi": "78 - 89 (Kitapta 78 - 89)",
+    "isleme_tarihi": "05 - 13 Kasım",
+    "etkinlikler": [
+      {
+        "sayfa_dosya": 78,
+        "sayfa_kitap": 78,
+        "etkinlik_adi": "HAYDİ, BAŞLAYALIM! & Vatan Şiiri (1. Bölüm)",
+        "tur": "Ön Bilgileri Harekete Geçirme & Akıcı Okuma",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.K.6.4",
+            "aciklama": "Konuşmasında ön bilgilerinden yararlanabilme"
+          },
+          {
+            "kod": "T.O.6.5",
+            "aciklama": "Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme"
+          },
+          {
+            "kod": "T.O.6.3",
+            "aciklama": "Okumada strateji ve yöntem seçimlerini yönetebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 79,
+        "sayfa_kitap": 79,
+        "etkinlik_adi": "Vatan Şiiri (2. Bölüm) & Doğrusunu Bilelim",
+        "tur": "Şiir Okuma & Yazım Kuralları",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.3",
+            "aciklama": "Okumada strateji ve yöntem seçimlerini yönetebilme"
+          },
+          {
+            "kod": "T.Y.6.21",
+            "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 80,
+        "sayfa_kitap": 80,
+        "etkinlik_adi": "Değerlendirelim & 1. ANLAYALIM (a)",
+        "tur": "Öz Değerlendirme & Söz Varlığı",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.27",
+            "aciklama": "Okuma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+          },
+          {
+            "kod": "T.O.6.5",
+            "aciklama": "Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 81,
+        "sayfa_kitap": 81,
+        "etkinlik_adi": "1. ANLAYALIM (b, c) & 2. ANLAYALIM (a, b)",
+        "tur": "Söz Varlığı Çözümleme & Şiir / Düzyazı Karşılaştırması",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.5",
+            "aciklama": "Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme"
+          },
+          {
+            "kod": "T.O.6.10",
+            "aciklama": "Metin içi karşılaştırma yapabilme"
+          },
+          {
+            "kod": "T.O.6.12",
+            "aciklama": "Metindeki unsurları sınıflandırabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 82,
+        "sayfa_kitap": 82,
+        "etkinlik_adi": "3. ANLAYALIM (a, b, c) & 4. ANLAYALIM (a)",
+        "tur": "Derin Anlam / Neden-Sonuç İlişkisi & Yaratıcı Yazma",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.8",
+            "aciklama": "Metnin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme"
+          },
+          {
+            "kod": "T.Y.6.11",
+            "aciklama": "Yorumunu yazılı olarak ifade edebilme"
+          },
+          {
+            "kod": "T.O.6.9",
+            "aciklama": "Metnin derin anlamını belirlemeye yönelik üst düzey çıkarımlar yapabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 83,
+        "sayfa_kitap": 83,
+        "etkinlik_adi": "4. ANLAYALIM (b, c, ç) & 5. ANLAYALIM (a, b, c, ç)",
+        "tur": "İmgesel Çizim & Unsurları Sınıflandırma (Tablo) & Harita",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.8",
+            "aciklama": "Metnin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme"
+          },
+          {
+            "kod": "T.O.6.12",
+            "aciklama": "Metindeki unsurları sınıflandırabilme"
+          },
+          {
+            "kod": "T.O.6.9",
+            "aciklama": "Metnin derin anlamını belirlemeye yönelik üst düzey çıkarımlar yapabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 84,
+        "sayfa_kitap": 84,
+        "etkinlik_adi": "6. ANLAYALIM (a, b, c)",
+        "tur": "Kelime Türetme (Kök-Ek) & Kavram / İş Sınıflandırması",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.5",
+            "aciklama": "Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme"
+          },
+          {
+            "kod": "T.O.6.12",
+            "aciklama": "Metindeki unsurları sınıflandırabilme"
+          },
+          {
+            "kod": "T.O.6.9",
+            "aciklama": "Metnin derin anlamını belirlemeye yönelik üst düzey çıkarımlar yapabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 85,
+        "sayfa_kitap": 85,
+        "etkinlik_adi": "6. ANLAYALIM (ç) & 7. ANLAYALIM (a, b, c)",
+        "tur": "Kelime Türetme & Dinleme/İzleme (Çanakkale) ve Çıkarım",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.5",
+            "aciklama": "Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme"
+          },
+          {
+            "kod": "T.D.6.7",
+            "aciklama": "Dinlediğinin/izlediğinin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme"
+          },
+          {
+            "kod": "T.D.6.8",
+            "aciklama": "Dinlediğinin/izlediğinin derin anlamını belirlemeye yönelik üst düzey çıkarımlar yapabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 86,
+        "sayfa_kitap": 86,
+        "etkinlik_adi": "8. ANLAYALIM (a, b, c, ç) & 1. ANLATALIM (a, b, c, ç)",
+        "tur": "Metinler Arası Karşılaştırma & Sözlü İletişim",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.D.6.9",
+            "aciklama": "Dinlediğini/izlediğini kendi içinde karşılaştırabilme"
+          },
+          {
+            "kod": "T.O.6.11",
+            "aciklama": "Metinler arası karşılaştırma yapabilme"
+          },
+          {
+            "kod": "T.K.6.4",
+            "aciklama": "Konuşmasında ön bilgilerinden yararlanabilme"
+          },
+          {
+            "kod": "T.K.6.8",
+            "aciklama": "Hazırlıksız konuşma yapabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 87,
+        "sayfa_kitap": 87,
+        "etkinlik_adi": "2. ANLATALIM & 3. ANLATALIM (a, b, c, ç, d)",
+        "tur": "Geçiş İfadeleriyle Zincir Konuşma & Rol Oynama (Yaratıcı Konuşma)",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.K.6.7",
+            "aciklama": "Yaratıcı konuşma yapabilme"
+          },
+          {
+            "kod": "T.K.6.8",
+            "aciklama": "Hazırlıksız konuşma yapabilme"
+          },
+          {
+            "kod": "T.K.6.25",
+            "aciklama": "Konuşmasında beden dilini ve mekânı etkili kullanabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 88,
+        "sayfa_kitap": 88,
+        "etkinlik_adi": "4. ANLATALIM (a, b, c, ç) & 5. ANLATALIM (a, b, c)",
+        "tur": "Dil Bilgisi Oyunu (-da Eki) & Beyin Fırtınası / Paragraf Yazma",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.Y.6.21",
+            "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+          },
+          {
+            "kod": "T.K.6.1",
+            "aciklama": "Konuşma sürecini yönetebilme"
+          },
+          {
+            "kod": "T.Y.6.11",
+            "aciklama": "Yorumunu yazılı olarak ifade edebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 89,
+        "sayfa_kitap": 89,
+        "etkinlik_adi": "6. ANLATALIM & 7. ANLATALIM & Gelecek Derse Hazırlanalım",
+        "tur": "Mektup Yazma Adımları & Yazılı Etkileşim (Mesajlaşma)",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.Y.6.3",
+            "aciklama": "Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme"
+          },
+          {
+            "kod": "T.Y.6.5",
+            "aciklama": "Yazılı etkileşiminde uygun tepki verebilme"
+          },
+          {
+            "kod": "T.Y.6.4",
+            "aciklama": "Yazılı üretim ve yazılı etkileşiminde ön bilgilerinden yararlanabilme"
+          }
+        ]
+      }
+    ]
+  },
+  "metin_3": {
+    "baslik": "Rafadan Tayfa - İstiklâl Marşı",
+    "yazar": "TRT Çocuk (Dinleme/İzleme)",
+    "sayfa_araligi": "90 - 99 (Kitapta 90 - 99)",
+    "isleme_tarihi": "23 Kasım - 01 Aralık",
+    "etkinlikler": [
+      {
+        "sayfa_dosya": 90,
+        "sayfa_kitap": 90,
+        "etkinlik_adi": "HAYDİ, BAŞLAYALIM! & Değerlendirelim",
+        "tur": "Ön Bilgileri Harekete Geçirme & İzleme Süreci Öz Değerlendirmesi",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.K.6.4",
+            "aciklama": "Konuşmasında ön bilgilerinden yararlanabilme"
+          },
+          {
+            "kod": "T.D.6.6",
+            "aciklama": "Görselle iletilen anlamı belirleyebilme"
+          },
+          {
+            "kod": "T.D.6.2",
+            "aciklama": "Dinlemede/izlemede strateji ve yöntem seçimlerini yönetebilme"
+          },
+          {
+            "kod": "T.D.6.25",
+            "aciklama": "Dinleme/izleme sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 91,
+        "sayfa_kitap": 91,
+        "etkinlik_adi": "Değerlendirelim (b, c) & 1. ANLAYALIM (a)",
+        "tur": "Katılımsız Dinleme Yöntemi & Kahraman, Yer, Zaman Unsurları",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.D.6.25",
+            "aciklama": "Dinleme/izleme sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+          },
+          {
+            "kod": "T.D.6.7",
+            "aciklama": "Dinlediğinin/izlediğinin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme"
+          },
+          {
+            "kod": "T.Y.6.11",
+            "aciklama": "Yorumunu yazılı olarak ifade edebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 92,
+        "sayfa_kitap": 92,
+        "etkinlik_adi": "1. ANLAYALIM (b, c) & 2. ANLAYALIM (a, b)",
+        "tur": "Hikâye Unsurları Varsayım Cümleleri & Problem Durumunu Belirleme",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.D.6.7",
+            "aciklama": "Dinlediğinin/izlediğinin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme"
+          },
+          {
+            "kod": "T.D.6.11",
+            "aciklama": "Dinlediğindeki/izlediğindeki unsurları sınıflandırabilme"
+          },
+          {
+            "kod": "T.Y.6.3",
+            "aciklama": "Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme"
+          },
+          {
+            "kod": "T.Y.6.21",
+            "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 93,
+        "sayfa_kitap": 93,
+        "etkinlik_adi": "2. ANLAYALIM (c, ç, d) & 3. ANLAYALIM (a, b, c)",
+        "tur": "Probleme Çözüm Yolu & Eylemler Zaman Çizelgesi ve Duygusal Durumlar",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.D.6.8",
+            "aciklama": "Dinlediğinin/izlediğinin derin anlamını belirlemeye yönelik üst düzey çıkarımlar yapabilme"
+          },
+          {
+            "kod": "T.D.6.9",
+            "aciklama": "Dinlediğini/izlediğini kendi içinde karşılaştırabilme"
+          },
+          {
+            "kod": "T.D.6.11",
+            "aciklama": "Dinlediğindeki/izlediğindeki unsurları sınıflandırabilme"
+          },
+          {
+            "kod": "T.Y.6.11",
+            "aciklama": "Yorumunu yazılı olarak ifade edebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 94,
+        "sayfa_kitap": 94,
+        "etkinlik_adi": "4. ANLAYALIM (a, b, c)",
+        "tur": "Karakterleri Sınıflandırma & Sütun Grafiği Oluşturma",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.D.6.11",
+            "aciklama": "Dinlediğindeki/izlediğindeki unsurları sınıflandırabilme"
+          },
+          {
+            "kod": "T.D.6.6",
+            "aciklama": "Görselle iletilen anlamı belirleyebilme"
+          },
+          {
+            "kod": "T.D.6.9",
+            "aciklama": "Dinlediğini/izlediğini kendi içinde karşılaştırabilme"
+          },
+          {
+            "kod": "T.Y.6.3",
+            "aciklama": "Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 95,
+        "sayfa_kitap": 95,
+        "etkinlik_adi": "5. ANLAYALIM (a, b, c)",
+        "tur": "Dil Bilgisi: Kök, Yapım Eki ve Çekim Eki İncelemesi",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.5",
+            "aciklama": "Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme"
+          },
+          {
+            "kod": "T.O.6.12",
+            "aciklama": "Metindeki unsurları sınıflandırabilme"
+          },
+          {
+            "kod": "T.Y.6.21",
+            "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 96,
+        "sayfa_kitap": 96,
+        "etkinlik_adi": "6. ANLAYALIM (a, b, c) & 1. ANLATALIM",
+        "tur": "Atatürk Anısı & Bağımsızlık Sembollerine Saygı Sloganı & Şiir Seslendirme",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.8",
+            "aciklama": "Metnin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme"
+          },
+          {
+            "kod": "T.K.6.9",
+            "aciklama": "Konuşmasında sesini uygun şekilde kullanabilme"
+          },
+          {
+            "kod": "T.Y.6.11",
+            "aciklama": "Yorumunu yazılı olarak ifade edebilme"
+          },
+          {
+            "kod": "T.Y.6.21",
+            "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 97,
+        "sayfa_kitap": 97,
+        "etkinlik_adi": "2. ANLATALIM (a, b) & 3. ANLATALIM (a, b, c, ç)",
+        "tur": "Söz Varlığı Unsurları & Haber Metni Analizi ve Rol Canlandırma",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.K.6.4",
+            "aciklama": "Konuşmasında ön bilgilerinden yararlanabilme"
+          },
+          {
+            "kod": "T.K.6.5",
+            "aciklama": "Konuşmasında uygun tepki verebilme"
+          },
+          {
+            "kod": "T.K.6.7",
+            "aciklama": "Yaratıcı konuşma yapabilme"
+          },
+          {
+            "kod": "T.O.6.8",
+            "aciklama": "Metnin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 98,
+        "sayfa_kitap": 98,
+        "etkinlik_adi": "4. ANLATALIM (a, b) & 5. ANLATALIM (a, b)",
+        "tur": "Rol Kartlarıyla Doğaçlama Konuşma & Karşılaştırma Cümleleri",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.K.6.7",
+            "aciklama": "Yaratıcı konuşma yapabilme"
+          },
+          {
+            "kod": "T.K.6.12",
+            "aciklama": "Konuşmasında karşılaştırma yapabilme"
+          },
+          {
+            "kod": "T.K.6.25",
+            "aciklama": "Konuşmasında beden dilini ve mekânı etkili kullanabilme"
+          },
+          {
+            "kod": "T.O.6.10",
+            "aciklama": "Metin içi karşılaştırma yapabilme"
+          },
+          {
+            "kod": "T.Y.6.21",
+            "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 99,
+        "sayfa_kitap": 99,
+        "etkinlik_adi": "6. ANLATALIM & Gelecek Derse Hazırlanalım",
+        "tur": "İstiklâl Marşı 3. Dörtlüğü Çözümleme & Çizgi Roman Diyalogları",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.9",
+            "aciklama": "Metnin derin anlamını belirlemeye yönelik üst düzey çıkarımlar yapabilme"
+          },
+          {
+            "kod": "T.Y.6.3",
+            "aciklama": "Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme"
+          },
+          {
+            "kod": "T.Y.6.11",
+            "aciklama": "Yorumunu yazılı olarak ifade edebilme"
+          },
+          {
+            "kod": "T.Y.6.21",
+            "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+          }
+        ]
+      }
+    ]
+  },
+  "metin_4": {
+    "baslik": "1071'den 1922'ye Tek Millet İki Zafer",
+    "yazar": "Kerem ÖZAKMAN (Şiir alıntısı ile)",
+    "sayfa_araligi": "100 - 108 (Kitapta 100 - 108)",
+    "isleme_tarihi": "02 - 09 Aralık",
+    "etkinlikler": [
+      {
+        "sayfa_dosya": 100,
+        "sayfa_kitap": 100,
+        "etkinlik_adi": "HAYDİ, BAŞLAYALIM! & Kelime Şifre Çözümü (26 AĞUSTOS)",
+        "tur": "Ön Bilgi Harekete Geçirme & Söz Varlığı",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.K.6.4",
+            "aciklama": "Konuşmasında ön bilgilerinden yararlanabilme"
+          },
+          {
+            "kod": "T.O.6.5",
+            "aciklama": "Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme"
+          },
+          {
+            "kod": "T.O.6.12",
+            "aciklama": "Metindeki unsurları sınıflandırabilme"
+          },
+          {
+            "kod": "T.O.6.3",
+            "aciklama": "Okumada strateji ve yöntem seçimlerini yönetebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 101,
+        "sayfa_kitap": 101,
+        "etkinlik_adi": "Metin Okuma: Malazgirt Zaferi & Yazım/Noktalama İncelemesi",
+        "tur": "Okuma ve Dil Bilgisi",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.3",
+            "aciklama": "Okumada strateji ve yöntem seçimlerini yönetebilme"
+          },
+          {
+            "kod": "T.O.6.8",
+            "aciklama": "Metnin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme"
+          },
+          {
+            "kod": "T.Y.6.21",
+            "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 102,
+        "sayfa_kitap": 102,
+        "etkinlik_adi": "1. ANLAYALIM (Akıcı Okuma) & 2. ANLAYALIM (a - Haber Başlıkları)",
+        "tur": "Akıcı Okuma & Anlamlandırma",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.3",
+            "aciklama": "Okumada strateji ve yöntem seçimlerini yönetebilme"
+          },
+          {
+            "kod": "T.O.6.8",
+            "aciklama": "Metnin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme"
+          },
+          {
+            "kod": "T.O.6.27",
+            "aciklama": "Okuma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 103,
+        "sayfa_kitap": 103,
+        "etkinlik_adi": "2. ANLAYALIM (b, c) & 3. ANLAYALIM (Hikâye Unsurları / 5N1K)",
+        "tur": "Derin Anlama & Özetleme Stratejisi",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.8",
+            "aciklama": "Metnin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme"
+          },
+          {
+            "kod": "T.O.6.12",
+            "aciklama": "Metindeki unsurları sınıflandırabilme"
+          },
+          {
+            "kod": "T.O.6.23",
+            "aciklama": "Okuduğunu özetleyebilme"
+          },
+          {
+            "kod": "T.O.6.27",
+            "aciklama": "Okuma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+          },
+          {
+            "kod": "T.Y.6.11",
+            "aciklama": "Yorumunu yazılı olarak ifade edebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 104,
+        "sayfa_kitap": 104,
+        "etkinlik_adi": "1. ANLATALIM (Sözlü Özet) & 4-5. ANLAYALIM (Dağ Başını Duman Almış Oluş Sırası)",
+        "tur": "Dinleme/İzleme & Kronolojik Sıralama",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.K.6.15",
+            "aciklama": "Sözlü olarak özetleyebilme"
+          },
+          {
+            "kod": "T.D.6.2",
+            "aciklama": "Dinlemede/izlemede strateji ve yöntem seçimlerini yönetebilme"
+          },
+          {
+            "kod": "T.D.6.6",
+            "aciklama": "Görselle iletilen anlamı belirleyebilme"
+          },
+          {
+            "kod": "T.D.6.7",
+            "aciklama": "Dinlediğinin/izlediğinin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme"
+          },
+          {
+            "kod": "T.D.6.11",
+            "aciklama": "Dinlediğindeki/izlediğindeki unsurları sınıflandırabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 105,
+        "sayfa_kitap": 105,
+        "etkinlik_adi": "6. ANLAYALIM (Anahtar Kelimeler) & 7. ANLAYALIM (Büyük Taarruz Şiiri)",
+        "tur": "Dijital Arama Becerileri & Metinler Arası Karşılaştırmaya Giriş",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.D.6.11",
+            "aciklama": "Dinlediğindeki/izlediğindeki unsurları sınıflandırabilme"
+          },
+          {
+            "kod": "T.O.6.8",
+            "aciklama": "Metnin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme"
+          },
+          {
+            "kod": "T.O.6.11",
+            "aciklama": "Metinler arası karşılaştırma yapabilme"
+          },
+          {
+            "kod": "T.Y.6.21",
+            "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 106,
+        "sayfa_kitap": 106,
+        "etkinlik_adi": "7. ANLAYALIM (b, c: Benzerlik-Farklılık Tablosu) & 1. ANLATALIM",
+        "tur": "Metinler Arası Karşılaştırma & Karşılaştırmalı Konuşma",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.10",
+            "aciklama": "Metin içi karşılaştırma yapabilme"
+          },
+          {
+            "kod": "T.O.6.11",
+            "aciklama": "Metinler arası karşılaştırma yapabilme"
+          },
+          {
+            "kod": "T.O.6.12",
+            "aciklama": "Metindeki unsurları sınıflandırabilme"
+          },
+          {
+            "kod": "T.K.6.12",
+            "aciklama": "Konuşmasında karşılaştırma yapabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 107,
+        "sayfa_kitap": 107,
+        "etkinlik_adi": "2. ANLATALIM (Millî Bayramlar Takvimi) & Değerlendirelim (Konuşma Çizelgesi)",
+        "tur": "Konuşma Becerisi & Öz Değerlendirme",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.K.6.1",
+            "aciklama": "Konuşma sürecini yönetebilme"
+          },
+          {
+            "kod": "T.K.6.4",
+            "aciklama": "Konuşmasında ön bilgilerinden yararlanabilme"
+          },
+          {
+            "kod": "T.K.6.25",
+            "aciklama": "Konuşmasında beden dilini ve mekânı etkili kullanabilme"
+          },
+          {
+            "kod": "T.K.6.26",
+            "aciklama": "Konuşma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 108,
+        "sayfa_kitap": 108,
+        "etkinlik_adi": "3. ANLATALIM (Zaman Yolcusu Günlüğü) & 4. ANLATALIM (İstiklal Madalyası)",
+        "tur": "Yaratıcı Yazma & Bilgilendirici Metin Türü Seçimi",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.Y.6.1",
+            "aciklama": "Yazma sürecini yönetebilme"
+          },
+          {
+            "kod": "T.Y.6.2",
+            "aciklama": "Yazma strateji, yöntem ve tekniklerine yönelik seçimlerini yönetebilme"
+          },
+          {
+            "kod": "T.Y.6.3",
+            "aciklama": "Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme"
+          },
+          {
+            "kod": "T.Y.6.4",
+            "aciklama": "Yazılı üretim ve yazılı etkileşiminde ön bilgilerinden yararlanabilme"
+          },
+          {
+            "kod": "T.Y.6.21",
+            "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+          }
+        ]
+      }
+    ]
+  }
+}

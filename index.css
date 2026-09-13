@@ -2157,6 +2157,7 @@ body::-webkit-scrollbar-thumb:hover {
   color: #1e3a8a;
   letter-spacing: 0.01rem;
   padding: 2px 6px;
+  overflow: visible !important;
 }
 
 /* 2-Line Ruled Lines Style (Satırlar İçin) */
@@ -2165,7 +2166,9 @@ body::-webkit-scrollbar-thumb:hover {
   line-height: calc(2.29 * var(--unit-h, 9.2px));
   color: #1d4ed8;
   text-align: left;
-  letter-spacing: 0.01rem;
+  letter-spacing: -0.01em;
+  overflow: visible !important;
+  white-space: nowrap;
 }
 
 /* 5-Line Box Style (Beyaz Not Kutusu & Tablo Hücreleri İçin) */
@@ -2202,6 +2205,7 @@ body::-webkit-scrollbar-thumb:hover {
   text-align: left;
   letter-spacing: 0.01rem;
   white-space: nowrap;
+  overflow: visible !important;
 }
 
 /* Underline Highlight Style (Metin içinde kelime altı çizme için) */

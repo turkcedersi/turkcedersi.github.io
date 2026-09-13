@@ -1,0 +1,1128 @@
+{
+  "sinif": 5,
+  "kitap": "1. Kitap",
+  "tema": "3. Tema: Duygularımı Tanıyorum",
+  "metin_1": {
+    "baslik": "Duygularımız",
+    "tur": "Bilgilendirici Metin",
+    "sayfa_araligi": "120 - 133",
+    "etkinlikler": [
+      {
+        "sayfa_dosya": 120,
+        "sayfa_kitap": 120,
+        "etkinlik_adi": "3. Tema Kapağı",
+        "tur": "Tema Girişi",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.5.1",
+            "aciklama": "Okumada materyal seçimini yönetebilme"
+          },
+          {
+            "kod": "T.O.5.3",
+            "aciklama": "Okumada strateji, yöntem ve teknik seçimlerini yönetebilme"
+          },
+          {
+            "kod": "T.O.5.6",
+            "aciklama": "Metnin yüzey anlamını belirleyebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 121,
+        "sayfa_kitap": 121,
+        "etkinlik_adi": "Başlangıç Noktası ve Anahtar Kavramlar",
+        "tur": "Ön Hazırlık",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.5.1",
+            "aciklama": "Okumada materyal seçimini yönetebilme"
+          },
+          {
+            "kod": "T.O.5.3",
+            "aciklama": "Okumada strateji, yöntem ve teknik seçimlerini yönetebilme"
+          },
+          {
+            "kod": "T.O.5.6",
+            "aciklama": "Metnin yüzey anlamını belirleyebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 122,
+        "sayfa_kitap": 122,
+        "etkinlik_adi": "Metin Okuma Süreci ve Söz Varlığı (1. Bölüm)",
+        "tur": "Okuma ve Söz Varlığı",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.5.3",
+            "aciklama": "Okumada strateji, yöntem ve teknik seçimlerini yönetebilme"
+          },
+          {
+            "kod": "T.O.5.5",
+            "aciklama": "Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme"
+          },
+          {
+            "kod": "T.O.5.6",
+            "aciklama": "Metnin yüzey anlamını belirleyebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 123,
+        "sayfa_kitap": 123,
+        "etkinlik_adi": "Metin Okuma Süreci ve Araştırma (2. Bölüm)",
+        "tur": "Okuma ve Çözümleme",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.5.3",
+            "aciklama": "Okumada strateji, yöntem ve teknik seçimlerini yönetebilme"
+          },
+          {
+            "kod": "T.O.5.6",
+            "aciklama": "Metnin yüzey anlamını belirleyebilme"
+          },
+          {
+            "kod": "T.O.5.20",
+            "aciklama": "Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 124,
+        "sayfa_kitap": 124,
+        "etkinlik_adi": "1. Etkinlik (Sözlü) ve 2. Etkinlik (Görsel İpuçları Tablosu)",
+        "tur": "Anlama ve Sınıflandırma",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.5.6",
+            "aciklama": "Metnin yüzey anlamını belirleyebilme"
+          },
+          {
+            "kod": "T.O.5.11",
+            "aciklama": "Metindeki unsurları sınıflandırabilme"
+          },
+          {
+            "kod": "T.O.5.20",
+            "aciklama": "Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 125,
+        "sayfa_kitap": 125,
+        "etkinlik_adi": "3. Etkinlik (Kelimelerin Anlamı) ve 4. Etkinlik (Dinleme ve Anahtar Kelimeler)",
+        "tur": "Söz Varlığı ve Dinleme",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.5.5",
+            "aciklama": "Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme"
+          },
+          {
+            "kod": "T.D.5.4",
+            "aciklama": "Dinlediğinde/izlediğinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme"
+          },
+          {
+            "kod": "T.D.5.5",
+            "aciklama": "Dinlediğinin/izlediğinin yüzey anlamını belirleyebilme"
+          },
+          {
+            "kod": "T.D.5.17",
+            "aciklama": "Dinlediğinden/izlediğinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 126,
+        "sayfa_kitap": 126,
+        "etkinlik_adi": "5. Etkinlik: Merhametli Olmak Metni ve Paragraf İncelemesi",
+        "tur": "Metin Yapısı ve Bölümleri",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.5.6",
+            "aciklama": "Metnin yüzey anlamını belirleyebilme"
+          },
+          {
+            "kod": "T.O.5.16",
+            "aciklama": "Metnin bölümlerini belirlemeye yönelik çözümleme yapabilme"
+          },
+          {
+            "kod": "T.O.5.18",
+            "aciklama": "Bilgilendirici metinde düşünceyi geliştirme yollarını belirlemeye yönelik çözümleme yapabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 127,
+        "sayfa_kitap": 127,
+        "etkinlik_adi": "6. Etkinlik: Düşünceyi Geliştirme Yolları (Tanımlama, Örneklendirme, Benzetme, Karşılaştırma)",
+        "tur": "Düşünceyi Geliştirme Yolları",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.5.16",
+            "aciklama": "Metnin bölümlerini belirlemeye yönelik çözümleme yapabilme"
+          },
+          {
+            "kod": "T.O.5.18",
+            "aciklama": "Bilgilendirici metinde düşünceyi geliştirme yollarını belirlemeye yönelik çözümleme yapabilme"
+          },
+          {
+            "kod": "T.Y.5.8",
+            "aciklama": "Yazısında sınıflandırma yapabilme"
+          },
+          {
+            "kod": "T.Y.5.13",
+            "aciklama": "Yazısını zenginleştirecek biçimde söz varlığını kullanabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 128,
+        "sayfa_kitap": 128,
+        "etkinlik_adi": "7. Etkinlik (Görsel Eşleştirme) ve 8. Etkinlik (Çoklu Ortam Ögeleri)",
+        "tur": "Duygu Analizi ve Çoklu Ortam",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.5.6",
+            "aciklama": "Metnin yüzey anlamını belirleyebilme"
+          },
+          {
+            "kod": "T.O.5.11",
+            "aciklama": "Metindeki unsurları sınıflandırabilme"
+          },
+          {
+            "kod": "T.D.5.18",
+            "aciklama": "Çoklu ortam ögelerine yönelik çözümleme yapabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 129,
+        "sayfa_kitap": 129,
+        "etkinlik_adi": "9. Etkinlik: İsimler (Somut İsim ve Soyut İsim)",
+        "tur": "Dil Yapıları / Sözcük Türleri",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.5.5",
+            "aciklama": "Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme"
+          },
+          {
+            "kod": "T.O.5.20",
+            "aciklama": "Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme"
+          },
+          {
+            "kod": "T.Y.5.8",
+            "aciklama": "Yazısında sınıflandırma yapabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 130,
+        "sayfa_kitap": 130,
+        "etkinlik_adi": "10. Etkinlik: İsimler (Özel İsim, Cins İsim, Tekil, Çoğul, Topluluk)",
+        "tur": "Dil Yapıları / Sözcük Türleri",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.5.20",
+            "aciklama": "Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme"
+          },
+          {
+            "kod": "T.Y.5.8",
+            "aciklama": "Yazısında sınıflandırma yapabilme"
+          },
+          {
+            "kod": "T.Y.5.13",
+            "aciklama": "Yazısını zenginleştirecek biçimde söz varlığını kullanabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 131,
+        "sayfa_kitap": 131,
+        "etkinlik_adi": "11. Etkinlik (KONUŞALIM): İsim Kartlarıyla Konuşma Atölyesi",
+        "tur": "Konuşma Becerisi",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.K.5.2",
+            "aciklama": "Konuşmada yöntem ve teknik seçimlerini yönetebilme"
+          },
+          {
+            "kod": "T.K.5.6",
+            "aciklama": "Yaratıcı konuşma yapabilme"
+          },
+          {
+            "kod": "T.K.5.16",
+            "aciklama": "Düşünceyi geliştirme yollarını kullanarak konuşmasını yapılandırabilme"
+          },
+          {
+            "kod": "T.K.5.19",
+            "aciklama": "Uygun bağlantı ifadelerini kullanabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 132,
+        "sayfa_kitap": 132,
+        "etkinlik_adi": "12. Etkinlik (YAZALIM): Duygularla Yaratıcı Hikâye Yazımı (1. Bölüm)",
+        "tur": "Yazma Atölyesi",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.Y.5.2",
+            "aciklama": "Yazmada strateji, yöntem ve teknik seçimlerini yönetebilme"
+          },
+          {
+            "kod": "T.Y.5.3",
+            "aciklama": "Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme"
+          },
+          {
+            "kod": "T.Y.5.5",
+            "aciklama": "Yaratıcı yazı yazabilme"
+          },
+          {
+            "kod": "T.Y.5.13",
+            "aciklama": "Yazısını zenginleştirecek biçimde söz varlığını kullanabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 133,
+        "sayfa_kitap": 133,
+        "etkinlik_adi": "12. Etkinlik (YAZALIM): Duygularla Hikâye Yazımı (2. Bölüm) ve Materyal Seçimi",
+        "tur": "Yazma Atölyesi ve Materyal",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.Y.5.3",
+            "aciklama": "Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme"
+          },
+          {
+            "kod": "T.Y.5.5",
+            "aciklama": "Yaratıcı yazı yazabilme"
+          },
+          {
+            "kod": "T.Y.5.15",
+            "aciklama": "Uygun bağlantı ifadelerini kullanabilme"
+          },
+          {
+            "kod": "T.Y.5.16",
+            "aciklama": "Yazım ve noktalama işaretleriyle ilgili kuralları uygulayabilme"
+          }
+        ]
+      }
+    ]
+  },
+  "metin_2": {
+    "baslik": "Her Yüreğe Nakış Gerek",
+    "tur": "Hikâye Edici Metin",
+    "sayfa_araligi": "134 - 142",
+    "etkinlikler": [
+      {
+        "sayfa_dosya": 134,
+        "sayfa_kitap": 134,
+        "etkinlik_adi": "Her Yüreğe Nakış Gerek (Metin Okuma - 1. Bölüm)",
+        "tur": "Metin Okuma",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.5.1",
+            "aciklama": "Okumada materyal seçimini yönetebilme (Metin ve görselleri inceleme)"
+          },
+          {
+            "kod": "T.O.5.3",
+            "aciklama": "Okumada strateji, yöntem ve teknik seçimlerini yönetebilme (Akıcı ve sesli okuma)"
+          },
+          {
+            "kod": "T.O.5.6",
+            "aciklama": "Metnin yüzey anlamını belirleyebilme (Doğrudan ifade edilen unsurlar)"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 135,
+        "sayfa_kitap": 135,
+        "etkinlik_adi": "Her Yüreğe Nakış Gerek (Metin Okuma - 2. Bölüm)",
+        "tur": "Metin Okuma",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.5.3",
+            "aciklama": "Okuma sürecinde anlamını bilmediği kelimelerin anlamını bağlamdan tahmin edebilme"
+          },
+          {
+            "kod": "T.O.5.6",
+            "aciklama": "Metnin derin anlamını belirleyebilme (Deyimler ve örtük anlamlar)"
+          },
+          {
+            "kod": "T.O.5.20",
+            "aciklama": "Metindeki kültürel unsurları ve milli manevi değerleri açıklar"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 136,
+        "sayfa_kitap": 136,
+        "etkinlik_adi": "Her Yüreğe Nakış Gerek (Metin Okuma - 3. Bölüm)",
+        "tur": "Metin Okuma",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.5.3",
+            "aciklama": "Metnin ana fikrini ve yardımcı fikirlerini belirleyebilme"
+          },
+          {
+            "kod": "T.O.5.6",
+            "aciklama": "Metindeki olay örgüsünü ve duygu durumlarını kavrar"
+          },
+          {
+            "kod": "T.O.5.20",
+            "aciklama": "Metinden hareketle ahlaki ve insani çıkarımlarda bulunabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 137,
+        "sayfa_kitap": 137,
+        "etkinlik_adi": "1. ve 2. Etkinlik: Metin Soruları ve İçeriği Değerlendirme",
+        "tur": "Anlama ve Değerlendirme",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.5.16",
+            "aciklama": "Metinle ilgili soruları cevaplar (1. Etkinlik: Metin anlama soruları)"
+          },
+          {
+            "kod": "T.O.5.6",
+            "aciklama": "Metindeki olaylar ve kişilerin davranışlarını ölçütle karşılaştırır (2. Etkinlik)"
+          },
+          {
+            "kod": "T.O.5.11",
+            "aciklama": "Okuduklarını kendi hayatı ve geleneklerimizle karşılaştırır"
+          },
+          {
+            "kod": "T.O.5.20",
+            "aciklama": "Ulaştığı sonucu gerekçelendirerek yazılı olarak ifade eder"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 138,
+        "sayfa_kitap": 138,
+        "etkinlik_adi": "3. ve 4. Etkinlik: Nasihatleri Sınıflandırma ve Hikâye Unsurları",
+        "tur": "Sınıflandırma ve Metin Analizi",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.5.11",
+            "aciklama": "Metindeki nasihatleri duygu ve davranış bağlamında sınıflandırır (3. Etkinlik)"
+          },
+          {
+            "kod": "T.O.5.13",
+            "aciklama": "Metnin hikâye unsurlarını (olay, kişi, zaman, mekân) belirler (4. Etkinlik a)"
+          },
+          {
+            "kod": "T.O.5.16",
+            "aciklama": "Hikâyenin yapı unsurlarına yönelik çıkarımlarda bulunur"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 139,
+        "sayfa_kitap": 139,
+        "etkinlik_adi": "5. ve 6. Etkinlik: Atasözü Eşleştirme ve Hikâyenin Bölümleri",
+        "tur": "Kavram Eşleştirme ve Yapı Analizi",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.5.5",
+            "aciklama": "Atasözleri ile insani değerleri/kavramları eşleştirir (5. Etkinlik)"
+          },
+          {
+            "kod": "T.O.5.13",
+            "aciklama": "Hikâyenin serim, düğüm ve çözüm bölümlerini çözümler (6. Etkinlik a)"
+          },
+          {
+            "kod": "T.O.5.16",
+            "aciklama": "Metnin bölümlerini ana hatlarıyla özetler"
+          },
+          {
+            "kod": "T.O.5.20",
+            "aciklama": "Değerler eğitimini metin bağlamında yorumlar"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 140,
+        "sayfa_kitap": 140,
+        "etkinlik_adi": "7. Etkinlik (KONUŞALIM): Yaratıcı Konuşma Atölyesi",
+        "tur": "Sözlü İletişim",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.K.5.2",
+            "aciklama": "Konuşmasında beden dilini ve ses tonunu etkili kullanır"
+          },
+          {
+            "kod": "T.K.5.6",
+            "aciklama": "Yaratıcı ve kurgusal konuşma yapar"
+          },
+          {
+            "kod": "T.K.5.16",
+            "aciklama": "Konuşmasında nezaket kurallarına ve akıcılığa özen gösterir"
+          },
+          {
+            "kod": "T.K.5.19",
+            "aciklama": "Düşüncelerini mantıksal bir sıra içinde ifade eder"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 141,
+        "sayfa_kitap": 141,
+        "etkinlik_adi": "8. ve 9. Etkinlik: Dostluk, Hoşgörü ve Yazma Taslağı",
+        "tur": "Değerlendirme ve Yazma Hazırlığı",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.5.6",
+            "aciklama": "Metinden hareketle dostluk ve hoşgörü kavramlarını açıklar (8. Etkinlik a)"
+          },
+          {
+            "kod": "T.O.5.20",
+            "aciklama": "İnsani ilişkilerde affedici ve anlayışlı olmanın önemini değerlendirir"
+          },
+          {
+            "kod": "T.Y.5.13",
+            "aciklama": "Yazacağı metnin taslağını oluşturur (9. Etkinlik a: Hazırlık)"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 142,
+        "sayfa_kitap": 142,
+        "etkinlik_adi": "9. Etkinlik (YAZALIM): Hikâye Yazımı",
+        "tur": "Yazılı Üretim",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.Y.5.2",
+            "aciklama": "Yazılarında serim, düğüm, çözüm bölümlerine dikkat eder"
+          },
+          {
+            "kod": "T.Y.5.3",
+            "aciklama": "Hikâye edici metin yazar"
+          },
+          {
+            "kod": "T.Y.5.5",
+            "aciklama": "Yazısında noktalama işaretlerini ve imla kurallarını doğru kullanır"
+          },
+          {
+            "kod": "T.Y.5.13",
+            "aciklama": "Olay örgüsünü ve kişi kadrosunu kurgulayarak metin oluşturur"
+          },
+          {
+            "kod": "T.Y.5.15",
+            "aciklama": "Yazısına içeriğe uygun etkileyici bir başlık belirler"
+          },
+          {
+            "kod": "T.Y.5.16",
+            "aciklama": "Yazısını zenginleştirmek için betimlemelerden faydalanır"
+          }
+        ]
+      }
+    ]
+  },
+  "metin_3": {
+    "baslik": "Korkuluk",
+    "tur": "Şiir",
+    "sayfa_araligi": "143 - 153",
+    "etkinlikler": [
+      {
+        "sayfa_dosya": 143,
+        "sayfa_kitap": 143,
+        "etkinlik_adi": "Korkuluk (Şiir Okuma - Keşif Yolculuğu)",
+        "tur": "Şiir Okuma",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.5.1",
+            "aciklama": "Okumada materyal seçimini yönetebilme (Şiir metnini ve görsel unsurları inceleme)"
+          },
+          {
+            "kod": "T.O.5.3",
+            "aciklama": "Okumada strateji, yöntem ve teknik seçimlerini yönetebilme (Vurgu ve tonlamaya dikkat ederek şiir okuma)"
+          },
+          {
+            "kod": "T.O.5.6",
+            "aciklama": "Şiirin yüzey anlamını belirleyebilme (Dizelerdeki açık ifadeleri kavrama)"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 144,
+        "sayfa_kitap": 144,
+        "etkinlik_adi": "1., 2. ve 3. Etkinlik: Renklendirme, Kelime Tablosu ve Şiir Soruları",
+        "tur": "Kelime Dağarcığı ve Anlama",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.5.3",
+            "aciklama": "Okuma sürecinde renklendirmenin anlama katkısını değerlendirebilme (1. Etkinlik)"
+          },
+          {
+            "kod": "T.O.5.6",
+            "aciklama": "Şiirdeki kelimelerin anlamını bağlamdan tahmin edebilme ve sözlükten doğrulayabilme (2. Etkinlik)"
+          },
+          {
+            "kod": "T.O.5.16",
+            "aciklama": "Şiirle ilgili soruları sözlü olarak cevaplayabilme (3. Etkinlik)"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 145,
+        "sayfa_kitap": 145,
+        "etkinlik_adi": "4. ve 5. Etkinlik: Şiirin Mesajı, Karakter Özellikleri ve Kelime Yapısı",
+        "tur": "Derin Anlam ve Karakter Analizi",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.5.6",
+            "aciklama": "Şiirdeki karakterin özelliklerini ve şiirin derin anlamını belirleyebilme (4. Etkinlik a)"
+          },
+          {
+            "kod": "T.O.5.10",
+            "aciklama": "Şiirin ana duygusunu ve şairin vermek istediği mesajı belirleyebilme (4. Etkinlik b)"
+          },
+          {
+            "kod": "T.O.5.11",
+            "aciklama": "Eklerin kelimeye kattığı anlamı ve dizedeki dileği yorumlayabilme (5. Etkinlik a, b)"
+          },
+          {
+            "kod": "T.O.5.20",
+            "aciklama": "Korku ve sevgi duyguları üzerinden insani değerleri değerlendirebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 146,
+        "sayfa_kitap": 146,
+        "etkinlik_adi": "6. ve 7. Etkinlik (a): Dinleme Metninde ve Şiirde Söz Sanatları",
+        "tur": "Edebi Sanatlar",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.D.5.2",
+            "aciklama": "Dinlemede strateji, yöntem ve teknik seçimlerini yönetebilme (Anadolu metnini dinleme)"
+          },
+          {
+            "kod": "T.D.5.6",
+            "aciklama": "Dinlediği metindeki söz sanatlarını (kişileştirme, konuşturma, benzetme) tespit edebilme (6. Etkinlik)"
+          },
+          {
+            "kod": "T.O.5.6",
+            "aciklama": "'Uçan Balon' şiirinde söz sanatlarını belirleyebilme (7. Etkinlik a)"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 147,
+        "sayfa_kitap": 147,
+        "etkinlik_adi": "7. Etkinlik (b): Şiir Labirenti ve Söz Sanatları Akış Şeması",
+        "tur": "Akış Şeması ve Sanat Analizi",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.5.6",
+            "aciklama": "Metindeki söz sanatlarının doğruluk durumunu analiz edebilme (7. Etkinlik b)"
+          },
+          {
+            "kod": "T.O.5.16",
+            "aciklama": "Mantıksal akış şemasını (labirent/ağaç) takip ederek doğru sonuca ulaşabilme"
+          },
+          {
+            "kod": "T.O.5.20",
+            "aciklama": "Edebi sanatlardan hareketle şiirin anlatım zenginliğini değerlendirebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 148,
+        "sayfa_kitap": 148,
+        "etkinlik_adi": "8. Etkinlik: Büyük Harflerin Kullanıldığı Yerler ve Kural Eşleştirme",
+        "tur": "Dil Bilgisi / İmla Kuralları",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.Y.5.5",
+            "aciklama": "Büyük harflerin kullanıldığı yerleri kurallarıyla açıklar ve uygular (8. Etkinlik a, b)"
+          },
+          {
+            "kod": "T.Y.5.11",
+            "aciklama": "Yazım kurallarını cümle düzeyinde analiz eder ve eşleştirir"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 149,
+        "sayfa_kitap": 149,
+        "etkinlik_adi": "9. Etkinlik (KONUŞALIM): Mutluluk Konuşması ve Akran Değerlendirme",
+        "tur": "Sözlü İletişim ve Değerlendirme",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.K.5.2",
+            "aciklama": "Konuşmasında beden dilini ve ses tonunu etkili kullanır"
+          },
+          {
+            "kod": "T.K.5.6",
+            "aciklama": "Duygu ve deneyimlerinden hareketle konuşma yapar (En mutlu olduğum yer)"
+          },
+          {
+            "kod": "T.K.5.16",
+            "aciklama": "Akranının konuşmasını ölçütlere göre objektif değerlendirir"
+          },
+          {
+            "kod": "T.K.5.19",
+            "aciklama": "Konuşma sürecini planlar ve sunar"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 150,
+        "sayfa_kitap": 150,
+        "etkinlik_adi": "10. Etkinlik: Amaç-Sonuç Cümleleri ve Tamamlama",
+        "tur": "Anlam İlişkileri",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.5.6",
+            "aciklama": "Cümleler arasındaki anlam ilişkilerini (amaç-sonuç, neden-sonuç) ayırt eder"
+          },
+          {
+            "kod": "T.Y.5.5",
+            "aciklama": "Cümleleri amaç bildiren uygun ifadelerle tamamlar"
+          },
+          {
+            "kod": "T.Y.5.11",
+            "aciklama": "Düşüncelerini bağlama uygun amaç ifadeleriyle zenginleştirir"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 151,
+        "sayfa_kitap": 151,
+        "etkinlik_adi": "11. Etkinlik: Tanıtım Kartı ve Sınıflandırma Paragrafı",
+        "tur": "Bilgi Sınıflandırma ve Yazma",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.5.6",
+            "aciklama": "Metindeki bilgileri sınıflandırarak tanıtım kartına aktarır (11. Etkinlik a)"
+          },
+          {
+            "kod": "T.O.5.11",
+            "aciklama": "Bilim insanı/astronot biyografisinden hareketle çıkarımlarda bulunur"
+          },
+          {
+            "kod": "T.Y.5.13",
+            "aciklama": "Bilgileri sınıflandırarak kurallı paragraf oluşturur (11. Etkinlik b YAZALIM)"
+          },
+          {
+            "kod": "T.Y.5.15",
+            "aciklama": "Paragrafında çoklu ortam ögelerinin işlevlerini planlar"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 152,
+        "sayfa_kitap": 152,
+        "etkinlik_adi": "Bilgileri Organize Etme Stratejisi: Metin Yapılarının Analizi (Teori)",
+        "tur": "Öğrenme Stratejisi",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.5.3",
+            "aciklama": "Bilgileri organize etme stratejisini (metin yapılarının analizi) öğrenir ve inceler"
+          },
+          {
+            "kod": "T.D.5.3",
+            "aciklama": "Öyküleyici metinlerin yapı unsurlarını (olay, kişi, yer, zaman) kavrar"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 153,
+        "sayfa_kitap": 153,
+        "etkinlik_adi": "Bilgileri Organize Etme Stratejisi: Hikâye Haritası (Uygulama)",
+        "tur": "Strateji Uygulaması",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.5.3",
+            "aciklama": "Bilgileri organize etme stratejisini grup ve bireysel çalışmalarında uygular"
+          },
+          {
+            "kod": "T.O.5.6",
+            "aciklama": "Metinlerin ve filmlerin hikâye unsurlarını şemaya yerleştirir"
+          },
+          {
+            "kod": "T.O.5.13",
+            "aciklama": "Hikâye haritası çıkararak metinleri özetlemeye hazır hale gelir"
+          }
+        ]
+      }
+    ]
+  },
+  "metin_4": {
+    "baslik": "Altı Üstü Bir Yarış",
+    "tur": "Dinleme Metni",
+    "sayfa_araligi": "154 - 164",
+    "etkinlikler": [
+      {
+        "sayfa_dosya": 154,
+        "sayfa_kitap": 154,
+        "etkinlik_adi": "Altı Üstü Bir Yarış (Dinleme Öncesi Hazırlık)",
+        "tur": "Dinleme Öncesi",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.D.5.2",
+            "aciklama": "Dinlemede/izlemede strateji, yöntem ve teknik seçimlerini yönetebilme (Dinleme öncesi hazırlık)"
+          },
+          {
+            "kod": "T.D.5.5",
+            "aciklama": "Dinlediğinin/izlediğinin yüzey anlamını belirleyebilme (Görseller ve başlıkla tahmin)"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 155,
+        "sayfa_kitap": 155,
+        "etkinlik_adi": "1., 2. ve 3. Etkinlik: Kelime Tahminleri, Metin Soruları ve Gerekçelendirme",
+        "tur": "Kelime Dağarcığı ve Anlama",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.D.5.4",
+            "aciklama": "Dinlediğinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme (1. Etkinlik)"
+          },
+          {
+            "kod": "T.D.5.5",
+            "aciklama": "Dinlediğinin yüzey anlamını belirleyebilme (2. Etkinlik metin soruları)"
+          },
+          {
+            "kod": "T.D.5.6",
+            "aciklama": "Basit çıkarımlar yoluyla dinlediğinin derin anlamını belirleyebilme (3. Etkinlik)"
+          },
+          {
+            "kod": "T.O.5.11",
+            "aciklama": "Metindeki unsurları sınıflandırabilme ve gerekçelendirebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 156,
+        "sayfa_kitap": 156,
+        "etkinlik_adi": "4. ve 5. Etkinlik: Serim-Düğüm-Çözüm ve Metindeki Deyimler",
+        "tur": "Metin Yapısı ve Söz Varlığı",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.5.16",
+            "aciklama": "Metnin bölümlerini (serim, düğüm, çözüm) belirlemeye yönelik çözümleme yapabilme (4. Etkinlik)"
+          },
+          {
+            "kod": "T.O.5.20",
+            "aciklama": "Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme (5. Etkinlik a deyimler)"
+          },
+          {
+            "kod": "T.D.5.17",
+            "aciklama": "Dinlediğinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 157,
+        "sayfa_kitap": 157,
+        "etkinlik_adi": "5. ve 6. Etkinlik: Atasözleri ve Öfkeyle Baş Etme Adımları",
+        "tur": "Söz Varlığı ve Değerlendirme",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.5.20",
+            "aciklama": "Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme (5. Etkinlik a atasözleri)"
+          },
+          {
+            "kod": "T.O.5.6",
+            "aciklama": "Metnin yüzey anlamını belirleyebilme ve çıkarımlarda bulunabilme (6. Etkinlik öfke kontrolü)"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 158,
+        "sayfa_kitap": 158,
+        "etkinlik_adi": "7. ve 8. Etkinlik: Noktalama İşaretleri ve İkna Konuşması",
+        "tur": "Dil Bilgisi ve Sözlü İletişim",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.Y.5.16",
+            "aciklama": "Yazım ve noktalama işaretleriyle ilgili kuralları uygulayabilme (7. Etkinlik)"
+          },
+          {
+            "kod": "T.K.5.2",
+            "aciklama": "Konuşmada yöntem ve teknik seçimlerini yönetebilme (8. Etkinlik KONUŞALIM)"
+          },
+          {
+            "kod": "T.K.5.6",
+            "aciklama": "Yaratıcı konuşma yapabilme (İkna edici konuşma atölyesi)"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 159,
+        "sayfa_kitap": 159,
+        "etkinlik_adi": "Özetleme Stratejisi: İzle - Uygula - Öğren (Teori)",
+        "tur": "Öğrenme Stratejisi",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.5.3",
+            "aciklama": "Okumada strateji, yöntem ve teknik seçimlerini yönetebilme (Özetleme stratejisi keşfi)"
+          },
+          {
+            "kod": "T.D.5.2",
+            "aciklama": "Dinlemede strateji, yöntem ve teknik seçimlerini yönetebilme (İzle - Uygula - Öğren modeli)"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 160,
+        "sayfa_kitap": 160,
+        "etkinlik_adi": "Özetleme Stratejisi: Uygulama Adımları",
+        "tur": "Strateji Rehberi",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.5.3",
+            "aciklama": "Okumada strateji, yöntem ve teknik seçimlerini yönetebilme (Özetleme stratejisi adımları)"
+          },
+          {
+            "kod": "T.O.5.16",
+            "aciklama": "Metnin bölümlerini belirlemeye yönelik çözümleme yapabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 161,
+        "sayfa_kitap": 161,
+        "etkinlik_adi": "Masal Okuma: 'Üç Kız' (1. Bölüm)",
+        "tur": "Metin Okuma",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.5.1",
+            "aciklama": "Okumada materyal seçimini yönetebilme (Masal okuma süreci)"
+          },
+          {
+            "kod": "T.O.5.6",
+            "aciklama": "Metnin yüzey anlamını belirleyebilme ('Üç Kız' masalı 1. bölüm)"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 162,
+        "sayfa_kitap": 162,
+        "etkinlik_adi": "Masal Okuma: 'Üç Kız' (2. Bölüm) ve Hikâye Haritası",
+        "tur": "Metin Okuma ve Analiz",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.5.13",
+            "aciklama": "Öyküleyici metinde hikâye unsurlarını belirlemeye yönelik çözümleme yapabilme (Masal Hikâye Haritası)"
+          },
+          {
+            "kod": "T.O.5.16",
+            "aciklama": "Metnin bölümlerini belirlemeye yönelik çözümleme yapabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 163,
+        "sayfa_kitap": 163,
+        "etkinlik_adi": "10. Etkinlik (b, ç): Duygu İfadeleri ve Metin Tamamlama",
+        "tur": "Duygu Analizi ve Yaratıcı Yazma",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.5.6",
+            "aciklama": "Metindeki duygu durumlarını ve ifadeleri belirleyebilme (10. Etkinlik b)"
+          },
+          {
+            "kod": "T.Y.5.5",
+            "aciklama": "Yaratıcı yazı yazabilme (Metin tamamlama, 10. Etkinlik ç)"
+          },
+          {
+            "kod": "T.Y.5.16",
+            "aciklama": "Yazım ve noktalama işaretleriyle ilgili kuralları uygulayabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 164,
+        "sayfa_kitap": 164,
+        "etkinlik_adi": "11. Etkinlik (YAZALIM): Metin Özeti Yazma",
+        "tur": "Yazılı Üretim",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.Y.5.2",
+            "aciklama": "Yazmada strateji, yöntem ve teknik seçimlerini yönetebilme (11. Etkinlik YAZALIM)"
+          },
+          {
+            "kod": "T.Y.5.3",
+            "aciklama": "Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme (Özetleme tekniğiyle yazma)"
+          },
+          {
+            "kod": "T.Y.5.13",
+            "aciklama": "Yazısını zenginleştirecek biçimde söz varlığını kullanabilme"
+          }
+        ]
+      }
+    ]
+  },
+  "tema_sonu": {
+    "baslik": "Serbest Okuma, Üretim Zamanı, Kontrol Noktası ve Öz Değerlendirme",
+    "tur": "Tema Sonu Değerlendirme ve Üretim",
+    "sayfa_araligi": "165 - 173",
+    "etkinlikler": [
+      {
+        "sayfa_dosya": 165,
+        "sayfa_kitap": 165,
+        "etkinlik_adi": "Serbest Okuma Metni: 'Fahrünnisa' (1. Bölüm)",
+        "tur": "Serbest Okuma",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.5.1",
+            "aciklama": "Okumada materyal seçimini yönetebilme (Serbest Okuma Metni: 'Fahrünnisa')"
+          },
+          {
+            "kod": "T.O.5.6",
+            "aciklama": "Metnin yüzey anlamını belirleyebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 166,
+        "sayfa_kitap": 166,
+        "etkinlik_adi": "Serbest Okuma Metni: 'Fahrünnisa' (2. Bölüm)",
+        "tur": "Serbest Okuma",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.5.6",
+            "aciklama": "Metnin yüzey anlamını belirleyebilme ('Fahrünnisa' metin okuma 2. bölüm)"
+          },
+          {
+            "kod": "T.O.5.20",
+            "aciklama": "Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 167,
+        "sayfa_kitap": 167,
+        "etkinlik_adi": "Serbest Okuma Metni: 'Fahrünnisa' (3. Bölüm)",
+        "tur": "Serbest Okuma ve Değerlendirme",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.5.3",
+            "aciklama": "Okuma sürecini yönetebilme ve değerlendirebilme ('Fahrünnisa' metin tamamlama)"
+          },
+          {
+            "kod": "T.O.5.20",
+            "aciklama": "Metinden hareketle ahlaki ve insani çıkarımlarda bulunabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 168,
+        "sayfa_kitap": 168,
+        "etkinlik_adi": "Üretim Zamanı: Altı Şapkalı Düşünme Tekniği (Grup Hazırlığı)",
+        "tur": "Sözlü Üretim ve Düşünme Becerileri",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.K.5.2",
+            "aciklama": "Konuşmada yöntem ve teknik seçimlerini yönetebilme (Üretim Zamanı: Altı Şapkalı Düşünme)"
+          },
+          {
+            "kod": "T.K.5.16",
+            "aciklama": "Düşünceyi geliştirme yollarını kullanarak konuşmasını yapılandırabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 169,
+        "sayfa_kitap": 169,
+        "etkinlik_adi": "Üretim Zamanı Sunumu ve Kontrol Noktası Metni ('Kendime Güveniyorum')",
+        "tur": "Sunum ve Metin Okuma",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.K.5.6",
+            "aciklama": "Yaratıcı konuşma yapabilme ve grup sunumu gerçekleştirme (Üretim Zamanı Sunumu)"
+          },
+          {
+            "kod": "T.O.5.1",
+            "aciklama": "Okumada materyal seçimini yönetebilme (Kontrol Noktası Okuma Metni: 'Kendime Güveniyorum')"
+          },
+          {
+            "kod": "T.O.5.6",
+            "aciklama": "Metnin yüzey anlamını belirleyebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 170,
+        "sayfa_kitap": 170,
+        "etkinlik_adi": "Kontrol Noktası: 2., 3., 4. ve 5. Sorular",
+        "tur": "Anlama, Söz Varlığı ve Dil Bilgisi",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.5.5",
+            "aciklama": "Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme (2. Soru)"
+          },
+          {
+            "kod": "T.O.5.16",
+            "aciklama": "Metnin bölümlerini belirlemeye yönelik çözümleme yapabilme (3. Soru)"
+          },
+          {
+            "kod": "T.O.5.18",
+            "aciklama": "Bilgilendirici metinde düşünceyi geliştirme yollarını belirlemeye yönelik çözümleme yapabilme (4. Soru)"
+          },
+          {
+            "kod": "T.Y.5.15",
+            "aciklama": "Uygun bağlantı ifadelerini kullanabilme (Amaç-sonuç cümleleri, 5. Soru)"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 171,
+        "sayfa_kitap": 171,
+        "etkinlik_adi": "Kontrol Noktası: 6. ve 7. Sorular (Duygu Şehri Hikâye Planı)",
+        "tur": "Yazma ve Kurgu Becerileri",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.Y.5.2",
+            "aciklama": "Yazmada strateji, yöntem ve teknik seçimlerini yönetebilme (Duygu Şehri Hikâye Taslağı, 6. ve 7. Sorular)"
+          },
+          {
+            "kod": "T.Y.5.3",
+            "aciklama": "Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme"
+          },
+          {
+            "kod": "T.Y.5.5",
+            "aciklama": "Yaratıcı yazı yazabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 172,
+        "sayfa_kitap": 172,
+        "etkinlik_adi": "Tema Sonu Öz Değerlendirme: Okuma ve Dinleme Ölçekleri",
+        "tur": "Öz Değerlendirme",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.5.3",
+            "aciklama": "Okuma sürecini ve stratejilerini değerlendirebilme (Tema Sonu Okuma Öz Değerlendirme Ölçeği)"
+          },
+          {
+            "kod": "T.D.5.20",
+            "aciklama": "Dinleme/izleme sürecini değerlendirebilme (Tema Sonu Dinleme Öz Değerlendirme Ölçeği)"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 173,
+        "sayfa_kitap": 173,
+        "etkinlik_adi": "Tema Sonu Öz Değerlendirme: Yazma ve Konuşma Ölçekleri",
+        "tur": "Öz Değerlendirme",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.Y.5.2",
+            "aciklama": "Yazma sürecini ve becerilerini değerlendirebilme (Tema Sonu Yazma Öz Değerlendirme Ölçeği)"
+          },
+          {
+            "kod": "T.K.5.21",
+            "aciklama": "Konuşma sürecini değerlendirebilme (Tema Sonu Konuşma Öz Değerlendirme Ölçeği)"
+          }
+        ]
+      }
+    ]
+  }
+}

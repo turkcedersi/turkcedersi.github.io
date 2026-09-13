@@ -239,9 +239,9 @@ document.addEventListener("DOMContentLoaded", () => {
           state.currentPage = 11;
         }
 
-        // Auto-jump to date-matched text for Grade 7
+        // Auto-jump to date-matched text for all grades
         let autoJumpText = null;
-        if (state.currentBook === 5 || state.currentBook === 6) {
+        if (CURRICULUM_SCHEDULE[state.currentBook]) {
           const jumpInfo = getAutoJumpPageForDate(state.currentBook);
           if (jumpInfo && jumpInfo.page) {
             state.currentPage = jumpInfo.page;
@@ -460,6 +460,7 @@ document.addEventListener("DOMContentLoaded", () => {
       a.href = link.url;
       a.target = "_blank";
       a.rel = "noopener noreferrer";
+      a.title = "Karekod Bağlantısı (Yeni sekmede aç)";
       a.style.left = `${link.left}%`;
       a.style.top = `${link.top}%`;
       a.style.width = `${link.width}%`;
@@ -582,6 +583,9 @@ document.addEventListener("DOMContentLoaded", () => {
               itemEl.style.height = `${item.height}%`;
             }
             itemEl.textContent = item.text;
+            if (item.style && typeof item.style === "object") {
+              Object.assign(itemEl.style, item.style);
+            }
             inpageAnswersLayer.appendChild(itemEl);
             itemEls.push(itemEl);
           });
@@ -632,8 +636,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const pageKey = pageNumber.toString();
     const pageOutcomes = state.bookData[outcomesKey] ? state.bookData[outcomesKey][pageKey] : null;
     
+    let outcomesArray = [];
+    if (Array.isArray(pageOutcomes)) {
+      outcomesArray = pageOutcomes;
+    } else if (pageOutcomes && typeof pageOutcomes === "object" && Array.isArray(pageOutcomes.ciktilar)) {
+      outcomesArray = pageOutcomes.ciktilar;
+    }
+
     // Sayfada tanımlı öğrenme çıktısı yoksa bölümü tamamen gizle
-    if (!pageOutcomes || pageOutcomes.length === 0) {
+    if (!outcomesArray || outcomesArray.length === 0) {
       if (outcomesGroup) outcomesGroup.classList.add("hidden");
       return;
     }
@@ -641,25 +652,105 @@ document.addEventListener("DOMContentLoaded", () => {
     // Sayfada öğrenme çıktıları varsa bölümü görünür yap
     if (outcomesGroup) outcomesGroup.classList.remove("hidden");
     
-    pageOutcomes.forEach(outcome => {
-      const match = outcome.match(/^([A-Z\.\d\-]+)\s+(.+)$/i);
+    outcomesArray.forEach(outcome => {
+      let code = "";
+      let desc = "";
+      let fullTip = "";
+
+      if (typeof outcome === "string") {
+        const match = outcome.match(/^([A-Z\.\d\-]+)\s+(.+)$/i);
+        if (match) {
+          code = match[1];
+          desc = match[2];
+        } else {
+          desc = outcome;
+        }
+      } else if (outcome && typeof outcome === "object") {
+        code = (outcome.code || "").trim();
+        desc = (outcome.name || outcome.description || outcome.desc || "").trim();
+        if (outcome.description && outcome.name && outcome.description !== outcome.name) {
+          fullTip = outcome.description;
+        } else if (outcome.desc) {
+          fullTip = outcome.desc;
+        }
+      }
+
       const item = document.createElement("div");
       item.className = "outcome-item";
+      if (fullTip) {
+        item.title = fullTip;
+      }
       
-      if (match) {
-        const code = match[1];
-        const desc = match[2];
-        item.innerHTML = `<span class="outcome-code">${code}</span><span class="outcome-desc">${desc}</span>`;
+      if (code) {
+        // Ensure code doesn't have trailing dot when displayed in code badge if desired, or keep as is
+        const cleanCode = code.replace(/\.+$/, "");
+        item.innerHTML = `<span class="outcome-code">${cleanCode}</span><span class="outcome-desc">${desc}</span>`;
       } else {
-        item.innerHTML = `<span class="outcome-desc">${outcome}</span>`;
+        item.innerHTML = `<span class="outcome-desc">${desc}</span>`;
       }
       
       outcomesList.appendChild(item);
     });
   }
 
-  // --- 7. SINIF DERS İŞLENİŞ TAKVİMİ & AKILLI TARİH YÖNLENDİRME ---
-  const GRADE7_SCHEDULE = {
+  // --- MEB DERS İŞLENİŞ TAKVİMİ & AKILLI TARİH YÖNLENDİRME (5, 6 ve 7. SINIFLAR) ---
+  const CURRICULUM_SCHEDULE = {
+    1: [ // 6. Sınıf 1. Kitap
+      { title: "Bir Kelime Seyyahı", dateText: "14 - 22 Eylül", sm: 9, sd: 14, em: 9, ed: 22, startPage: 11, endPage: 23, openPage: 11 },
+      { title: "Türkçenin Beyliği", dateText: "23 Eylül - 01 Ekim", sm: 9, sd: 23, em: 10, ed: 1, startPage: 24, endPage: 41, openPage: 24 },
+      { title: "Türküz, Türkçe Konuşuruz", dateText: "02 - 09 Ekim", sm: 10, sd: 2, em: 10, ed: 9, startPage: 42, endPage: 49, openPage: 42 },
+      { title: "Türk Dil Kurumu Sunar: Kaşık (Dinleme-İzleme)", dateText: "12 - 20 Ekim", sm: 10, sd: 12, em: 10, ed: 20, startPage: 50, endPage: 65, openPage: 50 },
+      { title: "Cepheye Koşan At", dateText: "26 Ekim - 04 Kasım", sm: 10, sd: 26, em: 11, ed: 4, startPage: 66, endPage: 77, openPage: 66 },
+      { title: "Vatan", dateText: "05 - 13 Kasım", sm: 11, sd: 5, em: 11, ed: 13, startPage: 78, endPage: 89, openPage: 78 },
+      { title: "Rafadan Tayfa- İstiklal Marşı (Dinleme-İzleme)", dateText: "23 Kasım - 01 Aralık", sm: 11, sd: 23, em: 12, ed: 1, startPage: 90, endPage: 99, openPage: 90 },
+      { title: "1071'den 1922'ye Tek Millet İki Zafer", dateText: "02 - 09 Aralık", sm: 12, sd: 2, em: 12, ed: 9, startPage: 100, endPage: 115, openPage: 100 },
+      { title: "Ova Çocuk", dateText: "14 - 22 Aralık", sm: 12, sd: 14, em: 12, ed: 22, startPage: 116, endPage: 129, openPage: 116 },
+      { title: "Mısır-İspanya-Norveç", dateText: "23 - 31 Aralık", sm: 12, sd: 23, em: 12, ed: 31, startPage: 130, endPage: 143, openPage: 130 },
+      { title: "Çocuklar Neredeyse Okulları Orada (Dinleme-İzleme)", dateText: "04 - 12 Ocak", sm: 1, sd: 4, em: 1, ed: 12, startPage: 144, endPage: 153, openPage: 144 },
+      { title: "Ay Avcısı Eskimolar", dateText: "13 - 20 Ocak", sm: 1, sd: 13, em: 1, ed: 20, startPage: 154, endPage: 176, openPage: 154 }
+    ],
+    2: [ // 6. Sınıf 2. Kitap
+      { title: "Yeni Mahalleye Alışma Kılavuzu", dateText: "08 - 16 Şubat", sm: 2, sd: 8, em: 2, ed: 16, startPage: 11, endPage: 25, openPage: 11 },
+      { title: "Ekrana Bakma Bana Bak!", dateText: "17 - 24 Şubat", sm: 2, sd: 17, em: 2, ed: 24, startPage: 26, endPage: 35, openPage: 26 },
+      { title: "Zeynir ve Peytin", dateText: "25 Şubat - 05 Mart", sm: 2, sd: 25, em: 3, ed: 5, startPage: 36, endPage: 47, openPage: 36 },
+      { title: "Gündelik Hayatın Bilimi (Dinleme/İzleme)", dateText: "15 - 23 Mart", sm: 3, sd: 15, em: 3, ed: 23, startPage: 48, endPage: 63, openPage: 48 },
+      { title: "Dünya ve Zaman", dateText: "26 Mart - 05 Nisan", sm: 3, sd: 26, em: 4, ed: 5, startPage: 64, endPage: 75, openPage: 64 },
+      { title: "Sesli Asistan (Dinleme/İzleme)", dateText: "06 - 14 Nisan", sm: 4, sd: 6, em: 4, ed: 14, startPage: 76, endPage: 83, openPage: 76 },
+      { title: "Teknoloji Doğayı Taklit Ediyor", dateText: "15 - 26 Nisan", sm: 4, sd: 15, em: 4, ed: 26, startPage: 84, endPage: 93, openPage: 84 },
+      { title: "Bu Festival Bir Başka", dateText: "27 Nisan - 05 Mayıs", sm: 4, sd: 27, em: 5, ed: 5, startPage: 94, endPage: 111, openPage: 94 },
+      { title: "Avrupa Şampiyonu Dünya İkincisi Gönüllerin Birincisi Sümeyye Boyacı", dateText: "10 - 21 Mayıs", sm: 5, sd: 10, em: 5, ed: 21, startPage: 112, endPage: 121, openPage: 112 },
+      { title: "Yunus Emrem", dateText: "24 Mayıs - 01 Haziran", sm: 5, sd: 24, em: 6, ed: 1, startPage: 122, endPage: 129, openPage: 122 },
+      { title: "Tarihimizin Gizli Kahramanları (Jale İnan) (Dinleme/İzleme)", dateText: "02 - 09 Haziran", sm: 6, sd: 2, em: 6, ed: 9, startPage: 130, endPage: 137, openPage: 130 },
+      { title: "Türk Denizcileri- Piri Reis", dateText: "10 - 16 Haziran", sm: 6, sd: 10, em: 6, ed: 16, startPage: 138, endPage: 159, openPage: 138 }
+    ],
+    3: [ // 5. Sınıf 1. Kitap
+      { title: "Oyun Durdu", dateText: "14 - 22 Eylül", sm: 9, sd: 14, em: 9, ed: 22, startPage: 11, endPage: 25, openPage: 11 },
+      { title: "Topsuz Basketbol Oyunu", dateText: "23 Eylül - 01 Ekim", sm: 9, sd: 23, em: 10, ed: 1, startPage: 26, endPage: 34, openPage: 26 },
+      { title: "Bir İp Bul Oyuna Başla", dateText: "02 - 09 Ekim", sm: 10, sd: 2, em: 10, ed: 9, startPage: 35, endPage: 44, openPage: 35 },
+      { title: "Bir Güzel Hediye", dateText: "12 - 20 Ekim", sm: 10, sd: 12, em: 10, ed: 20, startPage: 45, endPage: 66, openPage: 45 },
+      { title: "Mustafa", dateText: "26 Ekim - 04 Kasım", sm: 10, sd: 26, em: 11, ed: 4, startPage: 67, endPage: 75, openPage: 67 },
+      { title: "Oğlu Hüseyin’den Emine Ana’ya Mektuplar", dateText: "05 - 13 Kasım", sm: 11, sd: 5, em: 11, ed: 13, startPage: 76, endPage: 88, openPage: 76 },
+      { title: "Gazi Mustafa Kemal ve Sığırtmaç Mustafa", dateText: "23 Kasım - 01 Aralık", sm: 11, sd: 23, em: 12, ed: 1, startPage: 89, endPage: 103, openPage: 89 },
+      { title: "Atatürk ve Çiftlik", dateText: "02 - 09 Aralık", sm: 12, sd: 2, em: 12, ed: 9, startPage: 104, endPage: 120, openPage: 104 },
+      { title: "Duygularımız", dateText: "14 - 22 Aralık", sm: 12, sd: 14, em: 12, ed: 22, startPage: 121, endPage: 133, openPage: 121 },
+      { title: "Her Yüreğe Nakış Gerek", dateText: "23 - 31 Aralık", sm: 12, sd: 23, em: 12, ed: 31, startPage: 134, endPage: 142, openPage: 134 },
+      { title: "Korkuluk", dateText: "04 - 12 Ocak", sm: 1, sd: 4, em: 1, ed: 12, startPage: 143, endPage: 153, openPage: 143 },
+      { title: "Altı Üstü Bir Yarış", dateText: "13 - 20 Ocak", sm: 1, sd: 13, em: 1, ed: 20, startPage: 154, endPage: 177, openPage: 154 }
+    ],
+    4: [ // 5. Sınıf 2. Kitap
+      { title: "Nasreddin Hoca", dateText: "08 - 16 Şubat", sm: 2, sd: 8, em: 2, ed: 16, startPage: 11, endPage: 22, openPage: 11 },
+      { title: "Bugün Bayram", dateText: "17 - 24 Şubat", sm: 2, sd: 17, em: 2, ed: 24, startPage: 23, endPage: 30, openPage: 23 },
+      { title: "Misafir Odası", dateText: "25 Şubat - 05 Mart", sm: 2, sd: 25, em: 3, ed: 5, startPage: 31, endPage: 45, openPage: 31 },
+      { title: "Çömlekçilik", dateText: "15 - 23 Mart", sm: 3, sd: 15, em: 3, ed: 23, startPage: 46, endPage: 70, openPage: 46 },
+      { title: "Ev", dateText: "26 Mart - 05 Nisan", sm: 3, sd: 26, em: 4, ed: 5, startPage: 71, endPage: 79, openPage: 71 },
+      { title: "Tatlı Günler", dateText: "06 - 14 Nisan", sm: 4, sd: 6, em: 4, ed: 14, startPage: 80, endPage: 86, openPage: 80 },
+      { title: "Gülü İncitme Gönül", dateText: "15 - 26 Nisan", sm: 4, sd: 15, em: 4, ed: 26, startPage: 87, endPage: 94, openPage: 87 },
+      { title: "Komşumuz Nergis Teyze", dateText: "27 Nisan - 05 Mayıs", sm: 4, sd: 27, em: 5, ed: 5, startPage: 95, endPage: 112, openPage: 95 },
+      { title: "Haydi Doğa Yürüyüşüne", dateText: "10 - 21 Mayıs", sm: 5, sd: 10, em: 5, ed: 21, startPage: 113, endPage: 122, openPage: 113 },
+      { title: "Ne Olacak Bu Yemek Sorunu", dateText: "24 Mayıs - 01 Haziran", sm: 5, sd: 24, em: 6, ed: 1, startPage: 123, endPage: 131, openPage: 123 },
+      { title: "Benim Zamanım Okçuluk", dateText: "02 - 09 Haziran", sm: 6, sd: 2, em: 6, ed: 9, startPage: 132, endPage: 137, openPage: 132 },
+      { title: "Obezite", dateText: "10 - 16 Haziran", sm: 6, sd: 10, em: 6, ed: 16, startPage: 138, endPage: 159, openPage: 138 }
+    ],
     5: [ // 7. Sınıf 1. Kitap
       { title: "Martı Jonathan Livingston", dateText: "14 - 22 Eylül", sm: 9, sd: 14, em: 9, ed: 22, startPage: 11, endPage: 28, openPage: 11 },
       { title: "Gençliğin Kıymeti", dateText: "23 Eylül - 01 Ekim", sm: 9, sd: 23, em: 10, ed: 1, startPage: 29, endPage: 40, openPage: 29 },
@@ -689,6 +780,7 @@ document.addEventListener("DOMContentLoaded", () => {
       { title: "Üç Soru", dateText: "10 - 16 Haziran", sm: 6, sd: 10, em: 6, ed: 16, startPage: 147, endPage: 170, openPage: 147 }
     ]
   };
+  const GRADE7_SCHEDULE = CURRICULUM_SCHEDULE; // Geriye dönük uyumluluk
 
   function getSchoolYearDay(month, day) {
     const offsets = { 9: 0, 10: 30, 11: 61, 12: 91, 1: 122, 2: 153, 3: 182, 4: 213, 5: 243, 6: 274, 7: 304, 8: 335 };
@@ -696,7 +788,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function getAutoJumpPageForDate(bookId) {
-    const list = GRADE7_SCHEDULE[bookId];
+    const list = CURRICULUM_SCHEDULE[bookId];
     if (!list) return null;
 
     const now = new Date();
@@ -730,19 +822,13 @@ document.addEventListener("DOMContentLoaded", () => {
   function updateSidebarDateBadge(pageNumber) {
     if (!sidebarDateBadge || !sidebarDateText) return;
 
-    // Yalnızca 7. sınıf (Kitap 5 ve Kitap 6) için aktiftir
-    if (state.currentBook !== 5 && state.currentBook !== 6) {
-      sidebarDateBadge.classList.add("hidden");
-      return;
-    }
-
     // Kapak ve içindekiler gibi ön sayfalarda (0-10) gizlenir
     if (pageNumber < 11) {
       sidebarDateBadge.classList.add("hidden");
       return;
     }
 
-    const list = GRADE7_SCHEDULE[state.currentBook];
+    const list = CURRICULUM_SCHEDULE[state.currentBook];
     if (!list) {
       sidebarDateBadge.classList.add("hidden");
       return;

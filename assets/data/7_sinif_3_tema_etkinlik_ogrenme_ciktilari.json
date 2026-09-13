@@ -1,0 +1,951 @@
+{
+  "sinif": "7. Sınıf",
+  "kitap": "1. Kitap (Book 5)",
+  "tema": "3. Tema: İletişim Ve Sosyal İlişkiler",
+  "sayfalar": {
+    "120": {
+      "basili_sayfa": 121,
+      "dosya_sayfasi": "page_120.png",
+      "etkinlik_adi": "Hazırlık Vakti & Metin Okuma (1. Bölüm)",
+      "tur": "Ön Bilgileri Paylaşma & Rehberli Okuma",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.K.7.1",
+          "aciklama": "Konuşma sürecini yönetebilme"
+        },
+        {
+          "kod": "T.O.7.1",
+          "aciklama": "Okumada materyal seçimini yönetebilme"
+        }
+      ]
+    },
+    "121": {
+      "basili_sayfa": 122,
+      "dosya_sayfasi": "page_121.png",
+      "etkinlik_adi": "Metin Okuma (2. Bölüm)",
+      "tur": "Rehberli / Sessiz Okuma Süreci",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.1",
+          "aciklama": "Okumada materyal seçimini yönetebilme"
+        },
+        {
+          "kod": "T.O.7.16",
+          "aciklama": "Metnin bölümlerini belirlemeye yönelik çözümleme yapabilme"
+        }
+      ]
+    },
+    "122": {
+      "basili_sayfa": 123,
+      "dosya_sayfasi": "page_122.png",
+      "etkinlik_adi": "Metin Okuma (3. Bölüm)",
+      "tur": "Rehberli / Sessiz Okuma Süreci",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.1",
+          "aciklama": "Okumada materyal seçimini yönetebilme"
+        },
+        {
+          "kod": "T.O.7.16",
+          "aciklama": "Metnin bölümlerini belirlemeye yönelik çözümleme yapabilme"
+        }
+      ]
+    },
+    "123": {
+      "basili_sayfa": 124,
+      "dosya_sayfasi": "page_123.png",
+      "etkinlik_adi": "Metin Okuma (4. Bölüm)",
+      "tur": "Rehberli / Sessiz Okuma Süreci",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.1",
+          "aciklama": "Okumada materyal seçimini yönetebilme"
+        },
+        {
+          "kod": "T.O.7.16",
+          "aciklama": "Metnin bölümlerini belirlemeye yönelik çözümleme yapabilme"
+        }
+      ]
+    },
+    "124": {
+      "basili_sayfa": 125,
+      "dosya_sayfasi": "page_124.png",
+      "etkinlik_adi": "Metin Okuma (5. Bölüm)",
+      "tur": "Rehberli / Sessiz Okuma Süreci",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.1",
+          "aciklama": "Okumada materyal seçimini yönetebilme"
+        },
+        {
+          "kod": "T.O.7.16",
+          "aciklama": "Metnin bölümlerini belirlemeye yönelik çözümleme yapabilme"
+        }
+      ]
+    },
+    "125": {
+      "basili_sayfa": 126,
+      "dosya_sayfasi": "page_125.png",
+      "etkinlik_adi": "1. ve 2. Etkinlik",
+      "tur": "Söz Varlığı (Gönlü İsli vb.) & Okuduğunu Özetleme",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.16",
+          "aciklama": "Metnin bölümlerini belirlemeye yönelik çözümleme yapabilme"
+        },
+        {
+          "kod": "T.O.7.23",
+          "aciklama": "Okuduğunu özetleyebilme"
+        }
+      ]
+    },
+    "126": {
+      "basili_sayfa": 127,
+      "dosya_sayfasi": "page_126.png",
+      "etkinlik_adi": "3. Etkinlik",
+      "tur": "Hasan'ın Vapur Yolculuğu ve Anlama Soruları",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.16",
+          "aciklama": "Metnin bölümlerini belirlemeye yönelik çözümleme yapabilme"
+        },
+        {
+          "kod": "T.O.7.23",
+          "aciklama": "Okuduğunu özetleyebilme"
+        }
+      ]
+    },
+    "127": {
+      "basili_sayfa": 128,
+      "dosya_sayfasi": "page_127.png",
+      "etkinlik_adi": "4. ve 5. Etkinlik",
+      "tur": "Metinden Alıntılar & Anlatım Nitelikleri Analizi",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.16",
+          "aciklama": "Metnin bölümlerini belirlemeye yönelik çözümleme yapabilme"
+        },
+        {
+          "kod": "T.O.7.18",
+          "aciklama": "Bilgilendirici metinde düşünceyi geliştirme yollarını belirlemeye yönelik çözümleme yapabilme"
+        }
+      ]
+    },
+    "128": {
+      "basili_sayfa": 129,
+      "dosya_sayfasi": "page_128.png",
+      "etkinlik_adi": "6. Etkinlik",
+      "tur": "Metin Özeti Yazma ve Olay Akışı",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.23",
+          "aciklama": "Okuduğunu özetleyebilme"
+        },
+        {
+          "kod": "T.Y.7.1",
+          "aciklama": "Yazma sürecini yönetebilme"
+        }
+      ]
+    },
+    "129": {
+      "basili_sayfa": 130,
+      "dosya_sayfasi": "page_129.png",
+      "etkinlik_adi": "7. ve 8. Etkinlik",
+      "tur": "Hikâye Unsurları & Durum Karşılaştırması",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.16",
+          "aciklama": "Metnin bölümlerini belirlemeye yönelik çözümleme yapabilme"
+        },
+        {
+          "kod": "T.Y.7.9",
+          "aciklama": "Yazısında karşılaştırma yapabilme"
+        }
+      ]
+    },
+    "130": {
+      "basili_sayfa": 131,
+      "dosya_sayfasi": "page_130.png",
+      "etkinlik_adi": "9. ve 10. Etkinlik (Konuşma Vakti)",
+      "tur": "Dil ve İletişim / Yabancı Ülkede Yalnızlık ve Empati",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.K.7.1",
+          "aciklama": "Konuşma sürecini yönetebilme"
+        },
+        {
+          "kod": "T.K.7.17",
+          "aciklama": "Sözlü olarak tartışmaya katılabilme"
+        },
+        {
+          "kod": "T.K.7.25",
+          "aciklama": "Konuşmasında beden dilini ve mekânı etkili kullanabilme"
+        },
+        {
+          "kod": "T.K.7.26",
+          "aciklama": "Konuşma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+        }
+      ]
+    },
+    "131": {
+      "basili_sayfa": 132,
+      "dosya_sayfasi": "page_131.png",
+      "etkinlik_adi": "11. Etkinlik (A - Planlama)",
+      "tur": "Kuşaklar Arası İletişim Yazısı Planı",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.Y.7.1",
+          "aciklama": "Yazma sürecini yönetebilme"
+        },
+        {
+          "kod": "T.Y.7.9",
+          "aciklama": "Yazısında karşılaştırma yapabilme"
+        }
+      ]
+    },
+    "132": {
+      "basili_sayfa": 133,
+      "dosya_sayfasi": "page_132.png",
+      "etkinlik_adi": "11. Etkinlik (B - Yazma) & Değerlendirelim",
+      "tur": "Kuşaklar Arası İletişim Paragrafı & Değerlendirme",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.Y.7.1",
+          "aciklama": "Yazma sürecini yönetebilme"
+        },
+        {
+          "kod": "T.Y.7.9",
+          "aciklama": "Yazısında karşılaştırma yapabilme"
+        },
+        {
+          "kod": "T.Y.7.17",
+          "aciklama": "Yazısında düşünceyi geliştirme yollarını kullanabilme"
+        },
+        {
+          "kod": "T.Y.7.21",
+          "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+        },
+        {
+          "kod": "T.Y.7.22",
+          "aciklama": "Yazma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+        },
+        {
+          "kod": "T.O.7.28",
+          "aciklama": "Okuma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+        }
+      ]
+    },
+    "133": {
+      "basili_sayfa": 134,
+      "dosya_sayfasi": "page_133.png",
+      "etkinlik_adi": "Hazırlık Vakti & Metin Okuma (1. Bölüm)",
+      "tur": "Ön Bilgileri Paylaşma & Rehberli Okuma",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.K.7.1",
+          "aciklama": "Konuşma sürecini yönetebilme"
+        },
+        {
+          "kod": "T.O.7.1",
+          "aciklama": "Okumada materyal seçimini yönetebilme"
+        }
+      ]
+    },
+    "134": {
+      "basili_sayfa": 135,
+      "dosya_sayfasi": "page_134.png",
+      "etkinlik_adi": "Metin Okuma (2. Bölüm)",
+      "tur": "Rehberli / Sessiz Okuma Süreci",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.1",
+          "aciklama": "Okumada materyal seçimini yönetebilme"
+        },
+        {
+          "kod": "T.O.7.18",
+          "aciklama": "Bilgilendirici metinde düşünceyi geliştirme yollarını belirlemeye yönelik çözümleme yapabilme"
+        }
+      ]
+    },
+    "135": {
+      "basili_sayfa": 136,
+      "dosya_sayfasi": "page_135.png",
+      "etkinlik_adi": "1. ve 2. Etkinlik",
+      "tur": "Söz Varlığı (Kelam, Sadaka Taşı) & Ana Fikir Çözümleme",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.18",
+          "aciklama": "Bilgilendirici metinde düşünceyi geliştirme yollarını belirlemeye yönelik çözümleme yapabilme"
+        },
+        {
+          "kod": "T.O.7.23",
+          "aciklama": "Okuduğunu özetleyebilme"
+        }
+      ]
+    },
+    "136": {
+      "basili_sayfa": 137,
+      "dosya_sayfasi": "page_136.png",
+      "etkinlik_adi": "3. Etkinlik (A)",
+      "tur": "Metni Anlama ve Çıkarımlar",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.16",
+          "aciklama": "Metnin bölümlerini belirlemeye yönelik çözümleme yapabilme"
+        },
+        {
+          "kod": "T.O.7.18",
+          "aciklama": "Bilgilendirici metinde düşünceyi geliştirme yollarını belirlemeye yönelik çözümleme yapabilme"
+        }
+      ]
+    },
+    "137": {
+      "basili_sayfa": 138,
+      "dosya_sayfasi": "page_137.png",
+      "etkinlik_adi": "3. Etkinlik (B) & 4. Etkinlik",
+      "tur": "Düşünceyi Geliştirme Yolları & Öznellik-Nesnellik Karşılaştırması",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.18",
+          "aciklama": "Bilgilendirici metinde düşünceyi geliştirme yollarını belirlemeye yönelik çözümleme yapabilme"
+        },
+        {
+          "kod": "T.Y.7.9",
+          "aciklama": "Yazısında karşılaştırma yapabilme"
+        }
+      ]
+    },
+    "138": {
+      "basili_sayfa": 139,
+      "dosya_sayfasi": "page_138.png",
+      "etkinlik_adi": "5. ve 6. Etkinlik",
+      "tur": "Sadaka Taşları Kültürü & Metnin Ana Fikri",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.16",
+          "aciklama": "Metnin bölümlerini belirlemeye yönelik çözümleme yapabilme"
+        },
+        {
+          "kod": "T.O.7.18",
+          "aciklama": "Bilgilendirici metinde düşünceyi geliştirme yollarını belirlemeye yönelik çözümleme yapabilme"
+        }
+      ]
+    },
+    "139": {
+      "basili_sayfa": 140,
+      "dosya_sayfasi": "page_139.png",
+      "etkinlik_adi": "7. Etkinlik (Konuşma Vakti)",
+      "tur": "Tatlı Dil, Nezaket ve Etkili İletişim Konuşması",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.K.7.1",
+          "aciklama": "Konuşma sürecini yönetebilme"
+        },
+        {
+          "kod": "T.K.7.17",
+          "aciklama": "Sözlü olarak tartışmaya katılabilme"
+        },
+        {
+          "kod": "T.K.7.21",
+          "aciklama": "Konuşmasında düşünceyi geliştirme yollarını kullanabilme"
+        },
+        {
+          "kod": "T.K.7.25",
+          "aciklama": "Konuşmasında beden dilini ve mekânı etkili kullanabilme"
+        },
+        {
+          "kod": "T.K.7.26",
+          "aciklama": "Konuşma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+        }
+      ]
+    },
+    "140": {
+      "basili_sayfa": 141,
+      "dosya_sayfasi": "page_140.png",
+      "etkinlik_adi": "8. Etkinlik (A, B)",
+      "tur": "Noktalama İşaretleri: Kısa Çizgi ve Yay Ayraç Kuralları",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.Y.7.21",
+          "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+        }
+      ]
+    },
+    "141": {
+      "basili_sayfa": 142,
+      "dosya_sayfasi": "page_141.png",
+      "etkinlik_adi": "9. Etkinlik (A, B)",
+      "tur": "Kısa Çizgi Kurallarını Uygulama & Cümle Yazımı",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.Y.7.21",
+          "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+        }
+      ]
+    },
+    "142": {
+      "basili_sayfa": 143,
+      "dosya_sayfasi": "page_142.png",
+      "etkinlik_adi": "10. Etkinlik (Yazma Vakti) & Değerlendirelim",
+      "tur": "Mektup Yazma / Empati ve İletişim Metni & Değerlendirme",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.Y.7.1",
+          "aciklama": "Yazma sürecini yönetebilme"
+        },
+        {
+          "kod": "T.Y.7.17",
+          "aciklama": "Yazısında düşünceyi geliştirme yollarını kullanabilme"
+        },
+        {
+          "kod": "T.Y.7.21",
+          "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+        },
+        {
+          "kod": "T.Y.7.22",
+          "aciklama": "Yazma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+        },
+        {
+          "kod": "T.O.7.28",
+          "aciklama": "Okuma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+        }
+      ]
+    },
+    "143": {
+      "basili_sayfa": 144,
+      "dosya_sayfasi": "page_143.png",
+      "etkinlik_adi": "Hazırlık Vakti & Dinleme/İzleme Süreci",
+      "tur": "Dinleme Stratejisi & Ön Bilgileri Paylaşma",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.D.7.1",
+          "aciklama": "Dinlemede/izlemede materyal seçimini yönetebilme"
+        },
+        {
+          "kod": "T.D.7.7",
+          "aciklama": "Dinlediğinin/izlediğinin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme"
+        }
+      ]
+    },
+    "144": {
+      "basili_sayfa": 145,
+      "dosya_sayfasi": "page_144.png",
+      "etkinlik_adi": "1. ve 2. Etkinlik",
+      "tur": "Söz Varlığı (Yorum vb.) & Dinlediğini Anlama",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.D.7.7",
+          "aciklama": "Dinlediğinin/izlediğinin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme"
+        },
+        {
+          "kod": "T.D.7.23",
+          "aciklama": "Dinlediğini/izlediğini değerlendirebilme"
+        }
+      ]
+    },
+    "145": {
+      "basili_sayfa": 146,
+      "dosya_sayfasi": "page_145.png",
+      "etkinlik_adi": "3. ve 4. Etkinlik",
+      "tur": "İzlenen Olaylar, Şakaların Etkisi & Derin Anlam Çıkarımı",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.D.7.7",
+          "aciklama": "Dinlediğinin/izlediğinin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme"
+        },
+        {
+          "kod": "T.D.7.8",
+          "aciklama": "Dinlediğinin/izlediğinin derin anlamını belirlemeye yönelik üst düzey çıkarımlar yapabilme"
+        },
+        {
+          "kod": "T.D.7.25",
+          "aciklama": "Dinlediğini/izlediğini eleştirebilme"
+        }
+      ]
+    },
+    "146": {
+      "basili_sayfa": 147,
+      "dosya_sayfasi": "page_146.png",
+      "etkinlik_adi": "5. Etkinlik (A, B)",
+      "tur": "İçeriğin Ana Mesajı ve Günlük Hayatta İletişim Analizi",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.D.7.8",
+          "aciklama": "Dinlediğinin/izlediğinin derin anlamını belirlemeye yönelik üst düzey çıkarımlar yapabilme"
+        },
+        {
+          "kod": "T.D.7.19",
+          "aciklama": "Dinlediğinde/izlediğinde kullanılan ikna etme tekniklerini belirlemeye yönelik çözümleme yapabilme"
+        },
+        {
+          "kod": "T.D.7.23",
+          "aciklama": "Dinlediğini/izlediğini değerlendirebilme"
+        }
+      ]
+    },
+    "147": {
+      "basili_sayfa": 148,
+      "dosya_sayfasi": "page_147.png",
+      "etkinlik_adi": "5. Etkinlik (B - Akış Şeması)",
+      "tur": "Olaylar Döngüsü Akış Şeması Çözümlemesi",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.D.7.7",
+          "aciklama": "Dinlediğinin/izlediğinin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme"
+        },
+        {
+          "kod": "T.D.7.8",
+          "aciklama": "Dinlediğinin/izlediğinin derin anlamını belirlemeye yönelik üst düzey çıkarımlar yapabilme"
+        }
+      ]
+    },
+    "148": {
+      "basili_sayfa": 149,
+      "dosya_sayfasi": "page_148.png",
+      "etkinlik_adi": "6. Etkinlik (A)",
+      "tur": "Medya İçeriği, Mizah Sınırları ve İletişim Değerlendirmesi",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.D.7.23",
+          "aciklama": "Dinlediğini/izlediğini değerlendirebilme"
+        },
+        {
+          "kod": "T.D.7.25",
+          "aciklama": "Dinlediğini/izlediğini eleştirebilme"
+        }
+      ]
+    },
+    "149": {
+      "basili_sayfa": 150,
+      "dosya_sayfasi": "page_149.png",
+      "etkinlik_adi": "6. Etkinlik (B)",
+      "tur": "Akran İletişimi, Empati ve Zorbalığı Eleştirme",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.D.7.8",
+          "aciklama": "Dinlediğinin/izlediğinin derin anlamını belirlemeye yönelik üst düzey çıkarımlar yapabilme"
+        },
+        {
+          "kod": "T.D.7.25",
+          "aciklama": "Dinlediğini/izlediğini eleştirebilme"
+        }
+      ]
+    },
+    "150": {
+      "basili_sayfa": 151,
+      "dosya_sayfasi": "page_150.png",
+      "etkinlik_adi": "7. Etkinlik (A, B)",
+      "tur": "Animasyon Karakterleri ve İletişim Davranışlarını Değerlendirme",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.D.7.23",
+          "aciklama": "Dinlediğini/izlediğini değerlendirebilme"
+        },
+        {
+          "kod": "T.D.7.25",
+          "aciklama": "Dinlediğini/izlediğini eleştirebilme"
+        }
+      ]
+    },
+    "151": {
+      "basili_sayfa": 152,
+      "dosya_sayfasi": "page_151.png",
+      "etkinlik_adi": "7. Etkinlik (C)",
+      "tur": "Rafadan Tayfa / Karakter Gelişimi ve Çıkarımlar",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.D.7.8",
+          "aciklama": "Dinlediğinin/izlediğinin derin anlamını belirlemeye yönelik üst düzey çıkarımlar yapabilme"
+        },
+        {
+          "kod": "T.D.7.23",
+          "aciklama": "Dinlediğini/izlediğini değerlendirebilme"
+        }
+      ]
+    },
+    "152": {
+      "basili_sayfa": 153,
+      "dosya_sayfasi": "page_152.png",
+      "etkinlik_adi": "8. ve 9. Etkinlik (A, B)",
+      "tur": "Konuşma Vakti & Fiillerde Anlam (Zaman) Kayması",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.K.7.1",
+          "aciklama": "Konuşma sürecini yönetebilme"
+        },
+        {
+          "kod": "T.K.7.17",
+          "aciklama": "Sözlü olarak tartışmaya katılabilme"
+        },
+        {
+          "kod": "T.Y.7.21",
+          "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+        }
+      ]
+    },
+    "153": {
+      "basili_sayfa": 154,
+      "dosya_sayfasi": "page_153.png",
+      "etkinlik_adi": "10. Etkinlik (A, B)",
+      "tur": "Noktalama: Ünlem ve Soru İşaretinin Parantez İçi Kullanımı",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.Y.7.21",
+          "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+        }
+      ]
+    },
+    "154": {
+      "basili_sayfa": 155,
+      "dosya_sayfasi": "page_154.png",
+      "etkinlik_adi": "11. Etkinlik (A, B) & Değerlendirelim",
+      "tur": "Yazma Vakti: Dijital İletişim ve Saygı Hikâyesi & Değerlendirme",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.Y.7.1",
+          "aciklama": "Yazma sürecini yönetebilme"
+        },
+        {
+          "kod": "T.Y.7.17",
+          "aciklama": "Yazısında düşünceyi geliştirme yollarını kullanabilme"
+        },
+        {
+          "kod": "T.Y.7.21",
+          "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+        },
+        {
+          "kod": "T.Y.7.22",
+          "aciklama": "Yazma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+        },
+        {
+          "kod": "T.D.7.27",
+          "aciklama": "Dinleme/izleme sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+        }
+      ]
+    },
+    "155": {
+      "basili_sayfa": 156,
+      "dosya_sayfasi": "page_155.png",
+      "etkinlik_adi": "Hazırlık Vakti & Şiir Okuma (1. Bölüm)",
+      "tur": "Ön Bilgileri Paylaşma & Şiir Biçim Odaklı Okuma",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.K.7.1",
+          "aciklama": "Konuşma sürecini yönetebilme"
+        },
+        {
+          "kod": "T.O.7.1",
+          "aciklama": "Okumada materyal seçimini yönetebilme"
+        },
+        {
+          "kod": "T.O.7.17",
+          "aciklama": "Şiirin biçim özelliklerini belirlemeye yönelik çözümleme yapabilme"
+        }
+      ]
+    },
+    "156": {
+      "basili_sayfa": 157,
+      "dosya_sayfasi": "page_156.png",
+      "etkinlik_adi": "1. ve 2. Etkinlik",
+      "tur": "Söz Varlığı (Nasihat vb.) & Şiirin Anlamını Belirleme",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.16",
+          "aciklama": "Metnin bölümlerini belirlemeye yönelik çözümleme yapabilme"
+        },
+        {
+          "kod": "T.O.7.17",
+          "aciklama": "Şiirin biçim özelliklerini belirlemeye yönelik çözümleme yapabilme"
+        }
+      ]
+    },
+    "157": {
+      "basili_sayfa": 158,
+      "dosya_sayfasi": "page_157.png",
+      "etkinlik_adi": "3. Etkinlik (A, B)",
+      "tur": "Şiirde İyilik, Cömertlik ve İletişim Değerleri",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.16",
+          "aciklama": "Metnin bölümlerini belirlemeye yönelik çözümleme yapabilme"
+        },
+        {
+          "kod": "T.O.7.18",
+          "aciklama": "Bilgilendirici metinde düşünceyi geliştirme yollarını belirlemeye yönelik çözümleme yapabilme"
+        }
+      ]
+    },
+    "158": {
+      "basili_sayfa": 159,
+      "dosya_sayfasi": "page_158.png",
+      "etkinlik_adi": "4. Etkinlik (A, B, C)",
+      "tur": "Şiirin Biçim Özellikleri: Dörtlük, Uyak ve Redif Çözümlemesi",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.17",
+          "aciklama": "Şiirin biçim özelliklerini belirlemeye yönelik çözümleme yapabilme"
+        }
+      ]
+    },
+    "159": {
+      "basili_sayfa": 160,
+      "dosya_sayfasi": "page_159.png",
+      "etkinlik_adi": "5. Etkinlik",
+      "tur": "Söz Sanatları: Teşhis (Kişileştirme) ve Teşbih (Benzetme)",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.19",
+          "aciklama": "Metindeki söz sanatlarını belirlemeye yönelik çözümleme yapabilme"
+        }
+      ]
+    },
+    "160": {
+      "basili_sayfa": 161,
+      "dosya_sayfasi": "page_160.png",
+      "etkinlik_adi": "6. Etkinlik (A, B)",
+      "tur": "Sosyal Bir Varlık Olarak İnsan & Dinleme Kuralları Tablosu",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.16",
+          "aciklama": "Metnin bölümlerini belirlemeye yönelik çözümleme yapabilme"
+        },
+        {
+          "kod": "T.K.7.1",
+          "aciklama": "Konuşma sürecini yönetebilme"
+        }
+      ]
+    },
+    "161": {
+      "basili_sayfa": 162,
+      "dosya_sayfasi": "page_161.png",
+      "etkinlik_adi": "7. ve 8. Etkinlik (Konuşma Vakti)",
+      "tur": "Etkili İletişim Becerileri ve Beden Dili Sunumu",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.K.7.1",
+          "aciklama": "Konuşma sürecini yönetebilme"
+        },
+        {
+          "kod": "T.K.7.15",
+          "aciklama": "Sözlü olarak özetleyebilme"
+        },
+        {
+          "kod": "T.K.7.21",
+          "aciklama": "Konuşmasında düşünceyi geliştirme yollarını kullanabilme"
+        },
+        {
+          "kod": "T.K.7.25",
+          "aciklama": "Konuşmasında beden dilini ve mekânı etkili kullanabilme"
+        },
+        {
+          "kod": "T.K.7.26",
+          "aciklama": "Konuşma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+        }
+      ]
+    },
+    "162": {
+      "basili_sayfa": 163,
+      "dosya_sayfasi": "page_162.png",
+      "etkinlik_adi": "9. Etkinlik (A, B)",
+      "tur": "Dil Bilgisi: Yapım Ekleri (İsimden İsim, Fiilden İsim)",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.Y.7.21",
+          "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+        }
+      ]
+    },
+    "163": {
+      "basili_sayfa": 164,
+      "dosya_sayfasi": "page_163.png",
+      "etkinlik_adi": "10. Etkinlik",
+      "tur": "Yazma Vakti: Nezaketin Gücü Paragrafı",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.Y.7.1",
+          "aciklama": "Yazma sürecini yönetebilme"
+        },
+        {
+          "kod": "T.Y.7.17",
+          "aciklama": "Yazısında düşünceyi geliştirme yollarını kullanabilme"
+        },
+        {
+          "kod": "T.Y.7.21",
+          "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+        },
+        {
+          "kod": "T.Y.7.22",
+          "aciklama": "Yazma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+        }
+      ]
+    },
+    "164": {
+      "basili_sayfa": 165,
+      "dosya_sayfasi": "page_164.png",
+      "etkinlik_adi": "Üretim Vakti",
+      "tur": "Gönül Köprüsü İletişim Projesi & Metin Yazımı",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.Y.7.1",
+          "aciklama": "Yazma sürecini yönetebilme"
+        },
+        {
+          "kod": "T.Y.7.9",
+          "aciklama": "Yazısında karşılaştırma yapabilme"
+        },
+        {
+          "kod": "T.Y.7.17",
+          "aciklama": "Yazısında düşünceyi geliştirme yollarını kullanabilme"
+        },
+        {
+          "kod": "T.Y.7.21",
+          "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+        },
+        {
+          "kod": "T.Y.7.22",
+          "aciklama": "Yazma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+        }
+      ]
+    },
+    "165": {
+      "basili_sayfa": 166,
+      "dosya_sayfasi": "page_165.png",
+      "etkinlik_adi": "Serbest Okuma Metni: Sevgilerde (Behçet Necatigil)",
+      "tur": "Bağımsız Şiir Okuma ve Biçim Özellikleri",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.1",
+          "aciklama": "Okumada materyal seçimini yönetebilme"
+        },
+        {
+          "kod": "T.O.7.17",
+          "aciklama": "Şiirin biçim özelliklerini belirlemeye yönelik çözümleme yapabilme"
+        }
+      ]
+    },
+    "166": {
+      "basili_sayfa": 167,
+      "dosya_sayfasi": "page_166.png",
+      "etkinlik_adi": "3. Tema Ölçme ve Değerlendirme (1)",
+      "tur": "Tema Sonu Anlama ve Bölüm Belirleme Soruları",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.16",
+          "aciklama": "Metnin bölümlerini belirlemeye yönelik çözümleme yapabilme"
+        },
+        {
+          "kod": "T.O.7.18",
+          "aciklama": "Bilgilendirici metinde düşünceyi geliştirme yollarını belirlemeye yönelik çözümleme yapabilme"
+        }
+      ]
+    },
+    "167": {
+      "basili_sayfa": 168,
+      "dosya_sayfasi": "page_167.png",
+      "etkinlik_adi": "3. Tema Ölçme ve Değerlendirme (2-3)",
+      "tur": "Düşünceyi Geliştirme Yolları & Karşılaştırma Soruları",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.18",
+          "aciklama": "Bilgilendirici metinde düşünceyi geliştirme yollarını belirlemeye yönelik çözümleme yapabilme"
+        },
+        {
+          "kod": "T.Y.7.9",
+          "aciklama": "Yazısında karşılaştırma yapabilme"
+        },
+        {
+          "kod": "T.Y.7.21",
+          "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+        }
+      ]
+    },
+    "168": {
+      "basili_sayfa": 169,
+      "dosya_sayfasi": "page_168.png",
+      "etkinlik_adi": "3. Tema Ölçme ve Değerlendirme (4-6)",
+      "tur": "Dinleme/İzleme Metni Değerlendirme Soruları",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.D.7.7",
+          "aciklama": "Dinlediğinin/izlediğinin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme"
+        },
+        {
+          "kod": "T.D.7.8",
+          "aciklama": "Dinlediğinin/izlediğinin derin anlamını belirlemeye yönelik üst düzey çıkarımlar yapabilme"
+        },
+        {
+          "kod": "T.D.7.23",
+          "aciklama": "Dinlediğini/izlediğini değerlendirebilme"
+        },
+        {
+          "kod": "T.O.7.18",
+          "aciklama": "Bilgilendirici metinde düşünceyi geliştirme yollarını belirlemeye yönelik çözümleme yapabilme"
+        }
+      ]
+    },
+    "169": {
+      "basili_sayfa": 170,
+      "dosya_sayfasi": "page_169.png",
+      "etkinlik_adi": "Kitap Vakti: Gümüş Kanat (Cahit Uçuk)",
+      "tur": "Kitap Okuma Önerisi & Öz Yansıtma",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.1",
+          "aciklama": "Okumada materyal seçimini yönetebilme"
+        },
+        {
+          "kod": "T.O.7.28",
+          "aciklama": "Okuma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+        }
+      ]
+    },
+    "170": {
+      "basili_sayfa": 171,
+      "dosya_sayfasi": "page_170.png",
+      "etkinlik_adi": "Film Vakti: Ayla",
+      "tur": "Film İzleme Önerisi & Dinleme/İzleme Öz Yansıtma",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.D.7.1",
+          "aciklama": "Dinlemede/izlemede materyal seçimini yönetebilme"
+        },
+        {
+          "kod": "T.D.7.27",
+          "aciklama": "Dinleme/izleme sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+        }
+      ]
+    },
+    "171": {
+      "basili_sayfa": 172,
+      "dosya_sayfasi": "page_171.png",
+      "etkinlik_adi": "3. Tema Öz Değerlendirme (Dinleme & Okuma)",
+      "tur": "Becerilere Yönelik Öz Yansıtma Çizelgesi",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.D.7.27",
+          "aciklama": "Dinleme/izleme sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+        },
+        {
+          "kod": "T.O.7.28",
+          "aciklama": "Okuma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+        }
+      ]
+    },
+    "172": {
+      "basili_sayfa": 173,
+      "dosya_sayfasi": "page_172.png",
+      "etkinlik_adi": "3. Tema Öz Değerlendirme (Konuşma & Yazma)",
+      "tur": "Becerilere Yönelik Öz Yansıtma Çizelgesi",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.K.7.26",
+          "aciklama": "Konuşma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+        },
+        {
+          "kod": "T.Y.7.22",
+          "aciklama": "Yazma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+        }
+      ]
+    }
+  }
+}

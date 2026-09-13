@@ -1,0 +1,929 @@
+{
+  "sinif": 5,
+  "kitap": 2,
+  "tema": 4,
+  "tema_adi": "Geleneklerimiz",
+  "metinler": [
+    {
+      "metin_no": 1,
+      "metin_adi": "Nasreddin Hoca",
+      "yazar": "Mehmet Özçelik",
+      "sayfa_araligi_basili": "12-22",
+      "sayfa_araligi_dosya": "page_12.png - page_22.png",
+      "etkinlikler": [
+        {
+          "basili_sayfa": 12,
+          "dosya_sayfasi": "page_12.png",
+          "etkinlik_adi": "Keşif Yolculuğu",
+          "tur": "Sözlü Paylaşım / Ön Bilgiler",
+          "ogrenme_ciktilari": [
+            "T.O.5.3. Okumada strateji, yöntem ve teknik seçimlerini yönetebilme",
+            "T.K.5.2. Konuşmada yöntem ve teknik seçimlerini yönetebilme"
+          ]
+        },
+        {
+          "basili_sayfa": 13,
+          "dosya_sayfasi": "page_13.png",
+          "etkinlik_adi": "Metin Okuma Süreci",
+          "tur": "Derin Anlama ve Çıkarım",
+          "ogrenme_ciktilari": [
+            "T.O.5.8. Basit çıkarımlar yoluyla metnin derin anlamını belirleyebilme"
+          ]
+        },
+        {
+          "basili_sayfa": 14,
+          "dosya_sayfasi": "page_14.png",
+          "etkinlik_adi": "1. Etkinlik (a, b)",
+          "tur": "Kelime Anlamı Tahmini ve Sözlük Kontrolü",
+          "ogrenme_ciktilari": [
+            "T.O.5.5. Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme",
+            "T.O.5.20. Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme"
+          ]
+        },
+        {
+          "basili_sayfa": 14,
+          "dosya_sayfasi": "page_14.png",
+          "etkinlik_adi": "2. Etkinlik",
+          "tur": "Metin Anlama ve Deftere Yazma",
+          "ogrenme_ciktilari": [
+            "T.O.5.8. Basit çıkarımlar yoluyla metnin derin anlamını belirleyebilme"
+          ]
+        },
+        {
+          "basili_sayfa": 14,
+          "dosya_sayfasi": "page_14.png",
+          "etkinlik_adi": "3. Etkinlik (a)",
+          "tur": "Gerekçelendirme ve Metinden Kanıt Gösterme",
+          "ogrenme_ciktilari": [
+            "T.O.5.8. Basit çıkarımlar yoluyla metnin derin anlamını belirleyebilme"
+          ]
+        },
+        {
+          "basili_sayfa": 15,
+          "dosya_sayfasi": "page_15.png",
+          "etkinlik_adi": "3. Etkinlik (b)",
+          "tur": "Sözlü Yorum ve Sosyal İlişkiler Değerlendirmesi",
+          "ogrenme_ciktilari": [
+            "T.O.5.8. Basit çıkarımlar yoluyla metnin derin anlamını belirleyebilme"
+          ]
+        },
+        {
+          "basili_sayfa": 15,
+          "dosya_sayfasi": "page_15.png",
+          "etkinlik_adi": "4. Etkinlik",
+          "tur": "Karşılaştırma Tablosu (İlk Anlatıldığında / Anlatıldıktan Sonra)",
+          "ogrenme_ciktilari": [
+            "T.O.5.8. Basit çıkarımlar yoluyla metnin derin anlamını belirleyebilme",
+            "T.O.5.10. Okuduklarını karşılaştırabilme",
+            "T.Y.5.7. Yazısında karşılaştırma yapabilme"
+          ]
+        },
+        {
+          "basili_sayfa": 15,
+          "dosya_sayfasi": "page_15.png",
+          "etkinlik_adi": "5. Etkinlik (a, b)",
+          "tur": "Anahtar Kelimeler ve İçerik Yansıtma",
+          "ogrenme_ciktilari": [
+            "T.O.5.8. Basit çıkarımlar yoluyla metnin derin anlamını belirleyebilme",
+            "T.Y.5.7. Yazısında karşılaştırma yapabilme"
+          ]
+        },
+        {
+          "basili_sayfa": 16,
+          "dosya_sayfasi": "page_16.png",
+          "etkinlik_adi": "6. Etkinlik (a)",
+          "tur": "Söz Varlığı Sınıflandırma (Eş/Zıt Anlamlısı Olanlar)",
+          "ogrenme_ciktilari": [
+            "T.O.5.20. Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme",
+            "T.Y.5.3. Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme"
+          ]
+        },
+        {
+          "basili_sayfa": 16,
+          "dosya_sayfasi": "page_16.png",
+          "etkinlik_adi": "6. Etkinlik (b)",
+          "tur": "Eş ve Zıt Anlamlar Tablosu",
+          "ogrenme_ciktilari": [
+            "T.O.5.20. Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme",
+            "T.Y.5.3. Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme"
+          ]
+        },
+        {
+          "basili_sayfa": 17,
+          "dosya_sayfasi": "page_17.png",
+          "etkinlik_adi": "7. Etkinlik",
+          "tur": "Karşılaştırma Cümleleri Çözümleme Tablosu",
+          "ogrenme_ciktilari": [
+            "T.O.5.8. Basit çıkarımlar yoluyla metnin derin anlamını belirleyebilme",
+            "T.O.5.10. Okuduklarını karşılaştırabilme",
+            "T.Y.5.7. Yazısında karşılaştırma yapabilme"
+          ]
+        },
+        {
+          "basili_sayfa": 17,
+          "dosya_sayfasi": "page_17.png",
+          "etkinlik_adi": "8. Etkinlik",
+          "tur": "Metin Cümlelerini Kavramlarla Eşleştirme",
+          "ogrenme_ciktilari": [
+            "T.O.5.8. Basit çıkarımlar yoluyla metnin derin anlamını belirleyebilme",
+            "T.O.5.10. Okuduklarını karşılaştırabilme"
+          ]
+        },
+        {
+          "basili_sayfa": 18,
+          "dosya_sayfasi": "page_18.png",
+          "etkinlik_adi": "9. Etkinlik",
+          "tur": "UNESCO Somut Olmayan Kültürel Miras Doğru/Yanlış Analizi",
+          "ogrenme_ciktilari": [
+            "T.O.5.8. Basit çıkarımlar yoluyla metnin derin anlamını belirleyebilme",
+            "T.O.5.9. Üst düzey çıkarımlar yoluyla metnin derin anlamını belirleyebilme"
+          ]
+        },
+        {
+          "basili_sayfa": 19,
+          "dosya_sayfasi": "page_19.png",
+          "etkinlik_adi": "10. Etkinlik (a)",
+          "tur": "Karşılaştırma ve Benzerlik İfadelerinin Altını Çizme",
+          "ogrenme_ciktilari": [
+            "T.O.5.20. Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme"
+          ]
+        },
+        {
+          "basili_sayfa": 19,
+          "dosya_sayfasi": "page_19.png",
+          "etkinlik_adi": "10. Etkinlik (b)",
+          "tur": "Bağlantı İfadeleriyle Cümle Tamamlama / Boşluk Doldurma",
+          "ogrenme_ciktilari": [
+            "T.O.5.20. Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme",
+            "T.Y.5.12. Düşünceyi geliştirme yollarını kullanarak metni yapılandırabilme"
+          ]
+        },
+        {
+          "basili_sayfa": 20,
+          "dosya_sayfasi": "page_20.png",
+          "etkinlik_adi": "11. Etkinlik (a, b, c)",
+          "tur": "Konuşalım: Kültürel Miras Kartları ve Sözlü Sunum",
+          "ogrenme_ciktilari": [
+            "T.K.5.2. Konuşmada yöntem ve teknik seçimlerini yönetebilme",
+            "T.K.5.11. Konuşmasında sınıflandırma yapabilme",
+            "T.K.5.12. Yorumunu sözlü olarak ifade edebilme",
+            "T.K.5.17. Konuşmasını zenginleştirecek biçimde söz varlığını kullanabilme"
+          ]
+        },
+        {
+          "basili_sayfa": 21,
+          "dosya_sayfasi": "page_21.png",
+          "etkinlik_adi": "12. Etkinlik (a)",
+          "tur": "Dede Korkut Bilgilendirici Metni Okuma",
+          "ogrenme_ciktilari": [
+            "T.O.5.3. Okumada strateji, yöntem ve teknik seçimlerini yönetebilme",
+            "T.O.5.8. Basit çıkarımlar yoluyla metnin derin anlamını belirleyebilme"
+          ]
+        },
+        {
+          "basili_sayfa": 22,
+          "dosya_sayfasi": "page_22.png",
+          "etkinlik_adi": "12. Etkinlik (b, c) & Gelecek Derse Hazırlık",
+          "tur": "Karşılaştırma Yazısı Yazma & Materyal Seçimi",
+          "ogrenme_ciktilari": [
+            "T.Y.5.2. Yazmada strateji, yöntem ve teknik seçimlerini yönetebilme",
+            "T.Y.5.3. Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme",
+            "T.Y.5.7. Yazısında karşılaştırma yapabilme",
+            "T.Y.5.16. Yazım ve noktalama işaretleriyle ilgili kuralları uygulayabilme"
+          ]
+        }
+      ]
+    },
+    {
+      "metin_no": 2,
+      "metin_adi": "Bugün Bayram (İzleme Metni)",
+      "yazar": "Rafadan Tayfa / TRT Çocuk",
+      "sayfa_araligi_basili": "23-30",
+      "sayfa_araligi_dosya": "page_23.png - page_30.png",
+      "etkinlikler": [
+        {
+          "basili_sayfa": 23,
+          "dosya_sayfasi": "page_23.png",
+          "etkinlik_adi": "İzleme Hazırlığı",
+          "tur": "Dinleme/İzleme Öncesi Hazırlık ve Strateji Belirleme",
+          "ogrenme_ciktilari": [
+            "T.D.5.1. Dinlemede/izlemede materyal seçimini yönetebilme",
+            "T.D.5.2. Dinlemede/izlemede strateji, yöntem ve teknik seçimlerini yönetebilme"
+          ]
+        },
+        {
+          "basili_sayfa": 24,
+          "dosya_sayfasi": "page_24.png",
+          "etkinlik_adi": "1. Etkinlik (a)",
+          "tur": "Kavram Haritası: Çizgi Filmin Anahtar Kelimelerini Belirleme",
+          "ogrenme_ciktilari": [
+            "T.D.5.13. Dinlediğinin/izlediğinin anahtar kelimelerini belirlemeye yönelik çözümleme yapabilme",
+            "T.D.5.17. Dinlediğinden/izlediğinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme"
+          ]
+        },
+        {
+          "basili_sayfa": 24,
+          "dosya_sayfasi": "page_24.png",
+          "etkinlik_adi": "1. Etkinlik (b)",
+          "tur": "Anahtar Kelimeler ve Çağrışım Tablosu",
+          "ogrenme_ciktilari": [
+            "T.D.5.13. Dinlediğinin/izlediğinin anahtar kelimelerini belirlemeye yönelik çözümleme yapabilme",
+            "T.D.5.17. Dinlediğinden/izlediğinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme"
+          ]
+        },
+        {
+          "basili_sayfa": 24,
+          "dosya_sayfasi": "page_24.png",
+          "etkinlik_adi": "2. Etkinlik",
+          "tur": "İzlenen Filmle İlgili Sözlü Anlama Soruları",
+          "ogrenme_ciktilari": [
+            "T.D.5.6. Basit çıkarımlar yoluyla dinlediğinin/izlediğinin derin anlamını belirleyebilme",
+            "T.D.5.10. Dinlediğini/izlediğini yorumlayabilme"
+          ]
+        },
+        {
+          "basili_sayfa": 25,
+          "dosya_sayfasi": "page_25.png",
+          "etkinlik_adi": "3. Etkinlik (a)",
+          "tur": "Kalıplaşmış İfadeler ve Kullanım Durumları",
+          "ogrenme_ciktilari": [
+            "T.D.5.17. Dinlediğinden/izlediğinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme",
+            "T.Y.5.3. Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme"
+          ]
+        },
+        {
+          "basili_sayfa": 25,
+          "dosya_sayfasi": "page_25.png",
+          "etkinlik_adi": "3. Etkinlik (b)",
+          "tur": "Kalıplaşmış İfadelerle Diyalog Tamamlama ve Yazma",
+          "ogrenme_ciktilari": [
+            "T.D.5.6. Basit çıkarımlar yoluyla dinlediğinin/izlediğinin derin anlamını belirleyebilme",
+            "T.Y.5.3. Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme",
+            "T.Y.5.16. Yazım ve noktalama işaretleriyle ilgili kuralları uygulayabilme"
+          ]
+        },
+        {
+          "basili_sayfa": 26,
+          "dosya_sayfasi": "page_26.png",
+          "etkinlik_adi": "4. Etkinlik",
+          "tur": "Film Karelerinden Duygu ve Durum Çıkarımı Yapma",
+          "ogrenme_ciktilari": [
+            "T.D.5.7. Üst düzey çıkarımlar yoluyla dinlediğinin/izlediğinin derin anlamını belirleyebilme",
+            "T.D.5.10. Dinlediğini/izlediğini yorumlayabilme"
+          ]
+        },
+        {
+          "basili_sayfa": 26,
+          "dosya_sayfasi": "page_26.png",
+          "etkinlik_adi": "5. Etkinlik (a)",
+          "tur": "Mahalle Sakinlerinin Davranışları ve Sebepleri Tablosu",
+          "ogrenme_ciktilari": [
+            "T.D.5.7. Üst düzey çıkarımlar yoluyla dinlediğinin/izlediğinin derin anlamını belirleyebilme",
+            "T.D.5.9. Dinlediğindeki/izlediğindeki unsurları sınıflandırabilme",
+            "T.D.5.10. Dinlediğini/izlediğini yorumlayabilme"
+          ]
+        },
+        {
+          "basili_sayfa": 26,
+          "dosya_sayfasi": "page_26.png",
+          "etkinlik_adi": "5. Etkinlik (b, c)",
+          "tur": "Karakter Analizi ve Bayramlık Kararının Sosyal Anlamı",
+          "ogrenme_ciktilari": [
+            "T.D.5.7. Üst düzey çıkarımlar yoluyla dinlediğinin/izlediğinin derin anlamını belirleyebilme",
+            "T.D.5.10. Dinlediğini/izlediğini yorumlayabilme"
+          ]
+        },
+        {
+          "basili_sayfa": 27,
+          "dosya_sayfasi": "page_27.png",
+          "etkinlik_adi": "6. Etkinlik",
+          "tur": "Sayıların Yazım Kuralları ve Örneklerle Eşleştirme",
+          "ogrenme_ciktilari": [
+            "T.Y.5.16. Yazım ve noktalama işaretleriyle ilgili kuralları uygulayabilme"
+          ]
+        },
+        {
+          "basili_sayfa": 27,
+          "dosya_sayfasi": "page_27.png",
+          "etkinlik_adi": "7. Etkinlik (a, b)",
+          "tur": "Betimlemede İsimlerin ve Sıfatların İşlevi",
+          "ogrenme_ciktilari": [
+            "T.Y.5.3. Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme"
+          ]
+        },
+        {
+          "basili_sayfa": 27,
+          "dosya_sayfasi": "page_27.png",
+          "etkinlik_adi": "7. Etkinlik (c)",
+          "tur": "Görseldeki Varlık İsimlerini Belirleme",
+          "ogrenme_ciktilari": [
+            "T.Y.5.3. Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme",
+            "T.Y.5.16. Yazım ve noktalama işaretleriyle ilgili kuralları uygulayabilme"
+          ]
+        },
+        {
+          "basili_sayfa": 28,
+          "dosya_sayfasi": "page_28.png",
+          "etkinlik_adi": "7. Etkinlik (ç)",
+          "tur": "Niteleyici Kelimelerle Betimleyici Paragraf Yazma",
+          "ogrenme_ciktilari": [
+            "T.Y.5.2. Yazmada strateji, yöntem ve teknik seçimlerini yönetebilme",
+            "T.Y.5.3. Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme",
+            "T.Y.5.12. Düşünceyi geliştirme yollarını kullanarak metni yapılandırabilme",
+            "T.Y.5.16. Yazım ve noktalama işaretleriyle ilgili kuralları uygulayabilme"
+          ]
+        },
+        {
+          "basili_sayfa": 28,
+          "dosya_sayfasi": "page_28.png",
+          "etkinlik_adi": "8. Etkinlik (a)",
+          "tur": "İstasyon Tekniği Yönergeleri ve Görev Dağılımı",
+          "ogrenme_ciktilari": [
+            "T.Y.5.2. Yazmada strateji, yöntem ve teknik seçimlerini yönetebilme"
+          ]
+        },
+        {
+          "basili_sayfa": 29,
+          "dosya_sayfasi": "page_29.png",
+          "etkinlik_adi": "8. Etkinlik (b, c)",
+          "tur": "İstasyon Tekniği Öz Değerlendirme Ölçeği ve Paylaşım",
+          "ogrenme_ciktilari": [
+            "T.Y.5.17. Yazma sürecini değerlendirebilme"
+          ]
+        },
+        {
+          "basili_sayfa": 30,
+          "dosya_sayfasi": "page_30.png",
+          "etkinlik_adi": "9. Etkinlik (a, b, c)",
+          "tur": "Karakterlerin İsimleri, Benzer Kişilik ve Ayırt Edici Fiziksel Özellikleri",
+          "ogrenme_ciktilari": [
+            "T.K.5.2. Konuşmada yöntem ve teknik seçimlerini yönetebilme",
+            "T.K.5.11. Konuşmasında sınıflandırma yapabilme",
+            "T.K.5.12. Yorumunu sözlü olarak ifade edebilme",
+            "T.K.5.17. Konuşmasını zenginleştirecek biçimde söz varlığını kullanabilme"
+          ]
+        },
+        {
+          "basili_sayfa": 30,
+          "dosya_sayfasi": "page_30.png",
+          "etkinlik_adi": "9. Etkinlik (ç) & Bu Görev Bizim",
+          "tur": "Karakter Kıyaslama Konuşması ve Gelecek Derse Hazırlık",
+          "ogrenme_ciktilari": [
+            "T.K.5.2. Konuşmada yöntem ve teknik seçimlerini yönetebilme",
+            "T.K.5.11. Konuşmasında sınıflandırma yapabilme",
+            "T.K.5.12. Yorumunu sözlü olarak ifade edebilme",
+            "T.K.5.17. Konuşmasını zenginleştirecek biçimde söz varlığını kullanabilme"
+          ]
+        }
+      ]
+    },
+    {
+      "metin_no": 3,
+      "metin_adi": "Misafir Odası",
+      "yazar": "Gökhan Akçiçek",
+      "sayfa_araligi_basili": "31-39",
+      "sayfa_araligi_dosya": "page_31.png - page_39.png",
+      "etkinlikler": [
+        {
+          "basili_sayfa": 31,
+          "dosya_sayfasi": "page_31.png",
+          "etkinlik_adi": "Misafir Odası (Şiir Okuma)",
+          "tur": "Şiir Okuma ve Metin Anlama",
+          "ogrenme_ciktilari": [
+            "T.O.5.3. Okumada strateji, yöntem ve teknik seçimlerini yönetebilme",
+            "T.O.5.8. Basit çıkarımlar yoluyla metnin derin anlamını belirleyebilme"
+          ]
+        },
+        {
+          "basili_sayfa": 32,
+          "dosya_sayfasi": "page_32.png",
+          "etkinlik_adi": "1. Etkinlik (c)",
+          "tur": "Kelimelerin Metin İçi Anlamlarını Belirleme ve İşaretleme",
+          "ogrenme_ciktilari": [
+            "T.O.5.5. Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme",
+            "T.O.5.8. Basit çıkarımlar yoluyla metnin derin anlamını belirleyebilme",
+            "T.O.5.20. Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme"
+          ]
+        },
+        {
+          "basili_sayfa": 32,
+          "dosya_sayfasi": "page_32.png",
+          "etkinlik_adi": "2. Etkinlik (a, b)",
+          "tur": "Sözlü Anlama ve Şiirin Ana Duygusunu Belirleme",
+          "ogrenme_ciktilari": [
+            "T.O.5.5. Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme",
+            "T.O.5.8. Basit çıkarımlar yoluyla metnin derin anlamını belirleyebilme",
+            "T.O.5.20. Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme"
+          ]
+        },
+        {
+          "basili_sayfa": 33,
+          "dosya_sayfasi": "page_33.png",
+          "etkinlik_adi": "3. Etkinlik (a, b)",
+          "tur": "Deyimleri Anlamlarıyla Eşleştirme ve Cümlede Kullanma",
+          "ogrenme_ciktilari": [
+            "T.O.5.8. Basit çıkarımlar yoluyla metnin derin anlamını belirleyebilme",
+            "T.O.5.20. Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme",
+            "T.Y.5.3. Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme"
+          ]
+        },
+        {
+          "basili_sayfa": 33,
+          "dosya_sayfasi": "page_33.png",
+          "etkinlik_adi": "4. Etkinlik",
+          "tur": "Geleneksel Kültür Unsurlarını ve Değerleri Yorumlama",
+          "ogrenme_ciktilari": [
+            "T.O.5.8. Basit çıkarımlar yoluyla metnin derin anlamını belirleyebilme",
+            "T.O.5.20. Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme",
+            "T.Y.5.3. Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme"
+          ]
+        },
+        {
+          "basili_sayfa": 34,
+          "dosya_sayfasi": "page_34.png",
+          "etkinlik_adi": "5. Etkinlik (a, b)",
+          "tur": "Kişileştirme Sanatını Tanıma ve Cümle Oluşturma",
+          "ogrenme_ciktilari": [
+            "T.O.5.10. Okuduklarını karşılaştırabilme",
+            "T.Y.5.7. Yazısında karşılaştırma yapabilme",
+            "T.Y.5.12. Düşünceyi geliştirme yollarını kullanarak metni yapılandırabilme"
+          ]
+        },
+        {
+          "basili_sayfa": 34,
+          "dosya_sayfasi": "page_34.png",
+          "etkinlik_adi": "6. Etkinlik",
+          "tur": "Şiir ve Düz Yazı Türlerini Karşılaştırma",
+          "ogrenme_ciktilari": [
+            "T.O.5.10. Okuduklarını karşılaştırabilme",
+            "T.Y.5.7. Yazısında karşılaştırma yapabilme",
+            "T.Y.5.12. Düşünceyi geliştirme yollarını kullanarak metni yapılandırabilme"
+          ]
+        },
+        {
+          "basili_sayfa": 35,
+          "dosya_sayfasi": "page_35.png",
+          "etkinlik_adi": "7. Etkinlik (a, b, c)",
+          "tur": "Konuşma Hazırlığı, Sunum ve Akran Değerlendirme Ölçeği",
+          "ogrenme_ciktilari": [
+            "T.K.5.2. Konuşmada yöntem ve teknik seçimlerini yönetebilme",
+            "T.K.5.12. Yorumunu sözlü olarak ifade edebilme",
+            "T.K.5.17. Konuşmasını zenginleştirecek biçimde söz varlığını kullanabilme"
+          ]
+        },
+        {
+          "basili_sayfa": 36,
+          "dosya_sayfasi": "page_36.png",
+          "etkinlik_adi": "8. Etkinlik (a, b, c, ç)",
+          "tur": "Kişi ve İşaret Zamirlerini Metinde Tespit Etme ve Tabloya Yerleştirme",
+          "ogrenme_ciktilari": [
+            "T.O.5.20. Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme",
+            "T.Y.5.3. Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme"
+          ]
+        },
+        {
+          "basili_sayfa": 37,
+          "dosya_sayfasi": "page_37.png",
+          "etkinlik_adi": "9. Etkinlik (a, b)",
+          "tur": "Kesme İşareti ve Üç Noktanın İşlevlerini Açıklama",
+          "ogrenme_ciktilari": [
+            "T.D.5.6. Basit çıkarımlar yoluyla dinlediğinin/izlediğinin derin anlamını belirleyebilme",
+            "T.D.5.10. Dinlediğini/izlediğini yorumlayabilme",
+            "T.Y.5.16. Yazım ve noktalama işaretleriyle ilgili kuralları uygulayabilme"
+          ]
+        },
+        {
+          "basili_sayfa": 37,
+          "dosya_sayfasi": "page_37.png",
+          "etkinlik_adi": "10. Etkinlik (a, b, c, ç)",
+          "tur": "'Sevgili Günlük' Dinleme Metni: Konu, Olaylar ve Farklı Bakış Açıları",
+          "ogrenme_ciktilari": [
+            "T.D.5.6. Basit çıkarımlar yoluyla dinlediğinin/izlediğinin derin anlamını belirleyebilme",
+            "T.D.5.10. Dinlediğini/izlediğini yorumlayabilme",
+            "T.Y.5.16. Yazım ve noktalama işaretleriyle ilgili kuralları uygulayabilme"
+          ]
+        },
+        {
+          "basili_sayfa": 38,
+          "dosya_sayfasi": "page_38.png",
+          "etkinlik_adi": "11. Etkinlik (a, b)",
+          "tur": "Metin Yapısını Belirleme, Önemli ve Detay Bilgileri Sınıflandırma",
+          "ogrenme_ciktilari": [
+            "T.Y.5.2. Yazmada strateji, yöntem ve teknik seçimlerini yönetebilme",
+            "T.Y.5.3. Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme",
+            "T.Y.5.9. Yorumunu yazılı olarak ifade edebilme",
+            "T.Y.5.12. Düşünceyi geliştirme yollarını kullanarak metni yapılandırabilme"
+          ]
+        },
+        {
+          "basili_sayfa": 39,
+          "dosya_sayfasi": "page_39.png",
+          "etkinlik_adi": "11. Etkinlik (c, ç, d) & Bu Görev Bizim",
+          "tur": "Özetleme İfadeleriyle Metni Özetleme ve Kültürel Miras Araştırması",
+          "ogrenme_ciktilari": [
+            "T.Y.5.10. Yazılı olarak özetleyebilme",
+            "T.Y.5.12. Düşünceyi geliştirme yollarını kullanarak metni yapılandırabilme",
+            "T.Y.5.16. Yazım ve noktalama işaretleriyle ilgili kuralları uygulayabilme"
+          ]
+        }
+      ]
+    },
+    {
+      "metin_no": 4,
+      "metin_adi": "İzle - Uygula - Öğren: Sıralı - Kronolojik Metin Yapısı",
+      "yazar": "Ders Kitabı Yazarları",
+      "sayfa_araligi_basili": "40-45",
+      "sayfa_araligi_dosya": "page_40.png - page_45.png",
+      "etkinlikler": [
+        {
+          "basili_sayfa": 40,
+          "dosya_sayfasi": "page_40.png",
+          "etkinlik_adi": "Öğretmeninizi İzliyorsunuz: Strateji Bilgilendirme",
+          "tur": "Sıralı-Kronolojik Metin Yapısını ve Bilgileri Organize Etme Stratejisini Tanıma",
+          "ogrenme_ciktilari": [
+            "T.O.5.3. Okumada strateji, yöntem ve teknik seçimlerini yönetebilme",
+            "T.O.5.8. Basit çıkarımlar yoluyla metnin derin anlamını belirleyebilme",
+            "T.O.5.20. Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme"
+          ]
+        },
+        {
+          "basili_sayfa": 41,
+          "dosya_sayfasi": "page_41.png",
+          "etkinlik_adi": "‘Halı Dokumacılığı’ Metni Çalışma Kâğıdı",
+          "tur": "Zaman İfadelerini Belirleme ve Zaman Çizelgesinde Aşamaları Sıralama",
+          "ogrenme_ciktilari": [
+            "T.O.5.3. Okumada strateji, yöntem ve teknik seçimlerini yönetebilme",
+            "T.O.5.8. Basit çıkarımlar yoluyla metnin derin anlamını belirleyebilme",
+            "T.Y.5.8. Yazısında sınıflandırma yapabilme",
+            "T.Y.5.12. Düşünceyi geliştirme yollarını kullanarak metni yapılandırabilme"
+          ]
+        },
+        {
+          "basili_sayfa": 42,
+          "dosya_sayfasi": "page_42.png",
+          "etkinlik_adi": "Siz Uyguluyorsunuz: ‘Keçe Ustası Ahmet Yaşar Kocataş’ Okuma Metni",
+          "tur": "Rehber Eşliğinde Sıralı-Kronolojik Metni İnceleme",
+          "ogrenme_ciktilari": [
+            "T.O.5.3. Okumada strateji, yöntem ve teknik seçimlerini yönetebilme",
+            "T.O.5.8. Basit çıkarımlar yoluyla metnin derin anlamını belirleyebilme",
+            "T.O.5.20. Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme"
+          ]
+        },
+        {
+          "basili_sayfa": 43,
+          "dosya_sayfasi": "page_43.png",
+          "etkinlik_adi": "‘Keçe Ustası Ahmet Yaşar Kocataş’ Metni Çalışma Kâğıdı",
+          "tur": "Zaman İfadelerini Çıkarma ve Kronolojik Akış Şemasını Doldurma",
+          "ogrenme_ciktilari": [
+            "T.O.5.3. Okumada strateji, yöntem ve teknik seçimlerini yönetebilme",
+            "T.O.5.8. Basit çıkarımlar yoluyla metnin derin anlamını belirleyebilme",
+            "T.Y.5.8. Yazısında sınıflandırma yapabilme",
+            "T.Y.5.12. Düşünceyi geliştirme yollarını kullanarak metni yapılandırabilme"
+          ]
+        },
+        {
+          "basili_sayfa": 44,
+          "dosya_sayfasi": "page_44.png",
+          "etkinlik_adi": "Yine Uyguluyorsunuz: ‘Ebru Sanatı’ Okuma Metni",
+          "tur": "Bağımsız Grup Çalışmasıyla Sıralı-Kronolojik Metin Yapısını Uygulama",
+          "ogrenme_ciktilari": [
+            "T.O.5.3. Okumada strateji, yöntem ve teknik seçimlerini yönetebilme",
+            "T.O.5.8. Basit çıkarımlar yoluyla metnin derin anlamını belirleyebilme",
+            "T.O.5.20. Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme"
+          ]
+        },
+        {
+          "basili_sayfa": 45,
+          "dosya_sayfasi": "page_45.png",
+          "etkinlik_adi": "‘Ebru Sanatı’ Metni Çalışma Kâğıdı",
+          "tur": "Öncelik-Sonralık İfadelerini Belirleme ve Merdiven Şemasında Adımları Sıralama",
+          "ogrenme_ciktilari": [
+            "T.O.5.3. Okumada strateji, yöntem ve teknik seçimlerini yönetebilme",
+            "T.O.5.8. Basit çıkarımlar yoluyla metnin derin anlamını belirleyebilme",
+            "T.Y.5.8. Yazısında sınıflandırma yapabilme",
+            "T.Y.5.12. Düşünceyi geliştirme yollarını kullanarak metni yapılandırabilme"
+          ]
+        }
+      ]
+    },
+    {
+      "metin_no": 5,
+      "metin_adi": "Çömlekçilik",
+      "yazar": "Gülten Dayıoğlu",
+      "sayfa_araligi_basili": "46-56",
+      "sayfa_araligi_dosya": "page_46.png - page_56.png",
+      "etkinlikler": [
+        {
+          "basili_sayfa": 46,
+          "dosya_sayfasi": "page_46.png",
+          "etkinlik_adi": "Hazırlanalım",
+          "tur": "Ön Bilgileri Harekete Geçirme ve Sözlü İletişim",
+          "ogrenme_ciktilari": [
+            "T.K.5.2. Konuşmada yöntem ve teknik seçimlerini yönetebilme",
+            "T.K.5.4. İletişimi sürdürmek amacıyla soru sorabilme",
+            "T.K.5.17. Konuşmasını zenginleştirecek biçimde söz varlığını kullanabilme"
+          ]
+        },
+        {
+          "basili_sayfa": 47,
+          "dosya_sayfasi": "page_47.png",
+          "etkinlik_adi": "Çömlekçilik (Metin Okuma)",
+          "tur": "Güdümlü ve Akıcı Okuma, Anlam Çıkarma",
+          "ogrenme_ciktilari": [
+            "T.O.5.1. Okumada materyal seçimini yönetebilme",
+            "T.O.5.3. Okumada strateji, yöntem ve teknik seçimlerini yönetebilme",
+            "T.O.5.8. Basit çıkarımlar yoluyla metnin derin anlamını belirleyebilme"
+          ]
+        },
+        {
+          "basili_sayfa": 48,
+          "dosya_sayfasi": "page_48.png",
+          "etkinlik_adi": "Çömlekçilikte 7000 Yıl (Bilgilendirici Metin Okuma)",
+          "tur": "Bilgilendirici Metni Okuma ve Analiz Etme",
+          "ogrenme_ciktilari": [
+            "T.O.5.3. Okumada strateji, yöntem ve teknik seçimlerini yönetebilme",
+            "T.O.5.8. Basit çıkarımlar yoluyla metnin derin anlamını belirleyebilme",
+            "T.O.5.9. Üst düzey çıkarımlar yoluyla metnin derin anlamını belirleyebilme"
+          ]
+        },
+        {
+          "basili_sayfa": 49,
+          "dosya_sayfasi": "page_49.png",
+          "etkinlik_adi": "1. Etkinlik (a, b)",
+          "tur": "Görselleri ve Kelimeleri Tanımlarla Eşleştirme",
+          "ogrenme_ciktilari": [
+            "T.O.5.5. Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme",
+            "T.O.5.8. Basit çıkarımlar yoluyla metnin derin anlamını belirleyebilme",
+            "T.O.5.20. Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme"
+          ]
+        },
+        {
+          "basili_sayfa": 50,
+          "dosya_sayfasi": "page_50.png",
+          "etkinlik_adi": "2. Etkinlik (a, b)",
+          "tur": "Kelimelerin Metin İçi ve Sözlük Anlamları, Terim Anlam Belirleme",
+          "ogrenme_ciktilari": [
+            "T.O.5.5. Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme",
+            "T.O.5.8. Basit çıkarımlar yoluyla metnin derin anlamını belirleyebilme",
+            "T.O.5.20. Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme"
+          ]
+        },
+        {
+          "basili_sayfa": 51,
+          "dosya_sayfasi": "page_51.png",
+          "etkinlik_adi": "3. ve 4. Etkinlik",
+          "tur": "Bilgileri Organize Etme (Zaman İfadeleri, Merdiven Şeması) ve Sözel Anlama",
+          "ogrenme_ciktilari": [
+            "T.O.5.3. Okumada strateji, yöntem ve teknik seçimlerini yönetebilme",
+            "T.O.5.8. Basit çıkarımlar yoluyla metnin derin anlamını belirleyebilme",
+            "T.O.5.20. Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme"
+          ]
+        },
+        {
+          "basili_sayfa": 52,
+          "dosya_sayfasi": "page_52.png",
+          "etkinlik_adi": "5. ve 6. Etkinlik",
+          "tur": "İşlem Basamaklarını Belirleme ve Destekleyici Cümle Yazma",
+          "ogrenme_ciktilari": [
+            "T.O.5.8. Basit çıkarımlar yoluyla metnin derin anlamını belirleyebilme",
+            "T.Y.5.3. Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme",
+            "T.Y.5.12. Düşünceyi geliştirme yollarını kullanarak metni yapılandırabilme"
+          ]
+        },
+        {
+          "basili_sayfa": 53,
+          "dosya_sayfasi": "page_53.png",
+          "etkinlik_adi": "7. ve 8. Etkinlik",
+          "tur": "Ana Fikir Belirleme ve Sınıflandırma Tabloları Oluşturma",
+          "ogrenme_ciktilari": [
+            "T.O.5.8. Basit çıkarımlar yoluyla metnin derin anlamını belirleyebilme",
+            "T.Y.5.8. Yazısında sınıflandırma yapabilme",
+            "T.Y.5.12. Düşünceyi geliştirme yollarını kullanarak metni yapılandırabilme"
+          ]
+        },
+        {
+          "basili_sayfa": 54,
+          "dosya_sayfasi": "page_54.png",
+          "etkinlik_adi": "9. ve 10. Etkinlik",
+          "tur": "Konuşma Hazırlığı, Akran Değerlendirme ve Büyük Harflerin Yazımı",
+          "ogrenme_ciktilari": [
+            "T.K.5.2. Konuşmada yöntem ve teknik seçimlerini yönetebilme",
+            "T.K.5.14. Sözlü olarak tartışabilme",
+            "T.K.5.21. Konuşma sürecini değerlendirebilme",
+            "T.Y.5.16. Yazım ve noktalama işaretleriyle ilgili kuralları uygulayabilme"
+          ]
+        },
+        {
+          "basili_sayfa": 55,
+          "dosya_sayfasi": "page_55.png",
+          "etkinlik_adi": "11. ve 12. Etkinlik",
+          "tur": "Zamirlerin Yerine Tercih Edilen Varlıklar ve Venn Şemasıyla Karşılaştırma",
+          "ogrenme_ciktilari": [
+            "T.O.5.20. Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme",
+            "T.O.5.10. Okuduklarını karşılaştırabilme",
+            "T.Y.5.7. Yazısında karşılaştırma yapabilme"
+          ]
+        },
+        {
+          "basili_sayfa": 56,
+          "dosya_sayfasi": "page_56.png",
+          "etkinlik_adi": "13. Etkinlik (a, b, c, ç, d)",
+          "tur": "Somut Olmayan Kültürel Miras Unsurlarını Sınıflandırma ve Düşünceyi Geliştirme Yolları",
+          "ogrenme_ciktilari": [
+            "T.D.5.1. Dinlemede/izlemede materyal seçimini yönetebilme",
+            "T.D.5.9. Dinlediğindeki/izlediğindeki unsurları sınıflandırabilme",
+            "T.D.5.18. Çoklu ortam ögelerine yönelik çözümleme yapabilme"
+          ]
+        }
+      ]
+    },
+    {
+      "metin_no": 6,
+      "metin_adi": "İzle - Uygula - Öğren: Tanıtma Paragrafı Yazma",
+      "yazar": "Ders Kitabı Yazarları",
+      "sayfa_araligi_basili": "57-60",
+      "sayfa_araligi_dosya": "page_57.png - page_60.png",
+      "etkinlikler": [
+        {
+          "basili_sayfa": 57,
+          "dosya_sayfasi": "page_57.png",
+          "etkinlik_adi": "Strateji Bilgilendirme (Öğretmen Model Oluyor)",
+          "tur": "Tanıtma Paragrafının Yapısını Kavrama (Giriş, Örnekler, Sonuç)",
+          "ogrenme_ciktilari": [
+            "T.Y.5.1. Yazma sürecini yönetebilme",
+            "T.Y.5.2. Yazmada strateji, yöntem ve teknik seçimlerini yönetebilme",
+            "T.Y.5.3. Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme"
+          ]
+        },
+        {
+          "basili_sayfa": 58,
+          "dosya_sayfasi": "page_58.png",
+          "etkinlik_adi": "Siz Uyguluyorsunuz: Yöresel Kıyafet (Bindallı)",
+          "tur": "Planlama Tablosu Doldurma ve Taslak Metin Yazma",
+          "ogrenme_ciktilari": [
+            "T.Y.5.2. Yazmada strateji, yöntem ve teknik seçimlerini yönetebilme",
+            "T.Y.5.3. Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme",
+            "T.Y.5.12. Düşünceyi geliştirme yollarını kullanarak metni yapılandırabilme"
+          ]
+        },
+        {
+          "basili_sayfa": 59,
+          "dosya_sayfasi": "page_59.png",
+          "etkinlik_adi": "Yine Uyguluyorsunuz: Millî Bayram",
+          "tur": "Bağımsız Planlama ve Tanıtma Paragrafı Yazma",
+          "ogrenme_ciktilari": [
+            "T.Y.5.2. Yazmada strateji, yöntem ve teknik seçimlerini yönetebilme",
+            "T.Y.5.3. Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme",
+            "T.Y.5.12. Düşünceyi geliştirme yollarını kullanarak metni yapılandırabilme"
+          ]
+        },
+        {
+          "basili_sayfa": 60,
+          "dosya_sayfasi": "page_60.png",
+          "etkinlik_adi": "14. ve 15. Etkinlik (Öz Değerlendirme & Türk Kahvesi)",
+          "tur": "Yazma Sürecini Değerlendirme ve Bilgileri Organize Etme",
+          "ogrenme_ciktilari": [
+            "T.Y.5.3. Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme",
+            "T.Y.5.16. Yazım ve noktalama işaretleriyle ilgili kuralları uygulayabilme",
+            "T.Y.5.17. Yazma sürecini değerlendirebilme"
+          ]
+        }
+      ]
+    },
+    {
+      "metin_no": 7,
+      "metin_adi": "Kırık At (Serbest Okuma Metni)",
+      "yazar": "Tevfik Fikret",
+      "sayfa_araligi_basili": "61-62",
+      "sayfa_araligi_dosya": "page_61.png - page_62.png",
+      "etkinlikler": [
+        {
+          "basili_sayfa": 61,
+          "dosya_sayfasi": "page_61.png",
+          "etkinlik_adi": "Kırık At (Okuma Keyfi)",
+          "tur": "Serbest Şiir Okuma ve Söz Varlığı",
+          "ogrenme_ciktilari": [
+            "T.O.5.3. Okumada strateji, yöntem ve teknik seçimlerini yönetebilme",
+            "T.O.5.8. Basit çıkarımlar yoluyla metnin derin anlamını belirleyebilme",
+            "T.O.5.20. Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme"
+          ]
+        },
+        {
+          "basili_sayfa": 62,
+          "dosya_sayfasi": "page_62.png",
+          "etkinlik_adi": "Bu Görev Bizim (Araştırma)",
+          "tur": "Empati ve Misafirperverlik Geleneği Araştırması",
+          "ogrenme_ciktilari": [
+            "T.O.5.3. Okumada strateji, yöntem ve teknik seçimlerini yönetebilme",
+            "T.O.5.8. Basit çıkarımlar yoluyla metnin derin anlamını belirleyebilme",
+            "T.K.5.2. Konuşmada yöntem ve teknik seçimlerini yönetebilme"
+          ]
+        }
+      ]
+    },
+    {
+      "metin_no": 8,
+      "metin_adi": "Üretim Zamanı (Atölye Çalışması)",
+      "yazar": "Ders Kitabı Yazarları",
+      "sayfa_araligi_basili": "63",
+      "sayfa_araligi_dosya": "page_63.png",
+      "etkinlikler": [
+        {
+          "basili_sayfa": 63,
+          "dosya_sayfasi": "page_63.png",
+          "etkinlik_adi": "Üretim Zamanı (Yazma & Konuşma)",
+          "tur": "Misafir Ağırlama Sunusu Hazırlama ve Sınıfta Canlandırma",
+          "ogrenme_ciktilari": [
+            "T.Y.5.2. Yazmada strateji, yöntem ve teknik seçimlerini yönetebilme",
+            "T.K.5.5. Konuşmasında çoklu ortam ögeleriyle içerik oluşturabilme",
+            "T.K.5.17. Konuşmasını zenginleştirecek biçimde söz varlığını kullanabilme"
+          ]
+        }
+      ]
+    },
+    {
+      "metin_no": 9,
+      "metin_adi": "4. Tema Kontrol Noktası",
+      "yazar": "Ders Kitabı Yazarları",
+      "sayfa_araligi_basili": "64-67",
+      "sayfa_araligi_dosya": "page_64.png - page_67.png",
+      "etkinlikler": [
+        {
+          "basili_sayfa": 64,
+          "dosya_sayfasi": "page_64.png",
+          "etkinlik_adi": "Oyalar (Okuma Metni) & 1. Etkinlik (a, b)",
+          "tur": "Metin Anlama ve Kültürel Aktarım Soruları",
+          "ogrenme_ciktilari": [
+            "T.O.5.3. Okumada strateji, yöntem ve teknik seçimlerini yönetebilme",
+            "T.O.5.8. Basit çıkarımlar yoluyla metnin derin anlamını belirleyebilme",
+            "T.Y.5.16. Yazım ve noktalama işaretleriyle ilgili kuralları uygulayabilme"
+          ]
+        },
+        {
+          "basili_sayfa": 65,
+          "dosya_sayfasi": "page_65.png",
+          "etkinlik_adi": "2., 3., 4. Etkinlik",
+          "tur": "Konu, Mesaj, Oya Türlerini Karşılaştırma ve Anahtar Kelimeler",
+          "ogrenme_ciktilari": [
+            "T.O.5.9. Üst düzey çıkarımlar yoluyla metnin derin anlamını belirleyebilme",
+            "T.O.5.10. Okuduklarını karşılaştırabilme",
+            "T.O.5.20. Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme",
+            "T.K.5.12. Yorumunu sözlü olarak ifade edebilme"
+          ]
+        },
+        {
+          "basili_sayfa": 66,
+          "dosya_sayfasi": "page_66.png",
+          "etkinlik_adi": "Karagöz (Dinleme Metni) & 6. Etkinlik (a, b)",
+          "tur": "Önemli/Önemsiz Bilgileri Sınıflandırma ve Metin Özetleme",
+          "ogrenme_ciktilari": [
+            "T.D.5.6. Basit çıkarımlar yoluyla dinlediğinin/izlediğinin derin anlamını belirleyebilme",
+            "T.D.5.9. Dinlediğindeki/izlediğindeki unsurları sınıflandırabilme",
+            "T.Y.5.10. Yazılı olarak özetleyebilme"
+          ]
+        },
+        {
+          "basili_sayfa": 67,
+          "dosya_sayfasi": "page_67.png",
+          "etkinlik_adi": "7. Etkinlik (a, b, c)",
+          "tur": "Karagöz ve Hacivat Karşılaştırma Tablosu, Venn Şeması ve Değerlendirme Paragrafı",
+          "ogrenme_ciktilari": [
+            "T.D.5.10. Dinlediğini/izlediğini yorumlayabilme",
+            "T.Y.5.7. Yazısında karşılaştırma yapabilme",
+            "T.Y.5.12. Düşünceyi geliştirme yollarını kullanarak metni yapılandırabilme",
+            "T.Y.5.16. Yazım ve noktalama işaretleriyle ilgili kuralları uygulayabilme"
+          ]
+        }
+      ]
+    },
+    {
+      "metin_no": 10,
+      "metin_adi": "4. Tema Öz Değerlendirme Ölçekleri",
+      "yazar": "Ders Kitabı Yazarları",
+      "sayfa_araligi_basili": "68-69",
+      "sayfa_araligi_dosya": "page_68.png - page_69.png",
+      "etkinlikler": [
+        {
+          "basili_sayfa": 68,
+          "dosya_sayfasi": "page_68.png",
+          "etkinlik_adi": "Dinleme/İzleme & Okuma Becerisi Öz Değerlendirme Ölçeği",
+          "tur": "Dinleme ve Okuma Becerilerini Değerlendirme ve Hedef Belirleme",
+          "ogrenme_ciktilari": [
+            "T.D.5.20. Dinleme/izleme sürecini değerlendirebilme",
+            "T.O.5.22. Okuma sürecini değerlendirebilme"
+          ]
+        },
+        {
+          "basili_sayfa": 69,
+          "dosya_sayfasi": "page_69.png",
+          "etkinlik_adi": "Konuşma & Yazma Becerisi Öz Değerlendirme Ölçeği",
+          "tur": "Konuşma ve Yazma Becerilerini Değerlendirme ve Hedef Belirleme",
+          "ogrenme_ciktilari": [
+            "T.K.5.21. Konuşma sürecini değerlendirebilme",
+            "T.Y.5.17. Yazma sürecini değerlendirebilme"
+          ]
+        }
+      ]
+    }
+  ]
+}

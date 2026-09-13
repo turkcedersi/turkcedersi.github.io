@@ -1,0 +1,863 @@
+{
+  "sinif": "7. Sınıf",
+  "kitap": "1. Kitap (Book 5)",
+  "tema": "2. Tema: Bir Hilal Uğruna",
+  "sayfalar": {
+    "74": {
+      "basili_sayfa": 75,
+      "dosya_sayfasi": "page_74.png",
+      "etkinlik_adi": "Hazırlık Vakti & Metin Okuma (1. Bölüm)",
+      "tur": "Ön Bilgileri Paylaşma & Rehberli Okuma",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.K.7.8",
+          "aciklama": "Hazırlıksız konuşma yapabilme"
+        },
+        {
+          "kod": "T.K.7.9",
+          "aciklama": "Konuşmasında sesini uygun şekilde kullanabilme"
+        },
+        {
+          "kod": "T.O.7.2",
+          "aciklama": "Okumada strateji ve yöntem seçimlerini yönetebilme"
+        }
+      ]
+    },
+    "75": {
+      "basili_sayfa": 76,
+      "dosya_sayfasi": "page_75.png",
+      "etkinlik_adi": "Metin Okuma (2. Bölüm)",
+      "tur": "Rehberli / Sessiz Okuma Süreci",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.2",
+          "aciklama": "Okumada strateji ve yöntem seçimlerini yönetebilme"
+        },
+        {
+          "kod": "T.O.7.7",
+          "aciklama": "Metnin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme"
+        }
+      ]
+    },
+    "76": {
+      "basili_sayfa": 77,
+      "dosya_sayfasi": "page_76.png",
+      "etkinlik_adi": "Metin Okuma (3. Bölüm)",
+      "tur": "Rehberli / Sessiz Okuma Süreci",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.2",
+          "aciklama": "Okumada strateji ve yöntem seçimlerini yönetebilme"
+        },
+        {
+          "kod": "T.O.7.7",
+          "aciklama": "Metnin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme"
+        }
+      ]
+    },
+    "77": {
+      "basili_sayfa": 78,
+      "dosya_sayfasi": "page_77.png",
+      "etkinlik_adi": "1. Etkinlik (A) & 2. Etkinlik",
+      "tur": "Söz Varlığı (Ziyan, İşgal) & Okuduğunu Anlama",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.15",
+          "aciklama": "Bilgilendirici metinde anahtar kelimeleri belirlemeye yönelik çözümleme yapabilme"
+        },
+        {
+          "kod": "T.O.7.7",
+          "aciklama": "Metnin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme"
+        }
+      ]
+    },
+    "78": {
+      "basili_sayfa": 79,
+      "dosya_sayfasi": "page_78.png",
+      "etkinlik_adi": "1. Etkinlik (B) & 3. Etkinlik (A, B)",
+      "tur": "Kavram Haritası (Bayrak) & Derin Anlam Çıkarımı",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.7",
+          "aciklama": "Metnin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme"
+        },
+        {
+          "kod": "T.O.7.8",
+          "aciklama": "Metnin derin anlamını belirlemeye yönelik üst düzey çıkarımlar yapabilme"
+        },
+        {
+          "kod": "T.O.7.15",
+          "aciklama": "Bilgilendirici metinde anahtar kelimeleri belirlemeye yönelik çözümleme yapabilme"
+        }
+      ]
+    },
+    "79": {
+      "basili_sayfa": 80,
+      "dosya_sayfasi": "page_79.png",
+      "etkinlik_adi": "4. ve 5. Etkinlik (A, B)",
+      "tur": "Salihli'nin Kurtuluşu & Kronolojik Sıralama",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.7",
+          "aciklama": "Metnin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme"
+        },
+        {
+          "kod": "T.O.7.14",
+          "aciklama": "Bilgilendirici metinlerde metin yapılarından hareketle önemli bilgileri belirlemeye yönelik çözümleme yapabilme"
+        }
+      ]
+    },
+    "80": {
+      "basili_sayfa": 81,
+      "dosya_sayfasi": "page_80.png",
+      "etkinlik_adi": "6. Etkinlik (A, B)",
+      "tur": "Sebep-Sonuç İlişkileri & Tarihsel Doğruluk İncelemesi",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.7",
+          "aciklama": "Metnin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme"
+        },
+        {
+          "kod": "T.O.7.14",
+          "aciklama": "Bilgilendirici metinlerde metin yapılarından hareketle önemli bilgileri belirlemeye yönelik çözümleme yapabilme"
+        }
+      ]
+    },
+    "81": {
+      "basili_sayfa": 82,
+      "dosya_sayfasi": "page_81.png",
+      "etkinlik_adi": "7. Etkinlik (Konuşma Vakti)",
+      "tur": "Bayrak Sevgisi ve Bağımsızlık Değeri Konuşması",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.K.7.1",
+          "aciklama": "Konuşma sürecini yönetebilme"
+        },
+        {
+          "kod": "T.K.7.7",
+          "aciklama": "Yaratıcı konuşma yapabilme"
+        },
+        {
+          "kod": "T.K.7.8",
+          "aciklama": "Hazırlıksız konuşma yapabilme"
+        },
+        {
+          "kod": "T.K.7.9",
+          "aciklama": "Konuşmasında sesini uygun şekilde kullanabilme"
+        },
+        {
+          "kod": "T.K.7.22",
+          "aciklama": "Konuşmasını zenginleştirecek biçimde söz varlığını kullanabilme"
+        },
+        {
+          "kod": "T.K.7.26",
+          "aciklama": "Konuşma sürecine yönelik öz yansıtma yapabilme/kendini uyarlaya bilme"
+        }
+      ]
+    },
+    "82": {
+      "basili_sayfa": 83,
+      "dosya_sayfasi": "page_82.png",
+      "etkinlik_adi": "8. Etkinlik (A, B)",
+      "tur": "Atatürk'ün Askerlik Yaşamı Bilgi Sınıflandırması",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.Y.7.3",
+          "aciklama": "Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme"
+        },
+        {
+          "kod": "T.Y.7.4",
+          "aciklama": "Yazılı üretim ve yazılı etkileşiminde ön bilgilerinden yararlanabilme"
+        },
+        {
+          "kod": "T.Y.7.10",
+          "aciklama": "Yazısında sınıflandırma yapabilme"
+        }
+      ]
+    },
+    "83": {
+      "basili_sayfa": 84,
+      "dosya_sayfasi": "page_83.png",
+      "etkinlik_adi": "8. Etkinlik (C - Yazma) & Değerlendirelim",
+      "tur": "Atatürk ve Millî Mücadele Yazısı & Öz Değerlendirme",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.Y.7.3",
+          "aciklama": "Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme"
+        },
+        {
+          "kod": "T.Y.7.4",
+          "aciklama": "Yazılı üretim ve yazılı etkileşiminde ön bilgilerinden yararlanabilme"
+        },
+        {
+          "kod": "T.Y.7.10",
+          "aciklama": "Yazısında sınıflandırma yapabilme"
+        },
+        {
+          "kod": "T.Y.7.21",
+          "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+        },
+        {
+          "kod": "T.Y.7.22",
+          "aciklama": "Yazma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+        },
+        {
+          "kod": "T.O.7.28",
+          "aciklama": "Okuma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+        }
+      ]
+    },
+    "84": {
+      "basili_sayfa": 85,
+      "dosya_sayfasi": "page_84.png",
+      "etkinlik_adi": "Hazırlık Vakti & Metin Okuma (1. Bölüm)",
+      "tur": "Ön Bilgileri Paylaşma & Rehberli Okuma",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.K.7.5",
+          "aciklama": "Konuşmasında uygun tepki verebilme"
+        },
+        {
+          "kod": "T.O.7.2",
+          "aciklama": "Okumada strateji ve yöntem seçimlerini yönetebilme"
+        }
+      ]
+    },
+    "85": {
+      "basili_sayfa": 86,
+      "dosya_sayfasi": "page_85.png",
+      "etkinlik_adi": "Metin Okuma (2. Bölüm)",
+      "tur": "Rehberli / Sessiz Okuma Süreci",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.2",
+          "aciklama": "Okumada strateji ve yöntem seçimlerini yönetebilme"
+        },
+        {
+          "kod": "T.O.7.7",
+          "aciklama": "Metnin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme"
+        }
+      ]
+    },
+    "86": {
+      "basili_sayfa": 87,
+      "dosya_sayfasi": "page_86.png",
+      "etkinlik_adi": "Metin Okuma (3. Bölüm)",
+      "tur": "Rehberli / Sessiz Okuma Süreci",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.2",
+          "aciklama": "Okumada strateji ve yöntem seçimlerini yönetebilme"
+        },
+        {
+          "kod": "T.O.7.7",
+          "aciklama": "Metnin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme"
+        }
+      ]
+    },
+    "87": {
+      "basili_sayfa": 88,
+      "dosya_sayfasi": "page_87.png",
+      "etkinlik_adi": "1., 2. ve 3. Etkinlik",
+      "tur": "Söz Varlığı & Görsel Yorumlama (Millî Mesai Başlıyor)",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.6",
+          "aciklama": "Görselle iletilen anlamı belirleyebilme"
+        },
+        {
+          "kod": "T.O.7.15",
+          "aciklama": "Bilgilendirici metinde anahtar kelimeleri belirlemeye yönelik çözümleme yapabilme"
+        },
+        {
+          "kod": "T.O.7.7",
+          "aciklama": "Metnin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme"
+        }
+      ]
+    },
+    "88": {
+      "basili_sayfa": 89,
+      "dosya_sayfasi": "page_88.png",
+      "etkinlik_adi": "4. Etkinlik (A)",
+      "tur": "Metin İçi Çıkarımlar ve Tarihsel Gelişmeler",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.7",
+          "aciklama": "Metnin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme"
+        },
+        {
+          "kod": "T.O.7.8",
+          "aciklama": "Metnin derin anlamını belirlemeye yönelik üst düzey çıkarımlar yapabilme"
+        }
+      ]
+    },
+    "89": {
+      "basili_sayfa": 90,
+      "dosya_sayfasi": "page_89.png",
+      "etkinlik_adi": "4. Etkinlik (B)",
+      "tur": "Fedakârlık ve Dayanışma Değerini Yorumlama",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.7",
+          "aciklama": "Metnin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme"
+        },
+        {
+          "kod": "T.O.7.8",
+          "aciklama": "Metnin derin anlamını belirlemeye yönelik üst düzey çıkarımlar yapabilme"
+        },
+        {
+          "kod": "T.Y.7.5",
+          "aciklama": "Yazılı etkileşiminde uygun tepki verebilme"
+        }
+      ]
+    },
+    "90": {
+      "basili_sayfa": 91,
+      "dosya_sayfasi": "page_90.png",
+      "etkinlik_adi": "5. Etkinlik (A, B)",
+      "tur": "İsimler / Somut ve Soyut İsimleri Sınıflandırma Tablosu",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.Y.7.10",
+          "aciklama": "Yazısında sınıflandırma yapabilme"
+        },
+        {
+          "kod": "T.O.7.14",
+          "aciklama": "Bilgilendirici metinlerde metin yapılarından hareketle önemli bilgileri belirlemeye yönelik çözümleme yapabilme"
+        }
+      ]
+    },
+    "91": {
+      "basili_sayfa": 92,
+      "dosya_sayfasi": "page_91.png",
+      "etkinlik_adi": "6. Etkinlik (Konuşma Vakti)",
+      "tur": "Mustafa Kemal'in Önderliği ve Millî İrade Konuşması",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.K.7.1",
+          "aciklama": "Konuşma sürecini yönetebilme"
+        },
+        {
+          "kod": "T.K.7.5",
+          "aciklama": "Konuşmasında uygun tepki verebilme"
+        },
+        {
+          "kod": "T.K.7.9",
+          "aciklama": "Konuşmasında sesini uygun şekilde kullanabilme"
+        },
+        {
+          "kod": "T.K.7.22",
+          "aciklama": "Konuşmasını zenginleştirecek biçimde söz varlığını kullanabilme"
+        },
+        {
+          "kod": "T.K.7.26",
+          "aciklama": "Konuşma sürecine yönelik öz yansıtma yapabilme/kendini uyarlaya bilme"
+        }
+      ]
+    },
+    "92": {
+      "basili_sayfa": 93,
+      "dosya_sayfasi": "page_92.png",
+      "etkinlik_adi": "7. Etkinlik",
+      "tur": "Metinde Kullanılan İkna Etme Teknikleri Analizi",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.14",
+          "aciklama": "Bilgilendirici metinlerde metin yapılarından hareketle önemli bilgileri belirlemeye yönelik çözümleme yapabilme"
+        },
+        {
+          "kod": "T.O.7.20",
+          "aciklama": "Metinde kullanılan ikna etme tekniklerini belirlemeye yönelik çözümleme yapabilme"
+        }
+      ]
+    },
+    "93": {
+      "basili_sayfa": 94,
+      "dosya_sayfasi": "page_93.png",
+      "etkinlik_adi": "8. Etkinlik (Yazma Vakti) & Değerlendirelim",
+      "tur": "Türk Sineması ve Millî Mücadele Yazısı",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.Y.7.3",
+          "aciklama": "Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme"
+        },
+        {
+          "kod": "T.Y.7.4",
+          "aciklama": "Yazılı üretim ve yazılı etkileşiminde ön bilgilerinden yararlanabilme"
+        },
+        {
+          "kod": "T.Y.7.21",
+          "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+        },
+        {
+          "kod": "T.Y.7.22",
+          "aciklama": "Yazma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+        },
+        {
+          "kod": "T.O.7.28",
+          "aciklama": "Okuma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+        }
+      ]
+    },
+    "94": {
+      "basili_sayfa": 95,
+      "dosya_sayfasi": "page_94.png",
+      "etkinlik_adi": "Hazırlık Vakti & Dinleme/İzleme Süreci",
+      "tur": "Dinleme Stratejisi & Ön Bilgileri Paylaşma",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.D.7.2",
+          "aciklama": "Dinlemede/izlemede strateji ve yöntem seçimlerini yönetebilme"
+        },
+        {
+          "kod": "T.D.7.3",
+          "aciklama": "Dinleyeceğinin/izleyeceğinin içeriğine yönelik tahminde bulunabilme"
+        }
+      ]
+    },
+    "95": {
+      "basili_sayfa": 96,
+      "dosya_sayfasi": "page_95.png",
+      "etkinlik_adi": "1. ve 2. Etkinlik",
+      "tur": "İçerik Tahmini & Söz Varlığını Geliştirme",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.D.7.3",
+          "aciklama": "Dinleyeceğinin/izleyeceğinin içeriğine yönelik tahminde bulunabilme"
+        },
+        {
+          "kod": "T.D.7.20",
+          "aciklama": "Dinlediğinden/izlediğinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme"
+        }
+      ]
+    },
+    "96": {
+      "basili_sayfa": 97,
+      "dosya_sayfasi": "page_96.png",
+      "etkinlik_adi": "3. ve 4. Etkinlik",
+      "tur": "Kahraman Çocuklar Belgeseli Karşılaştırma & Önemli Bilgiler",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.D.7.14",
+          "aciklama": "Bilgilendirici metinlerde metin yapılarından hareketle önemli bilgileri belirlemeye yönelik çözümleme yapabilme"
+        },
+        {
+          "kod": "T.D.7.24",
+          "aciklama": "Medya içeriğini değerlendirebilme"
+        }
+      ]
+    },
+    "97": {
+      "basili_sayfa": 98,
+      "dosya_sayfasi": "page_97.png",
+      "etkinlik_adi": "5. Etkinlik (A)",
+      "tur": "Medya İçeriği Unsurlarını Değerlendirme",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.D.7.14",
+          "aciklama": "Bilgilendirici metinlerde metin yapılarından hareketle önemli bilgileri belirlemeye yönelik çözümleme yapabilme"
+        },
+        {
+          "kod": "T.D.7.24",
+          "aciklama": "Medya içeriğini değerlendirebilme"
+        }
+      ]
+    },
+    "98": {
+      "basili_sayfa": 99,
+      "dosya_sayfasi": "page_98.png",
+      "etkinlik_adi": "5. Etkinlik (B) & 6. Etkinlik",
+      "tur": "Önemli Bilgileri Belirleme & Düşünceyi Geliştirme Yolları",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.D.7.14",
+          "aciklama": "Bilgilendirici metinlerde metin yapılarından hareketle önemli bilgileri belirlemeye yönelik çözümleme yapabilme"
+        },
+        {
+          "kod": "T.D.7.17",
+          "aciklama": "Bilgilendirici metinde düşünceyi geliştirme yollarını belirlemeye yönelik çözümleme yapabilme"
+        }
+      ]
+    },
+    "99": {
+      "basili_sayfa": 100,
+      "dosya_sayfasi": "page_99.png",
+      "etkinlik_adi": "7. Etkinlik (Konuşma Vakti)",
+      "tur": "Kahraman Çocuklara Mektup ve Sesleniş Konuşması",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.K.7.1",
+          "aciklama": "Konuşma sürecini yönetebilme"
+        },
+        {
+          "kod": "T.K.7.7",
+          "aciklama": "Yaratıcı konuşma yapabilme"
+        },
+        {
+          "kod": "T.K.7.8",
+          "aciklama": "Hazırlıksız konuşma yapabilme"
+        },
+        {
+          "kod": "T.K.7.22",
+          "aciklama": "Konuşmasını zenginleştirecek biçimde söz varlığını kullanabilme"
+        },
+        {
+          "kod": "T.K.7.26",
+          "aciklama": "Konuşma sürecine yönelik öz yansıtma yapabilme/kendini uyarlaya bilme"
+        }
+      ]
+    },
+    "100": {
+      "basili_sayfa": 101,
+      "dosya_sayfasi": "page_100.png",
+      "etkinlik_adi": "8. Etkinlik (Yazma Vakti) & Değerlendirelim",
+      "tur": "Elif'e Yanıt / Kahramanlık Yazısı & Dinleme Öz Yansıtma",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.Y.7.3",
+          "aciklama": "Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme"
+        },
+        {
+          "kod": "T.Y.7.5",
+          "aciklama": "Yazılı etkileşiminde uygun tepki verebilme"
+        },
+        {
+          "kod": "T.Y.7.21",
+          "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+        },
+        {
+          "kod": "T.Y.7.22",
+          "aciklama": "Yazma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+        },
+        {
+          "kod": "T.D.7.27",
+          "aciklama": "Dinleme/izleme sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+        }
+      ]
+    },
+    "101": {
+      "basili_sayfa": 102,
+      "dosya_sayfasi": "page_101.png",
+      "etkinlik_adi": "Hazırlık Vakti & Şiir Okuma (1. Bölüm)",
+      "tur": "Ön Bilgileri Paylaşma & Duygu Odaklı Okuma",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.K.7.8",
+          "aciklama": "Hazırlıksız konuşma yapabilme"
+        },
+        {
+          "kod": "T.O.7.2",
+          "aciklama": "Okumada strateji ve yöntem seçimlerini yönetebilme"
+        }
+      ]
+    },
+    "102": {
+      "basili_sayfa": 103,
+      "dosya_sayfasi": "page_102.png",
+      "etkinlik_adi": "Şiir Okuma (2. Bölüm)",
+      "tur": "Şiiri Bütün Olarak Okuma ve Yorumlama",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.2",
+          "aciklama": "Okumada strateji ve yöntem seçimlerini yönetebilme"
+        },
+        {
+          "kod": "T.O.7.7",
+          "aciklama": "Metnin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme"
+        }
+      ]
+    },
+    "103": {
+      "basili_sayfa": 104,
+      "dosya_sayfasi": "page_103.png",
+      "etkinlik_adi": "1., 2. ve 3. Etkinlik",
+      "tur": "Söz Varlığı (Kağnı vb.) & Kocabaş'ın Anlam Değeri",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.7",
+          "aciklama": "Metnin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme"
+        },
+        {
+          "kod": "T.O.7.15",
+          "aciklama": "Bilgilendirici metinde anahtar kelimeleri belirlemeye yönelik çözümleme yapabilme"
+        }
+      ]
+    },
+    "104": {
+      "basili_sayfa": 105,
+      "dosya_sayfasi": "page_104.png",
+      "etkinlik_adi": "4. Etkinlik",
+      "tur": "Elif'in Fedakârlığı ve Vatan Sevgisi Çıkarımı",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.7",
+          "aciklama": "Metnin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme"
+        },
+        {
+          "kod": "T.O.7.8",
+          "aciklama": "Metnin derin anlamını belirlemeye yönelik üst düzey çıkarımlar yapabilme"
+        }
+      ]
+    },
+    "105": {
+      "basili_sayfa": 106,
+      "dosya_sayfasi": "page_105.png",
+      "etkinlik_adi": "5. Etkinlik (A, B)",
+      "tur": "Fazıl Hüsnü Dağlarca Biyografisi ve Şiir Yapısı",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.14",
+          "aciklama": "Bilgilendirici metinlerde metin yapılarından hareketle önemli bilgileri belirlemeye yönelik çözümleme yapabilme"
+        },
+        {
+          "kod": "T.O.7.7",
+          "aciklama": "Metnin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme"
+        }
+      ]
+    },
+    "106": {
+      "basili_sayfa": 107,
+      "dosya_sayfasi": "page_106.png",
+      "etkinlik_adi": "6. ve 7. Etkinlik",
+      "tur": "Şiirde Söz Sanatları: Benzetme ve Kişileştirme",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.7",
+          "aciklama": "Metnin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme"
+        },
+        {
+          "kod": "T.O.7.8",
+          "aciklama": "Metnin derin anlamını belirlemeye yönelik üst düzey çıkarımlar yapabilme"
+        },
+        {
+          "kod": "T.D.7.18",
+          "aciklama": "Dinlediğindeki/izlediğindeki söz sanatlarını belirlemeye yönelik çözümleme yapabilme"
+        }
+      ]
+    },
+    "107": {
+      "basili_sayfa": 108,
+      "dosya_sayfasi": "page_107.png",
+      "etkinlik_adi": "8. Etkinlik (Konuşma Vakti)",
+      "tur": "Vatan, Şehitlik ve Bağımsızlık Kavramları Konuşması",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.K.7.1",
+          "aciklama": "Konuşma sürecini yönetebilme"
+        },
+        {
+          "kod": "T.K.7.7",
+          "aciklama": "Yaratıcı konuşma yapabilme"
+        },
+        {
+          "kod": "T.K.7.13",
+          "aciklama": "Konuşmasında sınıflandırma yapabilme"
+        },
+        {
+          "kod": "T.K.7.22",
+          "aciklama": "Konuşmasını zenginleştirecek biçimde söz varlığını kullanabilme"
+        },
+        {
+          "kod": "T.K.7.26",
+          "aciklama": "Konuşma sürecine yönelik öz yansıtma yapabilme/kendini uyarlaya bilme"
+        }
+      ]
+    },
+    "108": {
+      "basili_sayfa": 109,
+      "dosya_sayfasi": "page_108.png",
+      "etkinlik_adi": "9. Etkinlik (A, B)",
+      "tur": "Dil Bilgisi: İsim Çekim Ekleri (Hâl Ekleri) Sınıflandırma",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.Y.7.10",
+          "aciklama": "Yazısında sınıflandırma yapabilme"
+        },
+        {
+          "kod": "T.Y.7.21",
+          "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+        }
+      ]
+    },
+    "109": {
+      "basili_sayfa": 110,
+      "dosya_sayfasi": "page_109.png",
+      "etkinlik_adi": "9. Etkinlik (C, Ç)",
+      "tur": "Dil Bilgisi: Çoğul ve İyelik Ekleri Analizi",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.Y.7.10",
+          "aciklama": "Yazısında sınıflandırma yapabilme"
+        },
+        {
+          "kod": "T.Y.7.21",
+          "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+        }
+      ]
+    },
+    "110": {
+      "basili_sayfa": 111,
+      "dosya_sayfasi": "page_110.png",
+      "etkinlik_adi": "10. Etkinlik",
+      "tur": "Görsel ve Şiir Etkileşimi / Video İzleme Çözümlemesi",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.6",
+          "aciklama": "Görselle iletilen anlamı belirleyebilme"
+        },
+        {
+          "kod": "T.D.7.24",
+          "aciklama": "Medya içeriğini değerlendirebilme"
+        }
+      ]
+    },
+    "111": {
+      "basili_sayfa": 112,
+      "dosya_sayfasi": "page_111.png",
+      "etkinlik_adi": "Üretim Vakti (Yazma)",
+      "tur": "Cephane Taşıyan Kahramanlar Betimleme/Hikâye Yazısı",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.Y.7.3",
+          "aciklama": "Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme"
+        },
+        {
+          "kod": "T.Y.7.4",
+          "aciklama": "Yazılı üretim ve yazılı etkileşiminde ön bilgilerinden yararlanabilme"
+        },
+        {
+          "kod": "T.Y.7.10",
+          "aciklama": "Yazısında sınıflandırma yapabilme"
+        },
+        {
+          "kod": "T.Y.7.21",
+          "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+        },
+        {
+          "kod": "T.Y.7.22",
+          "aciklama": "Yazma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+        }
+      ]
+    },
+    "112": {
+      "basili_sayfa": 113,
+      "dosya_sayfasi": "page_112.png",
+      "etkinlik_adi": "Serbest Okuma Metni: Gözüm Arkada Kalmayacak (1. Bölüm)",
+      "tur": "Bağımsız Okuma ve Çıkarım",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.2",
+          "aciklama": "Okumada strateji ve yöntem seçimlerini yönetebilme"
+        },
+        {
+          "kod": "T.O.7.7",
+          "aciklama": "Metnin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme"
+        }
+      ]
+    },
+    "113": {
+      "basili_sayfa": 114,
+      "dosya_sayfasi": "page_113.png",
+      "etkinlik_adi": "Serbest Okuma Metni: Gözüm Arkada Kalmayacak (2. Bölüm)",
+      "tur": "Bağımsız Okuma ve Çıkarım",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.2",
+          "aciklama": "Okumada strateji ve yöntem seçimlerini yönetebilme"
+        },
+        {
+          "kod": "T.O.7.7",
+          "aciklama": "Metnin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme"
+        }
+      ]
+    },
+    "114": {
+      "basili_sayfa": 115,
+      "dosya_sayfasi": "page_114.png",
+      "etkinlik_adi": "2. Tema Ölçme ve Değerlendirme (1-4)",
+      "tur": "Tema Sonu Değerlendirme Soruları",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.7",
+          "aciklama": "Metnin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme"
+        },
+        {
+          "kod": "T.O.7.14",
+          "aciklama": "Bilgilendirici metinlerde metin yapılarından hareketle önemli bilgileri belirlemeye yönelik çözümleme yapabilme"
+        }
+      ]
+    },
+    "115": {
+      "basili_sayfa": 116,
+      "dosya_sayfasi": "page_115.png",
+      "etkinlik_adi": "2. Tema Ölçme ve Değerlendirme (5)",
+      "tur": "Tema Sonu Çıkarım ve Değerlendirme Soruları",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.7",
+          "aciklama": "Metnin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme"
+        },
+        {
+          "kod": "T.O.7.8",
+          "aciklama": "Metnin derin anlamını belirlemeye yönelik üst düzey çıkarımlar yapabilme"
+        }
+      ]
+    },
+    "116": {
+      "basili_sayfa": 117,
+      "dosya_sayfasi": "page_116.png",
+      "etkinlik_adi": "2. Tema Ölçme ve Değerlendirme (6-8)",
+      "tur": "Söz Sanatları ve Kavram Sınıflandırma Soruları",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.8",
+          "aciklama": "Metnin derin anlamını belirlemeye yönelik üst düzey çıkarımlar yapabilme"
+        },
+        {
+          "kod": "T.D.7.18",
+          "aciklama": "Dinlediğindeki/izlediğindeki söz sanatlarını belirlemeye yönelik çözümleme yapabilme"
+        },
+        {
+          "kod": "T.K.7.13",
+          "aciklama": "Konuşmasında sınıflandırma yapabilme"
+        },
+        {
+          "kod": "T.Y.7.10",
+          "aciklama": "Yazısında sınıflandırma yapabilme"
+        }
+      ]
+    },
+    "117": {
+      "basili_sayfa": 118,
+      "dosya_sayfasi": "page_117.png",
+      "etkinlik_adi": "2. Tema Öz Değerlendirme (Dinleme & Okuma)",
+      "tur": "Becerilere Yönelik Öz Yansıtma Çizelgesi",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.D.7.27",
+          "aciklama": "Dinleme/izleme sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+        },
+        {
+          "kod": "T.O.7.28",
+          "aciklama": "Okuma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+        }
+      ]
+    },
+    "118": {
+      "basili_sayfa": 119,
+      "dosya_sayfasi": "page_118.png",
+      "etkinlik_adi": "2. Tema Öz Değerlendirme (Konuşma & Yazma)",
+      "tur": "Becerilere Yönelik Öz Yansıtma Çizelgesi",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.K.7.26",
+          "aciklama": "Konuşma sürecine yönelik öz yansıtma yapabilme/kendini uyarlaya bilme"
+        },
+        {
+          "kod": "T.Y.7.22",
+          "aciklama": "Yazma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+        }
+      ]
+    }
+  }
+}

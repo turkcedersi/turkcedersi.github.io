@@ -1,0 +1,299 @@
+{
+  "sinif": "6. Sınıf",
+  "kitap": "2. Kitap (Book 2)",
+  "tema": "5. Tema: Bilim ve Teknoloji",
+  "metin_1": {
+    "baslik": "Dünya ve Zaman",
+    "yazar": "Suhan HATİPOĞLU",
+    "sayfa_araligi": "66 - 75",
+    "etkinlikler": [
+      {
+        "sayfa_dosya": 66,
+        "sayfa_kitap": 66,
+        "etkinlik_adi": "HAYDİ, BAŞLAYALIM! ve Metin Okuma",
+        "tur": "Hazırlık Soruları ve Koro Hâlinde Şiir Okuma",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.3",
+            "aciklama": "Okumada strateji ve yöntem seçimlerini yönetebilme"
+          },
+          {
+            "kod": "T.K.6.1",
+            "aciklama": "Konuşma sürecini yönetebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 67,
+        "sayfa_kitap": 67,
+        "etkinlik_adi": "Doğrusunu Bilelim",
+        "tur": "Metin Okuma ve İmla/Noktalama Farkındalığı",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.14",
+            "aciklama": "Öyküleyici metinlerdeki hikâye unsurlarını belirlemeye yönelik çözümleme yapabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 68,
+        "sayfa_kitap": 68,
+        "etkinlik_adi": "Değerlendirelim ve 1. ANLAYALIM",
+        "tur": "Okuma Öz Değerlendirme Puan Çizelgesi ve Şifreli Yıldız Bulmacası",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.27",
+            "aciklama": "Okuma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+          },
+          {
+            "kod": "T.O.6.14",
+            "aciklama": "Öyküleyici metinlerdeki hikâye unsurlarını belirlemeye yönelik çözümleme yapabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 69,
+        "sayfa_kitap": 69,
+        "etkinlik_adi": "2. ve 3. ANLAYALIM",
+        "tur": "Şiir Başlığı Çağrışım Haritası ve Karşıtlık (Tezat) Söz Sanatı",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.14",
+            "aciklama": "Öyküleyici metinlerdeki hikâye unsurlarını belirlemeye yönelik çözümleme yapabilme"
+          },
+          {
+            "kod": "T.O.6.20",
+            "aciklama": "Metindeki söz sanatlarını belirlemeye yönelik çözümleme yapabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 70,
+        "sayfa_kitap": 70,
+        "etkinlik_adi": "4. ve 5. ANLAYALIM",
+        "tur": "Varlıkların Eylemleri Sınıflandırma Tablosu, Çıkarım Yapma ve Metin Karşılaştırması",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.14",
+            "aciklama": "Öyküleyici metinlerdeki hikâye unsurlarını belirlemeye yönelik çözümleme yapabilme"
+          },
+          {
+            "kod": "T.O.6.20",
+            "aciklama": "Metindeki söz sanatlarını belirlemeye yönelik çözümleme yapabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 71,
+        "sayfa_kitap": 71,
+        "etkinlik_adi": "1. ANLATALIM",
+        "tur": "Konuşma Hazırlık ve Planlama Formu (Alper Gezeravcı)",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.K.6.1",
+            "aciklama": "Konuşma sürecini yönetebilme"
+          },
+          {
+            "kod": "T.K.6.10",
+            "aciklama": "Sözlü sunum yapabilme"
+          },
+          {
+            "kod": "T.K.6.11",
+            "aciklama": "Konuşmasında tahminlerinden yararlanabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 72,
+        "sayfa_kitap": 72,
+        "etkinlik_adi": "2. ve 3. ANLATALIM",
+        "tur": "Konuşma Öz Değerlendirme Tablosu ve Marslı Müşteri Temsilcisi Canlandırması",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.K.6.1",
+            "aciklama": "Konuşma sürecini yönetebilme"
+          },
+          {
+            "kod": "T.K.6.10",
+            "aciklama": "Sözlü sunum yapabilme"
+          },
+          {
+            "kod": "T.K.6.26",
+            "aciklama": "Konuşma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 73,
+        "sayfa_kitap": 73,
+        "etkinlik_adi": "4. ANLATALIM",
+        "tur": "Söz Sanatları ve İletişim Oyun Çizelgesi (Sözlü Paylaşım)",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.K.6.1",
+            "aciklama": "Konuşma sürecini yönetebilme"
+          },
+          {
+            "kod": "T.O.6.20",
+            "aciklama": "Metindeki söz sanatlarını belirlemeye yönelik çözümleme yapabilme"
+          },
+          {
+            "kod": "T.K.6.23",
+            "aciklama": "Konuşmasında açık ve örtük ifadeleri kullanabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 74,
+        "sayfa_kitap": 74,
+        "etkinlik_adi": "5. ve 6. ANLATALIM",
+        "tur": "Uzay Madenciliği Görüş Belirleme, Metin İnceleme ve Mevsimler Yazma Etkinliği",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.Y.6.1",
+            "aciklama": "Yazma sürecini yönetebilme"
+          },
+          {
+            "kod": "T.Y.6.14",
+            "aciklama": "Yazılı üretiminde ve yazılı etkileşiminde tartışabilme"
+          },
+          {
+            "kod": "T.Y.6.20",
+            "aciklama": "Uygun geçiş ve bağlantı ifadelerini kullanabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 75,
+        "sayfa_kitap": 75,
+        "etkinlik_adi": "7. ve 8. ANLATALIM ile Gelecek Derse Hazırlanalım",
+        "tur": "Şiiri Yeniden Yorumlama, Eğik Çizgi (/) İşlevi ve Yapay Zekâ Araştırması",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.Y.6.1",
+            "aciklama": "Yazma sürecini yönetebilme"
+          },
+          {
+            "kod": "T.Y.6.21",
+            "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+          }
+        ]
+      }
+    ]
+  },
+  "metin_2": {
+    "baslik": "Sesli Asistan",
+    "yazar": "EBA Dinleme/İzleme Metni (MEB)",
+    "sayfa_araligi": "76 - 81",
+    "etkinlikler": [
+      {
+        "sayfa_dosya": 76,
+        "sayfa_kitap": 76,
+        "etkinlik_adi": "HAYDİ, BAŞLAYALIM! ve Değerlendirelim",
+        "tur": "Sesli Asistan Seçimi ve Dinleme/İzleme Öz Değerlendirme Puan Çizelgesi",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.D.6.2",
+            "aciklama": "Dinlemede/izlemede strateji ve yöntem seçimlerini yönetebilme"
+          },
+          {
+            "kod": "T.D.6.25",
+            "aciklama": "Dinleme/izleme sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 77,
+        "sayfa_kitap": 77,
+        "etkinlik_adi": "Değerlendirelim (b, c) ve 1. ANLAYALIM",
+        "tur": "Dinleme Öz Yansıtma, Empati Formu ve Kelime/Kavram Tahmin Bulutları",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.D.6.4",
+            "aciklama": "Dinlediğinde/izlediğinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme"
+          },
+          {
+            "kod": "T.D.6.19",
+            "aciklama": "Dinlediğinden/izlediğinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme"
+          },
+          {
+            "kod": "T.D.6.25",
+            "aciklama": "Dinleme/izleme sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 78,
+        "sayfa_kitap": 78,
+        "etkinlik_adi": "2. ve 3. ANLAYALIM",
+        "tur": "Hikâye Unsurları Robot Kartları ve Serim-Düğüm-Çözüm Bölümleri",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.D.6.13",
+            "aciklama": "Öyküleyici metinlerdeki hikâye unsurlarını belirlemeye yönelik çözümleme yapabilme"
+          },
+          {
+            "kod": "T.D.6.16",
+            "aciklama": "Metnin bölümlerini belirlemeye yönelik çözümleme yapabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 79,
+        "sayfa_kitap": 79,
+        "etkinlik_adi": "4. ve 5. ANLAYALIM",
+        "tur": "Olayları Sınıflandırma, EBA Özeti ve İzlenen İçerik Özellikleri Değerlendirme Tablosu",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.D.6.16",
+            "aciklama": "Metnin bölümlerini belirlemeye yönelik çözümleme yapabilme"
+          },
+          {
+            "kod": "T.D.6.25",
+            "aciklama": "Dinleme/izleme sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 80,
+        "sayfa_kitap": 80,
+        "etkinlik_adi": "1. ve 2. ANLATALIM (a)",
+        "tur": "Arkadaşlık-Teknoloji Cümle Tamamlama ve Canlandırma Rol Seçimi",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.K.6.1",
+            "aciklama": "Konuşma sürecini yönetebilme"
+          },
+          {
+            "kod": "T.K.6.10",
+            "aciklama": "Sözlü sunum yapabilme"
+          },
+          {
+            "kod": "T.K.6.23",
+            "aciklama": "Konuşmasında açık ve örtük ifadeleri kullanabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 81,
+        "sayfa_kitap": 81,
+        "etkinlik_adi": "2. ANLATALIM (b) ve 3. ANLATALIM",
+        "tur": "Canlandırma Öz Değerlendirme Tablosu ve 'Çocuk ve Robot Arkadaşlığı' Yazma Diyagramı",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.K.6.26",
+            "aciklama": "Konuşma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+          },
+          {
+            "kod": "T.Y.6.1",
+            "aciklama": "Yazma sürecini yönetebilme"
+          },
+          {
+            "kod": "T.Y.6.3",
+            "aciklama": "Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme"
+          }
+        ]
+      }
+    ]
+  }
+}

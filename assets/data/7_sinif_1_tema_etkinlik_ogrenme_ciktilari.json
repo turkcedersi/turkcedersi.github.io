@@ -1,0 +1,1191 @@
+{
+  "sinif": "7. Sınıf",
+  "kitap": "1. Kitap (Book 5)",
+  "tema": "1. Tema: Hayat Boyu Gelişim",
+  "sayfalar": {
+    "11": {
+      "basili_sayfa": 12,
+      "dosya_sayfasi": "page_11.png",
+      "etkinlik_adi": "Hazırlık Vakti",
+      "tur": "Ön Bilgileri Harekete Geçirme & Sözlü Paylaşım",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.K.7.2",
+          "aciklama": "Konuşma yöntem ve tekniklerine yönelik seçimlerini yönetebilme"
+        },
+        {
+          "kod": "T.K.7.4",
+          "aciklama": "Konuşmasında ön bilgilerinden yararlanabilme"
+        },
+        {
+          "kod": "T.O.7.3",
+          "aciklama": "Okuyacağı metnin içeriğine yönelik tahminde bulunabilme"
+        }
+      ]
+    },
+    "12": {
+      "basili_sayfa": 13,
+      "dosya_sayfasi": "page_12.png",
+      "etkinlik_adi": "Metin Okuma (1. Bölüm)",
+      "tur": "Rehberli / Sessiz Okuma Süreci",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.2",
+          "aciklama": "Okumada strateji ve yöntem seçimlerini yönetebilme"
+        },
+        {
+          "kod": "T.O.7.5",
+          "aciklama": "Metnin yüzey anlamını belirleyebilme"
+        }
+      ]
+    },
+    "13": {
+      "basili_sayfa": 14,
+      "dosya_sayfasi": "page_13.png",
+      "etkinlik_adi": "Metin Okuma (2. Bölüm)",
+      "tur": "Rehberli / Sessiz Okuma Süreci",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.2",
+          "aciklama": "Okumada strateji ve yöntem seçimlerini yönetebilme"
+        },
+        {
+          "kod": "T.O.7.5",
+          "aciklama": "Metnin yüzey anlamını belirleyebilme"
+        }
+      ]
+    },
+    "14": {
+      "basili_sayfa": 15,
+      "dosya_sayfasi": "page_14.png",
+      "etkinlik_adi": "1. Etkinlik (A, B)",
+      "tur": "Metin Tahmini & Tahminleri Doğrulama",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.3",
+          "aciklama": "Okuyacağı metnin içeriğine yönelik tahminde bulunabilme"
+        },
+        {
+          "kod": "T.O.7.28",
+          "aciklama": "Okuma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+        }
+      ]
+    },
+    "15": {
+      "basili_sayfa": 16,
+      "dosya_sayfasi": "page_15.png",
+      "etkinlik_adi": "2. Etkinlik (A)",
+      "tur": "Söz Varlığı / Bilinmeyen Kelimelerin Anlamı",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.4",
+          "aciklama": "Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme"
+        },
+        {
+          "kod": "T.O.7.21",
+          "aciklama": "Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme"
+        }
+      ]
+    },
+    "16": {
+      "basili_sayfa": 17,
+      "dosya_sayfasi": "page_16.png",
+      "etkinlik_adi": "2. Etkinlik (B) & 3. Etkinlik",
+      "tur": "Kavramları Yorumlama & Düşünce Cümlesi Kurma",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.21",
+          "aciklama": "Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme"
+        },
+        {
+          "kod": "T.Y.7.18",
+          "aciklama": "Yazısını zenginleştirecek biçimde söz varlığını kullanabilme"
+        }
+      ]
+    },
+    "17": {
+      "basili_sayfa": 18,
+      "dosya_sayfasi": "page_17.png",
+      "etkinlik_adi": "4. Etkinlik (A, B)",
+      "tur": "Metnin Bölümleri (Giriş, Gelişme, Sonuç) & Tutarlılık",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.5",
+          "aciklama": "Metnin yüzey anlamını belirleyebilme"
+        },
+        {
+          "kod": "T.D.7.16",
+          "aciklama": "Metnin bölümlerini belirlemeye yönelik çözümleme yapabilme"
+        },
+        {
+          "kod": "T.O.7.21",
+          "aciklama": "Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme"
+        }
+      ]
+    },
+    "18": {
+      "basili_sayfa": 19,
+      "dosya_sayfasi": "page_18.png",
+      "etkinlik_adi": "5. Etkinlik (A, B)",
+      "tur": "Okuduğunu Anlama Soruları & Ana Fikir",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.5",
+          "aciklama": "Metnin yüzey anlamını belirleyebilme"
+        },
+        {
+          "kod": "T.K.7.3",
+          "aciklama": "Konuşmasında amaç ve içeriğe yönelik seçimlerini yönetebilme"
+        }
+      ]
+    },
+    "19": {
+      "basili_sayfa": 20,
+      "dosya_sayfasi": "page_19.png",
+      "etkinlik_adi": "6. Etkinlik (A, B, C)",
+      "tur": "Problem Durumu Tespiti & Alternatif Çözüm Yolları",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.5",
+          "aciklama": "Metnin yüzey anlamını belirleyebilme"
+        },
+        {
+          "kod": "T.Y.7.3",
+          "aciklama": "Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme"
+        },
+        {
+          "kod": "T.K.7.3",
+          "aciklama": "Konuşmasında amaç ve içeriğe yönelik seçimlerini yönetebilme"
+        }
+      ]
+    },
+    "20": {
+      "basili_sayfa": 21,
+      "dosya_sayfasi": "page_20.png",
+      "etkinlik_adi": "7. Etkinlik (A, B)",
+      "tur": "Karakter Davranışlarını Karşılaştırma Tablosu",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.5",
+          "aciklama": "Metnin yüzey anlamını belirleyebilme"
+        },
+        {
+          "kod": "T.O.7.21",
+          "aciklama": "Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme"
+        }
+      ]
+    },
+    "21": {
+      "basili_sayfa": 22,
+      "dosya_sayfasi": "page_21.png",
+      "etkinlik_adi": "8. Etkinlik (A, B, C)",
+      "tur": "Anahtar Kelimeler & Metin Anlam İlişkisi",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.5",
+          "aciklama": "Metnin yüzey anlamını belirleyebilme"
+        },
+        {
+          "kod": "T.O.7.21",
+          "aciklama": "Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme"
+        }
+      ]
+    },
+    "22": {
+      "basili_sayfa": 23,
+      "dosya_sayfasi": "page_22.png",
+      "etkinlik_adi": "9. Etkinlik",
+      "tur": "Karekod Dinleme/İzleme: Öğrenme Aşamaları ve Metin Yapısı",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.D.7.2",
+          "aciklama": "Dinlemede/izlemede strateji ve yöntem seçimlerini yönetebilme"
+        },
+        {
+          "kod": "T.D.7.5",
+          "aciklama": "Dinlediğinin/izlediğinin yüzey anlamını belirleyebilme"
+        },
+        {
+          "kod": "T.D.7.16",
+          "aciklama": "Metnin bölümlerini belirlemeye yönelik çözümleme yapabilme"
+        }
+      ]
+    },
+    "23": {
+      "basili_sayfa": 24,
+      "dosya_sayfasi": "page_23.png",
+      "etkinlik_adi": "10. Etkinlik (Konuşma Vakti)",
+      "tur": "Kişisel Deneyim ve Öğrenme Sürecini Anlatma",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.K.7.1",
+          "aciklama": "Konuşma sürecini yönetebilme"
+        },
+        {
+          "kod": "T.K.7.2",
+          "aciklama": "Konuşma yöntem ve tekniklerine yönelik seçimlerini yönetebilme"
+        },
+        {
+          "kod": "T.K.7.3",
+          "aciklama": "Konuşmasında amaç ve içeriğe yönelik seçimlerini yönetebilme"
+        },
+        {
+          "kod": "T.K.7.4",
+          "aciklama": "Konuşmasında ön bilgilerinden yararlanabilme"
+        },
+        {
+          "kod": "T.K.7.26",
+          "aciklama": "Konuşma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+        }
+      ]
+    },
+    "24": {
+      "basili_sayfa": 25,
+      "dosya_sayfasi": "page_24.png",
+      "etkinlik_adi": "11. Etkinlik (A)",
+      "tur": "Noktalı Virgülün İşlevlerini ve Görevlerini Belirleme",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.Y.7.21",
+          "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+        }
+      ]
+    },
+    "25": {
+      "basili_sayfa": 26,
+      "dosya_sayfasi": "page_25.png",
+      "etkinlik_adi": "11. Etkinlik (B, C)",
+      "tur": "Noktalı Virgül Kurallarını Uygulama & Örnek Cümleler",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.Y.7.18",
+          "aciklama": "Yazısını zenginleştirecek biçimde söz varlığını kullanabilme"
+        },
+        {
+          "kod": "T.Y.7.21",
+          "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+        }
+      ]
+    },
+    "26": {
+      "basili_sayfa": 27,
+      "dosya_sayfasi": "page_26.png",
+      "etkinlik_adi": "12. Etkinlik (A - Planlama)",
+      "tur": "Yazma Vakti: E-posta Planı ve Talep Oluşturma",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.Y.7.1",
+          "aciklama": "Yazma sürecini yönetebilme"
+        },
+        {
+          "kod": "T.Y.7.2",
+          "aciklama": "Yazma strateji, yöntem ve tekniklerine yönelik seçimlerini yönetebilme"
+        },
+        {
+          "kod": "T.Y.7.3",
+          "aciklama": "Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme"
+        }
+      ]
+    },
+    "27": {
+      "basili_sayfa": 28,
+      "dosya_sayfasi": "page_27.png",
+      "etkinlik_adi": "12. Etkinlik (B - Yazma)",
+      "tur": "Yazma Vakti: E-posta Metni Yazma & İletişim",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.Y.7.1",
+          "aciklama": "Yazma sürecini yönetebilme"
+        },
+        {
+          "kod": "T.Y.7.3",
+          "aciklama": "Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme"
+        },
+        {
+          "kod": "T.Y.7.18",
+          "aciklama": "Yazısını zenginleştirecek biçimde söz varlığını kullanabilme"
+        },
+        {
+          "kod": "T.Y.7.21",
+          "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+        },
+        {
+          "kod": "T.Y.7.22",
+          "aciklama": "Yazma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+        }
+      ]
+    },
+    "28": {
+      "basili_sayfa": 29,
+      "dosya_sayfasi": "page_28.png",
+      "etkinlik_adi": "Kitap Vakti - Film Vakti & Değerlendirelim",
+      "tur": "Materyal Seçimi ve Öz Yansıtma",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.1",
+          "aciklama": "Okumada materyal seçimini yönetebilme"
+        },
+        {
+          "kod": "T.D.7.1",
+          "aciklama": "Dinlemede/izlemede materyal seçimini yönetebilme"
+        },
+        {
+          "kod": "T.O.7.28",
+          "aciklama": "Okuma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+        }
+      ]
+    },
+    "29": {
+      "basili_sayfa": 30,
+      "dosya_sayfasi": "page_29.png",
+      "etkinlik_adi": "Hazırlık Vakti & Metin Okuma (1. Bölüm)",
+      "tur": "Ön Bilgileri Paylaşma & Rehberli Okuma",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.K.7.2",
+          "aciklama": "Konuşma yöntem ve tekniklerine yönelik seçimlerini yönetebilme"
+        },
+        {
+          "kod": "T.K.7.4",
+          "aciklama": "Konuşmasında ön bilgilerinden yararlanabilme"
+        },
+        {
+          "kod": "T.O.7.2",
+          "aciklama": "Okumada strateji ve yöntem seçimlerini yönetebilme"
+        },
+        {
+          "kod": "T.O.7.5",
+          "aciklama": "Metnin yüzey anlamını belirleyebilme"
+        }
+      ]
+    },
+    "30": {
+      "basili_sayfa": 31,
+      "dosya_sayfasi": "page_30.png",
+      "etkinlik_adi": "Metin Okuma (2. Bölüm)",
+      "tur": "Rehberli / Sessiz Okuma Süreci",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.2",
+          "aciklama": "Okumada strateji ve yöntem seçimlerini yönetebilme"
+        },
+        {
+          "kod": "T.O.7.5",
+          "aciklama": "Metnin yüzey anlamını belirleyebilme"
+        }
+      ]
+    },
+    "31": {
+      "basili_sayfa": 32,
+      "dosya_sayfasi": "page_31.png",
+      "etkinlik_adi": "1. Etkinlik & 2. Etkinlik (A)",
+      "tur": "Söz Varlığı / Kelime Anlamı & Alıntıları Çözümleme",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.4",
+          "aciklama": "Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme"
+        },
+        {
+          "kod": "T.O.7.21",
+          "aciklama": "Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme"
+        },
+        {
+          "kod": "T.O.7.5",
+          "aciklama": "Metnin yüzey anlamını belirleyebilme"
+        }
+      ]
+    },
+    "32": {
+      "basili_sayfa": 33,
+      "dosya_sayfasi": "page_32.png",
+      "etkinlik_adi": "3. ve 4. Etkinlik",
+      "tur": "Metni Anlama Soruları & Kültürel Yorumlama",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.5",
+          "aciklama": "Metnin yüzey anlamını belirleyebilme"
+        },
+        {
+          "kod": "T.K.7.3",
+          "aciklama": "Konuşmasında amaç ve içeriğe yönelik seçimlerini yönetebilme"
+        }
+      ]
+    },
+    "33": {
+      "basili_sayfa": 34,
+      "dosya_sayfasi": "page_33.png",
+      "etkinlik_adi": "5. Etkinlik",
+      "tur": "İkilemelerin Cümledeki İşlevi & Söz Varlığını Geliştirme",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.4",
+          "aciklama": "Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme"
+        },
+        {
+          "kod": "T.O.7.21",
+          "aciklama": "Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme"
+        }
+      ]
+    },
+    "34": {
+      "basili_sayfa": 35,
+      "dosya_sayfasi": "page_34.png",
+      "etkinlik_adi": "6. ve 7. Etkinlik (Konuşma Vakti)",
+      "tur": "İkili Konuşma & Ses Tonunu Amaca Uygun Kullanma",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.K.7.1",
+          "aciklama": "Konuşma sürecini yönetebilme"
+        },
+        {
+          "kod": "T.K.7.2",
+          "aciklama": "Konuşma yöntem ve tekniklerine yönelik seçimlerini yönetebilme"
+        },
+        {
+          "kod": "T.K.7.3",
+          "aciklama": "Konuşmasında amaç ve içeriğe yönelik seçimlerini yönetebilme"
+        },
+        {
+          "kod": "T.K.7.26",
+          "aciklama": "Konuşma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+        }
+      ]
+    },
+    "35": {
+      "basili_sayfa": 36,
+      "dosya_sayfasi": "page_35.png",
+      "etkinlik_adi": "8. Etkinlik (A - Plan)",
+      "tur": "Yazma Vakti: Kişisel Gelişim Yazısı Planı",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.Y.7.1",
+          "aciklama": "Yazma sürecini yönetebilme"
+        },
+        {
+          "kod": "T.Y.7.2",
+          "aciklama": "Yazma strateji, yöntem ve tekniklerine yönelik seçimlerini yönetebilme"
+        },
+        {
+          "kod": "T.Y.7.3",
+          "aciklama": "Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme"
+        }
+      ]
+    },
+    "36": {
+      "basili_sayfa": 37,
+      "dosya_sayfasi": "page_36.png",
+      "etkinlik_adi": "8. Etkinlik (B - Yazma) & Değerlendirelim",
+      "tur": "Yazma Vakti: Gelişim Paragrafı Yazma ve Değerlendirme",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.Y.7.1",
+          "aciklama": "Yazma sürecini yönetebilme"
+        },
+        {
+          "kod": "T.Y.7.3",
+          "aciklama": "Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme"
+        },
+        {
+          "kod": "T.Y.7.18",
+          "aciklama": "Yazısını zenginleştirecek biçimde söz varlığını kullanabilme"
+        },
+        {
+          "kod": "T.Y.7.21",
+          "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+        },
+        {
+          "kod": "T.Y.7.22",
+          "aciklama": "Yazma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+        }
+      ]
+    },
+    "37": {
+      "basili_sayfa": 38,
+      "dosya_sayfasi": "page_37.png",
+      "etkinlik_adi": "İzle - Öğren - Uygula",
+      "tur": "Metin Yapıları: Sebep - Sonuç İlişkisi Çözümlemesi",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.2",
+          "aciklama": "Okumada strateji ve yöntem seçimlerini yönetebilme"
+        },
+        {
+          "kod": "T.O.7.5",
+          "aciklama": "Metnin yüzey anlamını belirleyebilme"
+        }
+      ]
+    },
+    "38": {
+      "basili_sayfa": 39,
+      "dosya_sayfasi": "page_38.png",
+      "etkinlik_adi": "Öğretmeninizi İzliyorsunuz / Büyük Grupla Uyguluyorsunuz",
+      "tur": "Sebep - Sonuç Modellemesi ve Ortak Analiz",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.2",
+          "aciklama": "Okumada strateji ve yöntem seçimlerini yönetebilme"
+        },
+        {
+          "kod": "T.O.7.5",
+          "aciklama": "Metnin yüzey anlamını belirleyebilme"
+        }
+      ]
+    },
+    "39": {
+      "basili_sayfa": 40,
+      "dosya_sayfasi": "page_39.png",
+      "etkinlik_adi": "Küçük Grupla Uyguluyorsunuz",
+      "tur": "Sebep Zinciri Şeması Çözümleme ve Yapılandırma",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.5",
+          "aciklama": "Metnin yüzey anlamını belirleyebilme"
+        },
+        {
+          "kod": "T.O.7.21",
+          "aciklama": "Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme"
+        },
+        {
+          "kod": "T.Y.7.3",
+          "aciklama": "Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme"
+        }
+      ]
+    },
+    "40": {
+      "basili_sayfa": 41,
+      "dosya_sayfasi": "page_40.png",
+      "etkinlik_adi": "Sıra Sizde / Kitap Vakti",
+      "tur": "Çoklu Sebep Şeması & Bireysel Uygulama",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.5",
+          "aciklama": "Metnin yüzey anlamını belirleyebilme"
+        },
+        {
+          "kod": "T.O.7.21",
+          "aciklama": "Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme"
+        },
+        {
+          "kod": "T.Y.7.3",
+          "aciklama": "Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme"
+        },
+        {
+          "kod": "T.O.7.1",
+          "aciklama": "Okumada materyal seçimini yönetebilme"
+        }
+      ]
+    },
+    "41": {
+      "basili_sayfa": 42,
+      "dosya_sayfasi": "page_41.png",
+      "etkinlik_adi": "Hazırlık Vakti & Dinleme/İzleme Süreci",
+      "tur": "Dinleme Stratejisi & Ön Bilgileri Paylaşma",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.D.7.1",
+          "aciklama": "Dinlemede/izlemede materyal seçimini yönetebilme"
+        },
+        {
+          "kod": "T.D.7.2",
+          "aciklama": "Dinlemede/izlemede strateji ve yöntem seçimlerini yönetebilme"
+        },
+        {
+          "kod": "T.K.7.2",
+          "aciklama": "Konuşma yöntem ve tekniklerine yönelik seçimlerini yönetebilme"
+        },
+        {
+          "kod": "T.K.7.4",
+          "aciklama": "Konuşmasında ön bilgilerinden yararlanabilme"
+        }
+      ]
+    },
+    "42": {
+      "basili_sayfa": 43,
+      "dosya_sayfasi": "page_42.png",
+      "etkinlik_adi": "1. ve 2. Etkinlik",
+      "tur": "Söz Varlığı (Paralimpik vb.) & Dinlediğini Anlama",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.D.7.4",
+          "aciklama": "Dinlediğinde/izlediğinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme"
+        },
+        {
+          "kod": "T.D.7.5",
+          "aciklama": "Dinlediğinin/izlediğinin yüzey anlamını belirleyebilme"
+        }
+      ]
+    },
+    "43": {
+      "basili_sayfa": 44,
+      "dosya_sayfasi": "page_43.png",
+      "etkinlik_adi": "3. Etkinlik (A)",
+      "tur": "Dinlediğinden Hareketle Duygu ve Çıkarımları İfade Etme",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.D.7.5",
+          "aciklama": "Dinlediğinin/izlediğinin yüzey anlamını belirleyebilme"
+        }
+      ]
+    },
+    "44": {
+      "basili_sayfa": 45,
+      "dosya_sayfasi": "page_44.png",
+      "etkinlik_adi": "3. Etkinlik (B) & 4. Etkinlik",
+      "tur": "Slogan Üretme & İçerik İfadelerini Değerlendirme",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.D.7.5",
+          "aciklama": "Dinlediğinin/izlediğinin yüzey anlamını belirleyebilme"
+        },
+        {
+          "kod": "T.Y.7.18",
+          "aciklama": "Yazısını zenginleştirecek biçimde söz varlığını kullanabilme"
+        }
+      ]
+    },
+    "45": {
+      "basili_sayfa": 46,
+      "dosya_sayfasi": "page_45.png",
+      "etkinlik_adi": "5. ve 6. Etkinlik",
+      "tur": "Yiğit Caner Aydın'ın Başarı Öyküsü ve Azim İncelemesi",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.D.7.5",
+          "aciklama": "Dinlediğinin/izlediğinin yüzey anlamını belirleyebilme"
+        },
+        {
+          "kod": "T.D.7.16",
+          "aciklama": "Metnin bölümlerini belirlemeye yönelik çözümleme yapabilme"
+        }
+      ]
+    },
+    "46": {
+      "basili_sayfa": 47,
+      "dosya_sayfasi": "page_46.png",
+      "etkinlik_adi": "7. Etkinlik",
+      "tur": "Söz Sanatları: Teşhis (Kişileştirme) Çözümleme",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.D.7.5",
+          "aciklama": "Dinlediğinin/izlediğinin yüzey anlamını belirleyebilme"
+        },
+        {
+          "kod": "T.D.7.16",
+          "aciklama": "Metnin bölümlerini belirlemeye yönelik çözümleme yapabilme"
+        }
+      ]
+    },
+    "47": {
+      "basili_sayfa": 48,
+      "dosya_sayfasi": "page_47.png",
+      "etkinlik_adi": "8. Etkinlik (Konuşma Vakti)",
+      "tur": "Sporda ve Yaşamda Hedefe Odaklanma Konuşması",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.K.7.1",
+          "aciklama": "Konuşma sürecini yönetebilme"
+        },
+        {
+          "kod": "T.K.7.2",
+          "aciklama": "Konuşma yöntem ve tekniklerine yönelik seçimlerini yönetebilme"
+        },
+        {
+          "kod": "T.K.7.3",
+          "aciklama": "Konuşmasında amaç ve içeriğe yönelik seçimlerini yönetebilme"
+        },
+        {
+          "kod": "T.K.7.26",
+          "aciklama": "Konuşma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+        }
+      ]
+    },
+    "48": {
+      "basili_sayfa": 49,
+      "dosya_sayfasi": "page_48.png",
+      "etkinlik_adi": "9. Etkinlik (A, B)",
+      "tur": "Dil Bilgisi: Çekimli Fiiller, Haber ve Dilek Kipleri",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.Y.7.21",
+          "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+        },
+        {
+          "kod": "T.O.7.21",
+          "aciklama": "Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme"
+        }
+      ]
+    },
+    "49": {
+      "basili_sayfa": 50,
+      "dosya_sayfasi": "page_49.png",
+      "etkinlik_adi": "10. Etkinlik (Yazma Vakti) & Değerlendirelim",
+      "tur": "Can'ın Başarı Hikâyesi & Dinleme/Yazma Öz Yansıtma",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.Y.7.1",
+          "aciklama": "Yazma sürecini yönetebilme"
+        },
+        {
+          "kod": "T.Y.7.2",
+          "aciklama": "Yazma strateji, yöntem ve tekniklerine yönelik seçimlerini yönetebilme"
+        },
+        {
+          "kod": "T.Y.7.3",
+          "aciklama": "Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme"
+        },
+        {
+          "kod": "T.Y.7.18",
+          "aciklama": "Yazısını zenginleştirecek biçimde söz varlığını kullanabilme"
+        },
+        {
+          "kod": "T.Y.7.21",
+          "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+        },
+        {
+          "kod": "T.Y.7.22",
+          "aciklama": "Yazma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+        },
+        {
+          "kod": "T.D.7.27",
+          "aciklama": "Dinleme/izleme sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+        }
+      ]
+    },
+    "50": {
+      "basili_sayfa": 51,
+      "dosya_sayfasi": "page_50.png",
+      "etkinlik_adi": "Hazırlık Vakti & Metin Okuma (1. Bölüm)",
+      "tur": "Ön Bilgileri Paylaşma & Rehberli Okuma",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.K.7.2",
+          "aciklama": "Konuşma yöntem ve tekniklerine yönelik seçimlerini yönetebilme"
+        },
+        {
+          "kod": "T.K.7.4",
+          "aciklama": "Konuşmasında ön bilgilerinden yararlanabilme"
+        },
+        {
+          "kod": "T.O.7.2",
+          "aciklama": "Okumada strateji ve yöntem seçimlerini yönetebilme"
+        },
+        {
+          "kod": "T.O.7.5",
+          "aciklama": "Metnin yüzey anlamını belirleyebilme"
+        }
+      ]
+    },
+    "51": {
+      "basili_sayfa": 52,
+      "dosya_sayfasi": "page_51.png",
+      "etkinlik_adi": "Metin Okuma (2. Bölüm)",
+      "tur": "Rehberli / Sessiz Okuma Süreci",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.2",
+          "aciklama": "Okumada strateji ve yöntem seçimlerini yönetebilme"
+        },
+        {
+          "kod": "T.O.7.5",
+          "aciklama": "Metnin yüzey anlamını belirleyebilme"
+        }
+      ]
+    },
+    "52": {
+      "basili_sayfa": 53,
+      "dosya_sayfasi": "page_52.png",
+      "etkinlik_adi": "Metin Okuma (3. Bölüm)",
+      "tur": "Rehberli / Sessiz Okuma Süreci",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.2",
+          "aciklama": "Okumada strateji ve yöntem seçimlerini yönetebilme"
+        },
+        {
+          "kod": "T.O.7.5",
+          "aciklama": "Metnin yüzey anlamını belirleyebilme"
+        }
+      ]
+    },
+    "53": {
+      "basili_sayfa": 54,
+      "dosya_sayfasi": "page_53.png",
+      "etkinlik_adi": "1. Etkinlik & 2. Etkinlik (A, B)",
+      "tur": "Söz Varlığı & Kaoru İkeya'nın Karakter Analizi",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.4",
+          "aciklama": "Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme"
+        },
+        {
+          "kod": "T.O.7.5",
+          "aciklama": "Metnin yüzey anlamını belirleyebilme"
+        },
+        {
+          "kod": "T.O.7.21",
+          "aciklama": "Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme"
+        }
+      ]
+    },
+    "54": {
+      "basili_sayfa": 55,
+      "dosya_sayfasi": "page_54.png",
+      "etkinlik_adi": "3. Etkinlik (A, B)",
+      "tur": "Metinler Arası Karşılaştırma: Kaoru İkeya ve Yiğit Caner Aydın",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.5",
+          "aciklama": "Metnin yüzey anlamını belirleyebilme"
+        },
+        {
+          "kod": "T.O.7.21",
+          "aciklama": "Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme"
+        }
+      ]
+    },
+    "55": {
+      "basili_sayfa": 56,
+      "dosya_sayfasi": "page_55.png",
+      "etkinlik_adi": "4. Etkinlik",
+      "tur": "Hikâye Unsurları: Olay, Yer, Zaman, Kişiler Analizi",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.5",
+          "aciklama": "Metnin yüzey anlamını belirleyebilme"
+        },
+        {
+          "kod": "T.O.7.21",
+          "aciklama": "Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme"
+        }
+      ]
+    },
+    "56": {
+      "basili_sayfa": 57,
+      "dosya_sayfasi": "page_56.png",
+      "etkinlik_adi": "5. Etkinlik",
+      "tur": "Kültür ve Bilim: Uluğ Bey Rasathanesi ve Semerkant",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.5",
+          "aciklama": "Metnin yüzey anlamını belirleyebilme"
+        },
+        {
+          "kod": "T.O.7.21",
+          "aciklama": "Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme"
+        }
+      ]
+    },
+    "57": {
+      "basili_sayfa": 58,
+      "dosya_sayfasi": "page_57.png",
+      "etkinlik_adi": "6. Etkinlik (A, B)",
+      "tur": "Paragraf Akışı ve Bölümler Arası Tutarlılık Analizi",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.5",
+          "aciklama": "Metnin yüzey anlamını belirleyebilme"
+        },
+        {
+          "kod": "T.D.7.16",
+          "aciklama": "Metnin bölümlerini belirlemeye yönelik çözümleme yapabilme"
+        },
+        {
+          "kod": "T.O.7.21",
+          "aciklama": "Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme"
+        }
+      ]
+    },
+    "58": {
+      "basili_sayfa": 59,
+      "dosya_sayfasi": "page_58.png",
+      "etkinlik_adi": "İzle - Öğren - Uygula",
+      "tur": "Yazma Stratejisi: Resmî Talep ve Dilekçe Yapısı",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.Y.7.1",
+          "aciklama": "Yazma sürecini yönetebilme"
+        },
+        {
+          "kod": "T.Y.7.2",
+          "aciklama": "Yazma strateji, yöntem ve tekniklerine yönelik seçimlerini yönetebilme"
+        },
+        {
+          "kod": "T.Y.7.3",
+          "aciklama": "Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme"
+        }
+      ]
+    },
+    "59": {
+      "basili_sayfa": 60,
+      "dosya_sayfasi": "page_59.png",
+      "etkinlik_adi": "Öğretmeninizi İzliyorsunuz / Büyük Grupla Uyguluyorsunuz",
+      "tur": "Yazma Stratejisi Modellemesi ve Planlama",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.Y.7.2",
+          "aciklama": "Yazma strateji, yöntem ve tekniklerine yönelik seçimlerini yönetebilme"
+        },
+        {
+          "kod": "T.Y.7.3",
+          "aciklama": "Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme"
+        }
+      ]
+    },
+    "60": {
+      "basili_sayfa": 61,
+      "dosya_sayfasi": "page_60.png",
+      "etkinlik_adi": "Büyük Grupla Uyguluyorsunuz (Plan)",
+      "tur": "Bilgisayar Talebi Planlama Formu",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.Y.7.1",
+          "aciklama": "Yazma sürecini yönetebilme"
+        },
+        {
+          "kod": "T.Y.7.2",
+          "aciklama": "Yazma strateji, yöntem ve tekniklerine yönelik seçimlerini yönetebilme"
+        },
+        {
+          "kod": "T.Y.7.3",
+          "aciklama": "Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme"
+        }
+      ]
+    },
+    "61": {
+      "basili_sayfa": 62,
+      "dosya_sayfasi": "page_61.png",
+      "etkinlik_adi": "Büyük Grupla Uyguluyorsunuz (Taslak)",
+      "tur": "Talep Yazısı Taslak Metni Oluşturma",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.Y.7.1",
+          "aciklama": "Yazma sürecini yönetebilme"
+        },
+        {
+          "kod": "T.Y.7.3",
+          "aciklama": "Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme"
+        },
+        {
+          "kod": "T.Y.7.18",
+          "aciklama": "Yazısını zenginleştirecek biçimde söz varlığını kullanabilme"
+        },
+        {
+          "kod": "T.Y.7.21",
+          "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+        }
+      ]
+    },
+    "62": {
+      "basili_sayfa": 63,
+      "dosya_sayfasi": "page_62.png",
+      "etkinlik_adi": "Küçük Grupla Uyguluyorsunuz (Plan & Taslak)",
+      "tur": "Kitap Fuarı Gezisi Talep Planı ve Taslak Metni",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.Y.7.1",
+          "aciklama": "Yazma sürecini yönetebilme"
+        },
+        {
+          "kod": "T.Y.7.2",
+          "aciklama": "Yazma strateji, yöntem ve tekniklerine yönelik seçimlerini yönetebilme"
+        },
+        {
+          "kod": "T.Y.7.3",
+          "aciklama": "Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme"
+        },
+        {
+          "kod": "T.Y.7.18",
+          "aciklama": "Yazısını zenginleştirecek biçimde söz varlığını kullanabilme"
+        },
+        {
+          "kod": "T.Y.7.21",
+          "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+        }
+      ]
+    },
+    "63": {
+      "basili_sayfa": 64,
+      "dosya_sayfasi": "page_63.png",
+      "etkinlik_adi": "Sıra Sizde",
+      "tur": "Bireysel Başvuru ve Talep Yazısı Planı",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.Y.7.1",
+          "aciklama": "Yazma sürecini yönetebilme"
+        },
+        {
+          "kod": "T.Y.7.2",
+          "aciklama": "Yazma strateji, yöntem ve tekniklerine yönelik seçimlerini yönetebilme"
+        },
+        {
+          "kod": "T.Y.7.3",
+          "aciklama": "Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme"
+        }
+      ]
+    },
+    "64": {
+      "basili_sayfa": 65,
+      "dosya_sayfasi": "page_64.png",
+      "etkinlik_adi": "Üretim Vakti (Planlama)",
+      "tur": "Geleceğe Hedef Mektubu ve Bireysel Vizyon Planı",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.Y.7.1",
+          "aciklama": "Yazma sürecini yönetebilme"
+        },
+        {
+          "kod": "T.Y.7.2",
+          "aciklama": "Yazma strateji, yöntem ve tekniklerine yönelik seçimlerini yönetebilme"
+        },
+        {
+          "kod": "T.Y.7.3",
+          "aciklama": "Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme"
+        }
+      ]
+    },
+    "65": {
+      "basili_sayfa": 66,
+      "dosya_sayfasi": "page_65.png",
+      "etkinlik_adi": "Üretim Vakti (Yazma & Değerlendirme)",
+      "tur": "Metni Temize Çekme ve Yazma Sürecini Değerlendirme",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.Y.7.1",
+          "aciklama": "Yazma sürecini yönetebilme"
+        },
+        {
+          "kod": "T.Y.7.3",
+          "aciklama": "Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme"
+        },
+        {
+          "kod": "T.Y.7.18",
+          "aciklama": "Yazısını zenginleştirecek biçimde söz varlığını kullanabilme"
+        },
+        {
+          "kod": "T.Y.7.21",
+          "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+        },
+        {
+          "kod": "T.Y.7.22",
+          "aciklama": "Yazma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+        }
+      ]
+    },
+    "66": {
+      "basili_sayfa": 67,
+      "dosya_sayfasi": "page_66.png",
+      "etkinlik_adi": "Serbest Okuma Metni: Ağaç ve Sen",
+      "tur": "Bağımsız Okuma ve Anlama",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.1",
+          "aciklama": "Okumada materyal seçimini yönetebilme"
+        },
+        {
+          "kod": "T.O.7.2",
+          "aciklama": "Okumada strateji ve yöntem seçimlerini yönetebilme"
+        },
+        {
+          "kod": "T.O.7.5",
+          "aciklama": "Metnin yüzey anlamını belirleyebilme"
+        }
+      ]
+    },
+    "67": {
+      "basili_sayfa": 68,
+      "dosya_sayfasi": "page_67.png",
+      "etkinlik_adi": "1. Tema Ölçme ve Değerlendirme (1-2)",
+      "tur": "Tema Sonu Değerlendirme Soruları",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.5",
+          "aciklama": "Metnin yüzey anlamını belirleyebilme"
+        }
+      ]
+    },
+    "68": {
+      "basili_sayfa": 69,
+      "dosya_sayfasi": "page_68.png",
+      "etkinlik_adi": "1. Tema Ölçme ve Değerlendirme (3-4)",
+      "tur": "Tema Sonu Değerlendirme Soruları",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.5",
+          "aciklama": "Metnin yüzey anlamını belirleyebilme"
+        },
+        {
+          "kod": "T.D.7.5",
+          "aciklama": "Dinlediğinin/izlediğinin yüzey anlamını belirleyebilme"
+        }
+      ]
+    },
+    "69": {
+      "basili_sayfa": 70,
+      "dosya_sayfasi": "page_69.png",
+      "etkinlik_adi": "1. Tema Ölçme ve Değerlendirme (5-7A)",
+      "tur": "Tema Sonu Değerlendirme ve Dil Bilgisi Soruları",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.5",
+          "aciklama": "Metnin yüzey anlamını belirleyebilme"
+        },
+        {
+          "kod": "T.O.7.21",
+          "aciklama": "Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme"
+        },
+        {
+          "kod": "T.Y.7.21",
+          "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+        }
+      ]
+    },
+    "70": {
+      "basili_sayfa": 71,
+      "dosya_sayfasi": "page_70.png",
+      "etkinlik_adi": "1. Tema Ölçme ve Değerlendirme (7B-8)",
+      "tur": "Tema Sonu Değerlendirme Soruları",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.O.7.5",
+          "aciklama": "Metnin yüzey anlamını belirleyebilme"
+        },
+        {
+          "kod": "T.Y.7.21",
+          "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+        }
+      ]
+    },
+    "71": {
+      "basili_sayfa": 72,
+      "dosya_sayfasi": "page_71.png",
+      "etkinlik_adi": "1. Tema Öz Değerlendirme (Dinleme & Okuma)",
+      "tur": "Becerilere Yönelik Öz Yansıtma Çizelgesi",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.D.7.27",
+          "aciklama": "Dinleme/izleme sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+        },
+        {
+          "kod": "T.O.7.28",
+          "aciklama": "Okuma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+        }
+      ]
+    },
+    "72": {
+      "basili_sayfa": 73,
+      "dosya_sayfasi": "page_72.png",
+      "etkinlik_adi": "1. Tema Öz Değerlendirme (Yazma & Konuşma)",
+      "tur": "Becerilere Yönelik Öz Yansıtma Çizelgesi",
+      "ogrenme_ciktilari": [
+        {
+          "kod": "T.Y.7.22",
+          "aciklama": "Yazma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+        },
+        {
+          "kod": "T.K.7.26",
+          "aciklama": "Konuşma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+        }
+      ]
+    }
+  }
+}
