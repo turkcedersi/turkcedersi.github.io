@@ -22036,10 +22036,10 @@
         "items": [
           {
             "type": "mark",
-            "left": 30.8,
-            "top": 20.2,
-            "width": 2.0,
-            "height": 2.0,
+            "left": 30.1,
+            "top": 20.8,
+            "width": 1.8,
+            "height": 2.2,
             "text": "?",
             "content": "?",
             "style": {
@@ -22050,10 +22050,10 @@
           },
           {
             "type": "mark",
-            "left": 32.4,
-            "top": 24.1,
-            "width": 2.0,
-            "height": 2.0,
+            "left": 31.8,
+            "top": 24.0,
+            "width": 1.8,
+            "height": 2.2,
             "text": ",",
             "content": ",",
             "style": {
@@ -22064,10 +22064,10 @@
           },
           {
             "type": "mark",
-            "left": 53.1,
-            "top": 24.1,
-            "width": 2.0,
-            "height": 2.0,
+            "left": 52.5,
+            "top": 24.0,
+            "width": 1.8,
+            "height": 2.2,
             "text": ",",
             "content": ",",
             "style": {
@@ -22078,10 +22078,10 @@
           },
           {
             "type": "mark",
-            "left": 83.4,
-            "top": 24.1,
-            "width": 2.0,
-            "height": 2.0,
+            "left": 83.1,
+            "top": 23.8,
+            "width": 1.8,
+            "height": 2.2,
             "text": ".",
             "content": ".",
             "style": {
@@ -22092,10 +22092,10 @@
           },
           {
             "type": "mark",
-            "left": 68.3,
+            "left": 68.2,
             "top": 28.0,
-            "width": 2.0,
-            "height": 2.0,
+            "width": 1.8,
+            "height": 2.2,
             "text": ":",
             "content": ":",
             "style": {
@@ -22106,10 +22106,10 @@
           },
           {
             "type": "mark",
-            "left": 39.1,
-            "top": 31.3,
-            "width": 2.0,
-            "height": 2.0,
+            "left": 38.7,
+            "top": 30.0,
+            "width": 1.8,
+            "height": 2.2,
             "text": ".",
             "content": ".",
             "style": {
@@ -22215,7 +22215,7 @@
           {
             "type": "lines",
             "left": 15.0,
-            "top": 43.85,
+            "top": 41.28,
             "width": 73.5,
             "height": 1.8,
             "text": "Belediyeye dilekçe vererek atıl arazilerin parka dönüştürülmesi.",
@@ -22224,7 +22224,7 @@
           {
             "type": "lines",
             "left": 11.5,
-            "top": 46.41,
+            "top": 43.85,
             "width": 77.0,
             "height": 1.8,
             "text": "Okul bahçelerinin ders dışı saatlerde halka ve çocuklara açılması.",
@@ -22233,7 +22233,7 @@
           {
             "type": "lines",
             "left": 11.5,
-            "top": 48.97,
+            "top": 46.41,
             "width": 77.0,
             "height": 1.8,
             "text": "Mahalle sakinleriyle imza kampanyası ve farkındalık oluşturulması.",
@@ -22242,7 +22242,7 @@
           {
             "type": "lines",
             "left": 15.0,
-            "top": 55.13,
+            "top": 52.56,
             "width": 73.5,
             "height": 1.8,
             "text": "En etkili çözüm: Okul bahçelerinin güvenlikli park yapılmasıdır.",
@@ -22251,7 +22251,7 @@
           {
             "type": "lines",
             "left": 11.5,
-            "top": 57.69,
+            "top": 55.13,
             "width": 77.0,
             "height": 1.8,
             "text": "Çünkü yeni arsa gerekmeden hemen güvenle hayata geçebilir.",
@@ -22260,7 +22260,7 @@
           {
             "type": "lines",
             "left": 11.5,
-            "top": 60.26,
+            "top": 57.69,
             "width": 77.0,
             "height": 1.8,
             "text": "Mevcut okul bahçeleri spor ve oyun ekipmanlarıyla donatılmalıdır.",
@@ -22269,7 +22269,7 @@
           {
             "type": "lines",
             "left": 26.0,
-            "top": 66.41,
+            "top": 63.85,
             "width": 62.5,
             "height": 1.8,
             "text": "Çocuklara oyun alanı açmak toplumsal bir görevdir.",
@@ -22278,7 +22278,7 @@
           {
             "type": "lines",
             "left": 11.5,
-            "top": 68.97,
+            "top": 66.41,
             "width": 77.0,
             "height": 1.8,
             "text": "Yerel yönetimler ve toplum el ele verip çocuklara alan açmalıdır.",
@@ -22287,7 +22287,7 @@
           {
             "type": "lines",
             "left": 11.5,
-            "top": 71.54,
+            "top": 68.97,
             "width": 77.0,
             "height": 1.8,
             "text": "Parklarda oynayan her çocuk mutlu bir geleceğin teminatıdır.",
@@ -22296,7 +22296,7 @@
           {
             "type": "lines",
             "left": 11.5,
-            "top": 74.17,
+            "top": 71.54,
             "width": 77.0,
             "height": 1.8,
             "text": "Çocukların sesine kulak vermek, yarınlarımıza sahip çıkmaktır.",
@@ -33812,6 +33812,38 @@
     "121": [
       "T.Y.6.16",
       "T.Y.6.21"
+    ],
+    "122": [
+      "T.O.6.1. Okumada materyal seçimini yönetebilme",
+      "T.K.6.1. Konuşma sürecini yönetebilme"
+    ],
+    "123": [
+      "T.O.6.24. Okuduğunu değerlendirebilme"
+    ],
+    "124": [
+      "T.O.6.24. Okuduğunu değerlendirebilme"
+    ],
+    "125": [
+      "T.O.6.24. Okuduğunu değerlendirebilme",
+      "T.O.6.26. Metindeki probleme çözüm üretebilme"
+    ],
+    "126": [
+      "T.D.6.22. Dinlediğini/izlediğini değerlendirebilme",
+      "T.D.6.23. Dinlediğini/izlediğini eleştirebilme",
+      "T.K.6.16. Değerlendirmesini sözlü olarak ifade edebilme"
+    ],
+    "127": [
+      "T.K.6.18. Eleştirisini sözlü olarak ifade edebilme",
+      "T.K.6.19. Problem çözümüne yönelik konuşma yapabilme",
+      "T.K.6.26. Konuşma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+    ],
+    "128": [
+      "T.Y.6.1. Yazma sürecini yönetebilme",
+      "T.Y.6.22. Yazma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+    ],
+    "129": [
+      "T.Y.6.22. Yazma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme",
+      "T.Y.6.16. Problem çözümüne yönelik yazabilme"
     ]
   },
   "book2_inpage_answers": {
@@ -40554,6 +40586,492 @@
             "width": 6.0,
             "text": "I",
             "style": "text-align: center; font-weight: bold; color: #1e40af; font-size: 18px;"
+          }
+        ]
+      }
+    ],
+    "122": [
+      {
+        "id": "p122_liderlik_ozellikleri",
+        "title": "HAYDİ, BAŞLAYALIM!: Liderlik Özellikleri",
+        "button": {
+          "left": 5.5,
+          "top": 5.5
+        },
+        "items": [
+          {
+            "type": "checkbox",
+            "left": 27.0,
+            "top": 19.8,
+            "width": 2.8,
+            "height": 2.0,
+            "text": "✓"
+          },
+          {
+            "type": "checkbox",
+            "left": 39.8,
+            "top": 19.8,
+            "width": 2.8,
+            "height": 2.0,
+            "text": "✓"
+          },
+          {
+            "type": "checkbox",
+            "left": 56.5,
+            "top": 22.8,
+            "width": 2.8,
+            "height": 2.0,
+            "text": "✓"
+          }
+        ]
+      }
+    ],
+    "124": [
+      {
+        "id": "p124_kelime_anlamlari",
+        "title": "1. ANLAYALIM: Kelimelerin Şiirdeki Anlamı",
+        "button": {
+          "left": 5.5,
+          "top": 12.0
+        },
+        "items": [
+          {
+            "type": "checkbox",
+            "left": 20.0,
+            "top": 26.5,
+            "width": 2.8,
+            "height": 2.0,
+            "text": "✓"
+          },
+          {
+            "type": "checkbox",
+            "left": 64.5,
+            "top": 27.5,
+            "width": 2.8,
+            "height": 2.0,
+            "text": "✓"
+          },
+          {
+            "type": "checkbox",
+            "left": 47.8,
+            "top": 38.5,
+            "width": 2.8,
+            "height": 2.0,
+            "text": "✓"
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 51.5,
+            "width": 13.0,
+            "text": "Gönül"
+          },
+          {
+            "type": "checkbox",
+            "left": 29.8,
+            "top": 48.0,
+            "width": 2.8,
+            "height": 2.0,
+            "text": "✓"
+          }
+        ]
+      },
+      {
+        "id": "p124_siir_anlayalim",
+        "title": "2. ANLAYALIM: Şiir İncelemesi",
+        "button": {
+          "left": 5.5,
+          "top": 57.0
+        },
+        "items": [
+          {
+            "type": "checkbox",
+            "left": 36.8,
+            "top": 73.0,
+            "width": 2.8,
+            "height": 2.0,
+            "text": "✓"
+          },
+          {
+            "type": "lines",
+            "left": 27.0,
+            "top": 80.5,
+            "width": 40.0,
+            "text": "yol gösterici ve yüce gönüllü"
+          },
+          {
+            "type": "lines",
+            "left": 50.5,
+            "top": 84.0,
+            "width": 39.0,
+            "text": "“Bir Tek Ersin Hak yolunda,"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 87.0,
+            "width": 79.0,
+            "text": "yolum yoluna yönelmiş ömür boyu gündüz gece.”"
+          }
+        ]
+      }
+    ],
+    "125": [
+      {
+        "id": "p125_sen_olmazsan",
+        "title": "3. ANLAYALIM: Sen Olmazsan Metin Analizi",
+        "button": {
+          "left": 5.5,
+          "top": 18.0
+        },
+        "items": [
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 37.0,
+            "width": 79.0,
+            "text": "Maddi açlık ve susuzluktan ziyade manevi sevgi, şefkat"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 40.5,
+            "width": 79.0,
+            "text": "ve gönül zenginliği eksikliğini anlatmaktadır."
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 57.0,
+            "width": 79.0,
+            "text": "1. Çözüm: İnsanlara hoşgörü ve sevgiyle yaklaşarak."
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 60.0,
+            "width": 79.0,
+            "text": "2. Çözüm: Birlik, beraberlik ve yardımlaşmayı yayarak."
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 69.5,
+            "width": 79.0,
+            "text": "Sevgi ve hoşgörü çözümü daha uygundur çünkü Yunus Emre"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 73.0,
+            "width": 79.0,
+            "text": "gönülleri sevgiyle fethetmiş, bütün insanları kucaklamıştır."
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 76.5,
+            "width": 79.0,
+            "text": "Toplumda sevgi egemen olursa diğer sorunlar da kolayca çözülür."
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 85.0,
+            "width": 79.0,
+            "text": "Evet, günümüzün yoğun dünyasında insanlar manevi yalnızlık"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 88.5,
+            "width": 79.0,
+            "text": "ve sevgi eksikliği yaşayabilmektedir."
+          }
+        ]
+      }
+    ],
+    "126": [
+      {
+        "id": "p126_video_degerlendirme",
+        "title": "4. ANLAYALIM: Video İzleme Değerlendirme",
+        "button": {
+          "left": 5.5,
+          "top": 8.0
+        },
+        "items": [
+          {
+            "type": "blank",
+            "left": 33.5,
+            "top": 29.5,
+            "width": 6.0,
+            "text": "12"
+          },
+          {
+            "type": "lines",
+            "left": 18.0,
+            "top": 34.0,
+            "width": 28.5,
+            "text": "dili sade ve akıcıdır,"
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 37.2,
+            "width": 35.0,
+            "text": "olaylar sırayla anlatılmış."
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 40.5,
+            "width": 35.0,
+            "text": "Kavramlar yaşımıza uygundur."
+          },
+          {
+            "type": "blank",
+            "left": 43.5,
+            "top": 51.5,
+            "width": 4.5,
+            "border": "2px solid #2563eb",
+            "text": ""
+          }
+        ]
+      },
+      {
+        "id": "p126_sunum_puan",
+        "title": "1. ANLATALIM: Sunum Puanlama",
+        "button": {
+          "left": 5.5,
+          "top": 57.0
+        },
+        "items": [
+          {
+            "type": "blank",
+            "left": 32.5,
+            "top": 88.6,
+            "width": 3.0,
+            "text": "9"
+          },
+          {
+            "type": "blank",
+            "left": 54.5,
+            "top": 88.6,
+            "width": 3.0,
+            "text": "10"
+          },
+          {
+            "type": "blank",
+            "left": 80.0,
+            "top": 88.6,
+            "width": 3.0,
+            "text": "10"
+          }
+        ]
+      }
+    ],
+    "127": [
+      {
+        "id": "p127_girisimci_durum",
+        "title": "2. ANLATALIM: Girişimci Durumu ve Çözüm",
+        "button": {
+          "left": 5.5,
+          "top": 12.0
+        },
+        "items": [
+          {
+            "type": "lines",
+            "left": 25.0,
+            "top": 28.0,
+            "width": 64.5,
+            "text": "başarı getirse de uzun vadede mutsuzluğa yol açabilir."
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 37.5,
+            "width": 79.0,
+            "text": "İşinde hızla yükselir, maddi kazanç sağlar ve hedeflerine ulaşır."
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 44.5,
+            "width": 79.0,
+            "text": "Aile bağları zayıflar, yalnızlaşır ve ruhsal yorgunluk yaşar."
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 51.0,
+            "width": 79.0,
+            "text": "İş ve özel hayat arasında planlama ve zaman yönetimi"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 54.0,
+            "width": 79.0,
+            "text": "yaparak sevdiklerine kaliteli zaman ayırması gerekir."
+          }
+        ]
+      }
+    ],
+    "128": [
+      {
+        "id": "p128_yazma_hazirlik",
+        "title": "3. ANLATALIM: Yazma Hazırlığı",
+        "button": {
+          "left": 5.5,
+          "top": 12.0
+        },
+        "items": [
+          {
+            "type": "checkbox",
+            "left": 15.5,
+            "top": 28.0,
+            "width": 2.8,
+            "height": 2.0,
+            "text": "✓"
+          },
+          {
+            "type": "checkbox",
+            "left": 40.5,
+            "top": 39.5,
+            "width": 2.8,
+            "height": 2.0,
+            "text": "✓"
+          },
+          {
+            "type": "checkbox",
+            "left": 27.5,
+            "top": 46.5,
+            "width": 2.8,
+            "height": 2.0,
+            "text": "✓"
+          }
+        ]
+      },
+      {
+        "id": "p128_yazma_oz_degerlendirme",
+        "title": "Değerlendirelim: Yazma Öz Değerlendirmesi",
+        "button": {
+          "left": 5.5,
+          "top": 62.0
+        },
+        "items": [
+          {
+            "type": "blank",
+            "left": 14.5,
+            "top": 84.8,
+            "width": 12.0,
+            "text": "★★★★★"
+          },
+          {
+            "type": "blank",
+            "left": 14.5,
+            "top": 86.8,
+            "width": 12.0,
+            "text": "★★★★★"
+          },
+          {
+            "type": "blank",
+            "left": 14.5,
+            "top": 88.8,
+            "width": 12.0,
+            "text": "★★★★★"
+          },
+          {
+            "type": "blank",
+            "left": 14.5,
+            "top": 90.8,
+            "width": 12.0,
+            "text": "★★★★★"
+          }
+        ]
+      }
+    ],
+    "129": [
+      {
+        "id": "p129_yansitma",
+        "title": "Değerlendirelim: Yansıtma",
+        "button": {
+          "left": 5.5,
+          "top": 7.0
+        },
+        "items": [
+          {
+            "type": "lines",
+            "left": 42.0,
+            "top": 12.5,
+            "width": 48.0,
+            "text": "Konuyu belirleyip düşüncelerimi"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 15.0,
+            "width": 79.5,
+            "text": "planlı, akıcı ve kurallara uygun biçimde aktarmam."
+          },
+          {
+            "type": "lines",
+            "left": 47.5,
+            "top": 17.5,
+            "width": 42.5,
+            "text": "Daha zengin söz varlığı ve deyimler"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 20.0,
+            "width": 79.5,
+            "text": "kullanarak anlatımımı daha etkileyici kılabilmek."
+          },
+          {
+            "type": "lines",
+            "left": 40.0,
+            "top": 22.8,
+            "width": 50.0,
+            "text": "Bol bol kitap okumak ve düzenli"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 25.5,
+            "width": 79.5,
+            "text": "olarak serbest yazma alıştırmaları yapmak."
+          }
+        ]
+      },
+      {
+        "id": "p129_yazma_konulari",
+        "title": "4. ANLATALIM: Grupla Yazma Konuları",
+        "button": {
+          "left": 5.5,
+          "top": 31.0
+        },
+        "items": [
+          {
+            "type": "lines",
+            "left": 62.0,
+            "top": 63.8,
+            "width": 16.5,
+            "text": "Örnek liderin"
+          },
+          {
+            "type": "lines",
+            "left": 57.0,
+            "top": 69.2,
+            "width": 21.5,
+            "text": "topluma faydasını"
+          },
+          {
+            "type": "lines",
+            "left": 59.0,
+            "top": 75.8,
+            "width": 19.5,
+            "text": "anlatan öykü."
           }
         ]
       }
