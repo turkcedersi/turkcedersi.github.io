@@ -406,26 +406,41 @@ document.addEventListener("DOMContentLoaded", () => {
     const mobileBtnPrev = document.getElementById("mobile-btn-prev");
     const mobileBtnNext = document.getElementById("mobile-btn-next");
 
-    if (mobileBtnPrev) {
-      mobileBtnPrev.addEventListener("click", (e) => {
+    let lastNavTime = 0;
+    const triggerMobileNav = (action, e) => {
+      if (e) {
         e.stopPropagation();
-        if (state.currentPage > 0) {
-          loadPage(state.currentPage - 1);
-        } else {
-          showToast("Zaten ilk sayfadasınız.");
-        }
-      });
+      }
+      const now = Date.now();
+      if (now - lastNavTime < 250) return;
+      lastNavTime = now;
+      action();
+    };
+
+    const navPrevPage = () => {
+      if (state.currentPage > 0) {
+        loadPage(state.currentPage - 1);
+      } else {
+        showToast("Zaten ilk sayfadasınız.");
+      }
+    };
+
+    const navNextPage = () => {
+      if (state.currentPage < state.maxPages) {
+        loadPage(state.currentPage + 1);
+      } else {
+        showToast("Zaten son sayfadasınız.");
+      }
+    };
+
+    if (mobileBtnPrev) {
+      mobileBtnPrev.addEventListener("click", (e) => triggerMobileNav(navPrevPage, e));
+      mobileBtnPrev.addEventListener("touchend", (e) => triggerMobileNav(navPrevPage, e));
     }
 
     if (mobileBtnNext) {
-      mobileBtnNext.addEventListener("click", (e) => {
-        e.stopPropagation();
-        if (state.currentPage < state.maxPages) {
-          loadPage(state.currentPage + 1);
-        } else {
-          showToast("Zaten son sayfadasınız.");
-        }
-      });
+      mobileBtnNext.addEventListener("click", (e) => triggerMobileNav(navNextPage, e));
+      mobileBtnNext.addEventListener("touchend", (e) => triggerMobileNav(navNextPage, e));
     }
   }
 
