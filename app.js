@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
     showLoading(true);
     try {
       // Fetch the textbook hotspots & answers data (cache-busted)
-      const response = await fetch("assets/data/book_data.json?v=9.4");
+      const response = await fetch("assets/data/book_data.json?v=9.5");
       if (!response.ok) {
         throw new Error("Veri dosyası yüklenemedi.");
       }
