@@ -143,5 +143,139 @@
         ]
       }
     ]
+  },
+  "metin_2": {
+    "baslik": "Yunus Emrem",
+    "sayfa_araligi": "122-129",
+    "etkinlikler": [
+      {
+        "sayfa_dosya": 122,
+        "sayfa_kitap": 122,
+        "etkinlik_adi": "HAYDİ, BAŞLAYALIM!",
+        "tur": "Liderlik Özellikleri ve Ön Hazırlık",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.1",
+            "aciklama": "Okumada materyal seçimini yönetebilme"
+          },
+          {
+            "kod": "T.K.6.1",
+            "aciklama": "Konuşma sürecini yönetebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 123,
+        "sayfa_kitap": 123,
+        "etkinlik_adi": "Metin Okuma Süreci",
+        "tur": "Şiir Okuma ve Vurgu-Tonlama",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.24",
+            "aciklama": "Okuduğunu değerlendirebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 124,
+        "sayfa_kitap": 124,
+        "etkinlik_adi": "1. ANLAYALIM ve 2. ANLAYALIM",
+        "tur": "Kelimelerin Şiirdeki Anlamı ve Şiir İncelemesi",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.24",
+            "aciklama": "Okuduğunu değerlendirebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 125,
+        "sayfa_kitap": 125,
+        "etkinlik_adi": "3. ANLAYALIM",
+        "tur": "Sen Olmazsan Metni Analizi ve Çözüm Üretme",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.24",
+            "aciklama": "Okuduğunu değerlendirebilme"
+          },
+          {
+            "kod": "T.O.6.26",
+            "aciklama": "Metindeki probleme çözüm üretebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 126,
+        "sayfa_kitap": 126,
+        "etkinlik_adi": "4. ANLAYALIM ve 1. ANLATALIM",
+        "tur": "Karekod Video Değerlendirme ve Grup Sunumu Puanlama",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.D.6.22",
+            "aciklama": "Dinlediğini/izlediğini değerlendirebilme"
+          },
+          {
+            "kod": "T.D.6.23",
+            "aciklama": "Dinlediğini/izlediğini eleştirebilme"
+          },
+          {
+            "kod": "T.K.6.16",
+            "aciklama": "Değerlendirmesini sözlü olarak ifade edebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 127,
+        "sayfa_kitap": 127,
+        "etkinlik_adi": "2. ANLATALIM",
+        "tur": "Girişimci Durumu, İş-Yaşam Dengesi ve Çözüm Arayışı",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.K.6.18",
+            "aciklama": "Eleştirisini sözlü olarak ifade edebilme"
+          },
+          {
+            "kod": "T.K.6.19",
+            "aciklama": "Problem çözümüne yönelik konuşma yapabilme"
+          },
+          {
+            "kod": "T.K.6.26",
+            "aciklama": "Konuşma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 128,
+        "sayfa_kitap": 128,
+        "etkinlik_adi": "3. ANLATALIM ve Değerlendirelim",
+        "tur": "Yazma Hazırlığı ve Yazma Öz Değerlendirmesi",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.Y.6.1",
+            "aciklama": "Yazma sürecini yönetebilme"
+          },
+          {
+            "kod": "T.Y.6.22",
+            "aciklama": "Yazma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 129,
+        "sayfa_kitap": 129,
+        "etkinlik_adi": "Değerlendirelim ve 4. ANLATALIM",
+        "tur": "Yazma Yansıtması ve Grupla Yazma Konuları",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.Y.6.22",
+            "aciklama": "Yazma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+          },
+          {
+            "kod": "T.Y.6.16",
+            "aciklama": "Problem çözümüne yönelik yazabilme"
+          }
+        ]
+      }
+    ]
   }
 }
