@@ -184,7 +184,7 @@
   "metin_2": {
     "baslik": "Sesli Asistan",
     "yazar": "EBA Dinleme/İzleme Metni (MEB)",
-    "sayfa_araligi": "76 - 81",
+    "sayfa_araligi": "76 - 83",
     "etkinlikler": [
       {
         "sayfa_dosya": 76,
@@ -291,6 +291,261 @@
           {
             "kod": "T.Y.6.3",
             "aciklama": "Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 82,
+        "sayfa_kitap": 82,
+        "etkinlik_adi": "4. ve 5. ANLATALIM",
+        "tur": "Akrostiş Şiir Değerlendirmesi ve Kelimelerdeki Ses Olaylarını Belirleme",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.Y.6.1",
+            "aciklama": "Yazma sürecini yönetebilme"
+          },
+          {
+            "kod": "T.Y.6.14",
+            "aciklama": "Yazılı üretiminde ve yazılı etkileşiminde tartışabilme"
+          },
+          {
+            "kod": "T.K.6.1",
+            "aciklama": "Konuşma sürecini yönetebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 83,
+        "sayfa_kitap": 83,
+        "etkinlik_adi": "6. ANLATALIM (a, b) ve Gelecek Derse Hazırlanalım",
+        "tur": "Kısaltmalara Getirilen Ekler Kuralı, Ekler Çarkı ve Doğayı Gözlemleme",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.Y.6.21",
+            "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+          },
+          {
+            "kod": "T.D.6.25",
+            "aciklama": "Dinleme/izleme sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+          }
+        ]
+      }
+    ]
+  },
+  "metin_3": {
+    "baslik": "Teknoloji Doğayı Taklit Ediyor",
+    "yazar": "Jandarma Çocuk Dergisi",
+    "sayfa_araligi": "84 - 93",
+    "etkinlikler": [
+      {
+        "sayfa_dosya": 84,
+        "sayfa_kitap": 84,
+        "etkinlik_adi": "HAYDİ, BAŞLAYALIM! ve Metin Okuma",
+        "tur": "Canlılar ve Oyunlar Eşleştirmesi ile Metne Hazırlık",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.3",
+            "aciklama": "Okumada strateji ve yöntem seçimlerini yönetebilme"
+          },
+          {
+            "kod": "T.O.6.4",
+            "aciklama": "Okuyacağı metnin içeriğine yönelik tahminde bulunabilme"
+          },
+          {
+            "kod": "T.K.6.1",
+            "aciklama": "Konuşma sürecini yönetebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 85,
+        "sayfa_kitap": 85,
+        "etkinlik_adi": "Metin Okuma (Devam)",
+        "tur": "Bilgilendirici Metin Okuma (Nilüfer Çiçeği ve Biyotaklit)",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.3",
+            "aciklama": "Okumada strateji ve yöntem seçimlerini yönetebilme"
+          },
+          {
+            "kod": "T.O.6.16",
+            "aciklama": "Bilgilendirici metinde anahtar kelimeleri belirlemeye yönelik çözümleme yapabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 86,
+        "sayfa_kitap": 86,
+        "etkinlik_adi": "1. ve 2. ANLAYALIM",
+        "tur": "Canlılar ve Teknolojik İcatlar Tablosu & Biyomimetik Bulmacası",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.4",
+            "aciklama": "Okuyacağı metnin içeriğine yönelik tahminde bulunabilme"
+          },
+          {
+            "kod": "T.O.6.5",
+            "aciklama": "Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme"
+          },
+          {
+            "kod": "T.O.6.16",
+            "aciklama": "Bilgilendirici metinde anahtar kelimeleri belirlemeye yönelik çözümleme yapabilme"
+          },
+          {
+            "kod": "T.O.6.21",
+            "aciklama": "Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 87,
+        "sayfa_kitap": 87,
+        "etkinlik_adi": "3. ANLAYALIM (a, b, c)",
+        "tur": "Metinden Önemli Notlar ve Özet Çıkarma",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.8",
+            "aciklama": "Metnin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme"
+          },
+          {
+            "kod": "T.O.6.16",
+            "aciklama": "Bilgilendirici metinde anahtar kelimeleri belirlemeye yönelik çözümleme yapabilme"
+          },
+          {
+            "kod": "T.Y.6.1",
+            "aciklama": "Yazma sürecini yönetebilme"
+          },
+          {
+            "kod": "T.Y.6.3",
+            "aciklama": "Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 88,
+        "sayfa_kitap": 88,
+        "etkinlik_adi": "4. ve 5. ANLAYALIM (a)",
+        "tur": "Biyotaklit Labirenti Çıkış Yolu ve Biyotaklit Alanları İşaretleme",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.8",
+            "aciklama": "Metnin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme"
+          },
+          {
+            "kod": "T.O.6.18",
+            "aciklama": "Metindeki düşünceyi geliştirme yollarını belirlemeye yönelik çözümleme yapabilme"
+          },
+          {
+            "kod": "T.O.6.24",
+            "aciklama": "Metni tarafsız bir bakış açısıyla değerlendirebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 89,
+        "sayfa_kitap": 89,
+        "etkinlik_adi": "5. ANLAYALIM (b, c) ve 6. ANLAYALIM",
+        "tur": "Metin Başlığı/İçeriği Değerlendirme & 'Bugün Ne Öğrendim?' Dinleme Boşluk Doldurma",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.D.6.2",
+            "aciklama": "Dinlemede/izlemede strateji ve yöntem seçimlerini yönetebilme"
+          },
+          {
+            "kod": "T.D.6.4",
+            "aciklama": "Dinlediğinde/izlediğinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme"
+          },
+          {
+            "kod": "T.D.6.8",
+            "aciklama": "Dinlediğinin/izlediğinin derin anlamını belirlemeye yönelik üst düzey çıkarımlar yapabilme"
+          },
+          {
+            "kod": "T.O.6.27",
+            "aciklama": "Okuma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 90,
+        "sayfa_kitap": 90,
+        "etkinlik_adi": "1. ve 2. ANLATALIM",
+        "tur": "Metin Dışı İcatlar Değerlendirmesi & Doğadan İlham Alan Çözüm Konuşması",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.3",
+            "aciklama": "Okumada strateji ve yöntem seçimlerini yönetebilme"
+          },
+          {
+            "kod": "T.K.6.1",
+            "aciklama": "Konuşma sürecini yönetebilme"
+          },
+          {
+            "kod": "T.K.6.10",
+            "aciklama": "Sözlü sunum yapabilme"
+          },
+          {
+            "kod": "T.Y.6.14",
+            "aciklama": "Yazılı üretiminde ve yazılı etkileşiminde tartışabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 91,
+        "sayfa_kitap": 91,
+        "etkinlik_adi": "3. ve 4. ANLATALIM",
+        "tur": "Günlük Hayatta İcat Seçimi ve Kısa Çizgi Kuralları Eşleştirmesi",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.Y.6.21",
+            "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+          },
+          {
+            "kod": "T.K.6.1",
+            "aciklama": "Konuşma sürecini yönetebilme"
+          },
+          {
+            "kod": "T.K.6.10",
+            "aciklama": "Sözlü sunum yapabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 92,
+        "sayfa_kitap": 92,
+        "etkinlik_adi": "5. ANLATALIM ve Değerlendirelim",
+        "tur": "Canlı-İcat Görsel Eşleştirmesi, Yazma Planı ve Süreç Değerlendirmesi",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.Y.6.1",
+            "aciklama": "Yazma sürecini yönetebilme"
+          },
+          {
+            "kod": "T.Y.6.21",
+            "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+          },
+          {
+            "kod": "T.Y.6.22",
+            "aciklama": "Yazma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 93,
+        "sayfa_kitap": 93,
+        "etkinlik_adi": "6. ANLATALIM ve Gelecek Derse Hazırlanalım",
+        "tur": "Biyotaklit Mesajlaşma Diyaloğu Tamamlama ve Teknoloji Festivali Araştırması",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.Y.6.1",
+            "aciklama": "Yazma sürecini yönetebilme"
+          },
+          {
+            "kod": "T.Y.6.14",
+            "aciklama": "Yazılı üretiminde ve yazılı etkileşiminde tartışabilme"
+          },
+          {
+            "kod": "T.Y.6.20",
+            "aciklama": "Uygun geçiş ve bağlantı ifadelerini kullanabilme"
           }
         ]
       }

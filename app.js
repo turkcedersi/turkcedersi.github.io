@@ -793,12 +793,14 @@ document.addEventListener("DOMContentLoaded", () => {
           desc = outcome;
         }
       } else if (outcome && typeof outcome === "object") {
-        code = (outcome.code || "").trim();
-        desc = (outcome.name || outcome.description || outcome.desc || "").trim();
+        code = (outcome.code || outcome.kod || "").trim();
+        desc = (outcome.name || outcome.description || outcome.desc || outcome.aciklama || "").trim();
         if (outcome.description && outcome.name && outcome.description !== outcome.name) {
           fullTip = outcome.description;
         } else if (outcome.desc) {
           fullTip = outcome.desc;
+        } else if (outcome.aciklama) {
+          fullTip = outcome.aciklama;
         }
       }
 

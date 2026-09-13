@@ -369,12 +369,53 @@ body::-webkit-scrollbar-thumb:hover {
   flex-shrink: 0;
 }
 
-@media (max-height: 720px), (max-width: 900px) {
+/* CONTACT NOTE (GİRİŞ EKRANI SAĞ ALT İLETİŞİM) */
+.grades-contact {
+  position: absolute;
+  bottom: 24px;
+  right: 32px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.82rem;
+  color: var(--text-muted, #94a3b8);
+  background: rgba(18, 20, 26, 0.7);
+  border: 1px solid var(--border-glass, rgba(255, 255, 255, 0.08));
+  border-radius: 20px;
+  padding: 8px 16px;
+  backdrop-filter: blur(10px);
+  user-select: text;
+  z-index: 10;
+  transition: all var(--transition-fast);
+}
+
+.grades-contact:hover {
+  border-color: rgba(255, 255, 255, 0.18);
+  color: var(--text-secondary, #cbd5e1);
+}
+
+.contact-icon {
+  color: var(--color-teal);
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
   .grades-disclaimer {
     position: relative;
     bottom: auto;
     left: auto;
     margin: 32px auto 8px auto;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    text-align: center;
+  }
+
+  .grades-contact {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    margin: 0 auto 16px auto;
     display: flex;
     justify-content: center;
     width: fit-content;

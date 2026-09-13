@@ -1081,5 +1081,180 @@
         ]
       }
     ]
+  },
+  "tema_sonu": {
+    "baslik": "2. Tema Sonu: Okumak Gibisi Yok, Üretmek Gibisi Yok, Onur Konuğu & Haydi, Bitirelim!",
+    "sayfa_araligi": "109 - 115",
+    "isleme_tarihi": "10 - 13 Aralık",
+    "etkinlikler": [
+      {
+        "sayfa_dosya": 109,
+        "sayfa_kitap": 109,
+        "etkinlik_adi": "OKUMAK GİBİSİ YOK! (Bir Gemi Açılır Engine)",
+        "tur": "Serbest Okuma Metni",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.3",
+            "aciklama": "Okumada strateji ve yöntem seçimlerini yönetebilme"
+          },
+          {
+            "kod": "T.O.6.8",
+            "aciklama": "Metnin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 110,
+        "sayfa_kitap": 110,
+        "etkinlik_adi": "ÜRETMEK GİBİSİ YOK! (Konuşma Hazırlığı & Kavram Çağrışımları)",
+        "tur": "Konuşma / Sunum ve Puan Çizelgesi",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.K.6.1",
+            "aciklama": "Konuşma sürecini yönetebilme"
+          },
+          {
+            "kod": "T.K.6.4",
+            "aciklama": "Konuşmasında ön bilgilerinden yararlanabilme"
+          },
+          {
+            "kod": "T.K.6.25",
+            "aciklama": "Konuşmasında beden dilini ve mekânı etkili kullanabilme"
+          },
+          {
+            "kod": "T.K.6.26",
+            "aciklama": "Konuşma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 111,
+        "sayfa_kitap": 111,
+        "etkinlik_adi": "ÜRETMEK GİBİSİ YOK! (Millî Mücadele Mektubu Planı & Yazımı)",
+        "tur": "Yazma ve Öz Değerlendirme",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.Y.6.1",
+            "aciklama": "Yazma sürecini yönetebilme"
+          },
+          {
+            "kod": "T.Y.6.3",
+            "aciklama": "Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme"
+          },
+          {
+            "kod": "T.Y.6.4",
+            "aciklama": "Yazılı üretim ve yazılı etkileşiminde ön bilgilerinden yararlanabilme"
+          },
+          {
+            "kod": "T.Y.6.21",
+            "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+          },
+          {
+            "kod": "T.Y.6.22",
+            "aciklama": "Yazma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 112,
+        "sayfa_kitap": 112,
+        "etkinlik_adi": "BU TEMA BAŞKA TEMA! / TEMANIN ONUR KONUĞU",
+        "tur": "Tema Sonu Öz Yansıtma ve Değerlendirme",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.23",
+            "aciklama": "Okuduğunu özetleyebilme"
+          },
+          {
+            "kod": "T.O.6.27",
+            "aciklama": "Okuma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+          },
+          {
+            "kod": "T.Y.6.11",
+            "aciklama": "Yorumunu yazılı olarak ifade edebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 113,
+        "sayfa_kitap": 113,
+        "etkinlik_adi": "HAYDİ, BİTİRELİM! (1. Şiir İncelemesi & 2. Parla Marşı Konuşması)",
+        "tur": "Kavram Haritası & Konuşma Becerisi",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.8",
+            "aciklama": "Metnin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme"
+          },
+          {
+            "kod": "T.O.6.12",
+            "aciklama": "Metindeki unsurları sınıflandırabilme"
+          },
+          {
+            "kod": "T.D.6.7",
+            "aciklama": "Dinlediğinin/izlediğinin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme"
+          },
+          {
+            "kod": "T.K.6.1",
+            "aciklama": "Konuşma sürecini yönetebilme"
+          },
+          {
+            "kod": "T.Y.6.11",
+            "aciklama": "Yorumunu yazılı olarak ifade edebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 114,
+        "sayfa_kitap": 114,
+        "etkinlik_adi": "HAYDİ, BİTİRELİM! (3. Zıt Anlam & 4. Cehaletle Savaş Karşılaştırması)",
+        "tur": "Söz Varlığı & Karşılaştırmalı Tablo",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.5",
+            "aciklama": "Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme"
+          },
+          {
+            "kod": "T.O.6.10",
+            "aciklama": "Metin içi karşılaştırma yapabilme"
+          },
+          {
+            "kod": "T.O.6.11",
+            "aciklama": "Metinler arası karşılaştırma yapabilme"
+          },
+          {
+            "kod": "T.K.6.12",
+            "aciklama": "Konuşmasında karşılaştırma yapabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 115,
+        "sayfa_kitap": 115,
+        "etkinlik_adi": "HAYDİ, BİTİRELİM! (5. İstiklal Marşı'nın Kabulü & Karşılaştırma Diyagramı)",
+        "tur": "Dinleme/İzleme & Karşılaştırma Ağacı",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.D.6.7",
+            "aciklama": "Dinlediğinin/izlediğinin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme"
+          },
+          {
+            "kod": "T.D.6.8",
+            "aciklama": "Dinlediğinin/izlediğinin derin anlamını belirlemeye yönelik üst düzey çıkarımlar yapabilme"
+          },
+          {
+            "kod": "T.D.6.9",
+            "aciklama": "Dinlediğini/izlediğini kendi içinde karşılaştırabilme"
+          },
+          {
+            "kod": "T.O.6.11",
+            "aciklama": "Metinler arası karşılaştırma yapabilme"
+          },
+          {
+            "kod": "T.Y.6.11",
+            "aciklama": "Yorumunu yazılı olarak ifade edebilme"
+          }
+        ]
+      }
+    ]
   }
 }

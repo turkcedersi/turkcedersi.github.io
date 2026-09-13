@@ -3,3 +3,4 @@ assets/data/book_data_backup_*.json
 scratch_*.txt
 scratch_*.png
 *.pdf
+assets/data/*.bak*
