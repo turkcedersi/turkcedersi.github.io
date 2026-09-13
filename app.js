@@ -368,10 +368,16 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
 
+    // Karartma katmanına dokununca/tıklayınca anında kapat
     if (mobileSidebarOverlay) {
-      mobileSidebarOverlay.addEventListener("click", () => {
+      mobileSidebarOverlay.addEventListener("click", (e) => {
+        e.stopPropagation();
         closeMobileSidebar();
       });
+      mobileSidebarOverlay.addEventListener("touchstart", (e) => {
+        e.stopPropagation();
+        closeMobileSidebar();
+      }, { passive: true });
     }
 
     // Escape tuşu ile de kapanabilsin
@@ -381,22 +387,28 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
-    // Sayfaya (reader viewport) tıklayınca drawer kapansın
+    // Menü açıkken sayfanın herhangi bir yerine (viewport / kitap sayfası) dokununca menüyü kapat
     const readerViewportEl = document.getElementById("reader-viewport");
-    if (readerViewportEl) {
-      readerViewportEl.addEventListener("click", () => {
-        if (readerSidebar && readerSidebar.classList.contains("mobile-open")) {
+    const handleTapOutsideSidebar = (e) => {
+      if (readerSidebar && readerSidebar.classList.contains("mobile-open")) {
+        if (!readerSidebar.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
           closeMobileSidebar();
         }
-      });
+      }
+    };
+
+    if (readerViewportEl) {
+      readerViewportEl.addEventListener("click", handleTapOutsideSidebar);
+      readerViewportEl.addEventListener("touchstart", handleTapOutsideSidebar, { passive: true });
     }
 
-    // --- MOBİL: Alt Navigasyon Bar Butonları ---
+    // --- MOBİL: Sayfa Geçiş FAB Butonları ---
     const mobileBtnPrev = document.getElementById("mobile-btn-prev");
     const mobileBtnNext = document.getElementById("mobile-btn-next");
 
     if (mobileBtnPrev) {
-      mobileBtnPrev.addEventListener("click", () => {
+      mobileBtnPrev.addEventListener("click", (e) => {
+        e.stopPropagation();
         if (state.currentPage > 0) {
           loadPage(state.currentPage - 1);
         } else {
@@ -406,7 +418,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (mobileBtnNext) {
-      mobileBtnNext.addEventListener("click", () => {
+      mobileBtnNext.addEventListener("click", (e) => {
+        e.stopPropagation();
         if (state.currentPage < state.maxPages) {
           loadPage(state.currentPage + 1);
         } else {
@@ -442,21 +455,24 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
 
-    // --- MOBİL: Hamburger ve sayfa geçiş FAB butonları sadece reader'da göster ---
-    const isMobile = window.innerWidth <= 768;
+    // --- MOBİL: Hamburger ve En Altta Ortadaki FAB Butonlarını sadece reader'da göster ---
+    const isMobile = window.innerWidth <= 900;
     const mobileMenuBtn = document.getElementById("mobile-menu-btn");
-    const mobileBtnPrevFab = document.getElementById("mobile-btn-prev");
-    const mobileBtnNextFab = document.getElementById("mobile-btn-next");
+    const mobileNavFabGroup = document.getElementById("mobile-nav-fab-group");
     const isReader = state.currentView === "reader";
+
+    if (!isReader) {
+      const readerSidebar = document.getElementById("reader-sidebar");
+      const mobileSidebarOverlay = document.getElementById("mobile-sidebar-overlay");
+      if (readerSidebar) readerSidebar.classList.remove("mobile-open");
+      if (mobileSidebarOverlay) mobileSidebarOverlay.classList.remove("visible");
+    }
 
     if (mobileMenuBtn) {
       mobileMenuBtn.style.display = (isMobile && isReader) ? "flex" : "none";
     }
-    if (mobileBtnPrevFab) {
-      mobileBtnPrevFab.style.display = (isMobile && isReader) ? "flex" : "none";
-    }
-    if (mobileBtnNextFab) {
-      mobileBtnNextFab.style.display = (isMobile && isReader) ? "flex" : "none";
+    if (mobileNavFabGroup) {
+      mobileNavFabGroup.style.display = (isMobile && isReader) ? "flex" : "none";
     }
   }
 

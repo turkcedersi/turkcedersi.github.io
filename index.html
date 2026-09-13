@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="index.css?v=4.4">
+  <link rel="stylesheet" href="index.css?v=6.0">
 </head>
 <body>
   <!-- LOADING OVERLAY -->
@@ -206,16 +206,6 @@
 
     <!-- VIEW 3: BOOK READER -->
     <section id="view-reader" class="view-section">
-
-      <!-- MOBILE: Hamburger Menu Button (Sol üst, sadece mobilde görünür) -->
-      <button class="mobile-menu-btn" id="mobile-menu-btn" title="Menüyü Aç/Kapat" aria-label="Menüyü Aç">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.2" stroke="currentColor" width="22" height="22">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5" />
-        </svg>
-      </button>
-
-      <!-- MOBILE: Sidebar Overlay (Arka plan karartma) -->
-      <div class="mobile-sidebar-overlay" id="mobile-sidebar-overlay"></div>
 
       <!-- LEFT SIDEBAR -->
       <aside class="sidebar" id="reader-sidebar">
@@ -552,18 +542,20 @@
   <!-- Sidebar Overlay -->
   <div class="mobile-sidebar-overlay" id="mobile-sidebar-overlay"></div>
 
-  <!-- Mobil Sayfa Geçiş FAB Butonları (hamburger tarzında yüzen ikonlar) -->
-  <button class="mobile-page-fab mobile-page-fab-prev" id="mobile-btn-prev" title="Önceki Sayfa" style="display:none;">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" width="22" height="22">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-    </svg>
-  </button>
-  <button class="mobile-page-fab mobile-page-fab-next" id="mobile-btn-next" title="Sonraki Sayfa" style="display:none;">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" width="22" height="22">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-    </svg>
-  </button>
+  <!-- Mobil Sayfa Geçiş Butonları (En Altta Ortada, Bağımsız Yüzen İkonlar) -->
+  <div class="mobile-nav-fab-group" id="mobile-nav-fab-group" style="display:none;">
+    <button class="mobile-nav-fab" id="mobile-btn-prev" title="Önceki Sayfa" aria-label="Önceki Sayfa">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" width="22" height="22">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+      </svg>
+    </button>
+    <button class="mobile-nav-fab" id="mobile-btn-next" title="Sonraki Sayfa" aria-label="Sonraki Sayfa">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" width="22" height="22">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+      </svg>
+    </button>
+  </div>
 
-  <script src="app.js?v=5.8"></script>
+  <script src="app.js?v=6.0"></script>
 </body>
 </html>

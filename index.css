@@ -2285,18 +2285,18 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* --- Sidebar Overlay (Sadece mobilde, drawer açıkken arka karartma) --- */
 .mobile-sidebar-overlay {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background: rgba(0, 0, 0, 0.65);
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
   z-index: 3999;
   opacity: 0;
-  transition: opacity var(--transition-medium);
   pointer-events: none;
+  transition: opacity var(--transition-medium);
 }
 
 .mobile-sidebar-overlay.visible {
@@ -2304,14 +2304,25 @@ body::-webkit-scrollbar-thumb:hover {
   pointer-events: auto;
 }
 
-/* --- Mobil Sayfa Geçiş FAB Butonları (hamburger tarzında yüzen ikonlar) --- */
-.mobile-page-fab {
+/* --- Mobil Sayfa Geçiş Butonları (En Altta Ortada, Bağımsız Yüzen İkonlar, Şerit Yok) --- */
+.mobile-nav-fab-group {
   position: fixed;
+  bottom: calc(22px + env(safe-area-inset-bottom, 0px));
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 5000;
-  width: 44px;
-  height: 44px;
-  border-radius: 12px;
-  background: rgba(18, 20, 26, 0.85);
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  pointer-events: none; /* Sayfa arkasından tıklanabilir, şerit barı yoktur */
+}
+
+.mobile-nav-fab {
+  pointer-events: auto;
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: rgba(18, 20, 26, 0.88);
   border: 1px solid var(--border-glass);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -2321,83 +2332,41 @@ body::-webkit-scrollbar-thumb:hover {
   justify-content: center;
   cursor: pointer;
   transition: all var(--transition-fast);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+  -webkit-tap-highlight-color: transparent;
 }
 
-.mobile-page-fab:active {
-  transform: scale(0.92);
+.mobile-nav-fab:hover {
   border-color: var(--color-teal);
   box-shadow: var(--shadow-glow);
 }
 
-.mobile-page-fab svg {
+.mobile-nav-fab:active {
+  transform: scale(0.92);
+  border-color: var(--color-teal);
+  box-shadow: var(--shadow-glow);
+  background: rgba(26, 30, 40, 0.95);
+}
+
+.mobile-nav-fab svg {
   stroke: var(--text-primary);
   display: block;
 }
 
-/* Önceki: sağ altta alt alta */
-.mobile-page-fab-prev {
-  bottom: 70px;
-  right: 14px;
-}
-
-.mobile-page-fab-next {
-  bottom: 16px;
-  right: 14px;
-}
 
 
 /* ==========================================================================
    RESPONSIVE BREAKPOINTS
    ========================================================================== */
 
-/* --- TABLET (≤ 900px) — Mevcut davranış iyileştirildi --- */
+/* --- TABLET & MOBİL GENEL (≤ 900px) --- */
 @media (max-width: 900px) {
-  /* Kitap okuma: sidebar tam genişlik + yatay scroll */
-  #view-reader {
-    flex-direction: column;
-  }
-  .sidebar {
-    width: 100%;
-    height: auto;
-    border-right: none;
-    border-bottom: 1px solid var(--border-glass);
-  }
-  .sidebar-content {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 15px;
-    padding: 15px;
-  }
-  .control-group {
-    flex: 1 1 200px;
-  }
-  .sidebar-guide {
-    display: none;
-  }
-  /* Modal boyutları */
-  .modal-window {
-    width: 95%;
-    max-height: 90vh;
-  }
-  .modal-header {
-    padding: 20px;
-  }
-  .modal-body {
-    padding: 20px;
-  }
-}
-
-/* --- MOBİL (≤ 768px) — Tam mobil deneyim --- */
-@media (max-width: 768px) {
-
-  /* Reader: Tam ekran layout */
+  /* Reader: Sol taraftan açılan drawer paneli */
   #view-reader {
     flex-direction: row;
     overflow: hidden;
   }
 
-  /* Sidebar: Soldan kayan drawer paneli */
   .sidebar {
     position: fixed;
     top: 0;
@@ -2412,12 +2381,10 @@ body::-webkit-scrollbar-thumb:hover {
     overflow-y: auto;
   }
 
-  /* Sidebar açık durumu (JS tarafından eklenir) */
   .sidebar.mobile-open {
     transform: translateX(0);
   }
 
-  /* Sidebar içerik: dikey düzen */
   .sidebar-content {
     flex-direction: column;
     flex-wrap: nowrap;
@@ -2431,12 +2398,15 @@ body::-webkit-scrollbar-thumb:hover {
     flex: none;
   }
 
-  /* Outcomes listesi scroll */
-  .outcomes-list {
-    max-height: 200px;
+  .sidebar-guide {
+    display: none;
   }
 
-  /* Reader viewport: tam ekran, padding YOK (nav bar fixed) */
+  .outcomes-list {
+    max-height: 220px;
+    overflow-y: auto;
+  }
+
   .reader-viewport {
     flex: 1;
     width: 100%;
@@ -2444,26 +2414,108 @@ body::-webkit-scrollbar-thumb:hover {
     overflow: hidden;
   }
 
-  /* Whiteboard FAB: sayfa geçiş FAB butonları ile çakışmasın */
+  /* Akıllı Tahta FAB: Sağ altta */
   .wb-container {
-    bottom: 130px;
-    right: 16px;
+    bottom: calc(22px + env(safe-area-inset-bottom, 0px));
+    right: 18px;
   }
 
-  /* Whiteboard menüsü: mobilde daha dar */
   .wb-menu {
     width: 260px;
   }
 
-  /* Modal: tam ekran */
+  /* === TÜRKÇE ATÖLYESİ MODAL (≤900px: TEK SÜTUN, DİKEY KAYDIRMA) === */
+  .tools-modal-content {
+    width: 94% !important;
+    max-width: 520px !important;
+    max-height: 88vh !important;
+    border-radius: 20px !important;
+    margin: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    overflow: hidden !important;
+  }
+
+  .tools-modal-content .modal-header {
+    padding: 16px 20px !important;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 10 !important;
+    background: var(--bg-secondary) !important;
+    flex-shrink: 0 !important;
+  }
+
+  .tools-modal-content .modal-icon {
+    font-size: 1.8rem !important;
+    padding: 8px !important;
+  }
+
+  .tools-modal-content .modal-title-text h3 {
+    font-size: 1.15rem !important;
+  }
+
+  .tools-modal-content .modal-title-text p {
+    font-size: 0.8rem !important;
+  }
+
+  .tools-grid {
+    grid-template-columns: 1fr !important;
+    padding: 16px !important;
+    gap: 12px !important;
+    max-height: calc(88vh - 85px) !important;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+
+  .tool-card {
+    padding: 14px 16px !important;
+    gap: 14px !important;
+    border-radius: 14px !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  .tool-icon {
+    width: 44px !important;
+    height: 44px !important;
+    min-width: 44px !important;
+    font-size: 1.7rem !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .tool-details {
+    flex: 1 !important;
+    min-width: 0 !important;
+  }
+
+  .tool-details h4 {
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    color: #f3f4f6 !important;
+    margin-bottom: 3px !important;
+    white-space: normal !important;
+    line-height: 1.25 !important;
+  }
+
+  .tool-details p {
+    font-size: 0.82rem !important;
+    color: var(--text-secondary) !important;
+    line-height: 1.35 !important;
+    white-space: normal !important;
+  }
+
+  .tool-arrow {
+    font-size: 1.1rem !important;
+    opacity: 0.7 !important;
+    flex-shrink: 0 !important;
+  }
+
+  /* Genel Modal Penceresi */
   .modal-window {
-    width: 100%;
-    max-width: 100%;
-    max-height: 92vh;
-    border-radius: 20px 20px 0 0;
-    position: fixed;
-    bottom: 0;
-    margin: 0;
+    width: 95%;
+    max-height: 90vh;
   }
 }
 
@@ -2471,8 +2523,6 @@ body::-webkit-scrollbar-thumb:hover {
 @media (max-width: 600px) {
 
   /* === ANA EKRAN === */
-
-  /* Logo başlık küçültme */
   .logo-text {
     font-size: 2.4rem;
     letter-spacing: 0.25rem;
@@ -2523,13 +2573,10 @@ body::-webkit-scrollbar-thumb:hover {
   }
 
   /* === KİTAP SEÇİM EKRANI === */
-
-  /* Kitap seçim başlığı küçültme */
   .view-header h2 {
     font-size: 1.35rem;
   }
 
-  /* Kitap kartları: dikey düzen (kapak üstte, bilgi altta) */
   .book-card {
     flex-direction: column;
     gap: 16px;
@@ -2537,7 +2584,6 @@ body::-webkit-scrollbar-thumb:hover {
     border-radius: 18px;
   }
 
-  /* Kitap kapak mockup: yatay, kompakt */
   .book-cover-mock {
     width: 100%;
     height: 120px;
@@ -2576,34 +2622,6 @@ body::-webkit-scrollbar-thumb:hover {
     flex: none;
     max-width: 100%;
   }
-
-  /* === TÜRKÇE ATÖLYESİ MODAL === */
-  .tools-grid {
-    grid-template-columns: 1fr;
-    padding: 16px;
-    gap: 12px;
-  }
-
-  .tools-modal-content {
-    max-height: 85vh;
-    border-radius: 20px 20px 0 0;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .tools-modal-content .modal-header {
-    padding: 18px 20px;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    background: var(--bg-secondary);
-  }
-
-  /* Font boyutları normal — küçültme yok, okunabilirlik öncelikli */
-  .tool-card {
-    padding: 16px;
-  }
-
 }
 
 /* --- ÇOK KÜÇÜK MOBİL (≤ 400px) --- */
@@ -2629,13 +2647,18 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 0.9rem;
   }
 
-  .mobile-nav-bar {
-    height: 58px;
-    gap: 24px;
+  .mobile-nav-fab-group {
+    bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+    gap: 12px;
+  }
+
+  .mobile-nav-fab {
+    width: 44px;
+    height: 44px;
   }
 
   .wb-container {
-    bottom: 72px;
+    bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+    right: 12px;
   }
 }
-
