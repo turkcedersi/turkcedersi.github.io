@@ -68,3 +68,26 @@
 | 151 | 5. Anlatalım ve 6. Anlatalım: Dil Bilgisi | Ses Olayları (Ünsüz Türemesi) ve Yazım Kuralları (de, mi, ki) | **T.Y.6.21** Yazım kuralları ve noktalama işaretlerini uygulayabilme |
 | 152 | 7. Anlatalım | Farklı Kültürlerdeki Oyunları Tanıtma Yazısı ve Öz Değerlendirme | **T.Y.6.17** Yazısında düşünceyi geliştirme yollarını kullanabilme<br>**T.Y.6.22** Yazma sürecine yönelik öz yansıtma yapabilme |
 | 153 | 8. Anlatalım: Yazma Süreci ve Planlama | Dünya Çocukları Etkinliği Planlama ve Görevimizi Bilelim | **T.Y.6.1** Yazma sürecini yönetebilme<br>**T.Y.6.7** Yaratıcı yazı yazabilme<br>**T.Y.6.22** Yazma sürecine yönelik öz yansıtma yapabilme |
+
+---
+
+## 4. METİN: AY AVCISI ESKİMOLAR
+- **Metin Türü:** Masal / Okuma Metni
+- **Derleyen:** Tarık Demirkan
+- **Sayfa Aralığı:** 154 - 163 (Kitapta 154 - 163)
+- **İşleme Tarihi:** 13 - 19 Ocak
+
+### Etkinlik ve Öğrenme Çıktıları Dağılımı:
+
+| Sayfa | Etkinlik Başlığı | Etkinliğin Türü / Konusu | İlgili Öğrenme Çıktıları |
+|:---:|:---|:---|:---|
+| **154** | **HAYDİ, BAŞLAYALIM! & Metin Okuma** | Ön Bilgiler & Soru Sorma Stratejisi Rehberi & Karekod Tahmin | `T.O.6.1`, `T.O.6.2` |
+| **155** | **Metin Okuma (Devam) & Doğrusunu Bilelim** | Okuma Süreci & Büyük Harf / Kesme İşareti İmla Farkındalığı | `T.O.6.2`, `T.Y.6.21` |
+| **156** | **1. ANLAYALIM & 2. ANLAYALIM** | Metin Konusu, Yaşam Detayları & Serim-Düğüm-Çözüm Buz Dağı Analizi | `T.O.6.8`, `T.O.6.17` |
+| **157** | **3., 4. ve 5. ANLAYALIM** | Düşünceyi Geliştirme Yolları, İglu-Piramit Karşılaştırması & Dolunay Analizi | `T.D.6.17`, `T.O.6.9`, `T.O.6.10` |
+| **158** | **1. ANLATALIM & 2. ANLATALIM** | Kutuplarda Yaşam Sunumu, Öz Değerlendirme & Farklı Bakış Açısıyla Anlatım | `T.K.6.1`, `T.K.6.17`, `T.K.6.22` |
+| **159** | **3. ve 4. ANLATALIM** | Altıgen Cümle Yönergeleri & Yazımı Sıkça Karıştırılan Sözcükler | `T.K.6.13`, `T.Y.6.21` |
+| **160** | **5. ANLATALIM & Değerlendirelim** | Kutup Ayıları Haberini Tamamlama, Zıtlık Söz Varlıkları & Yazma Rubriği | `T.Y.6.1`, `T.Y.6.17`, `T.Y.6.22` |
+| **161** | **6. ANLATALIM** | Dil Bilgisi: Ünsüz Benzeşmesi (Sertleşmesi) Tablosu ve Akış Şeması | `T.O.6.21` |
+| **162** | **7. ve 8. ANLATALIM** | Dil Bilgisi: Ünlü Türemesi ve Yapım Ekleri (-ca, -cı, -cık, -lık) İşlev Eşleştirmesi | `T.O.6.21` |
+| **163** | **Bİ' KİTAP, Bİ' FİLM...** | Kitap ve Film Eleştirel İnceleme Formları & Günlük İletişim Gözlemi | `T.O.6.1`, `T.D.6.1`, `T.Y.6.22` |

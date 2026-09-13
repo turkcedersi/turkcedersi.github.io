@@ -661,5 +661,182 @@
         ]
       }
     ]
+  },
+  "metin_4": {
+    "baslik": "Ay Avcısı Eskimolar",
+    "yazar": "Tarık Demirkan (Derleyen)",
+    "tur": "Masal / Okuma Metni",
+    "sayfa_araligi": "154 - 163 (Kitapta 154 - 163)",
+    "isleme_tarihi": "13 - 19 Ocak",
+    "etkinlikler": [
+      {
+        "sayfa_dosya": 154,
+        "sayfa_kitap": 154,
+        "etkinlik_adi": "HAYDİ, BAŞLAYALIM! & Metin Okuma & Karekod Tahmin",
+        "tur": "Ön Bilgileri Harekete Geçirme & Soru Sorma Stratejisi",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.1",
+            "aciklama": "Okumada materyal seçimini yönetebilme"
+          },
+          {
+            "kod": "T.O.6.2",
+            "aciklama": "Metin okuma sürecini yönetebilme (Soru sorma stratejisi)"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 155,
+        "sayfa_kitap": 155,
+        "etkinlik_adi": "Metin Okuma (Devam) & Doğrusunu Bilelim",
+        "tur": "Metin Okuma & İmla / Noktalama Farkındalığı",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.2",
+            "aciklama": "Metin okuma sürecini yönetebilme"
+          },
+          {
+            "kod": "T.Y.6.21",
+            "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 156,
+        "sayfa_kitap": 156,
+        "etkinlik_adi": "1. ANLAYALIM (a, b) & 2. ANLAYALIM (a, b)",
+        "tur": "Metnin Konusu, Günlük Yaşam Ögeleri & Serim-Düğüm-Çözüm Buz Dağı Analizi",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.8",
+            "aciklama": "Okuduğu metnin derin anlamını belirlemeye yönelik çıkarımlar yapabilme"
+          },
+          {
+            "kod": "T.O.6.17",
+            "aciklama": "Metnin bölümlerini belirlemeye yönelik çözümleme yapabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 157,
+        "sayfa_kitap": 157,
+        "etkinlik_adi": "3. ANLAYALIM (b, c) & 4. ANLAYALIM (a, b) & 5. ANLAYALIM (a, b)",
+        "tur": "Düşünceyi Geliştirme Yolları, İglu-Piramit Karşılaştırması & Dolunay Analizi",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.D.6.17",
+            "aciklama": "Bilgilendirici metinde düşünceyi geliştirme yollarını belirlemeye yönelik çözümleme yapabilme"
+          },
+          {
+            "kod": "T.O.6.9",
+            "aciklama": "Okuduğu metni kendi içinde karşılaştırabilme"
+          },
+          {
+            "kod": "T.O.6.10",
+            "aciklama": "Okuduğu metinler arasında karşılaştırma yapabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 158,
+        "sayfa_kitap": 158,
+        "etkinlik_adi": "1. ANLATALIM (a, b) & 2. ANLATALIM",
+        "tur": "Kutuplarda Yaşam Sunumu, Öz Değerlendirme & Farklı Bakış Açısıyla Masal Anlatımı",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.K.6.1",
+            "aciklama": "Konuşma sürecini yönetebilme"
+          },
+          {
+            "kod": "T.K.6.17",
+            "aciklama": "Sözlü olarak tartışmaya katılabilme"
+          },
+          {
+            "kod": "T.K.6.22",
+            "aciklama": "Konuşma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 159,
+        "sayfa_kitap": 159,
+        "etkinlik_adi": "3. ANLATALIM (Altıgen Diyagramı) & 4. ANLATALIM (Doğru Yazım Görselleri)",
+        "tur": "Söz Varlığı, Deyimler, İkilemeler & Yazımı Karıştırılan Kelimeler",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.K.6.13",
+            "aciklama": "Konuşmasında söz varlığını etkili kullanabilme"
+          },
+          {
+            "kod": "T.Y.6.21",
+            "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 160,
+        "sayfa_kitap": 160,
+        "etkinlik_adi": "5. ANLATALIM (Haber Metni Tamamlama) & Değerlendirelim (a, b)",
+        "tur": "Kutup Ayıları Haber Metnini Tamamlama, Zıtlık Söz Varlıkları & Yazma Öz Değerlendirmesi",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.Y.6.1",
+            "aciklama": "Yazma sürecini yönetebilme"
+          },
+          {
+            "kod": "T.Y.6.17",
+            "aciklama": "Yazısında düşünceyi geliştirme yollarını kullanabilme"
+          },
+          {
+            "kod": "T.Y.6.22",
+            "aciklama": "Yazma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 161,
+        "sayfa_kitap": 161,
+        "etkinlik_adi": "6. ANLATALIM (a, b, c, ç, d - Dil Bilgisi: Ünsüz Benzeşmesi)",
+        "tur": "Ses Olayları: Sert Ünsüzlerin Benzeşmesi / Sertleşmesi Kural Tablosu ve Şablonu",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.21",
+            "aciklama": "Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme (Ünsüz Benzeşmesi)"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 162,
+        "sayfa_kitap": 162,
+        "etkinlik_adi": "7. ANLATALIM (a, b, c - Ünlü Türemesi) & 8. ANLATALIM (a, b - Yapım Ekleri)",
+        "tur": "Ses Olayları: Ünlü Türemesi & Yapım Eklerinin (-ca, -cı, -cık, -lık) İşlev Eşleştirmesi",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.21",
+            "aciklama": "Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme (Ünlü Türemesi ve Yapım Ekleri)"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 163,
+        "sayfa_kitap": 163,
+        "etkinlik_adi": "Bİ' KİTAP, Bİ' FİLM... (a, b, c, ç, d) & Gelecek Derse Hazırlanalım",
+        "tur": "Kitap ve Film İnceleme Formları & Günlük İletişim Gözlemi",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.1",
+            "aciklama": "Okumada materyal seçimini yönetebilme"
+          },
+          {
+            "kod": "T.D.6.1",
+            "aciklama": "Dinlemede/izlemede materyal seçimini yönetebilme"
+          },
+          {
+            "kod": "T.Y.6.22",
+            "aciklama": "Yazma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+          }
+        ]
+      }
+    ]
   }
 }

@@ -21299,17 +21299,18 @@
         "id": "act_12",
         "title": "12. Etkinlik (Yazma Planı)",
         "button": {
-          "left": 5.5,
-          "top": 12.5,
+          "left": 9.5,
+          "top": 11.2,
           "label": "12. Etkinlik"
         },
         "items": [
           {
-            "type": "text",
+            "type": "lines",
             "left": 11.5,
             "top": 39.17,
             "width": 77.5,
             "height": 1.8,
+            "text": "METNİN BAŞLIĞI: Dünyanın Çocuklarına Uzanan Şefkat Eli: UNICEF",
             "content": "METNİN BAŞLIĞI: Dünyanın Çocuklarına Uzanan Şefkat Eli: UNICEF",
             "style": {
               "fontFamily": "Caveat, Kalam, cursive",
@@ -21319,11 +21320,12 @@
             }
           },
           {
-            "type": "text",
+            "type": "lines",
             "left": 11.5,
             "top": 41.73,
             "width": 77.5,
             "height": 1.8,
+            "text": "YAZININ AMACI: UNICEF'in çocuk hakları çalışmalarını tanıtmak.",
             "content": "YAZININ AMACI: UNICEF'in çocuk hakları çalışmalarını tanıtmak.",
             "style": {
               "fontFamily": "Caveat, Kalam, cursive",
@@ -21333,11 +21335,12 @@
             }
           },
           {
-            "type": "text",
+            "type": "lines",
             "left": 11.5,
             "top": 44.29,
             "width": 77.5,
             "height": 1.8,
+            "text": "HEDEF KİTLE: Okul arkadaşları, öğretmenler ve tüm çevre.",
             "content": "HEDEF KİTLE: Okul arkadaşları, öğretmenler ve tüm çevre.",
             "style": {
               "fontFamily": "Caveat, Kalam, cursive",
@@ -21347,11 +21350,12 @@
             }
           },
           {
-            "type": "text",
+            "type": "lines",
             "left": 11.5,
             "top": 46.86,
             "width": 77.5,
             "height": 1.8,
+            "text": "ANLATIM BİÇİMİ: Açıklayıcı ve bilgilendirici anlatım.",
             "content": "ANLATIM BİÇİMİ: Açıklayıcı ve bilgilendirici anlatım.",
             "style": {
               "fontFamily": "Caveat, Kalam, cursive",
@@ -21361,11 +21365,12 @@
             }
           },
           {
-            "type": "text",
+            "type": "lines",
             "left": 11.5,
             "top": 49.42,
             "width": 77.5,
             "height": 1.8,
+            "text": "DÜŞÜNCEYİ GELİŞTİRME: Tanımlama, sayısal veri, örnekleme.",
             "content": "DÜŞÜNCEYİ GELİŞTİRME: Tanımlama, sayısal veri, örnekleme.",
             "style": {
               "fontFamily": "Caveat, Kalam, cursive",
@@ -21375,11 +21380,12 @@
             }
           },
           {
-            "type": "text",
+            "type": "lines",
             "left": 11.5,
             "top": 52.05,
             "width": 77.5,
             "height": 1.8,
+            "text": "GİRİŞ: UNICEF'in tanımı (BM bünyesinde kurulan çocuk örgütü).",
             "content": "GİRİŞ: UNICEF'in tanımı (BM bünyesinde kurulan çocuk örgütü).",
             "style": {
               "fontFamily": "Caveat, Kalam, cursive",
@@ -21389,11 +21395,12 @@
             }
           },
           {
-            "type": "text",
+            "type": "lines",
             "left": 11.5,
             "top": 54.62,
             "width": 77.5,
             "height": 1.8,
+            "text": "GİRİŞ: Temel amacı dünyadaki her çocuğun haklarını korumaktır.",
             "content": "GİRİŞ: Temel amacı dünyadaki her çocuğun haklarını korumaktır.",
             "style": {
               "fontFamily": "Caveat, Kalam, cursive",
@@ -21403,11 +21410,12 @@
             }
           },
           {
-            "type": "text",
+            "type": "lines",
             "left": 11.5,
             "top": 57.18,
             "width": 77.5,
             "height": 1.8,
+            "text": "GELİŞME: Temel sahaları; sağlık, aşı, temiz su ve eğitimdir.",
             "content": "GELİŞME: Temel sahaları; sağlık, aşı, temiz su ve eğitimdir.",
             "style": {
               "fontFamily": "Caveat, Kalam, cursive",
@@ -21417,11 +21425,12 @@
             }
           },
           {
-            "type": "text",
+            "type": "lines",
             "left": 11.5,
             "top": 59.74,
             "width": 77.5,
             "height": 1.8,
+            "text": "GELİŞME (Sayısal Veri): 190'dan fazla ülkede aktif çalışmaktadır.",
             "content": "GELİŞME (Sayısal Veri): 190'dan fazla ülkede aktif çalışmaktadır.",
             "style": {
               "fontFamily": "Caveat, Kalam, cursive",
@@ -21431,11 +21440,12 @@
             }
           },
           {
-            "type": "text",
+            "type": "lines",
             "left": 11.5,
             "top": 62.31,
             "width": 77.5,
             "height": 1.8,
+            "text": "GELİŞME (Örnekleme): Afet bölgelerinde çadır okullar kurar.",
             "content": "GELİŞME (Örnekleme): Afet bölgelerinde çadır okullar kurar.",
             "style": {
               "fontFamily": "Caveat, Kalam, cursive",
@@ -21445,11 +21455,12 @@
             }
           },
           {
-            "type": "text",
+            "type": "lines",
             "left": 11.5,
             "top": 64.94,
             "width": 77.5,
             "height": 1.8,
+            "text": "GELİŞME: Çocuk işçiliği ve istismara karşı mücadele eder.",
             "content": "GELİŞME: Çocuk işçiliği ve istismara karşı mücadele eder.",
             "style": {
               "fontFamily": "Caveat, Kalam, cursive",
@@ -21459,11 +21470,12 @@
             }
           },
           {
-            "type": "text",
+            "type": "lines",
             "left": 11.5,
             "top": 67.5,
             "width": 77.5,
             "height": 1.8,
+            "text": "SONUÇ: Çocuk haklarının korunmasında kurumların rolü büyüktür.",
             "content": "SONUÇ: Çocuk haklarının korunmasında kurumların rolü büyüktür.",
             "style": {
               "fontFamily": "Caveat, Kalam, cursive",
@@ -21473,11 +21485,12 @@
             }
           },
           {
-            "type": "text",
+            "type": "lines",
             "left": 11.5,
             "top": 70.06,
             "width": 77.5,
             "height": 1.8,
+            "text": "SONUÇ: Sağlıklı ve mutlu bir gelecek için çocukları korumalıyız.",
             "content": "SONUÇ: Sağlıklı ve mutlu bir gelecek için çocukları korumalıyız.",
             "style": {
               "fontFamily": "Caveat, Kalam, cursive",
@@ -21487,11 +21500,12 @@
             }
           },
           {
-            "type": "text",
+            "type": "lines",
             "left": 11.5,
             "top": 72.63,
             "width": 77.5,
             "height": 1.8,
+            "text": "ÇAĞRI: Mutlu çocuklar için hep birlikte el ele vermeliyiz.",
             "content": "ÇAĞRI: Mutlu çocuklar için hep birlikte el ele vermeliyiz.",
             "style": {
               "fontFamily": "Caveat, Kalam, cursive",
@@ -32867,6 +32881,43 @@
     "105": [
       "T.O.6.3",
       "T.O.6.14"
+    ],
+    "106": [
+      "T.K.6.1",
+      "T.K.6.2",
+      "T.K.6.10",
+      "T.K.6.26"
+    ],
+    "107": [
+      "T.Y.6.1",
+      "T.Y.6.2",
+      "T.Y.6.3",
+      "T.Y.6.10",
+      "T.Y.6.26"
+    ],
+    "108": [
+      "T.O.6.1",
+      "T.O.6.8",
+      "T.K.6.10",
+      "T.Y.6.6"
+    ],
+    "109": [
+      "T.D.6.1",
+      "T.D.6.8",
+      "T.O.6.3",
+      "T.O.6.14"
+    ],
+    "110": [
+      "T.O.6.14",
+      "T.O.6.7",
+      "T.O.6.8",
+      "T.O.6.17"
+    ],
+    "111": [
+      "T.Y.6.22",
+      "T.O.6.1",
+      "T.O.6.14",
+      "T.Y.6.6"
     ]
   },
   "book2_inpage_answers": {
@@ -38554,6 +38605,631 @@
             "height": 2.0,
             "text": "uçabilseydik",
             "style": "color: #16a34a; font-weight: bold; justify-content: center;"
+          }
+        ]
+      }
+    ],
+    "106": [
+      {
+        "id": "p106_degerlendirelim",
+        "title": "f. Puan Çizelgesi: Konuşma Sürecini Değerlendirme",
+        "button": {
+          "left": 5.5,
+          "top": 50.0
+        },
+        "items": [
+          {
+            "type": "lines",
+            "left": 84.0,
+            "top": 57.5,
+            "width": 4.5,
+            "text": "5",
+            "style": "text-align: center; color: #1e40af; font-weight: bold;"
+          },
+          {
+            "type": "lines",
+            "left": 84.0,
+            "top": 60.4,
+            "width": 4.5,
+            "text": "5",
+            "style": "text-align: center; color: #1e40af; font-weight: bold;"
+          },
+          {
+            "type": "lines",
+            "left": 84.0,
+            "top": 63.3,
+            "width": 4.5,
+            "text": "5",
+            "style": "text-align: center; color: #1e40af; font-weight: bold;"
+          },
+          {
+            "type": "lines",
+            "left": 84.0,
+            "top": 66.5,
+            "width": 4.5,
+            "text": "4",
+            "style": "text-align: center; color: #1e40af; font-weight: bold;"
+          },
+          {
+            "type": "lines",
+            "left": 84.0,
+            "top": 70.0,
+            "width": 4.5,
+            "text": "5",
+            "style": "text-align: center; color: #1e40af; font-weight: bold;"
+          }
+        ]
+      },
+      {
+        "id": "p106_gelistirme",
+        "title": "g. Geliştirmem Gereken ve İyi Olduğum Yönler",
+        "button": {
+          "left": 5.5,
+          "top": 75.0
+        },
+        "items": [
+          {
+            "type": "lines",
+            "left": 36.5,
+            "top": 80.0,
+            "width": 54.0,
+            "text": "Heyecanımı daha iyi kontrol edip konuşurken"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 82.8,
+            "width": 80.0,
+            "text": "beden dilimi ve jestlerimi daha etkili kullanmak."
+          },
+          {
+            "type": "lines",
+            "left": 42.0,
+            "top": 85.7,
+            "width": 48.0,
+            "text": "Sunum planıma eksiksiz ve tam uymak,"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 88.5,
+            "width": 80.0,
+            "text": "dinleyicilerden gelen soruları açık ve nazikçe yanıtlamak."
+          }
+        ]
+      }
+    ],
+    "107": [
+      {
+        "id": "p107_tartisma",
+        "title": "a. Tartışma: Teknolojinin İnsan Hayatındaki Yeri",
+        "button": {
+          "left": 5.5,
+          "top": 10.5
+        },
+        "items": [
+          {
+            "type": "lines",
+            "left": 42.0,
+            "top": 15.2,
+            "width": 62.0,
+            "text": "Teknoloji hayatı kolaylaştırıp iletişimi hızlandırır"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 17.6,
+            "width": 80.0,
+            "text": "çünkü bilgiye erişim artık saniyeler sürmektedir."
+          },
+          {
+            "type": "lines",
+            "left": 39.5,
+            "top": 20.2,
+            "width": 66.0,
+            "text": "Teknolojinin tamamen zararlı olduğu fikrine katılmıyorum"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 22.6,
+            "width": 80.0,
+            "text": "çünkü bilinçli kullanıldığında insanlığa büyük fayda sağlar."
+          }
+        ]
+      },
+      {
+        "id": "p107_yazma",
+        "title": "c. Değerlendirme Yazısı: Teknolojinin İnsan Hayatındaki Yeri",
+        "button": {
+          "left": 5.5,
+          "top": 34.0
+        },
+        "items": [
+          {
+            "type": "lines",
+            "left": 37.0,
+            "top": 50.8,
+            "width": 38.0,
+            "text": "Teknolojinin Hayatımızdaki Yeri",
+            "style": "text-align: center; font-weight: bold; color: #1e40af;"
+          },
+          {
+            "type": "lines",
+            "left": 18.0,
+            "top": 54.4,
+            "width": 73.0,
+            "text": "Teknoloji, modern dünyada hayatımızın ayrılmaz bir parçasıdır."
+          },
+          {
+            "type": "lines",
+            "left": 18.0,
+            "top": 58.0,
+            "width": 73.0,
+            "text": "Eğitimden sağlığa, ulaşımdan haberleşmeye kadar her alanda"
+          },
+          {
+            "type": "lines",
+            "left": 18.0,
+            "top": 61.7,
+            "width": 73.0,
+            "text": "işlerimizi kolaylaştırır ve zamandan büyük tasarruf sağlar."
+          },
+          {
+            "type": "lines",
+            "left": 18.0,
+            "top": 65.4,
+            "width": 73.0,
+            "text": "Ancak teknolojiyi sınırsız ve bilinçsizce kullanmak zaman"
+          },
+          {
+            "type": "lines",
+            "left": 18.0,
+            "top": 69.0,
+            "width": 73.0,
+            "text": "israfına ve sosyal ilişkilerin zayıflamasına yol açabilir."
+          },
+          {
+            "type": "lines",
+            "left": 18.0,
+            "top": 72.6,
+            "width": 78.0,
+            "text": "Bu yüzden teknolojiyi faydalı ve dengeli bir şekilde yönetmeliyiz."
+          }
+        ]
+      },
+      {
+        "id": "p107_degerlendirelim",
+        "title": "ç. Puan Çizelgesi: Yazı Öz Değerlendirmesi",
+        "button": {
+          "left": 5.5,
+          "top": 78.0
+        },
+        "items": [
+          {
+            "type": "lines",
+            "left": 84.0,
+            "top": 82.5,
+            "width": 4.5,
+            "text": "5",
+            "style": "text-align: center; color: #1e40af; font-weight: bold;"
+          },
+          {
+            "type": "lines",
+            "left": 84.0,
+            "top": 84.7,
+            "width": 4.5,
+            "text": "5",
+            "style": "text-align: center; color: #1e40af; font-weight: bold;"
+          },
+          {
+            "type": "lines",
+            "left": 84.0,
+            "top": 86.9,
+            "width": 4.5,
+            "text": "5",
+            "style": "text-align: center; color: #1e40af; font-weight: bold;"
+          },
+          {
+            "type": "lines",
+            "left": 84.0,
+            "top": 89.1,
+            "width": 4.5,
+            "text": "5",
+            "style": "text-align: center; color: #1e40af; font-weight: bold;"
+          }
+        ]
+      }
+    ],
+    "108": [
+      {
+        "id": "p108_tema_yansitma",
+        "title": "BU TEMA BAŞKA TEMA!: Tema Yansıtma ve Değerlendirme",
+        "button": {
+          "left": 5.5,
+          "top": 5.5
+        },
+        "items": [
+          {
+            "type": "lines",
+            "left": 18.5,
+            "top": 27.2,
+            "width": 14.0,
+            "text": "Gelişim",
+            "style": "text-align: center; font-weight: bold; color: #1e40af;"
+          },
+          {
+            "type": "lines",
+            "left": 64.0,
+            "top": 28.0,
+            "width": 27.0,
+            "text": "Geleceğin Ayak Sesleri",
+            "style": "text-align: center; font-weight: bold; color: #1e40af;"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 41.5,
+            "width": 26.0,
+            "text": "Teknolojiyle araştırma",
+            "style": "font-size: 1.15rem;"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 45.5,
+            "width": 30.0,
+            "text": "Bilinçli cihaz kullanımı",
+            "style": "font-size: 1.15rem;"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 49.5,
+            "width": 30.0,
+            "text": "Doğadan esinlenen icatlar",
+            "style": "font-size: 1.15rem;"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 53.5,
+            "width": 30.0,
+            "text": "Biyomimetik farkındalığı",
+            "style": "font-size: 1.15rem;"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 57.5,
+            "width": 26.0,
+            "text": "Yapay zekâ ve robotik",
+            "style": "font-size: 1.15rem;"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 61.5,
+            "width": 26.0,
+            "text": "Geleceğe güvenle bakış",
+            "style": "font-size: 1.15rem;"
+          },
+          {
+            "type": "lines",
+            "left": 42.0,
+            "top": 41.0,
+            "width": 58.0,
+            "text": "Doğayı dinle, teknolojiyi insanlık için geliştir!",
+            "style": "text-align: center; color: #1e40af;"
+          },
+          {
+            "type": "lines",
+            "left": 43.0,
+            "top": 67.5,
+            "width": 14.0,
+            "text": "Sayfa 84",
+            "style": "text-align: center; color: #dc2626; font-weight: bold;"
+          },
+          {
+            "type": "lines",
+            "left": 62.0,
+            "top": 55.0,
+            "width": 14.0,
+            "text": "Sayfa 66",
+            "style": "text-align: center; color: #dc2626; font-weight: bold;"
+          },
+          {
+            "type": "lines",
+            "left": 76.0,
+            "top": 67.0,
+            "width": 14.0,
+            "text": "Sayfa 94",
+            "style": "text-align: center; color: #dc2626; font-weight: bold;"
+          }
+        ]
+      }
+    ],
+    "109": [
+      {
+        "id": "p109_oneri_gerekce",
+        "title": "HAYDİ, BİTİRELİM! Soru 1.b: Deney Öneri ve Gerekçeleri",
+        "button": {
+          "left": 5.5,
+          "top": 8.5
+        },
+        "items": [
+          {
+            "type": "lines",
+            "left": 18.5,
+            "top": 21.2,
+            "width": 56.0,
+            "text": "Farklı büyüklükteki taşlar karışıma atılabilir."
+          },
+          {
+            "type": "lines",
+            "left": 20.5,
+            "top": 23.8,
+            "width": 60.0,
+            "text": "Böylece kraterlerin boyut farkı daha net anlaşılır."
+          },
+          {
+            "type": "lines",
+            "left": 18.5,
+            "top": 29.0,
+            "width": 60.0,
+            "text": "Deney adımları ağır çekim kamerayla kaydedilebilir."
+          },
+          {
+            "type": "lines",
+            "left": 20.5,
+            "top": 31.6,
+            "width": 53.0,
+            "text": "Çarpma anında oluşan izler daha net gözlenir."
+          }
+        ]
+      }
+    ],
+    "110": [
+      {
+        "id": "p110_hikaye_unsurlari",
+        "title": "HAYDİ, BİTİRELİM! Soru 2: Hikâye Unsurları ve Yansıtma",
+        "button": {
+          "left": 5.5,
+          "top": 6.5
+        },
+        "items": [
+          {
+            "type": "lines",
+            "left": 32.5,
+            "top": 9.1,
+            "width": 57.0,
+            "text": "Anlatıcı çocuk, Ayşe, anne, baba, akıllı karga."
+          },
+          {
+            "type": "lines",
+            "left": 15.5,
+            "top": 12.3,
+            "width": 35.0,
+            "text": "Evin balkonu ve pencere önü."
+          },
+          {
+            "type": "lines",
+            "left": 18.0,
+            "top": 15.5,
+            "width": 28.0,
+            "text": "Sabahın erken saatleri."
+          },
+          {
+            "type": "lines",
+            "left": 16.5,
+            "top": 19.1,
+            "width": 57.0,
+            "text": "Karganın bir dalla peynir kutusunu açıp yemesi."
+          },
+          {
+            "type": "lines",
+            "left": 54.0,
+            "top": 24.3,
+            "width": 50.0,
+            "text": "video kamera yerine gözlemler resmedilerek"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 27.3,
+            "width": 72.0,
+            "text": "ya da günlüğe detaylıca not edilerek kayıt altına alınırdı."
+          }
+        ]
+      },
+      {
+        "id": "p110_metin_karsilastirma",
+        "title": "HAYDİ, BİTİRELİM! Soru 3: Metin Karşılaştırma",
+        "button": {
+          "left": 5.5,
+          "top": 35.5
+        },
+        "items": [
+          {
+            "type": "lines",
+            "left": 12.0,
+            "top": 70.3,
+            "width": 18.0,
+            "text": "Pasif Soğutma",
+            "style": "text-align: center; font-weight: bold; color: #1e40af;"
+          },
+          {
+            "type": "lines",
+            "left": 16.0,
+            "top": 73.6,
+            "width": 50.0,
+            "text": "sayısal verilerden ve karşılaştırmalardan"
+          },
+          {
+            "type": "lines",
+            "left": 29.0,
+            "top": 76.3,
+            "width": 53.0,
+            "text": "doğadaki canlılardan esinlenme ve biyomimetik"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 78.8,
+            "width": 40.0,
+            "text": "teknolojisinden yararlanma konusu"
+          },
+          {
+            "type": "lines",
+            "left": 44.0,
+            "top": 81.6,
+            "width": 67.0,
+            "text": "biri termit yuvasından, diğeri nilüferden esinlenmiştir."
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 86.1,
+            "width": 44.0,
+            "text": "Kimyasal Kullanmadan Temizlenen Boya",
+            "style": "text-align: center; font-weight: bold; color: #1e40af;"
+          },
+          {
+            "type": "lines",
+            "left": 63.0,
+            "top": 86.1,
+            "width": 45.0,
+            "text": "anlatımı daha sade, kısa ve akıcıydı."
+          }
+        ]
+      }
+    ],
+    "111": [
+      {
+        "id": "p111_noktalama",
+        "title": "HAYDİ, BİTİRELİM! Soru 4: Noktalama İşaretleri",
+        "button": {
+          "left": 5.5,
+          "top": 6.5
+        },
+        "items": [
+          {
+            "type": "lines",
+            "left": 48.5,
+            "top": 10.2,
+            "width": 2.5,
+            "text": ":",
+            "style": "text-align: center; color: #dc2626; font-weight: bold;"
+          },
+          {
+            "type": "lines",
+            "left": 68.6,
+            "top": 10.2,
+            "width": 2.5,
+            "text": ",",
+            "style": "text-align: center; color: #dc2626; font-weight: bold;"
+          },
+          {
+            "type": "lines",
+            "left": 87.2,
+            "top": 10.2,
+            "width": 2.5,
+            "text": "/",
+            "style": "text-align: center; color: #dc2626; font-weight: bold;"
+          },
+          {
+            "type": "lines",
+            "left": 27.2,
+            "top": 12.5,
+            "width": 2.5,
+            "text": "/",
+            "style": "text-align: center; color: #dc2626; font-weight: bold;"
+          },
+          {
+            "type": "lines",
+            "left": 44.8,
+            "top": 12.5,
+            "width": 2.5,
+            "text": ".",
+            "style": "text-align: center; color: #dc2626; font-weight: bold;"
+          },
+          {
+            "type": "lines",
+            "left": 31.7,
+            "top": 15.1,
+            "width": 2.5,
+            "text": "-",
+            "style": "text-align: center; color: #dc2626; font-weight: bold;"
+          },
+          {
+            "type": "lines",
+            "left": 20.8,
+            "top": 19.8,
+            "width": 2.5,
+            "text": "-",
+            "style": "text-align: center; color: #dc2626; font-weight: bold;"
+          },
+          {
+            "type": "lines",
+            "left": 27.5,
+            "top": 19.8,
+            "width": 2.5,
+            "text": "-",
+            "style": "text-align: center; color: #dc2626; font-weight: bold;"
+          },
+          {
+            "type": "lines",
+            "left": 34.2,
+            "top": 19.8,
+            "width": 2.5,
+            "text": "-",
+            "style": "text-align: center; color: #dc2626; font-weight: bold;"
+          },
+          {
+            "type": "lines",
+            "left": 41.5,
+            "top": 19.8,
+            "width": 2.5,
+            "text": "-",
+            "style": "text-align: center; color: #dc2626; font-weight: bold;"
+          }
+        ]
+      },
+      {
+        "id": "p111_mesajlasma",
+        "title": "HAYDİ, BİTİRELİM! Soru 5: İnsan ve Yapay Zekâ Mesajlaşması",
+        "button": {
+          "left": 5.5,
+          "top": 23.5
+        },
+        "items": [
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 66.6,
+            "width": 73.0,
+            "text": "Benzerlik: İkisinde de arkadaşlık sorunu ve atasözü yer alır."
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 69.2,
+            "width": 73.0,
+            "text": "Farklılık: İnsan empati kurarken yapay zekâ mekanik açıklar."
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 78.1,
+            "width": 70.0,
+            "text": "Üzülme arkadaşım, bazen insanlar dalgın ve yorgun olabilir."
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 80.8,
+            "width": 70.0,
+            "text": "Onunla sakince duygularını paylaşırsan seni anlayacaktır."
           }
         ]
       }
@@ -64286,18 +64962,17 @@
             }
           },
           {
-            "type": "box",
-            "left": 10.5,
-            "top": 93.0,
-            "width": 80.0,
-            "height": 4.5,
-            "text": "<b style=\"color:#b45309\">Cevap:</b> Dolunayda Ay en parlak ve yusyuvarlak olduğu için köyü aydınlatacak kandil sanılmıştır.",
+            "type": "badge",
+            "left": 46.0,
+            "top": 86.5,
+            "width": 44.0,
+            "height": 3.0,
+            "text": "Ay en büyük ve parlak göründüğü için kandil sanılmıştır.",
             "style": {
-              "color": "#1e3a8a",
-              "fontSize": "calc(1.05 * var(--unit-h))",
-              "fontFamily": "Caveat, cursive",
-              "lineHeight": "1.3",
-              "padding": "4px 8px"
+              "fontSize": "calc(0.9 * var(--unit-h))",
+              "display": "flex",
+              "alignItems": "center",
+              "justifyContent": "center"
             }
           }
         ]
@@ -64927,7 +65602,7 @@
           {
             "type": "blank",
             "left": 33.5,
-            "top": 30.2,
+            "top": 33.6,
             "width": 13.8,
             "text": "ülkece",
             "style": {
@@ -64940,7 +65615,7 @@
           {
             "type": "blank",
             "left": 47.3,
-            "top": 30.2,
+            "top": 33.6,
             "width": 42.5,
             "text": "Ülkece el ele verip zorluğu aştık.",
             "style": {
@@ -64954,7 +65629,7 @@
           {
             "type": "blank",
             "left": 33.5,
-            "top": 33.3,
+            "top": 36.7,
             "width": 13.8,
             "text": "<span style=\"border: 2px solid #ef4444; border-radius: 9999px; padding: 1px 8px;\">mutfakta</span>",
             "style": {
@@ -64967,7 +65642,7 @@
           {
             "type": "blank",
             "left": 47.3,
-            "top": 33.3,
+            "top": 36.7,
             "width": 42.5,
             "text": "Annem yemeği mutfakta hazırlıyor.",
             "style": {
@@ -64981,7 +65656,7 @@
           {
             "type": "blank",
             "left": 33.5,
-            "top": 36.4,
+            "top": 39.8,
             "width": 13.8,
             "text": "<span style=\"border: 2px solid #ef4444; border-radius: 9999px; padding: 1px 8px;\">çalışkan</span>",
             "style": {
@@ -64994,7 +65669,7 @@
           {
             "type": "blank",
             "left": 47.3,
-            "top": 36.4,
+            "top": 39.8,
             "width": 42.5,
             "text": "Sınıfın en çalışkan öğrencisi oldu.",
             "style": {
@@ -65008,7 +65683,7 @@
           {
             "type": "blank",
             "left": 33.5,
-            "top": 39.4,
+            "top": 42.9,
             "width": 13.8,
             "text": "dilde",
             "style": {
@@ -65021,7 +65696,7 @@
           {
             "type": "blank",
             "left": 47.3,
-            "top": 39.4,
+            "top": 42.9,
             "width": 42.5,
             "text": "Dilde doğru sözcükleri seçmeliyiz.",
             "style": {
@@ -65035,7 +65710,7 @@
           {
             "type": "blank",
             "left": 33.5,
-            "top": 42.5,
+            "top": 46.0,
             "width": 13.8,
             "text": "kültürden",
             "style": {
@@ -65048,7 +65723,7 @@
           {
             "type": "blank",
             "left": 47.3,
-            "top": 42.5,
+            "top": 46.0,
             "width": 42.5,
             "text": "Her kültürden yeni bilgiler edindik.",
             "style": {
@@ -65062,7 +65737,7 @@
           {
             "type": "blank",
             "left": 33.5,
-            "top": 45.6,
+            "top": 49.1,
             "width": 13.8,
             "text": "araştırmacı",
             "style": {
@@ -65075,7 +65750,7 @@
           {
             "type": "blank",
             "left": 47.3,
-            "top": 45.6,
+            "top": 49.1,
             "width": 42.5,
             "text": "Genç araştırmacı kutuplara gitti.",
             "style": {
@@ -65650,18 +66325,17 @@
             }
           },
           {
-            "type": "box",
-            "left": 10.5,
-            "top": 93.5,
-            "width": 80.0,
-            "height": 4.5,
-            "text": "<b style=\"color:#b45309\">Gözlem:</b> Ailemle sevgi ve ev işleri, arkadaşlarımla oyun ve ödev, öğretmenimle ders için iletişim kurdum.",
+            "type": "badge",
+            "left": 62.0,
+            "top": 86.8,
+            "width": 28.0,
+            "height": 3.0,
+            "text": "Not: Deftere kayıt tutulmuştur.",
             "style": {
-              "color": "#1e3a8a",
-              "fontSize": "calc(1.05 * var(--unit-h))",
-              "fontFamily": "Caveat, cursive",
-              "lineHeight": "1.3",
-              "padding": "4px 8px"
+              "fontSize": "calc(0.95 * var(--unit-h))",
+              "display": "flex",
+              "alignItems": "center",
+              "justifyContent": "center"
             }
           }
         ]
