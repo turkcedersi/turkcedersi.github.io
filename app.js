@@ -107,8 +107,8 @@ document.addEventListener("DOMContentLoaded", () => {
   async function initApp() {
     showLoading(true);
     try {
-      // Fetch the textbook hotspots & answers data
-      const response = await fetch("assets/data/book_data.json");
+      // Fetch the textbook hotspots & answers data (cache-busted)
+      const response = await fetch("assets/data/book_data.json?v=9.2");
       if (!response.ok) {
         throw new Error("Veri dosyası yüklenemedi.");
       }
@@ -668,7 +668,8 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!pageAnswers || !Array.isArray(pageAnswers)) return;
 
     pageAnswers.forEach(activity => {
-      const storageKey = `book${state.currentBook}_p${pageNumber}_${activity.id}`;
+      const actId = activity.id || activity.activity_id || "act";
+      const storageKey = `book${state.currentBook}_p${pageNumber}_${actId}`;
       const isRevealed = !!state.revealedAnswers[storageKey];
 
       // 1. Render Activity Toggle Button (Magic Wand with Sparkles)
@@ -709,7 +710,12 @@ document.addEventListener("DOMContentLoaded", () => {
             if (item.height) {
               itemEl.style.height = `${item.height}%`;
             }
-            itemEl.textContent = item.text;
+            const rawText = item.text !== undefined ? item.text : (item.content !== undefined ? item.content : "");
+            if (typeof rawText === "string" && rawText.includes("<")) {
+              itemEl.innerHTML = rawText;
+            } else {
+              itemEl.textContent = rawText;
+            }
             if (item.style && typeof item.style === "object") {
               Object.assign(itemEl.style, item.style);
             }

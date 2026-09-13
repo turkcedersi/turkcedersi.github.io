@@ -550,5 +550,245 @@
         ]
       }
     ]
+  },
+  "metin_4": {
+    "baslik": "Bu Festival Bir Başka",
+    "yazar": "Komisyon",
+    "sayfa_araligi": "94 - 105",
+    "etkinlikler": [
+      {
+        "sayfa_dosya": 94,
+        "sayfa_kitap": 94,
+        "etkinlik_adi": "HAYDİ, BAŞLAYALIM! ve Metin Okuma",
+        "tur": "Ön Bilgileri Harekete Geçirme ve Metne Hazırlık",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.3",
+            "aciklama": "Okumada strateji ve yöntem seçimlerini yönetebilme"
+          },
+          {
+            "kod": "T.O.6.4",
+            "aciklama": "Okuyacağı metnin içeriğine yönelik tahminde bulunabilme"
+          },
+          {
+            "kod": "T.K.6.1",
+            "aciklama": "Konuşma sürecini yönetebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 95,
+        "sayfa_kitap": 95,
+        "etkinlik_adi": "Metin Okuma Süreci",
+        "tur": "Not Alarak Okuma ve Metin Takibi",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.3",
+            "aciklama": "Okumada strateji ve yöntem seçimlerini yönetebilme"
+          },
+          {
+            "kod": "T.O.6.14",
+            "aciklama": "Metindeki detayları/olayları tespit edebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 96,
+        "sayfa_kitap": 96,
+        "etkinlik_adi": "Değerlendirelim ve 1. ANLAYALIM",
+        "tur": "Okuma Sürecini Değerlendirme ve Ön Bilgiler Tablosu",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.27",
+            "aciklama": "Metin okuma sürecini öz değerlendirme formuyla değerlendirebilme"
+          },
+          {
+            "kod": "T.O.6.16",
+            "aciklama": "Ön bilgilerle metinden edindiği yeni bilgileri karşılaştırabilme"
+          },
+          {
+            "kod": "T.O.6.8",
+            "aciklama": "Metindeki ana fikri/temel iletiyi belirleyebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 97,
+        "sayfa_kitap": 97,
+        "etkinlik_adi": "2. ANLAYALIM ve 3. ANLAYALIM",
+        "tur": "Hikâye Unsurları ve Bilgi Görseli İnceleme",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.14",
+            "aciklama": "Hikâye unsurlarını (şahıs/varlık kadrosu, olay örgüsü, zaman, mekân) belirleyebilme"
+          },
+          {
+            "kod": "T.O.6.7",
+            "aciklama": "Hikâye unsurları arasındaki ilişkiyi ve etkileşimi çözümleyebilme"
+          },
+          {
+            "kod": "T.O.6.21",
+            "aciklama": "Bilgi görselindeki ögeleri (grafik, görsel, logo vb.) ve işlevlerini belirleyebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 98,
+        "sayfa_kitap": 98,
+        "etkinlik_adi": "4. ANLAYALIM, 5. ANLAYALIM ve 6. ANLAYALIM",
+        "tur": "Metinden Çıkarım Yapma, Dinleme/İzleme ve Deyim/Kavram Analizi",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.8",
+            "aciklama": "Metinden hareketle çıkarımlarda bulunabilme ve cümleleri tamamlayabilme"
+          },
+          {
+            "kod": "T.O.6.20",
+            "aciklama": "Metindeki söz sanatlarının anlatıma katkısını değerlendirebilme"
+          },
+          {
+            "kod": "T.D.6.8",
+            "aciklama": "Dinlediği/izlediği içerikteki anlamı güçlendiren ifadeleri tespit edebilme"
+          },
+          {
+            "kod": "T.D.6.4",
+            "aciklama": "Dinleme/izleme sürecinde bağlamdan hareketle kelime/kelime gruplarının anlamını tahmin edebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 99,
+        "sayfa_kitap": 99,
+        "etkinlik_adi": "1. ANLATALIM ve Değerlendirelim",
+        "tur": "Önemli/Önemsiz Olay Sınıflandırması ve Konuşma Öz Değerlendirmesi",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.K.6.1",
+            "aciklama": "Konuşma sürecini yönetebilme"
+          },
+          {
+            "kod": "T.K.6.13",
+            "aciklama": "Metindeki olayları önem sırasına ve kronolojik akışa göre özetleyebilme"
+          },
+          {
+            "kod": "T.K.6.26",
+            "aciklama": "Konuşma sürecini öz değerlendirme formuyla değerlendirebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 100,
+        "sayfa_kitap": 100,
+        "etkinlik_adi": "2. ANLATALIM ve 3. ANLATALIM",
+        "tur": "Şehir Özellikleri Değerlendirme ve Konuşma Konusu Seçimi",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.K.6.1",
+            "aciklama": "Konuşma sürecini yönetebilme"
+          },
+          {
+            "kod": "T.K.6.10",
+            "aciklama": "Verilen konulardan hareketle yaratıcı konuşma içeriği tasarlayabilme"
+          },
+          {
+            "kod": "T.K.6.14",
+            "aciklama": "Görüş ve düşüncelerini mantıksal bir bütünlük içinde aktarabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 101,
+        "sayfa_kitap": 101,
+        "etkinlik_adi": "4. ANLATALIM ve 5. ANLATALIM",
+        "tur": "Şart İşlevli Söz Varlığı ile Cümle Kurma Oyunu ve Akran Değerlendirme",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.K.6.1",
+            "aciklama": "Konuşma sürecini yönetebilme"
+          },
+          {
+            "kod": "T.K.6.21",
+            "aciklama": "Şart işlevli söz varlıklarını (-sA, ise, -DI mı vb.) konuşmalarında işlevine uygun kullanabilme"
+          },
+          {
+            "kod": "T.K.6.23",
+            "aciklama": "Grup içi konuşmalarda akranlarının ifadelerini tamamlayıcı cümleler üretebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 102,
+        "sayfa_kitap": 102,
+        "etkinlik_adi": "6. ANLATALIM ve 7. ANLATALIM",
+        "tur": "Yazma Süreci Hazırlık, Planlama ve Karakter Tasarımı",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.Y.6.1",
+            "aciklama": "Yazma sürecini yönetebilme"
+          },
+          {
+            "kod": "T.Y.6.3",
+            "aciklama": "Yazacağı metnin konusunu, ana fikrini ve karakterlerini belirleyebilme"
+          },
+          {
+            "kod": "T.Y.6.7",
+            "aciklama": "Metin taslağı oluşturarak olay örgüsünü planlayabilme",
+            "ek": "T.Y.6.20"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 103,
+        "sayfa_kitap": 103,
+        "etkinlik_adi": "8. ANLATALIM ve 9. ANLATALIM",
+        "tur": "Özne-Yüklem Uyumu ve Kişi Ekleri Dil Bilgisi Çalışması",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.Y.6.21",
+            "aciklama": "Cümlelerde özne-yüklem uyumunu (kişi bakımından) sağlayabilme ve hatalı kullanımları düzeltebilme"
+          },
+          {
+            "kod": "T.O.6.1",
+            "aciklama": "Görsellerden ve bağlamdan hareketle dil bilgisi kurallarını uygulayabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 104,
+        "sayfa_kitap": 104,
+        "etkinlik_adi": "10. ANLATALIM ve Değerlendirelim",
+        "tur": "Yazma Metnini Oluşturma ve Öz Değerlendirme",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.Y.6.1",
+            "aciklama": "Yazma sürecini yönetebilme"
+          },
+          {
+            "kod": "T.Y.6.6",
+            "aciklama": "Özgün ve yaratıcı kurgusal metin yazabilme"
+          },
+          {
+            "kod": "T.K.6.10",
+            "aciklama": "Yazdıklarını sınıfta paylaşabilme ve sürecini değerlendirebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 105,
+        "sayfa_kitap": 105,
+        "etkinlik_adi": "Etik Değerlendirme",
+        "tur": "Teknoloji Etiği ve Yapay Zekâ İlkeleri",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.3",
+            "aciklama": "Okuduğu metindeki etik ve toplumsal değerleri sorgulayabilme"
+          },
+          {
+            "kod": "T.O.6.14",
+            "aciklama": "Teknolojik gelişmelerin insan ve toplum hayatına etkilerini yorumlayabilme"
+          }
+        ]
+      }
+    ]
   }
 }

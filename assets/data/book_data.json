@@ -32808,6 +32808,65 @@
       "T.Y.6.1. Yazma sürecini yönetebilme",
       "T.Y.6.14. Yazılı üretiminde ve yazılı etkileşiminde tartışabilme",
       "T.Y.6.20. Uygun geçiş ve bağlantı ifadelerini kullanabilme"
+    ],
+    "94": [
+      "T.O.6.3",
+      "T.O.6.4",
+      "T.K.6.1"
+    ],
+    "95": [
+      "T.O.6.3",
+      "T.O.6.14"
+    ],
+    "96": [
+      "T.O.6.27",
+      "T.O.6.16",
+      "T.O.6.8"
+    ],
+    "97": [
+      "T.O.6.14",
+      "T.O.6.7",
+      "T.O.6.21"
+    ],
+    "98": [
+      "T.O.6.8",
+      "T.O.6.20",
+      "T.D.6.8",
+      "T.D.6.4"
+    ],
+    "99": [
+      "T.K.6.1",
+      "T.K.6.13",
+      "T.K.6.26"
+    ],
+    "100": [
+      "T.K.6.1",
+      "T.K.6.10",
+      "T.K.6.14"
+    ],
+    "101": [
+      "T.K.6.1",
+      "T.K.6.21",
+      "T.K.6.23"
+    ],
+    "102": [
+      "T.Y.6.1",
+      "T.Y.6.3",
+      "T.Y.6.7",
+      "T.Y.6.20"
+    ],
+    "103": [
+      "T.Y.6.21",
+      "T.O.6.1"
+    ],
+    "104": [
+      "T.Y.6.1",
+      "T.Y.6.6",
+      "T.K.6.10"
+    ],
+    "105": [
+      "T.O.6.3",
+      "T.O.6.14"
     ]
   },
   "book2_inpage_answers": {
@@ -37860,6 +37919,641 @@
             "top": 60.0,
             "width": 32.0,
             "text": "arabaların yüzeyinde"
+          }
+        ]
+      }
+    ],
+    "96": [
+      {
+        "id": "p96_degerlendirelim",
+        "title": "Değerlendirelim: Okuma Stratejisi Öz Değerlendirme Tablosu",
+        "button": {
+          "left": 5.5,
+          "top": 12.5
+        },
+        "items": [
+          {
+            "type": "mark",
+            "left": 45.6,
+            "top": 17.0,
+            "width": 4.0,
+            "height": 2.2,
+            "text": "✓",
+            "style": "color: #16a34a; font-weight: bold; justify-content: center;"
+          },
+          {
+            "type": "lines",
+            "left": 69.0,
+            "top": 17.0,
+            "width": 24.0,
+            "text": "Not alarak okudum."
+          },
+          {
+            "type": "mark",
+            "left": 45.6,
+            "top": 22.7,
+            "width": 4.0,
+            "height": 2.2,
+            "text": "✓",
+            "style": "color: #16a34a; font-weight: bold; justify-content: center;"
+          },
+          {
+            "type": "lines",
+            "left": 69.0,
+            "top": 22.7,
+            "width": 24.0,
+            "text": "Konuyu pekiştirdi."
+          },
+          {
+            "type": "mark",
+            "left": 45.6,
+            "top": 28.0,
+            "width": 4.0,
+            "height": 2.2,
+            "text": "✓",
+            "style": "color: #16a34a; font-weight: bold; justify-content: center;"
+          },
+          {
+            "type": "lines",
+            "left": 69.0,
+            "top": 28.0,
+            "width": 24.0,
+            "text": "Ufkumu genişletti."
+          },
+          {
+            "type": "mark",
+            "left": 45.6,
+            "top": 33.2,
+            "width": 4.0,
+            "height": 2.2,
+            "text": "✓",
+            "style": "color: #16a34a; font-weight: bold; justify-content: center;"
+          },
+          {
+            "type": "lines",
+            "left": 69.0,
+            "top": 33.2,
+            "width": 24.0,
+            "text": "Metni iyi kavradım."
+          },
+          {
+            "type": "mark",
+            "left": 45.6,
+            "top": 38.3,
+            "width": 4.0,
+            "height": 2.2,
+            "text": "✓",
+            "style": "color: #16a34a; font-weight: bold; justify-content: center;"
+          },
+          {
+            "type": "lines",
+            "left": 69.0,
+            "top": 38.3,
+            "width": 24.0,
+            "text": "Çok faydalı buldum."
+          }
+        ]
+      },
+      {
+        "id": "p96_anlayalim_1",
+        "title": "1. ANLAYALIM: Ön Bilgileri Harekete Geçirme ve Kullanma Tablosu",
+        "button": {
+          "left": 5.5,
+          "top": 58.5
+        },
+        "items": [
+          {
+            "type": "box",
+            "left": 24.5,
+            "top": 65.8,
+            "width": 63.0,
+            "height": 2.8,
+            "text": "Bu Festival Bir Başka",
+            "style": "font-weight: bold; color: #1e40af;"
+          },
+          {
+            "type": "box",
+            "left": 12.0,
+            "top": 77.2,
+            "width": 76.0,
+            "height": 5.5,
+            "text": "TEKNOFEST'in ülkemizde düzenlenen büyük bir\nteknoloji ve havacılık festivali olduğunu biliyordum.",
+            "style": "color: #1e40af;"
+          },
+          {
+            "type": "box",
+            "left": 12.0,
+            "top": 87.0,
+            "width": 76.0,
+            "height": 5.5,
+            "text": "Sanal Gerçeklik Tüneli ve robot yarışmaları gibi heyecan verici\netkinliklerin olduğunu ve Türk Yıldızları gösterisini öğrendim.",
+            "style": "color: #1e40af;"
+          }
+        ]
+      }
+    ],
+    "97": [
+      {
+        "id": "p97_anlayalim_2a",
+        "title": "2. ANLAYALIM (a): Hikâye Unsurları Kartları",
+        "button": {
+          "left": 5.5,
+          "top": 14.5
+        },
+        "items": [
+          {
+            "type": "lines",
+            "left": 18.0,
+            "top": 18.8,
+            "width": 28.0,
+            "text": "Şahıs ve Varlık Kadrosu",
+            "style": "text-align: center; color: #1e40af; font-weight: bold;"
+          },
+          {
+            "type": "lines",
+            "left": 63.5,
+            "top": 18.8,
+            "width": 18.0,
+            "text": "Olay Örgüsü",
+            "style": "text-align: center; color: #1e40af; font-weight: bold;"
+          },
+          {
+            "type": "lines",
+            "left": 20.0,
+            "top": 30.2,
+            "width": 15.0,
+            "text": "Zaman",
+            "style": "text-align: center; color: #1e40af; font-weight: bold;"
+          },
+          {
+            "type": "lines",
+            "left": 63.5,
+            "top": 30.2,
+            "width": 15.0,
+            "text": "Mekân",
+            "style": "text-align: center; color: #1e40af; font-weight: bold;"
+          }
+        ]
+      },
+      {
+        "id": "p97_anlayalim_2b",
+        "title": "2. ANLAYALIM (b): Hikâye Unsurları Bağlantıları",
+        "button": {
+          "left": 5.5,
+          "top": 38.5
+        },
+        "items": [
+          {
+            "type": "lines",
+            "left": 53.0,
+            "top": 45.6,
+            "width": 10.0,
+            "text": "Ali",
+            "style": "text-align: center;"
+          },
+          {
+            "type": "lines",
+            "left": 67.5,
+            "top": 45.6,
+            "width": 10.0,
+            "text": "Ada",
+            "style": "text-align: center;"
+          },
+          {
+            "type": "lines",
+            "left": 37.0,
+            "top": 48.4,
+            "width": 25.0,
+            "text": "aile ve çocuklar",
+            "style": "text-align: center;"
+          },
+          {
+            "type": "lines",
+            "left": 48.0,
+            "top": 51.1,
+            "width": 24.0,
+            "text": "astronot olmayı",
+            "style": "text-align: center;"
+          }
+        ]
+      },
+      {
+        "id": "p97_anlayalim_3b",
+        "title": "3. ANLAYALIM (b): Bilgi Görseli Ögeleri",
+        "button": {
+          "left": 5.5,
+          "top": 62.0
+        },
+        "items": [
+          {
+            "type": "custom",
+            "left": 10.0,
+            "top": 72.8,
+            "width": 5.5,
+            "height": 2.6,
+            "html": "<div style=\"width: 100%; height: 100%; border: 2px solid #dc2626; border-radius: 50%;\"></div>"
+          },
+          {
+            "type": "custom",
+            "left": 20.8,
+            "top": 72.8,
+            "width": 6.8,
+            "height": 2.6,
+            "html": "<div style=\"width: 100%; height: 100%; border: 2px solid #dc2626; border-radius: 50%;\"></div>"
+          },
+          {
+            "type": "custom",
+            "left": 32.2,
+            "top": 72.8,
+            "width": 6.8,
+            "height": 2.6,
+            "html": "<div style=\"width: 100%; height: 100%; border: 2px solid #dc2626; border-radius: 50%;\"></div>"
+          },
+          {
+            "type": "custom",
+            "left": 43.8,
+            "top": 72.8,
+            "width": 5.8,
+            "height": 2.6,
+            "html": "<div style=\"width: 100%; height: 100%; border: 2px solid #dc2626; border-radius: 50%;\"></div>"
+          },
+          {
+            "type": "custom",
+            "left": 12.0,
+            "top": 76.3,
+            "width": 10.5,
+            "height": 2.6,
+            "html": "<div style=\"width: 100%; height: 100%; border: 2px solid #dc2626; border-radius: 50%;\"></div>"
+          }
+        ]
+      }
+    ],
+    "98": [
+      {
+        "id": "p98_anlayalim_4",
+        "title": "4. ANLAYALIM: TEKNOFEST Çıkarımları Tamamlama",
+        "button": {
+          "left": 5.5,
+          "top": 14.5
+        },
+        "items": [
+          {
+            "type": "lines",
+            "left": 40.0,
+            "top": 20.7,
+            "width": 30.0,
+            "text": "havacılık ve uzay alanını"
+          },
+          {
+            "type": "lines",
+            "left": 74.5,
+            "top": 20.7,
+            "width": 18.0,
+            "text": "tüm alanları"
+          },
+          {
+            "type": "lines",
+            "left": 55.0,
+            "top": 25.1,
+            "width": 35.0,
+            "text": "havacılık ve savunma araçları"
+          },
+          {
+            "type": "lines",
+            "left": 31.0,
+            "top": 29.5,
+            "width": 53.0,
+            "text": "ülkemizin yerli teknolojide çok ilerlediğini"
+          }
+        ]
+      },
+      {
+        "id": "p98_anlayalim_5c",
+        "title": "5. ANLAYALIM (c): Söz Sanatı Etkisi Uygun Olmayanın Üzerini Çizme",
+        "button": {
+          "left": 5.5,
+          "top": 46.5
+        },
+        "items": [
+          {
+            "type": "custom",
+            "left": 59.9,
+            "top": 54.8,
+            "width": 7.8,
+            "height": 1.0,
+            "html": "<div style=\"width: 100%; border-top: 2.5px solid #dc2626;\"></div>"
+          }
+        ]
+      },
+      {
+        "id": "p98_anlayalim_6",
+        "title": "6. ANLAYALIM: Anlamı Güçlendiren İfadeler ve Söz Varlığı",
+        "button": {
+          "left": 5.5,
+          "top": 62.0
+        },
+        "items": [
+          {
+            "type": "mark",
+            "left": 18.0,
+            "top": 70.8,
+            "width": 3.2,
+            "height": 2.2,
+            "text": "⭐",
+            "style": "justify-content: center;"
+          },
+          {
+            "type": "mark",
+            "left": 52.0,
+            "top": 77.2,
+            "width": 3.2,
+            "height": 2.2,
+            "text": "⭐",
+            "style": "justify-content: center;"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 89.5,
+            "width": 79.5,
+            "text": "Kanat kanata gelmek: Dayanışma içinde olmak, el ele vermek."
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 92.5,
+            "width": 79.5,
+            "text": "Dost: Güvenilen samimi arkadaş, vefalı kimse, yoldaş."
+          }
+        ]
+      }
+    ],
+    "99": [
+      {
+        "id": "p99_anlatalim_1",
+        "title": "1. ANLATALIM: Önemli ve Önemsiz Olaylar Sınıflandırması",
+        "button": {
+          "left": 5.5,
+          "top": 14.5
+        },
+        "items": [
+          {
+            "type": "box",
+            "left": 12.0,
+            "top": 25.0,
+            "width": 35.0,
+            "height": 20.0,
+            "text": "• Ali ve ailesinin festivale gitmesi\n• Astronotla tanışıp sohbet etmesi\n• Sanal Gerçeklik Tüneli'ni gezmesi\n• Türk Yıldızları gösterisini izlemesi\n• Ali'nin pilotluk hayali kurması",
+            "style": "color: #166534; justify-content: flex-start;"
+          },
+          {
+            "type": "box",
+            "left": 54.0,
+            "top": 25.0,
+            "width": 35.0,
+            "height": 20.0,
+            "text": "• Yorgunluktan bir süre uyuyamaması\n• Girişte uzun süre sıra beklenmesi\n• Uçak önünde hatıra fotoğrafı çekilmesi\n• Çevre stantların kalabalık olması",
+            "style": "color: #9a3412; justify-content: flex-start;"
+          }
+        ]
+      },
+      {
+        "id": "p99_degerlendirelim",
+        "title": "Değerlendirelim: Konuşma Süreci Öz Değerlendirme ve Tamamlama",
+        "button": {
+          "left": 5.5,
+          "top": 60.5
+        },
+        "items": [
+          {
+            "type": "mark",
+            "left": 23.5,
+            "top": 68.6,
+            "width": 11.0,
+            "height": 2.2,
+            "text": "⭐⭐⭐⭐⭐",
+            "style": "justify-content: center; color: #eab308;"
+          },
+          {
+            "type": "mark",
+            "left": 23.5,
+            "top": 71.5,
+            "width": 11.0,
+            "height": 2.2,
+            "text": "⭐⭐⭐⭐",
+            "style": "justify-content: center; color: #eab308;"
+          },
+          {
+            "type": "mark",
+            "left": 23.5,
+            "top": 74.4,
+            "width": 11.0,
+            "height": 2.2,
+            "text": "⭐⭐⭐⭐⭐",
+            "style": "justify-content: center; color: #eab308;"
+          },
+          {
+            "type": "mark",
+            "left": 23.5,
+            "top": 77.3,
+            "width": 11.0,
+            "height": 2.2,
+            "text": "⭐⭐⭐⭐⭐",
+            "style": "justify-content: center; color: #eab308;"
+          },
+          {
+            "type": "lines",
+            "left": 28.0,
+            "top": 82.3,
+            "width": 55.0,
+            "text": "metni kendi cümlelerimle akıcı özetleme"
+          },
+          {
+            "type": "lines",
+            "left": 74.0,
+            "top": 86.5,
+            "width": 20.0,
+            "text": "heyecanımı yenip"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 92.0,
+            "width": 80.0,
+            "text": "dinleyicilerle sürekli ve etkili göz teması kurmaya çalışacağım."
+          }
+        ]
+      }
+    ],
+    "100": [
+      {
+        "id": "p100_anlatalim_2",
+        "title": "2. ANLATALIM: Teknoloji ve Doğa Dostu Şehir Özellikleri",
+        "button": {
+          "left": 5.5,
+          "top": 16.5
+        },
+        "items": [
+          {
+            "type": "mark",
+            "left": 9.8,
+            "top": 28.5,
+            "width": 3.2,
+            "height": 2.2,
+            "text": "✓",
+            "style": "color: #dc2626; font-weight: bold; justify-content: center;"
+          },
+          {
+            "type": "mark",
+            "left": 9.8,
+            "top": 32.1,
+            "width": 3.2,
+            "height": 2.2,
+            "text": "✓",
+            "style": "color: #dc2626; font-weight: bold; justify-content: center;"
+          }
+        ]
+      },
+      {
+        "id": "p100_anlatalim_3",
+        "title": "3. ANLATALIM: Konuşma Konusu Seçimi",
+        "button": {
+          "left": 5.5,
+          "top": 62.0
+        },
+        "items": [
+          {
+            "type": "mark",
+            "left": 9.8,
+            "top": 74.0,
+            "width": 3.2,
+            "height": 2.2,
+            "text": "✓",
+            "style": "color: #dc2626; font-weight: bold; justify-content: center;"
+          }
+        ]
+      }
+    ],
+    "101": [
+      {
+        "id": "p101_anlatalim_4",
+        "title": "4. ANLATALIM: Şart İşlevli Söz Varlığı Giriş Seçimi",
+        "button": {
+          "left": 5.5,
+          "top": 16.5
+        },
+        "items": [
+          {
+            "type": "mark",
+            "left": 34.5,
+            "top": 26.0,
+            "width": 3.2,
+            "height": 2.2,
+            "text": "✓",
+            "style": "color: #dc2626; font-weight: bold; justify-content: center;"
+          }
+        ]
+      }
+    ],
+    "103": [
+      {
+        "id": "p103_anlatalim_8",
+        "title": "8. ANLATALIM: Özne-Yüklem Uyumu ve Kişi Ekleri Düzeltmesi",
+        "button": {
+          "left": 5.5,
+          "top": 16.5
+        },
+        "items": [
+          {
+            "type": "lines",
+            "left": 10.0,
+            "top": 32.5,
+            "width": 14.0,
+            "text": "Ben",
+            "style": "text-align: center; color: #1e40af; font-weight: bold;"
+          },
+          {
+            "type": "lines",
+            "left": 63.5,
+            "top": 32.5,
+            "width": 14.0,
+            "text": "Biz",
+            "style": "text-align: center; color: #1e40af; font-weight: bold;"
+          },
+          {
+            "type": "lines",
+            "left": 10.0,
+            "top": 35.5,
+            "width": 14.0,
+            "text": "Biz",
+            "style": "text-align: center; color: #1e40af; font-weight: bold;"
+          },
+          {
+            "type": "lines",
+            "left": 63.5,
+            "top": 35.5,
+            "width": 14.0,
+            "text": "O",
+            "style": "text-align: center; color: #1e40af; font-weight: bold;"
+          },
+          {
+            "type": "custom",
+            "left": 26.0,
+            "top": 46.5,
+            "width": 16.5,
+            "height": 3.2,
+            "html": "<div style=\"width: 100%; height: 100%; border: 2.5px solid #2563eb; background: rgba(37, 99, 235, 0.15); border-radius: 20px;\"></div>"
+          },
+          {
+            "type": "custom",
+            "left": 72.0,
+            "top": 66.7,
+            "width": 4.8,
+            "height": 1.0,
+            "html": "<div style=\"width: 100%; border-top: 2.5px solid #dc2626;\"></div>"
+          },
+          {
+            "type": "box",
+            "left": 72.0,
+            "top": 64.8,
+            "width": 4.8,
+            "height": 2.0,
+            "text": "gittik",
+            "style": "color: #16a34a; font-weight: bold; justify-content: center;"
+          },
+          {
+            "type": "custom",
+            "left": 61.5,
+            "top": 69.2,
+            "width": 6.3,
+            "height": 1.0,
+            "html": "<div style=\"width: 100%; border-top: 2.5px solid #dc2626;\"></div>"
+          },
+          {
+            "type": "box",
+            "left": 61.5,
+            "top": 67.3,
+            "width": 6.3,
+            "height": 2.0,
+            "text": "anlattı",
+            "style": "color: #16a34a; font-weight: bold; justify-content: center;"
+          },
+          {
+            "type": "custom",
+            "left": 44.5,
+            "top": 71.7,
+            "width": 8.9,
+            "height": 1.0,
+            "html": "<div style=\"width: 100%; border-top: 2.5px solid #dc2626;\"></div>"
+          },
+          {
+            "type": "box",
+            "left": 44.5,
+            "top": 69.8,
+            "width": 10.0,
+            "height": 2.0,
+            "text": "uçabilseydik",
+            "style": "color: #16a34a; font-weight: bold; justify-content: center;"
           }
         ]
       }
@@ -50304,6 +50998,48 @@
     "153": [
       "T.Y.6.1. Yazma sürecini yönetebilme",
       "T.Y.6.7. Yaratıcı yazı yazabilme",
+      "T.Y.6.22. Yazma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+    ],
+    "154": [
+      "T.O.6.1. Okumada materyal seçimini yönetebilme",
+      "T.O.6.2. Metin okuma sürecini yönetebilme (Soru sorma stratejisi)"
+    ],
+    "155": [
+      "T.O.6.2. Metin okuma sürecini yönetebilme",
+      "T.Y.6.21. Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+    ],
+    "156": [
+      "T.O.6.8. Okuduğu metnin derin anlamını belirlemeye yönelik çıkarımlar yapabilme",
+      "T.O.6.17. Metnin bölümlerini belirlemeye yönelik çözümleme yapabilme"
+    ],
+    "157": [
+      "T.D.6.17. Bilgilendirici metinde düşünceyi geliştirme yollarını belirlemeye yönelik çözümleme yapabilme",
+      "T.O.6.9. Okuduğu metni kendi içinde karşılaştırabilme",
+      "T.O.6.10. Okuduğu metinler arasında karşılaştırma yapabilme"
+    ],
+    "158": [
+      "T.K.6.1. Konuşma sürecini yönetebilme",
+      "T.K.6.17. Sözlü olarak tartışmaya katılabilme",
+      "T.K.6.22. Konuşma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+    ],
+    "159": [
+      "T.K.6.13. Konuşmasında söz varlığını etkili kullanabilme",
+      "T.Y.6.21. Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+    ],
+    "160": [
+      "T.Y.6.1. Yazma sürecini yönetebilme",
+      "T.Y.6.17. Yazısında düşünceyi geliştirme yollarını kullanabilme",
+      "T.Y.6.22. Yazma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+    ],
+    "161": [
+      "T.O.6.21. Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme (Ünsüz Benzeşmesi)"
+    ],
+    "162": [
+      "T.O.6.21. Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme (Ünlü Türemesi ve Yapım Ekleri)"
+    ],
+    "163": [
+      "T.O.6.1. Okumada materyal seçimini yönetebilme",
+      "T.D.6.1. Dinlemede/izlemede materyal seçimini yönetebilme",
       "T.Y.6.22. Yazma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
     ]
   },
@@ -63214,6 +63950,1719 @@
               "display": "flex",
               "alignItems": "center",
               "justifyContent": "center"
+            }
+          }
+        ]
+      }
+    ],
+    "154": [
+      {
+        "activity_id": "haydi_baslayalim_p154",
+        "id": "haydi_baslayalim_p154",
+        "button": {
+          "top": 15.0,
+          "left": 5.5
+        },
+        "items": [
+          {
+            "type": "box",
+            "left": 11.5,
+            "top": 18.5,
+            "width": 78.0,
+            "height": 8.0,
+            "text": "<b style=\"color:#b45309\">1. Soru:</b> Kutuplar ve Grönland dünyanın en soğuk yerleridir. Burada Eskimolar ve kutup hayvanları yaşar.<br><b style=\"color:#b45309\">2. Soru:</b> Yön bulmak için kutup yıldızından, rüzgârın yönünden ve pusuladan yararlanırız.",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "lineHeight": "1.4",
+              "padding": "6px 10px"
+            }
+          },
+          {
+            "type": "badge",
+            "left": 72.0,
+            "top": 28.5,
+            "width": 20.0,
+            "height": 3.8,
+            "text": "Tahmin: İglu (Buz Evi)",
+            "style": {
+              "fontSize": "calc(1.1 * var(--unit-h))",
+              "display": "flex",
+              "alignItems": "center",
+              "justifyContent": "center"
+            }
+          }
+        ]
+      }
+    ],
+    "155": [
+      {
+        "activity_id": "dogrusunu_bilelim_p155",
+        "id": "dogrusunu_bilelim_p155",
+        "button": {
+          "top": 86.0,
+          "left": 5.5
+        },
+        "items": [
+          {
+            "type": "box",
+            "left": 10.5,
+            "top": 88.5,
+            "width": 80.0,
+            "height": 8.0,
+            "text": "<b style=\"color:#b45309\">Doğrusunu Bilelim:</b> Metindeki \"aya\" sözcüğü gök cismi anlamında kullanıldığı için büyük harfle ve kesmeyle <b>Ay'a</b> biçiminde yazılmalıdır. Ayrıca \"fok balığı\" ayrı yazılır.",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "lineHeight": "1.4",
+              "padding": "6px 10px"
+            }
+          }
+        ]
+      }
+    ],
+    "156": [
+      {
+        "activity_id": "anlayalim1_2_p156",
+        "id": "anlayalim1_2_p156",
+        "button": {
+          "top": 20.0,
+          "left": 5.5
+        },
+        "items": [
+          {
+            "type": "box",
+            "left": 10.5,
+            "top": 17.5,
+            "width": 80.0,
+            "height": 5.0,
+            "text": "<b style=\"color:#b45309\">Metnin Konusu:</b> Eskimo gençlerin gökyüzündeki dolunayı yakalayıp köylerini aydınlatmak istemeleri ve bu uğurda yaşadıkları serüven.",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "lineHeight": "1.3",
+              "padding": "4px 8px"
+            }
+          },
+          {
+            "type": "mark",
+            "left": 10.4,
+            "top": 23.8,
+            "width": 2.8,
+            "height": 2.2,
+            "text": "✓",
+            "style": {
+              "fontSize": "calc(1.3 * var(--unit-h))",
+              "color": "#16a34a",
+              "fontWeight": "bold",
+              "display": "flex",
+              "alignItems": "center",
+              "justifyContent": "center"
+            }
+          },
+          {
+            "type": "mark",
+            "left": 31.9,
+            "top": 23.8,
+            "width": 2.8,
+            "height": 2.2,
+            "text": "✓",
+            "style": {
+              "fontSize": "calc(1.3 * var(--unit-h))",
+              "color": "#16a34a",
+              "fontWeight": "bold",
+              "display": "flex",
+              "alignItems": "center",
+              "justifyContent": "center"
+            }
+          },
+          {
+            "type": "mark",
+            "left": 49.8,
+            "top": 23.8,
+            "width": 2.8,
+            "height": 2.2,
+            "text": "✓",
+            "style": {
+              "fontSize": "calc(1.3 * var(--unit-h))",
+              "color": "#16a34a",
+              "fontWeight": "bold",
+              "display": "flex",
+              "alignItems": "center",
+              "justifyContent": "center"
+            }
+          },
+          {
+            "type": "badge",
+            "left": 51.5,
+            "top": 40.5,
+            "width": 37.0,
+            "height": 4.2,
+            "text": "Düğüm: \"Ama...\", \"Bu arada...\", \"Tekrar...\", \"Eskimolar...\"",
+            "style": {
+              "fontSize": "calc(0.95 * var(--unit-h))",
+              "display": "flex",
+              "alignItems": "center",
+              "justifyContent": "center"
+            }
+          },
+          {
+            "type": "badge",
+            "left": 68.0,
+            "top": 45.2,
+            "width": 22.0,
+            "height": 3.8,
+            "text": "Çözüm: \"Eskimo...\", \"Kim...\"",
+            "style": {
+              "fontSize": "calc(0.95 * var(--unit-h))",
+              "display": "flex",
+              "alignItems": "center",
+              "justifyContent": "center"
+            }
+          },
+          {
+            "type": "mark",
+            "left": 10.3,
+            "top": 63.8,
+            "width": 2.8,
+            "height": 2.0,
+            "text": "✓",
+            "style": {
+              "fontSize": "calc(1.3 * var(--unit-h))",
+              "color": "#16a34a",
+              "fontWeight": "bold",
+              "display": "flex",
+              "alignItems": "center",
+              "justifyContent": "center"
+            }
+          },
+          {
+            "type": "mark",
+            "left": 10.3,
+            "top": 66.5,
+            "width": 2.8,
+            "height": 2.0,
+            "text": "✓",
+            "style": {
+              "fontSize": "calc(1.3 * var(--unit-h))",
+              "color": "#16a34a",
+              "fontWeight": "bold",
+              "display": "flex",
+              "alignItems": "center",
+              "justifyContent": "center"
+            }
+          },
+          {
+            "type": "mark",
+            "left": 10.3,
+            "top": 69.2,
+            "width": 2.8,
+            "height": 2.0,
+            "text": "✓",
+            "style": {
+              "fontSize": "calc(1.3 * var(--unit-h))",
+              "color": "#16a34a",
+              "fontWeight": "bold",
+              "display": "flex",
+              "alignItems": "center",
+              "justifyContent": "center"
+            }
+          },
+          {
+            "type": "mark",
+            "left": 10.3,
+            "top": 74.7,
+            "width": 2.8,
+            "height": 2.0,
+            "text": "✓",
+            "style": {
+              "fontSize": "calc(1.3 * var(--unit-h))",
+              "color": "#16a34a",
+              "fontWeight": "bold",
+              "display": "flex",
+              "alignItems": "center",
+              "justifyContent": "center"
+            }
+          }
+        ]
+      }
+    ],
+    "157": [
+      {
+        "activity_id": "anlayalim3_4_5_p157",
+        "id": "anlayalim3_4_5_p157",
+        "button": {
+          "top": 15.0,
+          "left": 5.5
+        },
+        "items": [
+          {
+            "type": "blank",
+            "left": 17.4,
+            "top": 23.8,
+            "width": 22.0,
+            "text": "bu yollar",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.1 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "center"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 49.7,
+            "top": 23.8,
+            "width": 37.1,
+            "text": "yapıları kavramak zorlaşırdı.",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.1 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "left",
+              "paddingLeft": "4px"
+            }
+          },
+          {
+            "type": "box",
+            "left": 11.5,
+            "top": 47.0,
+            "width": 36.5,
+            "height": 12.5,
+            "text": "<u style=\"text-decoration-color:#2563eb; text-underline-offset:3px;\">İnsan eliyle inşa edilmiş barınaktır.</u><br><br><span style=\"border-bottom: 2px dashed #d97706; padding-bottom: 1px;\">Buz ve sıkışmış kar bloklarından yapılır.</span><br><br><span style=\"border-bottom: 2px dashed #d97706; padding-bottom: 1px;\">Kutup soğuğunda geçici korunak sağlar.</span>",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.02 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "lineHeight": "1.4",
+              "padding": "4px 6px"
+            }
+          },
+          {
+            "type": "box",
+            "left": 53.0,
+            "top": 47.0,
+            "width": 36.5,
+            "height": 12.5,
+            "text": "<u style=\"text-decoration-color:#2563eb; text-underline-offset:3px;\">İnsan eliyle inşa edilmiş anıtsal yapıdır.</u><br><br><span style=\"border-bottom: 2px dashed #d97706; padding-bottom: 1px;\">Kireçtaşı ve granit bloklardan yapılmıştır.</span><br><br><span style=\"border-bottom: 2px dashed #d97706; padding-bottom: 1px;\">Çöl ikliminde kalıcı anıt mezar içindir.</span>",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.02 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "lineHeight": "1.4",
+              "padding": "4px 6px"
+            }
+          },
+          {
+            "type": "badge",
+            "left": 35.8,
+            "top": 67.2,
+            "width": 3.5,
+            "height": 2.2,
+            "text": "5",
+            "style": {
+              "fontSize": "calc(1.1 * var(--unit-h))",
+              "fontWeight": "bold",
+              "display": "flex",
+              "alignItems": "center",
+              "justifyContent": "center"
+            }
+          },
+          {
+            "type": "badge",
+            "left": 76.5,
+            "top": 67.2,
+            "width": 3.5,
+            "height": 2.2,
+            "text": "5",
+            "style": {
+              "fontSize": "calc(1.1 * var(--unit-h))",
+              "fontWeight": "bold",
+              "display": "flex",
+              "alignItems": "center",
+              "justifyContent": "center"
+            }
+          },
+          {
+            "type": "box",
+            "left": 10.5,
+            "top": 89.5,
+            "width": 80.0,
+            "height": 5.5,
+            "text": "<b style=\"color:#b45309\">Neden Dolunay?</b> Dolunay evresinde Ay en büyük ve en parlak göründüğü için Eskimo genç onu köyün karanlık gecelerini aydınlatacak bir kandil gibi hayal etmiştir.",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "lineHeight": "1.3",
+              "padding": "4px 8px"
+            }
+          }
+        ]
+      }
+    ],
+    "158": [
+      {
+        "activity_id": "anlatalim1_2_p158",
+        "id": "anlatalim1_2_p158",
+        "button": {
+          "top": 15.0,
+          "left": 5.5
+        },
+        "items": [
+          {
+            "type": "blank",
+            "left": 60.5,
+            "top": 61.2,
+            "width": 12.0,
+            "text": "kaldım",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.1 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "center"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 79.5,
+            "top": 61.2,
+            "width": 10.0,
+            "text": "konuyu",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.1 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "center"
+            }
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 63.8,
+            "width": 79.0,
+            "text": "kutup yaşamını zengin bilimsel verilerle somutlaştırmamı sağladı.",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.1 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive"
+            }
+          },
+          {
+            "type": "box",
+            "left": 10.5,
+            "top": 88.0,
+            "width": 38.0,
+            "height": 6.5,
+            "text": "<b style=\"color:#1e3a8a\">Ay'ın Gözünden:</b> \"Işıl ışıl parlarken telaşla koşan gençleri izlemek eğlenceliydi. Onlar tırmandıkça ben göğün derinliklerine gülümsüyordum.\"",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(0.98 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "lineHeight": "1.3",
+              "padding": "4px 6px"
+            }
+          },
+          {
+            "type": "box",
+            "left": 51.5,
+            "top": 88.0,
+            "width": 38.0,
+            "height": 6.5,
+            "text": "<b style=\"color:#1e3a8a\">Gençler Yakalarsa:</b> \"Buzdan kulübenin kubbesine asılan Ay, tüm kutup gecesini gündüze çevirdi; artık kimse karanlıktan korkmadı.\"",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(0.98 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "lineHeight": "1.3",
+              "padding": "4px 6px"
+            }
+          }
+        ]
+      }
+    ],
+    "159": [
+      {
+        "activity_id": "anlatalim3_4_p159",
+        "id": "anlatalim3_4_p159",
+        "button": {
+          "top": 15.0,
+          "left": 5.5
+        },
+        "items": [
+          {
+            "type": "blank",
+            "left": 15.0,
+            "top": 30.0,
+            "width": 17.0,
+            "text": "Gözü parladı.",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "center"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 29.5,
+            "top": 35.0,
+            "width": 17.0,
+            "text": "Dizim tutmuyor",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "center"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 43.0,
+            "top": 30.0,
+            "width": 17.0,
+            "text": "Çarçabuk gitti",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "center"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 57.0,
+            "top": 35.0,
+            "width": 17.0,
+            "text": "Ödüm koptu.",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "center"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 71.0,
+            "top": 30.0,
+            "width": 17.0,
+            "text": "İyi kötü geçti",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "center"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 11.8,
+            "top": 62.9,
+            "width": 10.0,
+            "text": "Alfabe",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.15 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "center"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 28.4,
+            "top": 62.9,
+            "width": 10.0,
+            "text": "Egzoz",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.15 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "center"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 45.0,
+            "top": 62.9,
+            "width": 10.0,
+            "text": "Eşofman",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.15 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "center"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 61.6,
+            "top": 62.9,
+            "width": 10.0,
+            "text": "Hoparlör",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.15 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "center"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 78.2,
+            "top": 62.9,
+            "width": 10.0,
+            "text": "Kavanoz",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.15 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "center"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 11.8,
+            "top": 77.8,
+            "width": 10.0,
+            "text": "Dinozor",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.15 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "center"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 28.4,
+            "top": 77.8,
+            "width": 10.0,
+            "text": "Maydanoz",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.15 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "center"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 45.0,
+            "top": 77.8,
+            "width": 10.0,
+            "text": "Kirpi",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.15 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "center"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 61.6,
+            "top": 77.8,
+            "width": 10.0,
+            "text": "Palyaço",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.15 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "center"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 78.2,
+            "top": 77.8,
+            "width": 10.0,
+            "text": "Bisküvi",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.15 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "center"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 11.8,
+            "top": 91.6,
+            "width": 10.0,
+            "text": "Eşek",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.15 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "center"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 28.4,
+            "top": 91.6,
+            "width": 10.0,
+            "text": "Sarımsak",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.15 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "center"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 42.5,
+            "top": 91.6,
+            "width": 15.0,
+            "text": "Tahterevalli",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.1 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "center"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 61.6,
+            "top": 91.6,
+            "width": 10.0,
+            "text": "Kibrit",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.15 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "center"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 78.2,
+            "top": 91.6,
+            "width": 10.0,
+            "text": "Soğan",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.15 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "center"
+            }
+          }
+        ]
+      }
+    ],
+    "160": [
+      {
+        "activity_id": "anlatalim5_p160",
+        "id": "anlatalim5_p160",
+        "button": {
+          "top": 15.0,
+          "left": 5.5
+        },
+        "items": [
+          {
+            "type": "blank",
+            "left": 64.2,
+            "top": 24.8,
+            "width": 15.1,
+            "text": "MÜCADELESİ",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.1 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "center",
+              "fontWeight": "bold"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 52.6,
+            "top": 27.3,
+            "width": 37.4,
+            "text": "kadar buzulların hızla",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "left",
+              "paddingLeft": "4px"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 43.1,
+            "top": 29.7,
+            "width": 46.8,
+            "text": "kutup ayıları etkileniyor. Çünkü",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "left",
+              "paddingLeft": "4px"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 39.4,
+            "top": 32.1,
+            "width": 50.5,
+            "text": "bölgesindeki deniz buzullarıdır.",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "left",
+              "paddingLeft": "4px"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 63.6,
+            "top": 34.6,
+            "width": 26.4,
+            "text": "değişimler görüldü.",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "left",
+              "paddingLeft": "4px"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 47.3,
+            "top": 37.0,
+            "width": 42.6,
+            "text": "yeterli besin bulamıyor. Ancak",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "left",
+              "paddingLeft": "4px"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 32.7,
+            "top": 39.4,
+            "width": 57.2,
+            "text": "tüm kutup ekosistemini etkileyeceği öngörülüyor.",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "left",
+              "paddingLeft": "4px"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 10.5,
+            "top": 42.3,
+            "width": 79.5,
+            "text": "Buna rağmen bilim insanları türü korumak için yeni önlemler alıyor.",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "left",
+              "paddingLeft": "4px"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 10.5,
+            "top": 45.2,
+            "width": 79.5,
+            "text": "Fakat küresel ısınma devam ederse bu canlıların sayısı azalabilir.",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "left",
+              "paddingLeft": "4px"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 10.5,
+            "top": 48.1,
+            "width": 79.5,
+            "text": "Sonuç olarak kutupları ve doğayı korumak hepimizin ortak görevidir.",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "left",
+              "paddingLeft": "4px"
+            }
+          },
+          {
+            "type": "mark",
+            "left": 26.5,
+            "top": 67.2,
+            "width": 3.2,
+            "height": 1.8,
+            "text": "( 5 )",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontWeight": "bold",
+              "display": "flex",
+              "alignItems": "center",
+              "justifyContent": "center"
+            }
+          },
+          {
+            "type": "mark",
+            "left": 26.5,
+            "top": 69.1,
+            "width": 3.2,
+            "height": 1.8,
+            "text": "( 5 )",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontWeight": "bold",
+              "display": "flex",
+              "alignItems": "center",
+              "justifyContent": "center"
+            }
+          },
+          {
+            "type": "mark",
+            "left": 26.5,
+            "top": 71.0,
+            "width": 3.2,
+            "height": 1.8,
+            "text": "( 5 )",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontWeight": "bold",
+              "display": "flex",
+              "alignItems": "center",
+              "justifyContent": "center"
+            }
+          },
+          {
+            "type": "mark",
+            "left": 26.5,
+            "top": 72.9,
+            "width": 3.2,
+            "height": 1.8,
+            "text": "( 5 )",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontWeight": "bold",
+              "display": "flex",
+              "alignItems": "center",
+              "justifyContent": "center"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 28.6,
+            "top": 80.6,
+            "width": 59.5,
+            "text": "yazımı kurallara uygun biçimde tamamlama",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "left",
+              "paddingLeft": "4px"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 21.5,
+            "top": 86.9,
+            "width": 66.6,
+            "text": "bol bol bilgilendirici metinler yazıp pratik yapacağım.",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "left",
+              "paddingLeft": "4px"
+            }
+          }
+        ]
+      }
+    ],
+    "161": [
+      {
+        "activity_id": "anlatalim6_p161",
+        "id": "anlatalim6_p161",
+        "button": {
+          "top": 15.0,
+          "left": 5.5
+        },
+        "items": [
+          {
+            "type": "mark",
+            "left": 74.9,
+            "top": 17.6,
+            "width": 2.8,
+            "height": 2.0,
+            "text": "✓",
+            "style": {
+              "fontSize": "calc(1.3 * var(--unit-h))",
+              "color": "#16a34a",
+              "fontWeight": "bold",
+              "display": "flex",
+              "alignItems": "center",
+              "justifyContent": "center"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 33.5,
+            "top": 31.5,
+            "width": 13.8,
+            "text": "ülkece",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.1 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "center"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 47.3,
+            "top": 31.5,
+            "width": 42.5,
+            "text": "Ülkece el ele verip zorluğu aştık.",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "left",
+              "paddingLeft": "4px"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 33.5,
+            "top": 34.6,
+            "width": 13.8,
+            "text": "<span style=\"border: 2px solid #ef4444; border-radius: 9999px; padding: 1px 8px;\">mutfakta</span>",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.1 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "center"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 47.3,
+            "top": 34.6,
+            "width": 42.5,
+            "text": "Annem yemeği mutfakta hazırlıyor.",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "left",
+              "paddingLeft": "4px"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 33.5,
+            "top": 37.7,
+            "width": 13.8,
+            "text": "<span style=\"border: 2px solid #ef4444; border-radius: 9999px; padding: 1px 8px;\">çalışkan</span>",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.1 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "center"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 47.3,
+            "top": 37.7,
+            "width": 42.5,
+            "text": "Sınıfın en çalışkan öğrencisi oldu.",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "left",
+              "paddingLeft": "4px"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 33.5,
+            "top": 40.7,
+            "width": 13.8,
+            "text": "dilde",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.1 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "center"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 47.3,
+            "top": 40.7,
+            "width": 42.5,
+            "text": "Dilde doğru sözcükleri seçmeliyiz.",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "left",
+              "paddingLeft": "4px"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 33.5,
+            "top": 43.8,
+            "width": 13.8,
+            "text": "kültürden",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.1 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "center"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 47.3,
+            "top": 43.8,
+            "width": 42.5,
+            "text": "Her kültürden yeni bilgiler edindik.",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "left",
+              "paddingLeft": "4px"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 33.5,
+            "top": 46.9,
+            "width": 13.8,
+            "text": "araştırmacı",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.1 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "center"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 47.3,
+            "top": 46.9,
+            "width": 42.5,
+            "text": "Genç araştırmacı kutuplara gitti.",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "left",
+              "paddingLeft": "4px"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 14.0,
+            "top": 71.8,
+            "width": 11.8,
+            "text": "ünsüz",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.1 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "center"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 53.4,
+            "top": 72.1,
+            "width": 11.8,
+            "text": "ünsüz",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.1 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "center"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 24.7,
+            "top": 83.1,
+            "width": 11.8,
+            "text": "başındaki",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.1 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "center"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 45.5,
+            "top": 82.7,
+            "width": 11.8,
+            "text": "sonundaki",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.1 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "center"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 44.2,
+            "top": 90.4,
+            "width": 17.7,
+            "text": "benzeşmesi",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.1 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "center"
+            }
+          }
+        ]
+      }
+    ],
+    "162": [
+      {
+        "activity_id": "anlatalim7_8_p162",
+        "id": "anlatalim7_8_p162",
+        "button": {
+          "top": 15.0,
+          "left": 5.5
+        },
+        "items": [
+          {
+            "type": "blank",
+            "left": 10.3,
+            "top": 29.5,
+            "width": 79.3,
+            "text": "Kelimeler seslendirilirken araya \"a, e, ı\" ünlü türemesi olmuştur.",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "left",
+              "paddingLeft": "4px"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 10.3,
+            "top": 32.3,
+            "width": 79.3,
+            "text": "Ortak özellikleri tek heceli olup küçültme ekinde ünlü türemesidir.",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "left",
+              "paddingLeft": "4px"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 10.5,
+            "top": 38.2,
+            "width": 5.5,
+            "text": "Tek",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.1 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "center"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 72.8,
+            "top": 38.2,
+            "width": 5.5,
+            "text": "ünlü",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.1 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "center"
+            }
+          },
+          {
+            "type": "badge",
+            "left": 26.3,
+            "top": 56.9,
+            "width": 13.7,
+            "height": 3.3,
+            "text": "Yavrucak",
+            "style": {
+              "fontSize": "calc(1.1 * var(--unit-h))",
+              "display": "flex",
+              "alignItems": "center",
+              "justifyContent": "center"
+            }
+          },
+          {
+            "type": "badge",
+            "left": 26.3,
+            "top": 62.7,
+            "width": 13.7,
+            "height": 3.3,
+            "text": "Kızılcık",
+            "style": {
+              "fontSize": "calc(1.1 * var(--unit-h))",
+              "display": "flex",
+              "alignItems": "center",
+              "justifyContent": "center"
+            }
+          },
+          {
+            "type": "badge",
+            "left": 12.4,
+            "top": 68.0,
+            "width": 13.7,
+            "height": 3.3,
+            "text": "Bademcik",
+            "style": {
+              "fontSize": "calc(1.1 * var(--unit-h))",
+              "display": "flex",
+              "alignItems": "center",
+              "justifyContent": "center"
+            }
+          },
+          {
+            "type": "badge",
+            "left": 66.2,
+            "top": 62.4,
+            "width": 13.7,
+            "height": 3.3,
+            "text": "Müdürlük",
+            "style": {
+              "fontSize": "calc(1.1 * var(--unit-h))",
+              "display": "flex",
+              "alignItems": "center",
+              "justifyContent": "center"
+            }
+          },
+          {
+            "type": "badge",
+            "left": 50.8,
+            "top": 67.8,
+            "width": 13.7,
+            "height": 3.3,
+            "text": "Yağmurluk",
+            "style": {
+              "fontSize": "calc(1.1 * var(--unit-h))",
+              "display": "flex",
+              "alignItems": "center",
+              "justifyContent": "center"
+            }
+          },
+          {
+            "type": "badge",
+            "left": 26.8,
+            "top": 75.0,
+            "width": 13.7,
+            "height": 3.3,
+            "text": "Türkçe",
+            "style": {
+              "fontSize": "calc(1.1 * var(--unit-h))",
+              "display": "flex",
+              "alignItems": "center",
+              "justifyContent": "center"
+            }
+          },
+          {
+            "type": "badge",
+            "left": 26.8,
+            "top": 81.3,
+            "width": 13.7,
+            "height": 3.3,
+            "text": "Bence",
+            "style": {
+              "fontSize": "calc(1.1 * var(--unit-h))",
+              "display": "flex",
+              "alignItems": "center",
+              "justifyContent": "center"
+            }
+          },
+          {
+            "type": "badge",
+            "left": 67.0,
+            "top": 74.0,
+            "width": 13.7,
+            "height": 3.3,
+            "text": "Balıkçı",
+            "style": {
+              "fontSize": "calc(1.1 * var(--unit-h))",
+              "display": "flex",
+              "alignItems": "center",
+              "justifyContent": "center"
+            }
+          },
+          {
+            "type": "badge",
+            "left": 67.4,
+            "top": 80.7,
+            "width": 13.7,
+            "height": 3.3,
+            "text": "İnatçı",
+            "style": {
+              "fontSize": "calc(1.1 * var(--unit-h))",
+              "display": "flex",
+              "alignItems": "center",
+              "justifyContent": "center"
+            }
+          }
+        ]
+      }
+    ],
+    "163": [
+      {
+        "activity_id": "kitap_film_p163",
+        "id": "kitap_film_p163",
+        "button": {
+          "top": 20.0,
+          "left": 5.5
+        },
+        "items": [
+          {
+            "type": "blank",
+            "left": 21.4,
+            "top": 27.4,
+            "width": 27.6,
+            "text": "Küçük Prens",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.1 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "left",
+              "paddingLeft": "4px"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 17.0,
+            "top": 29.8,
+            "width": 32.0,
+            "text": "Antoine de Saint-Exupéry",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "left",
+              "paddingLeft": "4px"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 21.0,
+            "top": 32.1,
+            "width": 28.0,
+            "text": "96",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.1 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "left",
+              "paddingLeft": "4px"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 18.1,
+            "top": 34.3,
+            "width": 30.9,
+            "text": "Sevgi, dostluk ve insanlık",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "left",
+              "paddingLeft": "4px"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 35.7,
+            "top": 39.4,
+            "width": 13.3,
+            "text": "Küçük Prens",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "left",
+              "paddingLeft": "4px"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 10.4,
+            "top": 41.9,
+            "width": 38.6,
+            "text": "Pilot, Tilki, Gül, Kral, Yılan",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "left",
+              "paddingLeft": "4px"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 33.0,
+            "top": 44.1,
+            "width": 16.1,
+            "text": "Meraklı çocuk",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "left",
+              "paddingLeft": "4px"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 10.4,
+            "top": 46.7,
+            "width": 38.6,
+            "text": "Pilot duyarlı ve yardımseverdir.",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "left",
+              "paddingLeft": "4px"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 10.3,
+            "top": 49.2,
+            "width": 38.6,
+            "text": "Tilki sadık, gül ise narindir.",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "left",
+              "paddingLeft": "4px"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 14.9,
+            "top": 51.4,
+            "width": 34.1,
+            "text": "Sahra Çölü ve B-612 Gezegeni",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "left",
+              "paddingLeft": "4px"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 17.5,
+            "top": 53.8,
+            "width": 31.5,
+            "text": "Belirsiz geçmiş bir zaman",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "left",
+              "paddingLeft": "4px"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 17.8,
+            "top": 56.3,
+            "width": 31.2,
+            "text": "1. tekil kişi (Pilot)",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "left",
+              "paddingLeft": "4px"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 62.3,
+            "top": 27.3,
+            "width": 27.6,
+            "text": "Buz Devri (Ice Age)",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.1 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "left",
+              "paddingLeft": "4px"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 59.5,
+            "top": 29.7,
+            "width": 30.4,
+            "text": "Kutup hayvanlarının göçü",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "left",
+              "paddingLeft": "4px"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 64.3,
+            "top": 34.5,
+            "width": 25.5,
+            "text": "Manny, Sid, Diego",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "left",
+              "paddingLeft": "4px"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 75.2,
+            "top": 39.4,
+            "width": 14.7,
+            "text": "Manny güçlü",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "left",
+              "paddingLeft": "4px"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 51.9,
+            "top": 41.9,
+            "width": 37.9,
+            "text": "Sid sakar ama çok sevecendir.",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "left",
+              "paddingLeft": "4px"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 51.9,
+            "top": 44.3,
+            "width": 37.9,
+            "text": "Diego cesur ve sadık bir dosttur",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "left",
+              "paddingLeft": "4px"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 51.9,
+            "top": 46.7,
+            "width": 37.9,
+            "text": "Birlikte zorlukları aşarlar.",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "left",
+              "paddingLeft": "4px"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 55.7,
+            "top": 49.1,
+            "width": 34.1,
+            "text": "Buzul çağı vadileri, dağlar",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "left",
+              "paddingLeft": "4px"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 59.0,
+            "top": 53.8,
+            "width": 30.9,
+            "text": "Buzul Çağı dönemi",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "textAlign": "left",
+              "paddingLeft": "4px"
+            }
+          },
+          {
+            "type": "box",
+            "left": 10.5,
+            "top": 88.5,
+            "width": 80.0,
+            "height": 5.5,
+            "text": "<b style=\"color:#b45309\">İletişim Gözlem Notu:</b> Gün içinde ailemle temel ihtiyaçlar ve sevgi bağı, okulda arkadaşlarımla ders ve oyun paylaşımı, öğretmenimle öğrenme amaçlı iletişim kurdum.",
+            "style": {
+              "color": "#1e3a8a",
+              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontFamily": "Caveat, cursive",
+              "lineHeight": "1.3",
+              "padding": "4px 8px"
             }
           }
         ]
