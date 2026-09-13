@@ -277,5 +277,505 @@
         ]
       }
     ]
+  },
+  "metin_3": {
+    "baslik": "Tarihimizin Gizli Kahramanları (Jale İnan)",
+    "sayfa_araligi": "130-137",
+    "etkinlikler": [
+      {
+        "sayfa_dosya": 130,
+        "sayfa_kitap": 130,
+        "etkinlik_adi": "HAYDİ, BAŞLAYALIM! ve Değerlendirelim",
+        "tur": "Dinleme/İzleme Öncesi Tahmin ve Süreç Öz Değerlendirmesi",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.D.6.1",
+            "aciklama": "Dinlemede/izlemede materyal seçimini yönetebilme"
+          },
+          {
+            "kod": "T.K.6.1",
+            "aciklama": "Konuşma sürecini yönetebilme"
+          },
+          {
+            "kod": "T.D.6.25",
+            "aciklama": "Dinleme/izleme sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 131,
+        "sayfa_kitap": 131,
+        "etkinlik_adi": "1. ANLAYALIM",
+        "tur": "İçerik Formu, Zaman Çizelgesi ve Olayların Birbiriyle İlişkisi",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.D.6.22",
+            "aciklama": "Dinlediğini/izlediğini değerlendirebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 132,
+        "sayfa_kitap": 132,
+        "etkinlik_adi": "2. ANLAYALIM ve 3. ANLAYALIM",
+        "tur": "Anahtar Kelimeler Kartları ve İçeriğin Bölümleri (Giriş/Gelişme/Sonuç)",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.D.6.22",
+            "aciklama": "Dinlediğini/izlediğini değerlendirebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 133,
+        "sayfa_kitap": 133,
+        "etkinlik_adi": "4, 5 ve 6. ANLAYALIM",
+        "tur": "Müzik Kullanımı Değerlendirme, İlk Engel Çözümü ve Bakış Açısı Seçimi",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.D.6.23",
+            "aciklama": "Dinlediğini/izlediğini eleştirebilme"
+          },
+          {
+            "kod": "T.D.6.24",
+            "aciklama": "Dinlediğindeki/izlediğindeki probleme çözüm üretebilme"
+          },
+          {
+            "kod": "T.D.6.22",
+            "aciklama": "Dinlediğini/izlediğini değerlendirebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 134,
+        "sayfa_kitap": 134,
+        "etkinlik_adi": "7. ANLAYALIM ve 8. ANLAYALIM",
+        "tur": "Karakter Özellikleri, Liderlik Bilgileri ve Görsel Çözümleme",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.D.6.22",
+            "aciklama": "Dinlediğini/izlediğini değerlendirebilme"
+          },
+          {
+            "kod": "T.K.6.16",
+            "aciklama": "Değerlendirmesini sözlü olarak ifade edebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 135,
+        "sayfa_kitap": 135,
+        "etkinlik_adi": "1. ve 2. ANLATALIM",
+        "tur": "Alfabetik Doğaçlama Konuşma ve Arkeolog Rolüyle Anı Anlatımı",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.K.6.1",
+            "aciklama": "Konuşma sürecini yönetebilme"
+          },
+          {
+            "kod": "T.K.6.16",
+            "aciklama": "Değerlendirmesini sözlü olarak ifade edebilme"
+          },
+          {
+            "kod": "T.K.6.19",
+            "aciklama": "Problem çözümüne yönelik konuşma yapabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 136,
+        "sayfa_kitap": 136,
+        "etkinlik_adi": "3. ve 4. ANLATALIM",
+        "tur": "Oyuncak Hikâyesi Konuşması ve Çoklu Ortam Ögeli Bilgilendirici Yazı Planı",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.K.6.24",
+            "aciklama": "Uygun geçiş ve bağlantı ifadelerini kullanabilme"
+          },
+          {
+            "kod": "T.Y.6.1",
+            "aciklama": "Yazma sürecini yönetebilme"
+          },
+          {
+            "kod": "T.Y.6.18",
+            "aciklama": "Yazısını zenginleştirecek biçimde söz varlığını kullanabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 137,
+        "sayfa_kitap": 137,
+        "etkinlik_adi": "5. ANLATALIM",
+        "tur": "Marcus Aurelius Metnini Ölçüte Göre Eleştirme ve Çözüm Yazısı",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.25",
+            "aciklama": "Metni eleştirebilme"
+          },
+          {
+            "kod": "T.Y.6.15",
+            "aciklama": "Eleştirisini yazılı olarak ifade edebilme"
+          }
+        ]
+      }
+    ]
+  },
+  "metin_4": {
+    "baslik": "Türk Denizcileri ve Piri Reis",
+    "sayfa_araligi": "138-148",
+    "etkinlikler": [
+      {
+        "sayfa_dosya": 138,
+        "sayfa_kitap": 138,
+        "etkinlik_adi": "Metin Okuma: Türk Denizcileri ve Piri Reis",
+        "tur": "Metin İçi Okuma ve Anlamlandırma",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.1",
+            "aciklama": "Okumada materyal seçimini yönetebilme"
+          },
+          {
+            "kod": "T.O.6.24",
+            "aciklama": "Okuduğunu değerlendirebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 139,
+        "sayfa_kitap": 139,
+        "etkinlik_adi": "Metin Okuma (Devam)",
+        "tur": "Metin İçi Okuma ve Anlamlandırma",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.24",
+            "aciklama": "Okuduğunu değerlendirebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 140,
+        "sayfa_kitap": 140,
+        "etkinlik_adi": "1. ANLAYALIM ve 2. ANLAYALIM",
+        "tur": "Metin Değerlendirme Ölçütleri ve Liderlik Özellikleri",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.24",
+            "aciklama": "Okuduğunu değerlendirebilme"
+          },
+          {
+            "kod": "T.O.6.25",
+            "aciklama": "Metni eleştirebilme"
+          },
+          {
+            "kod": "T.K.6.16",
+            "aciklama": "Değerlendirmesini sözlü olarak ifade edebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 141,
+        "sayfa_kitap": 141,
+        "etkinlik_adi": "3. ANLAYALIM ve 4. ANLAYALIM",
+        "tur": "Kâtip Çelebi Dinleme/İzleme ve Çoklu Medya Ögelerinin İşlevleri",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.D.6.1",
+            "aciklama": "Dinlemede/izlemede materyal seçimini yönetebilme"
+          },
+          {
+            "kod": "T.D.6.22",
+            "aciklama": "Dinlediğini/izlediğini değerlendirebilme"
+          },
+          {
+            "kod": "T.D.6.23",
+            "aciklama": "Dinlediğini/izlediğini eleştirebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 142,
+        "sayfa_kitap": 142,
+        "etkinlik_adi": "5. ANLAYALIM",
+        "tur": "Evrensel Kod Bayrakları, Olay Örgüsü ve Akıl Yürütme",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.24",
+            "aciklama": "Okuduğunu değerlendirebilme"
+          },
+          {
+            "kod": "T.O.6.26",
+            "aciklama": "Metindeki probleme çözüm üretebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 143,
+        "sayfa_kitap": 143,
+        "etkinlik_adi": "1. ANLATALIM",
+        "tur": "Karagöz ile Hacivat ve Olumsuzluk Bildiren Söz Varlıkları",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.K.6.1",
+            "aciklama": "Konuşma sürecini yönetebilme"
+          },
+          {
+            "kod": "T.K.6.16",
+            "aciklama": "Değerlendirmesini sözlü olarak ifade edebilme"
+          },
+          {
+            "kod": "T.O.6.24",
+            "aciklama": "Okuduğunu değerlendirebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 144,
+        "sayfa_kitap": 144,
+        "etkinlik_adi": "2. ANLATALIM ve Değerlendirelim",
+        "tur": "Konuşma Süreci ve Yıldızlı Öz Değerlendirme Çizelgesi",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.K.6.1",
+            "aciklama": "Konuşma sürecini yönetebilme"
+          },
+          {
+            "kod": "T.K.6.26",
+            "aciklama": "Konuşma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 145,
+        "sayfa_kitap": 145,
+        "etkinlik_adi": "3. ANLATALIM ve 4. ANLATALIM",
+        "tur": "Meslek Seçimi ve İbni Sina Paragrafında Benzerlik İfadeleri",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.K.6.1",
+            "aciklama": "Konuşma sürecini yönetebilme"
+          },
+          {
+            "kod": "T.O.6.24",
+            "aciklama": "Okuduğunu değerlendirebilme"
+          },
+          {
+            "kod": "T.K.6.16",
+            "aciklama": "Değerlendirmesini sözlü olarak ifade edebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 146,
+        "sayfa_kitap": 146,
+        "etkinlik_adi": "5. ANLATALIM ve 6. ANLATALIM",
+        "tur": "Önemli/Önemsiz Olaylar ve Fikir Yazısı Karşılaştırmalı İncelemesi",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.24",
+            "aciklama": "Okuduğunu değerlendirebilme"
+          },
+          {
+            "kod": "T.Y.6.1",
+            "aciklama": "Yazma sürecini yönetebilme"
+          },
+          {
+            "kod": "T.Y.6.13",
+            "aciklama": "Değerlendirmesini yazılı olarak ifade edebilme"
+          },
+          {
+            "kod": "T.Y.6.15",
+            "aciklama": "Eleştirisini yazılı olarak ifade edebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 147,
+        "sayfa_kitap": 147,
+        "etkinlik_adi": "7. ANLATALIM",
+        "tur": "Problem Çözme Basamakları ve Mesajlaşma Diyaloğu Tamamlama",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.26",
+            "aciklama": "Metindeki probleme çözüm üretebilme"
+          },
+          {
+            "kod": "T.Y.6.16",
+            "aciklama": "Problem çözümüne yönelik yazabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 148,
+        "sayfa_kitap": 148,
+        "etkinlik_adi": "Bi' Kitap, Bi' Film...",
+        "tur": "Kitap ve Film Karşılaştırmalı İncelemesi ve Eleştirel Değerlendirme",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.24",
+            "aciklama": "Okuduğunu değerlendirebilme"
+          },
+          {
+            "kod": "T.O.6.25",
+            "aciklama": "Metni eleştirebilme"
+          },
+          {
+            "kod": "T.Y.6.13",
+            "aciklama": "Değerlendirmesini yazılı olarak ifade edebilme"
+          },
+          {
+            "kod": "T.Y.6.15",
+            "aciklama": "Eleştirisini yazılı olarak ifade edebilme"
+          }
+        ]
+      }
+    ]
+  },
+  "metin_5": {
+    "baslik": "Okumak Gibisi Yok!: Masal Babası Eflatun Cem Güney",
+    "sayfa_araligi": "149",
+    "etkinlikler": [
+      {
+        "sayfa_dosya": 149,
+        "sayfa_kitap": 149,
+        "etkinlik_adi": "Serbest Okuma: Masal Babası Eflatun Cem Güney",
+        "tur": "Serbest Okuma ve Kültürel Değerleri Fark Etme",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.1",
+            "aciklama": "Okumada materyal seçimini yönetebilme"
+          },
+          {
+            "kod": "T.O.6.24",
+            "aciklama": "Okuduğunu değerlendirebilme"
+          }
+        ]
+      }
+    ]
+  },
+  "uretmek_gibisi_yok": {
+    "baslik": "Üretmek Gibisi Yok!",
+    "sayfa_araligi": "150-151",
+    "etkinlikler": [
+      {
+        "sayfa_dosya": 150,
+        "sayfa_kitap": 150,
+        "etkinlik_adi": "Türk Büyükleri ve Sunum Öz Değerlendirmesi",
+        "tur": "Araştırma, Sunum ve Konuşma Becerisi Öz Değerlendirmesi",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.K.6.1",
+            "aciklama": "Konuşma sürecini yönetebilme"
+          },
+          {
+            "kod": "T.K.6.16",
+            "aciklama": "Değerlendirmesini sözlü olarak ifade edebilme"
+          },
+          {
+            "kod": "T.K.6.26",
+            "aciklama": "Konuşma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 151,
+        "sayfa_kitap": 151,
+        "etkinlik_adi": "Girişimcilik ve Reklam Broşürü Tasarımı",
+        "tur": "Problem Çözme, Reklam Broşürü Planlama ve Yazma Öz Değerlendirmesi",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.Y.6.1",
+            "aciklama": "Yazma sürecini yönetebilme"
+          },
+          {
+            "kod": "T.Y.6.16",
+            "aciklama": "Problem çözümüne yönelik yazabilme"
+          },
+          {
+            "kod": "T.Y.6.22",
+            "aciklama": "Yazma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+          }
+        ]
+      }
+    ]
+  },
+  "bu_tema_baska_tema": {
+    "baslik": "Bu Tema Başka Tema!",
+    "sayfa_araligi": "152",
+    "etkinlikler": [
+      {
+        "sayfa_dosya": 152,
+        "sayfa_kitap": 152,
+        "etkinlik_adi": "Tema Sonu Öz Yansıtma ve Değerlendirme",
+        "tur": "Tema Genel Değerlendirmesi ve Öz Yansıtma",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.27",
+            "aciklama": "Okuma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+          },
+          {
+            "kod": "T.Y.6.22",
+            "aciklama": "Yazma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+          }
+        ]
+      }
+    ]
+  },
+  "tema_sonu_degerlendirme": {
+    "baslik": "Haydi, Bitirelim! (Tema Sonu Değerlendirme)",
+    "sayfa_araligi": "153-155",
+    "etkinlikler": [
+      {
+        "sayfa_dosya": 153,
+        "sayfa_kitap": 153,
+        "etkinlik_adi": "1. Soru: Türk Bilim İnsanları ve Tanım Eşleştirmesi",
+        "tur": "Okuduğunu Anlama, Kavram Bilgisi ve Karakter Analizi",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.24",
+            "aciklama": "Okuduğunu değerlendirebilme"
+          },
+          {
+            "kod": "T.O.6.25",
+            "aciklama": "Metni eleştirebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 154,
+        "sayfa_kitap": 154,
+        "etkinlik_adi": "2. Soru: Finansal Bilinç ve Problem Çözme",
+        "tur": "Problem Çözme, Alternatif Geliştirme ve Rol Canlandırma",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.26",
+            "aciklama": "Metindeki probleme çözüm üretebilme"
+          },
+          {
+            "kod": "T.Y.6.16",
+            "aciklama": "Problem çözümüne yönelik yazabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 155,
+        "sayfa_kitap": 155,
+        "etkinlik_adi": "3, 4 ve 5. Sorular: Âşık Veysel, Dörtlük İmlası ve Para Bilmecesi",
+        "tur": "Dinleme/İzleme, Noktalama ve Yazım Kuralları, Kültürel Çıkarım",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.D.6.22",
+            "aciklama": "Dinlediğini/izlediğini değerlendirebilme"
+          },
+          {
+            "kod": "T.Y.6.21",
+            "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+          },
+          {
+            "kod": "T.O.6.24",
+            "aciklama": "Okuduğunu değerlendirebilme"
+          }
+        ]
+      }
+    ]
   }
 }

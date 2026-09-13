@@ -838,5 +838,184 @@
         ]
       }
     ]
+  },
+  "tema_sonu": {
+    "baslik": "3. Tema Sonu: Okumak Gibisi Yok, Üretmek Gibisi Yok, Bu Tema Başka Tema & Haydi, Bitirelim!",
+    "sayfa_araligi": "164 - 172",
+    "isleme_tarihi": "20 - 24 Ocak",
+    "etkinlikler": [
+      {
+        "sayfa_dosya": 164,
+        "sayfa_kitap": 164,
+        "etkinlik_adi": "OKUMAK GİBİSİ YOK! (Gelin Türk Dünyasını Keşfedelim)",
+        "tur": "Serbest Okuma Metni & Kültürel Coğrafya",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.1",
+            "aciklama": "Okumada materyal seçimini yönetebilme"
+          },
+          {
+            "kod": "T.O.6.17",
+            "aciklama": "Metnin bölümlerini belirlemeye yönelik çözümleme yapabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 165,
+        "sayfa_kitap": 165,
+        "etkinlik_adi": "Gelin Türk Dünyasını Keşfedelim (Devam) & Doğrusunu Bilelim",
+        "tur": "Kültürel Miras & Yazım-Noktalama Farkındalığı",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.1",
+            "aciklama": "Okumada materyal seçimini yönetebilme"
+          },
+          {
+            "kod": "T.Y.6.21",
+            "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 166,
+        "sayfa_kitap": 166,
+        "etkinlik_adi": "ÜRETMEK GİBİSİ YOK! - Konuşma",
+        "tur": "Kültür Karşılaştırmalı Sunum ve Konuşma Öz Değerlendirme Rubriği",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.K.6.1",
+            "aciklama": "Konuşma sürecini yönetebilme"
+          },
+          {
+            "kod": "T.K.6.14",
+            "aciklama": "Yorumunu sözlü olarak ifade edebilme"
+          },
+          {
+            "kod": "T.K.6.26",
+            "aciklama": "Konuşma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 167,
+        "sayfa_kitap": 167,
+        "etkinlik_adi": "FARKLI DÜNYALAR - Yazma",
+        "tur": "Tabela Kirliliği Problem Tespiti, Çözüm E-Postası ve Yazma Rubriği",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.Y.6.1",
+            "aciklama": "Yazma sürecini yönetebilme"
+          },
+          {
+            "kod": "T.Y.6.17",
+            "aciklama": "Yazısında düşünceyi geliştirme yollarını kullanabilme"
+          },
+          {
+            "kod": "T.Y.6.21",
+            "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+          },
+          {
+            "kod": "T.Y.6.22",
+            "aciklama": "Yazma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 168,
+        "sayfa_kitap": 168,
+        "etkinlik_adi": "BU TEMA BAŞKA TEMA!",
+        "tur": "Tema Yansıtma, Slogan, Günlük Yaşama Yansımalar ve Ayrıntı Sayfa Bulma",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.27",
+            "aciklama": "Okuma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+          },
+          {
+            "kod": "T.K.6.26",
+            "aciklama": "Konuşma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+          },
+          {
+            "kod": "T.Y.6.22",
+            "aciklama": "Yazma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 169,
+        "sayfa_kitap": 169,
+        "etkinlik_adi": "HAYDİ, BİTİRELİM! - 1. Soru",
+        "tur": "Buz Tutan Göllerde Eskimo Usulü Balık Avı & Muhabir Rolünde Konuşma",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.7",
+            "aciklama": "Görselle iletilen anlamı belirleyebilme"
+          },
+          {
+            "kod": "T.K.6.1",
+            "aciklama": "Konuşma sürecini yönetebilme"
+          },
+          {
+            "kod": "T.K.6.14",
+            "aciklama": "Yorumunu sözlü olarak ifade edebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 170,
+        "sayfa_kitap": 170,
+        "etkinlik_adi": "HAYDİ, BİTİRELİM! - 2. ve 3. Soru",
+        "tur": "Eski Mısır Sayı Sistemi Çevirisi & Dünyadan İzole Yaşamlar Video Analizi",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.D.6.1",
+            "aciklama": "Dinlemede/izlemede materyal seçimini yönetebilme"
+          },
+          {
+            "kod": "T.D.6.8",
+            "aciklama": "Dinlediğinin/izlediğinin derin anlamını belirlemeye yönelik üst düzey çıkarımlar yapabilme"
+          },
+          {
+            "kod": "T.D.6.20",
+            "aciklama": "Çoklu ortam ögelerine yönelik çözümleme yapabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 171,
+        "sayfa_kitap": 171,
+        "etkinlik_adi": "HAYDİ, BİTİRELİM! - 4., 5. ve 6. Soru",
+        "tur": "Yeşil Okul Puanlama, Bayrak Karşılaştırma, 'Çin'den Uçurtma Bekledim' Şiir Analizi",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.D.6.9",
+            "aciklama": "Dinlediğini/izlediğini kendi içinde karşılaştırabilme"
+          },
+          {
+            "kod": "T.D.6.10",
+            "aciklama": "Dinledikleri/izledikleri arasında karşılaştırma yapabilme"
+          },
+          {
+            "kod": "T.O.6.18",
+            "aciklama": "Şiirin biçim özelliklerini belirlemeye yönelik çözümleme yapabilme"
+          },
+          {
+            "kod": "T.Y.6.21",
+            "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 172,
+        "sayfa_kitap": 172,
+        "etkinlik_adi": "KAYNAKÇA",
+        "tur": "Kitap Kaynakçası ve APA 7 Akademik Dürüstlük Okuryazarlığı",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.1",
+            "aciklama": "Okumada materyal seçimini yönetebilme"
+          }
+        ]
+      }
+    ]
   }
 }

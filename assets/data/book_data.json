@@ -35145,6 +35145,37 @@
       "T.O.6.25. Metni eleştirebilme",
       "T.Y.6.13. Değerlendirmesini yazılı olarak ifade edebilme",
       "T.Y.6.15. Eleştirisini yazılı olarak ifade edebilme"
+    ],
+    "149": [
+      "T.O.6.1. Okumada materyal seçimini yönetebilme",
+      "T.O.6.24. Okuduğunu değerlendirebilme"
+    ],
+    "150": [
+      "T.K.6.1. Konuşma sürecini yönetebilme",
+      "T.K.6.16. Değerlendirmesini sözlü olarak ifade edebilme",
+      "T.K.6.26. Konuşma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+    ],
+    "151": [
+      "T.Y.6.1. Yazma sürecini yönetebilme",
+      "T.Y.6.16. Problem çözümüne yönelik yazabilme",
+      "T.Y.6.22. Yazma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+    ],
+    "152": [
+      "T.O.6.27. Okuma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme",
+      "T.Y.6.22. Yazma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+    ],
+    "153": [
+      "T.O.6.24. Okuduğunu değerlendirebilme",
+      "T.O.6.25. Metni eleştirebilme"
+    ],
+    "154": [
+      "T.O.6.26. Metindeki probleme çözüm üretebilme",
+      "T.Y.6.16. Problem çözümüne yönelik yazabilme"
+    ],
+    "155": [
+      "T.D.6.22. Dinlediğini/izlediğini değerlendirebilme",
+      "T.Y.6.21. Yazım kuralları ve noktalama işaretlerini uygulayabilme",
+      "T.O.6.24. Okuduğunu değerlendirebilme"
     ]
   },
   "book2_inpage_answers": {
@@ -43662,6 +43693,667 @@
             "top": 42.9,
             "width": 30.5,
             "text": "Kış mevsimi"
+          }
+        ]
+      }
+    ],
+    "150": [
+      {
+        "id": "p150_turk_buyukleri",
+        "title": "ÜRETMEK GİBİSİ YOK!: Türk Büyükleri ve Konuşma Değerlendirmesi",
+        "button": {
+          "left": 5.5,
+          "top": 10.5
+        },
+        "items": [
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 18.0,
+            "width": 77.0,
+            "text": "Aziz Sancar: Hücrelerin hasar gören DNA'larını nasıl onardığını"
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 20.6,
+            "width": 77.0,
+            "text": "haritalandırarak Nobel Kimya Ödülü kazanmış Türk bilim insanıdır."
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 25.0,
+            "width": 77.0,
+            "text": "Barış Manço: Şarkıları ve programlarıyla Türk kültürünü"
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 27.6,
+            "width": 77.0,
+            "text": "tüm dünyaya tanıtan, çocukların sevgilisi usta bir sanatçıdır."
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 31.8,
+            "width": 77.0,
+            "text": "Naim Süleymanoğlu: Kendi ağırlığının üç katını kaldırarak dünya"
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 34.4,
+            "width": 77.0,
+            "text": "kıran, 'Cep Herkülü' lakaplı efsanevi milli haltercimizdir."
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 38.6,
+            "width": 77.0,
+            "text": "Sabiha Gökçen: Türkiye'nin ve dünyanın ilk kadın savaş uçağı"
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 41.2,
+            "width": 77.0,
+            "text": "pilotu olarak tarihe geçmiş cesur bir öncümüzdür."
+          },
+          {
+            "type": "blank",
+            "left": 84.0,
+            "top": 66.8,
+            "width": 3.5,
+            "text": "5",
+            "style": {
+              "color": "#16a34a",
+              "fontWeight": "bold",
+              "fontSize": "1.1rem"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 84.0,
+            "top": 69.3,
+            "width": 3.5,
+            "text": "5",
+            "style": {
+              "color": "#16a34a",
+              "fontWeight": "bold",
+              "fontSize": "1.1rem"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 84.0,
+            "top": 71.9,
+            "width": 3.5,
+            "text": "5",
+            "style": {
+              "color": "#16a34a",
+              "fontWeight": "bold",
+              "fontSize": "1.1rem"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 84.0,
+            "top": 75.2,
+            "width": 3.5,
+            "text": "5",
+            "style": {
+              "color": "#16a34a",
+              "fontWeight": "bold",
+              "fontSize": "1.1rem"
+            }
+          },
+          {
+            "type": "lines",
+            "left": 37.5,
+            "top": 84.6,
+            "width": 52.0,
+            "text": "Heyecanımı kontrol edebilmek,"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 86.9,
+            "width": 79.0,
+            "text": "dinleyicilerin sorularına daha hızlı ve net cevaplar verebilmek."
+          },
+          {
+            "type": "lines",
+            "left": 43.0,
+            "top": 89.4,
+            "width": 46.5,
+            "text": "Ses tonumu iyi ayarlamam,"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 91.8,
+            "width": 79.0,
+            "text": "etkili göz teması kurarak dinleyicilerin dikkatini canlı tutmam."
+          }
+        ]
+      }
+    ],
+    "151": [
+      {
+        "id": "p151_reklam_brosuru",
+        "title": "ÜRETMEK GİBİSİ YOK!: Reklam Broşürü ve Yazma Değerlendirmesi",
+        "button": {
+          "left": 5.5,
+          "top": 10.0
+        },
+        "items": [
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 15.3,
+            "width": 79.0,
+            "text": "Gelecekte yazılım, yapay zekâ ve yenilenebilir enerji sektörlerinde"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 17.2,
+            "width": 79.0,
+            "text": "yer almak isterim çünkü bu alanlar dünyayı şekillendirmektedir."
+          },
+          {
+            "type": "lines",
+            "left": 41.5,
+            "top": 27.5,
+            "width": 48.0,
+            "text": "Güneş enerjisiyle çalışan akıllı çanta"
+          },
+          {
+            "type": "lines",
+            "left": 38.0,
+            "top": 29.8,
+            "width": 51.5,
+            "text": "Ürünün yeterince tanınmaması."
+          },
+          {
+            "type": "lines",
+            "left": 68.5,
+            "top": 32.3,
+            "width": 21.0,
+            "text": "Sosyal medyada,"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 34.9,
+            "width": 79.0,
+            "text": "okullarda çevre dostu enerji tanıtım broşürleri dağıtmak."
+          },
+          {
+            "type": "lines",
+            "left": 62.5,
+            "top": 37.1,
+            "width": 27.0,
+            "text": "'Doğa Dostu Çanta'"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 39.3,
+            "width": 79.0,
+            "text": "sloganı ve güneş panelli çantayı gösteren renkli görseller."
+          },
+          {
+            "type": "blank",
+            "left": 84.0,
+            "top": 52.3,
+            "width": 3.5,
+            "text": "5",
+            "style": {
+              "color": "#16a34a",
+              "fontWeight": "bold",
+              "fontSize": "1.1rem"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 84.0,
+            "top": 54.9,
+            "width": 3.5,
+            "text": "5",
+            "style": {
+              "color": "#16a34a",
+              "fontWeight": "bold",
+              "fontSize": "1.1rem"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 84.0,
+            "top": 57.5,
+            "width": 3.5,
+            "text": "5",
+            "style": {
+              "color": "#16a34a",
+              "fontWeight": "bold",
+              "fontSize": "1.1rem"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 84.0,
+            "top": 60.8,
+            "width": 3.5,
+            "text": "5",
+            "style": {
+              "color": "#16a34a",
+              "fontWeight": "bold",
+              "fontSize": "1.1rem"
+            }
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 71.3,
+            "width": 79.0,
+            "text": "Hazırlanan broşürle ürünün yararları geniş kitlelere ulaşır,"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 75.1,
+            "width": 79.0,
+            "text": "farkındalık artarak ürün satışlarına doğrudan olumlu katkı sağlar."
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 79.2,
+            "width": 79.0,
+            "text": "Müşterilerin çevre bilinci geliştikçe markaya olan güven pekişir."
+          }
+        ]
+      }
+    ],
+    "152": [
+      {
+        "id": "p152_tema_yansitma",
+        "title": "BU TEMA BAŞKA TEMA!: Tema Yansıtma ve Değerlendirme",
+        "button": {
+          "left": 5.5,
+          "top": 5.5
+        },
+        "items": [
+          {
+            "type": "lines",
+            "left": 18.5,
+            "top": 27.2,
+            "width": 14.0,
+            "text": "Öncülük",
+            "style": {
+              "textAlign": "center",
+              "fontWeight": "bold",
+              "color": "#1e40af"
+            }
+          },
+          {
+            "type": "lines",
+            "left": 64.0,
+            "top": 28.0,
+            "width": 27.0,
+            "text": "İz Bırakan Öncüler",
+            "style": {
+              "textAlign": "center",
+              "fontWeight": "bold",
+              "color": "#1e40af"
+            }
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 41.5,
+            "width": 26.0,
+            "text": "Azim ve kararlılık",
+            "style": {
+              "fontSize": "1.15rem"
+            }
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 45.5,
+            "width": 30.0,
+            "text": "Girişimci ve üretken olma",
+            "style": {
+              "fontSize": "1.15rem"
+            }
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 49.5,
+            "width": 30.0,
+            "text": "Zorluklara direnme",
+            "style": {
+              "fontSize": "1.15rem"
+            }
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 53.5,
+            "width": 30.0,
+            "text": "Topluma faydalı liderlik",
+            "style": {
+              "fontSize": "1.15rem"
+            }
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 57.5,
+            "width": 26.0,
+            "text": "Kültürü koruma",
+            "style": {
+              "fontSize": "1.15rem"
+            }
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 61.5,
+            "width": 26.0,
+            "text": "Öncü ve lider olma",
+            "style": {
+              "fontSize": "1.15rem"
+            }
+          },
+          {
+            "type": "lines",
+            "left": 42.0,
+            "top": 41.0,
+            "width": 58.0,
+            "text": "İnançla yola çık, azminle geleceğe lider ol!",
+            "style": {
+              "textAlign": "center",
+              "color": "#1e40af"
+            }
+          },
+          {
+            "type": "lines",
+            "left": 43.0,
+            "top": 67.5,
+            "width": 14.0,
+            "text": "Sayfa 114",
+            "style": {
+              "textAlign": "center",
+              "color": "#dc2626",
+              "fontWeight": "bold"
+            }
+          },
+          {
+            "type": "lines",
+            "left": 62.0,
+            "top": 55.0,
+            "width": 14.0,
+            "text": "Sayfa 130",
+            "style": {
+              "textAlign": "center",
+              "color": "#dc2626",
+              "fontWeight": "bold"
+            }
+          },
+          {
+            "type": "lines",
+            "left": 76.0,
+            "top": 67.0,
+            "width": 14.0,
+            "text": "Sayfa 138",
+            "style": {
+              "textAlign": "center",
+              "color": "#dc2626",
+              "fontWeight": "bold"
+            }
+          }
+        ]
+      }
+    ],
+    "153": [
+      {
+        "id": "p153_tanimlar_ve_ozellikler",
+        "title": "HAYDİ, BİTİRELİM!: Tanımlar ve Ortak Özellikler",
+        "button": {
+          "left": 5.5,
+          "top": 58.0
+        },
+        "items": [
+          {
+            "type": "blank",
+            "left": 12.0,
+            "top": 65.4,
+            "width": 12.0,
+            "text": "Özel",
+            "style": {
+              "color": "#1d4ed8",
+              "fontWeight": "bold",
+              "textAlign": "center"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 12.0,
+            "top": 69.2,
+            "width": 12.0,
+            "text": "Dağdeviren",
+            "style": {
+              "color": "#1d4ed8",
+              "fontWeight": "bold",
+              "textAlign": "center"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 12.0,
+            "top": 72.6,
+            "width": 12.0,
+            "text": "Ketin",
+            "style": {
+              "color": "#1d4ed8",
+              "fontWeight": "bold",
+              "textAlign": "center"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 12.0,
+            "top": 75.6,
+            "width": 12.0,
+            "text": "Ketin",
+            "style": {
+              "color": "#1d4ed8",
+              "fontWeight": "bold",
+              "textAlign": "center"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 12.0,
+            "top": 78.6,
+            "width": 12.0,
+            "text": "Özel",
+            "style": {
+              "color": "#1d4ed8",
+              "fontWeight": "bold",
+              "textAlign": "center"
+            }
+          },
+          {
+            "type": "blank",
+            "left": 12.0,
+            "top": 81.6,
+            "width": 12.0,
+            "text": "Dağdeviren",
+            "style": {
+              "color": "#1d4ed8",
+              "fontWeight": "bold",
+              "textAlign": "center"
+            }
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 87.7,
+            "width": 79.0,
+            "text": "1. Meraklı ve araştırmacı olmaları, 2. Çalışkan ve azimli olmaları,"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 91.0,
+            "width": 79.0,
+            "text": "3. Üretken ve kararlı olmaları."
+          }
+        ]
+      }
+    ],
+    "154": [
+      {
+        "id": "p154_problem_cozme",
+        "title": "HAYDİ, BİTİRELİM!: Finansal Bilinç ve Problem Çözme",
+        "button": {
+          "left": 5.5,
+          "top": 48.0
+        },
+        "items": [
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 51.7,
+            "width": 79.0,
+            "text": "Efe'nin problemi, biriktirdiği parayla hemen akıllı saat almak"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 54.4,
+            "width": 79.0,
+            "text": "ile birikime devam etmek arasında kararsız kalmasıdır."
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 60.4,
+            "width": 79.0,
+            "text": "1. Çözüm: Paranın bir kısmıyla saati alıp kalanını biriktirmek."
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 63.1,
+            "width": 79.0,
+            "text": "2. Çözüm: Ablasını dinleyip sabrederek daha çok birikim yapmak."
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 65.7,
+            "width": 79.0,
+            "text": "3. Çözüm: İhtiyacı karşılayan daha uygun fiyatlı bir saat seçmek."
+          }
+        ]
+      }
+    ],
+    "155": [
+      {
+        "id": "p155_noktalama_ve_dortluk",
+        "title": "HAYDİ, BİTİRELİM!: İki Nokta ve Dörtlük Düzeltme",
+        "button": {
+          "left": 5.5,
+          "top": 22.0
+        },
+        "items": [
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 41.1,
+            "width": 79.0,
+            "text": "Kendisinden sonra açıklama yapılacağını ve bir alıntı"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 43.7,
+            "width": 79.0,
+            "text": "dörtlüğe yer verileceğini belirtmek amacıyla kullanılmıştır."
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 52.9,
+            "width": 79.0,
+            "text": "Sinan'da estetik, Itrî'de ahenk / Sebillerde hayat,"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 55.5,
+            "width": 79.0,
+            "text": "kubbelerde renk / Mevlânâ'da ilim, Barbaros'ta cenk /"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 58.2,
+            "width": 79.0,
+            "text": "Bir güzel ülküdür gönül verdiğim."
+          }
+        ]
+      },
+      {
+        "id": "p155_para_bilmecesi",
+        "title": "HAYDİ, BİTİRELİM!: Kâğıt Paralar ve Türk Büyükleri",
+        "button": {
+          "left": 5.5,
+          "top": 62.0
+        },
+        "items": [
+          {
+            "type": "lines",
+            "left": 24.0,
+            "top": 76.8,
+            "width": 65.5,
+            "text": "Mehmet Âkif Ersoy"
+          },
+          {
+            "type": "lines",
+            "left": 24.0,
+            "top": 79.2,
+            "width": 65.5,
+            "text": "İzmir Saat Kulesi"
+          },
+          {
+            "type": "lines",
+            "left": 25.0,
+            "top": 81.5,
+            "width": 64.5,
+            "text": "Fatih Sultan Mehmet"
+          },
+          {
+            "type": "lines",
+            "left": 25.0,
+            "top": 84.1,
+            "width": 64.5,
+            "text": "Mevlânâ Celâleddîn-i Rûmî"
+          },
+          {
+            "type": "lines",
+            "left": 26.5,
+            "top": 86.5,
+            "width": 46.5,
+            "text": "Mimar Sinan"
           }
         ]
       }

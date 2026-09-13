@@ -91,3 +91,24 @@
 | **161** | **6. ANLATALIM** | Dil Bilgisi: Ünsüz Benzeşmesi (Sertleşmesi) Tablosu ve Akış Şeması | `T.O.6.21` |
 | **162** | **7. ve 8. ANLATALIM** | Dil Bilgisi: Ünlü Türemesi ve Yapım Ekleri (-ca, -cı, -cık, -lık) İşlev Eşleştirmesi | `T.O.6.21` |
 | **163** | **Bİ' KİTAP, Bİ' FİLM...** | Kitap ve Film Eleştirel İnceleme Formları & Günlük İletişim Gözlemi | `T.O.6.1`, `T.D.6.1`, `T.Y.6.22` |
+
+---
+
+## TEMA SONU DEĞERLENDİRME VE ETKİNLİKLERİ
+- **Bölüm Adı:** Okumak Gibisi Yok, Üretmek Gibisi Yok, Bu Tema Başka Tema & Haydi, Bitirelim!
+- **Sayfa Aralığı:** 164 - 172 (Kitapta 164 - 172)
+- **İşleme Tarihi:** 20 - 24 Ocak
+
+### Etkinlik ve Öğrenme Çıktıları Dağılımı:
+
+| Sayfa | Etkinlik Başlığı | Etkinliğin Türü / Konusu | İlgili Öğrenme Çıktıları |
+|:---:|:---|:---|:---|
+| **164** | **OKUMAK GİBİSİ YOK!** | Gelin "Türk Dünyasını" Keşfedelim Okuma Metni (Giriş) | `T.O.6.1`, `T.O.6.17` |
+| **165** | **Gelin "Türk Dünyasını" Keşfedelim & Doğrusunu Bilelim** | Kültürel Miras & Güncel Yazım-Noktalama Farkındalığı | `T.O.6.1`, `T.Y.6.21` |
+| **166** | **ÜRETMEK GİBİSİ YOK!** | Konuşma: Kültür Karşılaştırmalı Sunum & Konuşma Öz Değerlendirme Rubriği | `T.K.6.1`, `T.K.6.14`, `T.K.6.26` |
+| **167** | **FARKLI DÜNYALAR** | Yazma: Tabela Kirliliği Problem Tespiti, Çözüm E-Postası & Yazma Rubriği | `T.Y.6.1`, `T.Y.6.17`, `T.Y.6.21`, `T.Y.6.22` |
+| **168** | **BU TEMA BAŞKA TEMA!** | Tema Yansıtma, Slogan, Günlük Yaşama Yansımalar ve Görsel Ayrıntı Bulma | `T.O.6.27`, `T.K.6.26`, `T.Y.6.22` |
+| **169** | **HAYDİ, BİTİRELİM! - 1. Soru** | Eskimo Usulü Balık Avı Görsel Eşleştirme & Muhabir Rolünde Konuşma | `T.O.6.7`, `T.K.6.1`, `T.K.6.14` |
+| **170** | **HAYDİ, BİTİRELİM! - 2. ve 3. Soru** | Eski Mısır Rakamları Çevirisi & "Dünyadan İzole Yaşamlar" Video Analizi | `T.D.6.1`, `T.D.6.8`, `T.D.6.20` |
+| **171** | **HAYDİ, BİTİRELİM! - 4., 5. ve 6. Soru** | Yeşil Okul Puanlama, Bayrak Karşılaştırma & "Çin'den Uçurtma Bekledim" Şiir Analizi | `T.D.6.9`, `T.D.6.10`, `T.O.6.18`, `T.Y.6.21` |
+| **172** | **KAYNAKÇA** | Kitap Kaynakçası ve APA 7 Akademik Dürüstlük Okuryazarlığı | `T.O.6.1` |
