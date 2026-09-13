@@ -21307,212 +21307,1000 @@
           {
             "type": "lines",
             "left": 11.5,
-            "top": 39.17,
+            "top": 38.97,
             "width": 77.5,
             "height": 1.8,
-            "text": "METNİN BAŞLIĞI: Dünyanın Çocuklarına Uzanan Şefkat Eli: UNICEF",
-            "content": "METNİN BAŞLIĞI: Dünyanın Çocuklarına Uzanan Şefkat Eli: UNICEF",
-            "style": {
-              "fontFamily": "Caveat, Kalam, cursive",
-              "fontSize": "19px",
-              "color": "#1a365d",
-              "fontWeight": "600"
-            }
+            "text": "Metnin Başlığı: UNICEF ve Çocuk Hakları",
+            "content": "Metnin Başlığı: UNICEF ve Çocuk Hakları"
           },
           {
             "type": "lines",
             "left": 11.5,
-            "top": 41.73,
+            "top": 41.54,
             "width": 77.5,
             "height": 1.8,
-            "text": "YAZININ AMACI: UNICEF'in çocuk hakları çalışmalarını tanıtmak.",
-            "content": "YAZININ AMACI: UNICEF'in çocuk hakları çalışmalarını tanıtmak.",
-            "style": {
-              "fontFamily": "Caveat, Kalam, cursive",
-              "fontSize": "19px",
-              "color": "#1a365d",
-              "fontWeight": "600"
-            }
+            "text": "Yazının Amacı: UNICEF'in çalışmalarını tanıtmak",
+            "content": "Yazının Amacı: UNICEF'in çalışmalarını tanıtmak"
           },
           {
             "type": "lines",
             "left": 11.5,
-            "top": 44.29,
+            "top": 44.1,
             "width": 77.5,
             "height": 1.8,
-            "text": "HEDEF KİTLE: Okul arkadaşları, öğretmenler ve tüm çevre.",
-            "content": "HEDEF KİTLE: Okul arkadaşları, öğretmenler ve tüm çevre.",
-            "style": {
-              "fontFamily": "Caveat, Kalam, cursive",
-              "fontSize": "19px",
-              "color": "#1a365d",
-              "fontWeight": "600"
-            }
+            "text": "Hedef Kitle: Arkadaşlarım, öğretmenlerim ve çevrem",
+            "content": "Hedef Kitle: Arkadaşlarım, öğretmenlerim ve çevrem"
           },
           {
             "type": "lines",
             "left": 11.5,
-            "top": 46.86,
+            "top": 46.67,
             "width": 77.5,
             "height": 1.8,
-            "text": "ANLATIM BİÇİMİ: Açıklayıcı ve bilgilendirici anlatım.",
-            "content": "ANLATIM BİÇİMİ: Açıklayıcı ve bilgilendirici anlatım.",
-            "style": {
-              "fontFamily": "Caveat, Kalam, cursive",
-              "fontSize": "19px",
-              "color": "#1a365d",
-              "fontWeight": "600"
-            }
+            "text": "Anlatım Biçimi: Açıklayıcı ve bilgilendirici anlatım",
+            "content": "Anlatım Biçimi: Açıklayıcı ve bilgilendirici anlatım"
           },
           {
             "type": "lines",
             "left": 11.5,
-            "top": 49.42,
+            "top": 49.23,
             "width": 77.5,
             "height": 1.8,
-            "text": "DÜŞÜNCEYİ GELİŞTİRME: Tanımlama, sayısal veri, örnekleme.",
-            "content": "DÜŞÜNCEYİ GELİŞTİRME: Tanımlama, sayısal veri, örnekleme.",
-            "style": {
-              "fontFamily": "Caveat, Kalam, cursive",
-              "fontSize": "19px",
-              "color": "#1a365d",
-              "fontWeight": "600"
-            }
+            "text": "Düşünceyi Geliştirme: Tanımlama ve örnekleme",
+            "content": "Düşünceyi Geliştirme: Tanımlama ve örnekleme"
           },
           {
             "type": "lines",
             "left": 11.5,
-            "top": 52.05,
+            "top": 51.86,
             "width": 77.5,
             "height": 1.8,
-            "text": "GİRİŞ: UNICEF'in tanımı (BM bünyesinde kurulan çocuk örgütü).",
-            "content": "GİRİŞ: UNICEF'in tanımı (BM bünyesinde kurulan çocuk örgütü).",
-            "style": {
-              "fontFamily": "Caveat, Kalam, cursive",
-              "fontSize": "19px",
-              "color": "#1a365d",
-              "fontWeight": "600"
-            }
+            "text": "Giriş: UNICEF, çocukları koruyan küresel bir örgüttür.",
+            "content": "Giriş: UNICEF, çocukları koruyan küresel bir örgüttür."
           },
           {
             "type": "lines",
             "left": 11.5,
-            "top": 54.62,
+            "top": 54.42,
             "width": 77.5,
             "height": 1.8,
-            "text": "GİRİŞ: Temel amacı dünyadaki her çocuğun haklarını korumaktır.",
-            "content": "GİRİŞ: Temel amacı dünyadaki her çocuğun haklarını korumaktır.",
-            "style": {
-              "fontFamily": "Caveat, Kalam, cursive",
-              "fontSize": "19px",
-              "color": "#1a365d",
-              "fontWeight": "600"
-            }
+            "text": "Giriş: Temel amacı her çocuğun hakkını korumaktır.",
+            "content": "Giriş: Temel amacı her çocuğun hakkını korumaktır."
           },
           {
             "type": "lines",
             "left": 11.5,
-            "top": 57.18,
+            "top": 56.99,
             "width": 77.5,
             "height": 1.8,
-            "text": "GELİŞME: Temel sahaları; sağlık, aşı, temiz su ve eğitimdir.",
-            "content": "GELİŞME: Temel sahaları; sağlık, aşı, temiz su ve eğitimdir.",
-            "style": {
-              "fontFamily": "Caveat, Kalam, cursive",
-              "fontSize": "19px",
-              "color": "#1a365d",
-              "fontWeight": "600"
-            }
+            "text": "Gelişme: Sağlık, beslenme, temiz su ve eğitim sağlar.",
+            "content": "Gelişme: Sağlık, beslenme, temiz su ve eğitim sağlar."
           },
           {
             "type": "lines",
             "left": 11.5,
-            "top": 59.74,
+            "top": 59.55,
             "width": 77.5,
             "height": 1.8,
-            "text": "GELİŞME (Sayısal Veri): 190'dan fazla ülkede aktif çalışmaktadır.",
-            "content": "GELİŞME (Sayısal Veri): 190'dan fazla ülkede aktif çalışmaktadır.",
-            "style": {
-              "fontFamily": "Caveat, Kalam, cursive",
-              "fontSize": "19px",
-              "color": "#1a365d",
-              "fontWeight": "600"
-            }
+            "text": "Gelişme: 190'dan fazla ülkede çocukların yanındadır.",
+            "content": "Gelişme: 190'dan fazla ülkede çocukların yanındadır."
           },
           {
             "type": "lines",
             "left": 11.5,
-            "top": 62.31,
+            "top": 62.12,
             "width": 77.5,
             "height": 1.8,
-            "text": "GELİŞME (Örnekleme): Afet bölgelerinde çadır okullar kurar.",
-            "content": "GELİŞME (Örnekleme): Afet bölgelerinde çadır okullar kurar.",
-            "style": {
-              "fontFamily": "Caveat, Kalam, cursive",
-              "fontSize": "19px",
-              "color": "#1a365d",
-              "fontWeight": "600"
-            }
+            "text": "Gelişme: Afet bölgelerinde çadır okullar kurar.",
+            "content": "Gelişme: Afet bölgelerinde çadır okullar kurar."
           },
           {
             "type": "lines",
             "left": 11.5,
-            "top": 64.94,
+            "top": 64.74,
             "width": 77.5,
             "height": 1.8,
-            "text": "GELİŞME: Çocuk işçiliği ve istismara karşı mücadele eder.",
-            "content": "GELİŞME: Çocuk işçiliği ve istismara karşı mücadele eder.",
-            "style": {
-              "fontFamily": "Caveat, Kalam, cursive",
-              "fontSize": "19px",
-              "color": "#1a365d",
-              "fontWeight": "600"
-            }
+            "text": "Gelişme: Çocuk işçiliğini önlemek için mücadele eder.",
+            "content": "Gelişme: Çocuk işçiliğini önlemek için mücadele eder."
           },
           {
             "type": "lines",
             "left": 11.5,
-            "top": 67.5,
+            "top": 67.31,
             "width": 77.5,
             "height": 1.8,
-            "text": "SONUÇ: Çocuk haklarının korunmasında kurumların rolü büyüktür.",
-            "content": "SONUÇ: Çocuk haklarının korunmasında kurumların rolü büyüktür.",
-            "style": {
-              "fontFamily": "Caveat, Kalam, cursive",
-              "fontSize": "19px",
-              "color": "#1a365d",
-              "fontWeight": "600"
-            }
+            "text": "Sonuç: Kurumların desteği çocuklara umut olmaktadır.",
+            "content": "Sonuç: Kurumların desteği çocuklara umut olmaktadır."
           },
           {
             "type": "lines",
             "left": 11.5,
-            "top": 70.06,
+            "top": 69.87,
             "width": 77.5,
             "height": 1.8,
-            "text": "SONUÇ: Sağlıklı ve mutlu bir gelecek için çocukları korumalıyız.",
-            "content": "SONUÇ: Sağlıklı ve mutlu bir gelecek için çocukları korumalıyız.",
-            "style": {
-              "fontFamily": "Caveat, Kalam, cursive",
-              "fontSize": "19px",
-              "color": "#1a365d",
-              "fontWeight": "600"
-            }
+            "text": "Sonuç: Her çocuğun mutlu yaşama hakkı korunmalıdır.",
+            "content": "Sonuç: Her çocuğun mutlu yaşama hakkı korunmalıdır."
           },
           {
             "type": "lines",
             "left": 11.5,
-            "top": 72.63,
+            "top": 72.44,
             "width": 77.5,
             "height": 1.8,
-            "text": "ÇAĞRI: Mutlu çocuklar için hep birlikte el ele vermeliyiz.",
-            "content": "ÇAĞRI: Mutlu çocuklar için hep birlikte el ele vermeliyiz.",
+            "text": "Çağrı: Çocukların geleceği için el ele vermeliyiz.",
+            "content": "Çağrı: Çocukların geleceği için el ele vermeliyiz."
+          }
+        ]
+      }
+    ],
+    "147": [
+      {
+        "id": "act_12",
+        "title": "12. Etkinlik (Yazma Planı)",
+        "button": {
+          "left": 9.5,
+          "top": 11.2,
+          "label": "12. Etkinlik"
+        },
+        "items": [
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 38.97,
+            "width": 77.5,
+            "height": 1.8,
+            "text": "Metnin Başlığı: UNICEF ve Çocuk Hakları",
+            "content": "Metnin Başlığı: UNICEF ve Çocuk Hakları"
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 41.54,
+            "width": 77.5,
+            "height": 1.8,
+            "text": "Yazının Amacı: UNICEF'in çalışmalarını tanıtmak",
+            "content": "Yazının Amacı: UNICEF'in çalışmalarını tanıtmak"
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 44.1,
+            "width": 77.5,
+            "height": 1.8,
+            "text": "Hedef Kitle: Arkadaşlarım, öğretmenlerim ve çevrem",
+            "content": "Hedef Kitle: Arkadaşlarım, öğretmenlerim ve çevrem"
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 46.67,
+            "width": 77.5,
+            "height": 1.8,
+            "text": "Anlatım Biçimi: Açıklayıcı ve bilgilendirici anlatım",
+            "content": "Anlatım Biçimi: Açıklayıcı ve bilgilendirici anlatım"
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 49.23,
+            "width": 77.5,
+            "height": 1.8,
+            "text": "Düşünceyi Geliştirme: Tanımlama ve örnekleme",
+            "content": "Düşünceyi Geliştirme: Tanımlama ve örnekleme"
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 51.86,
+            "width": 77.5,
+            "height": 1.8,
+            "text": "Giriş: UNICEF, çocukları koruyan küresel bir örgüttür.",
+            "content": "Giriş: UNICEF, çocukları koruyan küresel bir örgüttür."
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 54.42,
+            "width": 77.5,
+            "height": 1.8,
+            "text": "Giriş: Temel amacı her çocuğun hakkını korumaktır.",
+            "content": "Giriş: Temel amacı her çocuğun hakkını korumaktır."
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 56.99,
+            "width": 77.5,
+            "height": 1.8,
+            "text": "Gelişme: Sağlık, beslenme, temiz su ve eğitim sağlar.",
+            "content": "Gelişme: Sağlık, beslenme, temiz su ve eğitim sağlar."
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 59.55,
+            "width": 77.5,
+            "height": 1.8,
+            "text": "Gelişme: 190'dan fazla ülkede çocukların yanındadır.",
+            "content": "Gelişme: 190'dan fazla ülkede çocukların yanındadır."
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 62.12,
+            "width": 77.5,
+            "height": 1.8,
+            "text": "Gelişme: Afet bölgelerinde çadır okullar kurar.",
+            "content": "Gelişme: Afet bölgelerinde çadır okullar kurar."
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 64.74,
+            "width": 77.5,
+            "height": 1.8,
+            "text": "Gelişme: Çocuk işçiliğini önlemek için mücadele eder.",
+            "content": "Gelişme: Çocuk işçiliğini önlemek için mücadele eder."
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 67.31,
+            "width": 77.5,
+            "height": 1.8,
+            "text": "Sonuç: Kurumların desteği çocuklara umut olmaktadır.",
+            "content": "Sonuç: Kurumların desteği çocuklara umut olmaktadır."
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 69.87,
+            "width": 77.5,
+            "height": 1.8,
+            "text": "Sonuç: Her çocuğun mutlu yaşama hakkı korunmalıdır.",
+            "content": "Sonuç: Her çocuğun mutlu yaşama hakkı korunmalıdır."
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 72.44,
+            "width": 77.5,
+            "height": 1.8,
+            "text": "Çağrı: Çocukların geleceği için el ele vermeliyiz.",
+            "content": "Çağrı: Çocukların geleceği için el ele vermeliyiz."
+          }
+        ]
+      }
+    ],
+    "150": [
+      {
+        "id": "act_1",
+        "title": "1. Etkinlik (Anahtar Kelimeler)",
+        "button": {
+          "left": 9.5,
+          "top": 9.8,
+          "label": "1. Etkinlik"
+        },
+        "items": [
+          {
+            "type": "lines",
+            "left": 16.5,
+            "top": 38.01,
+            "width": 65.0,
+            "height": 1.8,
+            "text": "Kral, üç soru, zaman (doğru an), bilge keşiş, karar.",
+            "content": "Kral, üç soru, zaman (doğru an), bilge keşiş, karar."
+          },
+          {
+            "type": "lines",
+            "left": 16.5,
+            "top": 40.58,
+            "width": 65.0,
+            "height": 1.8,
+            "text": "Bu kavramlar metnin temel konusunu ve iletisini yansıtır.",
+            "content": "Bu kavramlar metnin temel konusunu ve iletisini yansıtır."
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 53.08,
+            "width": 78.5,
+            "height": 1.8,
+            "text": "\"Kral\" ve \"keşiş\", metnin temel şahıs kadrosunu oluşturur.",
+            "content": "\"Kral\" ve \"keşiş\", metnin temel şahıs kadrosunu oluşturur."
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 55.64,
+            "width": 78.5,
+            "height": 1.8,
+            "text": "\"Soru\" ve \"karar\", kralın cevabını aradığı ana konuyu belirler.",
+            "content": "\"Soru\" ve \"karar\", kralın cevabını aradığı ana konuyu belirler."
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 58.21,
+            "width": 78.5,
+            "height": 1.8,
+            "text": "\"Orman\", \"kürek\" ve \"toprak\", tarh kazılan ormanlık mekânı ve",
+            "content": "\"Orman\", \"kürek\" ve \"toprak\", tarh kazılan ormanlık mekânı ve"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 60.77,
+            "width": 78.5,
+            "height": 1.8,
+            "text": "olay örgüsündeki yardımlaşma ile yaralı adama yardımı yansıtır.",
+            "content": "olay örgüsündeki yardımlaşma ile yaralı adama yardımı yansıtır."
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 63.4,
+            "width": 78.5,
+            "height": 1.8,
+            "text": "\"Zaman\" ise \"en önemli vaktin şu an olduğu\" ana fikrini simgeler.",
+            "content": "\"Zaman\" ise \"en önemli vaktin şu an olduğu\" ana fikrini simgeler."
+          }
+        ]
+      }
+    ],
+    "151": [
+      {
+        "id": "act_3",
+        "title": "3. Etkinlik (Sebep-Sonuç Yapısı)",
+        "button": {
+          "left": 9.0,
+          "top": 5.8,
+          "label": "3. Etkinlik"
+        },
+        "items": [
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 48.46,
+            "width": 76.8,
+            "height": 1.8,
+            "text": "1. Sebep: Kelimeler duygu ve düşünce araçları olduğu için",
+            "content": "1. Sebep: Kelimeler duygu ve düşünce araçları olduğu için"
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 51.03,
+            "width": 76.8,
+            "height": 1.8,
+            "text": "   Sonuç: Sözlerimize ve kullandığımız dile dikkat etmeliyiz.",
+            "content": "   Sonuç: Sözlerimize ve kullandığımız dile dikkat etmeliyiz."
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 53.59,
+            "width": 76.8,
+            "height": 1.8,
+            "text": "2. Sebep: Temiz bir çevre sağlıklı yaşamın temeli olduğu için",
+            "content": "2. Sebep: Temiz bir çevre sağlıklı yaşamın temeli olduğu için"
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 56.15,
+            "width": 76.8,
+            "height": 1.8,
+            "text": "   Sonuç: Çöplerimizi mutlaka çöp kutularına atmalıyız.",
+            "content": "   Sonuç: Çöplerimizi mutlaka çöp kutularına atmalıyız."
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 58.78,
+            "width": 76.8,
+            "height": 1.8,
+            "text": "3. Sebep: Hayvanlar ve canlılar dünyanın parçası olduğundan",
+            "content": "3. Sebep: Hayvanlar ve canlılar dünyanın parçası olduğundan"
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 61.35,
+            "width": 76.8,
+            "height": 1.8,
+            "text": "   Sonuç: Onları şefkatle korumalı ve gözetmeliyiz.",
+            "content": "   Sonuç: Onları şefkatle korumalı ve gözetmeliyiz."
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 63.91,
+            "width": 76.8,
+            "height": 1.8,
+            "text": "4. Sebep: Kendi ve başkalarının can güvenliğini korumak için",
+            "content": "4. Sebep: Kendi ve başkalarının can güvenliğini korumak için"
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 66.47,
+            "width": 76.8,
+            "height": 1.8,
+            "text": "   Sonuç: Trafik kurallarına titizlikle uymalıyız.",
+            "content": "   Sonuç: Trafik kurallarına titizlikle uymalıyız."
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 79.87,
+            "width": 76.8,
+            "height": 1.8,
+            "text": "Belirlenen tüm sebepler, bireysel ve toplumsal huzuru hedefler.",
+            "content": "Belirlenen tüm sebepler, bireysel ve toplumsal huzuru hedefler."
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 82.44,
+            "width": 76.8,
+            "height": 1.8,
+            "text": "Çevre, hayvan, trafik ve iletişim sorumlulukları bir bütündür.",
+            "content": "Çevre, hayvan, trafik ve iletişim sorumlulukları bir bütündür."
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 85.0,
+            "width": 76.8,
+            "height": 1.8,
+            "text": "Haklarımızı korurken sorumluluklarımızı da unutmamalıyız.",
+            "content": "Haklarımızı korurken sorumluluklarımızı da unutmamalıyız."
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 87.63,
+            "width": 76.8,
+            "height": 1.8,
+            "text": "Çünkü ancak sorumluluk bilinciyle özgürlük huzura dönüşür.",
+            "content": "Çünkü ancak sorumluluk bilinciyle özgürlük huzura dönüşür."
+          }
+        ]
+      }
+    ],
+    "152": [
+      {
+        "id": "act_4",
+        "title": "4. Etkinlik (Afiş İnceleme)",
+        "button": {
+          "left": 9.5,
+          "top": 7.2,
+          "label": "4. Etkinlik"
+        },
+        "items": [
+          {
+            "type": "lines",
+            "left": 11.6,
+            "top": 69.42,
+            "width": 76.8,
+            "height": 1.8,
+            "text": "Evet, afişteki çocuk ve kurum görselleri içeriği tam destekler.",
+            "content": "Evet, afişteki çocuk ve kurum görselleri içeriği tam destekler."
+          },
+          {
+            "type": "lines",
+            "left": 11.6,
+            "top": 71.99,
+            "width": 76.8,
+            "height": 1.8,
+            "text": "Bilgisayar ve kamu binası resmi, başvuru yollarını somutlaştırır.",
+            "content": "Bilgisayar ve kamu binası resmi, başvuru yollarını somutlaştırır."
+          },
+          {
+            "type": "lines",
+            "left": 11.6,
+            "top": 74.55,
+            "width": 76.8,
+            "height": 1.8,
+            "text": "Mutlu çocuk figürleri ise hak arama bilincini güçlendirir.",
+            "content": "Mutlu çocuk figürleri ise hak arama bilincini güçlendirir."
+          },
+          {
+            "type": "lines",
+            "left": 11.6,
+            "top": 80.71,
+            "width": 76.8,
+            "height": 1.8,
+            "text": "Görseller ve metin blokları renk ve anlam bakımından uyumludur.",
+            "content": "Görseller ve metin blokları renk ve anlam bakımından uyumludur."
+          },
+          {
+            "type": "lines",
+            "left": 11.6,
+            "top": 83.27,
+            "width": 76.8,
+            "height": 1.8,
+            "text": "Başlıklar açık ve net olup görsellerle doğru eşleşmiştir.",
+            "content": "Başlıklar açık ve net olup görsellerle doğru eşleşmiştir."
+          },
+          {
+            "type": "lines",
+            "left": 11.6,
+            "top": 85.83,
+            "width": 76.8,
+            "height": 1.8,
+            "text": "Çocuklara hitap eden samimi dil, çizimlerle bütünleşmiştir.",
+            "content": "Çocuklara hitap eden samimi dil, çizimlerle bütünleşmiştir."
+          },
+          {
+            "type": "lines",
+            "left": 11.6,
+            "top": 88.46,
+            "width": 76.8,
+            "height": 1.8,
+            "text": "Böylece verilmek istenen mesaj kolayca anlaşılmaktadır.",
+            "content": "Böylece verilmek istenen mesaj kolayca anlaşılmaktadır."
+          }
+        ]
+      }
+    ],
+    "153": [
+      {
+        "id": "act_5",
+        "title": "5. Etkinlik (Problem Çözme)",
+        "button": {
+          "left": 9.5,
+          "top": 5.8,
+          "label": "5. Etkinlik"
+        },
+        "items": [
+          {
+            "type": "lines",
+            "left": 53.0,
+            "top": 23.85,
+            "width": 33.0,
+            "height": 1.8,
+            "text": "Doğru zamanı ve gerekli insanı",
+            "content": "Doğru zamanı ve gerekli insanı"
+          },
+          {
+            "type": "lines",
+            "left": 15.5,
+            "top": 26.41,
+            "width": 70.8,
+            "height": 1.8,
+            "text": "ve en önemli işin ne olduğunu bilemeyip kararsız kalması,",
+            "content": "ve en önemli işin ne olduğunu bilemeyip kararsız kalması,"
+          },
+          {
+            "type": "lines",
+            "left": 15.5,
+            "top": 29.04,
+            "width": 70.8,
+            "height": 1.8,
+            "text": "işlerinde başarısız olma korkusu ve endişesi yaşamasıdır.",
+            "content": "işlerinde başarısız olma korkusu ve endişesi yaşamasıdır."
+          },
+          {
+            "type": "lines",
+            "left": 15.5,
+            "top": 31.6,
+            "width": 70.8,
+            "height": 1.8,
+            "text": "Bu yüzden sorularına tatmin edici cevaplar aramaktadır.",
+            "content": "Bu yüzden sorularına tatmin edici cevaplar aramaktadır."
+          },
+          {
+            "type": "lines",
+            "left": 33.0,
+            "top": 40.45,
+            "width": 52.0,
+            "height": 1.8,
+            "text": "Kral, bilginlerin çelişkili cevaplarıyla",
+            "content": "Kral, bilginlerin çelişkili cevaplarıyla"
+          },
+          {
+            "type": "lines",
+            "left": 15.5,
+            "top": 43.01,
+            "width": 70.0,
+            "height": 1.8,
+            "text": "tatmin olmamış; geleceği bilmenin zorluğunu görmüştür.",
+            "content": "tatmin olmamış; geleceği bilmenin zorluğunu görmüştür."
+          },
+          {
+            "type": "lines",
+            "left": 15.5,
+            "top": 45.58,
+            "width": 70.0,
+            "height": 1.8,
+            "text": "Bunun üzerine ormandaki bilge bir keşişe danışmaya gitmiştir.",
+            "content": "Bunun üzerine ormandaki bilge bir keşişe danışmaya gitmiştir."
+          },
+          {
+            "type": "lines",
+            "left": 15.5,
+            "top": 48.14,
+            "width": 70.0,
+            "height": 1.8,
+            "text": "Ormanda karşılaştığı olaylar ve yaralı adam sayesinde",
+            "content": "Ormanda karşılaştığı olaylar ve yaralı adam sayesinde"
+          },
+          {
+            "type": "lines",
+            "left": 15.5,
+            "top": 50.71,
+            "width": 70.0,
+            "height": 1.8,
+            "text": "en önemli anın \"şu an\" olduğunu yaşayarak tecrübe etmiştir.",
+            "content": "en önemli anın \"şu an\" olduğunu yaşayarak tecrübe etmiştir."
+          },
+          {
+            "type": "lines",
+            "left": 23.5,
+            "top": 64.29,
+            "width": 62.5,
+            "height": 1.8,
+            "text": "Geleceği planlamak için bir danışma kurulu kurmak.",
+            "content": "Geleceği planlamak için bir danışma kurulu kurmak."
+          },
+          {
+            "type": "lines",
+            "left": 23.5,
+            "top": 66.92,
+            "width": 62.5,
+            "height": 1.8,
+            "text": "Ancak her duruma önceden kural koymak mümkün olmaz.",
+            "content": "Ancak her duruma önceden kural koymak mümkün olmaz."
+          },
+          {
+            "type": "lines",
+            "left": 23.5,
+            "top": 70.45,
+            "width": 62.5,
+            "height": 1.8,
+            "text": "Olayları akışına bırakıp anlık sorunları çözmek.",
+            "content": "Olayları akışına bırakıp anlık sorunları çözmek."
+          },
+          {
+            "type": "lines",
+            "left": 23.5,
+            "top": 73.01,
+            "width": 62.5,
+            "height": 1.8,
+            "text": "Bu tutum tedbirsizliğe ve tehlikelere yol açar.",
+            "content": "Bu tutum tedbirsizliğe ve tehlikelere yol açar."
+          },
+          {
+            "type": "mark",
+            "left": 14.8,
+            "top": 77.2,
+            "width": 3.0,
+            "height": 3.0,
+            "text": "✔",
+            "content": "✔",
             "style": {
-              "fontFamily": "Caveat, Kalam, cursive",
-              "fontSize": "19px",
-              "color": "#1a365d",
-              "fontWeight": "600"
+              "color": "#dc2626",
+              "fontSize": "calc(2.2 * var(--unit-h, 9.2px))"
             }
+          },
+          {
+            "type": "lines",
+            "left": 23.5,
+            "top": 76.6,
+            "width": 62.5,
+            "height": 1.8,
+            "text": "Bulunduğumuz \"an\"a odaklanıp çevremize iyilik yapmak.",
+            "content": "Bulunduğumuz \"an\"a odaklanıp çevremize iyilik yapmak."
+          },
+          {
+            "type": "lines",
+            "left": 23.5,
+            "top": 79.17,
+            "width": 62.5,
+            "height": 1.8,
+            "text": "Gücümüzün yettiği tek an şimdi, en yüce iş iyiliktir.",
+            "content": "Gücümüzün yettiği tek an şimdi, en yüce iş iyiliktir."
+          },
+          {
+            "type": "lines",
+            "left": 23.5,
+            "top": 82.69,
+            "width": 62.5,
+            "height": 1.8,
+            "text": "Tüm kararları sadece tek bir bilgeye danışarak almak.",
+            "content": "Tüm kararları sadece tek bir bilgeye danışarak almak."
+          },
+          {
+            "type": "lines",
+            "left": 23.5,
+            "top": 85.26,
+            "width": 62.5,
+            "height": 1.8,
+            "text": "Fakat her an bilgelere ulaşmak pratikte imkânsızdır.",
+            "content": "Fakat her an bilgelere ulaşmak pratikte imkânsızdır."
+          }
+        ]
+      }
+    ],
+    "156": [
+      {
+        "id": "act_10",
+        "title": "10. Etkinlik (Noktalama İşaretleri)",
+        "button": {
+          "left": 9.5,
+          "top": 7.2,
+          "label": "10. Etkinlik"
+        },
+        "items": [
+          {
+            "type": "mark",
+            "left": 30.8,
+            "top": 20.2,
+            "width": 2.0,
+            "height": 2.0,
+            "text": "?",
+            "content": "?",
+            "style": {
+              "color": "#dc2626",
+              "fontSize": "calc(1.8 * var(--unit-h, 9.2px))",
+              "fontWeight": "800"
+            }
+          },
+          {
+            "type": "mark",
+            "left": 32.4,
+            "top": 24.1,
+            "width": 2.0,
+            "height": 2.0,
+            "text": ",",
+            "content": ",",
+            "style": {
+              "color": "#dc2626",
+              "fontSize": "calc(2.0 * var(--unit-h, 9.2px))",
+              "fontWeight": "800"
+            }
+          },
+          {
+            "type": "mark",
+            "left": 53.1,
+            "top": 24.1,
+            "width": 2.0,
+            "height": 2.0,
+            "text": ",",
+            "content": ",",
+            "style": {
+              "color": "#dc2626",
+              "fontSize": "calc(2.0 * var(--unit-h, 9.2px))",
+              "fontWeight": "800"
+            }
+          },
+          {
+            "type": "mark",
+            "left": 83.4,
+            "top": 24.1,
+            "width": 2.0,
+            "height": 2.0,
+            "text": ".",
+            "content": ".",
+            "style": {
+              "color": "#dc2626",
+              "fontSize": "calc(2.0 * var(--unit-h, 9.2px))",
+              "fontWeight": "800"
+            }
+          },
+          {
+            "type": "mark",
+            "left": 68.3,
+            "top": 28.0,
+            "width": 2.0,
+            "height": 2.0,
+            "text": ":",
+            "content": ":",
+            "style": {
+              "color": "#dc2626",
+              "fontSize": "calc(1.8 * var(--unit-h, 9.2px))",
+              "fontWeight": "800"
+            }
+          },
+          {
+            "type": "mark",
+            "left": 39.1,
+            "top": 31.3,
+            "width": 2.0,
+            "height": 2.0,
+            "text": ".",
+            "content": ".",
+            "style": {
+              "color": "#dc2626",
+              "fontSize": "calc(2.0 * var(--unit-h, 9.2px))",
+              "fontWeight": "800"
+            }
+          }
+        ]
+      }
+    ],
+    "157": [
+      {
+        "id": "act_11",
+        "title": "11. Etkinlik (Yazma Planı)",
+        "button": {
+          "left": 8.5,
+          "top": 6.8,
+          "label": "11. Etkinlik"
+        },
+        "items": [
+          {
+            "type": "lines",
+            "left": 24.5,
+            "top": 12.56,
+            "width": 64.0,
+            "height": 1.8,
+            "text": "Mahallemizdeki çocuk oyun alanlarının yetersizliği.",
+            "content": "Mahallemizdeki çocuk oyun alanlarının yetersizliği."
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 15.19,
+            "width": 77.0,
+            "height": 1.8,
+            "text": "Çocukların en temel haklarından biri güvenli oyun hakkıdır.",
+            "content": "Çocukların en temel haklarından biri güvenli oyun hakkıdır."
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 17.76,
+            "width": 77.0,
+            "height": 1.8,
+            "text": "Hızlı kentleşme sebebiyle çocukların oyun alanları daralmıştır.",
+            "content": "Hızlı kentleşme sebebiyle çocukların oyun alanları daralmıştır."
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 20.32,
+            "width": 77.0,
+            "height": 1.8,
+            "text": "Bu durum çocukların bedensel ve ruhsal gelişimini olumsuz etkiler.",
+            "content": "Bu durum çocukların bedensel ve ruhsal gelişimini olumsuz etkiler."
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 22.88,
+            "width": 77.0,
+            "height": 1.8,
+            "text": "Bu soruna yönelik akılcı ve kalıcı çözümler üretilmelidir.",
+            "content": "Bu soruna yönelik akılcı ve kalıcı çözümler üretilmelidir."
+          },
+          {
+            "type": "lines",
+            "left": 15.0,
+            "top": 30.0,
+            "width": 73.5,
+            "height": 1.8,
+            "text": "Mevcut parklardaki oyuncakların kırık ve bakımsız olması.",
+            "content": "Mevcut parklardaki oyuncakların kırık ve bakımsız olması."
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 32.56,
+            "width": 77.0,
+            "height": 1.8,
+            "text": "Çocukların sokaklarda trafik tehlikesi altında oynaması.",
+            "content": "Çocukların sokaklarda trafik tehlikesi altında oynaması."
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 35.13,
+            "width": 77.0,
+            "height": 1.8,
+            "text": "Ailelerin güvenlik endişesiyle çocuklarını eve kapatması.",
+            "content": "Ailelerin güvenlik endişesiyle çocuklarını eve kapatması."
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 37.76,
+            "width": 77.0,
+            "height": 1.8,
+            "text": "Bu durumun fiziksel hareketsizlik ve ekran bağımlılığı doğurması.",
+            "content": "Bu durumun fiziksel hareketsizlik ve ekran bağımlılığı doğurması."
+          },
+          {
+            "type": "lines",
+            "left": 15.0,
+            "top": 43.85,
+            "width": 73.5,
+            "height": 1.8,
+            "text": "Belediyeye dilekçe vererek atıl arazilerin parka dönüştürülmesi.",
+            "content": "Belediyeye dilekçe vererek atıl arazilerin parka dönüştürülmesi."
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 46.41,
+            "width": 77.0,
+            "height": 1.8,
+            "text": "Okul bahçelerinin ders dışı saatlerde halka ve çocuklara açılması.",
+            "content": "Okul bahçelerinin ders dışı saatlerde halka ve çocuklara açılması."
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 48.97,
+            "width": 77.0,
+            "height": 1.8,
+            "text": "Mahalle sakinleriyle imza kampanyası ve farkındalık oluşturulması.",
+            "content": "Mahalle sakinleriyle imza kampanyası ve farkındalık oluşturulması."
+          },
+          {
+            "type": "lines",
+            "left": 15.0,
+            "top": 55.13,
+            "width": 73.5,
+            "height": 1.8,
+            "text": "En etkili çözüm: Okul bahçelerinin güvenlikli park yapılmasıdır.",
+            "content": "En etkili çözüm: Okul bahçelerinin güvenlikli park yapılmasıdır."
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 57.69,
+            "width": 77.0,
+            "height": 1.8,
+            "text": "Çünkü yeni arsa gerekmeden hemen güvenle hayata geçebilir.",
+            "content": "Çünkü yeni arsa gerekmeden hemen güvenle hayata geçebilir."
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 60.26,
+            "width": 77.0,
+            "height": 1.8,
+            "text": "Mevcut okul bahçeleri spor ve oyun ekipmanlarıyla donatılmalıdır.",
+            "content": "Mevcut okul bahçeleri spor ve oyun ekipmanlarıyla donatılmalıdır."
+          },
+          {
+            "type": "lines",
+            "left": 26.0,
+            "top": 66.41,
+            "width": 62.5,
+            "height": 1.8,
+            "text": "Çocuklara oyun alanı açmak toplumsal bir görevdir.",
+            "content": "Çocuklara oyun alanı açmak toplumsal bir görevdir."
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 68.97,
+            "width": 77.0,
+            "height": 1.8,
+            "text": "Yerel yönetimler ve toplum el ele verip çocuklara alan açmalıdır.",
+            "content": "Yerel yönetimler ve toplum el ele verip çocuklara alan açmalıdır."
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 71.54,
+            "width": 77.0,
+            "height": 1.8,
+            "text": "Parklarda oynayan her çocuk mutlu bir geleceğin teminatıdır.",
+            "content": "Parklarda oynayan her çocuk mutlu bir geleceğin teminatıdır."
+          },
+          {
+            "type": "lines",
+            "left": 11.5,
+            "top": 74.17,
+            "width": 77.0,
+            "height": 1.8,
+            "text": "Çocukların sesine kulak vermek, yarınlarımıza sahip çıkmaktır.",
+            "content": "Çocukların sesine kulak vermek, yarınlarımıza sahip çıkmaktır."
           }
         ]
       }
