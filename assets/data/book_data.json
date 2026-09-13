@@ -43709,56 +43709,56 @@
           {
             "type": "lines",
             "left": 11.5,
-            "top": 18.0,
+            "top": 17.5,
             "width": 77.0,
             "text": "Aziz Sancar: Hücrelerin hasar gören DNA'larını nasıl onardığını"
           },
           {
             "type": "lines",
             "left": 11.5,
-            "top": 20.6,
+            "top": 20.1,
             "width": 77.0,
             "text": "haritalandırarak Nobel Kimya Ödülü kazanmış Türk bilim insanıdır."
           },
           {
             "type": "lines",
             "left": 11.5,
-            "top": 25.0,
+            "top": 24.7,
             "width": 77.0,
             "text": "Barış Manço: Şarkıları ve programlarıyla Türk kültürünü"
           },
           {
             "type": "lines",
             "left": 11.5,
-            "top": 27.6,
+            "top": 27.3,
             "width": 77.0,
             "text": "tüm dünyaya tanıtan, çocukların sevgilisi usta bir sanatçıdır."
           },
           {
             "type": "lines",
             "left": 11.5,
-            "top": 31.8,
+            "top": 31.3,
             "width": 77.0,
             "text": "Naim Süleymanoğlu: Kendi ağırlığının üç katını kaldırarak dünya"
           },
           {
             "type": "lines",
             "left": 11.5,
-            "top": 34.4,
+            "top": 33.9,
             "width": 77.0,
             "text": "kıran, 'Cep Herkülü' lakaplı efsanevi milli haltercimizdir."
           },
           {
             "type": "lines",
             "left": 11.5,
-            "top": 38.6,
+            "top": 38.2,
             "width": 77.0,
             "text": "Sabiha Gökçen: Türkiye'nin ve dünyanın ilk kadın savaş uçağı"
           },
           {
             "type": "lines",
             "left": 11.5,
-            "top": 41.2,
+            "top": 40.7,
             "width": 77.0,
             "text": "pilotu olarak tarihe geçmiş cesur bir öncümüzdür."
           },
@@ -44132,87 +44132,93 @@
         "items": [
           {
             "type": "blank",
-            "left": 12.0,
+            "left": 11.0,
             "top": 65.4,
-            "width": 12.0,
+            "width": 12.5,
             "text": "Özel",
             "style": {
               "color": "#1d4ed8",
               "fontWeight": "bold",
-              "textAlign": "center"
+              "textAlign": "center",
+              "fontSize": "0.95rem"
             }
           },
           {
             "type": "blank",
-            "left": 12.0,
+            "left": 11.0,
             "top": 69.2,
-            "width": 12.0,
+            "width": 12.5,
             "text": "Dağdeviren",
             "style": {
               "color": "#1d4ed8",
               "fontWeight": "bold",
-              "textAlign": "center"
+              "textAlign": "center",
+              "fontSize": "0.95rem"
             }
           },
           {
             "type": "blank",
-            "left": 12.0,
+            "left": 11.0,
             "top": 72.6,
-            "width": 12.0,
+            "width": 12.5,
             "text": "Ketin",
             "style": {
               "color": "#1d4ed8",
               "fontWeight": "bold",
-              "textAlign": "center"
+              "textAlign": "center",
+              "fontSize": "0.95rem"
             }
           },
           {
             "type": "blank",
-            "left": 12.0,
+            "left": 11.0,
             "top": 75.6,
-            "width": 12.0,
+            "width": 12.5,
             "text": "Ketin",
             "style": {
               "color": "#1d4ed8",
               "fontWeight": "bold",
-              "textAlign": "center"
+              "textAlign": "center",
+              "fontSize": "0.95rem"
             }
           },
           {
             "type": "blank",
-            "left": 12.0,
+            "left": 11.0,
             "top": 78.6,
-            "width": 12.0,
+            "width": 12.5,
             "text": "Özel",
             "style": {
               "color": "#1d4ed8",
               "fontWeight": "bold",
-              "textAlign": "center"
+              "textAlign": "center",
+              "fontSize": "0.95rem"
             }
           },
           {
             "type": "blank",
-            "left": 12.0,
+            "left": 11.0,
             "top": 81.6,
-            "width": 12.0,
+            "width": 12.5,
             "text": "Dağdeviren",
             "style": {
               "color": "#1d4ed8",
               "fontWeight": "bold",
-              "textAlign": "center"
+              "textAlign": "center",
+              "fontSize": "0.95rem"
             }
           },
           {
             "type": "lines",
             "left": 10.5,
-            "top": 87.7,
+            "top": 88.0,
             "width": 79.0,
             "text": "1. Meraklı ve araştırmacı olmaları, 2. Çalışkan ve azimli olmaları,"
           },
           {
             "type": "lines",
             "left": 10.5,
-            "top": 91.0,
+            "top": 91.3,
             "width": 79.0,
             "text": "3. Üretken ve kararlı olmaları."
           }
