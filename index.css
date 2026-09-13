@@ -2290,59 +2290,48 @@ body::-webkit-scrollbar-thumb:hover {
   pointer-events: auto;
 }
 
-/* --- Mobil Alt Navigasyon Bar (Sadece mobilde görünür) --- */
-.mobile-nav-bar {
-  display: none; /* Desktop'ta gizli */
+/* --- Mobil Sayfa Geçiş FAB Butonları (hamburger tarzında yüzen ikonlar) --- */
+.mobile-page-fab {
   position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 4500;
-  height: 64px;
-  background: rgba(12, 14, 20, 0.92);
-  border-top: 1px solid var(--border-glass);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  align-items: center;
-  justify-content: center;
-  gap: 32px;
-  padding: 0 20px;
-}
-
-.mobile-nav-btn {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background: var(--bg-tertiary);
+  z-index: 5000;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(18, 20, 26, 0.85);
   border: 1px solid var(--border-glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   color: var(--text-primary);
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   transition: all var(--transition-fast);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
 }
 
-.mobile-nav-btn:hover,
-.mobile-nav-btn:active {
+.mobile-page-fab:active {
+  transform: scale(0.92);
   border-color: var(--color-teal);
   box-shadow: var(--shadow-glow);
-  transform: scale(1.08);
 }
 
-.mobile-nav-btn svg {
+.mobile-page-fab svg {
   stroke: var(--text-primary);
   display: block;
 }
 
-.mobile-nav-page-info {
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--text-primary);
-  min-width: 60px;
-  text-align: center;
-  letter-spacing: 0.05em;
+/* Önceki: sağ altta alt alta */
+.mobile-page-fab-prev {
+  bottom: 70px;
+  right: 14px;
 }
+
+.mobile-page-fab-next {
+  bottom: 16px;
+  right: 14px;
+}
+
 
 /* ==========================================================================
    RESPONSIVE BREAKPOINTS
@@ -2441,9 +2430,9 @@ body::-webkit-scrollbar-thumb:hover {
     overflow: hidden;
   }
 
-  /* Whiteboard FAB: nav bar butonlarının üstünde */
+  /* Whiteboard FAB: sayfa geçiş FAB butonları ile çakışmasın */
   .wb-container {
-    bottom: 80px;
+    bottom: 130px;
     right: 16px;
   }
 
@@ -2577,33 +2566,30 @@ body::-webkit-scrollbar-thumb:hover {
   /* === TÜRKÇE ATÖLYESİ MODAL === */
   .tools-grid {
     grid-template-columns: 1fr;
-    padding: 14px;
-    gap: 10px;
+    padding: 16px;
+    gap: 12px;
   }
 
   .tools-modal-content {
-    max-height: 92vh;
-    border-radius: 20px;
+    max-height: 85vh;
+    border-radius: 20px 20px 0 0;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .tools-modal-content .modal-header {
-    padding: 16px 18px;
+    padding: 18px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: var(--bg-secondary);
   }
 
-  .tool-icon {
-    width: 42px;
-    height: 42px;
-    min-width: 42px;
-    font-size: 1.7rem;
+  /* Font boyutları normal — küçültme yok, okunabilirlik öncelikli */
+  .tool-card {
+    padding: 16px;
   }
 
-  .tool-details h4 {
-    font-size: 0.95rem;
-  }
-
-  .tool-details p {
-    font-size: 0.78rem;
-  }
 }
 
 /* --- ÇOK KÜÇÜK MOBİL (≤ 400px) --- */

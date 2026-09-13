@@ -381,6 +381,16 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
+    // Sayfaya (reader viewport) tıklayınca drawer kapansın
+    const readerViewportEl = document.getElementById("reader-viewport");
+    if (readerViewportEl) {
+      readerViewportEl.addEventListener("click", () => {
+        if (readerSidebar && readerSidebar.classList.contains("mobile-open")) {
+          closeMobileSidebar();
+        }
+      });
+    }
+
     // --- MOBİL: Alt Navigasyon Bar Butonları ---
     const mobileBtnPrev = document.getElementById("mobile-btn-prev");
     const mobileBtnNext = document.getElementById("mobile-btn-next");
@@ -432,17 +442,21 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
 
-    // --- MOBİL: Hamburger ve Nav Bar sadece reader'da ve mobil ekranda göster ---
+    // --- MOBİL: Hamburger ve sayfa geçiş FAB butonları sadece reader'da göster ---
     const isMobile = window.innerWidth <= 768;
     const mobileMenuBtn = document.getElementById("mobile-menu-btn");
-    const mobileNavBar = document.getElementById("mobile-nav-bar");
+    const mobileBtnPrevFab = document.getElementById("mobile-btn-prev");
+    const mobileBtnNextFab = document.getElementById("mobile-btn-next");
     const isReader = state.currentView === "reader";
 
     if (mobileMenuBtn) {
       mobileMenuBtn.style.display = (isMobile && isReader) ? "flex" : "none";
     }
-    if (mobileNavBar) {
-      mobileNavBar.style.display = (isMobile && isReader) ? "flex" : "none";
+    if (mobileBtnPrevFab) {
+      mobileBtnPrevFab.style.display = (isMobile && isReader) ? "flex" : "none";
+    }
+    if (mobileBtnNextFab) {
+      mobileBtnNextFab.style.display = (isMobile && isReader) ? "flex" : "none";
     }
   }
 
@@ -481,14 +495,6 @@ document.addEventListener("DOMContentLoaded", () => {
     state.currentPage = pageNumber;
     inputPage.value = getPageDisplayNumber(state.currentBook, pageNumber);
     updatePageIndicator();
-
-    // Mobil alt nav bar sayfa bilgisini güncelle
-    const mobileNavPageInfo = document.getElementById("mobile-nav-page-info");
-    if (mobileNavPageInfo) {
-      const displayNum = getPageDisplayNumber(state.currentBook, pageNumber);
-      const maxDisplay = getPageDisplayNumber(state.currentBook, state.maxPages);
-      mobileNavPageInfo.textContent = `${displayNum} / ${maxDisplay}`;
-    }
 
     showLoading(true);
     
