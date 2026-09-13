@@ -1,0 +1,147 @@
+{
+  "sinif": 6,
+  "kitap": 2,
+  "tema": "6. Tema: Lider Ruhlar",
+  "metin_1": {
+    "baslik": "Avrupa Şampiyonu Dünya İkincisi Gönüllerin Birincisi Sümeyye Boyacı",
+    "sayfa_araligi": "114-121",
+    "etkinlikler": [
+      {
+        "sayfa_dosya": 114,
+        "sayfa_kitap": 114,
+        "etkinlik_adi": "Hazırlık Soruları ve Metin Okuma",
+        "tur": "Güdümlü Okuma ve Sözlü İletişim",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.1",
+            "aciklama": "Okumada materyal seçimini yönetebilme"
+          },
+          {
+            "kod": "T.K.6.1",
+            "aciklama": "Konuşma sürecini yönetebilme"
+          },
+          {
+            "kod": "T.K.6.16",
+            "aciklama": "Değerlendirmesini sözlü olarak ifade edebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 115,
+        "sayfa_kitap": 115,
+        "etkinlik_adi": "Metin Okuma Süreci",
+        "tur": "Sesli ve Anlam Odaklı Okuma",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.24",
+            "aciklama": "Okuduğunu değerlendirebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 116,
+        "sayfa_kitap": 116,
+        "etkinlik_adi": "Değerlendirelim (a, b) ve 1. ANLAYALIM",
+        "tur": "Okuma Öz Değerlendirmesi ve Deyim Çözümlemesi Tablosu",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.27",
+            "aciklama": "Okuma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+          },
+          {
+            "kod": "T.O.6.24",
+            "aciklama": "Okuduğunu değerlendirebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 117,
+        "sayfa_kitap": 117,
+        "etkinlik_adi": "2. ANLAYALIM ve 3. ANLAYALIM",
+        "tur": "Görsel-Metin Eşleştirmesi ve Metni Eleştirme Tablosu",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.24",
+            "aciklama": "Okuduğunu değerlendirebilme"
+          },
+          {
+            "kod": "T.O.6.25",
+            "aciklama": "Metni eleştirebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 118,
+        "sayfa_kitap": 118,
+        "etkinlik_adi": "4. ANLAYALIM ve 1. ANLATALIM",
+        "tur": "Düşünceyi Geliştirme Yolları ve Yaratıcılık Tanımı",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.24",
+            "aciklama": "Okuduğunu değerlendirebilme"
+          },
+          {
+            "kod": "T.K.6.18",
+            "aciklama": "Eleştirisini sözlü olarak ifade edebilme"
+          },
+          {
+            "kod": "T.K.6.1",
+            "aciklama": "Konuşma sürecini yönetebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 119,
+        "sayfa_kitap": 119,
+        "etkinlik_adi": "2. ANLATALIM (Sare Aydın)",
+        "tur": "5N 1K Sorularıyla Problem Çözümüne Yönelik Konuşma",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.K.6.19",
+            "aciklama": "Problem çözümüne yönelik konuşma yapabilme"
+          },
+          {
+            "kod": "T.K.6.26",
+            "aciklama": "Konuşma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 120,
+        "sayfa_kitap": 120,
+        "etkinlik_adi": "3, 4 ve 5. ANLATALIM",
+        "tur": "Çoklu Ortam Ögeleri, Masala Dönüştürme ve Zorlukları Aşma Kuralları",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.K.6.1",
+            "aciklama": "Konuşma sürecini yönetebilme"
+          },
+          {
+            "kod": "T.K.6.16",
+            "aciklama": "Değerlendirmesini sözlü olarak ifade edebilme"
+          },
+          {
+            "kod": "T.Y.6.16",
+            "aciklama": "Problem çözümüne yönelik yazabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 121,
+        "sayfa_kitap": 121,
+        "etkinlik_adi": "5. ANLATALIM (ç) ve 6. ANLATALIM",
+        "tur": "Slogan Hazırlama ve Noktalama İşaretleri İşlevleri",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.Y.6.16",
+            "aciklama": "Problem çözümüne yönelik yazabilme"
+          },
+          {
+            "kod": "T.Y.6.21",
+            "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+          }
+        ]
+      }
+    ]
+  }
+}

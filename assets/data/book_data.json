@@ -22314,6 +22314,76 @@
       "T.Y.7.18. Uygun bağlantı ifadelerini kullanabilme",
       "T.Y.7.19. Yazım ve noktalama kurallarını uygulayabilme",
       "T.Y.7.20. Yazma sürecini değerlendirebilme"
+    ],
+    "147": [
+      "T.K.7.16. Sözlü olarak tartışabilme",
+      "T.O.7.1. Okumada materyal seçimini yönetebilme",
+      "T.O.7.2. Okumada strateji, yöntem ve teknik seçimlerini yönetebilme",
+      "T.O.7.5. Metnin yüzey anlamını belirleyebilme"
+    ],
+    "148": [
+      "T.O.7.2. Okumada strateji, yöntem ve teknik seçimlerini yönetebilme",
+      "T.O.7.5. Metnin yüzey anlamını belirleyebilme",
+      "T.O.7.7. Basit çıkarımlar yoluyla metnin derin anlamını belirleyebilme"
+    ],
+    "149": [
+      "T.O.7.5. Metnin yüzey anlamını belirleyebilme",
+      "T.O.7.7. Basit çıkarımlar yoluyla metnin derin anlamını belirleyebilme",
+      "T.O.7.8. Üst düzey çıkarımlar yoluyla metnin derin anlamını belirleyebilme",
+      "T.O.7.26. Okuma sürecini değerlendirebilme"
+    ],
+    "150": [
+      "T.O.7.4. Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme",
+      "T.O.7.5. Metnin yüzey anlamını belirleyebilme",
+      "T.O.7.7. Basit çıkarımlar yoluyla metnin derin anlamını belirleyebilme",
+      "T.O.7.20. Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme",
+      "T.K.7.16. Sözlü olarak tartışabilme",
+      "T.Y.7.16. Yazısını zenginleştirecek biçimde söz varlığını kullanabilme"
+    ],
+    "151": [
+      "T.O.7.5. Metnin yüzey anlamını belirleyebilme",
+      "T.O.7.7. Basit çıkarımlar yoluyla metnin derin anlamını belirleyebilme",
+      "T.O.7.13. Bilgilendirici metinde metin yapılarından hareketle önemli bilgileri belirlemeye yönelik çözümleme yapabilme",
+      "T.Y.7.3. Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme",
+      "T.Y.7.16. Yazısını zenginleştirecek biçimde söz varlığını kullanabilme"
+    ],
+    "152": [
+      "T.O.7.17. Çoklu ortam ögelerini metnin içeriğini destekleme, anlamlandırma ve geliştirme açısından çözümleyebilme",
+      "T.O.7.22. Medya metinlerini sorgulayabilme",
+      "T.Y.7.12. Yazılı üretiminde ve yazılı etkileşiminde tartışabilme"
+    ],
+    "153": [
+      "T.O.7.7. Basit çıkarımlar yoluyla metnin derin anlamını belirleyebilme",
+      "T.O.7.24. Metindeki probleme yönelik çözüm üretebilme",
+      "T.Y.7.14. Problem çözümüne yönelik yazabilme",
+      "T.Y.7.16. Yazısını zenginleştirecek biçimde söz varlığını kullanabilme"
+    ],
+    "154": [
+      "T.D.7.1. Dinlemede/izlemede materyal seçimini yönetebilme",
+      "T.D.7.4. Dinlediğinde/izlediğinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme",
+      "T.D.7.5. Dinlediğinin/izlediğinin yüzey anlamını belirleyebilme",
+      "T.K.7.16. Sözlü olarak tartışabilme"
+    ],
+    "155": [
+      "T.D.7.17. Dinlediğinde/izlediğinde kullanılan ikna tekniklerini belirlemeye yönelik çözümleme yapabilme",
+      "T.K.7.18. Problem çözümüne yönelik konuşma yapabilme",
+      "T.K.7.19. Hazırlıklı konuşmasını yapılandırabilme",
+      "T.K.7.21. Konuşmasını zenginleştirecek biçimde söz varlığını kullanabilme",
+      "T.K.7.25. Konuşma sürecini değerlendirebilme"
+    ],
+    "156": [
+      "T.Y.7.1. Yazma sürecini yönetebilme",
+      "T.Y.7.3. Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme",
+      "T.Y.7.19. Yazım ve noktalama kurallarını uygulayabilme"
+    ],
+    "157": [
+      "T.Y.7.1. Yazma sürecini yönetebilme",
+      "T.Y.7.3. Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme",
+      "T.Y.7.14. Problem çözümüne yönelik yazabilme",
+      "T.Y.7.16. Yazısını zenginleştirecek biçimde söz varlığını kullanabilme",
+      "T.Y.7.18. Uygun bağlantı ifadelerini kullanabilme",
+      "T.Y.7.19. Yazım ve noktalama kurallarını uygulayabilme",
+      "T.Y.7.20. Yazma sürecini değerlendirebilme"
     ]
   },
   "book3_outcomes": {
@@ -32918,6 +32988,42 @@
       "T.O.6.1",
       "T.O.6.14",
       "T.Y.6.6"
+    ],
+    "112": [],
+    "113": [],
+    "114": [
+      "T.O.6.1",
+      "T.K.6.1",
+      "T.K.6.16"
+    ],
+    "115": [
+      "T.O.6.24"
+    ],
+    "116": [
+      "T.O.6.27",
+      "T.O.6.24"
+    ],
+    "117": [
+      "T.O.6.24",
+      "T.O.6.25"
+    ],
+    "118": [
+      "T.O.6.24",
+      "T.K.6.18",
+      "T.K.6.1"
+    ],
+    "119": [
+      "T.K.6.19",
+      "T.K.6.26"
+    ],
+    "120": [
+      "T.K.6.1",
+      "T.K.6.16",
+      "T.Y.6.16"
+    ],
+    "121": [
+      "T.Y.6.16",
+      "T.Y.6.21"
     ]
   },
   "book2_inpage_answers": {
@@ -39230,6 +39336,436 @@
             "top": 80.8,
             "width": 70.0,
             "text": "Onunla sakince duygularını paylaşırsan seni anlayacaktır."
+          }
+        ]
+      }
+    ],
+    "116": [
+      {
+        "id": "p116_degerlendirelim",
+        "title": "Değerlendirelim: Okuma Süreci Öz Değerlendirme",
+        "button": {
+          "left": 5.5,
+          "top": 12.5
+        },
+        "items": [
+          {
+            "type": "lines",
+            "left": 21.8,
+            "top": 24.5,
+            "width": 4.0,
+            "text": "5",
+            "style": "text-align: center; color: #1e40af; font-weight: bold;"
+          },
+          {
+            "type": "lines",
+            "left": 21.8,
+            "top": 26.6,
+            "width": 4.0,
+            "text": "5",
+            "style": "text-align: center; color: #1e40af; font-weight: bold;"
+          },
+          {
+            "type": "lines",
+            "left": 21.8,
+            "top": 28.8,
+            "width": 4.0,
+            "text": "5",
+            "style": "text-align: center; color: #1e40af; font-weight: bold;"
+          },
+          {
+            "type": "lines",
+            "left": 21.8,
+            "top": 30.9,
+            "width": 4.0,
+            "text": "5",
+            "style": "text-align: center; color: #1e40af; font-weight: bold;"
+          },
+          {
+            "type": "lines",
+            "left": 30.5,
+            "top": 38.2,
+            "width": 6.0,
+            "text": "20",
+            "style": "text-align: center; color: #1e40af; font-weight: bold;"
+          },
+          {
+            "type": "lines",
+            "left": 19.8,
+            "top": 40.8,
+            "width": 70.0,
+            "text": "kelimeleri doğru okuma, vurgu ve tonlamaya dikkat etme"
+          },
+          {
+            "type": "lines",
+            "left": 31.5,
+            "top": 43.6,
+            "width": 58.0,
+            "text": "ses tonumu geniş mekânlara göre ayarlama"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 46.4,
+            "width": 55.0,
+            "text": "ve topluluk önünde nefesimi doğru kullanma"
+          }
+        ]
+      },
+      {
+        "id": "p116_deyimler",
+        "title": "1. ANLAYALIM: Deyimler Tablosu (Dünyaya Gelmek)",
+        "button": {
+          "left": 5.5,
+          "top": 52.0
+        },
+        "items": [
+          {
+            "type": "box",
+            "left": 61.5,
+            "top": 68.3,
+            "width": 27.5,
+            "height": 5.5,
+            "text": "5 Şubat 2003'te iki kolum\nolmadan ve kalça çıkıklığıyla\ndünyaya geldim.",
+            "style": "text-align: center; line-height: 1.15;"
+          },
+          {
+            "type": "box",
+            "left": 61.5,
+            "top": 74.8,
+            "width": 27.5,
+            "height": 5.5,
+            "text": "5 Şubat 2003'te iki kolum\nolmadan ve kalça çıkıklığıyla\ndoğdum.",
+            "style": "text-align: center; line-height: 1.15;"
+          },
+          {
+            "type": "box",
+            "left": 61.5,
+            "top": 81.6,
+            "width": 27.5,
+            "height": 5.5,
+            "text": "5 Şubat 2003'te iki kolum\nolmadan ve kalça çıkıklığıyla\nhayata gözlerimi açtım.",
+            "style": "text-align: center; line-height: 1.15;"
+          }
+        ]
+      }
+    ],
+    "117": [
+      {
+        "id": "p117_gorsel_eslestirme",
+        "title": "2. ANLAYALIM: Görsel Eşleştirme ve Çoklu Ortam İşlevi",
+        "button": {
+          "left": 5.5,
+          "top": 11.5
+        },
+        "items": [
+          {
+            "type": "lines",
+            "left": 28.5,
+            "top": 38.8,
+            "width": 10.5,
+            "text": "III",
+            "style": "text-align: center; color: #1e40af; font-weight: bold; font-size: 18px;"
+          },
+          {
+            "type": "lines",
+            "left": 73.5,
+            "top": 38.8,
+            "width": 10.5,
+            "text": "I",
+            "style": "text-align: center; color: #1e40af; font-weight: bold; font-size: 18px;"
+          },
+          {
+            "type": "checkbox",
+            "left": 10.3,
+            "top": 52.3,
+            "width": 2.8,
+            "height": 2.0,
+            "text": "✓",
+            "style": "text-align: center; font-weight: bold; color: #1e40af;"
+          }
+        ]
+      },
+      {
+        "id": "p117_metni_elestirme",
+        "title": "3. ANLAYALIM: Metni Eleştirme Tablosu",
+        "button": {
+          "left": 5.5,
+          "top": 62.0
+        },
+        "items": [
+          {
+            "type": "lines",
+            "left": 22.8,
+            "top": 81.0,
+            "width": 29.5,
+            "text": "büyük bir azim örneğidir."
+          },
+          {
+            "type": "blank",
+            "left": 54.0,
+            "top": 79.8,
+            "width": 20.0,
+            "text": "zorluklar eklense",
+            "style": "text-align: center;"
+          },
+          {
+            "type": "blank",
+            "left": 82.0,
+            "top": 79.8,
+            "width": 7.0,
+            "text": "bence",
+            "style": "text-align: center;"
+          },
+          {
+            "type": "blank",
+            "left": 54.0,
+            "top": 82.5,
+            "width": 20.0,
+            "text": "okuyucu için çok",
+            "style": "text-align: center;"
+          },
+          {
+            "type": "lines",
+            "left": 39.0,
+            "top": 86.2,
+            "width": 14.0,
+            "text": "dili sade,",
+            "style": "text-align: center;"
+          },
+          {
+            "type": "lines",
+            "left": 22.8,
+            "top": 89.0,
+            "width": 29.5,
+            "text": "anlatım akıcı ve açıktı."
+          },
+          {
+            "type": "blank",
+            "left": 80.5,
+            "top": 86.2,
+            "width": 8.5,
+            "text": "uzun",
+            "style": "text-align: center;"
+          },
+          {
+            "type": "blank",
+            "left": 63.5,
+            "top": 89.0,
+            "width": 10.0,
+            "text": "etkisi",
+            "style": "text-align: center;"
+          }
+        ]
+      }
+    ],
+    "118": [
+      {
+        "id": "p118_dusunceyi_gelistirme",
+        "title": "4. ANLAYALIM: Düşünceyi Geliştirme Yolları",
+        "button": {
+          "left": 5.5,
+          "top": 12.0
+        },
+        "items": [
+          {
+            "type": "blank",
+            "left": 29.0,
+            "top": 24.3,
+            "width": 34.0,
+            "text": "Karşılaştırma",
+            "style": "text-align: center; color: #1e40af;"
+          },
+          {
+            "type": "blank",
+            "left": 25.0,
+            "top": 29.5,
+            "width": 38.0,
+            "text": "Sayısal verilerden yararlanma",
+            "style": "text-align: center; color: #1e40af;"
+          },
+          {
+            "type": "lines",
+            "left": 12.0,
+            "top": 38.0,
+            "width": 77.5,
+            "text": "Yüzme hâlâ hayatımın en önemli parçalarından"
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 41.0,
+            "width": 79.0,
+            "text": "biriydi. (Karşılaştırma)"
+          },
+          {
+            "type": "lines",
+            "left": 12.0,
+            "top": 44.5,
+            "width": 77.5,
+            "text": "31 tablodan oluşan ilk kişisel sergimi açtım."
+          },
+          {
+            "type": "lines",
+            "left": 10.5,
+            "top": 47.5,
+            "width": 79.0,
+            "text": "(Sayısal verilerden yararlanma)"
+          },
+          {
+            "type": "checkbox",
+            "left": 10.3,
+            "top": 56.0,
+            "width": 2.8,
+            "height": 2.0,
+            "text": "✓",
+            "style": "text-align: center; font-weight: bold; color: #1e40af;"
+          },
+          {
+            "type": "checkbox",
+            "left": 31.0,
+            "top": 56.0,
+            "width": 2.8,
+            "height": 2.0,
+            "text": "✓",
+            "style": "text-align: center; font-weight: bold; color: #1e40af;"
+          }
+        ]
+      },
+      {
+        "id": "p118_yaraticilik",
+        "title": "1. ANLATALIM: Yaratıcılık Tanımı",
+        "button": {
+          "left": 5.5,
+          "top": 62.0
+        },
+        "items": [
+          {
+            "type": "lines",
+            "left": 25.5,
+            "top": 70.0,
+            "width": 55.0,
+            "text": "karşılaşılan engellere özgün yollar bulmaktır"
+          }
+        ]
+      }
+    ],
+    "120": [
+      {
+        "id": "p120_coklu_ortam_secimi",
+        "title": "3. ANLATALIM: Çoklu Ortam Ögeleri ve İşlevleri Seçimi",
+        "button": {
+          "left": 5.5,
+          "top": 11.0
+        },
+        "items": [
+          {
+            "type": "checkbox",
+            "left": 10.3,
+            "top": 26.3,
+            "width": 2.8,
+            "height": 2.0,
+            "text": "✓",
+            "style": "text-align: center; font-weight: bold; color: #1e40af;"
+          },
+          {
+            "type": "checkbox",
+            "left": 35.0,
+            "top": 26.3,
+            "width": 2.8,
+            "height": 2.0,
+            "text": "✓",
+            "style": "text-align: center; font-weight: bold; color: #1e40af;"
+          },
+          {
+            "type": "checkbox",
+            "left": 62.0,
+            "top": 26.3,
+            "width": 2.8,
+            "height": 2.0,
+            "text": "✓",
+            "style": "text-align: center; font-weight: bold; color: #1e40af;"
+          },
+          {
+            "type": "checkbox",
+            "left": 36.8,
+            "top": 35.0,
+            "width": 2.8,
+            "height": 2.0,
+            "text": "✓",
+            "style": "text-align: center; font-weight: bold; color: #1e40af;"
+          },
+          {
+            "type": "checkbox",
+            "left": 61.8,
+            "top": 35.0,
+            "width": 2.8,
+            "height": 2.0,
+            "text": "✓",
+            "style": "text-align: center; font-weight: bold; color: #1e40af;"
+          }
+        ]
+      }
+    ],
+    "121": [
+      {
+        "id": "p121_slogan",
+        "title": "5. ANLATALIM (ç): Başarı ve Azim Sloganı",
+        "button": {
+          "left": 5.5,
+          "top": 12.0
+        },
+        "items": [
+          {
+            "type": "box",
+            "left": 36.0,
+            "top": 17.5,
+            "width": 28.0,
+            "height": 6.5,
+            "text": "Azim Varsa Engel Yoktur;\nİnan, Çalış ve Başar!",
+            "style": "text-align: center; font-weight: bold; color: #1e40af; line-height: 1.3;"
+          }
+        ]
+      },
+      {
+        "id": "p121_noktalama",
+        "title": "6. ANLATALIM: Noktalama İşaretleri ve İşlevleri",
+        "button": {
+          "left": 5.5,
+          "top": 25.0
+        },
+        "items": [
+          {
+            "type": "blank",
+            "left": 23.5,
+            "top": 56.0,
+            "width": 6.0,
+            "text": "II",
+            "style": "text-align: center; font-weight: bold; color: #1e40af; font-size: 18px;"
+          },
+          {
+            "type": "blank",
+            "left": 23.5,
+            "top": 63.5,
+            "width": 6.0,
+            "text": "III",
+            "style": "text-align: center; font-weight: bold; color: #1e40af; font-size: 18px;"
+          },
+          {
+            "type": "blank",
+            "left": 68.5,
+            "top": 59.5,
+            "width": 6.0,
+            "text": "IV",
+            "style": "text-align: center; font-weight: bold; color: #1e40af; font-size: 18px;"
+          },
+          {
+            "type": "blank",
+            "left": 68.5,
+            "top": 65.2,
+            "width": 6.0,
+            "text": "I",
+            "style": "text-align: center; font-weight: bold; color: #1e40af; font-size: 18px;"
           }
         ]
       }
