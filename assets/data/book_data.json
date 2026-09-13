@@ -21293,6 +21293,215 @@
           }
         ]
       }
+    ],
+    "146": [
+      {
+        "id": "act_12",
+        "title": "12. Etkinlik (Yazma Planı)",
+        "button": {
+          "left": 5.5,
+          "top": 12.5,
+          "label": "12. Etkinlik"
+        },
+        "items": [
+          {
+            "type": "text",
+            "left": 11.5,
+            "top": 39.17,
+            "width": 77.5,
+            "height": 1.8,
+            "content": "METNİN BAŞLIĞI: Dünyanın Çocuklarına Uzanan Şefkat Eli: UNICEF",
+            "style": {
+              "fontFamily": "Caveat, Kalam, cursive",
+              "fontSize": "19px",
+              "color": "#1a365d",
+              "fontWeight": "600"
+            }
+          },
+          {
+            "type": "text",
+            "left": 11.5,
+            "top": 41.73,
+            "width": 77.5,
+            "height": 1.8,
+            "content": "YAZININ AMACI: UNICEF'in çocuk hakları çalışmalarını tanıtmak.",
+            "style": {
+              "fontFamily": "Caveat, Kalam, cursive",
+              "fontSize": "19px",
+              "color": "#1a365d",
+              "fontWeight": "600"
+            }
+          },
+          {
+            "type": "text",
+            "left": 11.5,
+            "top": 44.29,
+            "width": 77.5,
+            "height": 1.8,
+            "content": "HEDEF KİTLE: Okul arkadaşları, öğretmenler ve tüm çevre.",
+            "style": {
+              "fontFamily": "Caveat, Kalam, cursive",
+              "fontSize": "19px",
+              "color": "#1a365d",
+              "fontWeight": "600"
+            }
+          },
+          {
+            "type": "text",
+            "left": 11.5,
+            "top": 46.86,
+            "width": 77.5,
+            "height": 1.8,
+            "content": "ANLATIM BİÇİMİ: Açıklayıcı ve bilgilendirici anlatım.",
+            "style": {
+              "fontFamily": "Caveat, Kalam, cursive",
+              "fontSize": "19px",
+              "color": "#1a365d",
+              "fontWeight": "600"
+            }
+          },
+          {
+            "type": "text",
+            "left": 11.5,
+            "top": 49.42,
+            "width": 77.5,
+            "height": 1.8,
+            "content": "DÜŞÜNCEYİ GELİŞTİRME: Tanımlama, sayısal veri, örnekleme.",
+            "style": {
+              "fontFamily": "Caveat, Kalam, cursive",
+              "fontSize": "19px",
+              "color": "#1a365d",
+              "fontWeight": "600"
+            }
+          },
+          {
+            "type": "text",
+            "left": 11.5,
+            "top": 52.05,
+            "width": 77.5,
+            "height": 1.8,
+            "content": "GİRİŞ: UNICEF'in tanımı (BM bünyesinde kurulan çocuk örgütü).",
+            "style": {
+              "fontFamily": "Caveat, Kalam, cursive",
+              "fontSize": "19px",
+              "color": "#1a365d",
+              "fontWeight": "600"
+            }
+          },
+          {
+            "type": "text",
+            "left": 11.5,
+            "top": 54.62,
+            "width": 77.5,
+            "height": 1.8,
+            "content": "GİRİŞ: Temel amacı dünyadaki her çocuğun haklarını korumaktır.",
+            "style": {
+              "fontFamily": "Caveat, Kalam, cursive",
+              "fontSize": "19px",
+              "color": "#1a365d",
+              "fontWeight": "600"
+            }
+          },
+          {
+            "type": "text",
+            "left": 11.5,
+            "top": 57.18,
+            "width": 77.5,
+            "height": 1.8,
+            "content": "GELİŞME: Temel sahaları; sağlık, aşı, temiz su ve eğitimdir.",
+            "style": {
+              "fontFamily": "Caveat, Kalam, cursive",
+              "fontSize": "19px",
+              "color": "#1a365d",
+              "fontWeight": "600"
+            }
+          },
+          {
+            "type": "text",
+            "left": 11.5,
+            "top": 59.74,
+            "width": 77.5,
+            "height": 1.8,
+            "content": "GELİŞME (Sayısal Veri): 190'dan fazla ülkede aktif çalışmaktadır.",
+            "style": {
+              "fontFamily": "Caveat, Kalam, cursive",
+              "fontSize": "19px",
+              "color": "#1a365d",
+              "fontWeight": "600"
+            }
+          },
+          {
+            "type": "text",
+            "left": 11.5,
+            "top": 62.31,
+            "width": 77.5,
+            "height": 1.8,
+            "content": "GELİŞME (Örnekleme): Afet bölgelerinde çadır okullar kurar.",
+            "style": {
+              "fontFamily": "Caveat, Kalam, cursive",
+              "fontSize": "19px",
+              "color": "#1a365d",
+              "fontWeight": "600"
+            }
+          },
+          {
+            "type": "text",
+            "left": 11.5,
+            "top": 64.94,
+            "width": 77.5,
+            "height": 1.8,
+            "content": "GELİŞME: Çocuk işçiliği ve istismara karşı mücadele eder.",
+            "style": {
+              "fontFamily": "Caveat, Kalam, cursive",
+              "fontSize": "19px",
+              "color": "#1a365d",
+              "fontWeight": "600"
+            }
+          },
+          {
+            "type": "text",
+            "left": 11.5,
+            "top": 67.5,
+            "width": 77.5,
+            "height": 1.8,
+            "content": "SONUÇ: Çocuk haklarının korunmasında kurumların rolü büyüktür.",
+            "style": {
+              "fontFamily": "Caveat, Kalam, cursive",
+              "fontSize": "19px",
+              "color": "#1a365d",
+              "fontWeight": "600"
+            }
+          },
+          {
+            "type": "text",
+            "left": 11.5,
+            "top": 70.06,
+            "width": 77.5,
+            "height": 1.8,
+            "content": "SONUÇ: Sağlıklı ve mutlu bir gelecek için çocukları korumalıyız.",
+            "style": {
+              "fontFamily": "Caveat, Kalam, cursive",
+              "fontSize": "19px",
+              "color": "#1a365d",
+              "fontWeight": "600"
+            }
+          },
+          {
+            "type": "text",
+            "left": 11.5,
+            "top": 72.63,
+            "width": 77.5,
+            "height": 1.8,
+            "content": "ÇAĞRI: Mutlu çocuklar için hep birlikte el ele vermeliyiz.",
+            "style": {
+              "fontFamily": "Caveat, Kalam, cursive",
+              "fontSize": "19px",
+              "color": "#1a365d",
+              "fontWeight": "600"
+            }
+          }
+        ]
+      }
     ]
   },
   "book6_outcomes": {
@@ -61504,7 +61713,7 @@
           {
             "type": "lines",
             "left": 62.1,
-            "top": 12.2,
+            "top": 11.2,
             "width": 27.6,
             "text": "Önemli yerleri eksiksiz",
             "style": {
@@ -61516,7 +61725,7 @@
           {
             "type": "lines",
             "left": 10.3,
-            "top": 14.9,
+            "top": 13.9,
             "width": 79.4,
             "text": "hızlıca not alma ve konuşmacının vurgularını dikkatle takip etme.",
             "style": {
@@ -61528,7 +61737,7 @@
           {
             "type": "lines",
             "left": 67.8,
-            "top": 21.8,
+            "top": 20.8,
             "width": 21.9,
             "text": "Odaklanıp anlama.",
             "style": {
@@ -61600,12 +61809,12 @@
           {
             "type": "lines",
             "left": 24.5,
-            "top": 52.2,
+            "top": 51.3,
             "width": 60.5,
             "text": "Güney Asya'daki şiddetli yağışlı mevsim rüzgârı.",
             "style": {
               "color": "#1d4ed8",
-              "fontSize": "calc(1.0 * var(--unit-h))",
+              "fontSize": "calc(1.05 * var(--unit-h))",
               "fontFamily": "Caveat, cursive"
             }
           },
@@ -61645,12 +61854,12 @@
           {
             "type": "lines",
             "left": 24.5,
-            "top": 56.4,
+            "top": 55.5,
             "width": 60.5,
             "text": "İnsan ırklarını ve kültürlerini inceleyen bilgin.",
             "style": {
               "color": "#1d4ed8",
-              "fontSize": "calc(1.0 * var(--unit-h))",
+              "fontSize": "calc(1.05 * var(--unit-h))",
               "fontFamily": "Caveat, cursive"
             }
           },
@@ -61690,12 +61899,12 @@
           {
             "type": "lines",
             "left": 24.5,
-            "top": 60.6,
+            "top": 59.7,
             "width": 60.5,
             "text": "Güneş ışığını elektriğe çeviren yassı düzenek.",
             "style": {
               "color": "#1d4ed8",
-              "fontSize": "calc(1.0 * var(--unit-h))",
+              "fontSize": "calc(1.05 * var(--unit-h))",
               "fontFamily": "Caveat, cursive"
             }
           },
@@ -61735,12 +61944,12 @@
           {
             "type": "lines",
             "left": 24.5,
-            "top": 64.8,
+            "top": 63.9,
             "width": 60.5,
             "text": "Bir işin başlamasına öncülük etmek, yol açmak.",
             "style": {
               "color": "#1d4ed8",
-              "fontSize": "calc(1.0 * var(--unit-h))",
+              "fontSize": "calc(1.05 * var(--unit-h))",
               "fontFamily": "Caveat, cursive"
             }
           },
@@ -61780,12 +61989,12 @@
           {
             "type": "lines",
             "left": 24.5,
-            "top": 69.0,
+            "top": 68.1,
             "width": 60.5,
             "text": "Soğuk kutup bölgelerinde yaşayan iri geyik türü.",
             "style": {
               "color": "#1d4ed8",
-              "fontSize": "calc(1.0 * var(--unit-h))",
+              "fontSize": "calc(1.05 * var(--unit-h))",
               "fontFamily": "Caveat, cursive"
             }
           },
@@ -61825,12 +62034,12 @@
           {
             "type": "lines",
             "left": 24.5,
-            "top": 73.2,
+            "top": 72.3,
             "width": 60.5,
             "text": "Suyu çok olan, bataklık veya nemli geniş bölge.",
             "style": {
               "color": "#1d4ed8",
-              "fontSize": "calc(1.0 * var(--unit-h))",
+              "fontSize": "calc(1.05 * var(--unit-h))",
               "fontFamily": "Caveat, cursive"
             }
           },
@@ -61870,12 +62079,12 @@
           {
             "type": "lines",
             "left": 24.5,
-            "top": 77.4,
+            "top": 76.5,
             "width": 60.5,
             "text": "Yerleşik olmayıp mevsime göre yer değiştiren halk.",
             "style": {
               "color": "#1d4ed8",
-              "fontSize": "calc(1.0 * var(--unit-h))",
+              "fontSize": "calc(1.05 * var(--unit-h))",
               "fontFamily": "Caveat, cursive"
             }
           },
@@ -61915,12 +62124,12 @@
           {
             "type": "lines",
             "left": 24.5,
-            "top": 81.6,
+            "top": 80.7,
             "width": 60.5,
             "text": "Ulaşımı zor sulak bölgelerde yüzen gezici okul.",
             "style": {
               "color": "#1d4ed8",
-              "fontSize": "calc(1.0 * var(--unit-h))",
+              "fontSize": "calc(1.05 * var(--unit-h))",
               "fontFamily": "Caveat, cursive"
             }
           },
@@ -61960,12 +62169,12 @@
           {
             "type": "lines",
             "left": 24.5,
-            "top": 85.8,
+            "top": 84.9,
             "width": 60.5,
             "text": "Kutup altındaki ağaçsız, donmuş soğuk bozkırlar.",
             "style": {
               "color": "#1d4ed8",
-              "fontSize": "calc(1.0 * var(--unit-h))",
+              "fontSize": "calc(1.05 * var(--unit-h))",
               "fontFamily": "Caveat, cursive"
             }
           },
@@ -61999,7 +62208,7 @@
           {
             "type": "lines",
             "left": 10.4,
-            "top": 32.2,
+            "top": 31.2,
             "width": 79.0,
             "text": "Ders: Doğa ve Yaşam Becerileri. Öğretmeni doğa bilimci ve izcidir.",
             "style": {
@@ -62011,7 +62220,7 @@
           {
             "type": "lines",
             "left": 10.5,
-            "top": 35.5,
+            "top": 34.4,
             "width": 79.0,
             "text": "İçeriğinde barınak yapma, yön bulma ve doğada ilk yardım yer alır.",
             "style": {
@@ -62023,7 +62232,7 @@
           {
             "type": "lines",
             "left": 10.2,
-            "top": 38.6,
+            "top": 37.5,
             "width": 79.0,
             "text": "Sınavlar klasik yazılı yerine doğada pratik görevlerle yapılır.",
             "style": {
@@ -62035,7 +62244,7 @@
           {
             "type": "lines",
             "left": 10.3,
-            "top": 41.9,
+            "top": 40.8,
             "width": 79.0,
             "text": "Böylece öğrenciler zorlu yaşam koşullarında yardımlaşmayı öğrenir.",
             "style": {
@@ -62056,7 +62265,7 @@
           {
             "type": "lines",
             "left": 10.4,
-            "top": 64.1,
+            "top": 63.1,
             "width": 79.0,
             "text": "[✓] Bangladeş'te sel ve yağmurlar için yüzen tekne okullar yapıldı.",
             "style": {
@@ -62068,7 +62277,7 @@
           {
             "type": "lines",
             "left": 10.5,
-            "top": 67.4,
+            "top": 66.4,
             "width": 79.0,
             "text": "[✓] Sibirya'da göçebe Evenk çocukları için çadır okullar kuruldu.",
             "style": {
@@ -62080,7 +62289,7 @@
           {
             "type": "lines",
             "left": 10.2,
-            "top": 70.5,
+            "top": 69.5,
             "width": 79.0,
             "text": "[X] Saif teneffüs saatinde teknenin arkasından balık tutmaktadır.",
             "style": {
@@ -62092,7 +62301,7 @@
           {
             "type": "lines",
             "left": 10.4,
-            "top": 73.8,
+            "top": 72.8,
             "width": 79.0,
             "text": "[✓] Hindistan'da yoksul bölgeler için gezici otobüs okullar vardır.",
             "style": {
@@ -62104,7 +62313,7 @@
           {
             "type": "lines",
             "left": 10.3,
-            "top": 76.9,
+            "top": 75.9,
             "width": 79.0,
             "text": "[✓] Güneş paneli sayesinde teknelerde bilgisayarlı eğitim verilir.",
             "style": {
@@ -62116,7 +62325,7 @@
           {
             "type": "lines",
             "left": 10.4,
-            "top": 80.1,
+            "top": 79.1,
             "width": 79.0,
             "text": "[X] Öğrenci üniformaları mevsime göre rengârenk tasarlanmıştır.",
             "style": {
@@ -62145,13 +62354,13 @@
             "text": "• İki okul da zorlu doğa ve iklim koşullarında eğitimi sürdürmektedir.<br><br>• İkisinde de sabit bina yerine hareketli ve gezici mekânlar kullanılır.<br><br>• Öğrenciler temel derslerin yanında teknoloji ve bilgisayar öğrenir.",
             "style": {
               "color": "#1e3a8a",
-              "fontSize": "calc(0.95 * var(--unit-h))",
+              "fontSize": "calc(1.05 * var(--unit-h))",
               "fontFamily": "Caveat, cursive",
-              "lineHeight": "1.35",
-              "padding": "6px",
+              "lineHeight": "1.5",
+              "padding": "12px 8px",
               "display": "flex",
               "flexDirection": "column",
-              "justifyContent": "center"
+              "justifyContent": "flex-start"
             }
           },
           {
@@ -62163,13 +62372,13 @@
             "text": "• Arun kutup soğuğunda çadırda; Saif sulak nehirde tekne okuldadır.<br><br>• Arun Ren geyiği yetiştirmeyi; Saif muson sellerine uyumu öğrenir.<br><br>• Arun'un okulu karada göç eder; Saif'in okulu suda köylere yanaşır.",
             "style": {
               "color": "#1e3a8a",
-              "fontSize": "calc(0.95 * var(--unit-h))",
+              "fontSize": "calc(1.05 * var(--unit-h))",
               "fontFamily": "Caveat, cursive",
-              "lineHeight": "1.35",
-              "padding": "6px",
+              "lineHeight": "1.5",
+              "padding": "12px 8px",
               "display": "flex",
               "flexDirection": "column",
-              "justifyContent": "center"
+              "justifyContent": "flex-start"
             }
           }
         ]
@@ -62186,7 +62395,7 @@
           {
             "type": "lines",
             "left": 13.0,
-            "top": 47.4,
+            "top": 46.4,
             "width": 25.0,
             "text": "Sonuç bölümü",
             "style": {
@@ -62198,7 +62407,7 @@
           {
             "type": "lines",
             "left": 13.0,
-            "top": 50.3,
+            "top": 49.3,
             "width": 25.0,
             "text": "Gelişme bölümü",
             "style": {
@@ -62210,7 +62419,7 @@
           {
             "type": "lines",
             "left": 13.0,
-            "top": 53.1,
+            "top": 52.1,
             "width": 25.0,
             "text": "Giriş bölümü",
             "style": {
@@ -62741,156 +62950,136 @@
         },
         "items": [
           {
-            "type": "badge",
-            "left": 36.5,
-            "top": 62.7,
+            "type": "box",
+            "left": 37.2,
+            "top": 64.1,
+            "width": 6.8,
+            "height": 2.2,
+            "text": "",
+            "style": {
+              "border": "1.5px solid #dc2626",
+              "borderRadius": "4px",
+              "background": "rgba(220, 38, 38, 0.12)"
+            }
+          },
+          {
+            "type": "box",
+            "left": 49.8,
+            "top": 68.6,
+            "width": 11.8,
+            "height": 2.2,
+            "text": "",
+            "style": {
+              "border": "1.5px solid #dc2626",
+              "borderRadius": "4px",
+              "background": "rgba(220, 38, 38, 0.12)"
+            }
+          },
+          {
+            "type": "box",
+            "left": 81.8,
+            "top": 72.0,
             "width": 8.0,
-            "height": 1.7,
-            "text": "yok ki",
+            "height": 2.2,
+            "text": "",
             "style": {
-              "color": "#dc2626",
-              "fontSize": "calc(0.95 * var(--unit-h))",
-              "fontFamily": "Caveat, cursive",
-              "fontWeight": "700",
-              "display": "flex",
-              "alignItems": "center",
-              "justifyContent": "center"
+              "border": "1.5px solid #dc2626",
+              "borderRadius": "4px",
+              "background": "rgba(220, 38, 38, 0.12)"
             }
           },
           {
-            "type": "badge",
-            "left": 50.0,
-            "top": 67.2,
-            "width": 11.5,
-            "height": 1.7,
-            "text": "Türkiye'deki",
+            "type": "box",
+            "left": 85.4,
+            "top": 73.7,
+            "width": 4.8,
+            "height": 2.2,
+            "text": "",
             "style": {
-              "color": "#dc2626",
-              "fontSize": "calc(0.95 * var(--unit-h))",
-              "fontFamily": "Caveat, cursive",
-              "fontWeight": "700",
-              "display": "flex",
-              "alignItems": "center",
-              "justifyContent": "center"
+              "border": "1.5px solid #dc2626",
+              "borderRadius": "4px",
+              "background": "rgba(220, 38, 38, 0.12)"
             }
           },
           {
-            "type": "badge",
-            "left": 81.5,
-            "top": 70.6,
-            "width": 8.5,
-            "height": 1.7,
-            "text": "haberi de",
-            "style": {
-              "color": "#dc2626",
-              "fontSize": "calc(0.95 * var(--unit-h))",
-              "fontFamily": "Caveat, cursive",
-              "fontWeight": "700",
-              "display": "flex",
-              "alignItems": "center",
-              "justifyContent": "center"
-            }
-          },
-          {
-            "type": "badge",
-            "left": 85.0,
-            "top": 72.3,
-            "width": 9.0,
-            "height": 1.7,
-            "text": "doydu mu",
-            "style": {
-              "color": "#dc2626",
-              "fontSize": "calc(0.95 * var(--unit-h))",
-              "fontFamily": "Caveat, cursive",
-              "fontWeight": "700",
-              "display": "flex",
-              "alignItems": "center",
-              "justifyContent": "center"
-            }
-          },
-          {
-            "type": "badge",
+            "type": "box",
             "left": 16.0,
-            "top": 74.0,
-            "width": 9.0,
-            "height": 1.7,
-            "text": "uyudu mu",
+            "top": 75.4,
+            "width": 7.2,
+            "height": 2.2,
+            "text": "",
             "style": {
-              "color": "#dc2626",
-              "fontSize": "calc(0.95 * var(--unit-h))",
-              "fontFamily": "Caveat, cursive",
-              "fontWeight": "700",
-              "display": "flex",
-              "alignItems": "center",
-              "justifyContent": "center"
+              "border": "1.5px solid #dc2626",
+              "borderRadius": "4px",
+              "background": "rgba(220, 38, 38, 0.12)"
             }
           },
           {
-            "type": "badge",
-            "left": 78.5,
-            "top": 74.0,
+            "type": "box",
+            "left": 78.8,
+            "top": 75.4,
             "width": 6.5,
-            "height": 1.7,
-            "text": "çünkü",
+            "height": 2.2,
+            "text": "",
             "style": {
-              "color": "#dc2626",
-              "fontSize": "calc(0.95 * var(--unit-h))",
-              "fontFamily": "Caveat, cursive",
-              "fontWeight": "700",
-              "display": "flex",
-              "alignItems": "center",
-              "justifyContent": "center"
+              "border": "1.5px solid #dc2626",
+              "borderRadius": "4px",
+              "background": "rgba(220, 38, 38, 0.12)"
             }
           },
           {
-            "type": "badge",
+            "type": "box",
             "left": 38.0,
-            "top": 75.7,
-            "width": 11.5,
-            "height": 1.7,
-            "text": "ağabeyininki",
+            "top": 77.1,
+            "width": 12.0,
+            "height": 2.2,
+            "text": "",
             "style": {
-              "color": "#dc2626",
-              "fontSize": "calc(0.95 * var(--unit-h))",
-              "fontFamily": "Caveat, cursive",
-              "fontWeight": "700",
-              "display": "flex",
-              "alignItems": "center",
-              "justifyContent": "center"
+              "border": "1.5px solid #dc2626",
+              "borderRadius": "4px",
+              "background": "rgba(220, 38, 38, 0.12)"
             }
           },
           {
-            "type": "badge",
+            "type": "box",
             "left": 13.5,
-            "top": 80.2,
-            "width": 14.5,
-            "height": 1.7,
-            "text": "Mektuplarımızda",
+            "top": 81.6,
+            "width": 15.8,
+            "height": 2.2,
+            "text": "",
             "style": {
-              "color": "#dc2626",
-              "fontSize": "calc(0.95 * var(--unit-h))",
-              "fontFamily": "Caveat, cursive",
-              "fontWeight": "700",
-              "display": "flex",
-              "alignItems": "center",
-              "justifyContent": "center"
+              "border": "1.5px solid #dc2626",
+              "borderRadius": "4px",
+              "background": "rgba(220, 38, 38, 0.12)"
             }
           },
           {
-            "type": "badge",
-            "left": 26.5,
-            "top": 81.9,
-            "width": 7.5,
-            "height": 1.7,
-            "text": "gelsin ki",
+            "type": "box",
+            "left": 26.8,
+            "top": 83.3,
+            "width": 6.8,
+            "height": 2.2,
+            "text": "",
             "style": {
-              "color": "#dc2626",
-              "fontSize": "calc(0.95 * var(--unit-h))",
-              "fontFamily": "Caveat, cursive",
-              "fontWeight": "700",
+              "border": "1.5px solid #dc2626",
+              "borderRadius": "4px",
+              "background": "rgba(220, 38, 38, 0.12)"
+            }
+          },
+          {
+            "type": "box",
+            "left": 27.0,
+            "top": 86.8,
+            "width": 57.0,
+            "height": 5.4,
+            "text": "<div style='display:grid; grid-template-columns: 1fr 1fr 1fr; gap: 2px 6px; font-size: calc(0.85 * var(--unit-h)); color: #b91c1c; font-family: Caveat, cursive; font-weight: 700;'><div>• yokki ➔ yok ki<br>• Türkiye'de ki ➔ Türkiye'deki<br>• haberide ➔ haberi de</div><div>• doy-dumu ➔ doydu mu<br>• uyudumu ➔ uyudu mu<br>• çün kü ➔ çünkü</div><div>• ağabeyinin ki ➔ ağabeyininki<br>• Mektuplarımız da ➔ Mektuplarımızda<br>• gelsinki ➔ gelsin ki</div></div>",
+            "style": {
+              "background": "rgba(254, 242, 242, 0.95)",
+              "border": "1.5px dashed #ef4444",
+              "borderRadius": "4px",
+              "padding": "3px 6px",
               "display": "flex",
-              "alignItems": "center",
-              "justifyContent": "center"
+              "alignItems": "center"
             }
           }
         ]
@@ -62907,48 +63096,48 @@
           {
             "type": "lines",
             "left": 59.7,
-            "top": 74.8,
+            "top": 73.7,
             "width": 29.5,
             "text": "kaldım",
             "style": {
               "color": "#1d4ed8",
-              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontSize": "calc(1.15 * var(--unit-h))",
               "fontFamily": "Caveat, cursive"
             }
           },
           {
             "type": "lines",
             "left": 15.9,
-            "top": 78.3,
+            "top": 77.1,
             "width": 73.8,
             "text": "oyunların kökenlerini ve kurallarını ayrıntılı öğrendim.",
             "style": {
               "color": "#1d4ed8",
-              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontSize": "calc(1.15 * var(--unit-h))",
               "fontFamily": "Caveat, cursive"
             }
           },
           {
             "type": "lines",
             "left": 62.1,
-            "top": 81.6,
+            "top": 80.4,
             "width": 27.6,
             "text": "geleneksel Afrika",
             "style": {
               "color": "#1d4ed8",
-              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontSize": "calc(1.15 * var(--unit-h))",
               "fontFamily": "Caveat, cursive"
             }
           },
           {
             "type": "lines",
             "left": 9.9,
-            "top": 85.0,
+            "top": 83.8,
             "width": 79.8,
             "text": "ve Uzak Doğu sokak oyunlarını araştırır, görseller eklerdim.",
             "style": {
               "color": "#1d4ed8",
-              "fontSize": "calc(1.05 * var(--unit-h))",
+              "fontSize": "calc(1.15 * var(--unit-h))",
               "fontFamily": "Caveat, cursive"
             }
           }

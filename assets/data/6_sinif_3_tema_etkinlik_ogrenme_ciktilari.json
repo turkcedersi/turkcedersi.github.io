@@ -441,5 +441,225 @@
         ]
       }
     ]
+  },
+  "metin_3": {
+    "baslik": "Çocuklar Neredeyse Okulları Orada",
+    "tur": "Dinleme / İzleme Metni",
+    "sayfa_araligi": "142 - 153 (Kitapta 142 - 153)",
+    "isleme_tarihi": "04 - 12 Ocak",
+    "etkinlikler": [
+      {
+        "sayfa_dosya": 142,
+        "sayfa_kitap": 142,
+        "etkinlik_adi": "BİRLİKTE UYGULAYALIM! Soru Sorma Stratejisi Rehberi",
+        "tur": "Dinleme/İzleme Strateji Rehberi",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.D.6.1",
+            "aciklama": "Dinlemede/izlemede materyal seçimini yönetebilme"
+          },
+          {
+            "kod": "T.D.6.25",
+            "aciklama": "Dinleme/izleme sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 143,
+        "sayfa_kitap": 143,
+        "etkinlik_adi": "Grup Çalışması ve Karekod İzleme Süreci",
+        "tur": "Grup İçi Dinleme/İzleme ve Değerlendirme",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.D.6.1",
+            "aciklama": "Dinlemede/izlemede materyal seçimini yönetebilme"
+          },
+          {
+            "kod": "T.D.6.25",
+            "aciklama": "Dinleme/izleme sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 144,
+        "sayfa_kitap": 144,
+        "etkinlik_adi": "HAYDİ, BAŞLAYALIM! ve Değerlendirelim",
+        "tur": "Okul Çeşitleri İşaretleme ve Yıldızlı Puan Çizelgesi",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.D.6.1",
+            "aciklama": "Dinlemede/izlemede materyal seçimini yönetebilme"
+          },
+          {
+            "kod": "T.D.6.25",
+            "aciklama": "Dinleme/izleme sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 145,
+        "sayfa_kitap": 145,
+        "etkinlik_adi": "1. ANLAYALIM: Söz Varlığı",
+        "tur": "Kelimelerin Anlam Tahmini ve Sözlük Doğrulaması",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.D.6.25",
+            "aciklama": "Dinleme/izleme sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+          },
+          {
+            "kod": "T.O.6.1",
+            "aciklama": "Okumada materyal seçimini yönetebilme"
+          },
+          {
+            "kod": "T.O.6.21",
+            "aciklama": "Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 146,
+        "sayfa_kitap": 146,
+        "etkinlik_adi": "2. ANLAYALIM ve 3. ANLAYALIM",
+        "tur": "Metin İçi Çıkarımlar, Ders Tasarlama ve Not Kodlama (✓ / X)",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.D.6.8",
+            "aciklama": "Dinlediğinin/izlediğinin derin anlamını belirlemeye yönelik üst düzey çıkarımlar yapabilme"
+          },
+          {
+            "kod": "T.D.6.21",
+            "aciklama": "Dinlediğini/izlediğini özetleyebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 147,
+        "sayfa_kitap": 147,
+        "etkinlik_adi": "4. ANLAYALIM",
+        "tur": "Öğrenci Yaşamlarını Karşılaştırma (Benzerlikler ve Farklılıklar)",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.D.6.9",
+            "aciklama": "Dinlediğini/izlediğini kendi içinde karşılaştırabilme"
+          },
+          {
+            "kod": "T.D.6.10",
+            "aciklama": "Dinledikleri/izledikleri arasında karşılaştırma yapabilme"
+          },
+          {
+            "kod": "T.Y.6.9",
+            "aciklama": "Yazısında karşılaştırma yapabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 148,
+        "sayfa_kitap": 148,
+        "etkinlik_adi": "5. ANLAYALIM ve 6. ANLAYALIM",
+        "tur": "Metin Bölümleri (Giriş, Gelişme, Sonuç) ve Tanık Gösterme Yolu",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.17",
+            "aciklama": "Metnin bölümlerini belirlemeye yönelik çözümleme yapabilme"
+          },
+          {
+            "kod": "T.O.6.19",
+            "aciklama": "Bilgilendirici metinde düşünceyi geliştirme yollarını belirlemeye yönelik çözümleme yapabilme"
+          },
+          {
+            "kod": "T.D.6.17",
+            "aciklama": "Bilgilendirici metinde düşünceyi geliştirme yollarını belirlemeye yönelik çözümleme yapabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 149,
+        "sayfa_kitap": 149,
+        "etkinlik_adi": "1. ANLATALIM ve 2. ANLATALIM",
+        "tur": "Uçak Bileti Kültür Oyunu ve Olmayan Ülke Konuşması",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.O.6.19",
+            "aciklama": "Bilgilendirici metinde düşünceyi geliştirme yollarını belirlemeye yönelik çözümleme yapabilme"
+          },
+          {
+            "kod": "T.K.6.1",
+            "aciklama": "Konuşma sürecini yönetebilme"
+          },
+          {
+            "kod": "T.K.6.14",
+            "aciklama": "Yorumunu sözlü olarak ifade edebilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 150,
+        "sayfa_kitap": 150,
+        "etkinlik_adi": "3. ANLATALIM ve 4. ANLATALIM",
+        "tur": "Tartışma Grubu, Düşüncenin Yönünü Değiştiren İfadeler ve Zıtlık",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.K.6.17",
+            "aciklama": "Sözlü olarak tartışmaya katılabilme"
+          },
+          {
+            "kod": "T.O.6.17",
+            "aciklama": "Metnin bölümlerini belirlemeye yönelik çözümleme yapabilme"
+          },
+          {
+            "kod": "T.Y.6.17",
+            "aciklama": "Yazısında düşünceyi geliştirme yollarını kullanabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 151,
+        "sayfa_kitap": 151,
+        "etkinlik_adi": "5. ANLATALIM ve 6. ANLATALIM: Dil Bilgisi",
+        "tur": "Ses Olayları (Ünsüz Türemesi) ve Yazım Kuralları (de, mi, ki)",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.Y.6.21",
+            "aciklama": "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 152,
+        "sayfa_kitap": 152,
+        "etkinlik_adi": "7. ANLATALIM",
+        "tur": "Farklı Kültürlerdeki Oyunları Tanıtma Yazısı ve Öz Değerlendirme",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.Y.6.17",
+            "aciklama": "Yazısında düşünceyi geliştirme yollarını kullanabilme"
+          },
+          {
+            "kod": "T.Y.6.22",
+            "aciklama": "Yazma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+          }
+        ]
+      },
+      {
+        "sayfa_dosya": 153,
+        "sayfa_kitap": 153,
+        "etkinlik_adi": "8. ANLATALIM: Yazma Süreci ve Planlama",
+        "tur": "Dünya Çocukları Etkinliği Planlama ve Görevimizi Bilelim",
+        "ogrenme_ciktilari": [
+          {
+            "kod": "T.Y.6.1",
+            "aciklama": "Yazma sürecini yönetebilme"
+          },
+          {
+            "kod": "T.Y.6.7",
+            "aciklama": "Yaratıcı yazı yazabilme"
+          },
+          {
+            "kod": "T.Y.6.22",
+            "aciklama": "Yazma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+          }
+        ]
+      }
+    ]
   }
 }
