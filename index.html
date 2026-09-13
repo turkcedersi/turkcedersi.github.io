@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="index.css?v=7.0">
+  <link rel="stylesheet" href="index.css?v=8.0">
 </head>
 <body>
   <!-- LOADING OVERLAY -->
@@ -206,6 +206,9 @@
 
     <!-- VIEW 3: BOOK READER -->
     <section id="view-reader" class="view-section">
+
+      <!-- MOBILE: Sidebar Overlay (Arka plan karartma - Sidebar'ın arkasında kalır) -->
+      <div class="mobile-sidebar-overlay" id="mobile-sidebar-overlay"></div>
 
       <!-- LEFT SIDEBAR -->
       <aside class="sidebar" id="reader-sidebar">
@@ -523,9 +526,6 @@
     </svg>
   </button>
 
-  <!-- Sidebar Overlay -->
-  <div class="mobile-sidebar-overlay" id="mobile-sidebar-overlay"></div>
-
   <!-- Mobil Sayfa Geçiş Butonları (En Altta Ortada, Bağımsız Yüzen İkonlar) -->
   <div class="mobile-nav-fab-group" id="mobile-nav-fab-group" style="display:none;">
     <button class="mobile-nav-fab" id="mobile-btn-prev" title="Önceki Sayfa" aria-label="Önceki Sayfa">
@@ -540,6 +540,6 @@
     </button>
   </div>
 
-  <script src="app.js?v=7.0"></script>
+  <script src="app.js?v=8.0"></script>
 </body>
 </html>
