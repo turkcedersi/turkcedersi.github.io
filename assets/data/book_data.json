@@ -39749,15 +39749,17 @@
           {
             "type": "box",
             "left": 13.0,
-            "top": 39.0,
+            "top": 38.5,
             "width": 74.0,
-            "height": 19.0,
-            "text": "1. Doğadaki canlılar, teknolojik icatlara ilham kaynağı olur.\n2. Yalıçapkını kuşu, hızlı tren tasarımına ilham vermiştir.\n3. Nilüfer yaprağından su ve leke tutmayan kumaş üretilmiştir.\n4. Yusufçuk böceği, helikopter tasarımına model olmuştur.",
+            "height": 20.0,
+            "text": "1. Doğadaki canlılar, teknolojik icatlara ilham verir.\n2. Yalıçapkını kuşu, hızlı tren tasarımına model olmuştur.\n3. Nilüfer yaprağından su tutmayan kumaş üretilmiştir.\n4. Yusufçuk böceği, helikopter tasarımına esin kaynağıdır.",
             "style": {
               "justifyContent": "flex-start",
-              "fontSize": "1.25rem",
-              "lineHeight": "1.85",
-              "color": "#1d4ed8"
+              "fontSize": "calc(1.20 * var(--unit-h, 9.2px))",
+              "lineHeight": "calc(1.65 * var(--unit-h, 9.2px))",
+              "color": "#1d4ed8",
+              "overflow": "visible",
+              "padding": "2px 4px"
             }
           },
           {
