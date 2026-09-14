@@ -1574,6 +1574,12 @@ body::-webkit-scrollbar-thumb:hover {
   transition: transform var(--transition-fast);
 }
 
+.tool-icon svg {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+
 .tool-card:hover .tool-icon {
   transform: scale(1.1);
   background: rgba(255, 184, 28, 0.12);
@@ -2587,6 +2593,11 @@ body::-webkit-scrollbar-thumb:hover {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
+  }
+
+  .tool-icon svg {
+    width: 28px !important;
+    height: 28px !important;
   }
 
   .tool-details {
