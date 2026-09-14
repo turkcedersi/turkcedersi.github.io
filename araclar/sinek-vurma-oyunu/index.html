@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Sinek Vurma Oyunu 🪰</title>
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg?v=2">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/favicon-32x32.png?v=2">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon-16x16.png?v=2">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/images/apple-touch-icon.png?v=2">
+
+  <!-- PWA Meta Etiketleri -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#2c3e50">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Sinek Vur">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <div id="game-container">
+    
+    <!-- Üst Skor & Kalp Çubuğu -->
+    <header id="top-bar">
+      <div class="stats-group">
+        <!-- Anlık Puan -->
+        <div class="stat-item">
+          <span class="stat-label">SKOR:</span>
+          <span id="score-display" class="stat-value">0</span>
+        </div>
+
+        <!-- En Yüksek Skor -->
+        <div class="stat-item">
+          <span class="stat-label">REKOR:</span>
+          <span id="high-score-display" class="stat-value">0</span>
+        </div>
+
+        <!-- Canlar -->
+        <div class="stat-item">
+          <div id="lives-container">
+            <svg class="heart-icon" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+            <svg class="heart-icon" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+            <svg class="heart-icon" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Sağ Alt Yüzen İkon Butonları (Ses & İndir) -->
+    <div id="floating-controls">
+      <button id="pwa-install-btn" class="circle-btn hidden" title="Uygulamayı İndir" aria-label="İndir">
+        <svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+      </button>
+      <button id="sound-toggle-btn" class="circle-btn" title="Ses Aç / Kapat" aria-label="Ses">
+        <svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+      </button>
+    </div>
+
+    <!-- Oyun Ekranı & Sineklerin Uçtuğu Alan -->
+    <main id="game-board"></main>
+
+    <!-- Başlangıç Modalı -->
+    <div id="start-modal" class="modal-overlay">
+      <div class="modal-card">
+        <h1 class="modal-title">🪰 Sinek Vur!</h1>
+        <p class="modal-subtitle">Mobil dokunmatik ekranlar için özel PWA oyunu.</p>
+        
+        <div class="score-board-summary">
+          <div class="summary-row">
+            <span class="label">Hedef:</span>
+            <span class="val">Konan sinekleri kaçırmadan avla!</span>
+          </div>
+          <div class="summary-row">
+            <span class="label">Kural:</span>
+            <span class="val">Sadece konduğu an vurabilirsin.</span>
+          </div>
+          <div class="summary-row">
+            <span class="label">Böcekler:</span>
+            <span class="val">Kara Sinek, Sivrisinek (+30), Altın Sinek (5x) & Uğur Böceği (+1 Can)</span>
+          </div>
+        </div>
+
+        <button id="start-btn" class="btn-primary">OYUNA BAŞLA</button>
+        <button id="force-update-btn" class="btn-secondary" style="margin-top: 10px; font-size: 0.8rem; padding: 6px; background: transparent; color: #64748b; border: none; text-decoration: underline; cursor: pointer;">Yeni Sürümü Yükle / Önbelleği Temizle</button>
+      </div>
+    </div>
+
+    <!-- Oyun Bitti Modalı -->
+    <div id="game-over-modal" class="modal-overlay hidden">
+      <div class="modal-card">
+        <div id="new-record-badge" class="modal-badge" style="display: none;">🏆 YENİ REKOR!</div>
+        <h2 class="modal-title">OYUN BİTTİ</h2>
+        <p class="modal-subtitle">Canların tükendi, sinekler kaçtı!</p>
+
+        <div class="score-board-summary">
+          <div class="summary-row">
+            <span class="label">Toplanan Skor:</span>
+            <span id="final-score" class="val">0</span>
+          </div>
+          <div class="summary-row">
+            <span class="label">Ulaşılan Seviye:</span>
+            <span id="final-level" class="val">1</span>
+          </div>
+          <div class="summary-row">
+            <span class="label">Vurulan Sinek:</span>
+            <span id="final-swats" class="val">0</span>
+          </div>
+          <div class="summary-row">
+            <span class="label">En Yüksek Skor:</span>
+            <span id="modal-high-score" class="val">0</span>
+          </div>
+        </div>
+
+        <button id="restart-btn" class="btn-primary">TEKRAR OYNA</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Oyun JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
