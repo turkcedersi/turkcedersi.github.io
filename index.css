@@ -163,15 +163,14 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* HEADER ELEMENTS */
 .main-header {
-  margin-top: 4px;
-  margin-bottom: 8px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .logo-text {
-  font-size: 2.8rem;
+  font-size: 4rem;
   font-weight: 800;
-  letter-spacing: 0.4rem;
-  line-height: 1.1;
+  letter-spacing: 0.5rem;
   background: linear-gradient(135deg, #ffffff 0%, #e0f2fe 50%, var(--color-ice-bright) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -179,20 +178,20 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .sub-logo-text {
-  font-size: 1.25rem;
+  font-size: 1.8rem;
   font-weight: 500;
   color: var(--color-teal);
   text-shadow: 0 0 20px rgba(56, 189, 248, 0.35);
-  margin-top: -4px;
-  margin-bottom: 6px;
-  letter-spacing: 0.08rem;
+  margin-top: -8px;
+  margin-bottom: 12px;
+  letter-spacing: 0.1rem;
 }
 
 .header-desc {
-  font-size: 0.92rem;
+  font-size: 1.1rem;
   color: var(--text-secondary);
-  max-width: 580px;
-  margin: 0 auto 6px auto;
+  max-width: 600px;
+  margin: 0 auto 12px auto;
   font-weight: 300;
 }
 
