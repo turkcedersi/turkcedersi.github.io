@@ -157,6 +157,43 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
 
+    // --- DOWNLOAD MODAL (Z-KİTAP USB SÜRÜMÜ) ---
+    const downloadModal = document.getElementById("download-modal");
+    const btnOpenDownloadModal = document.getElementById("btn-open-download-modal");
+    const btnCloseDownloadModal = document.getElementById("btn-close-download-modal");
+    const downloadModalBackdrop = document.getElementById("download-modal-backdrop");
+
+    function openDownloadModal() {
+      if (downloadModal) {
+        downloadModal.classList.remove("hidden");
+        downloadModal.classList.add("active");
+        document.body.style.overflow = "hidden";
+      }
+    }
+
+    function closeDownloadModal() {
+      if (downloadModal) {
+        downloadModal.classList.add("hidden");
+        downloadModal.classList.remove("active");
+        document.body.style.overflow = "";
+      }
+    }
+
+    if (btnOpenDownloadModal) {
+      btnOpenDownloadModal.addEventListener("click", (e) => {
+        e.stopPropagation();
+        openDownloadModal();
+      });
+    }
+
+    if (btnCloseDownloadModal) {
+      btnCloseDownloadModal.addEventListener("click", closeDownloadModal);
+    }
+
+    if (downloadModalBackdrop) {
+      downloadModalBackdrop.addEventListener("click", closeDownloadModal);
+    }
+
     // Tools Modal Handlers
     if (btnOpenToolsCard) {
       btnOpenToolsCard.addEventListener("click", (e) => {
@@ -191,6 +228,7 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("keydown", (e) => {
       if (e.key === "Escape") {
         closeToolsModal();
+        closeDownloadModal();
         if (wbMenu && !wbMenu.classList.contains("hidden")) {
           wbMenu.classList.add("hidden");
           whiteboardState.menuOpen = false;
