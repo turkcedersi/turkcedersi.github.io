@@ -163,14 +163,15 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* HEADER ELEMENTS */
 .main-header {
-  margin-bottom: 50px;
-  margin-top: 30px;
+  margin-top: 4px;
+  margin-bottom: 8px;
 }
 
 .logo-text {
-  font-size: 4rem;
+  font-size: 2.8rem;
   font-weight: 800;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.4rem;
+  line-height: 1.1;
   background: linear-gradient(135deg, #ffffff 0%, #e0f2fe 50%, var(--color-ice-bright) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -178,20 +179,20 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .sub-logo-text {
-  font-size: 1.8rem;
+  font-size: 1.25rem;
   font-weight: 500;
   color: var(--color-teal);
   text-shadow: 0 0 20px rgba(56, 189, 248, 0.35);
-  margin-top: -10px;
-  margin-bottom: 15px;
-  letter-spacing: 0.1rem;
+  margin-top: -4px;
+  margin-bottom: 6px;
+  letter-spacing: 0.08rem;
 }
 
 .header-desc {
-  font-size: 1.1rem;
+  font-size: 0.92rem;
   color: var(--text-secondary);
-  max-width: 600px;
-  margin: 0 auto;
+  max-width: 580px;
+  margin: 0 auto 6px auto;
   font-weight: 300;
 }
 
@@ -247,27 +248,31 @@ body::-webkit-scrollbar-thumb:hover {
   margin-top: 10px;
 }
 
+#view-grades {
+  padding: 14px 20px 10px 20px;
+}
+
 /* VIEW 1: GRADE SELECTION GRID - 5 CARDS IN A SINGLE ROW */
 .grade-grid {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 16px;
-  margin-top: 35px;
-  padding-bottom: 50px;
+  gap: 14px;
+  margin-top: 10px;
+  padding-bottom: 15px;
 }
 
 @media (max-width: 1080px) {
   .grade-grid {
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 14px;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 12px;
   }
 }
 
 .grade-card {
   background-color: var(--bg-card);
   border: 1px solid var(--border-glass);
-  border-radius: 20px;
-  padding: 28px 14px;
+  border-radius: 16px;
+  padding: 16px 10px 12px 10px;
   cursor: pointer;
   position: relative;
   overflow: hidden;
@@ -307,16 +312,16 @@ body::-webkit-scrollbar-thumb:hover {
 
 .lock-badge {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 10px;
+  right: 10px;
   color: var(--text-muted);
 }
 
 .grade-number {
-  font-size: 3.6rem;
+  font-size: 2.5rem;
   font-weight: 800;
   line-height: 1;
-  margin-bottom: 12px;
+  margin-bottom: 6px;
   color: var(--text-primary);
   transition: color var(--transition-fast), text-shadow var(--transition-fast);
 }
@@ -327,15 +332,15 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .grade-title {
-  font-size: 1.15rem;
+  font-size: 1rem;
   font-weight: 600;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
   color: var(--text-primary);
   white-space: nowrap;
 }
 
 .grade-status {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: var(--text-secondary);
   font-weight: 400;
   white-space: nowrap;
@@ -2782,35 +2787,35 @@ body::-webkit-scrollbar-thumb:hover {
    DOWNLOAD CTA BUTTON & MODAL (Z-KİTAP USB SÜRÜMÜ)
    ========================================================================== */
 .download-cta-wrapper {
-  margin: 24px auto 8px auto;
+  margin: 6px auto 10px auto;
   display: flex;
   justify-content: center;
-  max-width: 680px;
+  max-width: 500px;
   width: 100%;
 }
 
 .btn-download-zkitap {
   display: inline-flex;
   align-items: center;
-  gap: 16px;
-  background: linear-gradient(135deg, rgba(30, 41, 59, 0.9) 0%, rgba(15, 23, 42, 0.95) 100%);
+  gap: 12px;
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.92) 0%, rgba(15, 23, 42, 0.95) 100%);
   border: 1px solid rgba(56, 189, 248, 0.35);
-  border-radius: 16px;
-  padding: 12px 24px;
+  border-radius: 12px;
+  padding: 6px 14px;
   color: #f8fafc;
   cursor: pointer;
   text-decoration: none;
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25), 0 0 15px rgba(56, 189, 248, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25), 0 0 12px rgba(56, 189, 248, 0.1);
   width: 100%;
-  max-width: 580px;
+  max-width: 460px;
   text-align: left;
 }
 
 .btn-download-zkitap:hover {
   transform: translateY(-2px);
   border-color: rgba(56, 189, 248, 0.8);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35), 0 0 25px rgba(56, 189, 248, 0.25);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35), 0 0 20px rgba(56, 189, 248, 0.25);
   background: linear-gradient(135deg, rgba(30, 58, 102, 0.9) 0%, rgba(15, 23, 42, 0.95) 100%);
 }
 
@@ -2818,9 +2823,9 @@ body::-webkit-scrollbar-thumb:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 12px;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
   background: rgba(56, 189, 248, 0.15);
   color: #38bdf8;
   border: 1px solid rgba(56, 189, 248, 0.3);
@@ -2830,19 +2835,19 @@ body::-webkit-scrollbar-thumb:hover {
 .btn-download-content {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 1px;
   flex-grow: 1;
 }
 
 .btn-download-title {
-  font-size: 1.05rem;
+  font-size: 0.88rem;
   font-weight: 700;
   color: #ffffff;
   letter-spacing: -0.01em;
 }
 
 .btn-download-sub {
-  font-size: 0.82rem;
+  font-size: 0.72rem;
   color: #94a3b8;
   font-weight: 400;
 }
@@ -2850,10 +2855,10 @@ body::-webkit-scrollbar-thumb:hover {
 .btn-download-badge {
   background: #0284c7;
   color: #ffffff;
-  font-size: 0.72rem;
+  font-size: 0.65rem;
   font-weight: 800;
-  letter-spacing: 0.05em;
-  padding: 4px 10px;
+  letter-spacing: 0.04em;
+  padding: 2px 7px;
   border-radius: 9999px;
   flex-shrink: 0;
 }
