@@ -2786,7 +2786,7 @@ body::-webkit-scrollbar-thumb:hover {
    DOWNLOAD CTA BUTTON & MODAL (Z-KİTAP USB SÜRÜMÜ)
    ========================================================================== */
 .download-cta-wrapper {
-  margin: 6px auto 10px auto;
+  margin: 10px auto 20px auto;
   display: flex;
   justify-content: center;
   max-width: 500px;
